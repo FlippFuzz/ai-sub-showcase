@@ -1,0 +1,171 @@
+name: part_010
+total_attempts: 1
+video_duration_ms: 300048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features two musical performances by the virtual performer
+    Inugami Korone. The first song, 'KING' by Kanaria, is performed from 00:00 to
+    01:21. This is followed by a short visual transition, and then the song 'Mafiosa'
+    by FAKE TYPE. is performed from 01:32 until the end of the video.
+  scenes:
+  - start: '00:00.000'
+    end: '01:21.400'
+    description: Inugami Korone performs 'KING' accompanied by a group of frog-masked
+      dancers. The stage features vibrant pink lighting and geometric patterns.
+    contains_vocal_music: true
+    song_title: KING
+    original_artist: Kanaria
+    performer_in_video: Inugami Korone
+    original_language: Japanese
+    reference_lyrics_og: |-
+      幽閉 利口 逝く前に
+      ユーヘイじゃ利口に難儀ダーリン
+      幽閉 ストップ 知ってないし
+      勘弁にしといてなんて惨忍
+      人様願う 欠片のアイロニ
+      だれもが願う 無機質のような
+      一足先に 始めてたいような
+      先が見えない ヴァージン ハッピーショー
+      無いの 新たに お願い一つ
+      愛も変わらず おまけに
+      ワーニング ワーニング
+      無いの あなたに お願い一つ
+      張り詰めた 思い込め
+      レフトサイド ライトサイド
+      歯をむき出して パッパッパ
+      照れくさいね
+      レフトサイド ライトサイド
+      歯を突き出して パッパッパ
+      haha, you are king
+
+      無邪気に遊ぶ 期待期待のダーリン ダーリン
+      健気に笑う 痛い痛いの消える
+      無様にしねる 苦い思いも無くなって
+      ラララブウ ラッタッタ
+      嫌い嫌いの最低 泣いてダウン
+      毎度新たにお願い一つ
+      愛も変わらず ピックアップの
+      ワーニング ワーニング
+      無いの あなたに お願い一つ
+      張り詰めた 思い込め
+      レフトサイド ライトサイド
+      歯をむき出して パッパッパ
+      邪魔くさいね
+      レフトサイド ライトサイド
+      歯を突き出して パッパッパ
+      haha, you are king
+    reference_lyrics_en: |-
+      Locking up the clever one before they die
+      You, hey, you know that it’s a pain to get you to be obedient, darling
+      Don’t lock me up! It’s not like I knew
+      Give me a break! You’re so cruel
+      The wishes of the people feel like scraps of irony
+      Everyone’s wishing for the same thing: it’s a mechanical
+      Virgin happy show you want to get in on before everyone else,
+      Where nobody knows what’s going to happen next
+      I don’t have a single brand-new wish:
+      It’s the same as ever, and on top of that, there’s no
+      Warning, warning
+      I put all my stress
+      Into a wish for you
+      Left side, right side
+      Baring your fangs, pa-pa-pa, this is so embarrassing
+      Left side, right side
+      Let your fangs poke out, pa-pa-pa
+      Haha you are king
+
+      Playing innocently
+      You’re the darling, darling that I’ve been wishing and hoping for
+      When you laugh admirably, all of my pain disappears
+      And I’m able to die clumsily, my bitter feelings fading too
+      Lo-lo-love, ra-ta-ta
+      I hate it, I hate it, it’s the worst – I burst into tears and I’m down for the count
+      Just as always, here’s a brand-new wish:
+      The same as ever, there’s no picked-out
+      Warning, warning
+      I put all my stress
+      Into a wish for you
+      Left side, right side
+      Baring your fangs, pa-pa-pa, this is so bothersome
+      Left side, right side
+      Let your fangs poke out, pa-pa-pa
+      Haha you are king
+  - start: '01:21.400'
+    end: '01:32.000'
+    description: A short instrumental transition with a red rose visual, marking the
+      break between the two songs.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:32.000'
+    end: '05:01.000'
+    description: Inugami Korone performs 'Mafiosa' on a stage designed like a city
+      square with a large screen displaying scenes related to the song's mafia theme.
+    contains_vocal_music: true
+    song_title: マフィオッサ
+    original_artist: FAKE TYPE.
+    performer_in_video: Inugami Korone
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing and Executing the Video Analysis Request**
+
+    Alright, let's break this down systematically. My goal is to analyze this video, identify the vocal songs within it, map the scenes, and then fetch the official lyrics for each song using a web search tool. Crucially, I'm constrained to *only* use the search tool; no manual transcription or translation is allowed. If a search fails, the lyrics field must be set to `null`, and there can be *no* truncation or placeholders in the lyrics. I have a maximum of three search turns to get this right. I need to make sure to search using the original artist or composer, *not* the VTuber performer. Quotes in search queries are also forbidden.
+
+    First, I need to observe and map the scenes. I can see that the video starts with "King" by Kanaria, performed by Inugami Korone, from 00:00 to 01:21. Then there's an instrumental/visual transition from 01:21 to 01:32. Finally, from 01:32 to 05:01, it's "Mafiosa" by FAKE TYPE, also performed by Inugami Korone.
+
+    I've got the song metadata now. For "King," the original artist is Kanaria, and the title is "KING". For "Mafiosa," the original artist is FAKE TYPE, and the title in Japanese is "マフィオッサ". Both are performed by Inugami Korone and in Japanese.
+
+    Now, let's plan the lyrics lookup. I'll execute the searches in parallel using the `default_api:web_search_langsearch_multi` tool. My first round of queries will be a mix of Japanese and English, focusing on official lyrics:
+
+    *   `KING Kanaria 歌詞` (Japanese lyrics for "KING")
+    *   `KING Kanaria lyrics English` (English lyrics for "KING")
+    *   `マフィオッサ FAKE TYPE 歌詞` (Japanese lyrics for "Mafiosa")
+    *   `Mafiosa FAKE TYPE lyrics English` (English lyrics for "Mafiosa")
+
+    I'll then analyze the search results, making sure the full lyrics are captured and there's no truncation.
+
+    *Important:* Before making the calls, I need to double-check my search query construction against the rules. *No* quotes and original Japanese characters for Japanese titles if they appear on screen! "Mafiosa" is good as "マフィオッサ". "KING" is good as it is.
+
+    The final response structure needs to map the scenes, use proper timestamp formatting (MM:SS.mmm), and comply with *all* the constraints: no manual transcription, official lyrics only, and no truncation, with `null` if lyrics aren't found. This will be a `default_api:final_result` tool call.
+
+    So, let's refine the scene mapping:
+    -   Scene 1: 00:00 - 01:21 ("KING")
+    -   Scene 2: 01:21 - 01:32 (Transition/Visual - no vocals)
+    -   Scene 3: 01:32 - 05:01 ("Mafiosa")
+
+    That's solid. Now it's a matter of ensuring this structure is valid, the timestamps are correct, and the lyrics are accurate. The constraints are met. Time to execute.
+
+
+
+    **Analysis and Thought Process**
+
+    Alright, let's break this down systematically. My primary goal here is to accurately represent the lyrics from the search results, ensuring compliance with all constraints.
+
+    First, I need to analyze the search results for the given songs and lyrics.
+
+    *   **Song 1 (KING - Kanaria):** The search results were fruitful. I found both the original Japanese lyrics and an English translation. The provided translations were useful.
+
+    *   **Song 2 (Mafiosa - FAKE TYPE.):** This is where it got tricky. My initial search yielded mixed results, including songs by artists other than FAKE TYPE. I quickly realized I needed to be precise. After a slight correction, I double-checked and found what I *thought* was a good source for the lyrics. However, the constraints are very specific. *Critical re-evaluation:* upon further inspection, I've got to admit, my search results for FAKE TYPE's "Mafiosa" *don't* contain a full, reliable lyric source! The search results are metadata or about other songs.
+
+    Okay, here's where the constraints kick in hard. The task description explicitly states that if official lyrics or translations are not retrieved, I MUST set the respective fields to null. So, for "Mafiosa", I'm going to have to make the following call: the lyrics for Mafiosa need to be set to `null`. *Even if the lyrics are visually on screen in the source video*. The rules are the rules. My personal knowledge of the song and artists is irrelevant, and I cannot transcribe, even from an on-screen source.
+
+    I've also got to confirm that the `false` statement is the correct answer for scene 2.
+
+    Now, scene mapping is the next step. I'll need to figure out where the scenes start and end and include the lyrics properly.
+
+    *   **Scene 1 (KING):** Music starts at 00:00.000, and there is a clear break at 01:21.400. This part, the official lyrics and translations found using the search are all that's needed here.
+
+    *   **Scene 2 (Transition):** This is the instrumental or transition section, from 01:21.400 to 01:32.000.  No lyrics are provided for this.
+
+    *   **Scene 3 (Mafiosa):** This will be from 01:32.000 onwards (to approximately 05:01.000 when the music stops). I have to remember that because the search results did NOT provide a full set of lyrics, the `reference_lyrics_og` and `reference_lyrics_en` fields must be set to `null`.
+
+    So, the plan: Provide the full lyrics for KING (Scene 1) as found in the search results and set `null` for the Mafiosa (Scene 3) lyrics because I did not find them via a search.
+
+
+...
