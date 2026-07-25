@@ -1,0 +1,65 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 300048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber, Kazama Iroha, presenting new merchandise,
+    followed by a live performance of her new original song, "Kazamuki Entropy" (風向きエントロピー).
+  scenes:
+  - start: '00:00.000'
+    end: '04:22.000'
+    description: Kazama Iroha presents her new birthday merchandise, including a towel,
+      a keychain, and a plushie.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:22.000'
+    end: '05:01.000'
+    description: Kazama Iroha performs her new original song, "Kazamuki Entropy".
+    contains_vocal_music: true
+    song_title: 風向きエントロピー
+    original_artist: null
+    performer_in_video: Kazama Iroha
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the VTuber Video and Lyric Retrieval**
+
+    Okay, here's my plan to tackle this request. First, I need to understand what's being asked. My ultimate goal is to generate JSON that accurately maps scenes, identifies the music, and fetches the lyrics (both original Japanese and English translations) from a video featuring Kazama Iroha promoting merchandise and singing "Kazamuki Entropy." I have to use the web search tool, avoid any manual transcription or translation, and adhere to strict rules: no truncation, placeholders, or quotes, and I have a max of three search attempts. If the search fails, the lyrics field should be set to `null`.
+
+    The video's content clearly breaks down into two scenes. The initial segment, from 00:00 to 04:22, involves the VTuber showcasing merchandise and engaging in conversation, with non-vocal music. Then, from 04:22 to 05:01, "Kazamuki Entropy" begins and plays until the end. I need to make note of the song metadata which is available: the Japanese title "風向きエントロピー," (Kazamuki Entropy), the original composer is "40mP," and the performer in the video is "Kazama Iroha." The original language is Japanese. The rule specifies I must use the original composer, not the performer, in my search.
+
+    My next step is to prepare the queries for the web search. I'll need two queries per turn. The first should be in Japanese for the original lyrics: `"風向きエントロピー 40mP 歌詞"`. The second should be in English for the translation: `"Kazamuki Entropy 40mP lyrics English"`. I'll run these queries against the web search tool `default_api:web_search_langsearch_multi`.
+
+    Once the search results come back, assuming they're successful, I'll extract the full lyrics and translation. The scene mapping is now finalized: Scene 1 from 00:00 to 04:22, containing no vocal music. Scene 2 from 04:22 to 05:01, featuring the vocal performance of "Kazamuki Entropy."
+
+    Finally, I'll structure the JSON output. Scene 1 will have `Contains Music: false`, while Scene 2 will have `Contains Music: true`, along with the song title, artist (40mP, the composer), performer (Kazama Iroha), language (Japanese), and the lyrics.
+
+    The critical piece, and the part I'm about to do is to *actually* execute the search tool calls with the formulated queries. I'll have the lyrics and translation once this search completes and I'll generate the JSON output based on the resulting data. It's a structured approach, but that's precisely how I work best with this type of task.
+
+
+
+    **Kazamuki Entropy Lyrics Search Results Assessment**
+
+    Okay, so I just ran a search for "Kazamuki Entropy," hoping to get the lyrics, but the indexed results didn't turn up what I needed. It seems like it's either a very new release, or perhaps not one that's got official lyrics online. I saw results for other 40mP tracks like "unplugged" and "Jinsei ni Hakushu Kassai wo," as well as "Kazamachi Contrast," which is clearly unrelated, but nothing for the target song.
+
+    Given that I can't manually transcribe or guess the lyrics – that's a hard no – and the search failed to provide them, I'm forced to implement the "SEARCH FAILURE FALLBACK" rule. Therefore, both the Japanese and English lyrics fields have to be set to `null`.
+
+    Fortunately, I have all the other necessary information. I can now finalize the JSON.
+
+    *   Song Title: 風向きエントロピー
+    *   Artist: 40mP
+    *   Performer: Kazama Iroha
+    *   Language: Japanese
+    *   Lyrics OG: `null`
+    *   Lyrics EN: `null`
+
+    I'm ready to output the final data.
+
+
+...
