@@ -1,0 +1,55 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 300048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a virtual character, Rindo Chihaya, performing
+    two instrumental covers. The first segment, from 00:00 to 00:48, is an acoustic
+    guitar performance of the song 'Wataridori'. The second segment, from 00:48 to
+    05:01, is a trombone performance of the song 'Shiny Smily Story (2022 ver.)'.
+    No vocal music is present in the video.
+  scenes:
+  - start: '00:00.000'
+    end: '00:48.000'
+    description: Virtual character Rindo Chihaya performs an instrumental acoustic
+      guitar cover of 'Wataridori' on a stage with palm trees and geometric lighting.
+    contains_vocal_music: false
+    song_title: Wataridori
+    original_artist: Alexandros
+    performer_in_video: Rindo Chihaya
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:48.000'
+    end: '05:01.000'
+    description: Rindo Chihaya performs an instrumental trombone cover of 'Shiny Smily
+      Story (2022 ver.)' on a stage with a large screen behind her, displaying various
+      scenes of her playing the trombone.
+    contains_vocal_music: false
+    song_title: Shiny Smily Story
+    original_artist: hololive IDOL PROJECT
+    performer_in_video: Rindo Chihaya
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing and Responding to the Video Analysis Request**
+
+    Okay, so the task is to break down this video, map the scenes, identify *vocal* songs, and find the lyrics. No manual transcription or translation allowed, and I need to use the `web_search_langsearch_multi` tool with no placeholders or truncation. The output needs to be in JSON format. Got it.
+
+    First, let's look at the video. It's a virtual performer, playing what appears to be instrumental music. I see two segments: one with an acoustic guitar, and the other with a trombone. The video identifies the virtual performer as Rindo Chihaya (based on the hashtag #輪堂千速生誕祭2026). I also spot text overlays at 01:04 saying "Shiny Smily Story (2022 ver.)" and "ワタリドリ" (Wataridori) in the left corner at the start.
+
+    Now, the instructions are very specific: I need to find "vocal songs". Let me re-listen to the segments very carefully. Okay, listening again… it's all instrumental. No vocals. No singing. So, even though "Wataridori" (by Alexandros) and "Shiny Smily Story" (by hololive IDOL PROJECT) are playing, they're instrumental covers. This is a critical detail. My `contains_vocal_music` field *must* be `false` for both scenes.
+
+    This changes things slightly. I need to handle this situation. The instructions *do* say to detect *all* vocal songs, so if the video only contains instrumental covers, I must indicate this. The examples show vocal songs, so I'm second-guessing. Let me double-check the audio very carefully. Yes, definitely instrumental in both segments. So, even though I'm identifying the songs, I have to set `contains_vocal_music` to `false`. That means the `song_title`, `original_artist`, etc. will be null because there's no vocal music to reference.
+
+    Okay, let me craft the JSON then, with appropriate "description" fields. The guitar segment is from 00:00 to 00:48, playing "Wataridori" (instrumental). The trombone segment is from 00:48 to 05:01, playing "Shiny Smily Story" (instrumental). I'll include the "performer" and "original_language" fields.
+
+    I'm making sure my JSON includes a `global_summary` that encapsulates the overall video's content, and then the scene-specific information for both segments. The values `song_title`, `original_artist`, `original_language`, `performer_in_video`, `reference_lyrics_og`, and `reference_lyrics_en` will be set accordingly. Crucially, `contains_vocal_music` will be `false` for both scenes, and the `reference_lyrics_og` and `reference_lyrics_en` fields will be `null`.
+
+    I think that's complete. Now to re-check the constraints: no manual anything, no placeholders, JSON format. All good.
+
+    Time to submit.
+
+
+...
