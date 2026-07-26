@@ -1,0 +1,81 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 300044
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '02:14.000'
+    end: '02:24.000'
+    original: 開演までしばらくお待ちください
+    english: The concert will be starting soon.
+  thoughts: |+
+    **My Thought Process on Subtitling the Video Segment**
+
+    Okay, the user wants subtitles for a 5-minute video segment. Initial thought: lyrics might be involved, since there's background music, potentially with singing. The reference JSON mentions "Serendipity" from Hololive English and even contains lyrics. However, I have to be extremely careful – is there actual singing *in this specific video segment*? The instructions are very clear: I should *not* simply blindly use the web-scraped lyrics.
+
+    My immediate step is to *verify* the audio track. The video shows a "The concert will be starting soon" screen with instrumental background music. Crucially, I need to confirm: are there any vocals? Let's analyze the audio carefully! "Serendipity" is the theme, but could be an instrumental version. If the audio is *purely* instrumental, "ZERO GHOST SUBTITLES" kicks in: I must remain silent unless there's a prominent *visual event*.
+
+    Now, a crucial question: is there a prominent visual event? Yes, there are several text slides on the screen: "The concert will be starting soon," "Attention For Visitors," and then "2nd Round of Concert Merch Sales." I need to determine if any of these qualify for subtitling. The instruction states: "If prominent, relevant text appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio." But a slideshow with no speech isn't always subtitled unless it has a very specific title.
+
+    A crucial re-check: I am listening to the audio closely to confirm if there are any vocals, and the instrumental version is playing. The track is clearly an instrumental loop of "Serendipity." Absolutely no vocals. The reference JSON's `contains_vocal_music": true` is misleading; it's a general reference, not a script for *this* segment! The rule is absolute: "The vocal audio waveform is your absolute ground truth for spoken dialogue." Therefore, NO LYRICS. "ZERO GHOST SUBTITLES"!
+
+    Now, the focus shifts to the visual text. I assess: is "The concert will be starting soon" prominent enough? Yes, this seems the most important and useful text on-screen. So, at 02:14, I'll provide this subtitle. I see the equivalent Japanese on-screen as well ("開演までしばらくお待ちください"). Should I subtitle both? I could use the Japanese as the original and the English as the translation, or just the English. Let's provide the Japanese as the original and the English as the translation.
+
+    Next, there's "Attention For Visitors" at 02:24. Let's see if the subtitles should also reflect the equivalent text on-screen. "Attention For Visitors" (and its Japanese equivalent) is a very clear and relevant subtitle. There's also "2nd Round of Concert Merch Sales."
+
+    Final answer: I should construct a list of subtitles for the most prominent on-screen text, with the original text (og) and English translation (en), because there are no spoken vocals, and no ghost subtitles should be provided.
+
+    Let's output the final response!
+
+
+- subtitles:
+  - start: '02:14.000'
+    end: '02:23.000'
+    original: 開演までしばらくお待ちください
+    english: The concert will be starting soon.
+  - start: '02:24.000'
+    end: '02:28.500'
+    original: ご来場の皆様へ：公演中のフラッシュライトにご注意ください。
+    english: 'Attention Visitors: Please be aware of flashing lights during the performance.'
+  - start: '02:28.500'
+    end: '02:33.000'
+    original: 大声での声援は可能です。
+    english: Cheering loudly is ok.
+  - start: '02:34.000'
+    end: '02:43.000'
+    original: コンサートグッズ第2次販売
+    english: 2nd Round of Concert Merch Sales
+  - start: '02:44.000'
+    end: '02:53.000'
+    original: アクリルスタンド / アクリルパネル
+    english: Acrylic Stand & Acrylic Panel
+  - start: '02:54.000'
+    end: '03:03.000'
+    original: 缶バッジ / ステッカー
+    english: Button Badge & Stickers
+  thoughts: |+
+    **My Analysis of Subtitle Generation**
+
+    Alright, let's break this down. My objective is crystal clear: produce synchronized, contextually appropriate subtitles for this video segment, specifically from 00:00 to 05:01. The video is a fan message showcase with Hololive English's "Serendipity" playing in the background. My initial thought process revolves around verifying the nature of the audio. Is it vocal? Instrumental? Does the provided lyric data align with the actual audio content? The crucial first step is to definitively determine if there are any vocals in the audio track.
+
+    The title "Serendipity" is playing in the background! Given that the JSON reference data indicates `contains_vocal_music: true`, I must rigorously verify the presence of actual vocals. The first few minutes are crucial. I listen carefully, and initially, it appears to be an upbeat instrumental loop, or possibly some sound effects, not vocals. My auditory analysis leads me to the instrumental track. I must make a judgement here, since the reference JSON states there *are* vocals, and I must verify this is correct. I can not let the system's output "hallucinate" subtitles or "ghost" data onto the screen.
+
+    The audio waveform confirmed: No vocals. The video, for the first part, does not contain human voices. It's simply instrumental background music. This is when I remember one of the cardinal rules: I must remain silent if the audio is purely instrumental, adhering to the "ZERO GHOST SUBTITLES" rule, unless there are visual events to subtitle. So, I am careful to follow this rule. I must check for prominent, on-screen text.
+
+    So, I start identifying visual events. The main task is to recognize prominent text (visual events) on screen. This is crucial as per the "VISUAL EVENTS (The On-Screen Text Exception)" rule. I notice at 02:14 "The concert will be starting soon." This, and any subsequent prominent on-screen text, become my focus. It has bilingual display, so I ensure this is added.
+
+    I take a moment to identify prominent visual text and transcribe it. I also double-check the timing of each visual event to synchronize the subtitles. These are the visual elements I am focused on, and nothing more:
+
+    *   02:14 - 02:23: "The concert will be starting soon." / "開演までしばらくお待ちください"
+    *   02:24 - 02:28: "Attention Visitors: Please be aware of flashing lights during the performance" / "ご来場の皆様へ：公演中のフラッシュライトにご注意ください。"
+    *   02:28 - 02:33: "Cheering loudly is ok." / "大声での声援は可能です。"
+    *   02:34 - 02:43: "2nd Round of Concert Merch Sales" / "コンサートグッズ第2次販売"
+    *   02:44 - 02:53: "Acrylic Stand / Acrylic Panel" / "アクリルスタンド / アクリルパネル"
+    *   02:54 - 03:03: "Button Badge & Stickers" / "缶バッジ / ステッカー"
+
+    I draft the JSON structure for the subtitles. No more, no less. I then refine the details, ensuring strict timing and compliance with the "ZERO GHOST SUBTITLES" rule. No ghost lyrics.
+
+    Finally, I do a thorough check to ensure compliance with the rules. I'm satisfied that these subtitles accurately reflect the visual content, adhere to the principle of "ZERO GHOST SUBTITLES", and are synchronized correctly.
+
+
+...
