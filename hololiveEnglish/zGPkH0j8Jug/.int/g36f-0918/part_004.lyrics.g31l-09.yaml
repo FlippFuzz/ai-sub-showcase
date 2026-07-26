@@ -1,0 +1,65 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: 'The video features a roleplay interrogation session involving four
+    virtual characters: Bad Cop Cecilia, Good Cop Gigi, Suspect Elizabeth, and Chief
+    Raora. The audio consists entirely of spoken dialogue and an instrumental background
+    track. No vocal music was identified throughout the video.'
+  scenes:
+  - start: '00:00.000'
+    end: '00:14.000'
+    description: An intro segment where ghostly figures interact in an interrogation
+      room setting.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:14.000'
+    end: '03:06.000'
+    description: The interrogation begins with Cecilia and Gigi questioning Elizabeth.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:06.000'
+    end: '05:00.000'
+    description: Chief Raora enters the interrogation room and continues the questioning
+      process alongside Cecilia and Gigi.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis and Generation of Video Summary**
+
+    Okay, let's break this down. My objective here is to parse a video, identify musical segments, and extract lyrics if vocal music exists, all while adhering to these constraints: no manual transcription, handle the case of no lyrics with null values, ensure full lyrics only, use parallel search with a 3-turn limit, and avoid quotes in search queries.
+
+    First, I watched the video. It's a skit or roleplay with virtual avatars in an "interrogation" setting. My initial observation: It's *dialogue*, not singing. There's background music, but it's clearly instrumental. *Crucially*, I double-checked. Yep, definitely just instrumental. No vocals. No need to go any further.
+
+    Since the video is solely spoken dialogue and instrumental music, I set `contains_vocal_music` to `false` across the board. Consequently, the fields `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` will all be `null` for *every* scene. That's the key deduction here.
+
+    Now, I'm constructing a global summary and dividing the video into scenes. I need to make the output structured.
+
+    *   **Global Summary:** "The video features a roleplay interrogation session involving four virtual characters: Bad Cop Cecilia, Good Cop Gigi, Suspect Elizabeth, and Chief Raora. The audio consists entirely of spoken dialogue and an instrumental background track. No vocal music was identified throughout the video."
+
+    *   **Scene Breakdown:** I've identified three scenes based on significant shifts:
+
+        *   Scene 1: 00:00 - 00:14 (Intro/ghost).
+        *   Scene 2: 00:14 - 03:06 (Interrogation, 3 characters).
+        *   Scene 3: 03:06 - 05:00 (Interrogation, Chief Raora joins).
+
+    The final output is a JSON object summarizing these findings. I've re-reviewed the `critical_constraints` and this structure meets them perfectly.
+
+
+...
