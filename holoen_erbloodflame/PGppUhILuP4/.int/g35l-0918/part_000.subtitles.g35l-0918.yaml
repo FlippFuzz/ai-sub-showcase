@@ -1,0 +1,167 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300048
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '02:59.900'
+    end: '03:04.500'
+    original: おはよう こんにちは こんばんは！
+    english: Good morning, good afternoon, good evening!
+  - start: '03:05.100'
+    end: '03:10.400'
+    original: ERB TVの「Now That's a Bop」へようこそ！
+    english: Welcome to ERB TV's "Now That's a Bop"!
+  - start: '03:10.850'
+    end: '03:13.600'
+    original: 司会を務めるのは私…おーっほっほっほ！
+    english: I'm your host, ohohoho!
+  - start: '03:14.300'
+    end: '03:17.500'
+    original: 薔薇は紅く、我が心の炎は蒼く燃え上がる
+    english: Roses are red, the fire in my heart burns blue,
+  - start: '03:18.000'
+    end: '03:22.500'
+    original: 緋色の女王、そしてJusticeのリーダー！
+    english: also known as the Scarlet Queen, the leader of Justice!
+  - start: '03:23.500'
+    end: '03:27.400'
+    original: エリザベス・ローズ・ブラッドフレムです！
+    english: I am Elizabeth Rose Bloodflame!
+  - start: '03:27.900'
+    end: '03:31.200'
+    original: 素敵にお会いできて…すてき…すてき！
+    english: Lovely to see you, to see you... Lovely!
+  - start: '03:31.900'
+    end: '03:36.500'
+    original: 会場には熱狂的なロザリアンの皆さんが集まっています！はっざー！
+    english: We have an excited crowd of Rosarians here, huzzah!
+  - start: '03:36.900'
+    end: '03:43.000'
+    original: 最高の楽曲を届ける準備万端の素晴らしいクルーたちね！はっざー！
+    english: And a great crew ready to bring some awesome tunes to you all, huzzah!
+  - start: '03:44.200'
+    end: '03:47.800'
+    original: 今夜は非常にノリの良い曲をたくさん用意しているわよ
+    english: We've got a massive lineup of absolute bops.
+  - start: '03:48.400'
+    end: '03:54.000'
+    original: 今夜の特別なテーマは…「80年代！」
+    english: 'Tonight, we have a special theme: music from the ''80s!'
+  - start: '03:55.000'
+    end: '03:59.200'
+    original: お家で楽しんでいる皆さんももし番組が気に入ったらハッシュタグで教えてね
+    english: Make sure you folks at home, if you're enjoying the show, let us know
+      using the hashtag...
+  - start: '03:59.800'
+    end: '04:06.400'
+    original: '#ERBday2026 よ！これよ！これ！'
+    english: '#ERBday2026! Right up there, right up there!'
+  - start: '04:06.900'
+    end: '04:10.500'
+    original: OK！それでは最初の1曲目にいきましょう
+    english: OK! Let's get started with our first bop.
+  - start: '04:10.900'
+    end: '04:16.000'
+    original: 準備はいい？「フライデイ・チャイナタウン！」
+    english: Here we go. It's "Flyday Chinatown"!
+  - start: '04:34.900'
+    end: '04:38.800'
+    original: It's so fly-day, fly-day chinatown
+    english: It's so fly-day, fly-day Chinatown,
+  - start: '04:39.100'
+    end: '04:42.000'
+    original: 真夜中の人ごみに
+    english: in the midnight crowd.
+  - start: '04:42.600'
+    end: '04:46.500'
+    original: It's so fly-day, fly-day chinatown
+    english: It's so fly-day, fly-day Chinatown,
+  - start: '04:47.000'
+    end: '04:50.000'
+    original: はじける ネオン サイン
+    english: the neon signs pop!
+  - start: '04:50.400'
+    end: '04:53.900'
+    original: 肩にぶつかる 外国人 ウインクを投げる
+    english: A foreigner throws a wink over my way,
+  - start: '04:54.400'
+    end: '04:58.200'
+    original: 知らん顔の あなた とまどいの ひ と コ マ
+    english: your face is struck with bewilderment.
+  thoughts: |+
+    **Final Subtitle Generation Plan**
+
+    Okay, so the task is to generate subtitles for this video segment, and it's clear the primary focus is on the vocals – both speaking and singing. The analysis is now complete and all the required parameters will be added to the final result.
+
+    The core challenge revolves around Elizabeth Rose Bloodflame's intro, where she speaks English, but hardcoded Japanese subtitles are also present. The key is in understanding the prompt instructions regarding `og` and `en` fields, and the critical guidance that *hardcoded subtitles override everything* when the on-screen subs match the audio. I've considered that VTuber practices often have the on-screen visuals as the basis for the `og` even when it is a translation or transcription of the audio.
+
+    To handle the intro, and match it to standard practice:
+    *   I will use the Japanese hardcoded subtitles as the `og` field, because these are visual text.
+    *   I will use the spoken English as the `en` field.
+
+    This approach will provide the most precise and context-aware subtitles.
+
+    For the singing section, I will cross-reference the lyrics from the JSON, with the spoken audio in the video.
+
+    The analysis has taken great care to match the video. I will also make sure to use exact start and end times to the millisecond, based on the *vocal audio waveform* which is the absolute ground truth.
+
+    Here's the planned structure for the final JSON output, based on the precise timestamps I've double-checked:
+
+    ```json
+    [
+      {
+        "s": "02:59.900",
+        "e": "03:04.500",
+        "og": "おはよう こんにちは こんばんは！",
+        "en": "Good morning, good afternoon, good evening!"
+      },
+      {
+        "s": "03:05.100",
+        "e": "03:10.400",
+        "og": "ERB TVの「Now That's a Bop」へようこそ！",
+        "en": "Welcome to ERB TV's \"Now That's a Bop\"!"
+      },
+      {
+        "s": "03:10.850",
+        "e": "03:13.600",
+        "og": "司会を務めるのは私…おーっほっほっほ！",
+        "en": "I'm your host, ohohoho!"
+      },
+      {
+        "s": "03:14.300",
+        "e": "03:17.500",
+        "og": "薔薇は紅く、我が心の炎は蒼く燃え上がる",
+        "en": "Roses are red, the fire in my heart burns blue,"
+      },
+      {
+        "s": "03:18.000",
+        "e": "03:22.500",
+        "og": "緋色の女王、そしてJusticeのリーダー！",
+        "en": "also known as the Scarlet Queen, the leader of Justice!"
+      },
+      {
+        "s": "03:23.500",
+        "e": "03:27.400",
+        "og": "エリザベス・ローズ・ブラッドフレムです！",
+        "en": "I am Elizabeth Rose Bloodflame!"
+      },
+      {
+        "s": "03:27.900",
+        "e": "03:31.200",
+        "og": "素敵にお会いできて…すてき…すてき！",
+        "en": "Lovely to see you, to see you... Lovely!"
+      },
+      {
+        "s": "03:31.900",
+        "e": "03:36.500",
+        "og": "会場には熱狂的なロザリアンの皆さんが集まっています！はっざー！",
+        "en": "We have an excited crowd of Rosarians here, huzzah!"
+      },
+      {
+        "s": "03:36.900",
+        "e": "03:43.000",
+        "og": "最高の楽曲を届ける準備万端の素晴らしいクルーたちね！はっざー！",
+        "en": "And a great crew ready to bring some awesome tunes to you all, huzzah
+
+...
