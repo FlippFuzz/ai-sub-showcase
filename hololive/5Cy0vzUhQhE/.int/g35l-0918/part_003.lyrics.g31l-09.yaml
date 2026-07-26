@@ -1,0 +1,58 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 294970
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a promotional clip for the 'hololive holoX 2026 First
+    Mission' event. It consists of a static graphic displaying event details from
+    00:00 to 04:40, followed by a short segment of the stage at the venue with audience
+    noise and a spoken welcome announcement from 04:40 to 04:54. No vocal songs were
+    detected.
+  scenes:
+  - start: '00:00.000'
+    end: '04:40.000'
+    description: A static graphic promoting the 'hololive holoX 2026 First Mission'
+      event, with ambient instrumental music playing.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:40.000'
+    end: '04:54.000'
+    description: A live view of the concert venue stage, with the audience present,
+      followed by a spoken welcome announcement for the 'First Mission' event.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video: No Vocal Songs Detected**
+
+    Alright, let's break this down. My task is to analyze this video, map the scenes, identify any songs present, and locate the official lyrics if possible, but without manual transcription. This means I'm relying on search tools.
+
+    First, I examined the video frame by frame. From 00:00 to 04:40, it's a static image with text and some ambient background music. At 04:41, we have a quick crowd shot, then the stage with the "First Mission" logo, and the performers appear – looks like a VTuber concert. The music starts at 04:47, but this is immediately followed by a spoken introduction. The scene ends at 04:54.
+
+    My initial assumption, given the "First Mission" and HoloX context, was that the music at 04:47 was the key. I considered it could be a theme song or something related to HoloX. I went back to examine the text on the promo image, and while "hololive holoX 2026 First Mission" is everywhere, I don't see a specific song title.
+
+    Next, I focused on the audio at 04:47, which is at the concert stage. I thought this must be where the song is, and initially, I assumed it was "Merry Making" or something HoloX-related.
+
+    This is where it got interesting. The audio between 04:41 and 04:54 is *not* a song. It's a live stage introduction, a spoken announcement. "本日は、皆さま、本当にお越しいただきありがとうございます！" (Today, everyone, thank you so much for coming!).
+
+    This made me re-evaluate my approach. The prompt says I must detect *all* vocal songs playing. If there's no vocal music, then the `contains_vocal_music` field should be false.
+
+    I went back and re-examined the video. The background music in the static promo image is instrumental. The audio at the concert stage is spoken. *There are no vocal songs.*
+
+    I then focused on the scenes. The promo image and the concert stage are different scenes, but the entire video seems to be a single cut, from the image to the stage. Thus:
+    *   00:00 - 04:40: Static promo image with ambient music
+    *   04:40 - 04:54: Concert Stage
+
+    My conclusion: no vocal music is present. I need to set `contains_vocal_music` to `false`, and `song_title` to `null` for all scenes. I also re-checked the instrumental background music to confirm it lacks any vocals or humming. So, I am confident in my assessment.
+
+
+...
