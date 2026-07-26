@@ -1,0 +1,97 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features two VTubers, La+ Darknesss and AZKi. La+ Darknesss
+    first speaks to the audience about her 1st album release and upcoming music, followed
+    by a brief stage transition, and finally, AZKi introduces La+ Darknesss on stage.
+    No vocal musical performance occurs in this clip.
+  scenes:
+  - start: '00:00.000'
+    end: '04:22.000'
+    description: VTuber La+ Darknesss speaks directly to the camera while standing
+      on a stage, discussing her new 1st album 'Lap-sama Artist-ka Keikaku' and upcoming
+      music releases.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:22.000'
+    end: '04:34.000'
+    description: A short, instrumental musical transition takes place, showing the
+      stage lighting changing colors and illuminating empty performance areas.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:34.000'
+    end: '05:01.000'
+    description: VTuber AZKi appears on a different section of the stage and warmly
+      introduces La+ Darknesss to the viewers.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video and JSON Generation**
+
+    Alright, let's break this down systematically. My primary goal is to map the scenes and detect any vocal music within this video, ensuring I adhere to the strict JSON output structure and constraints. First, I need to understand what's required: I'm not doing manual transcription or translation, relying on the `web_search_langsearch_multi` tool for lyrics if any music is found. The crucial elements I need to identify are the Song Title, Original Artist, Performer, Original Language – and ensure the output is structured correctly via `default_api:final_result`. No placeholders or truncated lyrics are allowed, and I have a maximum of three search turns.
+
+    Now, I'm going to look at the video content, moment by moment.
+    *   **00:00 - 04:22:** It seems La+ Darknesss, a VTuber, is talking to the camera on stage, discussing her new album and upcoming song release. I'll need to listen carefully because at first glance there's no vocal music, just her speaking.
+    *   **04:22 - 04:34:** Okay, a musical transition occurs. Stage lighting changes and it seems instrumental only.
+    *   **04:34 - 05:01:** It's AZKi, another VTuber, introducing La+ Darknesss. Again, just talking.
+
+    Hold on, I need to make sure. Does La+ sing anywhere? I replayed the scenes, and yes, it's all talking, no actual singing. Therefore, my conclusion is that *no* vocal music is present in this clip.
+
+    Now, I'll build the JSON object. Since no vocal music is detected, the `contains_vocal_music` field for all scenes should be `false`. Also, all song-related fields like `song_title`, `original_artist`, etc. will be `null`.
+
+    Let's describe each scene:
+    *   **Scene 1 (00:00 - 04:22):** La+ Darknesss is speaking on stage. This is a scene about her album and upcoming song, even though she is not singing.
+    *   **Scene 2 (04:22 - 04:34):** A musical stage transition takes place.
+    *   **Scene 3 (04:34 - 05:01):** AZKi introduces La+ Darknesss.
+
+    I will now refine the scene descriptions for clarity.
+    *   Scene 1: "The video begins with VTuber La+ Darknesss standing on a stage, addressing her audience, talking about her 1st album and promoting her music releases."
+    *   Scene 2: "A brief musical transition sequence features stage lighting changing across empty performance platforms."
+    *   Scene 3: "VTuber AZKi appears on a different part of the stage, warmly introducing La+ Darknesss to the audience."
+
+    I double-check everything against the requirements: No vocal music means `contains_vocal_music: false` and the song information fields are all correctly set to `null`. The JSON structure is as specified.
+
+    Now I'll draft the JSON output.
+    ```json
+    {
+      "global_summary": "The video features two VTubers, La+ Darknesss and AZKi. La+ Darknesss first speaks to the audience about her 1st album release and upcoming music, followed by a brief stage transition, and finally, AZKi introduces La+ Darknesss on stage. No vocal musical performance occurs in this clip.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "04:22.000",
+          "description": "VTuber La+ Darknesss speaks directly to the camera while standing on a stage, discussing her new 1st album 'Lap-sama Artist-ka Keikaku' and upcoming music releases.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "04:22.000",
+          "end": "04:34.000",
+          "description": "A short, instrumental musical transition takes place, showing the stage lighting changing colors and illuminating empty performance areas.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+
+
+...
