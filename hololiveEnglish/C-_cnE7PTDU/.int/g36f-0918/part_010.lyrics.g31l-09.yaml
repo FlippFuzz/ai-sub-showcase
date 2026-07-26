@@ -1,0 +1,162 @@
+name: part_010
+total_attempts: 1
+video_duration_ms: 293978
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a live concert segment from the 'hololive English
+    4th Concert - Serendipity-'. The first part (00:00 - 00:57) consists of stage
+    banter by Takanashi Kiara and other performers. This is followed by a solo performance
+    of the song 'Martyr' by Takanashi Kiara (00:57 - 04:22). The video concludes with
+    the end of the sneak peek.
+  scenes:
+  - start: '00:00.000'
+    end: '00:57.000'
+    description: Stage banter and interaction with the audience by Takanashi Kiara
+      and other performers before the musical performance begins.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:57.000'
+    end: '04:22.000'
+    description: Takanashi Kiara performs her song 'Martyr' on a concert stage with
+      backing dancers and elaborate lighting.
+    contains_vocal_music: true
+    song_title: Martyr
+    original_artist: Takanashi Kiara
+    performer_in_video: Takanashi Kiara
+    original_language: English
+    reference_lyrics_og: |-
+      I’ll be your exit route
+      Pound the gavel and sentence me to doom
+      Even though I’m just doing what you do
+      Decide which lies become the truth
+      No, you never really thought about it that far
+      Judging me when I can see you’ve got the same scars
+      That’s the price that I pay, it’s a deep mark
+      Come, pick your sacrifice
+      Nail me to your crucifix
+      Nothing else can fix this
+      So I’ll take the blame
+      See yourself reflected and not corrected
+      One request, it’s:
+      Don’t be gentle
+      Don’t be kind when you
+      Murder, murder, murder the martyr
+      Poke their eyes out
+      Leave them blind
+      Murder, murder, murder the martyr
+      One request it’s -
+      Hypocrisy
+      I’ve seen what you do in private rings
+      All your friends yeah they know watcha really think
+      To your glory, the masses keep on singing
+      Point at me in a hurry
+      Pick a scapegoat for the new controversy
+      Even when I’m buried, hidden, silent, you’ll be wary
+      Please dear god show them mercy
+      Uh
+      Nail me to your crucifix
+      Nothing else can fix this
+      So I’ll take the blame
+      See yourself reflected and not corrected
+      One request, it’s:
+      Don’t be gentle
+      Don’t be kind when you
+      Murder, murder, murder the martyr
+      Poke their eyes out
+      Leave them blind
+      Murder, murder, murder the martyr
+      One request it’s -
+      Break me now
+      (Break, break, break, break, break)
+      Take me down ~
+      (Do you love me?) (Do you love me?)
+      Me down ~
+      (Break, break, break, break, break)
+      (Do you love me?) (Do you love me?)
+      One request it’s -
+      I see your sins
+      And they’re in your soul
+      Consume and ignore
+      Decay to your core
+      I’ll never win to you
+      But within you’ll ~
+      (Break, break, break, break)
+      And when I ~
+      (Break, break, break, break)
+      You will ~
+      (Break, break, break, break)
+      Break, break, break, break ~
+      And in your hands, the hammer pounds the nail in
+      Don’t be gentle
+      Don’t be kind when you
+      Murder, murder, murder the martyr
+      Poke their eyes out
+      Leave them blind
+      Murder, murder, murder the martyr
+      One request it’s -
+      Do you love me?
+      Again ~ again ~ again ~
+      Do you love me?
+      One request it’s -
+      Do you love me?
+      Again ~ again ~ again ~
+    reference_lyrics_en: null
+  - start: '04:22.000'
+    end: '04:45.000'
+    description: The performance concludes, the audience cheers, and a final screen
+      appears stating the sneak peek has ended.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Musical Performance Video**
+
+    Okay, here's the breakdown of what I'm going to do. The user wants me to identify the song performed in this video, the original artist, and retrieve the full lyrics, all based on a video of a concert called "Serendipity".
+
+    First, I need to analyze the video itself. From what I see, it looks like:
+
+    *   **Scene 1 (00:00 - 00:57):** This is more of an intro or stage setup, with two performers interacting with the audience, chanting "Serendipity". Not a song performance in the classic sense.
+    *   **Scene 2 (00:57 - 04:22):** This is the main focus, a performance by Takanashi Kiara from Hololive. It's the key to identifying the song.
+    *   **Scene 3 (04:22 - End):** The performance concludes, audience applauds, and there's a screen with text, indicating the end of a "sneak peek." The concert name "Serendipity" is on this screen.
+
+    Based on the title screen, I'll need to focus my search on this concert. I know the performer is Takanashi Kiara. The video has some identifiable lyrical snippets. My goal here is to use these clues to identify the song. I've noted a few key phrases like "I'll be your executioner, sent to gallows..." and "One requested".
+
+    My search strategy is fairly straightforward. I'll use `default_api:web_search_langsearch_multi` to conduct a search. I'm going to try three search queries:
+
+    1.  "Takanashi Kiara song I'll be your executioner lyrics"
+    2.  "hololive English 4th Concert Serendipity Takanashi Kiara setlist"
+    3.  "I'll be your executioner sent to gallows even though I'm stealing what you do lyrics"
+
+    The idea is to find matching results from these searches that will identify the song's title, artist (besides Kiara, if it's a cover), and hopefully the complete lyrics. I'll need to parse the search results carefully to extract the necessary information and populate the JSON response.
+
+    A key thing is that the instructions were very clear about *not* transcribing. The lyrics must come from the search results, not my interpretation. I will focus on that throughout the process.
+
+    So, first, I will perform the search using those queries. Then, I'll parse the results and construct the JSON output. Let's start the search.
+
+
+
+    **My Search Strategy for "Martyr" Lyrics**
+
+    Okay, so the initial search confirmed the song's title: "Martyr" by Takanashi Kiara, performed at the "hololive English 4th Concert - Serendipity-". That's a good starting point. Now, I need the full lyrics. I *could* just rely on my memory of the video snippet, or even just a quick confirmation search using Google, but the instructions are pretty clear: use the search tool. Alright, compliance is key here.
+
+    My initial thought was to re-use the implicit setlist search to get the lyrics. Then I second-guessed myself and decided on a direct search for "Takanashi Kiara Martyr lyrics." I'm confident in the title confirmation, so now I'll do one more direct search for the full lyrics. This uses the second of my 3 allotted turns. Let's get this done.
+
+
+
+    Okay, here's my summary, presented as a stream of thought:
+
+    **Analyzing the "Martyr" Data**
+
+    Alright, I've got everything I need. The song is "Martyr," the artist is Takanashi Kiara, and the lyrics are in hand thanks to that search result. Now, the real work begins – time to synthesize this data and formulate a complete response. I need to make sure I deliver a polished summary.
+
+
+...
