@@ -1,0 +1,42 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 300855
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features two VTubers, Hoshimachi Suisei and Mori Calliope,
+    standing on a stage with large blue crystal structures. They are engaged in continuous
+    conversation and banter, specifically discussing an upcoming viewer voting event
+    to select a song for a members-only stream. No vocal musical performance occurs
+    within this segment.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: The two VTubers converse on a crystal-adorned stage, interacting
+      with an on-screen poll displaying song titles like 'I can't control myself'
+      and 'Caramel Pain'. They are speaking throughout, with no singing present.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Thought Process: Analyzing the VTuber Video**
+
+    Alright, let's break this down. First, the user wants me to map scenes, identify songs, and find lyrics, but with strict constraints: no manual input, full lyrics only, handle failures gracefully, and prioritize official artist names. The video description sets the stage: two VTubers, Suisei and Calliope, chatting about voting for a members-only stream performance. The menu shows song options, and the background is a crystal stage.
+
+    Now, scene mapping is first. Watching the video, it's clear: from the start (00:00) until the end (04:54), it's continuous dialogue. They're talking, showing the voting screen, and interacting – no actual singing. Therefore, `contains_vocal_music` is immediately `false` for the entire duration. The video ends at the 5-minute mark.
+
+    Since they're not *performing* any of the listed songs ("I can't control myself", "Dancing Reed", "Blue World", "Caramel Pain"), the "detect ALL vocal songs playing" instruction is easily satisfied. I double-check for incidental singing. None. They're merely *discussing* future performances. That means I don't need to search for song titles or lyrics; I can set those fields to `null`.
+
+    The global summary needs to reflect this. The video features Suisei and Calliope, crystal stage, banter, and a voting discussion. No singing. So, I draft: "The video features two VTubers, Hoshimachi Suisei and Mori Calliope, standing on a stage with large blue crystal structures. They are engaged in continuous conversation and banter, specifically discussing an upcoming viewer voting event to select a song for a members-only stream. No vocal musical performance occurs within this segment."
+
+    The single scene covers the entire video length. Its details: "The two VTubers converse on a crystal-adorned stage, interacting with an on-screen poll displaying song titles like 'I can't control myself' and 'Caramel Pain'. They are speaking throughout, with no singing present." `Contains_vocal_music` is, of course, false. The scene spans from 00:00.000 to 05:00.000.
+
+    Now, I'll structure this data according to the provided schema, plugging in the details.
+
+    Finally, a quick check against the constraints: no manual transcription/translation? Check. Lyrics fields will be null since no music is performed, as instructed, and the schema is meticulously followed. I'm ready to produce the JSON output which will contain a global summary and a single scene to fully describe what is taking place.
+
+
+...
