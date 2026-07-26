@@ -1,0 +1,97 @@
+name: part_013
+total_attempts: 1
+video_duration_ms: 300321
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features Shiranui Flare in a virtual live performance.
+    It starts with her performing the song 'Boku no Hikouki', followed by a segment
+    where she talks about the performance and announces her new original song, 'Silent
+    Flame, Never Fade', which she then performs.
+  scenes:
+  - start: '00:00.000'
+    end: '02:42.000'
+    description: Shiranui Flare performs 'Boku no Hikouki' on a virtual stage. Lyrics
+      are shown on screen during the performance.
+    contains_vocal_music: true
+    song_title: 僕の飛行機
+    original_artist: null
+    performer_in_video: Shiranui Flare
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:42.000'
+    end: '04:36.000'
+    description: Shiranui Flare talks to the audience, discusses the previous performance,
+      and announces her new original song 'Silent Flame, Never Fade', mentioning it
+      was written and composed by Satoshi Yaginuma.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:36.000'
+    end: '05:00.000'
+    description: Shiranui Flare performs her new original song 'Silent Flame, Never
+      Fade' on the virtual stage. Lyrics are shown on screen.
+    contains_vocal_music: true
+    song_title: Silent Flame, Never Fade
+    original_artist: Satoshi Yaginuma
+    performer_in_video: Shiranui Flare
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing Shiranui Flare's Performance Video**
+
+    Okay, so the user wants me to do a scene-by-scene analysis of this Shiranui Flare video. My primary task is to find the lyrics to the songs performed, but I need to do so correctly given the instructions. First, I need to break down the video into its constituent parts. Based on the video content, I've identified three distinct scenes.
+
+    *   **Scene 1 (00:00 - 02:42):** It's Shiranui Flare performing "Boku no Hikouki" ("僕の飛行機"), clearly indicated by the on-screen text.
+    *   **Scene 2 (02:42 - 04:36):** This seems to be a talking or announcement segment, so I don't need to do any work there.
+    *   **Scene 3 (04:36 - 05:00):** Here, Flare performs "Silent Flame, Never Fade." The title is on the screen.
+
+    Now, let's get down to the lyrics search. It's a bit more complicated than just using the video performer's name. I need to get the lyrics for both songs, but I need to use the original artists/composers *only*. I see "僕の飛行機" on the screen, but Flare is performing it, so I must find the original. For the second song, "Silent Flame, Never Fade," the on-screen credits are helpful: "作詞・作曲：八木沼悟志" (Lyrics/Composition: Satoshi Yaginuma). The instructions say: "Do NOT include the names of the video performers (e.g., VTubers singing a cover) in your search query."
+
+    So the game plan is:
+
+    *   For "Boku no Hikouki" (僕の飛行機), I need to find the original artist or composer.
+    *   For "Silent Flame, Never Fade," my search will use "八木沼悟志".
+
+    I'm ready to use the `default_api:web_search_langsearch_multi` to perform the following searches, using ONLY the original composer/artist:
+
+    *   **Search 1:** "僕の飛行機 歌詞" (to find the original lyrics in Japanese).
+    *   **Search 2:** "Boku no Hikouki lyrics English" (or a search for the original).
+    *   **Search 3:** "Silent Flame, Never Fade 八木沼悟志 歌詞" (This is perfect!)
+    *   **Search 4:** "Silent Flame, Never Fade lyrics English" (to find the translated lyrics)
+
+    I'm confident these searches will find the right lyrics!
+
+
+
+    **My Analytical Process for Lyric Retrieval**
+
+    Okay, so I've hit a bit of a snag. My initial searches for "Silent Flame, Never Fade" and "僕の飛行機" (Boku no Hikouki) didn't deliver the specific lyrics I needed. Just a bunch of generic results. Damn.
+
+    I'm working within specific constraints, I'm not allowed to transcribe or translate. So, based on the failed searches, the instructions were clear - I was prepared to set the lyric fields to `null`.
+
+    Hold on a second... looking at the video, there *are* lyrics on-screen during the performances! I can see some lines for "Boku no Hikouki" and "Silent Flame, Never Fade". However, my instructions are strict: "ONLY source of lyrics must be the web search tool". I'm not allowed to use what I can see on-screen, no matter how tempting. That's a fail.
+
+    Right, time to refine the search. This "Boku no Hikouki" might be a cover. The on-screen text shows "僕の飛行機", so it is likely a cover by Shiranui Flare or her own work. I'll search "僕の飛行機 不知火フレア" or "僕の飛行機 歌詞". Nope, the result is still off. My search for "僕の飛行機 歌詞" didn't match the specific song.
+
+    Based on the rules, since the web search failed, I am going to have to set the lyrics fields to `null`. I cannot use the on-screen lyrics directly.
+
+
+
+    **My Reasoning Process**
+
+    Okay, so the search queries didn't turn up the lyrics for either song – "Boku no Hikouki" and "Silent Flame, Never Fade." I remember my instructions, the `SEARCH FAILURE FALLBACK` constraint. It's clear: if I can't find the official lyrics or a translation using the search tool, then I *must* set `reference_lyrics_og` and `reference_lyrics_en` to `null`.
+
+    Initially, I thought I had everything I needed to construct the response. I had the time markers, the song titles, and the performer.
+
+    However, just a second... upon closer examination of the video, it looks like the lyrics are actually *displayed* on the screen. My initial reaction was to jump in there and transcribe it myself, but I cannot do that. The instructions are crystal clear. The explicit prompt says "CRITICAL: Do NOT transcribe the audio or translate any lyrics yourself."
+
+    Therefore, even though the lyrics are visible and accessible, the `SEARCH FAILURE FALLBACK` constraint applies in this instance. Since the search tool couldn't find the lyrics, I need to set the lyrics to `null` for both songs. That's the correct approach.
+
+
+...
