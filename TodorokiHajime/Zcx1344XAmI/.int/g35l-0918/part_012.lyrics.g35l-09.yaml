@@ -1,0 +1,74 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 60028
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a birthday livestream intro featuring a virtual character
+    with spoken greeting at the beginning, followed by an electronic instrumental
+    background track accompanied by scrolling birthday messages.
+  scenes:
+  - start: '00:00.000'
+    end: '00:50.000'
+    description: A virtual character appears on screen with a brief spoken greeting
+      at the start, followed by electronic background music and a scrolling birthday
+      message graphic.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Clip**
+
+    Okay, let's break this down. The task is to analyze this video clip, identify any vocal songs present, divide it into scenes, and grab the official lyrics if possible. My first thought is to dive right in.
+
+    First, from 0:00 to 0:01.500, a VTuber appears. There's a tag on screen: `#お妙の生誕祭2025` or something similar, maybe `#みおの生誕祭2025`. I need to check the exact text to be sure. I can probably figure out the VTuber's name from this. They say something like "...arigatou...". I need to pay close attention to this first part and see if it's the beginning of a song, or just speaking.
+
+    Now, at 0:01, music starts. It sounds like an electronic beat, EDM, or maybe just instrumental music. The visual says "motion" and "BIRTHDAY 2026 LIVESTREAM" or "2025". I have to carefully listen from this point on and confirm whether there are any vocals actually in the music, or if it's just an instrumental intro or background music (BGM).
+
+    I'll divide the video into two parts: 0:00 - 0:01.500, where the VTuber speaks, and 0:01.500 to the end (0:50.000), where the instrumental track plays with scrolling text overlays. Specifically, in the second section, the text says "いつもはーとを応援してくれてありがとう！ ...". I need to verify that there are *no* sung vocals in this second part of the clip.
+
+    Let's confirm the audio overall: 0:00 is speaking; 0:01 onwards is purely instrumental, electronic/EDM music. No singing. So, it's very likely that `contains_vocal_music` is false for this clip. The song title, original artist, etc., will be set to `null` and so on, if this is truly instrumental.
+
+    Now, I'll do a quick search to see if there's a specific song title associated with this music, or if it's just BGM or intro music. I should also check the on-screen text: I see the tags `#お妙の生誕祭2025` (or possibly `#みおの生誕祭2025`) in the top right, and the overlay mentions "BIRTHDAY 2026 LIVESTREAM" and "motion". I'll search for "motion" to see if it's a known original song for this VTuber's birthday livestream. And, let's search specifically using the birthday stream tags, just in case - perhaps search for `#お妙の生誕祭` or `#みおの生誕祭`.
+
+
+
+    **Analyzing the VTuber Birthday Livestream Intro**
+
+    Okay, so I'm looking at this video, which is clearly a short teaser or introduction (00:00 - 00:50) for a VTuber's birthday livestream, likely tagged with something like `#お妙の生誕祭2025` or similar. The visual cue is a virtual character greeting the audience. The audio is instrumental electronic music (EDM/BGM) playing in the background while a birthday message scrolls across the screen. No vocals. No singing.
+
+    Given that, I'm confident that the `contains_vocal_music` field for this scene *must* be `false`. Consequently, all the song metadata fields, specifically `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en`, are definitively `null`.
+
+    Let me quickly double-check those timestamps to be absolutely certain: Start time is 00:00.000, and it runs up to 00:50.123, which I'm confident covers the entire duration of the clip. I'll represent the clip as running from 00:00.000 to 00:50.000 in my final description. The total video duration is clearly 50 seconds.
+
+    I need to make sure I get the JSON structure right. Let me quickly review the required JSON output format again:
+
+    ```json
+    {
+      "global_summary": "The video is a birthday livestream intro featuring a virtual character and background electronic music with a birthday message scrolling on screen.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "00:50.000",
+          "description": "A birthday livestream intro video featuring a virtual character speaking briefly at the start, followed by an electronic background music track with scrolling birthday messages.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Okay, I've got that committed to memory. I need to make sure my final response includes non-overlapping chronological scenes that cover the entire video. Also, make sure all the song fields are set to null and also that the `contains_vocal_music` is false, and also the final structure matches the example.
+
+    Alright, I'm ready to generate the final response.
+
+
+...
