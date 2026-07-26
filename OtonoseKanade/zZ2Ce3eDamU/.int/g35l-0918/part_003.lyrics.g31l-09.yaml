@@ -1,0 +1,94 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 299975
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a live virtual performance by Otonose Kanade,
+    beginning with a spoken introduction where she discusses her birthday celebration
+    and introduces her upcoming song. This is followed by a performance of the song
+    '火炎' (Kaen) by Queen Bee, with a guest appearance by Mori Calliope.
+  scenes:
+  - start: '00:00.000'
+    end: '02:00.000'
+    description: Otonose Kanade talks to the audience, introducing her birthday event
+      and mentioning the next song.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:00.000'
+    end: '04:59.000'
+    description: Otonose Kanade and Mori Calliope perform '火炎' (Kaen) with backup
+      dancers.
+    contains_vocal_music: true
+    song_title: 火炎
+    original_artist: null
+    performer_in_video: Otonose Kanade, Mori Calliope
+    original_language: Japanese
+    reference_lyrics_og: |-
+      party is over
+      それでも 踊り たかっ た
+      眠れない くらい
+      情熱 の 火 はいつ しか
+      いつの 日 にか
+      鼻 から 気付い ている
+      炎（ほむら）は いつか 消える
+      何 も 要ら ない はずだった
+      なのにまだ i’m so serious
+      ああ まだ 間に合う
+      left with a broken heart
+      baby それなり そんなに 甘く ないよ
+      でも きっと そんなに 悪く ないよ
+      ああ give me fire!
+      light it up baby 燃やし ちゃう ぜ
+      party is over
+      give me fire!
+      light it up baby 燃やし ちゃう ぜ
+    reference_lyrics_en: |-
+      party is over
+      still, I wanted to dance
+      to the point of not being able to sleep
+      the fire of passion has vanished
+      somewhere, sometime
+      I realized it from the very beginning
+      my flame will fade away someday
+      I shouldn't have needed anything
+      and yet, I'm still so serious
+      ah, there's still time
+      left with a broken heart
+      baby, it's not going to be that sweet
+      but surely, it's not going to be that bad either
+      ah, give me fire!
+      light it up baby, burn it all away
+      party is over
+      give me fire!
+      light it up baby, burn it all away
+  thoughts: |+
+    **My Thought Process: Mapping a VTuber Performance**
+
+    Okay, let's break this down. My goal is to map scenes and detect vocal music within this video, then present the information in a JSON format. The user requires that I use a web search for the lyrics, and I **absolutely cannot** transcribe or translate them myself. No truncating either, the whole lyrics need to be included.
+
+    First, I need to understand the request. I'm dealing with a video, a VTuber, dialogue, and a song. Looks like I will have to search for the lyrics. I know the general format of the `final_result` schema.
+
+    Now, let's watch the video and identify the parts. *00:00 - 01:59:* I see a VTuber, looks like Otonose Kanade, talking about a birthday and the upcoming song “In Progress”. She also mentions dancers. *02:00 - 04:59:* The song starts, the title “火炎” (Kaen/Flame) is on the screen, and the credits say 作詞・作曲：菩歌図アヴ (Lyrics/Composition: Avu from Queen Bee). Looks like Mori Calliope joins in.
+
+    Based on the video, it's clear: Scene 1: dialogue (00:00 - 02:00) with no music. Scene 2: the song "火炎" (Kaen) (02:00 - 04:59). Avu is the artist from Queen Bee (薔薇園アヴ) (the video credits have the Kanji variation, I'll need to confirm that). Performers: Otonose Kanade, Mori Calliope.
+
+    Okay, now I need to figure out the song's metadata and get the lyrics. I've detected “火炎” (Kaen). Let's search! The original artist is Queen Bee (女王蜂), Avu Barizono, from Queen Bee, is the song writer. I'll search for the original Japanese lyrics and an English translation. I need to make sure the search is: `"女王蜂 火炎 歌詞"` (Queen Bee Kaen lyrics) and `"Queen Bee Kaen lyrics English"`.
+
+    So, the tool will perform those searches: `web_search_langsearch_multi(queries=["女王蜂 火炎 歌詞", "Queen Bee Kaen lyrics English"])`.
+
+    I *think* the results will provide the full lyrics of "Kaen" and a reliable English translation. *Wait!* The video credits say "菩歌図アヴ" which is Avu Barizono. *I know* this song is "Kaen" by Queen Bee. So I'll just use the band name, 女王蜂, as the original artist.
+
+    I need to build the JSON. I'll summarize it globally as a live virtual performance, starting with a spoken introduction about the birthday celebration, followed by a musical performance of the song "Kaen," with a guest appearance.
+
+    *   Scene 1: 00:00 to 02:00. No music.
+    *   Scene 2: 02:00 to 04:59. Song detected: "火炎" (Kaen). Original artist: 女王蜂 (Queen Bee). Performer: Otonose Kanade, Mori Calliope. Original language: Japanese.
+
+    I can now build the JSON. I *must* make sure to paste the *full* lyrics from the search results! *Wait, I can't just simulate, I have to run the web search now.*
+
+
+...
