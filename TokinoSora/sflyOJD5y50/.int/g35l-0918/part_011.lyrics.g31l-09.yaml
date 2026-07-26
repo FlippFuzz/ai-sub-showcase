@@ -1,0 +1,125 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 300108
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features Tokino Sora presenting information about her
+    9th Anniversary Party, a TV CM, and her new original song, '決意のソラへ' (Ketsui no
+    Sora e). The second part of the video features a live performance of this song
+    by Tokino Sora.
+  scenes:
+  - start: '00:00.000'
+    end: '02:46.000'
+    description: Tokino Sora talks about her 9th Anniversary Party, a TV CM, and presents
+      information to the camera. Background music is instrumental.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:46.000'
+    end: '05:01.000'
+    description: Tokino Sora performs her song '決意のソラへ' (Ketsui no Sora e) live on
+      stage.
+    contains_vocal_music: true
+    song_title: 決意のソラへ
+    original_artist: まつもとななみ (Nanami Matsumoto)
+    performer_in_video: Tokino Sora
+    original_language: Japanese
+    reference_lyrics_og: |-
+      一度きりの私の物語は
+      運命を超えて煌めくんだ
+      行こう
+
+      ねぇ 私より私のことを
+      わかってくれるキミの存在が
+      臆病で泣き虫な心に
+      勇気と言う魔法をかけたの
+
+      チクタク
+      時計の針だけが進む
+      立ち止まってちゃダメだ
+      ソラ 転び八起きがお決まりでしょ
+
+      一つ一つ重ねてきた
+      大切なアルバムをめくるように
+      一つ一つ叶えてきた今日まで
+      その全てにキミがいてくれた
+
+      終わりのない夢を
+      ずっとずっとずっとずっと
+      追いかけて 行こう 行こう
+
+      ねぇ ここで笑い合えることが
+      何よりも大事な真実
+
+      チクチク
+      イタズラなハートが痛む
+      空回り 空（そら）回り
+      思考回路フル回転で
+      よーいどん
+
+      泣いて 泣いて 泣いた夜も
+      大切な人生のストーリーだから
+      夢を夢で終わらせたくないんだ
+      まだ見ぬ景色を見に行こうよ
+
+      もっともっと かがやいて
+      高く高く 飛び立とう
+      奇跡さえも越えて
+
+      一つ一つ重ねてきた
+      未来地図のページをめくるように
+
+      泣いて 泣いて 泣いた夜も
+      大切な人生のストーリーだから
+      夢を夢で終わらせたくないんだ
+      まだ見ぬ景色を見に行こうよ
+
+      終わりのない歌を
+      キミに キミに キミへと届け
+      ずっとずっと誓うの
+      決意のソラへ 行こう
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Task and Approach**
+
+    Okay, here's the breakdown of what I need to do. First, I need to understand the video content: map the scenes, identify the songs, and then, crucially, retrieve official lyrics in both the original language and English. The critical constraints are that I *must* use the search tool and avoid manual work like transcription or translation. Truncating lyrics is a no-go, and placeholders are also forbidden. Most importantly, I'm to search using the *original artist*, not the performer. The given input is a video featuring Tokino Sora.
+
+    Now, I'll execute the plan. First, I'll analyze the video in detail, segmenting the scenes based on whether Tokino Sora is talking or performing a song. I'll listen for any vocal music and label its title. The video starts with Tokino Sora talking about an event, then transitions, and continues with more announcements and finally a song performance. I'm going to carefully define the scene boundaries based on this analysis, noting the timecodes. The talking sections should be "Scene 1" and the song performance should be "Scene 2".
+
+    Next, I need to resolve the song metadata. Scene 2 features the song "決意のソナエ" (Ketsui no Sonae) performed by Tokino Sora. The prompt mentions I need to find the "original artist/composer". I need to search to confirm this song is her own, or a song she is known for. I will perform a search using the artist name "ときのそら". I should be careful to search for the *original artist*, not the performer.
+
+    Finally, the lyric lookup. I'll need to find the lyrics for "決意のソナエ" by "ときのそら" (or whoever the composer is). I will search for the original Japanese lyrics and an English translation. The plan is to construct search queries, one in Japanese, and another in English. The search queries will be: `決意のソナエ ときのそら 歌詞` and `Ketsui no Sonae Tokino Sora lyrics English`. I need to ensure that the results yield the full lyrics without truncation.
+
+
+
+    **JSON Assembly: A Deep Dive**
+
+    Okay, so the task at hand is to break down this video and encapsulate it in a JSON format. Let's see... first, the title of the song is definitely "決意のソラへ" (Ketsui no Sora e), not "Sonae," based on the lyrics I found through my search. That was the easy part. The artist and lyricist are Tokino Sora, and the lyrics are by まつもとななみ (Nanami Matsumoto) with music and arrangement by 藤原彩豊 (Ayato Fujiwara). I've got the full Japanese lyrics, that's solid.
+
+    Now, time to craft this JSON. The video's core is Tokino Sora talking about her 9th Anniversary Party, a TV CM, and this new song, "決意のソラへ," followed by her live performance of the song. So that is going to be the global summary.
+
+    I need to break it down into scenes. From the video, I can see the structure is as follows:
+    *   Scene 1: 00:00.000 - 02:46.000 (Intro/Talk, non-vocal music).
+    *   Scene 2: 02:46.000 - 05:01.000 (Performance, vocal music).
+
+    Hold on, the instruction says I MUST retrieve a full English translation of the lyrics. I have the Japanese lyrics, but none of the search results offered a complete English version. I should *not* translate it myself, the prompt is very clear on that. The prompt is also very clear "You MUST retrieve and provide the FULL, UNTRUNCATED lyrics of the songs... if you cannot find them, set the field to null."
+
+    I did find the Japanese lyrics. So the `reference_lyrics_en` field should be set to null.
+
+    Here's the Japanese lyrics:
+
+    *   (Lyrics in Japanese, as provided)
+
+    Okay, now let's construct the JSON. Double-checking those timestamps... the song *ends* at 05:01. I need to make sure the time is set correctly. The prompt says chronological, non-overlapping. That's right! The scenes do not overlap!
+
+    *   00:00 - 02:46 Talk.
+    *   02:46 - 05:01 Song.
+
+    Alright, with the adjustments on time, it's good to go!
+
+
+...
