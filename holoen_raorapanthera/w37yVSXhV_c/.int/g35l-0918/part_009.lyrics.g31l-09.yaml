@@ -1,0 +1,222 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 300748
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features VTubers interacting on a virtual stage, followed
+    by a vocal performance of the song '言って。' (Itte) by Yorushika.
+  scenes:
+  - start: '00:00.000'
+    end: '04:00.000'
+    description: Characters interact, talk, and pose on a virtual stage.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:00.000'
+    end: '05:00.000'
+    description: The characters perform the song '言って。' (Itte) on stage.
+    contains_vocal_music: true
+    song_title: 言って。 (Itte)
+    original_artist: Yorushika
+    performer_in_video: null
+    original_language: Japanese
+    reference_lyrics_og: |-
+      言って
+      あのね、私実は気付いてるの
+      ほら、君がいったこと
+      あまり考えたいと思えなくて
+      忘れてたんだけど
+      盲目的に盲動的に
+      妄想的に生きて
+      衝動的な焦燥的な
+      消極的なままじゃ
+      駄目だったんだ
+      きっと、人生最後の日を
+      前に思うのだろう
+      全部、全部言い足りなくて
+      惜しいけど
+      あぁ、いつか人生最後の日
+      君がいないことを
+      もっと、もっと、もっと
+      もっと、ちゃんと言って
+      あのね、空が青いって
+      どうやって伝えればいいんだろうね
+      夜の雲が高いのって
+      どうすれば君もわかるんだろう
+      言って
+      あのね、私実はわかってるの
+      もう君が逝ったこと
+      あのね、わからず屋って言うんだろうね
+      忘れたいんだけど
+      もっとちゃんと言ってよ
+      忘れないようメモにしてよ
+      明日十時にホームで
+      待ち合わせとかしよう
+      牡丹は散っても花だ
+      夏が去っても追慕は切だ
+      口に出して
+      声に出して
+      君が言って
+      そして人生最後の日
+      君が見えるのなら
+      きっと、人生最後の日も
+      愛をうたうのだろう
+      全部、全部無駄じゃなかったって言うから
+      あぁ、いつか人生最後の日
+      君がいないことがまだ
+      信じられないけど
+      もっと、もっと、もっと、もっと
+      もっと、もっと、もっと、君が
+      もっと、もっと、もっと、もっと
+      もっと、ちゃんと、言って
+    reference_lyrics_en: |-
+      Say it
+      Hey, I'm actually coming to realize, you know, that thing you said... It didn't seem like I really wanted to think about it much, and I totally forgot about it but-
+      Living blindly, recklessly, full of delusions
+      Impulsively, impatiently, half-heartedly; it was really no good
+      I'm sure that before the final day of my life I'll think that it's regrettable
+      I didn't get to say everything, everything
+      Ahh, someday on the last day of my life, tell me more, more, more, more, properly, that you're not here
+      Hey, how should I convey to you the blueness of the sky, I wonder?
+      What should I do so you can also get just how high the clouds at night are?
+      Say it
+      You know, I actually already know that you've already passed on
+      You know, you'll probably call me a stubborn blockhead, right?
+      I wanna forget but- more, tell me properly
+      Make a memo so I don't forget
+      Let's meet 10 o'clock tomorrow at home, or something like that
+      Even if the peony petals scatter it's still a flower
+      Even if summer is gone, I still cherish those memories earnestly
+      Put it into words, say it out loud
+      You say it
+      And on the last day of my life, if I am able to see you
+      Surely I'll be singing my love on the last day of my life as well
+      I'll say none of it, none of it ended up being for nothing so-
+      Ahh, someday on the last day of my life, I still won't be able to believe that you're gone but-
+      More, more, more, more, more, more, more, you-
+      More, more, more, more, properly, say it to me.
+  thoughts: |+
+    **My Analysis of the VTuber Video and Song Identification**
+
+    Okay, the task is to identify the songs in this VTuber performance. I'm starting by breaking down the video. From the initial review, I see there's an intro phase from 00:00 to 04:00 – it's mostly character interactions and stage presence, no singing. Then, at 04:00, the music kicks in, and the singing begins. This is where I need to focus.
+
+    The crucial clue comes at 04:03 – on-screen text identifies the song as "言って。" (Itte) with lyrics and music by "n-buna." That's my starting point. Since n-buna is the composer, and the common artist name is Yorushika, this is what I'm working with.
+
+    Now, I need to execute a search to gather the requested lyrics. I'm aiming for the full Japanese lyrics and, ideally, an English translation. My initial plan is straightforward: use "言って。" (Itte) as the song title, and "n-buna" or "Yorushika" as the artist. I'll search for "言って。 ヨルシカ 歌詞" (Itte. Yorushika lyrics) and "Itte. Yorushika lyrics English".
+
+    The prompt specifies I need to provide full lyrics, not truncated versions. If I can't locate the complete lyrics, I'll set them as `null`. And the prompt is very clear that I need to look up the original artist; the VTubers are just performing, so I should be using the composer's name for this.
+
+    I'm being told to use the available search tool, so I'll utilize `default_api:web_search_langsearch_multi`. I'm double-checking the video timestamps, to confirm that scene one is the "no singing" interaction, and scene two begins the performance.
+
+    Now, I'll structure the response as a JSON:
+
+    *   The `global_summary` will be: "The video features a virtual stage where characters interact before transitioning into a vocal performance of the song '言って。' (Itte) by Yorushika/n-buna."
+    *   Then, I'll break down the `scenes`:
+        *   Scene 1: 00:00 to 04:00 - Interactions, no music.
+        *   Scene 2: 04:00 to 05:00 - Singing performance of "Itte.".
+
+    My final step is to execute the search using the queries: `["言って。 ヨルシカ 歌詞", "Itte Yorushika lyrics English"]` and integrate those results (or, if necessary, the `null` placeholders) into the JSON.
+
+
+
+    **Finalizing the Analysis: Yorushika's "言って。" (Itte)**
+
+    Okay, here's the breakdown. I've identified the song in question as "言って。" (Itte) by Yorushika/n-buna. I've successfully located both the original Japanese lyrics and an English translation. My plan for structuring the analysis is now solidified.
+
+    The video summary will begin with a brief `global_summary`: "The video begins with character interactions on a stage, followed by a musical performance of the song '言って。' (Itte) by Yorushika/n-buna."
+
+    Breaking down the scenes, I've got:
+
+    *   00:00.000 - 04:00.000: This section will feature no singing or musical performance.
+    *   04:00.000 - end (approximately 05:00.000): This is where the musical performance of "Itte." by Yorushika begins and concludes.
+
+    The critical part now is the lyrics. I will populate the `reference_lyrics_og` and `reference_lyrics_en` fields with the text I've found in the search results. I've double-checked the timestamps in the search to confirm the video's end time.
+
+    Here are the lyrics, ready to be integrated:
+
+    **(Japanese Lyrics)**
+
+    言って
+    あのね、私実は気付いてるの
+    ほら、君がいったこと
+    あまり考えたいと思えなくて
+    忘れてたんだけど
+    盲目的に盲動的に
+    妄想的に生きて
+    衝動的な焦燥的な
+    消極的なままじゃ
+    駄目だったんだ
+    きっと、人生最後の日を
+    前に思うのだろう
+    全部、全部言い足りなくて
+    惜しいけど
+    あぁ、いつか人生最後の日
+    君がいないことを
+    もっと、もっと、もっと
+    もっと、ちゃんと言って
+    あのね、空が青いって
+    どうやって伝えればいいんだろうね
+    夜の雲が高いのって
+    どうすれば君もわかるんだろう
+    言って
+    あのね、私実はわかってるの
+    もう君が逝ったこと
+    あのね、わからず屋って言うんだろうね
+    忘れたいんだけど
+    もっとちゃんと言ってよ
+    忘れないようメモにしてよ
+    明日十時にホームで
+    待ち合わせとかしよう
+    牡丹は散っても花だ
+    夏が去っても追慕は切だ
+    口に出して
+    声に出して
+    君が言って
+    そして人生最後の日
+    君が見えるのなら
+    きっと、人生最後の日も
+    愛をうたうのだろう
+    全部、全部無駄じゃなかったって言うから
+    あぁ、いつか人生最後の日
+    君がいないことがまだ
+    信じられないけど
+    もっと、もっと、もっと、もっと
+    もっと、もっと、もっと、君が
+    もっと、もっと、もっと、もっと
+    もっと、ちゃんと、言って
+
+    **(English Translation)**
+
+    Say it
+    Hey, I'm actually coming to realize, you know, that thing you said... It didn't seem like I really wanted to think about it much, and I totally forgot about it but-
+    Living blindly, recklessly, full of delusions
+    Impulsively, impatiently, half-heartedly; it was really no good
+    I'm sure that before the final day of my life I'll think that it's regrettable
+    I didn't get to say everything, everything
+    Ahh, someday on the last day of my life, tell me more, more, more, more, properly, that you're not here
+    Hey, how should I convey to you the blueness of the sky, I wonder?
+    What should I do so you can also get just how high the clouds at night are?
+    Say it
+    You know, I actually already know that you've already passed on
+    You know, you'll probably call me a stubborn blockhead, right?
+    I wanna forget but- more, tell me properly
+    Make a memo so I don't forget
+    Let's meet 10 o'clock tomorrow at home, or something like that
+    Even if the peony petals scatter it's still a flower
+    Even if summer is gone, I still cherish those memories earnestly
+    Put it into words, say it out loud
+    You say it
+    And on the last day of my life, if I am able to see you
+    Surely I'll be singing my love on the last day of my life as well
+    I'll say none of it, none of it ended up being for nothing so-
+    Ahh, someday on the last day of my life, I still won't be able to believe that you're gone but-
+    More, more, more, more, more, more, more, you-
+    More, more, more, more, properly, say it to me.
+
+    With
+
+...
