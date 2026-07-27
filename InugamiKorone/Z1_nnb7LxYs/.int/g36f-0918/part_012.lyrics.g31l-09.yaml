@@ -1,0 +1,43 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 160048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a live musical performance by the virtual YouTuber
+    Inugami Korone during her 7th Anniversary Live event. The song performed is titled
+    "LAZY ON NIGHT!".
+  scenes:
+  - start: '00:00.000'
+    end: '02:40.000'
+    description: Inugami Korone performs her song "LAZY ON NIGHT!" on a virtual stage.
+      The scene is a single, continuous musical performance.
+    contains_vocal_music: true
+    song_title: LAZY ON NIGHT!
+    original_artist: Inugami Korone
+    performer_in_video: Inugami Korone
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Approach to Identifying and Retrieving Lyrics**
+
+    Okay, so I've got this video of Inugami Korone performing, and I need to nail down the song and get the lyrics in both Japanese and English. No problem, this is right up my alley. The on-screen text "LAZY ON NIGHT! INUGAMI KORONE 7th ANNIV. LIVE" pretty much screams the song title, and the context strongly suggests it's an original piece for her anniversary. Still, I need to confirm that.
+
+    It's a straightforward, continuous performance, so I'm treating the whole thing as a single scene. My strategy is pretty classic: start with a direct search. I'll hit the web with "Inugami Korone Lazy on Night lyrics" and "Inugami Korone Lazy on Night lyrics English translation" right off the bat.
+
+    Now, I'm anticipating this being a Japanese original, so I'm already thinking about refinement. If the English searches don't immediately cough up the full lyrics, I'll switch gears and search for "Inugami Korone Lazy on Night official lyrics Japanese." I know I'll have to use the `web_search_langsearch_multi` tool.
+
+    My plan is simple: I'll launch a parallel search using that tool. First, I'm going to run those three queries simultaneously. I'll execute a web search with the queries: "Inugami Korone Lazy on Night lyrics", "Inugami Korone Lazy on Night official lyrics Japanese", and "Inugami Korone Lazy on Night lyrics English translation." Then, I'll process the results. My primary objective is extracting the complete, untruncated lyrics. If I find them, great! If not, I'll set the results to null. Finally, I'll finalize the `final_result` structure with the data I've gleaned.
+
+
+
+    **My Assessment of the Query Results**
+
+    Okay, so I've confirmed that "Lazy on Night!" is indeed the Inugami Korone song, the video title seals that deal. I *had* thought I could craft the response, but hold on... the lyrics snippets are throwing me off. I see snippets for "Wonky Monkey" and other songs, but nothing confirming "Lazy on Night!" lyrics in those previews. Hmm, the video is from her 7th Anniversary Live, which makes me suspect the song is either very new or just hasn't been widely indexed.
+
+    Let me take another close look... Nope. I'm not seeing definitive results for *those* lyrics, just other tracks. I've got to follow the constraint here. If the official lyrics or a translation aren't in the search results, I *must* set the lyrics fields to null.
+
+    So, I'm going to move forward, identify the scene, and song title, and then, unfortunately, set those lyrics fields to `null`.
+
+
+...

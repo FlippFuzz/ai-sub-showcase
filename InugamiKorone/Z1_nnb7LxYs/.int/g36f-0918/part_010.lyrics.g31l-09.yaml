@@ -1,0 +1,120 @@
+name: part_010
+total_attempts: 1
+video_duration_ms: 300048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a virtual stage performance by Inugami Korone,
+    performing two distinct songs. The first song is a fast-paced electronic track,
+    followed by a transition featuring visual elements of roses, and then a second
+    performance of a song titled 'Mafiosa' (マフィオーザ), credited to FAKE TYPE.
+  scenes:
+  - start: '00:00.000'
+    end: '01:15.000'
+    description: Inugami Korone performs a fast-paced electronic song on a stage with
+      a large ensemble of virtual backup dancers wearing identical outfits. The chorus
+      of the song features the repeated word 'PANTS'.
+    contains_vocal_music: true
+    song_title: PANTSU
+    original_artist: Inugami Korone
+    performer_in_video: Inugami Korone
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:15.000'
+    end: '01:31.000'
+    description: A transition scene featuring a dark screen, static, and a close-up
+      of red roses in a vase, followed by a dark stage before the next performance.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:31.000'
+    end: '05:01.000'
+    description: Inugami Korone performs the song 'Mafiosa' on a virtual stage. The
+      background screens display stylized animation, and on-screen text identifies
+      the creative team as TOPHAMHAT-KYO (lyricist), FAKE TYPE. (composer), and DYES
+      IWASAKI (track maker).
+    contains_vocal_music: true
+    song_title: マフィオーザ
+    original_artist: FAKE TYPE.
+    performer_in_video: Inugami Korone
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Thought Process: Analyzing, Mapping, and Retrieving Lyrics**
+
+    Okay, here's how I'm approaching this. First, I need to understand what's being asked. My goal is to map the scenes in the video, identify the songs performed, and then grab the official lyrics (in both Japanese and English) for each song. The key here is *official* lyrics, which means I'm using a search tool to get them. No manual work. No guessing. If I can't find *complete* lyrics, I set them to null – I don't truncate, I don't make assumptions, and I don't use placeholders. The prompt demands precision, completeness and accuracy.
+
+    The video content is Inugami Korone performing in a virtual environment. I see two distinct song segments.
+
+    First, I break down the video into scenes. Segment 1 (00:00-01:15) sounds like a fast-paced electronic song. I hear the word "PANTSU" repeated in the chorus. It's almost certainly "PANTSU," but I need to search to confirm the title.
+
+    Segment 2 (01:15-01:31) is a transition with no vocals.
+
+    Segment 3 (01:31-05:01) has a different song. I can see text that says "MAFIA OSA" and the chorus contains "Mafiosa". I also see "FAKE TYPE." listed as the Lyricist, Composer and Track, so that song looks like "Mafiosa" by FAKE TYPE.
+
+    Next, I need to solidify the song metadata. Song 1 (00:00 - 01:15) is very likely titled "PANTSU" or something similar, and the performer is Inugami Korone. I'll need to confirm that via search. For Song 2 (01:31 - 05:01), the title seems to be "Mafiosa," given the chorus, and on-screen text indicates it's by FAKE TYPE. I need to make sure about the spelling ("Mafiosa" or "Mafioso")
+
+    Now comes the lyrics lookup. I'm going to leverage the search tool. My strategy is a parallel search using specific queries for each song and language.
+
+    The plan is to use a multi-search, here are my queries:
+
+    *   For Song 1: "Inugami Korone PANTSU 歌詞" (Japanese lyrics) and "Inugami Korone PANTSU lyrics English" (English translation).
+    *   For Song 2: "FAKE TYPE. Mafiosa 歌詞" (Japanese lyrics) and "FAKE TYPE. Mafiosa lyrics English" (English translation).
+
+    My *internal* search is complete; these are the queries I would use, I need to wait for the results from the tool now. I need to make sure those results provide the *entirety* of the lyrics. If they are incomplete I need to set the lyrics to `null`.
+
+    Let me do a quick sanity check before I move on. Yes, that seems correct. Let me confirm my initial observation. Song 1 is definitively "PANTSU." Song 2 is "Mafiosa" by FAKE TYPE.
+
+    Now, my mind moves to structure. If I were the tool, it's returning data in a structured way. This will be the framework of my JSON structure.
+
+    *   **Global Summary:** The video features Inugami Korone performing two songs in a virtual setting.
+    *   **Scene Breakdown:**
+        *   Scene 1 (00:00 - 01:15): Contains vocal music (Song 1).
+        *   Scene 2 (01:15 - 01:31): Non-vocal transition.
+        *   Scene 3 (01:31 - 05:01): Contains vocal music (Song 2).
+
+    *   I am going to build out the JSON now:
+
+        *   **Scene 1 (Song 1):**
+            *   Title: PANTSU
+            *   Original Artist: Inugami Korone
+            *   Language: Japanese
+
+        *   **Scene 3 (Song 2):**
+            *   Title: Mafiosa
+            *   Original Artist: FAKE TYPE.
+            *   Language: Japanese
+
+    Now I perform a final check of all my work against the constraints: no manual transcription, no truncation or placeholders, the use of the search tool for official lyrics, and the desired JSON format are all confirmed.
+
+    Finally, I just need to get the real results from the search tool and populate those keys!
+
+
+
+    **Analysis and Adherence to Constraints**
+
+    Okay, here's how I'm approaching this, keeping the instructions front of mind. My initial search for lyrics related to "Inugami Korone Pantsu" didn't yield an official lyric page, just fan content, so I set that field to `null`. I went back and double-checked the video and the initial search to confirm the title of the song is indeed "Pantsu".
+
+    Then, for the second song, I started with "Mafiosa FAKE TYPE. 歌詞". That gave me hits for Nathy Peluso and Lartiste, so I had to refine the search. Looking more closely at the video, at 01:34, it credits "TOPHAMHAT-KYO (FAKE TYPE.)" for lyrics, and the title in Japanese is マフィオーザ (Mafiosa), so the artist is FAKE TYPE. I then did another search specifying FAKE TYPE. This also returned nothing, making it obvious I'm dealing with a potentially obscure track or something that's difficult to find the *official* lyrics for. I'm operating under the constraint that if the lyrics aren't available through the search tool, they are set to `null`.
+
+    I've been re-reading the prompts constantly, I was specifically instructed not to transcribe the video's audio, and that I'm only supposed to use the web search tool for this. The instructions are very clear that *If the official lyrics... cannot be retrieved... you MUST set the... fields to null*. I have to stick to those constraints.
+
+    I re-searched "マフィオーザ 歌詞" to check that it could be returned with different search terms, but the prompt says to use the original artist. My only sources can be the search tool. This is a very specific condition.
+
+    Also, I checked the instructions again to make sure that I'm reading the instruction carefully. It is clear that I must set `null` if the official lyrics could not be retrieved. I cannot listen to the audio track. The video titles are also useful to confirm the songs. I did an extensive number of searches, including `web_search_langsearch_multi(queries=["マフィオーザ 歌詞", "Pantsu Inugami Korone 歌詞"])`, and they returned nothing of value. The final check of the constraints confirms that the reference fields must be set to null.
+
+    I'm now drafting the JSON structure to encapsulate this information. There's a global summary, and then the scene breakdown. Based on my analysis, Song 1 is called "PANTSU" by Inugami Korone and Song 2 is called "マフィオーザ" by FAKE TYPE. The lyrics for both will be null.
+
+    I have just confirmed the group for Mafiosa is FAKE TYPE. Everything is ready, following the instructions. I am confirming that I cannot truncate any translations, if they are `null` I must set them to `null`.
+
+    **Conclusion**
+
+    Proceeding with the JSON structure, the lyrics for both songs will be `null` based on these thorough searches and the specified constraints. I've re-read the relevant part of the prompt many times and I am confident that is the correct course of action.
+
+
+...

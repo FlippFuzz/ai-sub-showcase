@@ -1,0 +1,88 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 299975
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a virtual performer (Inugami Korone) talking
+    to her audience after a live event, discussing her performance and introducing
+    commemorative merchandise for her 7th anniversary. The entire segment consists
+    of dialogue, product presentations with static images, and an instrumental outro
+    loop. No vocal song performances are included in this clip.
+  scenes:
+  - start: '00:00.000'
+    end: '01:29.000'
+    description: The video begins with the performer standing on stage after her set,
+      followed by a dialogue segment where she talks about her performance, interacting
+      with the audience.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:29.000'
+    end: '04:09.000'
+    description: The performer presents commemorative merchandise for her 7th anniversary,
+      showing static images of hoodies, bags, and keychains while describing them.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:09.000'
+    end: '04:59.000'
+    description: Final outro segment featuring a static promotional image with instrumental
+      background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Virtual Performer Video**
+
+    Okay, so the user wants me to dissect this video of a virtual performer, map it into scenes, and identify any vocal music with lyrics. Alright, here's the breakdown of my thought process:
+
+    First, I need to map the scenes, right? Let's go through the video frame by frame, or at least chunk by chunk. Initially, it looked like a performance at the very beginning (00:00 - 00:09), but after a closer look at the timeline, the performer is talking and announcing. So it seems like this is actually the end of a performance. The character says "i-ba-syo", then "Mafia-sa." Then, it's just talking and interacting with an audience (00:09 - 01:29), then she presents some products, with static images on screen (01:29 - 04:09). Finally, there's an outro screen with some instrumental background music (04:09 - 04:59).
+
+    But, wait... the main prompt specifies that I need to look for any *vocal* music, not just music in general. Let me re-listen to the audio. There's no singing in that outro instrumental loop. Hmm, let me re-examine the *entire* video again, just to be sure. Still, it seems like she's just talking the whole time. The video seems like it is a stream archive or summary.
+
+    Okay, is she singing *anywhere*? No, it's just dialogue. There's no full song performance in this video. The character mentions "パンつ" (Pantsu) and "マフィオーザ" (Mafia-sa) as songs she sang in the stream. But, the prompt clearly states that I need to detect all vocal songs *playing* in the video and find lyrics. So, the mention of these songs is not enough if they aren't actually *in* the video.
+
+    Wait a second. The example in the prompt is showing a "visual intro sequence" and then a "performance of the song 'God-ish'". So, I should be looking for a *performance* in this video, right? Okay, so: at 00:00, she's talking. 00:10, she's still talking ("イイナ", "ライブ初お披露目", "どうだった"). It's all just dialogue. No songs.
+
+    Conclusion: No vocal music (i.e., a song being performed as part of the video's content) is present. `contains_vocal_music` will be `false` for every scene.
+
+    But hold on, what about the background music during the product presentation (01:29 onwards)? Is that a "vocal song"? No, it's instrumental background music.
+
+    Therefore, `contains_vocal_music` should be `false` for all scenes.
+
+    So, here is the plan:
+
+    *   Map the video into scenes based on the visual flow: Intro/End of performance -> Talking -> Product Presentation -> Outro.
+    *   Since no vocal music is present, all `contains_vocal_music` will be `false`, and all song metadata fields will be `null`.
+
+    I better double-check. Does the prompt require me to find lyrics for those songs *mentioned*? The prompt says "detect ALL vocal songs playing, and use your available search tool to find the official lyrics for every single song." So it's looking for songs *audible* in the video. The songs she mentions are not "playing" in this clip.
+
+    So, my final conclusion is that `contains_vocal_music: false`.
+
+    So the scenes are:
+
+    *   Scene 1: 00:00 - 01:29 (End of performance and talking about it)
+    *   Scene 2: 01:29 - 04:09 (Merchandise presentation)
+    *   Scene 3: 04:09 - 04:59 (Outro screen)
+
+    Seems good.
+
+    Let's check the constraints one more time, just to be sure. No manual transcription, search failures become null, no truncation, no parallel search. (Parallel search doesn't matter since there are no songs).
+
+    Wait, is the background music *actually* a song? I am going to listen *very* carefully at 04:09 onwards. It's just instrumental. Okay, `contains_vocal_music` is definitely `false`.
+
+    What about the very beginning, 00:00 - 00:02? No, starting with a sound effect and "いーばしょ
+
+...
