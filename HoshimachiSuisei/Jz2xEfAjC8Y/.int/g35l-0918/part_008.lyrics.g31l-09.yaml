@@ -1,0 +1,70 @@
+name: part_008
+total_attempts: 1
+video_duration_ms: 300375
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a "major announcement" live stream by VTuber
+    Hoshimachi Suisei, during which she announces the establishment of her own independent
+    management office, "Studio Stellar". The video consists primarily of Suisei speaking
+    to the audience, interspersed with a brief animated transition showing the new
+    studio logo. There is background instrumental music throughout, but no vocal musical
+    performances.
+  scenes:
+  - start: '00:00.000'
+    end: '01:33.000'
+    description: Hoshimachi Suisei stands on a dimly lit stage, addressing the audience
+      directly to share a significant announcement.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:33.000'
+    end: '01:58.000'
+    description: A brief animated sequence features an astrolabe-like object, followed
+      by the reveal of the 'Studio Stellar' logo.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:58.000'
+    end: '05:00.000'
+    description: Suisei continues her presentation, detailing the implications of
+      the new studio establishment, including logo changes and fan club information.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing Suisei's Announcement Stream**
+
+    Okay, here's the task: analyze this Hoshimachi Suisei "Major Announcement" video.  First, let's break it down into scenes.  Scene 1 starts at the beginning (00:00 - 01:33), it shows Suisei on stage directly addressing the camera, clearly an announcement.  There's background music, but it's not the focus. Next up, Scene 2 (01:33 - 01:58) is a transition with a visual of a globe and associated instrumental music.  Finally, Scene 3 (01:58 - the end) is back to Suisei continuing her announcement about "Studio Stellar," again accompanied by background music.  No singing so far.
+
+    Wait, now I need to make *sure* there's no vocal music, because the instructions say "detect *ALL* vocal songs". I'm going to double-check: Scene 1: Speech + BGM. Scene 2: Instrumental BGM.  Scene 3: Speech + BGM. Still, no vocals.
+
+    Okay, let's verify.  The instructions are clear: if there's no vocal music, then for *all* scenes, `contains_vocal_music` has to be `false`.  And fields like `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` should be set to `null`. I'm going to watch one last time just to be *absolutely* sure there's not some faint singing buried in the background music.
+
+    Nope. Definitely just instrumental BGM.
+
+    So, the structure of the JSON needs to be as follows: a `global_summary` describing the announcement about Studio Stellar. Then, the `scenes` should be broken down based on the visual transitions: the introduction, the transition video, and the continuation of the announcement. All of the `contains_vocal_music` fields will be `false`, and all other vocal music related fields will be set to `null`. Got it.
+
+    Now, to construct the JSON: the global summary will be: "The video features VTuber Hoshimachi Suisei giving a live announcement regarding the establishment of her own management office, 'Studio Stellar'."
+
+    Scene 1 (00:00 - 01:33): Suisei speaking on stage.
+
+    Scene 2 (01:33 - 01:58): Transition screen showing the "Studio Stellar" logo.
+
+    Scene 3 (01:58 - end): Suisei continuing the presentation details.
+
+    Okay, that looks correct.  The instructions explicitly say to focus on *vocal* music.  No need to provide anything for instrumental music. Should be solid.
+
+
+...
