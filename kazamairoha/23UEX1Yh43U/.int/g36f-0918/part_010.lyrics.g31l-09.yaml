@@ -1,0 +1,106 @@
+name: part_010
+total_attempts: 1
+video_duration_ms: 300048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video shows a live performance event featuring VTuber Kazama
+    Iroha. The first part (00:00 - 03:07) is a talk segment where the performer interacts
+    with the audience. The second part (03:07 - 05:00) is a live vocal performance
+    of the song 'ANIMA', originally composed by 毛蟹(LIVE LAB.).
+  scenes:
+  - start: '00:00.000'
+    end: '03:07.500'
+    description: The video starts with a VTuber named Kazama Iroha on stage, engaging
+      in a talk segment with the audience and introducing a song vote.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:07.500'
+    end: '05:00.000'
+    description: Kazama Iroha performs the song 'ANIMA' on stage with a digital background.
+    contains_vocal_music: true
+    song_title: ANIMA
+    original_artist: 毛蟹(LIVE LAB.)
+    performer_in_video: 風真いろは
+    original_language: Japanese
+    reference_lyrics_og: |-
+      魂の色は 何色ですか
+      「もういっそ 折れたままで」
+      捨てるほど 逃げ出すほど 強くないよ
+      ほら もう一度 鼓動高鳴る
+      何が正しいかなんて わからないけど
+      形のないものばかりが 大切になって行く
+      飾らない言葉だけが 強く結ばれてる
+      また躓いて 転がって それでも砕けない
+      魂の色は 何色ですか
+      ただ傷ついて 強がって
+      それでも見つけたいよ 魂のカタチ
+      確かめてるよ
+      深い地の底で一人 扉と鍵を探す
+      おとぎ話は ほら 泡の様に全部消えて
+      葛藤 残像だけ 次の頁へ
+      伸びてく枝葉が分かれて それぞれの道を行く
+      寂しい思い出だけが 強く根を張ってる
+      また貫いて失って それでも挫けない
+      心はどこに 器はどこに
+      ただ残されて抜け落ちて
+      それでも伝えたいよ 魂の日々を 魂の意志を
+      ずっと ずっと
+      魂の色は 何色ですか
+      赤い色ですか 青い色ですか
+      魂の色は 魂の色は
+      何色ですか 何色ですか
+      透明な過去に 不透明な明日に
+      生きるあなたは 何色ですか
+      また躓いて 転がって それでも砕けない
+      魂の色は 何色ですか
+      ただ傷ついて 強がって
+      それでも見つけたいよ 魂のカタチ
+      確かめてるよ
+      ずっと ずっと ずっと ずっと
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analytical Process for Video Analysis and Lyric Retrieval**
+
+    Okay, so the task is to break down this video of Kazama Iroha and extract specific information: map out the scenes, identify the songs, and most importantly, get the lyrics (original and English) for those songs. The instructions are clear – no manual transcription or translation, if a search fails, `null` is the default, and I have to be precise with the search queries, using the *original* artist/composer, not the VTuber. The `web_search_langsearch_multi` tool is my primary weapon here.
+
+    First, I need to understand the video content. I see Kazama Iroha on stage; she's clearly performing. The initial part, from 00:00 to 03:07, is talking and preparation. Then, from 03:08 to 05:00, the actual performance starts. Bingo! At 03:14 and 04:15, the song information is displayed on the screen: "ANIMA" and the artist/composer is "毛 (LIVE LAB.)". Looking closer at the screen, it appears as `ANIMA 作詞・作曲:毛 (LIVE LAB.)`, clarifying the information: `毛 (LIVE LAB.)` is the artist/composer.
+
+    Now for the search strategy. The first song is "ANIMA." I need to construct the right queries. Remembering the rules, I'll use the original artist/composer. I'll craft two parallel searches for the first turn: one for the original lyrics and another for the English translation. So, the first search will be: "ANIMA 毛 LIVE LAB. 歌詞" and the second will be: "ANIMA 毛 LIVE LAB. lyrics English."
+
+    I'll then run the searches using the specified tool. However, wait...I need to pause for a moment. This name "毛" is quite peculiar and needs further verification! I have to examine the screen again. The text on the screen is "作詞・作曲:毛". I need to keep that in mind when performing the search. Let's get to it!
+
+
+
+    **Analysis and Processing for "ANIMA" by 毛蟹(LIVE LAB.)**
+
+    Alright, let's break this down. First, the song is confirmed as "ANIMA," and the composer/artist is definitively 毛蟹(LIVE LAB.), although the screen might have briefly shown an abbreviated version. The lyrics are readily available, which is good. I need the full Japanese lyrics, and the search results seem to have them complete – I'll use the one from the first result as it appears accurate. However, I *don't* see a complete English translation in the search results, which means, based on the constraint, I *must* set `reference_lyrics_en` to `null`.
+
+    Now, for scene mapping: the video starts with a talk/intro segment from 00:00 to 03:07.500; I'll mark that as `contains_vocal_music`: false. Then, from 03:07.500 to 05:00, the performance of "ANIMA" begins. That scene is `contains_vocal_music`: true.
+
+    Time to construct the JSON.
+
+    *   Scene 1: 00:00.000 to 03:07.500 (Intro/Talk)
+    *   Scene 2: 03:07.500 to 05:00.000 (Performance).
+        The song details for the second scene are:
+        *   Title: ANIMA
+        *   Original Artist: 毛蟹(LIVE LAB.)
+        *   Performer: 風真いろは (Kazama Iroha), confirmed by the `#風真いろは生誕LIVE2026` tag on-screen.
+        *   Language: Japanese
+
+    Let's review everything against the constraints. No manual transcription? Check. No translation? Check. I'm setting the English to null. No truncation? Check, using the full Japanese lyrics. No quotes in the search? Check.
+
+    Okay, here's what I'll build as the final output. The `global_summary`: will be: The video features a talk segment by the VTuber Kazama Iroha, followed by a performance of the song "ANIMA", originally by 毛蟹(LIVE LAB.). I need to be precise on that start time, so double-check the lyrics and timing. Yes, the singing starts *exactly* at 03:07.500.
+
+    I've verified the lyrics. The scenes list is:
+    *   00:00.000-03:07.500: Intro/Talk
+    *   03:07.500-05:00.000: Performance
+
+    And now, I generate the final JSON output.
+
+
+...
