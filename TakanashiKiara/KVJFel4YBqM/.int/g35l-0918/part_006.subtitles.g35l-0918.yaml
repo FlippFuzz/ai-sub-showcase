@@ -1,0 +1,42 @@
+name: part_006
+total_attempts: 1
+video_duration_ms: 300455
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Analyzing Subtitle Requirements for a Pre-Concert Loop Video**
+
+    Okay, so I need to generate subtitles for this video, which appears to be a pre-concert loop playing before a show. It has background music (BGM) playing, along with slides about merchandise, fan messages, and countdown information. First things first, let's check for any vocals. That's the baseline. I need to know if there's any spoken dialogue or singing. Looking at the video and listening, it's pure instrumental music – no vocals whatsoever. Excellent.
+
+    Now, let's go back and review the instructions. Zero ghost subtitles, that's the key rule here. "Remain SILENT during pure instrumental music..." Got it. If there are no vocals, output nothing. Unless... *unless* there's a prominent visual event. Right.
+
+    The question is, what constitutes a "prominent visual event" in this context? Let's look at the screens. We've got an "Attention for Visitors" screen, a "2nd Round of Concert Merch Sales" list, a wall of fan messages, and a "Concert will be starting soon" countdown. These are informational slides, essentially.
+
+    Now, do these informational slides constitute "prominent, relevant text" that I need to subtitle even without audio? The instruction says to subtitle "Chapter Titles, Location Signs, Letters" if they are visible. Usually, the subtitle models are built for transcribing spoken dialogue or lyrics. Transcribing every single item on the merch list or every fan message would be lengthy and not standard practice for subtitling, and frankly, unnecessary. I'm going to double-check my instructions.
+
+    Oh, wait, the instructions specify: "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio."
+
+    But! There are hundreds of messages on the screen, changing every few seconds. This isn't narrative visual text like chapter titles or location signs in a film.
+
+    I'm going to verify there are no vocals in the entire 5-minute video. I'll listen across the segments.
+
+    00:00 - 05:00 - BGM instrumental music. No vocals. No doubt about it.
+
+    Okay, since there are no vocals and the text consists of slideshows and fan messages, which are *not* the same kind of text as chapter titles or location signs, I should output nothing. The reference explicitly labels all entries as `contains_vocal_music: false`. The `description` tags indicate each part of the stream is an information display: "Attention for visitors screen", "Merchandise list 1 screen", "Fan messages screen", etc. Not relevant visual text.
+
+    Finally, I'm going to output an empty `subs` list in the required JSON format. That's the correct and appropriate answer.
+
+
+- subtitles: []
+  thoughts: |+
+    **Subtitle Decision: No Subtitles Needed**
+
+    Okay, here's the breakdown of my thinking. The user wants subtitles for a 5-minute video. First things first: let's analyze the audio. The video is showing concert merchandise and fan messages related to the "Drawn to Dawn" concert for Takanashi Kiara & Ninomae Ina'nis. The audio is just BGM, instrumental music playing throughout. The core question: is there any vocal content? I'm listening closely – no singing, no spoken dialogue, nothing. It's all instrumental.
+
+    Now, I'm checking the visuals. The rules mention "prominent, relevant text." Okay, let's see: is this like chapter titles or location signs? No. We have "Attention for Visitors" screen with flashing lights, merchandise lists, and fan messages. I consider if the visual text rules cover the fan messages and merch slides. I review the instructions again: "Translate prominent, relevant visual text (titles, signs). Exclude meaningless background clutter or UI elements." These fan messages and merch slides are not prominent, relevant text in the way a title card or sign would be. We're in a concert waiting room setting.
+
+    The main rule that applies here is "ZERO GHOST SUBTITLES": Silence for pure instrumental music unless there's a *prominent* visual event. No vocals = no subtitles. I've double-checked the audio, the visual text, and the verification instructions of a similar JSON example. It all confirms: no vocal events, no required visual text events. Therefore, based on the specific scenario, I'm outputting an empty list of subtitles. I'm going with: `subs: []`.
+
+
+...
