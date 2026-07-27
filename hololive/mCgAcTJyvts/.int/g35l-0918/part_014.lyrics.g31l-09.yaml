@@ -1,0 +1,133 @@
+name: part_014
+total_attempts: 1
+video_duration_ms: 147857
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a concluding scene for the "hololive 7th fes." event,
+    featuring a static background with the event title "Ridin' on Dreams". The song
+    "Ridin' on Dreams" by hololive IDOL PROJECT plays throughout the entire segment.
+  scenes:
+  - start: '00:00.000'
+    end: '02:28.000'
+    description: An ending screen for the hololive 7th fes. event, showing the title
+      'Ridin' on Dreams' and the supported label 'LAWSON' over a bright, animated
+      graphical background. The song 'Ridin' on Dreams' plays for the duration of
+      the clip.
+    contains_vocal_music: true
+    song_title: Ridin' on Dreams
+    original_artist: hololive IDOL PROJECT
+    performer_in_video: hololive IDOL PROJECT
+    original_language: Japanese
+    reference_lyrics_og: |-
+      ねえ、君がいたからだよ
+      ねえ、ありがとうを何度も
+      今すぐに伝えたいんだ
+      さあ乗り込もう!
+      ridin' on dreams
+      yeah!!
+      wow oh oh…
+      hey!! (hey!!) hey!! (hey!!)
+      yeah!!
+      あぁ小さな夢から
+      想像できないような
+      想いになったんだ
+      わくわく止まらない!
+      何度迷ったって僕ら
+      絆が舵になる
+      ちょっとの不安だってさ
+      吹き飛ばせちゃうんだよ
+      果てない旅路を今
+      漕いでる途中に困難もあるでしょう
+      それも力に変えて
+      一緒に進むんだよ!
+      ねえ、君がいたからだよ
+      ねえ、夢では終われ ない
+      荒波も乗り越えていこう
+      "らしく"輝いていたい
+      ねえ、君と会えたことが
+      ねえ、宝物だから
+      手を取り合い声かけ合って
+      地図など無い未知の世界で
+      まだまだ行こう!
+      ridin' on dreams
+      wow oh oh…
+      hey!! (hey!!) hey!! (hey!!)
+      yeah!!
+      急な風が僕らの
+      行く先乱そうとも
+      あの日誓ったんだ
+      覚悟は揺るがない
+      ちゃんとしなきゃ!って背中
+      明日への橋になる
+      もっと大事にしなきゃね
+      "あたりまえ"は無いから
+      小さな船から始まるストーリー
+      どっから始めたらいいかもがいて
+      少しずつね輪になって見つけた
+      何にも代えられない夢だ
+      wow oh oh oh oh oh
+      未完成も愛して
+      wow oh oh oh oh oh
+      想いは一つだ
+      wow oh oh oh oh oh
+      僅かな希望でも
+      僕と君でずっと
+      馬鹿にされても
+      信じたい!
+      ねえ、ありがとうじゃ足りない
+      ねえ、想いが溢れちゃうんだよ
+      ずっと一緒だよ!
+      ねえ、君がいたからだよ
+      ねえ、夢では終われ ない
+      荒波も乗り越えていこう
+      "らしく"輝いていたい
+      ねえ、君と会えたことが
+      ねえ、宝物だから
+      手を取り合い声かけ合って
+      地図など無い未知の世界で
+      まだまだ行けるから!
+      ひとりじゃない
+      何度でも立ち上がってさ
+      笑い合っていたい
+      願いだってみんなで、さあ!
+      手を繋いで想像も超えて
+      まだまだ行こう!
+      ridin' on dreams
+      wow oh oh…
+      hey!! (hey!!) hey!! (hey!!)
+      yeah!!
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the hololive 7th Fes. Ending**
+
+    Okay, so the task is to get the lyrics for the song playing in this video. From the video, I can see a "hololive 7th fes." ending screen with "Ridin' on Dreams" displayed. The background music is consistent throughout, and it's the same song playing over a static image, so I don't need to worry about multiple segments. I'm inferring from the audio that the language is Japanese.
+
+    My initial hypothesis is that "Ridin' on Dreams" is likely a hololive group song, maybe a theme or ending song, as suggested by the screen. I'll need to confirm that.
+
+    The metadata I've got so far is:
+
+    *   Song Title: Ridin' on Dreams
+    *   Artist: hololive
+    *   Language: Japanese
+
+    Now for the search. I'll use a two-pronged approach. First, `Ridin' on Dreams hololive lyrics`, and then `Ridin' on Dreams hololive 歌詞`, because Japanese lyrics are often labelled with the kanji "歌詞" (kashi). The goal is to get the official lyrics. I need to make sure I don't give the user truncated results. I'll be using `default_api:web_search_langsearch_multi` to conduct the search.
+
+    Based on the search results, I will populate the `final_result` structure with the lyrics if found, and `null` otherwise. Let's see what we can find.
+
+
+
+    **My Assessment of the Lyric Retrieval**
+
+    Okay, so the search results were pretty good, actually. I've successfully identified the song, artist, and got the full lyrics – in Japanese and Korean (though the Korean isn't what I needed). The Japanese is the key here. The main constraint I have is that I CANNOT translate anything manually.
+
+    First, I checked for an English translation within the search snippets. Nothing directly. That triggers the "null" condition for `reference_lyrics_en` if no official translation is readily available, as per the rules of the problem. That also goes for the "official lyrics" field.
+
+    So, let's break this down based on the prompt requirements:
+
+    1.  **Japanese Lyrics (Official):** Yes, I have them. This will be assigned to `reference_lyrics_og`.
+    2.  **English Translation:** No, I don't see a *direct* English translation in the search results snippets. I am not to formulate one. That means I set `reference_lyrics_en` to `null`.
+
+    The lyrics themselves are available, so no problem there. I can now prepare the response with the Japanese lyrics assigned to `reference_lyrics_og` and `null` assigned to `reference_lyrics_en`, as per the constraint.
+
+
+...
