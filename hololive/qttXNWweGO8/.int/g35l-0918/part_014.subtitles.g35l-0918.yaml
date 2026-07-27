@@ -1,0 +1,34 @@
+name: part_014
+total_attempts: 1
+video_duration_ms: 178891
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.500'
+    end: '00:05.500'
+    original: 無料パートは終了いたしました！ ご視聴ありがとうございました！
+    english: The sneak peek part of the show has ended. Thank you for watching.
+  thoughts: |+
+    **Subtitle Decision for Static End Screen**
+
+    Okay, I need to generate subtitles for this video segment. Looking at the video and the associated JSON, it's clear this is a static end screen. It's a notice: "無料パートは終了いたしました！ご視聴ありがとうございました！" which translates to "The sneak peek part of the show has ended. Thank you for watching."
+
+    There are no vocals, just instrumental music, so the key here is the visual text. The rule specifically addresses visual events: if prominent and relevant text is on screen, subtitle it, even without audio.
+
+    I need to confirm that this end screen message qualifies. The text is prominent, it's relevant, and it's visible throughout the entire clip from 00:00 to 02:59. Given that it's a clear end screen message, I need to check the standard practice for subtitling end screen messages and intro titles. Since the text is on-screen throughout, I can include a subtitle block for it.
+
+    Checking the example in the prompt, it confirms that visual text is subtitled: `{ "s": "00:02.000", "e": "00:05.000", "og": "第1章", "en": "[Title: Chapter 1]" }`. Perfect!
+
+    The on-screen text is clearly defined as: "無料パートは終了いたしました！ご視聴ありがとうございました！" and the provided English translation is "The sneak peek part of the show has ended. Thank you for watching."
+
+    Given that it appears from the very start, I'll set the subtitle start time at 00:00.500 and the end time at 00:05.500, to cover the time it would take to read it. I'll make sure `og` is Japanese and `en` is English. So, here is the entry to be created.
+
+    `og`: 無料パートは終了いたしました！ご視聴ありがとうございました！
+    `en`: The sneak peek part of the show has ended. Thank you for watching.
+
+    Now, let's look for anything else. Okay, I see a few other visual elements, "hololive 7th fes.", "Ridin' on Dreams", and "Supported By LAWSON". These are branding elements. However, the end screen message is the critical element to subtitle. Subtitling this end screen notice will be the most valuable and accurate for the viewer.
+
+    I'm ready to craft the JSON output now.
+
+
+...

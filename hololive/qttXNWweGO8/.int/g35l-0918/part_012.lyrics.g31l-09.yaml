@@ -1,0 +1,116 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 299310
+lyrics_prompt_version: 9
+response:
+  global_summary: This video segment captures an MC interaction between members of
+    the VTuber group Hololive (including Shirakami Fubuki, Omaru Polka, Tsunomaki
+    Watame, and others) and the concert audience at 'Hololive Fest'. The video features
+    their self-introductions, banter, and audience chants. There are no full vocal
+    songs performed in this segment; the background audio consists of instrumental
+    music and the spoken performances/chants of the VTubers.
+  scenes:
+  - start: '00:00.000'
+    end: '00:12.000'
+    description: Introductory chatter and banter between the VTubers on stage.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:12.000'
+    end: '00:27.000'
+    description: Shirakami Fubuki introduces herself and leads the audience in a catchphrase
+      chant.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:27.000'
+    end: '00:41.000'
+    description: General group banter following the first introduction.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:41.000'
+    end: '01:13.000'
+    description: Omaru Polka introduces herself and interacts with the audience.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:13.000'
+    end: '01:46.000'
+    description: Tsunomaki Watame introduces herself and interacts with the audience.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:46.000'
+    end: '02:26.000'
+    description: Banter between the VTubers, continuing their interaction on stage.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:26.000'
+    end: '04:59.000'
+    description: General group banter, audience interaction, and wrap-up of the MC
+      segment.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of VTuber Concert Video Segment**
+
+    Okay, here's the deal. I've got this video of a VTuber concert segment and the goal is to map the scenes and detect any vocal songs. Alright, the video starts and immediately I'm getting a handle on what's going on. It's not a full-blown musical performance; it's an MC segment, like an introduction/banter session. It’s got a lot of talking, audience cheers, and these short musical bits. I had to determine if any of it counted as a song.
+
+    My initial thought was to go chronologically and note what was happening. It's Hololive, so I recognized some of the VTubers, like Shirakami Fubuki, Omaru Polka, and Tsunomaki Watame. They’re interacting with the audience, making self-introductions, and it seemed like there were audience chants. I was looking for full vocal songs, you know, stuff with actual lyrics being *sung*, not just chants or musical transitions.
+
+    I started listing out the timestamps, just to make sure I wasn’t missing anything. At first, it looked like there were some potential musical segments, but upon closer inspection, it was just chants, crowd cheers, or short musical transitions. I’m thinking, this is not a song performance.
+
+    I checked the instructions again. The task requires detecting *all* vocal songs. If there are none, I am to return a null value for song title. I need to map the scenes correctly. Alright, so I'm thinking, this is one continuous scene of interaction, and there are no full songs. But, since I'm told to map the scenes, even if there are no songs, I can still map out the timeline, using the timecodes to break down what’s happening in the clip.
+
+    I'll craft a `global_summary` to describe this: "This video segment captures an MC interaction between members of the VTuber group Hololive (including Shirakami Fubuki, Omaru Polka, Tsunomaki Watame, and others) and the concert audience. The video features their self-introductions, banter, and audience chants. There are no full vocal songs performed in this segment."
+
+    I took a final listen and double-checked the timestamps. At 00:24, it’s a chant: "Kon-Kon-Kitsune." Similar chants occurred at other timestamps. The video is definitely not a song performance. So, `contains_vocal_music` will be `false` for everything.
+
+    I'm structuring the output as JSON, and I need to accurately describe the scenes. I am *expected* to find songs, as per the original instructions. The prompt says I should "detect ALL vocal songs playing." But, since I'm finding none, this fulfills the requirements: a clear, concise reporting of *no songs*.
+
+    Here’s the scene breakdown I’ve settled on:
+    *   Scene 1: 00:00 - 00:12 - Intro chatter.
+    *   Scene 2: 00:12 - 00:26 - Shirakami Fubuki introduction and audience chant.
+    *   Scene 3: 00:27 - 00:41 - Further banter.
+    *   Scene 4: 00:41 - 01:13 - Omaru Polka introduction and audience interaction.
+    *   Scene 5: 01:13 - 01:46 - Tsunomaki Watame introduction and audience interaction.
+    *   Scene 6: 01:46 - 02:26 - Banter, Polka interacts again.
+    *   Scene 7: 02:26 - 04:59 - General group banter, wrap-up of segment, transition to the next part of the concert.
+
+    Therefore, for each scene, I set `contains_vocal_music: false`.
+
+    Alright, I think that covers it. Clear and accurate, and it fully adheres to the instructions. No actual songs here.
+
+
+...
