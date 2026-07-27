@@ -1,0 +1,106 @@
+name: part_006
+total_attempts: 1
+video_duration_ms: 69246
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a live stage performance of the song "Sip Some
+    Tea" by members of Hololive Indonesia, followed by a static graphic promoting
+    their 5th Anniversary concert, "CHROMATIC FUTURE".
+  scenes:
+  - start: '00:00.000'
+    end: '00:53.000'
+    description: A group of virtual performers (Hololive Indonesia members) dance
+      and sing "Sip Some Tea" on a stage with laser lighting effects.
+    contains_vocal_music: true
+    song_title: Sip Some Tea
+    original_artist: null
+    performer_in_video: Hololive Indonesia
+    original_language: English, Indonesian
+    reference_lyrics_og: "everything was easy , i did it all alone\nso effortlessly\
+      \ , i spread my wings and let my \nmagic unfold , got all problems solved\n\
+      without any setbacks there is nothing uncontrolled\nbut there 's no way i can\
+      \ begin , dream life that i need to win\ni need to feel how all these things\
+      \ crumble into little pieces\ni know i gotta soar a little higher\nhope all\
+      \ turns to be the things i desire\nlayaknya burung merak yang bersayap\n' kan\
+      \ ' ku ta klukkan gelap\ndengan sihir angin ' kan ' ku ajak\nsemua yang terlelap\
+      \ ' tuk bangkit melawan dunia\nwe 'll never give up\nas long as we got the strength\
+      \ in ourselves\nwe could rise above the pain (we 're stronger than them )\n\
+      walking step by step , trusting my own pace\ngiving me what i deserve to have\
+      \ (let 's go , just believe me )\nlet it go , they ' ll never bring me down\
+      \ , just believe me\nlet it go , it ' ll never bring us down , just believe\
+      \ me\nwon't let their cruelty steal in ' my royalty\nand when the universe works\
+      \ against me i will just\nlet it go ( if it 's spicy , just sip some tea , let\
+      \ it go )\nlet it go ( if it 's spicy , just sip some tea , let it go )\nlet\
+      \ it go ( if it 's spicy , just sip some tea , let it go )\nlet it go"
+    reference_lyrics_en: "everything was easy , i did it all alone\nso effortlessly\
+      \ , i spread my wings and let my \nmagic unfold , got all problems solved\n\
+      without any setbacks there is nothing uncontrolled\nbut there 's no way i can\
+      \ begin , dream life that i need to win\ni need to feel how all these things\
+      \ crumble into little pieces\ni know i gotta soar a little higher\nhope all\
+      \ turns to be the things i desire\nlayaknya burung merak yang bersayap\n' kan\
+      \ ' ku ta klukkan gelap\ndengan sihir angin ' kan ' ku ajak\nsemua yang terlelap\
+      \ ' tuk bangkit melawan dunia\nwe 'll never give up\nas long as we got the strength\
+      \ in ourselves\nwe could rise above the pain (we 're stronger than them )\n\
+      walking step by step , trusting my own pace\ngiving me what i deserve to have\
+      \ (let 's go , just believe me )\nlet it go , they ' ll never bring me down\
+      \ , just believe me\nlet it go , it ' ll never bring us down , just believe\
+      \ me\nwon't let their cruelty steal in ' my royalty\nand when the universe works\
+      \ against me i will just\nlet it go ( if it 's spicy , just sip some tea , let\
+      \ it go )\nlet it go ( if it 's spicy , just sip some tea , let it go )\nlet\
+      \ it go ( if it 's spicy , just sip some tea , let it go )\nlet it go"
+  - start: '00:53.000'
+    end: '01:00.000'
+    description: A static promotional image for the 'hololive indonesia CHROMATIC
+      FUTURE 5th Anniversary LIVE'.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Request and Planning the Approach**
+
+    Okay, here's the deal: I need to dissect this video, identify the music, and get the full lyrics without manual effort. The task is straightforward: first, I need to break down the video into scenes, specifically looking for vocal music. Then, I need to extract the song metadata – title, artist, performers – and most importantly, the complete, untruncated lyrics. The instructions are clear – no manual transcription or translation, just the search tool. If the search comes up empty, I'm to flag that as a "null" result, and no placeholders are allowed for the lyrics.
+
+    My pipeline will be: Scene Mapping -> Song Metadata Resolution -> Parallel Lyrics Lookup.
+
+    **Dissecting the Video Content**
+
+    The video's first scene (00:00 - 00:53) is a performance with virtual characters singing in English. Some of the lyrics include phrases like "Never give up," "As long as we got the strength in ourselves," "We could rise above the pain," and so on. I need to capture the full lyrical content here. The second scene (00:53 - 01:00) is a static image with text, which isn't part of the vocal music I'm targeting.
+
+    **Pinpointing the Song and Artist**
+
+    The performers here are Hololive Indonesia members: Kobo Kanaeru, Moona Hoshinova, Pavolia Reine, Kureiji Ollie, and Anya Melfissa. Now, the main challenge is finding out the song's title and artist. Time to search for the lyrics to find the song title and artist!
+
+    **Executing the Search and Refinement**
+
+    I'm starting my search with a query: `web_search_langsearch_multi(queries=["Hololive Indonesia Chromatic Future song lyrics", "Never give up As long as we got the strength in ourselves lyrics"])`.
+
+    Now, an important note: I need to find the *official* title and artist. It's possible – and I'm anticipating this – that the song could be an original composition specifically for this Hololive concert. This will affect my search strategy.
+
+    **Response Structure**
+
+    Internally, I'm planning to present the video in two scenes: Scene 1 (00:00 - 00:53) will focus on the vocal performance, and Scene 2 (00:53 - 01:00) will be the static outro. I'll rely on the search results to populate the lyrics.
+
+    **Let's get to work!**
+
+
+
+    **My Analysis of the "Sip Some Tea" Song Identification**
+
+    Okay, here's my thought process on this. First, the search results nailed it; the song from the video is indeed "Sip Some Tea" by Pavolia Reine, from Hololive Indonesia. The lyrics are spot-on – the results from `lyrics.lol` and the YouTube link perfectly match what's audible in the video.
+
+    Next, I need to map the scene breakdown. It's pretty straightforward: Scene 1 covers the vocal performance from 0:00 to 0:53, and Scene 2 is the static outro/image from 0:53 to 1:00. Simple enough.
+
+    Now for the output. I'll properly map those scenes. I've got the song metadata: "Sip Some Tea," Pavolia Reine. I've got the *full* lyrics, no truncating needed, so I'll incorporate those in the proper format.
+
+    Before I commit to this, let's verify. No manual transcription? Check. I'm using the provided lyrics. No manual translation? Check, lyrics are in English with some Indonesian phrases in the pre-chorus, which is fine, I'll list the language as "English, Indonesian". No truncation? Double-check. The search results include what *appears* to be the complete lyrics, and that's what I'll deliver. No placeholders? Absolutely not. I'm providing the full text.
+
+    I need to make sure I get the song title and artist correct in the format. I confirmed with the search result "Sip Some Tea by Hololive Indonesia". I'll use those lyrics.
+
+    Finally, I checked the prompt again: "DO NOT attempt to manually transcribe." The search results provided the full lyrics. I *will* use them.
+
+
+...
