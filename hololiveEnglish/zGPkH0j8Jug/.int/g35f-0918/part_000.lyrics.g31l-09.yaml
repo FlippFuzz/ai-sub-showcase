@@ -1,0 +1,59 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a promotional montage for a Hololive English
+    event, followed by a live-action skit starring a mother and daughter interacting
+    with character plushies. The entire video consists of background music and dialogue;
+    no vocal song performances were detected.
+  scenes:
+  - start: '00:00.000'
+    end: '03:31.000'
+    description: A promotional montage showcasing images of Hololive English VTubers
+      with high-energy background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:31.000'
+    end: '04:56.000'
+    description: A live-action skit featuring a mother and daughter interacting with
+      plush toys of the VTubers.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:56.000'
+    end: '05:00.000'
+    description: Ending shot of the video.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis and JSON Generation**
+
+    Alright, let's break this down. My goal here is to analyze this video and produce a JSON response adhering to some specific rules. First, I need to analyze the video content itself, identify the scenes, and determine if any vocal music is present. I'm operating under the constraints of not manually transcribing, not truncating lyrics (or using placeholders), and strictly using a search tool for lyrics if vocal music is found. If no lyrics are found, fields should be `null`. The output *must* conform to the specified JSON schema.
+
+    Initially, I'll perform a scene-by-scene analysis. The video starts with promotional imagery of Hololive VTubers, accompanied by what sounds like a fast-paced, high-energy instrumental track. This is followed by a live-action skit and then an ending screen. Immediately, the question of vocals arises. I'll need to listen very carefully.
+
+    After careful review, it becomes clear: the first segment is an instrumental track, and the second is dialogue. *There are no sung vocals.* The instructions emphasize the need to "detect ALL vocal songs," so if none are present, I must report that. This is crucial for correctness.
+
+    Refining my scene mapping, I've divided the video into three segments: the promotional montage, the skit, and the ending. I've reconfirmed that none of these contain *vocal music* (sung performances). The music in the background *sounds* like a song, but it does not have lyrics.
+
+    Now, I'm ready to craft the JSON. The `global_summary` will state that the video primarily features background music and dialogue. The `scenes` array will contain a breakdown of each segment, each marked as not containing vocal music (`contains_vocal_music: false`). The song-related fields (`song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, `reference_lyrics_en`) will all be set to `null` because no songs were found.
+
+    Before submitting, I need to verify that I'm compliant with all constraints. Scene mapping: check. Vocal music detection: check. Lyrics lookup (not needed because no songs found): check. No manual transcription: check. No truncation: N/A. Format: adhering to the JSON schema. Seems solid.
+
+
+...

@@ -1,0 +1,65 @@
+name: part_013
+total_attempts: 1
+video_duration_ms: 242048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features members of the Hololive English VTuber group
+    'Justice' (Elizabeth Rose Bloodflame, Cecilia Immergreen, Gigi Murin, and Raora
+    Panthera) on a concert stage, engaging in spoken interaction with their audience
+    to celebrate their anniversary. Following this, at approximately 02:33.800, the
+    video transitions to a static promotional screen announcing the upcoming music
+    video for their song 'SUPERNOVA SUPER GIRL', accompanied by instrumental background
+    music. No songs with sung vocals are performed or played in this video clip.
+  scenes:
+  - start: '00:00.000'
+    end: '02:33.800'
+    description: The four members of Hololive English 'Justice' talk to the audience
+      on a concert stage, celebrating their anniversary.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:33.800'
+    end: '04:03.000'
+    description: The screen transitions to a static promotional image for the 'How
+      to Protect Justice' 2nd Anniversary Live, with text announcing the upcoming
+      music video for 'SUPERNOVA SUPER GIRL', while instrumental background music
+      plays.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Content**
+
+    Okay, here's my breakdown of this video. My primary task is to identify and characterize any vocal music within the provided clip, along with scene mapping, and lyric retrieval (using a search tool only). Crucially, I'm NOT transcribing manually or translating; any lyrics I get have to come via the search tool, and I need to avoid truncation or placeholders.
+
+    First, I watched the video. It begins with four Hololive EN VTubers ("Justice") – Elizabeth, Cecilia, Gigi, and Raora – on a stage celebrating their anniversary. They're talking to the audience; there's no sung music here, just dialogue. That initial segment runs up to roughly 2:34. Then, the screen switches to a static image or slide with text promoting an upcoming music video: "How to Protect Justice. Stay tuned for the premier of Justice's new MV 'SUPERNOVA SUPER GIRL' right after this!"
+
+    I paused and re-listened, because that announcement transition point is the key. Is there any vocal music at that point? Listening closely, I confirmed that from 2:34 onwards, there's indeed *music*, but it's an instrumental track, perhaps the backing for the upcoming MV. There are no vocals; no singing.
+
+    Okay, let's step back and consider the *whole* clip. I re-checked:
+    *   00:00-02:34: Dialogue only, no singing.
+    *   02:34-04:03: Instrumental music during the announcement. Still no vocals.
+
+    I had to double-check again, just to be *certain* there's no singing anywhere. Nothing. So, based on this careful analysis, `contains_vocal_music` will be `false` for every scene.
+
+    Now, let's summarize the scenes:
+
+    *   **Scene 1**: 00:00.000 to 02:33.800 (I can be precise with this). Description: The four Hololive EN members ("Justice") interact with the audience on stage, celebrating.  `contains_vocal_music`: `false`.
+    *   **Scene 2**: 02:33.800 to 04:03.000 (end). Description:  A promotional image for "How to Protect Justice" is displayed, with text announcing the "SUPERNOVA SUPER GIRL" MV. This is accompanied by instrumental music. `contains_vocal_music`: `false`.
+
+    Now, should I search for the lyrics to "SUPERNOVA SUPER GIRL" since it's mentioned? Looking back, the prompt specifies "detect ALL *vocal* songs playing". Since it's only playing as an instrumental, I don't need to do a lyric search.
+
+    I've reviewed the constraints: no manual transcription, fallback for search failures (not applicable here), no truncation. The search constraint is that I would only be using the search tool for retrieving vocals. Everything seems correct.
+
+    Final checks: the timestamps are accurate to the video, the boolean schema for `contains_vocal_music` is right, and no singing whatsoever. No vocals, no lyrics. All is good.
+
+
+...
