@@ -1,0 +1,103 @@
+name: part_010
+total_attempts: 1
+video_duration_ms: 295043
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a promotional clip for VTuber Takane Lui's first live
+    concert, titled 'Rebellion'. It features a performance of the song '抗う君への鎮魂歌'
+    (Requiem for you who fights) in a gothic stage setting, followed by an announcement
+    of the concert details.
+  scenes:
+  - start: '00:00.000'
+    end: '00:13.000'
+    description: Visual intro sequence featuring a virtual character in a gothic setting
+      with large stained-glass windows and dramatic lighting. No vocal music is present.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:13.000'
+    end: '04:32.000'
+    description: The virtual performer Takane Lui performs the song '抗う君への鎮魂歌' on
+      a circular stage under dynamic lighting. The performance is the primary focus
+      of this segment.
+    contains_vocal_music: true
+    song_title: 抗う君への鎮魂歌
+    original_artist: null
+    performer_in_video: Takane Lui
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:32.000'
+    end: '04:56.000'
+    description: The performer talks to the audience, announcing details about the
+      upcoming 1st Live concert and the venue, Kanadevia Hall, concluding with concert
+      date information displayed on screen.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video and Lyric Retrieval Task**
+
+    Okay, let's break this down. My objective is to analyze a video, pinpoint the scenes, identify any vocal songs within it, and then use a search tool to find the official lyrics, both in the original language and in English. Crucially, I'm not allowed to do any manual transcription or translation. The system absolutely cannot truncate lyrics or use placeholders, and it must use the "Original Artist" metadata, not the performer. Plus, no quotation marks in the search queries, and I'm limited to three search turns. I need to be precise, or I'll run out of queries.
+
+    First, I need to map the scenes. I've identified:
+
+    *   **00:00 - 00:12:** Intro, virtual character in a gothic setting. No music, just visuals.
+    *   **00:13 - 04:32:** Appears to be a single song performance by a virtual performer. I'll need to confirm that it's a single song, which I've done by re-listening. The on-screen text gave me some initial clues.
+    *   **04:32 - 04:55:** Announcement, talking, no singing.
+
+    Based on the on-screen text, the song seems to be "抗う君への鎮魂歌" (Requiem for you who fights/resists) and the performer is "Takane Lui."  It seems like a cover or song by "Takane Lui".
+
+    The lyrics appear to start with "Tada shisa dake..." (Just righteousness...). I need to identify the *original* song and artist based on the constraints. I see "REBELLION Takane Lui 1st Live" at the end, so I will trust that the song title is indeed the search query.
+
+    Now, let's solidify the song metadata:
+
+    *   **Song Title:** Needs identification via search.
+    *   **Original Artist:** Needs identification via search.
+    *   **Performer:** Takane Lui (VTuber).
+    *   **Original Language:** Japanese.
+
+    My initial search strategy (Turn 1) is now:
+
+    1.  I need to identify the original song. I need to do a search for the title and lyrics.
+
+        *   Search Queries:
+            *   "抗う君への鎮魂歌 歌詞" (Targeted Original)
+            *   "抗う君への鎮魂歌 lyrics English" (Targeted English)
+
+    I'm ready to execute with the following tool call: `default_api:web_search_langsearch_multi(queries=["抗う君への鎮魂歌 歌詞", "抗う君への鎮魂歌 lyrics English"])`
+
+    Finally, my output structure is already prepared:
+
+    *   **Scene 1:** 00:00 - 00:13 (No music)
+    *   **Scene 2:** 00:13 - 04:32 (Contains song)
+    *   **Scene 3:** 04:32 - 04:56 (No music)
+
+    I now wait for the search results, assuming they will yield lyrics and song metadata. If not, I'll return null values as the instructions dictate.
+
+
+
+    **My Analysis of the "抗う君への鎮魂歌" Search and Response**
+
+    Alright, let's break this down. The initial search was a bust – no readily available popular song with that title ("Requiem for you who fights"). The search results are skewed towards unrelated topics, mostly anti-epidemic or "Soul Guardian" themed material. The video clearly indicates "抗う君への鎮魂歌" as the title and "Takane Lui" as the performer. This strongly suggests an original composition or a very niche cover specifically for her "1st Live."
+
+    Since I can't pull up official lyrics or a translation using the given search functionality, I *must* invoke the `SEARCH FAILURE FALLBACK`. The rules are clear: if the official lyrics aren't found, the lyrics fields go straight to `null`. Absolutely no manual transcription or translation is permitted.
+
+    Therefore, the response structure is straightforward.
+
+    *   **Scene 1 (00:00 - 00:13):** No vocal music present.
+    *   **Scene 2 (00:13 - 04:32):** Vocal music is present: "抗う君への鎮魂歌". The performer is confirmed as Takane Lui. The artist is either unknown or, more likely, Takane Lui herself, given the likely original nature of the song. The language is Japanese, and *crucially*, the lyrics are set to `null` due to the search failure.
+    *   **Scene 3 (04:32 - 04:56):** No vocal music present.
+
+    My final step is to meticulously verify that all metadata is accurately filled, and that `null` has been correctly applied to the lyrics field. This is a simple application of my existing knowledge combined with the given rules and constraints.
+
+
+...
