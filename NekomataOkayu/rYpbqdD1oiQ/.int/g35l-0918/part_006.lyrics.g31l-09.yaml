@@ -1,0 +1,99 @@
+name: part_006
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features two musical performances by virtual artists.
+    The first segment (00:00 - 03:00) features Nekomata Okayu and La+ Darknesss performing
+    the song "Imi Fumei" by PinocchioP. The second segment (03:06 - 05:00) features
+    Nekomata Okayu and Oozora Subaru performing the song "Lower" by Nuyuri. The intervening
+    period (03:00 - 03:06) is a transitional scene without vocal music.
+  scenes:
+  - start: '00:00.000'
+    end: '03:00.000'
+    description: Nekomata Okayu and La+ Darknesss perform the song 'Imi Fumei' on
+      stage.
+    contains_vocal_music: true
+    song_title: 意味不明
+    original_artist: null
+    performer_in_video: Nekomata Okayu, La+ Darknesss
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:00.000'
+    end: '03:06.000'
+    description: Short transitional scene where the performers change and the stage
+      setup shifts.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:06.000'
+    end: '05:00.000'
+    description: Nekomata Okayu and Oozora Subaru perform the song 'Lower' on stage.
+    contains_vocal_music: true
+    song_title: ロウワー
+    original_artist: null
+    performer_in_video: Nekomata Okayu, Oozora Subaru
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Thought Process: Analyzing, Planning, and Executing a Scene-to-Song Mapping Task**
+
+    Okay, here's how I'm approaching this: First, I'm breaking down the request. The core objective is to map scenes to songs, identify those songs, and then retrieve *full* lyrics – or, if I can't find full lyrics, mark it as "null". I've got a checklist of constraints in my head, making sure I don't do any manual transcription or translation, and that I'm only using the web search tool as intended. A 5/5 confidence score means I think I can nail this.
+
+    I'm starting with a mental walkthrough of the video. The initial segment (0:00-3:00) features two virtual performers, Nekomata Okayu and La+ Darknesss, singing in Japanese. The on-screen text hints at a song related to Okayu's birthday live. Based on the lyrics "ぼくらはみんな意味不明" (Boku-ra wa Minna Imi Fumei), that's the snippet I'll use to search. Then, at (3:06-5:00), the scene changes to Okayu and Oozora Subaru. The song here is different, with "作詞・作曲：めゆゆ" (Lyricist/Composer: Meyuyu) clearly displayed alongside the title "ロウワー" (Lower).
+
+    Now, the search strategy. For the first song, I'll search for "ぼくらはみんな意味不明 歌詞" (Boku-ra wa Minna Imi Fumei lyrics). The title from the lyrics is "Imi Fumei". I need to confirm the *official* title. For the second song, I know the title is "ロウワー" (Lower) and the composer is "めゆゆ" (Meyuyu).
+
+    I'm thinking of constructing parallel search queries to optimize the process. My initial set of queries looks like this:
+
+    1.  "ぼくらはみんな意味不明 歌詞"
+    2.  "Boku-ra wa Minna Imi Fumei lyrics English"
+    3.  "ロウワー めゆゆ 歌詞"
+    4.  "Lower Meyuyu lyrics English"
+
+    However, before I execute the `web_search_langsearch_multi` tool, I remember the instruction to use the *original* composer, not the performer. The first song is likely Neru's "Imi Fumei", so I will refine the queries to better reflect that.
+
+    I'm now thinking:
+
+    1.  "意味不明 歌詞 Neru"
+    2.  "Imi Fumei Neru lyrics English"
+    3.  "ロウワー めゆゆ 歌詞"
+    4.  "Lower Meyuyu lyrics English"
+
+    I'm constructing the JSON structure as I go, mapping the scenes: scene 1 (0:00-3:00), scene 2 (3:00-3:06, transition), and scene 3 (3:06-5:00). Then, I'll fill in the details (song title, composer, performers, language). The real work will be in the search results – I must get the *full* lyrics.
+
+    Once I run the search (the system will *make me*), I'll refine the queries again to ensure I am finding the *full* lyrics and a relevant translation if possible. My final queries, which I am about to call (or will be simulated here):
+
+    1.  "意味不明 歌詞 Neru"
+    2.  "Imi Fumei Neru lyrics English"
+    3.  "ロウワー 歌詞 めゆゆ"
+    4.  "Lower Meyuyu lyrics English"
+
+    I must ensure the lyrics are complete, as the prompt specifies, and that the data is *accurate*. I'm now drafting the JSON, reviewing the structure, and I'm ready to execute the search and get the final JSON payload.
+
+
+
+    **My Analysis of the Search Results and Subsequent JSON Assembly**
+
+    Alright, let's break this down systematically. I need to generate some JSON, but it requires *complete* lyrics. No placeholders, no truncations. That's the key.
+
+    First, I looked into "ぼくらはみんな意味不明" (Bokura wa Minna Imi Fumei), which appears to be "Imi Fumei" composed by PinocchioP, sung by Okayu and La+. Search Result 7 has snippets of lyrics. However, I can't be sure they are complete; they end mid-sentence, and I *cannot* guarantee the entire official text from this. Since I can't confirm the *full* lyrics from these results, I *must* set `reference_lyrics_og` and `reference_lyrics_en` to `null` to comply with the "no truncation" rule. I know how tricky Vocaloid lyrics can be to track down definitively!
+
+    Next, "ロウワー" (Lower) by ぬゆり (Nuyuri). I confirmed "ぬゆり" is both the lyricist and composer. Result 13 had an English translation, but it's clearly an *adaptation* or "English cover." Not a *direct* translation. So, as with "Imi Fumei," I cannot source the complete text, nor do I want to speculate with a partial translation. Because I can't find a direct translation, and to be safe, I'm setting `reference_lyrics_en` to `null`. I'm setting `reference_lyrics_og` to `null` to adhere to "no truncation" rule for the same reasons as Song 1.
+
+    Now, for the scene mapping.
+
+    *   **Scene 1:** 00:00.000 to 03:00.000: This has vocals; the song is "Imi Fumei" by PinocchioP, performed by Okayu and La+, in Japanese.
+    *   **Scene 2:** 03:00.000 to 03:06.000: No vocals here.
+    *   **Scene 3:** 03:06.000 to 05:00.000: Vocals are present. This segment features "ロウワー" (Lower) by ぬゆり (Nuyuri), performed by Okayu and Oozora Subaru, again in Japanese.
+
+    With this analysis, I'm ready to assemble the final JSON structure, ensuring everything is populated accurately and within the constraints.
+
+
+...
