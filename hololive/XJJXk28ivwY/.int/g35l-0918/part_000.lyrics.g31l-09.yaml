@@ -1,0 +1,112 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 305048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video consists of a series of static promotional slides for
+    Hololive merchandise and fan messages. The audio throughout the entire duration
+    is an instrumental background track, with no vocal music present.
+  scenes:
+  - start: '00:00.000'
+    end: '00:09.000'
+    description: Introductory title screen showing a character graphic for a Hololive
+      event.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:09.000'
+    end: '00:18.000'
+    description: Attention notice screen with guidelines for event attendees.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:18.000'
+    end: '05:07.000'
+    description: A series of slides displaying various 2nd merchandise items, pricing,
+      and fan messages.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Thought Process: Analyzing a Hololive Promotional Video**
+
+    Okay, here's how I'm approaching this. The goal is to produce a JSON output mapping scenes, identifying any vocal songs, and retrieving lyrics if they exist. The key constraints are no manual work, no truncation, and I can only use what the search tool provides.
+
+    First, I need to analyze the video. It's immediately clear this is promotional material, specifically for a Hololive event, likely merchandise. My initial pass indicates static graphics with background music only. No vocals.
+
+    I start breaking the video down into scenes. *00:00 - 00:09* is the title screen, *00:09 - 00:18* is an "Attention" screen, and *00:18 - 05:07* covers the bulk of the content: merchandise promotion and fan messages. I pay close attention to the audio. I can hear only consistent, upbeat, instrumental music.
+
+    I need to confirm, though. No assumptions. I re-listen to the audio carefully, and confirm that there are *no* vocals. The entire video is instrumental.
+
+    Since there's no vocal music, this simplifies things. I understand that for the metadata, the field `contains_vocal_music` will be `false` for every scene. All the song metadata fields – title, artist, lyrics, etc. – will be `null`.
+
+    So, the video's global summary will be, "The video consists of a series of static promotional slides for Hololive merchandise and fan messages. The audio throughout the entire duration is an instrumental background track, with no vocal music present." My scene breakdown looks like this:
+
+    *   Scene 1: *00:00 to 00:09* (Intro)
+    *   Scene 2: *00:09 to 00:18* (Attention notice)
+    *   Scene 3: *00:18 to 05:07* (Merchandise and fan messages)
+
+    I then review the process against the initial constraints: No manual transcription? Check. No truncation? Not applicable, since there are no lyrics to truncate. Scene mapping? All scenes are clearly defined, and there is one scene with non-vocal music. Song metadata? All fields are `null`, as they should be.
+
+    Okay, here's my final JSON:
+
+    ```json
+    {
+      "global_summary": "The video consists of a series of static promotional slides for Hololive merchandise and fan messages. The audio throughout the entire duration is an instrumental background track, with no vocal music present.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "00:09.000",
+          "description": "Introductory title screen showing a character graphic for a Hololive event.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "00:09.000",
+          "end": "00:18.000",
+          "description": "Attention notice screen with guidelines for event attendees.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "00:18.000",
+          "end": "05:07.000",
+          "description": "A series of slides displaying various 2nd merchandise items, pricing, and fan messages.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    The output complies with all requirements. No search was necessary because no music was detected. Done.
+
+
+...
