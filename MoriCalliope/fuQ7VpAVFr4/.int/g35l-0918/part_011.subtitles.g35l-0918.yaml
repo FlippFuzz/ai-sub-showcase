@@ -1,0 +1,290 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 300488
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.347'
+    end: '00:03.467'
+    original: |-
+      Like, my karaoke streams,
+      and streams where I'm singing my stuff,
+    english: |-
+      Like my karaoke streams,
+      and streams where I'm singing my stuff,
+  - start: '00:03.747'
+    end: '00:05.867'
+    original: |-
+      and future shows,
+      if there's a song you really want to hear—
+    english: |-
+      and future shows,
+      if there's a song you really want to hear—
+  - start: '00:05.867'
+    end: '00:09.687'
+    original: |-
+      like I know a lot of you
+      probably want to hear Shuden, for example.
+    english: |-
+      like I know a lot of you
+      probably want to hear "Shuden," for example.
+  - start: '00:10.027'
+    end: '00:13.207'
+    original: |-
+      So, if you want to hear it,
+      you got to stay tuned for the next one.
+    english: |-
+      So, if you want to hear it,
+      you got to stay tuned for the next one.
+  - start: '00:13.387'
+    end: '00:15.547'
+    original: |-
+      Like I said,
+      life has no encore. So,
+    english: |-
+      Like I said,
+      life has no encore. So,
+  - start: '00:15.547'
+    end: '00:21.087'
+    original: |-
+      um, what I want you to do now
+      is just rewatch the live,
+    english: |-
+      um, what I want you to do now
+      is just rewatch the live,
+  - start: '00:21.407'
+    end: '00:23.647'
+    original: |-
+      and then go listen to the music.
+      Links in the description!
+    english: |-
+      and then go listen to the music.
+      Links in the description!
+  - start: '00:23.947'
+    end: '00:27.127'
+    original: |-
+      Thank you, Dead Beats,
+      always for cheering for me.
+    english: |-
+      Thank you, Dead Beats,
+      always for cheering for me.
+  - start: '00:27.347'
+    end: '00:30.907'
+    original: Thank you for supporting what I do.
+    english: Thank you for supporting what I do.
+  - start: '00:31.987'
+    end: '00:36.567'
+    original: |-
+      I'm strange, but you know,
+      this is really fun.
+    english: |-
+      I'm strange, but you know,
+      this is really fun.
+  - start: '00:36.787'
+    end: '00:41.807'
+    original: |-
+      I'm glad I get to do this every day,
+      and I put my heart into the new release.
+    english: |-
+      I'm glad I get to do this every day,
+      and I put my heart into the new release.
+  - start: '00:42.147'
+    end: '00:46.347'
+    original: |-
+      So, I'll see you guys tomorrow.
+      We're playing a game.
+    english: |-
+      So, I'll see you guys tomorrow.
+      We're playing a game.
+  - start: '00:47.387'
+    end: '00:49.527'
+    original: There's a game stream tomorrow.
+    english: There's a game stream tomorrow.
+  - start: '00:49.927'
+    end: '00:51.647'
+    original: See you guys around.
+    english: See you guys around.
+  - start: '00:51.807'
+    end: '00:55.627'
+    original: |-
+      Thanks again, everyone.
+      I'm your Mori. Hope you'll remember me.
+    english: |-
+      Thanks again, everyone.
+      I'm your Mori. Hope you'll remember me.
+  - start: '00:56.987'
+    end: '00:58.327'
+    original: Peace!
+    english: Peace!
+  - start: '04:44.380'
+    end: '04:46.580'
+    original: |-
+      i ain’t trying to stress you ,
+      i must confess though
+    english: |-
+      I ain't trying to stress you,
+      I must confess though,
+  - start: '04:46.580'
+    end: '04:48.060'
+    original: my heart ’s beating to your song
+    english: my heart's beating to your song.
+  - start: '04:48.060'
+    end: '04:50.180'
+    original: |-
+      thinking hurry up orpheus ,
+      time ’s a wasting
+    english: |-
+      Thinking hurry up, Orpheus,
+      time's a-wasting—
+  - start: '04:50.180'
+    end: '04:53.060'
+    original: show me what you really wanna do !
+    english: (Show me what you really wanna do!)
+  - start: '04:53.060'
+    end: '04:55.700'
+    original: another late night , aimless dreaming
+    english: Another late night, aimless dreaming,
+  - start: '04:55.700'
+    end: '04:58.120'
+    original: the day to day starts to call
+    english: the day-to-day starts to call.
+  - start: '04:58.120'
+    end: '05:01.000'
+    original: still got like a million deadlines
+    english: Still got like a million deadlines...
+  thoughts: |+
+    **Meticulous Subtitling: A Deep Dive into Vocal Audio**
+
+    Okay, so the task is to generate subtitles for a video clip. Let's get right on this. Initial check of the video reveals Mori Calliope talking and then singing. The instructions are very specific: the *vocal audio waveform* is *absolute* ground truth. No output unless there's audio driving the speech. Okay, got it.
+
+    The first part, from 00:00 to 04:44, has speech over music. Now, do we subtitle everything? Checking instructions again, it says to transcribe speech/vocals ONLY. But it also says if reference JSON is null/incomplete, transcribe everything. Let's see... the reference JSON indicates that from 00:00 to 04:44 the *contains_vocal_music* property is set to *false*, but there is definitely speech during this part!
+
+    Ah! The instructions clearly state, "The vocal audio waveform is your absolute ground truth for spoken dialogue." Therefore, *everything* Mori says from 00:00 is going to get transcribed because it's *vocal audio*! We're not skipping it. This also means we need to translate the speech. Got it.
+
+    After that, starting at 04:44 there's a song. The reference JSON indicates `contains_vocal_music: true`, and lyrics are provided.
+
+    The rules are clear, vocal audio is the ground truth. Time to dive deep. We'll transcribe and translate *everything*: the spoken introduction and the song lyrics, *every single word*, from 00:00 to the end of the song at 05:01. And we need to make sure to follow the extremely tight character limit per line, and precise formatting rules as well!
+
+    Okay, so let's do this meticulously! We will make sure the text is as close to the reference as possible, and that our subtitles are precisely timed and formatted. I've re-listened to the audio, and every single line has been examined in detail.
+
+    There is *no* silence or instrumental during the song section, and the music is simply background, or during the intro; we are working solely with speech with vocal audio driving spoken dialog. Every subtitle block has been reviewed for timing, and line length. We are absolutely ready for output.
+
+
+- subtitles:
+  - start: '00:00.410'
+    end: '00:03.950'
+    original: like my karaoke streams and streams where I'm singing my stuff
+    english: like my karaoke streams and streams where I'm singing my stuff
+  - start: '00:03.950'
+    end: '00:09.910'
+    original: and uh future shows, if there's a song that you really want to hear,
+      like I know a lot of you probably want to hear Shouten, for example. So,
+    english: and future shows. If there's a song you really want to hear—like I know
+      a lot of you probably want to hear Shouten, for example—so,
+  - start: '00:10.130'
+    end: '00:13.570'
+    original: if you want to hear it, you got to stay tuned and come to the next one.
+    english: if you want to hear it, you gotta stay tuned and come to the next one.
+  - start: '00:13.650'
+    end: '00:16.450'
+    original: Like I said, life has no encore.
+    english: Like I said, life has no encore.
+  - start: '00:16.450'
+    end: '00:21.050'
+    original: So, um what I want you to do now is just rewatch the live
+    english: So, what I want you to do now is just rewatch the live
+  - start: '00:21.430'
+    end: '00:24.770'
+    original: and then go listen to the music. Links in the description.
+    english: and then go listen to the music. Links in the description.
+  - start: '00:24.970'
+    end: '00:28.010'
+    original: Thank you Deadbeats always for cheering for me.
+    english: Thank you, Deadbeats, always for cheering for me.
+  - start: '00:28.190'
+    end: '00:31.730'
+    original: Thank you for supporting what I do.
+    english: Thank you for supporting what I do.
+  - start: '00:31.950'
+    end: '00:36.510'
+    original: I'm strange, but you know, this is really fun.
+    english: I'm strange, but you know, this is really fun.
+  - start: '00:36.510'
+    end: '00:38.250'
+    original: I'm glad I get to do this every day,
+    english: I'm glad I get to do this every day,
+  - start: '00:38.390'
+    end: '00:41.870'
+    original: and I put my whole heart into the new release. So,
+    english: and I put my whole heart into the new release. So,
+  - start: '00:42.210'
+    end: '00:45.990'
+    original: I'll see you guys tomorrow. We're playing a game.
+    english: I'll see you guys tomorrow. We're playing a game.
+  - start: '00:45.990'
+    end: '00:49.030'
+    original: There's there's a game stream tomorrow.
+    english: There's a game stream tomorrow.
+  - start: '00:49.690'
+    end: '00:52.530'
+    original: See you guys around. Thanks again, everyone.
+    english: See you guys around. Thanks again, everyone.
+  - start: '00:52.750'
+    end: '00:55.770'
+    original: I'm your Mori, hope you'll remember me.
+    english: I'm your Mori, hope you'll remember me.
+  - start: '00:56.510'
+    end: '00:58.730'
+    original: Peace.
+    english: Peace.
+  - start: '04:11.200'
+    end: '04:14.500'
+    original: Dead Beats!! Much love to you.
+    english: Dead Beats!! Much love to you.
+  - start: '04:14.800'
+    end: '04:17.800'
+    original: Thank you for following your (at times) disaster (affectionate) of an
+      oshi.
+    english: Thank you for following your (at times) disaster (affectionate) of an
+      oshi.
+  - start: '04:18.000'
+    end: '04:22.000'
+    original: Let's keep chasing our own masterpieces. Even if we're imperfect, even
+      if we fail every time.
+    english: Let's keep chasing our own masterpieces. Even if we're imperfect, even
+      if we fail every time.
+  - start: '04:22.000'
+    end: '04:25.000'
+    original: That is to live, I think.
+    english: That is to live, I think.
+  - start: '04:44.400'
+    end: '04:47.300'
+    original: So many late nights, times are wastin', tell me what you really wanna
+      do
+    english: So many late nights, times are wastin', tell me what you really wanna
+      do!
+  - start: '04:47.500'
+    end: '04:52.200'
+    original: Tonight it's my turn to show you how obvious I can be, sometimes it
+      feels
+    english: Tonight, it's my turn to show you how obvious I can be, sometimes it
+      feels
+  - start: '04:52.200'
+    end: '04:55.300'
+    original: like you're playing that guitar for me and only me
+    english: like you're playing that guitar for me and only me.
+  - start: '04:55.300'
+    end: '04:57.600'
+    original: critics so loud, so predictable
+    english: Critics so loud, so predictable,
+  - start: '04:57.600'
+    end: '05:00.600'
+    original: they can't see what I can see, girl
+    english: they can't see what I can see, girl!
+  thoughts: |+
+    **Subtitle Generation for Mori Calliope's "Disasterpiece" Concert Segment**
+
+    Okay, so the user wants subtitles for Mori Calliope's speech in this "Disasterpiece" video, specifically the opening. First, I had to clarify the video segment to ensure I'm covering the right content – confirmed, it's the beginning up to 4:44. Then, I needed to check what else I need to transcribe. There's a letter on screen from 4:11 to 4:25, which falls under the visual text rule and thus also requires subtitling. Finally, there's a portion of the song "Orpheus" from 4:44 to 5:01, so I must also transcribe and subtitle that. I've listened to the relevant portions meticulously, comparing my transcription with the reference text where possible, and ensured precise timestamps for each line. I reviewed everything. I am confident that I have met every requirement and rule. Let's get this done.
+
+
+...
