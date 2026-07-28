@@ -1,0 +1,53 @@
+name: part_021
+total_attempts: 1
+video_duration_ms: 243481
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '03:28.200'
+    end: '04:02.000'
+    original: |-
+      この後は もう1本グランプリ！
+      2026年もホロライブプロダクションをよろしくお願い致します！
+    english: |-
+      Up next is another 1-Book Grand Prix!
+      Thank you for your continued support of hololive production in 2026!
+  thoughts: |+
+    **Analyzing Subtitles for VTuber Concert Ending Credits**
+
+    Okay, so I've got this video – the ending credits sequence for hololive production COUNTDOWN LIVE 2025>2026. My initial check, based on the reference JSON, indicated no vocals (`contains_vocal_music: false`). So, the immediate focus is on visual text. I'll listen to the audio to confirm this – from 00:00 to 03:24, it's just instrumental music (a medley).
+
+    The key here is the "VISUAL EVENTS" rule. The screen is filled with text – credits, song titles in brackets (`[RENEGADE]`, etc.). The question is, do we subtitle all of this? The instructions state to focus on prominent, relevant visual text, not just meaningless background or UI elements. For an ending credits, translating every single staff name would be overkill and create unnecessary clutter. But what about those song titles and section headings? Those *might* be relevant.
+
+    I'm carefully reviewing the on-screen text to identify anything truly crucial. I see song titles within brackets like `[RENEGADE]` and `[Genesis]`, but, wait, are they already bilingual/English? The instruction is "translate prominent, relevant visual text (titles, signs). Exclude meaningless background clutter or UI elements.".
+
+    Then I spot something: at 03:28, a text card appears! It reads, in Japanese: "この後は もう1本グランプリ！ 2026年もホロライブプロダクションをよろしくお願い致します！" ("Up next is another 1-Book Grand Prix! Thank you for supporting hololive production in 2026!"). Now that's *prominent* and *relevant*!
+
+    I double-check: no vocal events. So, the end-screen message is the only candidate. Let me get the timecodes: it starts at 03:28.000 and runs until the end (04:02.000). I can break it down in two lines:
+
+    Line 1: "この後は もう1本グランプリ！" (15 characters)
+    Line 2: "2026年もホロライブプロダクションをよろしくお願い致します！" (32 characters)
+
+    Both fit well within the 50-character per line limit.
+
+    I review the other scrolling credits. They are in English and Japanese. No need to translate that. But this end announcement is purely in Japanese and will definitely benefit from English subtitles, and it clearly adheres to the "Visual Events" rule.
+
+    Now, let's construct that subtitle entry. I'm going to follow best practices for accuracy and structure. I'll make sure it's valid JSON and is properly formatted. Here's what I've got:
+
+    ```json
+    {
+      "s": "03:28.200",
+      "e": "04:02.000",
+      "og": "この後は もう1本グランプリ！
+    2026年もホロライブプロダクションをよろしくお願い致します！",
+      "en": "Up next is another 1-Book Grand Prix!
+    Thank you for your continued support of hololive production in 2026!"
+    }
+    ```
+
+    I'll verify one last time: from 00:00 to 03:24, we have instrumental music and scrolling text. No dialogue. Therefore, only the end message at 03:28.200 warrants subtitling as a visual event.
+
+    I've checked the instructions and formatting requirements: timecodes are in the correct format, translations are accurate, and I haven't added any unnecessary CC tags. Everything checks out.
+
+
+...
