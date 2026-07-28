@@ -1,0 +1,43 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 303888
+lyrics_prompt_version: 9
+response:
+  global_summary: 'The video is a promotional clip showcasing merchandise for ''Hoshimachi
+    Suisei Live SuperNova: REBOOT'', followed by a long sequence of fan messages.
+    A persistent instrumental electronic background track plays throughout the entire
+    video; no vocal music is present.'
+  scenes:
+  - start: '00:00.000'
+    end: '05:05.000'
+    description: Promotional video showing 'Attention' and merchandise lists, followed
+      by a sequence of fan messages against a background of instrumental electronic
+      music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Constructing the Response**
+
+    Okay, so the user wants me to analyze this video and determine if any vocal music is present. The video itself seems straightforward enough, a series of static images with text – some Japanese, some English – playing for the entire duration. There's a background track, an instrumental/electronic pop piece, playing throughout, so that's what I need to focus on.
+
+    First, I need to analyze the audio carefully. Initial impressions suggest an instrumental track, but I need to be absolutely certain. After multiple careful listens (00:00 - 05:05), it's definitely an instrumental synth-pop/electronic song with a repetitive melody. No vocals whatsoever. The task specifically requires detection of *vocal* music.
+
+    Now, let's map the scenes and build the structured output. The visual content changes, starting with "Attention" and "Goods" related information, shifting to fan messages. But importantly, the *same* instrumental track plays continuously in the background. Since the instructions say to 'detect ALL vocal songs playing', there are no vocal songs to be detected. Therefore, I won't need to perform any lyric lookups, since there aren't any lyrics.
+
+    Now to the output construction. The task calls for a `global_summary` and `scenes`. The `global_summary` needs to describe the video's content and musical characteristics. Since there are no vocal tracks, my `global_summary` will reflect that and should state that an instrumental electronic background track is present throughout the video, and that no vocal music is present.
+
+    The `scenes` section requires a start and end time. Since the entire video is unified by the background music, I'll provide a single scene from 00:00.000 to 05:05.000. Because I'm detecting no vocal music, the `contains_vocal_music` field should be `false`, and all other song-related fields should be set to `null`, since no songs were detected.
+
+    I need to re-check the audio *again* to be absolutely sure there aren't any hidden vocal samples. Nope. It's truly just an upbeat synth-pop instrumental.
+
+    Finalizing the JSON, I'll craft the `global_summary` as: "The video is a promotional clip showcasing merchandise for 'Hoshimachi Suisei Live SuperNova: REBOOT' followed by a collection of fan messages. A persistent instrumental electronic background track plays throughout the entire video; no vocal music is present." And the `scenes` section will be a single scene encompassing the entire duration, with `contains_vocal_music` set to `false`, and all song-related fields set to `null`. I'll follow the provided examples to make the output structured.
+
+    Okay, I think I'm ready to build the response, considering the user's requirements and the context.
+
+
+...

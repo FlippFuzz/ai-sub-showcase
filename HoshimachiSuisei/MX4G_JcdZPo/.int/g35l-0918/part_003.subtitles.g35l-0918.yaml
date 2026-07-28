@@ -1,0 +1,60 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 305008
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Subtitle Decision: "Hoshimachi Suisei Live SuperNova: REBOOT" Waiting Screen**
+
+    Okay, so I've got this waiting-screen video for "Hoshimachi Suisei Live SuperNova: REBOOT", and the user wants subtitles. Right, let's dive in. The main rule here is "Zero Ghost Subtitles" – silence if there's no vocal audio unless there's a *prominent* visual event.
+
+    First, I need to listen closely. From the provided timestamps, it sounds like we have background music from 00:00 to 05:07. I've got to check if this music has vocals – either dialogue or singing – because that's the trigger for subtitles. Listening carefully, around 04:44 - 04:49 there's a possible vocal sample ("Get up, get up" or something similar) buried in the BGM. Is it a *main* vocal performance that requires transcription, or just a background sample?
+
+    The prompt specifies to only transcribe actual speech or singing, no sound effects or [applause] tags. Hmm, if it's BGM with vocals, do we subtitle them? In the context of a waiting screen, typically we don't subtitle background music vocals unless they are integral to the main song. Let's listen again. Yes, it's just a repeating voice sample.
+
+    Now, visual events. The video has on-screen text: messages, merchandise details ("Essentials Pack", "Random REBOOT Collections"), and event notices ("The concert will be starting soon"). The guidelines do say to subtitle "prominent, relevant text (titles, signs)," but does this apply to promotional slides and merch displays?
+
+    I've got to consider the standard practice. Music videos and trailers usually subtitle title cards or location names, but this waiting screen is a sea of fan messages and changing merchandise slides. Subtitling *everything* on the screen would be overkill, a deluge of UI and merch text. It's not the intent unless it's explicitly specified. I'm going to consult the JSON reference provided, `contains_vocal_music: true`, `song_title: null`, `reference_lyrics_og: null`, which states that there is vocal music, but no lyrics are referenced.
+
+    So, let's re-verify: is there *any* spoken dialogue? No announcer, no Vtuber talking. It's just background music and changing slides. No vocal events. The guidelines explicitly say to exclude "meaningless background clutter or UI elements." These promotional slides, event notices, and fan messages are definitely UI elements.
+
+    I need to confirm there's no actual vocals. I will conduct a thorough audio check from 00:00 to 05:07. It's music, no voice acting, no dialogue, no singing. The visuals are fan messages, promotional merch, and event notices.
+
+    Now I'm looking at the instructions again. "The vocal audio waveform is your absolute ground truth." And, "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music... If no vocals are heard, output nothing (unless there is a prominent Visual Event)."
+
+    Therefore, since there are no spoken vocals, and the on-screen text consists of UI elements and promotional material (not narrative text), the correct response here is an empty `subs` array. Let me double-check. Yup. No specific text needs subtitling. The correct response is an empty subtitle array.
+
+
+- subtitles:
+  - start: '00:49.000'
+    end: '00:58.500'
+    original: 開演までしばらくお待ちください
+    english: The concert will be starting soon.
+  - start: '01:00.000'
+    end: '01:08.500'
+    original: Attention ご来場のお客様へ 演出の都合上、照明の点滅にご注意ください 声出し応援OKです
+    english: 'Attention: Please be aware of flashing lights and that cheering is allowed
+      during the performance.'
+  thoughts: |+
+    **My Subtitle Strategy for the "SuperNova: REBOOT" Promotional Video**
+
+    Okay, so I'm tackling this promotional video for Hoshimachi Suisei's "SuperNova: REBOOT" live, and the goal is subtitles. The core challenge here seems to be differentiating between the background music, potential song snippets, and actual spoken content, plus on-screen text. First, I need to verify that I understand the instructions. I know there are rules regarding silence with instrumental music. Let's start with a thorough audio analysis. From 0:00 to 0:49, it's pretty clear that it's just background music. Now, the key is listening very closely and carefully throughout the entire 5 minute stretch.
+
+    My primary task is to find if there are any spoken parts or vocals playing in the video!
+
+    There's no spoken dialogue. However, the video seems to contain a lot of instrumental background music or songs in the background. The visual text appearing on the screen is key here.
+
+    There appears to be instrumental music from 00:00 - 05:07. There may be some vocal samples or songs in the BGM.
+    At 00:49, we have "開演までしばらくお待ちください" (Please wait a moment until the performance starts). I'll need to remember that. Then, the merchandise screens and messages - are those considered "prominent visual text"? I think so, especially informational cards like "Attention" or "Concert will be starting soon".
+
+    I'm taking note of this `<scene_and_lyrics_reference_json>` and that `contains_vocal_music` is true. But the main lyrics reference is null, so it is just "vocal music", not "full lyrics".
+
+    I need to transcribe every audible vocal event from the beginning to the end, per the verification instructions. The BGM has vocals and there is a "Kitto..." sample. The instruction on silence and prominence of visual events is critical. Instrumental music and silent. The main subtitles should include any visible text, like the "Attention" message and "The concert will be starting soon" message.
+
+    I've listened again, and there is an instrumental track playing, which also contains a vocal sample ("Kitto kitto..."). I should listen to the video once again to make sure I did not miss any spoken vocals. My conclusion is that there are no spoken lines.
+
+    I am including "The concert will be starting soon" at 00:49 and the "Attention" text at 01:00. This is the main part of the promotional video, and it's the core task: no spoken dialogue; instrumental music or songs, "prominent" visual text.
+
+
+...
