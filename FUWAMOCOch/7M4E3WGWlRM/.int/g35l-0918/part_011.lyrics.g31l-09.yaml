@@ -1,0 +1,76 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 298781
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a performance segment from the 'FUWAMOCO Wacha
+    Wacha Birthday Festival 2026', featuring VTubers FuwaMoco and guest Kuro-chan.
+    The performance includes an upbeat musical number.
+  scenes:
+  - start: '00:00.000'
+    end: '00:05.000'
+    description: FuwaMoco introduce the segment with talking before the performance
+      begins.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:05.000'
+    end: '04:12.000'
+    description: FuwaMoco and Kuro-chan perform an upbeat song together on stage with
+      choreographed dance moves.
+    contains_vocal_music: true
+    song_title: Wacha Wacha Birthday Song (unofficial title)
+    original_artist: null
+    performer_in_video: FuwaMoco, Kuro-chan
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:12.000'
+    end: '04:59.000'
+    description: The performance ends, followed by talking, thank you messages, and
+      closing remarks by FuwaMoco and Kuro-chan.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the VTuber Performance**
+
+    Okay, so I'm looking at this video of a VTuber performance – it seems to be some kind of concert or birthday event, judging by the on-screen text "Wacha Wacha Birthday Festival." My job is to figure out the song, artist, and lyrics. Here's how I'm breaking it down:
+
+    First, I need to map the scene:
+
+    *   **00:00 - 00:05:** Intro segment, some talking. I can skip that for now.
+    *   **00:05 - 04:12:** The main event! This is where the VTubers, FuwaMoco, and a guest, Kuro-chan, are performing the song. This is the heart of my analysis.
+    *   **04:12 - 04:59:** Outro segment, more talking. I can skip this too, for now.
+
+    The lyrics and the performance style – high energy, idol-like – are my main clues. I see some lyrics on the screen, so I'm making a mental note of them: "終わんないでトキメキ伝愛♥予習", "喉の奥がチクンチクン", "僕はドクンドクン", "心臓ごと引きずりだしてみてよ". These sound vaguely familiar, definitely in the style of Vocaloid producers like PinocchioP. My intuition tells me this, given the "God-ish" style mention in the prompt's examples. However, I need to search for these lyrics.
+
+    Now, I'm thinking about how to find the original song. I know it's a FuwaMoco performance, but I need to identify the *original* song.
+
+    I'll be using web search with `default_api:web_search_langsearch_multi`. I have to formulate my queries:
+
+    *   Query 1: "終わんないでトキメキ伝愛予習 歌詞"
+    *   Query 2: "喉の奥がチクンチクン 僕はドクンドクン 歌詞"
+
+    I'm aiming for the most targeted approach possible. These lyric snippets should lead me straight to the original song. I'll execute the search now: `default_api:web_search_langsearch_multi(queries=["終わんないでトキメキ伝愛予習 歌詞", "喉の奥がチクンチクン 僕はドクンドクン 歌詞"])`. Once I get the results, I can populate my `final_result` with the information.
+
+    I'm thinking ahead: the song title might be "Wacha-Wacha," since it's on screen and related to their channel name. But, I won't assume – I'll search the lyrics first. That's the key.
+
+
+
+    **Analyzing the Lyric Search Results**
+
+    Okay, so the lyric search came up empty. I was hoping to find the official lyrics for the FuwaMoco song from their birthday concert – specifically, the lyrics "終わんないでトキメキ伝愛予習" – but no luck. Based on the video, it's pretty clear this is either an original piece or a special remix created just for the "FUWAMOCO Wacha Wacha Birthday Festival 2026." Given the lack of indexed lyrics, and per the instructions, I'll need to set the `lyrics` field to `null`.
+
+    With that detail sorted, I have sufficient information to assemble the `final_result`. I can clearly break the video down now: I have the date, the performers, and general context. The summary will show that the entire video is a performance segment. The scene descriptions can easily be gleaned from the timestamp data I have from reviewing the video.
+
+
+...
