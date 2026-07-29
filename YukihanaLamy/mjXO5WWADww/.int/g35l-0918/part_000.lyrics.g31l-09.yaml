@@ -1,0 +1,57 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 301308
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a promotional clip for a Hololive production titled
+    'ホロレンジジャー' (Holoranger), which appears to be a parody of 'Himitsu Sentai Gorenger'.
+    The entire video consists of a single, continuous musical segment featuring an
+    original song performed by various Hololive VTubers. No official lyrics for this
+    specific parody song could be found via web search.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: A static, promotional image featuring various Hololive characters
+      arranged in a superhero-style poster. The text 'ホロレンジジャー' (Holoranger) is prominent
+      in the center, and the entire scene is accompanied by a high-energy, original
+      musical theme song.
+    contains_vocal_music: true
+    song_title: ホロレンジジャー
+    original_artist: Hololive Production
+    performer_in_video: Various Hololive VTubers
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Finding the Lyrics**
+
+    Okay, the user wants me to dissect this video, identify the music, and get the lyrics. My initial assessment is that this will be straightforward. It starts with a static image and a clear title: "ホロレンジジャー" (Holoranger). The music kicks in immediately, a high-energy anime-style song that appears to continue throughout the entire five-minute clip. No scene changes impacting the music, so that simplifies things.
+
+    My strategy is clear: I'll use the title "ホロレンジジャー" as my primary search term. It seems highly likely that this is the project or song title itself. I'll utilize `web_search_langsearch_multi` to search, focusing on finding the song title, artist, and, most importantly, the lyrics.
+
+    To do this, I'll formulate my search queries. I will start with "ホロレンジジャー 歌詞" (Holoranger lyrics in Japanese) and also search for "Holoranger lyrics English translation" to see if any translations exist. I'm very aware that the user expects full, official lyrics, no partial transcriptions or manual translations. It's all or nothing. I'll need to make sure I don't truncate any results and that I'm clear on the failure fallback - if I cannot get the complete official lyrics, I will simply return `null`.
+
+    So, the first step is to call `web_search_langsearch_multi` with these formulated queries. Let's see what we can find!
+
+
+
+    **My Assessment of the HoloRanger Song**
+
+    Alright, let's break this down. My initial search for "ホロレンジジャー" didn't immediately turn up a hit for a well-known song with that exact title. However, the context is incredibly clear: the video screams "Hololive parody!" with its character appearances and the title itself being a play on "Himitsu Sentai Gorenger."
+
+    Digging deeper, a search for "Susume! Goranger" *did* surface, which is the original series' theme song. This strengthens the idea that "ホロレンジジャー" is an original parody, custom-made for this Hololive production. There's probably no "official" record of the song outside of the Hololive group.
+
+    The problem, as usual, is the lack of a suitable external reference. Given that the search tool didn't return usable lyrics and I am unable to transcribe, the lyrics field must be set to `null`. I can't fudge the data just because there appears to be lyrics on the video itself. It is not possible to include data not found on the web.
+
+    I have all the necessary information to complete the task now.
+
+    1.  I have scene mapping: 00:00 to 05:00.
+    2.  I can fill in the song metadata with confidence:
+        *   Title: "ホロレンジジャー" (Holoranger)
+        *   Performer: Various Hololive members.
+        *   Original Artist/Composer: Likely Hololive Production (a parody).
+        *   Original Language: Japanese.
+    3.  I have confirmed the Lyrics field must be: `null`.
+
+
+...
