@@ -1,0 +1,84 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a promotional clip for a 'FLOW GLOW 3D LIVE' concert,
+    featuring a static promotional banner followed by a brief 3D animation of a car
+    driving at night. The background music throughout the video is purely instrumental;
+    no vocals are present.
+  scenes:
+  - start: '00:00.000'
+    end: '04:51.000'
+    description: A static promotional banner for the 'MAKE IT, BREAK IT - FLOW GLOW
+      3D LIVE' concert.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:51.000'
+    end: '05:00.000'
+    description: A 3D animated scene showing a car driving on a road at night.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video and the Task**
+
+    Okay, let's break this down. My objective is clear: I need to analyze a video, identify its scenes, determine if it has any vocal music, and if it does, retrieve the official lyrics (original language and English translation). I'm strictly limited to using the provided search tool, and I *cannot* do any manual transcription or translation. If the search fails, the lyrics fields must be set to `null`. No truncating lyrics, and no quotation marks in my search queries. I have a maximum of 3 search turns, and I must use parallel batching if necessary. Ultimately, the output needs to be in a specific JSON format.
+
+    First, I need to inspect the video itself. *00:00 - 04:51:* The initial scene is a static image promoting "MAKE IT, BREAK IT - FLOW GLOW 3D LIVE." The background music is instrumental, sounds electronic/pop. *04:51 - 05:00:* The scene shifts to a 3D animation of a car. Still instrumental music.
+
+    My initial thought is that there are no vocal songs detected. I should double check: I will listen carefully to the entire video again. *00:00-04:51: Instrumental electronic music. 04:51-05:00: Instrumental electronic music.* The verdict is: definitely no vocal music.
+
+    Therefore, because there's no vocal music, no lyrics search is needed. No need for the search tool. Now, I need to craft the JSON structure.
+
+    The `global_summary` should be concise. I'll describe the video as a promotional clip for a "FLOW GLOW 3D LIVE" concert. It features a static promotional banner followed by a brief 3D animation of a car driving at night. The music is purely instrumental throughout.
+
+    For the `scenes`, I'll break it down as described above.
+
+    I'll be very careful to adhere to the JSON schema. Here's what I've got:
+
+    ```json
+    {
+      "global_summary": "The video is a promotional clip for a 'FLOW GLOW 3D LIVE' concert, featuring a static promotional banner followed by a brief 3D animation of a car driving at night. The background music throughout the video is purely instrumental; no vocals are present.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "04:51.000",
+          "description": "A static promotional banner for the 'MAKE IT, BREAK IT - FLOW GLOW 3D LIVE' concert.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "04:51.000",
+          "end": "05:00.000",
+          "description": "A 3D animated scene showing a car driving on a road at night.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Now, let me do a final check to ensure I've covered all bases. Scene mapping? Complete. Vocal music detected? No. Manual transcription or translation? Nope. Did I use the search tool (even though it wasn't required)? No. No truncation? N/A. Format is correct? Yes. Alright, I'm confident in this output.
+
+
+...

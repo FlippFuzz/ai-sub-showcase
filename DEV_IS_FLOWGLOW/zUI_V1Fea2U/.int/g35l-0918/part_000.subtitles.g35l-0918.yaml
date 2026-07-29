@@ -1,0 +1,45 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300048
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:01.000'
+    end: '00:05.000'
+    original: MAKE IT, BREAK IT - FLOW GLOW 3D LIVE
+    english: '[MAKE IT, BREAK IT - FLOW GLOW 3D LIVE]'
+  thoughts: |+
+    **Analyzing the Video and Subtitling Requirements**
+
+    Okay, so I need to generate subtitles for this video. First things first, let's analyze the video's content. From the beginning, up until around the 4:51 mark, it appears to be a promotional banner or image for "MAKE IT, BREAK IT - FLOW GLOW 3D LIVE," accompanied by background music – a beat, no vocals at all. Let's make sure, carefully listening from 0:42 to 4:51 – instrumental only. It continues after, but with a car driving transition. No vocals are detected anywhere, throughout the entire 5 minute check.
+
+    Now, according to the rule set, which I know very well, "ZERO GHOST SUBTITLES" dictates silence for pure instrumental music, long pauses, or sound effects, if there are NO VOCALS.
+
+    But, hold on. There's also the "VISUAL EVENTS (The On-Screen Text Exception)" to consider. I have to see if there's any on-screen text that qualifies. Right. There *is* text: "MAKE IT, BREAK IT," "FLOW GLOW 3D LIVE," and "2025 11.23 8 PM (JST)." It's a promotional title card/banner. I've seen these before, so the question is, *should* I subtitle it, or is this considered UI/background? Standard practice for static title screens in teaser promos is a judgment call, usually subtitling the main title card.
+
+    Remembering the rules: "Translate prominent, relevant visual text (titles, signs). Exclude meaningless background clutter or UI elements. If visual text appears simultaneously with spoken dialogue, prioritize translating the spoken dialogue..." And the example, `{"s": "00:02.000", "e": "00:05.000", "og": "第1章", "en": "[Title: Chapter 1]"}` shows subtitling visual text even with no audio/before dialogue. This promotional announcement banner clearly qualifies as a "prominent, relevant visual text," particularly given that it introduces the subject of the video.
+
+    The banner is on-screen from 0:00 to 4:51, at least initially. So, to cover it, I can add a subtitle at the start, say from 0:01.000 to 0:05.000, since it's common to show the title card for a few seconds. The whole banner duration is shown for the initial 4:51 video.
+
+    I could have no subtitles, as there is no dialogue. But now I have the text: "MAKE IT, BREAK IT," "FLOW GLOW 3D LIVE," and "2025.11.23 8PM (JST)" in text.
+
+    Given the rule "ZERO GHOST SUBTITLES" AND the visual text rule, let's include the title card subtitle. This feels right because this is an announcement.
+
+    So, here's my subtitling plan:
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:01.000",
+          "e": "00:05.000",
+          "og": "MAKE IT, BREAK IT - FLOW GLOW 3D LIVE",
+          "en": "[MAKE IT, BREAK IT - FLOW GLOW 3D LIVE]"
+        }
+      ]
+    }
+    ```
+
+    That cleanly covers the title card. Perfect.
+
+
+...

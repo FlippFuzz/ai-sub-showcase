@@ -1,0 +1,81 @@
+name: part_014
+total_attempts: 1
+video_duration_ms: 300275
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a live musical performance by the group 'FLOW
+    GLOW'. The entire video consists of the group performing their song 'MAKE IT,
+    BREAK IT'.
+  scenes:
+  - start: '00:00.000'
+    end: '02:41.000'
+    description: The group 'FLOW GLOW' performs their song 'MAKE IT, BREAK IT' on
+      a stage with dynamic lighting and background projections.
+    contains_vocal_music: true
+    song_title: MAKE IT, BREAK IT
+    original_artist: null
+    performer_in_video: null
+    original_language: 'Japanese,performer_in_video:'
+    reference_lyrics_og: "you'll see ! \nmake it or break it \nmake it ? break it\
+      \ ? \nmake it or break it \nlock on \n目と目が合えば i know \nキミこそが相棒 \nメロつかせる才能 (what?\
+      \ ) \n(make it ? break it ? make it ? break it ? ) \nパッと見天使でも (でも ) \n中には潜むデーモン\
+      \ (デーモン ) \nso ギャップと愛嬌あれば最強 \nhaterはシカト \n「へー、あっそ! 」 \n一蓮托生オーガナイズ \n退屈に用は無い\
+      \ \n一線画すよボーダーライン \n届かない ? しょーがない \nウチらが集えばバリ baddest (baddest ) \n見惚れちゃうでしょ\
+      \ ? \nlook at me , look at me now . . . \n置いてかない絶対 \nついて来て 5mc 's \n本気のフライデーナイト\
+      \ \nmake it ? break it ? \nmake a revolution \nアタシを貫け傾け \n夢に強引 going , going\
+      \ on ! \nbreak through and never stop \n真ん中ぶち抜け行け \ncan't get enough \nyou'll\
+      \ see ! \nmake it or break it \nmake it ? break it ? \nmake it or break it \n\
+      bang ! bang ! bang ! \nyou'll see ! \nmake it or break it \nmake it ? break\
+      \ it ? \nmake it or break it \nほら、どっちにするの ? \n有象無象沸かす flow glow \nay 口先より行動\
+      \ \nif you wanna be マイメン \nよそ見とかナシで \nwarning ! 没頭ほら没頭ほら \n味わっちゃって \nburning\
+      \ ! もっと hotter もっと hotter \nハイになっちゃって \n置いてかない絶対 \nついて来て 5mc 's \n本気のフライデーナイト\
+      \ \nmake it ? break it ? \nbrand new generation \n感じるままアガれアガれ \n華麗に降臨 only ,\
+      \ only one \n退屈な neverland \n速攻で抜け出せ i say \nready or not ? \nyou'll see ! \n\
+      make it or break it \nmake it ? break it ? \nmake it or break it \nbang ! bang\
+      \ ! bang ! \nyou'll see ! \nmake it or break it \nmake it ? break it ? \nmake\
+      \ it or break it \n朝まで make some noise \nmake a revolution \nアタシを貫け傾け \n夢に強引\
+      \ going , going on ! \nbreak through and never stop \n真ん中ぶち抜け行け \ncan't get\
+      \ enough \nyou'll see ! \nmake it or break it \nmake it ? break it ? \nmake\
+      \ it or break it \nbang ! bang ! bang ! \nyou'll see ! \nmake it or break it\
+      \ \nmake it ? break it ? \nmake it or break it \nほら、どっちにするの ?"
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Musical Performance and Lyric Retrieval**
+
+    Okay, so I've got a video here of what looks like a Hololive group, FLOW GLOW, performing a song called "MAKE IT, BREAK IT." My task is to find the official lyrics for this song. It's a single, continuous performance – pretty straightforward.
+
+    First, I need to figure out who the original artist is. The video clearly displays the song title "MAKE IT, BREAK IT" and "FLOW GLOW," but I can't assume "FLOW GLOW" *is* the original artist. They could be doing a cover. The closing card says "FLOW GLOW 3D LIVE," so that supports this being a live performance.
+
+    My plan is this: I'll start by crafting some search queries. The primary goal is to identify the official lyrics. I'll need both the original Japanese lyrics and, ideally, an English translation. My initial queries will be:
+
+    *   "MAKE IT, BREAK IT FLOW GLOW lyrics"
+    *   "MAKE IT, BREAK IT FLOW GLOW 歌詞"
+
+    I'll use the `default_api:web_search_langsearch_multi` tool to do this.
+
+    Now, here's where I need to be careful. The instructions say to search using the original artist or composer's name, not the video performers. So, *after* the initial searches with "FLOW GLOW" (just in case they *are* the originals), I'll need to analyze the search results to see if the lyrics are attributed to FLOW GLOW. If not, I'll need to figure out the *actual* original artist/composer and search again using their name. I can't include "FLOW GLOW" in the query if they aren't the originating artists.
+
+    If I find the lyrics, I'll populate the `reference_lyrics_og` and `reference_lyrics_en` fields. If I can't find them, I'll set those fields to `null`. I'll then finalize my findings using the `default_api:final_result` tool.
+
+    Alright, let's get to searching.
+
+
+
+    **Analysis of "MAKE IT, BREAK IT" by FLOW GLOW**
+
+    Okay, so the search nailed it – "MAKE IT, BREAK IT" by FLOW GLOW, which, for those keeping score, is a Hololive group. Excellent. I found the original Japanese lyrics across multiple platforms: Apple Music, Uta-net, AWA, all confirmed. My key data points are now locked in:
+
+    *   **Song Title:** "MAKE IT, BREAK IT" - check.
+    *   **Original Artist:** "FLOW GLOW" - check.
+    *   **Performer:** "FLOW GLOW" - check.
+    *   **Language:** Japanese – understood.
+    *   **Original Lyrics:** Found. I can definitely pull the Japanese lyrics from any of those search results. That's a huge win.
+
+    Now, the snag. English *translations*… zero. Absolutely zilch. The instructions are very clear: if there’s no official English translation, the `reference_lyrics_en` field gets set to null. I'm going to set it to null.
+
+    Hold on, I'd better be completely sure about the lyrics. The instructions say "Must be the complete lyrics... if you cannot find them, set the field to null." Good, the lyrics I found are complete.
+
+    Alright, with all that confirmed, I'm ready to properly structure the final result. Time to make sure everything's perfectly formatted and aligned with the requirements. Let's get this done.
+
+
+...
