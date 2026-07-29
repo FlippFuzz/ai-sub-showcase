@@ -1,0 +1,68 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video shows the pre-show waiting screen, notices, and fan message
+    collages for Momosuzu Nene's 1st Live 'Hanasaku * Nenenenenenene Chou Kaika!',
+    accompanied by instrumental background music with no sung vocals.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: Pre-show waiting screen displaying fan message collages, attention
+      notices, and concert information for Momosuzu Nene's 1st Live 'Hanasaku * Nenenenenenene
+      Chou Kaika!', with instrumental background music playing throughout.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video's Audio & Music**
+
+    Okay, so the task is to analyze this video, map the scenes, detect vocal music, identify the songs, and get the lyrics if possible. That's straightforward enough. Let's see what we've got.
+
+    First, I need to methodically break down the video. From the initial examination of the timestamps, I see it's mostly displaying fan messages with some kind of background music. I'm noting the initial loop of instrumental, chiptune/idol-style music. The important thing is whether there are any vocals. I need to be absolutely sure because the instructions explicitly say to detect *all* vocal songs. Checking... listening carefully... still nothing. Just instrumental music – beep boop chiptune.
+
+    Now, from 03:26 to 03:45, there's an announcement screen for "桃鈴ねね 1st Live ねねねねねねね!超！開花!" (Momosuzu Nene 1st Live Nenenenenenene! Chou Kaika!). Still instrumental. The fan message scenes then continue with the same instrumental track. Okay, let's keep listening. Across the entire 00:00 to 05:00 timeframe, it's consistent: background music only. No vocals.
+
+    The next step is crucial. Even though I haven't detected any vocals, I need to confirm if this instrumental track is *itself* a known song with a vocal version or just a BGM track made for the concert/teaser. I need to be thorough. I'm going to search for the title/text on-screen, "桃鈴ねね 1st Live ねねねねねねね!超！開花!", and query it as BGM, just in case. The instruction is clear: I need to flag each scene as vocal or not. If a scene has vocals, I need to dig for the song title, artist, and lyrics. If no vocals are present in a scene, the `contains_vocal_music` field will be `false` for that scene and the song details will be `null`.
+
+    To be absolutely sure, I'll search for "桃鈴ねね 1st Live ねねねねねねね 超開花". I'll cross-reference what I'm finding about the music to see if there is a known song or if it's just the background music. This search will be the definitive test.
+
+
+
+    **Analyzing the Pre-Show Screen for Momosuzu Nene's Live**
+
+    Alright, let's break down this pre-show video. It's the lead-up to Momosuzu Nene's first live, "Hanasaku * Nenenenenenene Chou Kaika!". The core of it seems to be fan messages and a standard "concert starting soon" message.
+
+    My first thought is, should I split this into multiple scenes? Considering its a continuous waiting screen, the simplicity suggests a single scene encompassing the entire duration, from 00:00.000 to 05:00.000. That seems most logical.
+
+    Now, let's confirm the details. The start is clearly 00:00.000, and the end is 05:00.000 (though, I'll always double-check that last frame just to be sure). The description will be: "Pre-show waiting screen for Momosuzu Nene's 1st Live with scrolling fan messages and instrumental music." The critical point is that the video *doesn't* contain any vocal music. Absolutely none, just background instrumental. So, `contains_vocal_music` is definitively `false`.
+
+    Let's do a deep dive, though, to make absolutely sure: no subtle background vocals or anything hidden in the mix. Nope, just a chiptune/idol-style instrumental loop.
+
+    Now, constructing the JSON response, let's be concise and precise:
+
+    `global_summary`: "The video presents the pre-show waiting screen and fan messages for Momosuzu Nene's 1st live concert 'Hanasaku * Nenenenenenene Chou Kaika!', featuring instrumental background music without vocals."
+
+    And then, the scene:
+
+    `scenes`:
+    -   `start`: "00:00.000"
+        `end`: "05:00.000"
+        `description`: "Pre-show waiting screen with fan messages and attention notices for Momosuzu Nene's 1st Live, accompanied by instrumental background music."
+        `contains_vocal_music`: `false`
+        `song_title`: `null`
+        `original_artist`: `null`
+        `performer_in_video`: `null`
+        `original_language`: `null`
+        `reference_lyrics_og`: `null`
+        `reference_lyrics_en`: `null`
+
+    Everything here is cut and dry; fits the instructions perfectly. Let's send it.
+
+
+...
