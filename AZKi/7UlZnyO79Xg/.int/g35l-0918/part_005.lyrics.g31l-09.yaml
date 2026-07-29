@@ -1,0 +1,122 @@
+name: part_005
+total_attempts: 1
+video_duration_ms: 304323
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a compilation of fan messages for the 'AZKi SOLO
+    LIVE 2025 'Departure'' concert, followed by footage from inside the concert venue,
+    where AZKi addresses the audience and provides event announcements. There is no
+    vocal music in this clip.
+  scenes:
+  - start: '00:00.000'
+    end: '01:42.000'
+    description: A montage showcasing various fan message submissions displayed on
+      the screen for the 'AZKi SOLO LIVE 2025 'Departure'' concert.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:42.000'
+    end: '02:17.000'
+    description: A panoramic view of the concert venue filled with an enthusiastic
+      audience cheering before the show starts.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:17.000'
+    end: '03:02.000'
+    description: AZKi stands on stage, speaking directly to the audience to share
+      announcements and concert guidelines.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:02.000'
+    end: '05:04.000'
+    description: Various shots of the enthusiastic audience cheering and waving light
+      sticks at the concert venue, accompanied by ambient instrumental music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video**
+
+    Okay, let's break this down. The request is straightforward: segment a video, identify songs, and find lyrics. No manual work, limited search turns, and specific search criteria – good. Let's start with the video provided.
+
+    First, a quick scan of the video content. I'm seeing a montage, some stage shots, audience interaction, and some spoken word. Wait... is there actually any *sung* music here? Let's take a closer look.
+
+    Analyzing frame by frame (or at least scene by scene), it's looking like instrumental background music and spoken announcements from AZKi. The fan messages have background music, AZKi is talking, and the audience shots have a faint instrumental backing track. Nope, I can't detect any vocal music. No singing. This is a crucial observation.
+
+    Now, let's build the response. The video is essentially a compilation. It's showing fan messages for the "Departure" concert, then a live look at AZKi speaking to the audience at the venue. No songs.
+
+    So, the scene breakdown is easy. Scene 1: fan messages; no song. Scene 2: AZKi greets the audience; no song. Scene 3: AZKi does her announcements; still no song. Scene 4: Audience and instrumental background; no song.
+
+    Because I detected no music with lyrics, no search is needed, and that fulfills the constraints. I didn't transcribe anything. I didn't translate anything.
+
+    So the final JSON construction is very simple. I need to output the `global_summary` and define the scene boundaries for the `scenes` segment. For each scene, I set `contains_vocal_music` to `false`, and all song-related fields (`song_title`, `original_artist`, etc.) to `null`.
+
+    Let's refine the scenes based on visual change. Start at the beginning, fan message screen ends at 01:42, stage and audience shots start, transition at 02:17, 03:02 and end at 05:04.
+
+    Here's the final output:
+    ```json
+    {
+      "global_summary": "The video features a compilation of fan messages for the 'AZKi SOLO LIVE 2025 'Departure'' concert, followed by footage from inside the concert venue, where AZKi addresses the audience and provides event announcements. There is no vocal music in this clip.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "01:42.000",
+          "description": "A montage showcasing various fan message submissions displayed on the screen for the 'AZKi SOLO LIVE 2025 'Departure'' concert.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "01:42.000",
+          "end": "02:17.000",
+          "description": "A panoramic view of the concert venue filled with an enthusiastic audience cheering before the show starts.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "02:17.000",
+          "end": "03:02.000",
+          "description": "AZKi stands on stage, speaking directly to the audience to share announcements and concert guidelines.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "03:02.000",
+          "end": "05:04.000",
+          "description": "Various shots of the enthusiastic audience cheering and waving light sticks at the concert venue, accompanied by ambient instrumental music.",
+          "contains_vocal_music": false,
+          "song_title
+
+...

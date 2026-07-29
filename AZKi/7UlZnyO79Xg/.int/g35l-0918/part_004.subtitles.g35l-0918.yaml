@@ -1,0 +1,64 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 298988
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '01:52.000'
+    end: '02:00.000'
+    original: AZKi SOLO LIVE 2025 Departure
+    english: '[AZKi Solo Live 2025 "Departure"]'
+  - start: '02:01.000'
+    end: '02:08.000'
+    original: Attention ご来場のお客様へ
+    english: '[Attention: Notice to Attendees]'
+  - start: '02:11.000'
+    end: '02:20.000'
+    original: ライブグッズ 2次販売決定!!
+    english: '[Live Goods 2nd Round Sale Confirmed]'
+  thoughts: "**Subtitle Generation for \"farewell\" Video**\n\nOkay, so I'm tasked\
+    \ with generating subtitles for a video featuring AZKi's \"farewell,\" which appears\
+    \ to be a fan compilation video. My initial thought is to make sure there are\
+    \ subtitles.\n\nFirst, I need to check the audio. Is there vocals throughout?\
+    \ I zero in on the key section of 01:37 to 05:00. Listening carefully, it's instrumental,\
+    \ an arrangement of \"farewell.\" No singing. Following my primary rule, the \"\
+    VOCAL EVENTS (The Audio Rule),\" I understand that the waveform is key. If there\
+    \ are no vocals, I will output nothing. The \"ZERO GHOST SUBTITLES\" instruction\
+    \ is clear, so silence will be maintained unless there is a valid visual event.\n\
+    \nNext, I look for prominent visual elements. I examine the video frame by frame.\
+    \ At 01:52-01:59, there's a title card for \"AZKi SOLO LIVE 2025 Departure.\"\
+    \  Then, 02:01-02:07, an \"Attention\" slide appears. Finally, 02:12-02:20, a\
+    \ \"Live Goods Announcement\" displays.\n\nMy \"VISUAL EVENTS (The On-Screen Text\
+    \ Exception)\" rule specifies that prominent text should be subtitled, even without\
+    \ audio. These look like interstitial title cards and notices, so I will apply\
+    \ the `visual_text_rules`, to translate this visual text. I review subtitle practices,\
+    \ and indeed, concert info and notices are normally subtitled as prominent text\
+    \ during their visible duration.\n\nI make sure the timecodes are accurate:\n\n\
+    *   01:52.000 - 02:00.000: \"AZKi SOLO LIVE 2025 Departure\"\n*   02:01.000 -\
+    \ 02:08.000: \"Attention ご来場のお客様へ\"\n*   02:11.000 - 02:20.000: \"ライブグッズ 2次販売決定!!\"\
+    \n\nThe rest of the video is fan message wallpaper which is not prominent text.\n\
+    \nSo I confirm that there are *no* vocal subtitles, as there is *no* audio with\
+    \ vocals. Only the prominent visual text will be outputted, from their clear visual\
+    \ start to end.\n\nFinally, I format the output according to the given example:\
+    \ \n\n1.  \"01:52.000\" - \"02:00.000\" -  [AZKi Solo Live 2025 \"Departure\"\
+    ]\n2.  \"02:01.000\" - \"02:08.000\" -  [Attention: Notice to Attendees]\n3. \
+    \ \"02:11.000\" - \"02:20.000\" -  [Live Goods 2nd Round Sale Announced!]\n\n\
+    I double-check against the video frames for precise timing, cross-checking all\
+    \ rules. No subtitles will be generated if there is no vocal audio. The output\
+    \ is ready and will strictly follow all the mentioned constraints.\n\n\n"
+- subtitles: []
+  thoughts: |+
+    **Analysis of AZKi "Departure" Fan Message Video Subtitling**
+
+    Okay, so I've got this video for AZKi's "Departure" solo live, and the task is to generate subtitles. The key is that it's a fan message compilation video set to the instrumental version of "farewell."  I need to be absolutely sure about this because this is a *strict verification run*.
+
+    First, let's nail down the audio. I started by checking the time markers.  From 00:00 to 01:37, I confirmed, through careful listening, that it's background music – an instrumental intro or the beginning of the song.  Then, at 01:37, the "farewell" instrumental version kicks in. *But are there any vocals?* That's the crucial question. I’ve checked repeatedly from 00:00 through the entire 5 minutes of the video. My analysis of the audio waveform and by ear confirms that it's purely instrumental; no singing, no spoken words.
+
+    I've listened closely to 01:37, 02:00, 02:30, 03:00, 03:30, 04:00, 04:30 and 05:00. Each time, just piano chords, strings, and the instrumental melody. I've even listened around the screens with text such as "The concert will be starting soon" at 01:51 and "Attention ご来場のお客様へ..." at 02:02. Still no vocal tracks.
+
+    Now, let's apply the rule: "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music... If no vocals are heard in the audio track, output nothing..." and "AUDIO IS SUPREME: If... the background music goes silent... YOU MUST IGNORE the <scene_and_lyrics_reference_json> block entirely for that duration." The instructions are clear: if there are no vocals, it should be silence. I have double-checked the instructions for prominent visual events and confirmed these are not prominent and are background fan messages that should not be subtitled.
+
+    So, despite the verification pass indicating a lack of transcribed audio, which initially concerned me given the `reference_lyrics_og` suggesting the "farewell" song, I must prioritize the audio. The "ZERO GHOST SUBTITLES" rule is paramount.  Since there are no vocals at all, the correct output must be an empty `subs` array. My final JSON output will be `{ "subs": [] }`. This is the only compliant result.
+
+
+...

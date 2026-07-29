@@ -1,0 +1,60 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 304328
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a slideshow presenting numerous fan-submitted messages
+    for AZKi's solo live 'Departure', accompanied by an instrumental electronic pop
+    track. No vocal music is present.
+  scenes:
+  - start: '00:00.000'
+    end: '05:04.000'
+    description: A slideshow of static images with text messages from fans, featuring
+      a background instrumental track throughout the video.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video**
+
+    Okay, here's the breakdown of this video analysis task. My primary goal is to determine if there's vocal music present and, if so, extract the lyrics. The video itself seems straightforward: a slideshow of static images with text, presumably fan messages, accompanied by background music.
+
+    First, I need to thoroughly analyze the video. The video consists of a series of static images with text – fan messages, most likely – displayed for a few seconds each. There's instrumental background music that runs throughout the *entire* video. So, I have to carefully listen for any vocal segments to check if lyrics are present.
+
+    After watching, it's pretty clear: it's all text messages against a background, with a consistent musical loop. There are absolutely no vocals. The piece is purely instrumental.
+
+    Now, scene mapping is the next step. Since there are zero vocal segments, the whole video can be treated as a single scene. This scene will be tagged with `contains_vocal_music: false`.
+
+    Given that `contains_vocal_music` is false, there's no need to perform any lyric lookups. That's a huge time-saver! I can skip all the lyric extraction steps.
+
+    Now, I can build the JSON response. My `global_summary` will state: "The video is a slideshow of fan messages displayed over an instrumental background track. No vocal music is present." And there will be a single entry in `scenes`, covering the full video duration (00:00 to 05:04).
+
+    Just to be absolutely certain, I'm going to double-check the audio. (listening) Yup, it's definitively instrumental throughout. No lyrics whatsoever.
+
+    The task specifies scene boundaries, and the video's presentation is a slideshow. It makes sense, given the lack of vocals, to treat the entire thing as a single scene, as the track is consistent, and the background visuals are consistent.
+
+    But, before I finalize the output, one last quick check: the video contains zero vocals. The video is a slideshow of fan messages displayed over an instrumental background track. I'll confirm:
+
+    -   `contains_vocal_music`: `false` for the entire video.
+    -   `song_title`: `null`.
+    -   `original_artist`: `null`.
+    -   `performer_in_video`: `null`.
+    -   `original_language`: `null`.
+    -   `reference_lyrics_og`: `null`.
+    -   `reference_lyrics_en`: `null`.
+
+    Perfect.
+
+    I'm also double-checking the instructions. I have to set the "reference lyrics" fields to `null` if no song is detected. And since there's no singing, they all get set to `null` anyway.
+
+    So, here's my final structure:
+
+    -   `global_summary`: "The video is a slideshow presenting numerous fan-submitted messages for AZKi's solo live 'Departure', accompanied by an instrumental electronic pop track. No vocal music is present."
+    -   `scenes`: One entry for the full duration.
+
+
+...
