@@ -1,0 +1,52 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 60058
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:01.000'
+    end: '00:05.000'
+    original: 無料パートは終了いたしました。ご視聴ありがとうございました。
+    english: The free part of the broadcast has ended. Thank you for watching.
+  thoughts: |+
+    **Subtitle Decision for Video Clip**
+
+    Okay, so I've got this video clip and need to decide on the subtitles. First, I looked at the video itself and the provided reference JSON. The clip shows an announcement for a "Tokoyami Towa 2nd Live SHINIER" concert at the Ariake Arena on October 29, 2025. There's also some Japanese text on the right: "無料パートは終了いたしました。ご視聴ありがとうございました。" Let's see... "The free part of the show has ended. Thank you for watching."
+
+    Now, the audio is just instrumental music. No vocals. I need to remember the Visual Events rule: if relevant text is visible on screen, subtitle it *even* without audio. I need to make a judgment call here: is the Japanese text UI, promotional material, or something that needs subtitling? It's on a screen saying the free part is over, so it's a message to the viewers.
+
+    Alright, the instructions say "Zero Ghost Subtitles: Remain SILENT during pure instrumental music, long pauses, or sound effects...unless there is a prominent Visual Event." The question is, is this text a prominent visual event? End cards on livestreams are a tricky area. Sometimes they're subtitled, sometimes not, depending on if they contain important info or messages.
+
+    Let's look at the text again: "無料パートは終了いたしました。ご視聴ありがとうございました。" ("The free part has ended. Thank you for watching."). It's visible from the very beginning of the clip, and it *is* a message. Given the "Visual Events" rule, let's include it.
+
+    Since the text is a message to viewers, I think we should translate and subtitle it to be accurate. I checked the text again: "無料パートは終了いたしました。ご視聴ありがとうございました。" which in English translates to "The free part of the broadcast has ended. Thank you for watching." (or "The free preview has ended. Thank you for watching.")
+
+    I'll put the text as a subtitle card from 00:01.000 to 00:05.000. It's visible throughout but that length should capture it. Now, let's make sure it follows the character limit (50 chars per line):
+
+    "無料パートは終了いたしました。" -> 14 chars.
+    "ご視聴ありがとうございました。" -> 15 chars.
+    In English:
+    "The free part of the broadcast has ended." (40 chars)
+    "Thank you for watching." (23 chars)
+
+    This fits fine. The concert title, "Tokoyami Towa 2nd Live SHINIER," is already in English. Subtitling it might be redundant.
+
+    Finally, I'll format the JSON and output the result.
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:01.000",
+          "e": "00:05.000",
+          "og": "無料パートは終了いたしました。
+    ご視聴ありがとうございました。",
+          "en": "The free part of the stream has ended.
+    Thank you for watching."
+        }
+      ]
+    }
+    ```
+    That's it, that should be correct.
+
+
+...
