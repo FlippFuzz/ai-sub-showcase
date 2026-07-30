@@ -1,0 +1,56 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 299608
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a virtual YouTuber, Mori Calliope, providing
+    a spoken walkthrough and commentary of a 3D environment (a pool area and a statue
+    room) to mark her fifth anniversary. Throughout the video, there is instrumental
+    atmospheric background music playing, but no vocal music tracks are performed
+    or included.
+  scenes:
+  - start: '00:00.000'
+    end: '03:48.000'
+    description: Mori Calliope explores and talks about the pool area in a 3D environment.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:48.000'
+    end: '05:00.000'
+    description: Mori Calliope moves to a new room featuring a large statue and provides
+      further commentary.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video: No Vocal Music Detected**
+
+    Okay, so the task is to analyze this video and identify any vocal music, then try to get the lyrics. The instructions are clear: no manual transcription, only use the search tool, and if lyrics aren't found, set them to null. Alright, seems straightforward. The first thing I'll do is break down the video scene by scene.
+
+    I start by watching the video, marking the time. The initial impression is pretty clear: it's a commentary video. The first fifteen seconds are a visual intro, with ambient sound but no singing, just atmosphere. Then Mori Calliope walks to a bar and starts talking, and it's all spoken dialogue. There is background music, but it's clearly instrumental. It *could* be a background track without vocals, right? So I go through the video scene by scene. More talking at different parts in the same room. I have to listen very carefully here: is there *any* hidden singing? No. It's just background music, which is consistent. There is a location change to a statue room and talking continues. It's all spoken, just Mori.
+
+    So, *assessment of vocal music*: The video is entirely spoken by Mori Calliope. The background music is ambient, instrumental. No songs with sung vocals. That's a "no" for the central task here.
+
+    Then I move to song metadata. Since there's no vocal music, there's no song title, artist, or lyrics to search for. So, the search part is skipped. The constraints are satisfied at this stage.
+
+    Then I form the `global_summary`. The video is essentially a commentary session by Mori Calliope in a 3D environment, celebrating her anniversary. There is ambient music, but no vocal tracks are present. I have to make sure to follow the schema.
+
+    But wait, the instructions are "If lyrics cannot be retrieved, set them to `null`". And the schema requires a `scenes` list. I have to map scenes properly. I have to think about what "scenes" means here. Am I just treating the whole video as one? The video can be broken into sections based on location changes.
+
+    So I re-listen to the video. No vocal music at all. I am sure. So let's break it down: Pool area from 00:00 to 03:48, and a statue room from 03:48 to 05:00. No vocal music in either. And then I think about this: `contains_vocal_music`. Is that correct? The answer is no. I double-check the definition. Instrumental music doesn't count.
+
+    So I make the JSON. `scenes` is an array of objects.
+    `start`, `end`, `description` look good. `contains_vocal_music` is clearly `false` for each scene. The other lyrics fields I don't need to fill because there are no songs.
+
+    I make sure I didn't miss anything. Did I miss *any* singing? No. All talking, no singing. I'm ready to output.
+
+
+...
