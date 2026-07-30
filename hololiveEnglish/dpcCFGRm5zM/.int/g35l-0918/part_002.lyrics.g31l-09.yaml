@@ -1,0 +1,91 @@
+name: part_002
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features members of Hololive English - Advent playing
+    a custom, go-kart style game. The segment captures the explanation of the game's
+    mechanics, followed by three individual gameplay turns by members Bijou, Nerissa,
+    and Shiori, with continuous commentary and discussions about their scores and
+    gameplay performance. There is no vocal music present in this video.
+  scenes:
+  - start: '00:00.000'
+    end: '01:12.000'
+    description: The video begins with the group explaining the rules of the go-kart
+      game, describing how to collect and lose points.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:12.000'
+    end: '02:27.000'
+    description: Bijou takes her turn, navigating the track while attempting to avoid
+      obstacles and collect items.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:27.000'
+    end: '02:51.000'
+    description: The group pauses for commentary to discuss Bijou's score and transition
+      to the next player.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:51.000'
+    end: '04:06.000'
+    description: Nerissa takes her turn at the go-kart game, receiving advice and
+      encouragement from the other members.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:06.000'
+    end: '05:00.000'
+    description: Shiori takes her turn to play the game, followed by reactions from
+      the group to her performance.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video and JSON Generation**
+
+    Okay, let's break this down systematically. The objective is to analyze a video, identify scenes, detect vocal music, and generate a JSON output. The crucial constraint here is that the search tool is the *only* allowed source for lyrics; no manual intervention, and if no song is detected, all song fields *must* be set to null.
+
+    First, I need to understand the input. It's a 5-minute video of Hololive Advent members playing a Mario Kart-esque custom game. The key is to assess if there's any *vocal music* present. I'll need to focus on this immediately.
+
+    Now, I rewatched the video to confirm. It's a gameplay session with conversational audio, and game music, but absolutely *no* singing or vocal tracks. This means, as a direct consequence, `contains_vocal_music` will be `false` for the entire video. Consequently, `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` will all be set to `null` for every single segment because, according to the constraints, these fields are *only* populated if vocal music is present and identified via search.
+
+    Next, I'll map the scenes, even though it appears to be a single, long segment. I'll logically break it down based on the gameplay flow. My initial thoughts were thematic scenes, but upon closer inspection, it's more straightforward to delineate by the individual gameplay turns. So the scenes are now organized by the gameplay:
+
+    *   00:00 - 01:12: Explanation
+    *   01:12 - 02:27: Bijou gameplay
+    *   02:27 - 02:51: Commentary
+    *   02:51 - 04:06: Nerissa gameplay
+    *   04:06 - 05:00: Shiori gameplay
+
+    These timestamps will be used to structure the JSON.
+
+    Finally, I'll construct the JSON output. The global summary will describe the video as Hololive English - Advent playing a go-kart game. The main focus is the game rules explanation and then the gameplay turns by Bijou, Nerissa, and Shiori. The JSON will reflect this and include the timestamp data I've identified. And, since no vocal music exists, all song-related fields *must* be null. This is the crucial part that ensures compliance with the constraint about search limitations.
+
+    My final verification confirms that there are no vocal songs, therefore, no search is required. The lack of a search is correct according to the specific instructions. The format will be in JSON and include the scene information, including the key, and my analysis is now complete.
+
+
+...
