@@ -1,0 +1,23 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Analyzing the Hololive Ookami Mio 1st Live Waiting Screen for Subtitling Requirements**
+
+    Okay, so I'm tackling this Ookami Mio 1st Live waiting screen video for subtitles. Let's start with the rules. The core is the vocal audio: if there's no spoken dialogue, no subtitles. Simple. However, there's a Visual Events exception: if prominent, *relevant* text appears on-screen, even without audio, it gets subtitled.
+
+    First, I need to understand what's in the video. From 00:00 to 00:17, it's the title screen with the event name, date, and venue. Then, from 00:18 to 00:27, an "Attention" slide flashes, followed by merch slides and fan messages.
+
+    My instinct is that this is a waiting screen, more akin to a slideshow. Standard practices for music videos and streams don't necessitate subtitling *every* piece of UI text unless it's integral to the narrative. But I need to be sure. So, I look back at the examples provided. One example, handles silent on-screen text before dialogue, and that provides some insight.
+
+    I'm checking the entire video, and confirming there's *no* vocal audio at all. The entire segment is pure instrumental music. Then I also verify `contains_vocal_music` is false across the whole video. The "Zero Ghost Subtitles" rule is clear: if no vocals, output nothing unless there's a prominent visual event.
+
+    Now, the crucial question: are there any prominent visual events, like chapter titles, or location signs? No. The slides are promotional/informational. It's an attention notice, merchandise, and fan messages. These are not narrative titles or story elements that require subtitles under the Visual Events rule.
+
+    Therefore, because there's no vocal audio and no prominent, relevant visual text, the correct output should be an empty `subs` array. I'm confident in this assessment, so let's check it again for completeness. Background music from 00:00 to 05:00, no vocals, no chapter titles. Zero subtitles are needed. Alright, format the final response with the empty array, and we're good.
+
+
+...
