@@ -1,0 +1,154 @@
+name: part_005
+total_attempts: 1
+video_duration_ms: 305048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video begins with a performance by three virtual singers (VTubers)
+    of the song 'Brave Shine' by Aimer. After the song, there is a short dance interlude,
+    followed by an extended conversation segment where the performers talk about the
+    song and their experiences.
+  scenes:
+  - start: '00:00.000'
+    end: '01:34.000'
+    description: Performance of the song 'Brave Shine' featuring three virtual singers.
+    contains_vocal_music: true
+    song_title: Brave Shine
+    original_artist: null
+    performer_in_video: Raora, Mori Calliope, Tokoyami Towa
+    original_language: Japanese
+    reference_lyrics_og: |-
+      左手に隠した
+      願いは願いのままで
+      覚めない夢見てた
+      右手には空の記憶
+      誰も知らない世界の果て
+      止まない雨に打たれていた
+      守りたいものを守れる強さ
+      それを信じられなくなる弱さ
+      全て受け入れて明日を探す
+      Brave shine
+      手を伸ばせばまだ
+      Stay the night
+      傷だらけの夜
+      You saved my life
+      振りかざした刃の先に
+      想いを重ねた
+      祈りは時を越えて
+      Your brave shine...
+      光ること忘れた
+      青い星が残してく
+      消えない影見てた
+      すれ違う赤の軌跡
+      何も知らない子供のまま
+      明けない夜を彷徨ってた
+      失せないものを失くした弱さ
+      何も信じられなくなる
+      暗さ立てなくなっても
+      運命は進む
+      Break down
+      崩れ落ちてゆく星座が
+      傷つけ合う夜
+      You're breaking dawn
+      交わした言葉の中に
+      一人を支えた
+      確かな夢を添えて
+      守りたいものを守れるのなら
+      全てを受け入れて
+      明日を探す
+      夜明けを灯す
+      Brave shine
+      手を伸ばせばまだ
+      Stay the night
+      傷だらけの夜
+      You save my life
+      重ねた涙の果てに
+      光を見つけた
+      祈りは時を越えて
+      My brave shine...
+    reference_lyrics_en: |-
+      Hidden in my left hand
+      Wishes remain as they are
+      Dreaming of an endless dream
+      In my right hand, memories of a shell
+      At the end of a world unknown to anyone
+      Being struck by the never-ending rain
+      Strength to protect what I want to protect
+      Weakness that makes it hard to believe in it
+      Accepting everything
+      Searching for tomorrow
+      Brave shine
+      If I reach out my hand, there's still
+      Stay the night
+      A night full of scars
+      You saved my life
+      Layering feelings at the tip of the raised blade
+      Prayers transcend time
+      Your brave shine...
+      Forgot to shine
+      The blue star leaves behind
+      Watching the unerasable shadow
+      The passing red trajectory
+      Like a child who knows nothing
+      Wandering through the endless night
+      Weakness of losing what can't be lost
+      Losing faith in everything
+      Even if the darkness doesn't stand
+      Fate moves forward
+      Break down
+      The crumbling constellations
+      Nights where we hurt each other
+      You're breaking dawn
+      In the exchanged words
+      Supporting one another
+      Accompanied by a certain dream
+      If I can protect what I want to protect
+      Accepting everything
+      Searching for tomorrow
+      Lighting up the dawn
+      Brave shine
+      If I reach out my hand, there's still
+      Stay the night
+      A night full of scars
+      You save my life
+      Finding light at the end of shed tears
+      Prayers transcend time
+      My brave shine...
+  - start: '01:34.000'
+    end: '01:50.000'
+    description: Short musical dance interlude without vocals.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:50.000'
+    end: '05:05.000'
+    description: Talk segment with the three performers.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video and Lyric Retrieval Process**
+
+    Okay, so the task is clear: I need to dissect this video clip, identify any music within it, find the official lyrics (in both original language and English), and format everything into a JSON output. I'm operating under some specific constraints – no manual work, no truncating lyrics, original artist only for searching, and a limited number of search turns. I need to make sure I don't use quotes in the search terms. The output has to be valid JSON following a specific schema.
+
+    First, I review the video. It looks like it's a performance by VTubers, singing, followed by an instrumental interlude, and then talking. The first song seems to be "Brave Shine" by Aimer (I can see it on screen as well, so that's helpful). Then I create a scene map.
+
+    Now for the lyrics. The initial video review tells me the song is "Brave Shine" by Aimer. The music is in Japanese.
+
+    The strategy is straightforward: use a single `web_search_langsearch_multi` call to fetch both the Japanese lyrics and English translation in parallel. For the search, I'll formulate the queries as `Brave Shine Aimer 歌詞` for the original Japanese and `Brave Shine Aimer lyrics English` for the English translation. I need to copy the *entire* results.
+
+    Before I generate the actual output, I have to *actually run* the searches, since that is needed to populate the JSON.  I’ll run the search now, anticipating results.
+
+    I'll then build the JSON. I'll define three scenes: the song performance, the instrumental part, and the talking segment. The first scene will include the song's metadata and the full lyrics. The second and third will have song data set to `null` because the music segment is an instrumental interlude and talk.
+
+    Finally, I'll double-check my work against *all* the constraints: no manual transcription or translation, complete lyrics, artist-only searches, no quoted search terms, JSON validity, and a limited search turns. I’m only using one tool call with the parallel search, so I am good on the search limit. I now need to generate the tool calls for the search and construction of the JSON response.
+
+
+...
