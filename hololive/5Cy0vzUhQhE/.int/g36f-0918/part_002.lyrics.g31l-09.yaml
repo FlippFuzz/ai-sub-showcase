@@ -1,0 +1,89 @@
+name: part_002
+total_attempts: 1
+video_duration_ms: 300043
+lyrics_prompt_version: 9
+response:
+  global_summary: The video consists of a series of static congratulatory messages
+    for an event called 'hololive 2026 First MISSION', interspersed with a short promotional
+    segment for the 'Do Anime Sengen!' ('Do Anime Declaration!') campaign by JOYSOUND
+    featuring an anime-style character singing.
+  scenes:
+  - start: '00:00.000'
+    end: '02:50.000'
+    description: Static background display with various congratulatory messages about
+      'hololive 2026 First MISSION'.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:50.000'
+    end: '03:07.000'
+    description: A promotional segment for JOYSOUND's 'Do Anime Sengen!' campaign
+      where an orange-haired anime-style character sings a short song.
+    contains_vocal_music: true
+    song_title: どアニメ宣言!
+    original_artist: JOYSOUND
+    performer_in_video: Unidentified Character
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:07.000'
+    end: '05:01.000'
+    description: Continuation of the static background messages and event information.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing and Retrieving Lyrics for a Video**
+
+    Okay, so the task is to analyze this video and pull out the relevant information, specifically identifying any songs with vocals and finding their lyrics. I'll break this down methodically.
+
+    First, I need to map the video into scenes. From the description, it starts with a static background with text (00:00-02:30), followed by some title screens (02:30-02:50), then the key part – a vocal segment from 02:50 to 03:07. Then it goes back to title screens and the static background (03:07-05:01). So, the scenes are:
+
+    *   00:00 - 02:30: Static background with text (instrumental).
+    *   02:30 - 02:40: Title screen ("holoplus Jack") (instrumental).
+    *   02:40 - 02:50: "ATTENTION" screen (instrumental).
+    *   02:50 - 03:07: Vocal segment with a character singing and screen text "どアニメ宣言!" (Do Anime Sengen!) and "JOYSOUND".
+    *   03:07 - 03:27: "holoplus Jack" screen again (instrumental).
+    *   03:27 - 05:01: Back to the static background with text (instrumental).
+
+    Now, the vocal segment is pretty clear. I've identified it as running from 02:50 to 03:07. The on-screen text gives me some important clues: "どアニメ宣言!" (Do Anime Sengen!) and "JOYSOUND", and I hear the character singing "Anime ni hamatte, utaitaku natchatta...".
+
+    So, I need to find the lyrics for this song. I'll leverage web search for this. I'll start with a Japanese search query, "どアニメ宣言 JOYSOUND 歌詞" (Do Anime Sengen JOYSOUND lyrics), to hopefully find the original lyrics directly. Also, I will use a search for the English translation to see if it can quickly provide a translation.
+
+    My plan of attack is to search for:
+
+    *   "どアニメ宣言 JOYSOUND 歌詞" (Do Anime Sengen JOYSOUND lyrics)
+    *   "どアニメ宣言 JOYSOUND lyrics English" (Do Anime Sengen JOYSOUND lyrics English)
+
+    The tool to do the search is the `default_api:web_search_langsearch_multi` and it will execute the queries in parallel.
+
+    Once I have the lyrics, I will generate the final response.
+
+
+
+    **My Analysis of "どアニメ宣言!" Lyric Availability**
+
+    Okay, so I've hit a bit of a snag. I was hoping to quickly grab the official lyrics for "どアニメ宣言!" but a simple search using "どアニメ宣言" just didn't cut it. The results were flooded with unrelated songs that happened to have "宣言" (declaration) in the title. Clearly, the search terms are too broad.
+
+    I've also got some good contextual data on the track. The video confirms the title as "どアニメ宣言!" with an exclamation mark, and the artist is listed as JOYSOUND. But, I am still without the actual lyrics.
+
+    Since I can't directly retrieve the official lyrics or a reliable translation through the search tool, I'm following procedure. The fallback rule is crystal clear: in cases where the search fails, the lyrics fields are set to null.
+
+    Now I need to document this. I've got a good handle on the structure I need. Let me break down the video into segments:
+
+    *   **00:00.000 - 02:50.000:** The introduction uses static images of messages and an advertisement for "hololive 2026 'First MISSION'" with no vocal music.
+    *   **02:50.000 - 03:07.000:** This is the key part! We have the vocal segment featuring "どアニメ宣言!". The performer is an orange-haired anime-style character, and the language is Japanese.
+    *   **03:07.000 - 05:01.000:** Back to the static background with messages and event info, also without vocal music.
+
+    Alright, that's enough background data to move forward. Time to construct the final JSON structure and ensure everything's properly represented, while acknowledging that those lyrics will be null.
+
+
+...
