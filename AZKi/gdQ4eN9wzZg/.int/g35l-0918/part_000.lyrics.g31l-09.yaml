@@ -1,0 +1,57 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: 'The video is a promotional clip for "AZKi 7th Birthday Live: Sweet
+    Pop Story," featuring an introductory visual card accompanied by upbeat, instrumental
+    background music, followed by a sequence of the virtual character AZKi speaking
+    directly to the audience in a virtual park setting. No vocal music was detected.'
+  scenes:
+  - start: '00:00.000'
+    end: '03:07.000'
+    description: 'Promotional card displayed for "AZKi 7th Birthday Live: Sweet Pop
+      Story" with upbeat, instrumental background music playing.'
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:07.000'
+    end: '05:00.560'
+    description: The virtual character AZKi appears in a park setting and speaks directly
+      to the viewer.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the AZKi Promotional Video**
+
+    Okay, let's break this down systematically. The request is to analyze a video, map scenes, identify any vocal songs, and, if found, locate the *official* lyrics. Crucially, I'm NOT transcribing anything or resorting to placeholders – official lyrics only. I also have a three-search-turn limit, though parallel batching is preferred to speed things up.
+
+    The input is a video file featuring AZKi, speaking in Japanese. The context is a promo clip for her "7th Birthday Live Sweet Pop Story." My initial assessment? It's speech, not singing. But, let's confirm that with a re-watch.
+
+    Right, after carefully watching (0:00-3:06), there's definitely background pop music. Now, the key is whether it contains vocals. Listening more closely, it sounds like an instrumental track, possibly the backing track for the event itself. I don't detect any clear, sustained vocals. From 3:07 to the end, it's just AZKi speaking.
+
+    So, the scene mapping breaks down like this:
+
+    *   **Scene 1 (0:00-3:07):** Promotional card for the event. The audio is the instrumental background pop music, confirming no sung vocals.
+    *   **Scene 2 (3:07-5:00):** AZKi in a virtual park setting, and she is speaking directly to the viewer. This contains no sung vocals.
+
+    Therefore, since I haven't detected any vocal songs, there's no song metadata to resolve and no parallel lyrics lookup needed. My focus is purely on the scenes and on documenting the *lack* of vocals.
+
+    Now, to structure the output JSON correctly, I need to ensure that the descriptions are accurate, reflecting the absence of vocals.
+
+    *   `global_summary` needs to accurately state: the video is a promotional clip. The first scene is an introduction of an event promotional card along with instrumental music in the background. Second scene is AZKi talking to the audience in a virtual park setting. I can emphasize that no vocal music was detected.
+    *   The `scenes` array elements will accurately reflect the temporal data. It also contains the descriptions. Critically, I'll set `contains_vocal_music` to `False` for *both* scenes. All of the music fields like `song_title` and such will be null for each scene as there are no detected vocal tracks.
+
+    I'm confirming that this final JSON structure adheres to the constraints: No manual transcription, the `contains_vocal_music` field is correctly set to false, and no truncation or placeholders are used. I am confident that I have provided an effective response.
+
+
+...
