@@ -1,0 +1,91 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 304996
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a promotional clip for Amane Kanata's 1st Solo Live
+    'LOCK ON', featuring scrolling fan messages, artist visuals, event safety information,
+    and merchandise details. The entire video is accompanied by a continuous, upbeat
+    instrumental electronic soundtrack. No vocal music was detected.
+  scenes:
+  - start: '00:00.000'
+    end: '04:02.000'
+    description: A montage of scrolling fan messages and event information related
+      to Amane Kanata's 1st Solo Live 'LOCK ON'.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:02.000'
+    end: '04:12.000'
+    description: A static promotional image of Amane Kanata.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:12.000'
+    end: '04:22.000'
+    description: An 'ATTENTION' slide displaying event safety guidelines for the audience.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:22.000'
+    end: '04:32.000'
+    description: A merchandise display slide showing various items available for Amane
+      Kanata's 1st Solo Live.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:32.000'
+    end: '05:05.400'
+    description: A final montage of scrolling fan messages.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis and Response Plan**
+
+    Okay, here's the breakdown of my thought process. First, I need to understand the video's content. It seems like a promotional video for "Amane Kanata 1st Solo Live LOCK ON". My initial observation is a single, continuous musical track running throughout the video, accompanied by a series of static images, primarily fan messages and event-related information. The most crucial part of this task is to follow the instructions and detect *all* vocal songs.
+
+    My immediate task is to identify the music and search for lyrics, both original and English translations, as well as mapping the video into meaningful scenes based on visual changes. I will make a scene for each section of the video.
+
+    The title and theme give me a good starting point: "Amane Kanata 1st Solo Live LOCK ON". The music initially sounds like an upbeat J-pop-style instrumental track. The prompt specifies to identify *vocal* songs, so I have to listen very closely again, just to be sure. After careful listening, I'm now confident that it's strictly instrumental. There are no vocals in the background music.
+
+    The `critical_constraints` confirm that I'm supposed to "detect ALL vocal songs playing". Since there are *no* vocal songs, I will not fill in any `song_title`, `original_artist`, etc., and the `contains_vocal_music` field will be `false` for each scene.
+
+    The visual changes are frequent, occurring every 1-2 seconds. I can group these static changes into scenes based on their content – an introduction, different message collages, information slides, etc. The major visual transitions that I've identified are: fan message collages (00:00 - 04:02), an image of Amane Kanata (04:02 - 04:12), an "ATTENTION" slide (04:12 - 04:22), a "Merch" slide (04:22 - 04:32), and finally, more message collages (04:32 - 05:05). The scenes need to map the entire video.
+
+    I will double-check again that I have *truly* detected no vocal song. Listening again... 00:00 to 05:05. Instrumental.
+
+    The prompt requires me to *detect all vocal songs*. Since there are none, I don't need to search for lyrics. Therefore, all song-related fields will be null in the JSON. The timestamps also need to be accurate to the `MM:SS.mmm` format. Let's make one last check, is it really pure instrumental?
+
+    The refined plan is this: The `global_summary` will state: "The video is a promotional clip for Amane Kanata's 1st Solo Live 'LOCK ON', featuring scrolling fan messages, artist visuals, event safety information, and merchandise details, all accompanied by a continuous, upbeat instrumental electronic soundtrack." Scenes will then be mapped according to the content breakdown above.
+
+    The instructions specify to describe the video content and identify musical segments. No vocal music identified means no vocal music will be stated, but I do need to include the instrumental track. I'll make a final verification of the audio, just to make *sure*, and double check the timestamps, now in the proper format. The scene boundaries have been re-verified. And, I've checked and double-checked the end timestamp.
+
+    I will also make sure the song-related fields are `null` if no song title or no song could be identified.
+
+    Checking the `scenes` schema, it supports `null` for the song-related fields. I will set the `original_language`, `performer_in_video`, etc. in the scene to null, because `contains_vocal_music` is `false`.
+
+    Final timestamp check: everything lines up based on what I see on the video. All constraints are checked: "No manual transcription", "No truncation", "No guessing". Ready to create the response.
+
+
+...
