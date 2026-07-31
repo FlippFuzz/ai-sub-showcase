@@ -1,0 +1,71 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 299239
+lyrics_prompt_version: 9
+response:
+  global_summary: The video segment features a live stage presentation from hololive
+    GAMERS Fes., featuring VTubers Shirakami Fubuki, Inugami Korone, Nekomata Okayu,
+    and Ookami Mio. The members interact with the live audience, announce various
+    event merchandise (such as acrylic panels and plushies), and discuss upcoming
+    collaborations and campaigns. The audio consists entirely of spoken dialogue,
+    crowd cheering, and incidental instrumental background music; there is no vocal
+    musical performance in this segment.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: The four members of hololive GAMERS (Shirakami Fubuki, Inugami Korone,
+      Nekomata Okayu, and Ookami Mio) stand on stage, presenting merchandise on large
+      screens, talking to the audience, and engaging in light banter. The segment
+      is primarily speech-based with occasional crowd interactions.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of VTuber Performance - No Song Detected**
+
+    Okay, so the task is to analyze this video clip from the hololive GAMERS Fes. event, identify any songs present, and retrieve their lyrics. The instructions are pretty clear: no manual transcription or translation, search only, no truncating, use official sources, and a maximum of three search turns per song. And, very importantly, if no song is detected, all the relevant lyrics fields should be set to null.
+
+    Let's dive in. The video segment features Shirakami Fubuki, Ookami Mio, Nekomata Okayu, and Inugami Korone on stage. They're interacting with the audience, showing off merchandise, and making announcements. Immediately, it's apparent there's no actual vocal *performance* happening. There's background music, but it sounds like incidental music, or maybe some ambient electronic music that's instrumental only. There's also crowd noise and chanting, but that doesn't count as a song.
+
+    The prompt states to "detect ALL vocal songs playing," which I've got to take seriously. I've re-listened several times. The characters are talking, giving announcements, that's it. It's MC/stage interaction, not a performance. So, I'm confident that the `contains_vocal_music` flag should be `false` for this entire segment.
+
+    Just to be absolutely sure, I'll review the instructions one more time. Yep, the instructions are clear: if there are no songs, set the fields to `null`. This isn't a failure to find lyrics, this is *finding* the lack of songs. No song means no song.
+
+    So, the `global_summary` should reflect this: "The video segment shows a live stage presentation from hololive GAMERS Fes., featuring members Shirakami Fubuki, Inugami Korone, Nekomata Okayu, and Ookami Mio. The VTubers are interacting with the audience, making announcements about merchandise, and introducing event activities. There is no vocal song performed during this segment, only instrumental background music and spoken dialogue."
+
+    And the single scene (00:00.000 to 04:59.000), should describe the same: The four members of hololive GAMERS (Shirakami Fubuki, Inugami Korone, Nekomata Okayu, and Ookami Mio) appear on stage, interacting with the crowd and discussing event merchandise, such as acrylic panels and plushies, as well as promoting event-related campaigns.
+
+    Therefore: `contains_vocal_music`: false, and all the following song-related metadata and lyrics fields will be null: `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, `reference_lyrics_en`. No need for searches, because there are no songs to find!
+
+    Just to be absolutely sure, I listened again. Still no songs. The electronic background music is clearly instrumental. Okay, let's construct the JSON. The video ends at 04:59.000. Double checking constraints: no manual transcription, search failure fallback isn't needed, and no truncation, since there's no lyrics to truncate. Max 3 search turns doesn't apply because there's no song being sung.
+
+    Looks good! The JSON structure is correct:
+
+    ```json
+    {
+      "global_summary": "...",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "04:59.000",
+          "description": "...",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    This should be perfect. No songs, case closed.
+
+
+...

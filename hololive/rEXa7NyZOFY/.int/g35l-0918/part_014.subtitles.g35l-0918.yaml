@@ -1,0 +1,49 @@
+name: part_014
+total_attempts: 1
+video_duration_ms: 25007
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '00:24.500'
+    original: |-
+      無料パートは終了いたしました
+      全編はABEMA PPVにて視聴可能！
+    english: |-
+      The free portion has ended.
+      The full version is available on ABEMA PPV!
+  thoughts: |+
+    **Subtitle Generation for Static End Screen: A Visual Event Focus**
+
+    Okay, so the user needs subtitles, and my initial thought is, let's dive right into analyzing this video. It's a static end screen, which makes things interesting. The audio is purely instrumental; no vocals whatsoever. According to the instructions, ZERO GHOST SUBTITLES are key here: silence unless there's a Visual Event.
+
+    So, is there a prominent Visual Event? Yes! There's Japanese text on screen, specifically an end screen advertising a paid service. I need to make sure I catch the exact text. Let's see: "無料パートは終了いたしました" and "全編はABEMA PPVにて視聴可能！" appearing throughout the duration. According to the visual event rules, I definitely need to subtitle this for the duration it's visible – from 00:00 to 00:24, the entire clip.
+
+    Now, translation and formatting. I need to convert those Japanese phrases to English. So: "無料パートは終了いたしました" translates to "The free portion has ended." and "全編はABEMA PPVにて視聴可能！" translates to "The full version is available on ABEMA PPV!"
+
+    Now, let's format the subtitles. Duration is 00:00 to 00:24.500. Should I put it in one block or two? I remember other examples. I recall example 5 which has "[Title: Chapter 1]", the duration is from 00:02.000 to 00:05.000. For such static text on a screen, is one or two blocks fine? Let's check how visual events are handled.
+
+    Let's do the standard approach, splitting the text to two lines with `
+    ` or splitting to two blocks. It will be two blocks, from 00:00 to 00:24.500, but let's decide if this can be one block. Since the text is static on screen the whole time, let's keep it as one continuous subtitle block.
+
+    So, let's finalize the JSON:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:00.000",
+          "e": "00:24.500",
+          "og": "無料パートは終了いたしました
+    全編はABEMA PPVにて視聴可能！",
+          "en": "The free portion has ended.
+    The full version is available on ABEMA PPV!"
+        }
+      ]
+    }
+    ```
+
+    Okay, one last check: no vocals, purely instrumental. The prominent text rule applies perfectly here. It's a clean, compliant visual event. I'm satisfied. Let's output this.
+
+
+...

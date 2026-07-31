@@ -1,0 +1,94 @@
+name: part_013
+total_attempts: 1
+video_duration_ms: 300040
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:01.000'
+    end: '00:06.000'
+    original: |-
+      無料パートは終了いたしました
+      全編はABEMA PPVにて視聴可能！
+    english: |-
+      The free portion has ended.
+      The full version is available on ABEMA PPV!
+  thoughts: |+
+    **Subtitle Strategy for Static End Card**
+
+    Alright, let's break this down. We have a static end card for "hololive GAMERS fes. CHOCHOCHOGOCHAMERS 2". My initial thought is, do we need subtitles? I know the rules – if prominent, *relevant* text is on-screen, even without audio, we subtitle it. This is straightforward; we have prominent on-screen text.
+
+    So, let's look at the visuals. Top banner: "無料パートは終了いたしました (The free portion has ended)" and below it: "全編はABEMA PPVにて視聴可能！ (The full version can be watched on ABEMA PPV!)". Bottom right: "配信の詳細はQRコードをチェック！ (Check the QR code for streaming details!)". Bottom left: "購入者特典: オリジナルボイスドラマと限定直筆メッセージ入りライブ画像がもらえる！ (Purchaser Bonus: Get an original voice drama and live image with limited handwritten message!)". We also have upbeat, looping, instrumental music in the audio, but no spoken content.
+
+    Now, checking the subtitle rules again to confirm: "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio." Got it. We need to translate the main announcements, even though there's no spoken dialogue.
+
+    Let's look at how to approach timing. Since it's a static image, the text is visible from the beginning. Do we subtitle the *entire* 5-minute duration, or a short block? Standard practice dictates that static end screens should either have a single intro card subtitle or timed to when it appears. Since it's visible at the start, one or two subtitle blocks covering the main text is acceptable. Let's do a single block covering the important text.
+
+    First, let's translate the main parts:
+    *   "無料パートは終了いたしました" -> "The free portion has ended."
+    *   "全編はABEMA PPVにて視聴可能！" -> "The full version is available on ABEMA PPV!"
+
+    Now, setting up the subtitle block from 00:01.000 to 00:06.000:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:01.000",
+          "e": "00:06.000",
+          "og": "無料パートは終了いたしました
+    全編はABEMA PPVにて視聴可能！",
+          "en": "The free portion has ended.
+    The full version is available on ABEMA PPV!"
+        }
+      ]
+    }
+    ```
+
+    Since we don't need to add the other text on the screen, that is the most relevant information and the others are less important. I'm going to follow this approach. Okay, and that should be it.
+
+
+- subtitles:
+  - start: '00:00.500'
+    end: '00:03.000'
+    original: 無料パートは終了いたしました
+    english: The free portion has ended.
+  - start: '00:03.000'
+    end: '00:06.000'
+    original: 全編はABEMA PPVにて視聴可能！
+    english: The full version is available on ABEMA PPV!
+  - start: '00:06.000'
+    end: '00:09.000'
+    original: 配信の詳細はQRコードをチェック！
+    english: Check the QR code for streaming details!
+  - start: '00:09.000'
+    end: '00:12.000'
+    original: 購入者特典 オリジナルボイスドラマと限定直筆メッセージ入りライブ画像がもらえる！
+    english: 'Bonus: Get an original voice drama and special message live image!'
+  thoughts: |+
+    **Subtitle Strategy for "hololive GAMERS fes. CHOCHOCHOGOCHAMERS 2" Promotional Screen**
+
+    Okay, so the task is to generate subtitles for this "hololive GAMERS fes. CHOCHOCHOGOCHAMERS 2" promotional screen. First, I need to get a grip on what's going on visually and aurally, so I'm consulting the reference JSON, which describes the video as a static promotional graphic from 00:00 to 05:00, with a looping instrumental track. The crucial thing here is the visual element – specifically, the text displayed on the screen.
+
+    Now, remembering the on-screen text rules, I know I need to subtitle any prominent and relevant text, even if there's no spoken audio. I'm checking the screen for that. And the rules are clear: subtitle prominent text when it appears. Right, so let's get down to specifics.
+
+    I see text: "無料パートは終了いたしました" (The free portion has ended) and "全編は ABEMA PPV にて視聴可能!" (The full version can be viewed on ABEMA PPV!). No vocals, just the instrumental, so my focus is purely on the text. Now, I should time these properly. I'm going to start with the prominent text and capture the duration of visibility at the beginning as the visual elements are static for 5 minutes. The initial display of key text is the usual practice for these promotional graphics.
+
+    I'll format it like this, based on the timing I think makes sense:
+
+    1.  s: "00:00.500", e: "00:03.000", og: "無料パートは終了いたしました", en: "The free portion has ended."
+    2.  s: "00:03.000", e: "00:06.000", og: "全編はABEMA PPVにて視聴可能！", en: "The full version is available on ABEMA PPV!"
+
+    Wait, there is more text. Let's make this complete. I see a few other elements on the screen, a box in the bottom-left with:
+    "購入者特典 オリジナルボイスドラマと限定直筆メッセージ入りライブ画像がもらえる！" (Purchaser Bonus: Get an original voice drama and a live image with a limited handwritten message!),
+    and a box in the right with:
+    "配信の詳細はQRコードをチェック！" (Check the QR code for streaming details!)
+
+    Following the same logic, I need to include these as well:
+
+    3.  s: "00:06.000", e: "00:09.000", og: "配信の詳細はQRコードをチェック！", en: "Check the QR code for streaming details!"
+    4.  s: "00:09.000", e: "00:12.000", og: "購入者特典 オリジナルボイスドラマと限定直筆メッセージ入りライブ画像がもらえる！", en: "Bonus: Get an original voice drama and special message live image!"
+
+    And since the whole video is just a repeating visual and audio loop, these four subtitle entries will cover the entirety of what's necessary. I will format the output in the requested JSON structure.
+
+
+...

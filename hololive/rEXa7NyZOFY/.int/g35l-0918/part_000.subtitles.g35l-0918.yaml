@@ -1,0 +1,23 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 304988
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Subtitle Decision: "hololive GAMERS fes." (Day 2) Promotional Screen**
+
+    Okay, so I've got a video segment that needs subtitles. Let's break this down. First, the visual: it's a static promotional screen for "hololive GAMERS fes." (Day 2). The audio seems to be chiptune music, which starts around the 00:17 mark, but it's purely instrumental. No vocals.
+
+    Now, let's consult the rules. "ZERO GHOST SUBTITLES" is the guiding principle here: silence during instrumental music is the instruction. That's straightforward, but are there exceptions? Are there *any* on-screen visual elements that are prominent and relevant? We have text like "DAY 2", "#超ゲマズ2_day2", and some rules on the right side. However, these title screens or waiting lobby screens don't usually require subtitles unless the instruction specifies something special.
+
+    But wait, there's text at the bottom: "配信までしばらくお待ちください" (Please wait until the broadcast starts). Is that a narrative visual event or just UI? I need to think about that. The instruction does say "If prominent, relevant text ... appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio." But it also says to "Exclude meaningless background clutter or UI elements." Waiting screen banners, those are usually stream UI elements, not plot-critical text.
+
+    Let's confirm the data. I've checked the JSON reference: `contains_vocal_music`: false, and `reference_lyrics_og`: null. The music is instrumental.
+
+    To be extra sure, I've re-listened to the audio from 00:00 to 05:04. Definitely instrumental chiptune music only, no voices or singing.
+
+    Therefore, according to "ZERO GHOST SUBTITLES", with no vocals and the waiting screen banner being a UI element, my final decision is an empty subtitle list: `{ "subs": [] }`.
+
+
+...
