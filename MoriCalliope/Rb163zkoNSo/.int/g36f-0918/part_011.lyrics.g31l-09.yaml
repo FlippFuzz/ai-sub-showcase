@@ -1,0 +1,39 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 300855
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a talk segment with two virtual idols, Hoshimachi
+    Suisei and Mori Calliope, discussing song choices for an upcoming members-only
+    stream. The two interact, discuss memories of past performances, and engage with
+    on-screen polls, all set against a stylized icy backdrop. There is no active vocal
+    music performed by the characters in this video.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: Two virtual idols, Hoshimachi Suisei and Mori Calliope, stand on
+      a stage with a blue ice crystal background, discussing song choices for a future
+      members-only stream and interacting with an on-screen poll menu. The video is
+      purely a talk segment, with no vocal musical performances.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Hololive Video Segment**
+
+    Okay, so the user wants me to analyze this video and specifically look for *performed* songs by Hoshimachi Suisei and Mori Calliope. My first impression is that it's a "live" setup, but the audio is more of a discussion about songs, rather than an actual performance happening *in* the video. Initial observations indicate this is a talk segment, part of a promotion or a lead-up to a members-only stream. The visuals confirm this, showcasing a UI with song options like "I can't control myself," "Dancing Reed," "Blue World," and "Caramel Pain." They are clearly talking about past or future performances.
+
+    After reviewing the timestamp, it becomes clear that the characters are discussing song choices, mentioning past performances ("さっきイェスタと歌った曲") and engaging with the audience through on-screen voting. They might have *performed* these songs earlier, or will in the future, but they are *not* singing any of them in this particular video. The characters are speaking in Japanese and English, discussing the planned content.
+
+    The primary task, per the user's prompt, is to "detect ALL vocal songs playing." Since there is no actual vocal music *being performed* in this video, the response should reflect that. The background instrumental music present is incidental, and not a primary element of a "vocal performance". I need to set `contains_vocal_music` to `False`.
+
+    Because there are no detected songs, the official lyrics, title, artist, and all song metadata will be set to `null` to comply with the user's constraints. I'll need to remember that even if the lyrics or translation could be found, I'm to set the metadata to null if no songs are playing. This means that the entire video will be considered one single scene, with the `contains_vocal_music` flag set to `False`. The prompt asked for songs playing, so I am going to focus on only active, sung vocal music within the video. Background music is not a factor here. Let me re-check the start/end to confirm. Alright, one scene.
+
+    It looks straightforward now. Let me construct the JSON structure and return it.
+
+
+...

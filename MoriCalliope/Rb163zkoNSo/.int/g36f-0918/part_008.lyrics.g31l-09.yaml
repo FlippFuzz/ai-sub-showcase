@@ -1,0 +1,93 @@
+name: part_008
+total_attempts: 1
+video_duration_ms: 298681
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a musical performance of the song "Blue World"
+    by Nerissa Ravencroft and Mori Calliope, followed by a short conversation segment
+    between the two performers.
+  scenes:
+  - start: '00:00.000'
+    end: '04:25.000'
+    description: Nerissa Ravencroft and Mori Calliope perform the song "Blue World"
+      on a stage with a backing band consisting of shadowed figures. The stage has
+      large blue crystal structures in the background.
+    contains_vocal_music: true
+    song_title: Blue World
+    original_artist: Nerissa Ravencroft, 目黒将司 (Shoji Meguro)
+    performer_in_video: Nerissa Ravencroft and Mori Calliope
+    original_language: English
+    reference_lyrics_og: |-
+      walking an empty road, nowhere for me to go
+      lost and lonely, yeah it's only me
+      burnt out like candle light, left blazing through the night
+      melting slowly, until nothing else is left of me
+      colored in shades of grey
+      watching the days pass in front of me
+      longing to find a way, i can fly away
+      i'm drifting through this blue, blue world
+      it's always been clear to me, how cruel the world can be
+      my shadow's the only one beside me
+      no love to call my own, no notifs on my phone
+      sunken silence, has engulfed the very life i lead
+      colored in shades of grey
+      watching the years pass in front of me
+      memories i wish would stay, always fade away
+      i'm lonely in this blue, blue world
+      though my heart is torn, and my weary wings are worn
+      just tonight, can't i dream of a better life, with happiness in sight?
+      colored in shades of grey
+      watching my life pass in front of me
+      maybe it's not too late, if i can't escape
+      i'll have to make my own way
+      colored in shades of grey
+      palette in hand, i can make a change
+      i'll try to find the strength, take a breath and paint
+      bring color to this blue, blue world
+    reference_lyrics_en: null
+  - start: '04:25.000'
+    end: '04:59.000'
+    description: The song music ends, and the performers have a casual conversation.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video and Task**
+
+    Okay, here's the breakdown of what I need to do. First, I need to understand the request: the goal is to map the scenes and identify the vocal songs within a video. The tool I'll be using is `web_search_langsearch_multi` to find the official lyrics, absolutely *not* transcribing or translating them myself. It's crucial that I adhere to the constraints: no truncation, no placeholders, no manual transcription or translation, and a maximum of three search attempts. My input is a video featuring two VTubers, Mori Calliope and Nerissa Ravencroft, who appear to be performing a song.
+
+    Now, I'm going to watch the video and make a mental note of the scenes. From **00:00 to 04:25**, the performers are singing a song on a stage with a band in the background. From **04:26 to 04:59**, the music fades, and it's a conversation. No song is playing in this part.
+
+    Next, I need to identify the song. Based on what I'm hearing (but *not* transcribing), the lyrics sound like "Lost and lonely", "It's only me", "Burnt out like candle light", and "Coloured in shades of gray". I'll use those cues and my search tool to identify the song and, crucially, retrieve the lyrics. And wait, the performers are Mori Calliope and Nerissa Ravencroft, and there's a "#UNCUTROCK" hashtag and "Blue World" on the screen. This gives me a good starting point for search queries.
+
+    I'm going to start with a few search queries, starting broad and then refining:
+
+    1.  "Mori Calliope Nerissa Ravencroft Blue World lyrics"
+    2.  "Mori Calliope Nerissa Ravencroft original song"
+    3.  "Lost and lonely It's only me Burnt out like candle light lyrics"
+
+    Now, I'm ready to execute the search. I'll call the `web_search_langsearch_multi` tool.
+
+
+
+    **My Analysis of "Blue World" Performance Data**
+
+    Okay, so the search nailed it – we've got "Blue World" by Nerissa Ravencroft, featuring Mori Calliope. It's in English, the results are solid, and the lyrics are all here from UtaTen/Lyrical Globe, and they appear complete. The performers in the video are Nerissa Ravencroft and Mori Calliope.
+
+    Initially, I noted a scene breakdown, but I've now refined that. The video structure is straightforward: first the "Blue World" performance, followed by a talk section. Thinking through it, and ensuring I'm being precise, I've got this:
+
+    *   **Scene 1 (00:00 - 04:25):** The actual "Blue World" performance by Nerissa Ravencroft and Mori Calliope. This is where the vocal music is.
+    *   **Scene 2 (04:26 - 04:59):** Post-performance conversation or talk. No vocal music here.
+
+    My output construction is clear: `global_summary`: The video features a musical performance of "Blue World" by Nerissa Ravencroft and Mori Calliope, followed by a post-performance conversation segment. Then, Scene 1 and Scene 2 as specified above.
+
+    The lyrics seem fine – no reason to suspect truncation. No manual transcription was required. The JSON structure is as expected. And, the song "Blue World" is written by Nerissa Ravencroft and 目黒 将 司 (Shoji Meguro).
+
+    I checked the lyrics: starting with "walking an empty road..." and ending with "...bring color to this blue, blue world". Based on the text, it appears complete. This is solid.
+
+
+...
