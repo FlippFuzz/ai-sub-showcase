@@ -1,0 +1,121 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a virtual performer playing an electric guitar
+    and singing on stage. The first part (00:00-04:23) is a performance of 'Encounter
+    with the Seven Heroes' (七英雄バトル) from the game 'Romancing SaGa 2'. The second part
+    (04:23-end) is a performance of 'Break The World' from the game 'Kamen Rider SummonRide!'.
+  scenes:
+  - start: '00:00.000'
+    end: '04:23.000'
+    description: The character performs a cover of the boss theme 'Encounter with
+      the Seven Heroes' from Romancing SaGa 2 on electric guitar and vocals.
+    contains_vocal_music: true
+    song_title: 七英雄バトル
+    original_artist: Kenji Ito
+    performer_in_video: 周防パトラ (Patra Suou)
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:23.000'
+    end: '04:59.000'
+    description: The character performs 'Break The World' from Kamen Rider SummonRide!
+      on electric guitar and vocals.
+    contains_vocal_music: true
+    song_title: Break The World
+    original_artist: null
+    performer_in_video: 周防パトラ (Patra Suou)
+    original_language: Japanese
+    reference_lyrics_og: |-
+      放たれた矢が的へ向かうように
+      自らの気持ちも向かわせ行く
+      理由などなくそこに宿命あるだけ
+      ただ進む仲間とともにゆく
+      気持ちは一つ水面に写る君は
+      遠くライドゲート見つめてる
+      果てしなく続くクリスタルワールドを突き進む
+      強い意志で限界を打ち破れ
+      (スリー ツー ワン)！
+      出でよ サモンライド！ 時は満ちて
+      サモンライド！ 意思を宿し
+      願いを一つに集め全てを超えて突き抜けろ
+      サモンライド！ 空は高く
+      サモンライド！ 孤高に舞え
+      約束の地へ駆け抜けろ
+      出でよ サモンライド！ 時を越えて
+      サモンライド！ 祈り届け
+      想いを絆に変えて一点突破突き抜けろ
+      サモンライド！ 次元を超え
+      サモンライド！ 全ては今
+      約束の地へ駆け抜けろ
+    reference_lyrics_en: |-
+      Like an arrow released heading towards the target
+      My own feelings are also heading there too
+      There's no reason, that fate is just there
+      I just move forward, going with my companions
+      My feelings are one, in the reflection on the water's surface, you
+      are staring far away at the ride gate
+      Pushing forward through the endlessly continuing Crystal World
+      Break through the limits with a strong will
+      (3! 2! 1!) Come forth!
+      Summon Ride! The time is full
+      Summon Ride! Dwelling in the will
+      Gather all the wishes into one, transcend everything and break through!
+      Summon Ride! The sky is high
+      Summon Ride! Dance in isolation
+      Dash through to the promised land!
+      Come forth!
+      Summon Ride! Transcending time
+      Summon Ride! Deliver the prayers
+      Change the memories into bonds, break through with a single-point breakthrough!
+      Summon Ride! Transcending dimensions
+      Summon Ride! Everything is now
+      Dash through to the promised land!
+  thoughts: |+
+    **My Approach to Analyzing the Video and Retrieving Lyrics**
+
+    Okay, here's my plan. I've got a video to dissect, and the goal is to identify songs, find their lyrics, and format everything into a JSON response. No manual transcription, no truncating, and I'm strictly using the `web_search_langsearch_multi` tool. I have three search turns to get it right.
+
+    First, I need to understand the video content. I'll break it down scene by scene. I see the virtual character performing two songs. The first song, from 00:00 to 04:23, displays "ロマンシング サ・ガ 2" and "七英雄バトル". It appears to be a medley or continuation of the same track. After re-listening, and re-checking the on-screen text, it seems safe to say this is the song. The second song, from 04:23 to the end, features "仮面ライダー サモンライド!" and "Break The World".
+
+    Now, time to refine the scene breakdown. The video breaks down as follows:
+    *   Scene 1: 00:00 - 04:23. The song is "七英雄バトル" from "Romancing SaGa 2".
+    *   Scene 2: 04:23 - End. The song is "Break The World" from "Kamen Rider SummonRide!".
+
+    Okay, I'm confident with the scene and song identification. Let's move onto the search queries. I have to create my search strings. I need to get both the original and English lyrics. I'll need to use the artist's original language for the titles.
+
+    My Search Strategy is now:
+    *   Song 1: "七英雄バトル" + "ロマンシング サ・ガ 2" + "歌詞"
+    *   Song 2: "Break The World" + "仮面ライダー サモンライド" + "歌詞"
+
+    Now the search strings. I need to make sure to do *parallel lookups*.
+
+    *   Song 1 (Original): `七英雄バトル ロマンシング サ・ガ 2 歌詞`
+    *   Song 1 (English): `Seven Heroes Battle Romancing SaGa 2 lyrics English` (I have to be prepared for the fact that instrumental versions might exist, or the lyrics could be sparse.)
+    *   Song 2 (Original): `Break The World 仮面ライダー サモンライド 歌詞`
+    *   Song 2 (English): `Break The World Kamen Rider SummonRide lyrics English`
+
+    I'm ready to call `web_search_langsearch_multi` with these queries.
+
+    Wait, one quick re-evaluation... "七英雄バトル". It's a boss theme in Romancing SaGa 2, and often instrumental. Let's double check the video at 00:04, 00:16, 00:31... *Yes, the character is singing!* Good. Lyrics exist.
+
+    Now, I'm executing the search.
+
+
+
+    **Analysis of Song Lyrics Retrieval**
+
+    Okay, so the search queries delivered what was expected. I've got the lyrics for both songs, or rather, the *lack* of lyrics for one, as the instructions dictate.
+
+    First up, "七英雄バトル" from *Romancing SaGa 2*. The initial search result confirms it's the instrumental boss theme, as expected. But the VTuber in the video is *singing*! Interesting. I did a deep dive to see if there were any official lyrics for a vocal arrangement, or even a proper translation, but I hit a dead end. Since the prompt specifically demands official lyrics and translations, any fan covers or interpretations are irrelevant. The rules are clear: if the *official* lyrics are unavailable, the lyrics field is null. So, *null* it is. I'm noting the vocal aspect for potential downstream use, but technically, I have zero lyrics to work with for that one.
+
+    Now, "Break The World" from *Kamen Rider SummonRide!*—that was a breeze. Search gave the original Japanese lyrics and I even found a translation. I can easily fulfill that requirement.
+
+    Wait a second, let me just double-check "七英雄バトル"... nope, still nothing. The search tool is doing what it's supposed to do. The lack of official lyrics stands; the constraint is absolute. It is the correct response.
+
+    Okay, everything seems solid. I've got a definite structure now: Scene 1 covers the *Romancing SaGa 2* theme with its vocal cover and lack of official lyrics, and Scene 2 covers "Break The World" with its available Japanese and translated lyrics. The video ends precisely at the right point. That's a wrap.
+
+
+...
