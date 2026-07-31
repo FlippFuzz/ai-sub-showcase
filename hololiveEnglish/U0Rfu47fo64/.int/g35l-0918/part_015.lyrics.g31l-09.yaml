@@ -1,0 +1,88 @@
+name: part_015
+total_attempts: 1
+video_duration_ms: 196028
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features four virtual entertainers (VTubers) on a 3D stage
+    thanking their fans for their support and discussing their 3D collaboration and
+    upcoming events. There is background music throughout the video, but no vocal
+    song performances.
+  scenes:
+  - start: '00:00.000'
+    end: '00:13.000'
+    description: Four VTubers introduce the stream on a 3D stage.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:13.000'
+    end: '01:02.000'
+    description: The VTuber in the orange jacket speaks to the audience.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:02.000'
+    end: '01:25.000'
+    description: The VTuber in the green dress speaks to the audience.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:25.000'
+    end: '01:56.000'
+    description: The VTuber with cat ears in the red/white outfit speaks to the audience.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:56.000'
+    end: '02:37.000'
+    description: The group concludes the stream and says goodbye.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the VTuber Video**
+
+    Alright, the task is to analyze this video of four VTubers. The goal is to detect vocal songs, map the video into scenes, and identify song metadata. First, I need to understand the content. I'm given a video featuring four animated characters (VTubers) on a 3D stage; they're taking turns speaking. Instrumental background music is playing throughout, but the instructions are clear: I'm looking for *vocal* songs, not just instrumental tracks. I need to be sure. Let me re-listen carefully to confirm.
+
+    Okay, I've re-listened, and there's no singing; it's just speaking and background music. The prompt specifically asks about *vocal* songs. Since there are none, I need to ensure the response reflects that. The instructions also state that if no song is detected, I should return `null` for the song-related fields. I need to get this right and the instructions say to "map scene boundaries".
+
+    I should also include a `global_summary` that gives a description of the content. Since there's no vocal music, no lyric searches will be required.
+
+    Now, let's look at scene breakdown. I could do it as one long scene (00:00 - 02:37) since it's just one continuous discussion. But to better fulfill the "map scene boundaries" part of the instructions and since they are taking turns speaking, I should probably break it down by speaker change for a more detailed scene breakdown.
+
+    Here's my refined plan:
+
+    *   **`global_summary`**: "The video features four virtual entertainers (VTubers) on a 3D stage thanking their fans for their support and discussing their 3D collaboration and upcoming events. There is background music throughout, but no sung vocal performances."
+    *   **Scenes**:
+        *   00:00 - 00:13: Group speaking / introduction
+        *   00:14 - 01:02: First VTuber speaks (orange jacket)
+        *   01:03 - 01:25: Second VTuber speaks (green dress)
+        *   01:26 - 01:56: Third VTuber speaks (red outfit/cat ears)
+        *   01:57 - 02:37: Group outro.
+    *   For all scenes:
+        *   `contains_vocal_music`: `false`
+        *   All other song metadata fields (`song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, `reference_lyrics_en`): `null`
+
+    I'm double-checking the constraint: "If no song is detected, set the field to null." Okay, looks correct. Since there are no songs, I don't need to perform any lyric searches. I've re-listened to make sure I did not miss any song or singing. I am confident with the answer. This should be a comprehensive and accurate response.
+
+
+...
