@@ -1,0 +1,98 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 300015
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features two musical performances by virtual characters
+    (VTubers). The first segment is a cover of the opening theme for the classic anime
+    'Space Adventure Cobra'. The second segment is a performance of the song 'IT'S
+    LOVE', with specific credits shown on-screen.
+  scenes:
+  - start: '00:00.000'
+    end: '02:26.000'
+    description: A virtual performer with long red hair and a dark, stylish outfit
+      performs 'Cobra' on stage, accompanied by two dancers in black and blue outfits.
+      The background features animated geometric patterns and palm trees.
+    contains_vocal_music: true
+    song_title: COBRA
+    original_artist: 前野曜子
+    performer_in_video: null
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:26.000'
+    end: '05:00.000'
+    description: 'A virtual musical performance featuring three characters: one with
+      long red hair, one with short reddish hair, and one with brown hair and dog
+      ears. The stage lighting is warmer, and the screen behind them displays ''IT''S
+      LOVE'' along with song credits.'
+    contains_vocal_music: true
+    song_title: IT'S LOVE
+    original_artist: 岩佐友晴 (Lyrics), 野下俊哉 (Music)
+    performer_in_video: null
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Performance Video**
+
+    Okay, here's the breakdown. I need to analyze this video featuring VTuber performances. First, I'll map out the scenes.
+
+    *   **Scene 1 (00:00 - 02:26):** We've got a performance, likely a song. The performer has red hair and a dark outfit. There are two dancers, also in dark outfits. The text on screen displays "コブラ" (Cobra).
+    *   **Scene 2 (02:26 - end):** A transition leads to a new performance with three VTubers: one red-haired, one short reddish-haired, and one with brown hair and dog ears. The text on screen reads "IT'S LOVE." The credits show "Lyrics: 岩佐友晴 (Tomoharu Iwasa)" and "Music: 野下俊哉 (Toshiya Noshita)".
+
+    Now, let's identify the songs:
+
+    *   **Song 1 (00:00 - 02:26):** The title is "コブラ" (Cobra). My job is to find the original song, artist, or composition.
+    *   **Song 2 (02:26 - 05:00):** The title is "IT'S LOVE." Lyrics are by 岩佐友晴 (Tomoharu Iwasa) and the music is by 野下俊哉 (Toshiya Noshita).
+
+    Okay, time for the search. I need to use `web_search_langsearch_multi`. The initial searches will be based on the provided titles and credits. *However,* I must adhere to the rule of using only the original composer, not the performer, and avoid quotation marks. The initial searches will be:
+
+    *   **Song 1:** "コブラ 歌詞" - It looks generic, given the title is the same. Let's try to refine based on the video content. The text suggests it could be related to "Space Adventure Cobra". Let's try: "コブラ アニメ オープニング 歌詞".
+    *   **Song 2:** "IT'S LOVE 岩佐友晴 歌詞" - This should be more straightforward.
+
+    Let me revise those based on the rule: Initial - Targeted Original: [Song Title in OG language] [Original Artist/Composer] [lyrics keyword in OG language]. I don't know the original artist for Cobra, so I will start with the title and go from there. So, the batch I'll run will be:
+
+    1.  `web_search_langsearch_multi(queries=["コブラ アニメ オープニング 歌詞", "IT'S LOVE 岩佐友晴 歌詞"])`
+
+    Now I wait for the results. My primary goal here is to get the lyrics. Once I have them, I can use that to construct the final JSON. Looks like the "Cobra" song is indeed from the "Space Adventure Cobra" anime! The second song, as stated, is "IT'S LOVE". Let's get to it.
+
+
+
+    **Analyzing and Summarizing Song Data**
+
+    Okay, so here's the breakdown of my thought process. The initial analysis clearly identified the first song as the iconic "COBRA" OP from the 1982 *Space Adventure Cobra* anime. I know that song! I had the search results confirming it, specifying that the title is "COBRA" by Yoko Maeno.
+
+    The second song, "IT'S LOVE," was straightforward in identifying the credits from the video itself. I've got the lyrics by 岩佐友晴 and the music by 野下俊哉. The immediate thought was, "Let's find those lyrics!". I started with a search for "IT'S LOVE 岩佐友晴" which returned a related song, but not the specific one.
+
+    My initial assumption was that "IT'S LOVE" might be an original or a relatively obscure song, making the search for lyrics a bit tricky. Given the rule, which I always follow, that says, "If lyrics aren't found, set the field to null", I almost went down that route.
+
+    Then, I paused. The prompt is *clear*. It requires us to set the lyrics to null if we can't find them, but it assumes we are able to try using the search tool.
+
+    My next step was to go back and retry the search for the lyrics, but I realized I needed a methodical approach, I need to try to get the lyrics with the search tool.
+
+    I then realized I only have limited turns, so I need to prioritize finding the lyrics. I made a plan:
+
+    *   **Turn 1:** I searched for "コブラ アニメ オープニング 歌詞" and "IT'S LOVE 岩佐友晴 歌詞". The first one was close, but didn't return the lyrics. The second one did not return lyrics either.
+    *   **Turn 2:** Given that I needed lyrics, I decided to retry with a specific search query. I will try "COBRA 前野曜子 歌詞" and "IT'S LOVE 野下俊哉 歌詞".
+    *   **Turn 3:** Final. I should have all the information.
+
+    I now have a clear plan. I'll get those lyrics!
+
+
+
+    **Metadata Finalization Thoughts**
+
+    Okay, my search has hit a wall. I've processed the search turns and have the metadata for both "COBRA" and "IT'S LOVE". For "COBRA", the search pointed to "傷だらけの夢" (Kizudarake no Yume) as an opening for an OVA, and confirmed that the classic TV series OP is simply called "COBRA". However, I haven't found the actual lyrics for the classic "COBRA" opening in the results provided. Similarly, the lyrics for "IT'S LOVE" are absent.
+
+    Initially, I was going to set the lyrics fields to null, considering the constraints. But hold on... I actually have everything needed to build the metadata structure. I just need to compile what I have.
+
+    Here's how it's going to work:
+
+    *   **Scene 1:** 00:00 - 02:26. Song title "COBRA". Original Artist: 前野曜子 (Yoko Maeno). Language: Japanese.
+    *   **Scene 2:** 02:26 - 05:00. Song title "IT'S LOVE". Original Artist: 岩佐友晴/野下俊哉 (Lyrics/Music). Language: Japanese.
+
+    Yes, that's sufficient. I'm finalizing the structure now.
+
+
+...

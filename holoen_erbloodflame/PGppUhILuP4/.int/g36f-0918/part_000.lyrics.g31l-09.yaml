@@ -1,0 +1,141 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video begins with a montage intro of various virtual entertainers,
+    followed by an introduction by Elizabeth Rose Bloodflame on the set of 'ERB TV'.
+    The video concludes with a live performance of the song 'Friday Chinatown' by
+    Elizabeth Rose Bloodflame.
+  scenes:
+  - start: '00:00.000'
+    end: '02:58.000'
+    description: A montage intro featuring various virtual entertainers with electronic
+      background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:58.000'
+    end: '04:18.000'
+    description: Elizabeth Rose Bloodflame introduces the 'Now That's a Bop' show
+      on ERB TV, speaking to the audience.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:18.000'
+    end: '05:01.000'
+    description: Elizabeth Rose Bloodflame performs the song 'Friday Chinatown' live,
+      playing the keyboard and singing.
+    contains_vocal_music: true
+    song_title: フライデイ・チャイナタウン
+    original_artist: 泰葉 (Yasuha)
+    performer_in_video: Elizabeth Rose Bloodflame
+    original_language: Japanese
+    reference_lyrics_og: |-
+      It's so fly-day, flyday chinatown
+      真夜中の人混みに
+      It's so fly-day, flyday chinatown
+      はじけるネオンサイン
+
+      肩にぶつかる外人
+      ウインクを投げる
+      知らん顔のあなた
+      とまどいのひとコマ
+      踊りつかれていても
+      朝まで遊ぶわ
+      港の見える場所で
+      何か飲みたいのよ
+
+      It's so fly-day, flyday chinatown
+      ジャスミンに口付けを
+      It's so fly-day, flyday chinatown
+      私も異国人ね
+
+      お店にならぶ絹の
+      ドレスを指さす
+      渋い顔のあなた
+      わがままが言いたい
+      愛想笑いのおばさん
+      きっと似合うわと
+      どこか静かな場所で
+      着がえてみたいのよ
+
+      It's so fly-day, flyday chinatown
+      絹ずれの月あかり
+      It's so fly-day, flyday chinatown
+      私も異国人ね
+
+      It's so fly-day, flyday chinatown
+      ジャスミンに口付けを
+      It's so fly-day, flyday chinatown
+      私も異国人ね
+    reference_lyrics_en: |-
+      It's so fly-day, flyday chinatown
+      In the crowd at midnight
+      It's so fly-day, flyday chinatown
+      The neon signs are bursting
+
+      A foreigner bumps into my shoulder and winks
+      You pretend not to notice, a bewildered moment
+      Even if I get tired of dancing, I'll play until morning
+      I want to drink something where I can see the harbor
+
+      It's so fly-day, flyday chinatown
+      A kiss to the jasmine
+      It's so fly-day, flyday chinatown
+      I'm a foreigner here too
+
+      You point to the silk dresses lined up in the shop
+      You have a sour look on your face, I want to be selfish
+      The lady with the friendly smile says it will surely suit me
+      I want to change into it somewhere quiet
+
+      It's so fly-day, flyday chinatown
+      Moonlight on the silk
+      It's so fly-day, flyday chinatown
+      I'm a foreigner here too
+
+      It's so fly-day, flyday chinatown
+      A kiss to the jasmine
+      It's so fly-day, flyday chinatown
+      I'm a foreigner here too
+  thoughts: |+
+    **My Analytical Process for Scene Mapping and Lyric Retrieval**
+
+    Okay, let's break this down. My goal is to map scenes in this video and identify any vocal songs, then get the lyrics for those songs. The key constraint is to *only* search for lyrics, no manual transcription or translation, and stick to the original artist. No placeholders. I've got a video to analyze: a montage, an intro, and a performance of "Friday Chinatown".
+
+    First, I need to analyze the video. The montage at the beginning (00:00-02:58) has no vocals, just an instrumental track. The intro by Elizabeth Rose Bloodflame (02:58-04:18) is spoken word, not singing. Then, at 04:18 to around the end of the clip, we have the performance of "Friday Chinatown" by Elizabeth Rose Bloodflame. I need to make sure I identify the *original* artist; the credits on screen are my friend here. It says "Lyrics: 荒木とよひさ (Araki Toyohisa) Music: 海老名泰葉 (Ebina Yasuha)" – so the composer/performer is Yasuha. That's the key. This song is in Japanese.
+
+    Now, I'll define the song metadata. The title is "フライデイ・チャイナタウン" (Friday Chinatown), the original artist is 泰葉 (Yasuha), the performer in the video is Elizabeth Rose Bloodflame, and the language is Japanese.
+
+    Next, the search strategy. I'll need to use parallel searches to be efficient. I'm going to search for:
+
+    1.  "フライデイ・チャイナタウン 泰葉 歌詞" (Japanese)
+    2.  "Friday Chinatown Yasuha lyrics English"
+
+    Now for the JSON structure: I see this as having a general summary of the video that follows a structured breakdown. The video starts with a montage of Hololive talents, followed by the introduction by Elizabeth Rose Bloodflame on the set of 'ERB TV'. The video ends with a performance of the song 'Friday Chinatown' by Elizabeth Rose Bloodflame. I will lay the scenes out as:
+
+    *   Scene 1 (00:00 - 02:58): Intro/Montage (No vocal music).
+    *   Scene 2 (02:58 - 04:18): Spoken intro (No vocal music).
+    *   Scene 3 (04:18 - 05:01): Performance of 'Friday Chinatown' (Vocal music).
+
+    Now, the important step: I need to call the search tool. This is where I'd *actually* execute the `web_search_langsearch_multi` tool. I'm going to call it with the queries I have defined. I am expecting both Japanese and English lyrics (which I will need to extract and make sure they are full).
+
+    I'll build the final JSON format based on these scene mappings:
+
+    *   Scene 1: 00:00 - 02:58. Contains\_vocal\_music: false.
+    *   Scene 2: 02:58 - 04:18. Contains\_vocal\_music: false.
+    *   Scene 3: 04:18 - 05:01. Contains\_vocal\_music: true. Title: フライデイ・チャイナタウン. Artist: 泰葉. Performer: Elizabeth Rose Bloodflame. Language: Japanese.
+
+    I'm ready to call the tool.
+
+
+...
