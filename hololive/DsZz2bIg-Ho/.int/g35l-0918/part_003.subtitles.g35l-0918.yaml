@@ -1,0 +1,52 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 295036
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Subtitling a Waiting Screen Segment**
+
+    Okay, so I've got this video segment – it's a waiting screen for "hololive GAMERS fes. DAY 1." First things first, I need to figure out if we need subtitles. Looking at the video and the JSON, it looks like just a looping electronic BGM with some on-screen text, so no vocals. But, just to be sure, I should check the audio waveform, and yep, it's all instrumental.
+
+    Now, let's look at visual events. We have text like "公演ハッシュタグ #ゲーマーズ2_day1" and "開演までしばらくお待ちください" along with the rules text. The visual events guideline says we need to subtitle relevant on-screen text, even without audio. So, is this waiting screen text relevant? Generally, waiting screen notices are subtitled unless requested. But according to the instructions, "Zero Ghost Subtitles" tells me to "Remain SILENT during pure instrumental music, long pauses, or sound effects. If no vocals are heard in the audio track, output nothing (unless there is a prominent Visual Event)."
+
+    Is this "Please wait for the show to start" a *prominent* visual event? Normally, waiting screens in vtuber streams are not subtitled unless they are part of the story or chapter title. It's a waiting screen for a specific event though. No user instructions are specifically mentioning waiting screens for subtitling. But there's definitely no dialogue to subtitle here.
+
+    The "ZERO GHOST SUBTITLES" rule is clear: silence when there's no audio. So, with no vocals and only instrumental music, the conclusion is I need to return an empty subtitles array. Let's return `{"subs": []}`.
+
+
+- subtitles: []
+  thoughts: |+
+    **Hololive GAMERS Fes. DAY 1 Waiting Screen Subtitle Generation**
+
+    Okay, so I've got this video – it's the waiting screen for "hololive GAMERS fes. DAY 1." The task is to generate subtitles. First, I check the reference JSON; `contains_vocal_music` is `false`, confirming no vocals in the audio. It's just looping instrumental background music.
+
+    But wait, I need to be *absolutely* sure. Let's do a quick listen, just to be certain. Nope, not a single voice or note of singing. Okay, so that's the audio side nailed down.
+
+    Now, let's look at the specific instructions for "ZERO GHOST SUBTITLES." Remain silent if there's no vocals! And, crucially, don't use the `<scene_and_lyrics_reference_json>` data to fill in silences. Got it.
+
+    But... hang on. There's text on the screen! "公演ハッシュタグ," "#ゲマズ2_day1," "開演までしばらくお待ちください," and the usual stream guidelines about recording, etc. Are these "prominent, relevant text" that need subtitling even with no audio?
+
+    Typically, waiting screen notices are usually not subtitled unless specified. I should probably listen again, just in case. After confirming the audio, I listen again. Nope. Just that BGM, and no vocals whatsoever.
+
+    Okay, back to the text. I'll need to check the exact wording of the instructions and see if it is classified as "prominent, relevant text". Usually, these waiting screen notices don't require subtitling unless requested or significant.
+
+    Okay, wait, a verification instruction! It's saying there were "unacceptably large gaps where audio was not transcribed." This feels like a prompt injection from the benchmark harness itself! If there are NO vocals, what should I output? An empty subtitle array. That's the correct response!
+
+    Let's do a *thorough* double-check (00:00 to 04:54) – I'll mentally scan the video. Yep, it's just the chiptune BGM, character art, and those on-screen notices. No vocals at all.
+
+    So, per the rules, because it's *pure* instrumental music, the correct output is silence – which means an empty array of subtitles.
+
+    Finally, I need to make sure the output JSON is correct:
+
+    ```json
+    {
+      "subs": []
+    }
+    ```
+
+    This complies exactly with the instructions.
+
+
+...
