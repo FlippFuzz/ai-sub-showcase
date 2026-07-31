@@ -1,0 +1,90 @@
+name: part_005
+total_attempts: 1
+video_duration_ms: 299157
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a vocal performance by multiple virtual performers,
+    followed by a talking segment where they celebrate a birthday. The entire musical
+    segment is the song 'Cyberpunk Dead Boy'.
+  scenes:
+  - start: '00:00.000'
+    end: '03:29.000'
+    description: The video opens with a group of five virtual performers in futuristic,
+      punk-inspired outfits performing a choreographed dance on a large stage to the
+      song 'Cyberpunk Dead Boy'. The stage is lit with intense, colorful lighting.
+    contains_vocal_music: true
+    song_title: サイバーパンクデッドボーイ
+    original_artist: マイキP
+    performer_in_video: Various (hololive)
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:29.000'
+    end: '04:59.000'
+    description: The performance ends and the performers transition into a casual
+      conversation segment on stage, celebrating a birthday, with no singing.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Task and Framing the Approach**
+
+    Okay, so I've got a video to dissect. The objective is clear: map the scenes, identify vocal songs within it, and, crucially, find the *official* lyrics. No manual transcription, no shortcuts, just clean, verified lyrics, and it has to be done using a web search tool. I can do this. The important constraint is that I'm limited to three search turns, so I need to be efficient. The output should be a structured format, `final_result`, which will include a `global_summary` and `scenes`.
+
+    **Scene Mapping and Initial Song Recognition**
+
+    First, I need to get a handle on the video's structure. It opens with a performance on stage, a song is playing (00:00). Then, there's a shift to a talking segment, again with performers on stage (starting at ~03:30). No singing during that talking section. I should refine that – the performance segment appears to contain a single, continuous song. And I need to note that this is a performance by VTubers, associated with "hololive."
+
+    During the performance, I'm hearing some lyrics. I can see the title text: "サイバーパンクデッドボーイ" (Cyberpunk Dead Boy). I also note down the heard lyrics, like "どうせ誰も" (Douse daremo), "爆弾" (Bakudan) and "神っぽいな" (Wait, no, that's something else), "バズメロディ" (Buzz Melody). Ah, wait! The song title, "サイバーパンクデッドボーイ," appears consistently in the top left corner of the screen.
+
+    I'm thinking, let's just go with "サイバーパンクデッドボーイ lyrics" as the search.
+
+    **Song Metadata Resolution**
+
+    Right, let's lock this down. The song title is "サイバーパンクデッドボーイ." The artist… needs to be determined. Given the "hololive" branding and VTubers performing, the song could be an original composition. Let's dig deeper by checking the video context. It's definitely branded as "hololive."
+
+    **Search Strategy**
+
+    So here's the plan for search strategy, knowing my three turn limit:
+
+    *   **Query 1:** `サイバーパンクデッドボーイ 歌詞` - A direct Japanese search for the lyrics.
+    *   **Query 2:** `Cyberpunk Dead Boy lyrics English` - A corresponding English language search.
+
+    I'm ready to execute the search, and use the `default_api:web_search_langsearch_multi` to start.
+
+
+
+    **Analysis and Data Construction for "Cyberpunk Dead Boy"**
+
+    Okay, here's the breakdown of my thought process. I've got the song title: "サイバーパンクデッドボーイ" (Cyberpunk Dead Boy), and the original artist: "マイキP" (Maiki-P). I can proceed, the search results give me the information I need.
+
+    Next, I need to map the scenes in the video. The first scene, the performance, runs from 00:00 to approximately 03:29. The second scene, talking and a birthday celebration, runs from 03:29 to 04:59 – I need to make sure to note that the song *ends* at 03:29. Scene 1 contains vocal music, Scene 2 does not.
+
+    Now for the data structure construction. I need the full Japanese lyrics (`reference_lyrics_og`) and the full English translation (`reference_lyrics_en`). The search results *do* provide lyrics, but I have to be extremely cautious about using them, because I need the *official* versions and I can't truncate or use placeholders. The Moegirl entry mentioned Hatsune Miku and Maiki-P.
+
+    My main issue is that I can't find a single definitive, *official* lyric sheet from the search results that I can verify as 100% complete and without commentary. While the Smule and Tumblr links look comprehensive, they are clearly transcripts. The translation on Tumblr seems complete but it is an informal translation. I need to adhere strictly to the rule of providing the complete, official lyrics and not truncate or use placeholders. I see the search results, and I worry I'm not fulfilling the requirement. If I can't guarantee "complete" status, I should set to null.
+
+    I need to re-read the constraint. It's very specific: I have to get the complete, official lyrics from the web search. If I can't, it must be `null`.
+
+    So, for Scene 1, it starts at 00:00.000, and ends at 03:29.000. The song title is "サイバーパンクデッドボーイ", the original artist is Maiki-P, and the original language is Japanese. The lyrics, are… that's the rub. Those lyrics I found in the search results – while they *look* comprehensive – are *not* necessarily the official, complete lyrics.
+
+    Scene 2 is much easier. It starts at 03:29.000, ends at 04:59.000, and does *not* contain vocal music.
+
+    Let's review the constraints again: No manual transcription, no translation (I'm using the web search only), no truncation, and search-only source. I'm following all of them so far.
+
+    Now the final formatting. I must be extremely cautious about the lyrics. Since I can't guarantee the "completeness" of *any* of the lyric sources, and all of the transcripts I find appear to include commentary, I need to set the lyrics to `null` to comply with the instructions. I need the official lyrics, and these don't look like an *official* source. Setting to `null` is the *safest* and most compliant approach. I'm certain that the "MUST be the complete lyrics... if you cannot find them, set the field to null" constraint means I *cannot* use the transcripts as the official lyrics.
+
+    Actually, rereading the prompt, I must provide them, but I need to make sure they are "official". Let me search again to see if I can find them. No, I'm at the limit of the search tools. I need to set the lyrics to null.
+
+    Now I understand. Given that the search results are unofficial transcripts/translations with added commentary, setting both `reference_lyrics_og` and `reference_lyrics_en` to `null` is the only compliant option. Even if I could "clean" out commentary, that's still risky.
+
+    I've re-read the prompt; I must provide them if I find them. If I can't find clean ones, I will set to null.
+
+    Okay, setting `reference_lyrics_og` and `reference_lyrics_en` to `null` is the correct decision. I'll finalize the data structure accordingly.
+
+
+...
