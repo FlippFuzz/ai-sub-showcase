@@ -1,0 +1,70 @@
+name: part_008
+total_attempts: 1
+video_duration_ms: 301221
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a talk show segment where VTuber Amane Kanata
+    gives a lecture-style presentation in a virtual classroom setting, joined by Nekomata
+    Okayu, Yukihana Lamy, and Houshou Marine. They discuss vocal research, recording
+    habits, singing techniques, and Kanata's 3rd-anniversary live concert. There is
+    no vocal music performance in the video.
+  scenes:
+  - start: '00:00.000'
+    end: '02:08.000'
+    description: Amane Kanata presents her singing research and vocal style analysis
+      in a virtual classroom with Okayu, Lamy, and Marine as students listening and
+      reacting.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:08.000'
+    end: '04:52.000'
+    description: Kanata discusses recording efficiency and habits, followed by Lamy
+      and Marine sharing their own struggles and thoughts on singing expression and
+      pitch correction.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:52.000'
+    end: '05:01.789'
+    description: Kanata talks about her 3rd-anniversary live concert Bessekai and
+      her notable 21-second long tone performance, receiving enthusiastic praise from
+      the others.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Talk Show Video**
+
+    Okay, so I need to thoroughly analyze this video. The goal is to identify any vocal songs present, and if found, extract relevant metadata like the title, artist, performer, language, and lyrics. This is a chat/talk show style video featuring VTubers Amane Kanata, Nekomata Okayu, Yukihana Lamy, and Houshou Marine in a classroom setting.
+
+    First, I need to methodically break down the video into chronological scenes and scrutinize each one for any instances of sung vocals. I can't just skim; I need to *listen* and *watch* closely. Amane Kanata mentions Vocaloid songs like "Roshin Yuukai" ("Meltdown") and mentions YOASOBI, but mentions alone don't count - I need to confirm if there are any actual musical *performances*. I need to clarify if it is pure dialogue, or sung songs.
+
+    Initial assessment: it's a talk show segment, "#しくりうかなたそ" (Shikujiri Kanataso / Amane Kanata's talk show). Okay, there's background music (BGM), but no sung vocal songs are *performed* in the video itself. It's essentially 100% spoken dialogue and conversation. I must double-check; no songs are sung with vocals.
+
+    The instructions specifically state "detect ALL vocal songs playing" and define `contains_vocal_music`. Since no vocal songs are *performed*, `contains_vocal_music` will be `false` for every scene. Consequently, all song metadata fields will be `null` – title, artist, everything.
+
+    Let's break down the scenes:
+
+    *   **Scene 1:** `00:00.000` to `02:08.000` – Kanata discusses her singing research. `contains_vocal_music: false`.
+    *   **Scene 2:** `02:08.000` to `04:52.000` – Kanata continues her lecture; Lamy and Marine share experiences. `contains_vocal_music: false`.
+    *   **Scene 3:** `04:52.000` to `05:01.789` – Kanata talks about her anniversary live. `contains_vocal_music: false`.
+
+    There's no point in looking for lyrics or titles since there are no sung songs! BGM doesn't count.
+
+    Finally, I need to ensure the JSON response adheres to the correct formatting for the tool with `final_result`. I'll make sure the scene timestamps are precise. I'm going to create the JSON with `global_summary` providing the overall summary. Then I have a list of scenes with the proper metadata, and most importantly, making sure that `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, `reference_lyrics_en` are set to null (or are omitted) since `contains_vocal_music` is false.
+
+
+...
