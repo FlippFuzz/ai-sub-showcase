@@ -1,0 +1,73 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '00:05.000'
+    original: ときのそら 生誕祭 2025 新衣装お披露目
+    english: 'Tokino Sora Birthday Party 2025: New Costume Reveal'
+  - start: '04:57.000'
+    end: '05:00.000'
+    original: '#ときのそらお披露目誕生日2025'
+    english: '#TokinoSoraBirthdayReveal2025'
+  thoughts: |+
+    **Subtitle Generation for Video Segment**
+
+    Okay, so I'm tackling this video segment and need to generate subtitles. First, I'm analyzing the section from 00:00 to 04:52. It's got upbeat retro chiptune music, no vocals, but there's on-screen text: "ときのそら生誕祭 2025" (Tokino Sora Birthday Party 2025), "告知あり♥" (Notice inside!), and "新衣装お披露目目" (New Costume Reveal).
+
+    Alright, the rules are clear: no vocals, no dialogue subtitles unless there's vocal audio. *However*, prominent on-screen text gets subtitled even without audio. So, I need to focus on this visual content.
+
+    Checking the rules again, the relevant visual text is "ときのそら 生誕祭 2025" (Tokino Sora Birthday Party 2025), "新衣装お披露目目" (New costume reveal), and "告知あり♥" (Important announcement!). These definitely qualify as prominent since they're the title card or introductory graphic.
+
+    Now, a question of duration: do I subtitle this static title card for the full 4 minutes 52 seconds? Hmm, that's not typical. Title cards are usually subtitled for their initial appearance or for a few seconds. Let's refer to the provided example in the rules, "Handling Silent On-Screen Text Before Dialogue," which shows a title card from 00:02.000 to 00:05.000. That's a good benchmark. Let's make it the same, and give it the beginning of the video from 00:00.000 to 00:05.000.
+
+    So, let's get the text translations and make it clean and understandable:
+
+    -   "ときのそら 生誕祭 2025" -> Tokino Sora Birthday Party 2025
+    -   "新衣装 お披露目" -> New Costume Reveal
+    -   "告知あり♥" -> Important Announcement!
+
+    Therefore, the initial subtitles will be:
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:00.000",
+          "e": "00:05.000",
+          "og": "ときのそら 生誕祭 2025 新衣装お披露目",
+          "en": "Tokino Sora Birthday Party 2025: New Costume Reveal"
+        }
+      ]
+    }
+    ```
+
+    Wait, what about later text? From 04:52 to 05:00, there's a hashtag in the top right: `#ときのそらお披露目誕生日2025`. Let's subtitle that, too:
+
+    ```json
+        {
+          "s": "04:55.000",
+          "e": "05:00.000",
+          "og": "#ときのそらお披露目誕生日2025",
+          "en": "#TokinoSoraBirthdayReveal2025"
+        }
+    ```
+
+    Okay, let's quickly re-check the key rules: no vocals to subtitle, but prominent on-screen text gets subtitled during its appearance. This video segment is a perfect application of those visual event rules.
+
+    Let's refine it:
+
+    1.  Title card (00:00.000 to 00:05.000):
+
+        og: "ときのそら 生誕祭 2025 新衣装お披露目"
+        en: "Tokino Sora Birthday Party 2025: New Costume Reveal"
+    2.  Hashtag (04:57.000 to 05:00.000):
+
+        og: "#ときのそらお披露目誕生日2025"
+        en: "#TokinoSoraBirthdayReveal2025"
+
+    Perfect. Everything is in line. This is a solid application of the subtitling guidelines, no problems found.
+
+
+...
