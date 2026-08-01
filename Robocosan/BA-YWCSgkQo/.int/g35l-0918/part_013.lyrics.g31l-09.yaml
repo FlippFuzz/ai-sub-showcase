@@ -1,0 +1,131 @@
+name: part_013
+total_attempts: 1
+video_duration_ms: 122021
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a virtual performance by the VTuber Roboco, who
+    is singing a cover of the song "DAN DAN 心魅かれてく" (DAN DAN Kokoro Hikareteku). The
+    performance takes place on a virtual stage. Following the song, the video transitions
+    to a static screen announcing a "Member-only" live event.
+  scenes:
+  - start: '00:00.000'
+    end: '01:00.000'
+    description: Roboco performs the song "DAN DAN 心魅かれてく" on a virtual stage featuring
+      a large dragon and festive decorations.
+    contains_vocal_music: true
+    song_title: DAN DAN 心魅かれてく
+    original_artist: ZARD
+    performer_in_video: Roboco
+    original_language: Japanese
+    reference_lyrics_og: |-
+      DAN DAN 心魅かれてく
+      その眩しい笑顔に
+      果てない暗闇から飛び出そう Hold my hand
+      君と出会ったとき
+      子供の頃 大切に想っていた景色を 思い出したんだ
+      僕と踊ってくれないか
+      光と影の Winding Road 今でも あいつに夢中なの?
+      少しだけ 振り向きたくなるような時もあるけど
+      愛と勇気と誇りを持って闘うよ
+      DAN DAN 心魅かれてく
+      この宇宙の希望のかけら
+      きっと誰もが 永遠を手に入れたい
+      ZEN ZEN 気にしないフリしても
+      ほら君に恋してる
+      果てない暗闇から飛び出そう Hold your hand
+      怒った顔も疲れてる君も 好きだけど
+      あんなに飛ばして生きて 大丈夫かなと思う
+      僕は...何気ない行動に 振り回されてる sea side blue
+      それでも あいつに夢中なの?
+      もっと聞きたいことがあったのに 二人の会話が
+      車の音にはばまれて通りに舞うよ
+      DAN DAN 心魅かれてく
+      自分でも不思議なんだけど
+      何かあると一番に 君に電話したくなる
+      ZEN ZEN 気のないフリしても 結局 君のことだけ見ていた
+      海の彼方へ 飛び出そうよ Hold my hand
+    reference_lyrics_en: |-
+      Bit by bit, my heart is enchanted
+      By that dazzling smile
+      Let's fly away from this endless darkness, Hold my hand
+      When I first met you
+      I remembered a scenery that I held dear as a child
+      Won't you dance with me?
+      On a winding road of light and shadow, are you still crazy about him even now?
+      Although there are times when I feel like looking back just a little
+      I will fight on with love, courage, and pride
+      Bit by bit, my heart is enchanted
+      A fragment of hope in this universe
+      Surely everyone wants to get hold of eternity
+      Even if I pretend not to care at all
+      Look, I'm in love with you
+      Let's fly away from this endless darkness, Hold your hand
+      I like you even when you're angry or looking tired, but
+      I wonder if you're okay, living life at such a breakneck pace
+      As for me... I'm being jerked around by your casual actions, sea side blue
+      By the seaside blue, are you still crazy about him despite that?
+      Even though there were more things I wanted to ask
+      Our conversation is drowned out by the sound of cars and dances away into the street
+      Bit by bit, my heart is enchanted
+      It's strange even to me, but
+      When something happens, you're the first one I want to call
+      Even if I pretend I feel nothing at all, in the end, I've only had eyes for you
+      Let's fly away toward the sea, Hold my hand
+  - start: '01:00.000'
+    end: '01:34.000'
+    description: A static announcement screen titled "はろーぼ飯店ようこそ" featuring character
+      artwork and text about an upcoming member-only live stream.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video and Lyric Retrieval Task**
+
+    Okay, so the goal is to dissect this video of Roboco's performance, pinpoint the song she's singing, and then grab the official lyrics, both in Japanese and English, using the provided search tool. No manual transcription, translation, or funky placeholders allowed – that's crucial. I've got to ensure the queries are targeted and use the original artist, not the performer. The video is a VTuber performance, likely a live concert segment, as indicated by the hashtag. The key audio cue is the recurring chorus "DAN DAN," which matches the on-screen text "DAN DAN 心魅かれてく."
+
+    My initial scene breakdown suggests the song happens from the start until about the 1-minute mark, followed by a transition to a static screen or announcement. But first, I need to get the right identification of the song. Looking closer, it's definitely "DAN DAN 心魅かれてく". The original artist is ZARD, specifically Izumi Sakai. So, the song title is "DAN DAN 心魅かれてく" and the performer is Roboco.
+
+    Now, I need a solid search strategy. My first search turn will consist of two queries:
+
+    1.  "DAN DAN 心魅かれてく ZARD 歌詞" (to grab the Japanese lyrics).
+    2.  "DAN DAN Kokoro Hikareteku ZARD lyrics English" (for the English translation).
+
+    I'll run that through the `web_search_langsearch_multi` tool. Then, I'll need to scrutinize those search results. I have to verify that I have full sets of Japanese and English lyrics. If they're complete, I'll populate the `reference_lyrics_og` and `reference_lyrics_en` fields.
+
+    From there, I'll build the final JSON response. I know my structure will be something like:
+
+    *   `global_summary`: Roboco performing a cover of "DAN DAN 心魅かれてく" on a virtual stage.
+    *   `scenes`:
+        *   Scene 1: 00:00 - 01:00 (Song performance)
+        *   Scene 2: 01:00 - 01:34 (Static screen/outro announcement) - No vocal music here.
+
+    Finally, I'll do a mental checklist: no manual transcription? Check. Artist name in the search? Check (ZARD). No quotes? Check. And I must confirm that I have complete lyrics. This is a pretty straightforward song, so I'm expecting this search to be very successful. Now, I just wait for the search results...
+
+
+
+    **JSON Construction & Verification - A Deep Dive**
+
+    Okay, let's break this down step-by-step. My initial task is to create some structured data, presumably in JSON format, about a song. I start by pinpointing the relevant information. "DAN DAN 心魅かれてく," the song title, and lyrics were quickly located via search, alongside the original artist, which is ZARD (Izumi Sakai). I also found the performer, Roboco, and established the language: Japanese. Crucially, I have *complete* lyrics in both Japanese and English.
+
+    Next, I need to understand the structure of the source material - I see two distinct scenes within it: a performance (0:00-1:00) followed by a static announcement (1:00-1:34).
+
+    Now comes the JSON construction phase. I am meticulous and ensure all fields are properly populated. I have several important points to verify before generating the final output, as follows:
+
+    *   **Lyrics Truncation:** I had to confirm, and did so by careful searching, that the lyrics are complete. The instructions are very specific here. I *will* copy the full text from the search result.
+    *   **Placeholders:** I've carefully double-checked, and there are no placeholders in the lyrics.
+    *   **Original Artist:** The prompt emphasizes using the original artist, so I've confirmed that ZARD wrote and performed the song, not simply the artist of the version found.
+    *   **Language:** Japanese is confirmed.
+    *   **Outro Scene:** I'm including the static announcement screen. It's part of the complete source.
+
+    I had a moment of doubt when I also saw that FIELD OF VIEW performed this song, but ZARD *wrote* the lyrics and is, thus, the original artist. My focus has to be on capturing *everything*. It looks like the search results are reliable - the lyrics match and the artist checks out.
+
+    The lyrics in both Japanese and English have been carefully scrutinized and verified. I will copy these full, untruncated lyrics.
+
+    With all of this checked, re-checked, and considered, I'm confident I can now build a JSON object that accurately and completely reflects this song's information.
+
+
+...

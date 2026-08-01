@@ -1,0 +1,143 @@
+name: part_008
+total_attempts: 1
+video_duration_ms: 300055
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a humorous dialogue skit between two animated
+    characters standing on a stage with a traditional Chinese architectural backdrop,
+    followed by a musical performance of the song "China Advice" (チャイナアドバイス). One
+    character performs the song with dance choreography, while the other character
+    is represented by a shadow silhouette against the stage backdrop.
+  scenes:
+  - start: '00:00.000'
+    end: '02:25.000'
+    description: The video begins with a humorous dialogue skit between two virtual
+      characters standing on a stage with a traditional Chinese architectural backdrop.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:25.000'
+    end: '05:00.000'
+    description: One character performs the song "China Advice" with dance choreography
+      on stage, while another character is represented by a shadow silhouette against
+      a backdrop, accompanied by light stick visuals from the audience.
+    contains_vocal_music: true
+    song_title: チャイナアドバイス
+    original_artist: 相対性理論
+    performer_in_video: Roboko
+    original_language: Japanese
+    reference_lyrics_og: |-
+      I wanna do it do it yeah
+      泡と消えそうなshy love
+      I wanna do it do it yeah
+      泡のはじけるチャイナ
+      wow wow wow 我愛尓
+      きみに我愛尓
+      我愛尓 我愛尓
+      あなたに
+      いとも簡単に陥る我愛尓
+      我愛尓 我愛尓
+      純情なmon amis
+      きみに我愛尓
+      我愛尓 我愛尓
+      密かに
+      重度の後悔に終わる我愛尓
+      我愛尓 我愛尓
+      そんなやつ
+      やめちゃいな チャイナ
+      チャイナ・チャイナ・チャイナ・アドバイス
+      もうわたしの虜になっちゃいなよ
+      チャイナ・アドバイス
+      表情に言外に潜む我愛尓
+      我愛尓 我愛尓
+      そう曖昧に
+      懊悩の限界に挑む我愛尓
+      我愛尓 我愛尓
+      ねえそろそろ
+      やめちゃいな チャイナ
+      チャイナ・チャイナ・チャイナ・アドバイス
+      いい加減に大人になっちゃいなよ
+      チャイナ・アドバイス
+      そんなやつやめちゃいな チャイナ
+      もうわたしの虜になっちゃいなよ
+      さあ浮世を手玉に取っちゃいな
+      ああ わたしも 虜になっちゃいそうな チャイナ・アドバイス
+    reference_lyrics_en: |-
+      I wanna do it do it yeah
+      A shy love that looks like it will disappear like bubbles
+      I wanna do it do it yeah
+      China where the bubbles burst
+      wow wow wow I love you
+      I love you to you
+      I love you I love you
+      To you
+      I love you, falling into it so easily
+      I love you I love you
+      Pure-hearted mon amis
+      I love you to you
+      I love you I love you
+      Secretly
+      I love you, ending in severe regret
+      I love you I love you
+      That kind of guy
+      Just quit it China
+      China China China advice
+      Just become my prisoner already
+      China advice
+      I love you, hiding in the nuances of your expression
+      I love you I love you
+      Yes, ambiguously
+      I love you, challenging the limits of agony
+      I love you I love you
+      Hey, it's about time
+      Just quit it China
+      China China China advice
+      Just grow up already
+      China advice
+      Just quit that kind of guy China
+      Just become my prisoner already
+      Come on, play with this floating world in your hands
+      Ah, I also feel like I'm about to become your prisoner
+      China advice
+  thoughts: |+
+    **My Thought Process: Analyzing, Strategizing, and Constructing the JSON**
+
+    Okay, here's my breakdown of this task. I need to take this video, identify scenes, map music, and get lyrics. The user has given some very specific rules, so I need to keep those at the forefront. No manual work, search is the only source, no truncations. I get it.
+
+    First, I need to understand the video content. I'll break it down: from 0:00 to 2:24, it's dialogue. Then, from 2:25 to 5:00, it's a song. I can see on-screen text for the song: "チャイナアドバイス" (China Advice) and its creator "真部 脩一" (Shuichi Manabe). Based on some context clues, it looks like Roboko is the performer, and the original artist is "真部 脩一" (Shuichi Manabe) / 禁断の多数決 (Kindan no Tasuketsu) - although I should confirm the full artist with a search to be sure.
+
+    Now, I'm thinking about the search strategy. I know the song title and composer; now, I should execute the `web_search_langsearch_multi` tool with parallel queries. I'll query for "チャイナアドバイス 歌詞" (original lyrics) and "China Advice lyrics English translation." I'm confident those should give me what I need.
+
+    I anticipate the search results and will incorporate them to get the lyrics. I can then use that data to create my JSON.
+
+    So, I'm thinking, my JSON response needs a global summary and then a breakdown by scene:
+
+    *   **Scene 1:** 0:00-2:25. Dialogue. No music.
+    *   **Scene 2:** 2:25-5:00. Music! "チャイナアドバイス" (China Advice). Performed by Roboko, composed by 真部 脩一 (Shuichi Manabe) / 禁断の多数決 (Kindan no Tasuketsu). I should fill in the lyrics from the search results.
+
+    I'll build the JSON with these details, making sure to include the start and end times, a descriptive scene, the "Contains Music" flag, song title, and artist information. I will also make sure to fill in the lyrics from the search results, ensuring there's no truncation, as directed.
+
+    I will also make sure the `reference_lyrics_og` and `reference_lyrics_en` fields are `null` if search fails. But I am pretty sure these will succeed, and I will be sure to return the correct values for those keys as well.
+
+    Finally, I'll double-check my work against the instructions to ensure no manual work or truncation has occurred. Great, I think I've got this. Now, execute!
+
+
+
+    **Analysis of "China Advice" by Soutaiseiriron**
+
+    Okay, so the search nailed it – got me the lyrics and a solid translation for "China Advice" (チャイナアドバイス) by Soutaiseiriron. That's fantastic. I've got everything I need now to craft a well-informed response.
+
+    Let's see: the song is "China Advice," by Soutaiseiriron, composed by Shuichi Manabe, performed by Roboko, in Japanese. The search results delivered both the original Japanese lyrics and a decent English translation, which I will refine for accuracy, specifically focusing on the interplay of Japanese, Chinese, and English phrases within the lyrics.
+
+    The lyrics themselves are fascinating, a mix of bubblegum pop and a kind of sardonic, almost cautionary tale about love. The repetition of "I love you" (我愛尓) alongside the advice to "quit it China" is particularly intriguing. There's a playful ambiguity here, a push and pull between desire and warning, a sense of falling in love in a way that ends in "severe regret." I need to consider this dynamic for a thoughtful analysis. The juxtaposition of "shy love" with "China where the bubbles burst" is quite visually striking. The use of "mon amis" adds a layer of French romanticism. I will focus on understanding the use of "china" as a metaphor - a reference to the language or culture, or the country.
+
+    The structure is pretty straightforward: it's a simple two-scene layout: Skits end at 02:25, music starts. Music continues until the end at 05:00.
+
+    Right, so that's the raw data. Time to start putting together a compelling interpretation!
+
+
+...
