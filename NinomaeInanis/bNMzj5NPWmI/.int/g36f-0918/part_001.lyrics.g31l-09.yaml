@@ -1,0 +1,129 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 301658
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a promotional slideshow for the 'Drawn to Dawn' concert
+    featuring VTubers Takanashi Kiara and Ninomae Ina'nis. It features various fan-submitted
+    messages, fan art, and concert merchandise information. A continuous instrumental
+    background track plays throughout the entire duration of the video.
+  scenes:
+  - start: '00:00.000'
+    end: '00:15.000'
+    description: Initial screen displaying fan messages supporting the concert.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:15.000'
+    end: '00:54.000'
+    description: General concert information and visual background.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:54.000'
+    end: '01:04.000'
+    description: Safety announcement for visitors regarding lights and cheering.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:04.000'
+    end: '01:25.000'
+    description: Display of available concert merchandise.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:25.000'
+    end: '03:05.000'
+    description: A continuous slideshow of various fan-submitted messages and artwork.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:05.000'
+    end: '05:03.000'
+    description: The slideshow sequence repeats, beginning again from the start.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing and Constructing the Video Metadata**
+
+    Okay, here's how I'm approaching this: First, I need to understand the task. I need to analyze a video, map scenes, identify vocal music (and if found, get the lyrics!), and then output this information in a specific JSON format. The constraints are pretty clear: no manual transcription, translation, or truncated lyrics. Let's start with the video itself.
+
+    First, I observe the video. It's a static slideshow with fan art and messages related to the "Drawn to Dawn" concert featuring Takanashi Kiara and Ninomae Ina'nis. The audio is a constant instrumental track. Okay, the music is *definitely* instrumental. No vocals.
+
+    This simplifies things a lot. Since there's no vocal music, the search for lyrics becomes unnecessary. I can immediately populate all the song-related fields in my JSON output as `null`.
+
+    Now, I need to define the scenes. While the music is continuous, the visuals do change: there's an intro, some information screens, merchandise displays, and then the main fan messages that loop. I'll need to map these visual changes as distinct scenes.
+
+    Initially, I thought about breaking it into very granular scenes, but given the static nature of the video and the repeated loop, I'm going to keep things concise. I'll define these visual sections: An intro with fan art, a general information/intro section, the merchandise display, and then the looping fan message section that is shown through the end. Given the instruction to handle changes, I'll divide the sections and use descriptive titles.
+
+    Okay, let's craft the output. I'm going to start with a `global_summary`: I'll describe the video as a promotional slideshow for the "Drawn to Dawn" concert, highlighting the fan art and information it contains. Then I'll specify the continuous instrumental background track.
+
+    For the `scenes` array, I'll create a series of objects, each with a `start` and `end` timestamp, a `description` detailing the visual content, and a `contains_vocal_music` field which will be `false` for every scene, as no vocals are present.
+
+    Now to map the timestamps to these scenes. I've taken a close look at the video and can easily see the relevant portions. This is easy, since there are visual changes.
+
+    *   **Segment 1: 00:00 - 00:15 (Fan art/intro)**
+    *   **Segment 2: 00:15 - 01:05 (Information/General intro)**
+    *   **Segment 3: 01:05 - 01:25 (Merchandise)**
+    *   **Segment 4: 01:25 - 03:05 (Various fan messages loop)**
+    *   **Segment 5: 03:05 - end (Loop repeats)**
+
+    Now, with this structure, and since there is a loop, I'll go through and define the output scenes.
+
+    I will populate all of the song related fields with null.
+
+    Now, I'll double-check this against the constraints: no manual transcription/translation/truncation. All clear, and no parallel search required. This JSON is complete.
+
+    I also see, now, that I have to map out each timestamp for a scene with a beginning and ending.
+
+    I need to make sure to set `contains_vocal_music` to `false` in all scenes since there is no music.
+
+    Given this, here's my final JSON:
+
+    ```json
+    {
+      "global_summary": "The video is a promotional slideshow for the 'Drawn to Dawn' concert featuring VTubers Takanashi Kiara and Ninomae Ina'nis. It features various fan-submitted messages, fan art, and concert merchandise information. A continuous instrumental background track plays throughout the entire duration of the video.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "00:15.000",
+          "description": "Initial screen displaying fan messages supporting the concert.",
+          "contains_vocal_music": false
+        },
+        {
+          "start": "00:15.000",
+          "end": "00:54.000",
+          "description": "General concert information and visual background.",
+          "contains_vocal_music": false
+        },
+        {
+          "start": "00:54.000",
+          "end": "01:04.000",
+          "description": "Safety announcement for visitors regarding lights
+
+...

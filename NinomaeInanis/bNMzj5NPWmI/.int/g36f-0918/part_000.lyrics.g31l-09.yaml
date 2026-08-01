@@ -1,0 +1,148 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 303388
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a promotional clip for the 'Drawn to Dawn' concert
+    featuring Takanashi Kiara and Ninomae Ina'nis. It consists of a slideshow featuring
+    various concert merchandise and fan testimonials. The entire video is accompanied
+    by instrumental background music, and no vocal music was detected throughout the
+    duration of the clip.
+  scenes:
+  - start: '00:00.000'
+    end: '00:07.000'
+    description: A slide displaying various concert merchandise items like a blanket,
+      shoulder pouch, and acrylic panels with their prices.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:08.000'
+    end: '02:38.000'
+    description: A long series of fan messages and testimonials about the upcoming
+      'Drawn to Dawn' concert.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:38.000'
+    end: '02:48.000'
+    description: An informational screen indicating that the concert will be starting
+      soon.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:48.000'
+    end: '02:58.000'
+    description: An informational screen titled 'Attention For Visitors' providing
+      safety and etiquette guidelines.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:58.000'
+    end: '03:07.000'
+    description: A slide showcasing additional concert merchandise, including light
+      sticks, t-shirts, towels, and badges.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:07.000'
+    end: '03:17.000'
+    description: A slide revisiting the initial merchandise items (blanket, shoulder
+      pouch, and acrylic panels).
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:18.000'
+    end: '05:05.000'
+    description: A reprise of the fan messages and testimonials, cycling through previously
+      shown and some new fan notes.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of "Drawn to Dawn" Concert Promo Video**
+
+    Okay, so I'm looking at this video, a promotional clip for the "Drawn to Dawn" concert starring Takanashi Kiara and Ninomae Ina'nis. It's basically a slideshow showcasing merchandise and fan testimonials. My primary task is to identify and report any vocal music present.
+
+    First, I observe the video's structure: It's a sequence of static images with background music. The music is instrumental—a looping beat with light synths. I need to make sure to analyze the scene changes and then confirm if any scene contains vocals, per instructions.
+
+    I start by listening carefully to the audio. My initial impression is that it's all instrumental. But I will re-listen and be certain. Yep, it's definitely instrumental background music. No human voices. No lyrics.
+
+    If there's no vocal music, then for *every* scene, the `contains_vocal_music` field should be `false`, and all related lyrics fields should be set to `null`. Simple enough.
+
+    Now, I'll break down the video into scenes based on visual shifts:
+
+    *   00:00 - 00:07: Merchandise images.
+    *   00:08 - 02:38: A series of fan messages.
+    *   02:38 - 02:48: "The concert will be starting soon" message.
+    *   02:48 - 02:57: "Attention For Visitors" section.
+    *   02:58 - 03:07: More merch.
+    *   03:08 - 03:17: More merch.
+    *   03:18 - 04:28: More fan messages (repeating/looping).
+    *   04:28 - 05:05: Even more fan messages.
+
+    But, hold on. Looking closer, it's a loop of fan messages at the end. I will structure scenes based on the major shifts (Merch, Fan Messages, Attention, back to Merch, back to Fan Messages). I will structure them:
+
+    1.  00:00 - 00:07 (Merchandise)
+    2.  00:08 - 02:37 (Fan messages)
+    3.  02:38 - 02:47 (Concert status/visuals)
+    4.  02:48 - 02:57 (Attention/Instructions)
+    5.  02:58 - 03:17 (Merchandise)
+    6.  03:18 - 05:05 (Fan messages/Outro)
+
+    I'm checking the instructions again to make sure I am on target with the logic. "detect ALL vocal songs playing," and if lyrics cannot be retrieved, set `null` to those lyrics fields.
+
+    Let me make sure, there *really* are no vocals. I will listen one more time. Still, it's just instrumental.
+
+    Okay, let me perform a double-check: Could the background music be a recognized instrumental of a known vocal song? It sounds like generic upbeat production music. I'll assume it's not a famous vocal song. I will assume it's not a song with existing lyrics.
+
+    My `global_summary`: This video is a promotional clip for the 'Drawn to Dawn' concert. It cycles through merchandise items and fan messages, all with instrumental background music. No vocal music was detected.
+
+    For the `scenes`, I will use the time ranges identified, and `contains_vocal_music` = `false` for each one. All the song-related fields will be `null`.
+
+    Have I missed any vocal music? No.
+
+    Are the scene mapped correctly? Yes.
+
+    Is the JSON structured correctly according to the schema? Yes. I should check the schema to make sure.
+
+    Wait, it is possible that the "Attention For Visitors" section has a voiceover. I will listen. No, it's a calm ambient soundscape with some chime-like synths. No spoken word, no lyrics.
+
+    Everything is clear.
+
+    *(Self-Correction during JSON construction)*: I need to ensure all mandatory fields are included. The schema requires `contains_vocal_music`, `description`, `end`, `start` for every scene. The song-related fields are optional/null-able when `contains_vocal_music` is false.
+
+    Wait, the prompt says "If a song title appears on screen..." But no song title is on the screen.
+
+    Everything looks solid, and I'm ready to proceed with empty song fields.
+
+    *(One last check
+
+...
