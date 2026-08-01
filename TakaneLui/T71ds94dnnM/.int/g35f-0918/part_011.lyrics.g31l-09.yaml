@@ -1,0 +1,127 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 299975
+lyrics_prompt_version: 9
+response:
+  global_summary: This video is a promotional announcement by the VTuber Takane Lui.
+    She discusses her upcoming 'Rebellion' 1st live concert, the release of a new
+    mini-album titled 'Legendary', and the availability of upcoming birthday merchandise.
+    Throughout the video, she speaks directly to the audience, and there are on-screen
+    graphics displaying event details and product visuals. The audio consists entirely
+    of her spoken word and instrumental background music; there are no vocal musical
+    performances.
+  scenes:
+  - start: '00:00.000'
+    end: '00:04.500'
+    description: Still graphic displaying the title and details for 'Rebellion', Takane
+      Lui's 1st live concert.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:04.500'
+    end: '03:07.000'
+    description: Takane Lui speaks to the audience, detailing her career, her inspiration,
+      and the goals for her 'Rebellion' live concert.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:07.000'
+    end: '03:43.000'
+    description: Takane Lui presents a new artist photo and explains her preparation
+      for the live performance.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:43.000'
+    end: '04:54.000'
+    description: Takane Lui discusses details about her mini-album 'Legendary' and
+      showcases upcoming birthday merchandise with on-screen product images.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:54.000'
+    end: '05:00.000'
+    description: Still graphic summarizing the 2026 birthday merchandise set.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Constructing the Report**
+
+    Alright, let's break this down systematically. The objective is to analyze a video of Takane Lui, map the scenes, identify any vocal music (and retrieve lyrics if present), and structure the information into a JSON format, all while following some specific constraints. First, I need to get a clear picture of the video's content. Okay, the video is a promotional piece: an announcement about an upcoming live concert ("Rebellion"), a new mini-album ("Legendary"), and some birthday merchandise. It's not a performance, but an announcement.
+
+    Now, I'll move on to segment the video and describe each scene.
+
+    *   **Scene 1 (00:00 - 00:04):** It's a static graphic, a visual announcement of the "Rebellion" live concert, no music.
+    *   **Scene 2 (00:04 - 03:07):** Takane Lui is speaking, introducing the concert. Background music is playing, but it's clearly instrumental, generic background music, not a song. No lyrics to be found here.
+    *   **Scene 3 (03:07 - 03:43):** She's talking, but now with a picture, still, generic instrumental music.
+    *   **Scene 4 (03:43 - 04:54):** Showing product images for the EP. Takane is speaking, instrumental background music.
+    *   **Scene 5 (04:54 - 05:00):** Same here, showing product images.
+
+    So, the key here is that *there's no actual song performance*. This means I need to make a judgment call: no vocal music is present in any scene, and thus, I won't need to use the lyric search tool.
+
+    Let's double-check the audio. The VTuber is speaking, and the background audio is BGM. No sung vocals. *Therefore*, `contains_vocal_music` will be `false` for every scene. The title "Rebellion" is the concert title, not a song title. "Legendary" is the EP title. These are not songs.
+
+    Now, the final step: structuring everything into the required JSON format.
+
+    ```json
+    {
+      "global_summary": "This video is a promotional announcement by the VTuber Takane Lui. She discusses her upcoming 'Rebellion' 1st live concert, the release of a new mini-album titled 'Legendary', and the availability of upcoming birthday merchandise. Throughout the video, she speaks directly to the audience, and there are on-screen graphics displaying event details and product visuals. The audio consists entirely of her spoken word and instrumental background music; there are no vocal musical performances.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "00:04.500",
+          "description": "Still graphic displaying the title and details for 'Rebellion', Takane Lui's 1st live concert.",
+          "contains_vocal_music": false
+        },
+        {
+          "start": "00:04.500",
+          "end": "03:07.000",
+          "description": "Takane Lui speaks to the audience, detailing her career, her inspiration, and the goals for her 'Rebellion' live concert.",
+          "contains_vocal_music": false
+        },
+        {
+          "start": "03:07.000",
+          "end": "03:43.000",
+          "description": "Takane Lui presents a new artist photo and explains her preparation for the live performance.",
+          "contains_vocal_music": false
+        },
+        {
+          "start": "03:43.000",
+          "end": "04:54.000",
+          "description": "Takane Lui discusses details about her mini-album 'Legendary' and showcases upcoming birthday merchandise with on-screen product images.",
+          "contains_vocal_music": false
+        },
+        {
+          "start": "04:54.000",
+          "end": "05:00.000",
+          "description": "Still graphic summarizing the 2026 birthday merchandise set.",
+          "contains_vocal_music": false
+        }
+      ]
+    }
+    ```
+
+    Now, let's verify that this satisfies the requirements. No manual transcription, no lyrics found (because there were no songs), and
+
+...
