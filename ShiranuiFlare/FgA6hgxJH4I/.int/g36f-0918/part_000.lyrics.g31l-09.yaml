@@ -1,0 +1,93 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300688
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a virtual live performance segment. It begins
+    with an intro sequence, followed by a vocal performance of the song 'HAPPY MUSIC'
+    by the VTuber Shiranui Flare, and concludes with a short speaking segment.
+  scenes:
+  - start: '00:00.000'
+    end: '02:53.000'
+    description: The video begins with a still promotional image with text. Instrumental
+      music plays in the background.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:53.000'
+    end: '04:56.000'
+    description: 'The VTuber Shiranui Flare performs the song ''HAPPY MUSIC'' on a
+      virtual stage. The lyrics are displayed on screen during the performance. Credits
+      appear on screen during the song as: Lyrics by Fujino Manami, Music/Arrangement
+      by Kataoka Moemi.'
+    contains_vocal_music: true
+    song_title: HAPPY MUSIC
+    original_artist: ふじのマナミ, 片岡萌実
+    performer_in_video: 不知火フレア
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:56.000'
+    end: '05:01.000'
+    description: Shiranui Flare speaks to the audience, concluding the performance.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video Data**
+
+    Okay, so the user wants a breakdown of this video. My initial approach is to dissect it into scenes, identify any musical components, and hunt down those official lyrics. Let's break this down systematically.
+
+    First, I need to analyze the video itself. It looks like we have a clear structure here:
+
+    *   **Scene 1 (00:00 - 02:52):** This is just a static image with some text and background music. Appears instrumental or a medley, so no vocals to worry about yet.
+    *   **Scene 2 (02:53 - 04:55):** Bingo! This is where the main event happens - a performance by the VTuber Shiranui Flare. The text on screen explicitly states "HAPPY MUSIC", and lyrics are displayed in Japanese, confirming our vocal track. This is the crucial scene. The credits at 03:09 provide critical song metadata.
+    *   **Scene 3 (04:56 - end):** Appears to be an outro or speech segment with no background music.
+
+    Now, let's map this all into a scene structure:
+
+    *   Scene 1: 00:00 - 02:53 (Intro, No Vocals)
+    *   Scene 2: 02:53 - 04:56 (Performance, Contains Vocals - "HAPPY MUSIC")
+    *   Scene 3: 04:56 - 05:01 (Outro/Speech, No Vocal Music)
+
+    Next, the song metadata needs to be identified:
+
+    *   **Song Title:** HAPPY MUSIC
+    *   **Original Lyricist:** ふじのマナミ (Fujino Manami)
+    *   **Composer/Arranger:** 片岡萌実 (Kataoka Moemi)
+    *   **Artist/Performer:** 不知火フレア (Shiranui Flare)
+    *   **Original Language:** Japanese
+
+    With this data, I'll formulate a robust search strategy to find those lyrics:
+
+    *   I'll need to find lyrics for "HAPPY MUSIC" – ideally by the lyricist "ふじのマナミ", but also searching for the performed version by "不知火フレア".
+    *   My initial queries will be:
+        *   Query 1: "HAPPY MUSIC ふじのマナミ 歌詞" (searching for the Japanese lyrics)
+        *   Query 2: "HAPPY MUSIC 不知火フレア lyrics English" (attempting to find an English translation, though I suspect that will be a longer shot and the official source will likely be Japanese).
+
+    My execution will begin with these two parallel searches. Then, depending on what I turn up, I'll refine my approach.
+
+    If I find the lyrics – in either language – I'll extract the full text. If no English translation is available, I will set `reference_lyrics_en` to `null`.
+
+    Finally, I'll package everything into a JSON output, including the global video overview, the scene objects with their timestamps and descriptions, and, most importantly, the extracted lyrics, if found. This will ensure the user gets a comprehensive and well-structured data output.
+
+
+
+    **My Analysis of the Search Results and Subsequent Actions**
+
+    Alright, let's break this down. My initial web search, using the query "HAPPY MUSIC ふじのマナミ 歌詞" to obtain the lyrics, was unsuccessful. The search results didn't immediately pinpoint the *specific* lyrics for the version of "HAPPY MUSIC" performed in the video by Shiranui Flare. I had the crucial details: the song title, "HAPPY MUSIC," and the writer credits, "ふじのマナミ" and "片岡萌実" – all clearly visible within the video itself (at the 3:09 mark, to be exact). However, the search kept returning results for other songs with similar titles or by unrelated artists.
+
+    The directive is clear: I must retrieve the *official* lyrics via the web search tool, *not* by transcribing them myself. Since the search has demonstrably failed to return the correct lyrics for *this* specific rendition of the song, I have no choice but to adhere to the `SEARCH FAILURE FALLBACK` constraint. Therefore, the `reference_lyrics_og` and `reference_lyrics_en` fields must be set to `null`.
+
+    With this information, I can now move forward with structuring the final JSON response. My plan is straightforward: I will set `contains_vocal_music` to `true` for Scene 2, as that's where the performance takes place. I will also make sure to set `song_title` to "HAPPY MUSIC,"  `original_artist` to "ふじのマナミ" / "片岡萌実" (I'll note both, as they are both credited), `performer_in_video` to "不知火フレア," and, as I've already established, `reference_lyrics_og` and `reference_lyrics_en` to `null`. This is the most accurate and compliant approach, given the search results I've obtained.
+
+
+...
