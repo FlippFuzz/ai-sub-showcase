@@ -1,0 +1,76 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: 'The video is a promotional clip featuring a static graphic for
+    the "MUSIC GARDEN: Takane Lui Birthday 2025" event, accompanied by instrumental
+    background music. At the 04:30 mark, it transitions to a virtual stage where Hololive
+    members Shirakami Fubuki and Omaru Polka appear and introduce the event. There
+    is no vocal music in this video.'
+  scenes:
+  - start: '00:00.000'
+    end: '04:30.000'
+    description: 'Static graphic for ''MUSIC GARDEN: TAKANE LUI BIRTHDAY 2025'' with
+      instrumental background music.'
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:30.000'
+    end: '04:35.000'
+    description: Visual transition animation.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:35.000'
+    end: '04:59.000'
+    description: Hololive members Shirakami Fubuki and Omaru Polka appear on stage
+      to introduce themselves and the concert event.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Formulating a Response**
+
+    Okay, let's break this down systematically. The instruction is to analyze a video, map scenes, identify any vocal songs, and find their lyrics. The key constraint here is that I can't transcribe or translate anything manually; it *has* to be search-based. Also, lyrics can't be truncated. And I'm limited to three search turns. Got it.
+
+    First, I need to get a handle on the video's content. I'm focusing on the temporal layout. The initial part, from 0:00 to 4:30, has background music and a graphic about "MUSIC GARDEN" for "TAKANE LUI BIRTHDAY 2025." It's purely instrumental so far. Then, there's a short transition, around 4:30 to 4:35. Finally, from 4:35 to the end, there are two characters, Shirakami Fubuki and Omaru Polka on stage. They're *talking*, not singing, to introduce the event.
+
+    Wait, let me double-check. Just to be absolutely sure, I'm going back and reviewing the video, ensuring I've covered all vocal music segments. Nope. There's only background instrumental music, and then spoken dialogue. Okay, that's crucial. I'm noting the absence of any sung vocals.
+
+    Since I have zero vocal music, the song metadata fields will be null, and lyrics will be null. So now, I need to determine video segmentation. I've broken the video into three segments:
+    *   Scene 1: 00:00 - 04:30. This is the graphic with instrumental music.
+    *   Scene 2: 04:30 - 04:35. This is the transition.
+    *   Scene 3: 04:35 - end (let's assume 04:59). This is the introduction by the characters.
+
+    I'm verifying the timestamps, re-adjusting the video segmentation and scene mapping for accuracy and clarity, to ensure a complete and clean video to scene breakdown:
+    *   Scene 1: 00:00.000 - 04:30.000: Title card, static graphic, background music (no vocals).
+    *   Scene 2: 04:30.000 - 04:35.000: Transition animation.
+    *   Scene 3: 04:35.000 - 04:59.000: Interaction of characters on stage.
+
+    And double-checking again, are there any vocals? The characters are speaking into microphones, not singing. The background music is strictly instrumental. Constraint check confirms that if no song is detected... set to null.
+
+    Now, I'm organizing the JSON structure.
+
+    *   `global_summary`: The video shows a promotional graphic for a birthday concert ("MUSIC GARDEN, Takane Lui Birthday 2025") accompanied by instrumental background music, followed by an introduction on stage by virtual performers Shirakami Fubuki and Omaru Polka. There is no vocal music in this video.
+    *   `scenes`:
+        *   Scene 1: 00:00 to 04:30. Contains\_vocal\_music: false. Song fields: null.
+        *   Scene 2: 04:30 to 04:35. Contains\_vocal\_music: false.
+        *   Scene 3: 04:35 to 04:59. Contains\_vocal\_music: false.
+
+    That all seems straightforward and logical. The final check is to determine if I force it or not... because the prompt says to detect all vocal songs... If there are none, don't force it. The music playing in the first 4.5 minutes is *not* a song in the vocal sense, it is background instrumental music. So, I will be honest.
+
+
+...
