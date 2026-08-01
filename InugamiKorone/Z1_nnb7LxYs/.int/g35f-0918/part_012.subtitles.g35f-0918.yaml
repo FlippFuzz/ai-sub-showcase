@@ -1,0 +1,55 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 160048
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '00:05.000'
+    original: Lazy DoE Night! (INUGAMI KORONE 5th Anniv. LIVE)
+    english: Lazy DoE Night! (Inugami Korone 5th Anniversary Live)
+  thoughts: |+
+    **Subtitle Analysis for "LAZY DoE NIGHT!" Segment**
+
+    Okay, so I need to create subtitles for this "LAZY DoE NIGHT!" video segment of Inugami Korone's live stream. The task is to accurately transcribe the audio and any visual text. First things first: let's listen and watch the segment from 00:00 to 02:40.
+
+    Right away, I hear instrumental music. But, is that *all* it is? I need to be meticulous. Listening closely, there are some rhythmic vocalizations at the start, like "Yeah," and "Ah" – let me check if those are actual vocals or if they form part of a song or lyric.
+
+    It's sounding like it’s just the instrumental version of "LAZY DoE NIGHT!" with some backing beats. No singing; maybe some vocal samples/chops? Yeah, from 00:17 onwards, definitely just the instrumental track. I need to make sure though. The instructions clearly state that I shouldn't output anything if no vocal audio exists, unless there's an important visual element.
+
+    A quick glance at the instructions confirms that if there are no vocals, output nothing. I check the screen for visual text. The graphic says "Lazy DoE Night! INUGAMI KORONE 5th Anniv. LIVE" – a static title card. Okay, rule check: If the visual text is prominent, subtitle it for its visible duration, even without audio. But if it's static for the entire 2:40, should it just be at the beginning?
+
+    I am going to check if there are any vocal chops: from 00:03 - 00:15, some vocal chops ("Yeah").
+
+    I listen from 00:17. No, definitely no lyrics. Only instrumental track with synth vocal samples. I reconfirm that the audio is strictly instrumental.
+
+    So, according to the rule, "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music, long pauses, or sound effects. If no vocals are heard in the audio track, output nothing (unless there is a prominent Visual Event)."
+
+    Therefore, I need to subtitle that title graphic at the start, "Lazy DoE Night! INUGAMI KORONE 5th Anniv. LIVE". We'll do a subtitle at the beginning and then nothing for the rest of the 2:40.
+
+    The title card, I’m thinking we can include a subtitle at the start (e.g., from 00:00.000 to 00:05.000). The subtitle will be:
+
+    `og`: "Lazy DoE Night! (INUGAMI KORONE 5th Anniv. LIVE)"
+    `en`: "Lazy DoE Night! (Inugami Korone 5th Anniversary Live)"
+
+    I'm double-checking, ensuring there’s no other audio I'm missing, but no, it's just the instrumental track.
+
+    Okay, let's craft the `final_result` JSON object now:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:00.000",
+          "e": "00:05.000",
+          "og": "Lazy DoE Night! (INUGAMI KORONE 5th Anniv. LIVE)",
+          "en": "Lazy DoE Night! (Inugami Korone 5th Anniversary Live)"
+        }
+      ]
+    }
+    ```
+
+    This meets all the criteria: capturing the visual text (title card) at the beginning, and silence for the rest of the instrumental audio. Now, let’s call the `default_api:final_result` tool with this, and we’re done.
+
+
+...

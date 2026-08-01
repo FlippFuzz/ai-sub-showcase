@@ -1,0 +1,50 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 160048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a continuous, high-energy live performance by
+    the virtual YouTuber Inugami Korone during her 7th anniversary live event. The
+    track, titled "LAZY DoE NIGHT!" as indicated by the on-screen graphics, is an
+    uptempo electronic pop song performed by Korone herself. Despite a targeted search,
+    the official lyrics could not be retrieved.
+  scenes:
+  - start: '00:00.000'
+    end: '02:40.000'
+    description: Inugami Korone performs the song "LAZY DoE NIGHT!" live on stage.
+      The scene features bright, dynamic lighting, stage effects, and graphics displaying
+      the event title.
+    contains_vocal_music: true
+    song_title: LAZY DoE NIGHT!
+    original_artist: null
+    performer_in_video: Inugami Korone
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of Korone's Performance**
+
+    Okay, so I've got this video of Korone's 7th Anniversary Live, and the user wants me to find the song and its lyrics. No problem. First, I've got to break this down. The video itself seems straightforward – it's a performance of a song titled "LAZY DoE NIGHT!" by Inugami Korone. The on-screen text confirms this, also indicating this is a continuous performance lasting 2 minutes and 40 seconds.
+
+    Since I can't immediately recognize the song, I need to use the provided information, specifically the song title and performer's name, to search for the lyrics. I'll need to use some strategic search queries. I will parallelize this to be efficient.
+
+    I'll start with two queries, one in English and one in Japanese to increase the probability of a hit. Query 1 will be "Inugami Korone LAZY DoE NIGHT lyrics", and Query 2 will be "Inugami Korone LAZY DoE NIGHT 歌詞".
+
+    I'll execute these searches immediately using `web_search_langsearch_multi`.
+
+    Once I get the results, I'll need to compile the output. If the searches are successful, I'll extract the song title, the original artist, the performer (which is Inugami Korone in this case), the original language of the lyrics (which is obviously Japanese), and both the original Japanese lyrics and an English translation, if available. If the searches are a bust, I'll simply set the lyric fields to null. Easy.
+
+
+
+    **My Reasoning for the JSON Response**
+
+    Okay, so the search results are coming up empty for the lyrics of "LAZY DoE NIGHT!" by Inugami Korone. It's mostly other songs, or generic "Lazy" stuff. Since I can't transcribe or translate, and I can't find anything official, the lyrics fields are going to have to be null.
+
+    I think I have enough information now to start building the JSON. The video is clearly a live performance – one continuous scene featuring Inugami Korone. I can nail down those global parameters. I will indicate in the JSON that no song title or artist could be *fully* confirmed via search.
+
+    Wait a second... the prompt says "The song title *detected* in the scene," not "confirmed by search results." I *can* see the title "LAZY DoE NIGHT!" on the screen. So I can definitely include that as the song title. It's just the lyrics that are a no-go, per the constraint. The constraint says: "If the official lyrics or translation for a detected song cannot be retrieved using the search tool, you MUST set the respective reference lyrics fields to null."
+
+    Actually, could "LAZY DoE NIGHT!" be a specific event track? The search results mention a "7th anniversary live." Maybe the song's official name is something else. Let me check for a setlist from that event... Nope. Nothing confirms "LAZY DoE NIGHT!" as an official title. Given the strong possibility this is an event-specific track, that's not indexed widely, I'll stick with null lyrics. I can include the title, though.
+
+
+...
