@@ -1,0 +1,21 @@
+name: part_010
+total_attempts: 1
+video_duration_ms: 56065
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Subtitle Decision for Promotional Video**
+
+    Okay, so I have a video segment here, and the goal is to generate subtitles. Let's take a look. It's a static promotional image for Nekomata Okayu's 2nd Live event, set for May 28, 2025 at the PIA ARENA MM. I see some text at the bottom: "無料パートは終了いたしました。ご視聴ありがとうございました！" which translates to "The sneak peek part of the show has ended. Thank you for watching." The audio is just instrumental music, no vocals.
+
+    Now, I need to check the rules, and I know the fundamentals here. Absolutely no output if there are no vocalizations; the audio waveform is the ultimate guide for start timecodes. I've got to ensure there are *zero* "ghost" subtitles. I'm well aware that silence is golden when there are long pauses, sound effects, or instrumental music. Unless there's a strong visual cue to the contrary, *nothing* is outputted in those gaps. But the "Visual Events" rule... that's the key. If there's relevant on-screen text, like chapter titles or location signs, it needs to be subtitled, even if there's no audio.
+
+    Hmm, this is where it gets a little tricky. I've got the text "無料パートは終了いたしました..." and the other event details. Is that *prominent* and *relevant* enough to merit subtitles, even though there are no vocals? The text is right at the bottom, and importantly, the English translation is already provided directly below it. So, does it need a translation, when it's already translated?! In other words, is it UI/informational text?
+
+    Let's think. Normally, those end-screen stream notices are, well, not *plot-relevant*. But the "Visual Events" rule… I need to consider that. *However*, the English is already there, meaning it is just part of the stream UI. I know that if the end-screen message is a standard end-of-stream message (usually platform UI, like Niconico or YouTube free parts), it's *not* the narrative content that demands translation.
+
+    I've already confirmed there are *no* vocals, and I can say with confidence that there aren't any. Okay, so no vocals, and the on-screen text isn't narrative in nature. It's informational UI, and importantly, it *already* includes an English translation. The solution here is that I need to output *nothing*! An empty list it is: `{"subs": []}`.
+
+
+...

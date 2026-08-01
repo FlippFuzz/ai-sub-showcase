@@ -1,0 +1,23 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Analyzing the "Nekomata Okayu 2nd Live" Promotional Video for Subtitles**
+
+    Okay, so I've got this video – it's a looping promo screen with chiptune music for Nekomata Okayu's second live. The user needs subtitles, so my first step is always to check for vocals. I've listened to the whole track from start to finish, and it's purely instrumental; no singing, no spoken dialogue, just background music and sound effects.
+
+    Alright, so according to the rules, "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music, long pauses, or sound effects." If there are no vocals, I'm supposed to output nothing, unless there's a "prominent Visual Event."
+
+    Now, that's the key question: do any of these on-screen texts count as prominent visual events? I see the title card "Nekomata Okayu 2nd Live, 2025.5.28 WED @ PIA ARENA MM" and "Attention ご来場のお客様へ". Standard practice usually dictates subtitling important title cards or notices. But this is a looping waiting screen, just promotional slides, so it might be cluttering if there are no vocals.
+
+    I need to interpret "prominent visual event" here. The prompt does say: "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio." But this isn't like a chapter title; it's more like background UI. Let me look at the example the prompt has given: `{"s": "00:02.000", "e": "00:05.000", "og": "第1章", "en": "[Title: Chapter 1]"}`.
+
+    Let me think. These types of waiting screens *usually* have music and don't require any subtitles unless there are lyrics or spoken dialogues. With the "ZERO GHOST SUBTITLES" rule in mind, I need to evaluate this properly. Considering standard VTuber pre-stream waiting screens with loops of goods and fan messages, those subtitles would be empty (`{"subs": []}`) because there's no spoken dialogue.
+
+    Alright, let's verify my hypothesis with the JSON reference and check `contains_vocal_music: false` for all segments. So yeah, there are no vocal events. The conclusion is clear: no subtitles are required. I'll return an empty list of subtitles.
+
+
+...
