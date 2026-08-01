@@ -1,0 +1,27 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 304988
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Subtitling Decision Process**
+
+    Okay, so I've got this video clip, 5 minutes long, and the user wants subtitles. My initial thought is to just dive right in, but I need to be thorough. First, let's look at the timestamps and video content. The clip is from 00:00 to 05:04. I need to make sure I don't miss anything.
+
+    Initially, I see at 00:00 to 01:10 an instrumental intro with a title screen: "1st generation 電脳ぴゅあ推し大宣言". It's all music, no vocals. Now, I have to be careful here – instrumental intros can be tricky, because even if lyrics are known, I need to stay silent unless there's audio.
+
+    At 01:10, I hear a jingle: "ホロライブ1期生7周年記念！" (Hololive 1st Generation 7th Anniversary!). The text on screen matches the jingle. Okay, still no vocals. The music continues, this time a marching band instrumental. The screen then shifts to various merchandise, "限定絵文字" (Limited Emoji), "限定壁紙" (Limited Wallpaper), "公式メンバーシップ" (Official Membership) and more.
+
+    I start to listen more closely and discover that from 01:11 to the end (04:52) it's just a music loop, an instrumental track. Not the song in the provided lyrics, but a different instrumental arrangement or BGM. No singing, no speaking, nothing. The video's a promotional PV for merchandise.
+
+    So, here's my challenge. The instructions are very clear: "AUDIO IS SUPREME." "If no vocals are heard in the audio track, output nothing." I've got a JSON block with lyrics, but the crucial thing is there are *no vocals*. I'm also reminded by the grounding rules to "Remain SILENT during pure instrumental music".
+
+    Wait... there's the "Visual Events" exception: if text is *prominent* and relevant, I subtitle it. The opening title card, "1st generation 電脳ぴゅあ推し大宣言" – is that prominent? I look again at the video. It's the title, but the "Zero Ghost Subtitles" rule needs me to stay silent here as there's only instrumental music. Later screens show merchandise information, which are details, not essential dialogue, even if this is a visual commercial.
+
+    Okay, let's step back and consider it. No singing, purely instrumental background music, and merchandise screens. The text *is* there, but it's part of an advertisement. Per the examples in the rules, only chapter titles or core text should be subbed. The text here is merch descriptions.
+
+    So, in this case, a complete silence – an empty `{"subs": []}` response – is *exactly* the correct answer, because it is best practice to never subtitle UI elements in a video. It is a commercial for merch and merchandise text is just clutter in subtitles.
+
+
+...

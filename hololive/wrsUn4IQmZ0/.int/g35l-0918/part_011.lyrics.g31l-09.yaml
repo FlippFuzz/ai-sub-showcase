@@ -1,0 +1,104 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 295036
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a promotional announcement by Hololive 1st Generation
+    members (Shirakami Fubuki, Natsuiro Matsuri, Aki Rosenthal, Akai Haato) regarding
+    upcoming 7th-anniversary merchandise. It features short audio snippets of the
+    songs "Denno Pyo-s Dai Fugou" and a teaser/snippet for Akai Haato's song "Mecha
+    Gomi Kanzenshoku".
+  scenes:
+  - start: '00:00.000'
+    end: '00:51.000'
+    description: The video opens with the four Hololive 1st Generation members talking
+      and introducing the content.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:51.000'
+    end: '01:01.000'
+    description: A short snippet of the song 'Denno Pyo-s Dai Fugou' plays as part
+      of the promotion.
+    contains_vocal_music: true
+    song_title: 電脳ぴょーす大富豪
+    original_artist: Hololive 1st Generation
+    performer_in_video: Hololive 1st Generation
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:01.000'
+    end: '04:13.000'
+    description: The members continue discussing and presenting various merchandise
+      items for their 7th anniversary.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:13.000'
+    end: '04:26.000'
+    description: A short teaser snippet of the song 'Mecha Gomi Kanzenshoku' is played.
+    contains_vocal_music: true
+    song_title: めちゃゴミ完絶食
+    original_artist: Akai Haato
+    performer_in_video: Akai Haato
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:26.000'
+    end: '04:55.000'
+    description: The members conclude the promotional announcement.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing and Executing the Video Analysis Request**
+
+    Alright, let's break this down systematically. My initial task is to analyze a video, map the scenes, identify vocal songs, and, most importantly, find the *official* lyrics for those songs. The constraints are straightforward: no manual transcription or translation, if I can't find the lyrics, then the value should be `null`, and I'm limited to a maximum of three search turns, using a parallel search strategy. The desired output is a `final_result` tool call, perfectly structured for processing.
+
+    First, I need to understand the video content. I'll mentally map out the scenes. From what I see here, it's mostly talking, interrupted by brief song snippets.
+
+    *   **Scene 1:** 00:00 - 00:51, talking - non-vocal, ambient sounds
+    *   **Scene 2:** 00:51 - 01:01, the first vocal song "電脳ぴょーす大富豪" starts. It's in the background, but the vocal element is clear.
+    *   **Scene 3:** 01:01 - 04:13, the video returns to talking.
+    *   **Scene 4:** 04:13 - 04:26, a second song plays, "めちゃゴミ完絶食." This sounds like either a full song or just a teaser/snippet with vocals.
+    *   **Scene 5:** 04:26 - 04:55, more talking.
+
+    Now, for each song, I need to get the metadata. "電脳ぴょーす大富豪" - the title seems pretty clear, it's in Japanese. I need to make sure I determine the *exact* artist. "めちゃゴミ完絶食" is the second song, again in Japanese, and likely associated with hololive, but I need to confirm the artist name using search.
+
+    The next step is to execute the core search. I will use the search tool to find the official lyrics of both songs. Given my understanding of the likely origin of these songs, I'll formulate the queries with an awareness that they may be relatively new, niche tracks from VTubers. If official lyrics are hard to come by, I have to work with what's available. Therefore, I'll make sure to follow the `SEARCH FAILURE FALLBACK` constraint.
+
+    Here are the search queries:
+
+    1.  `電脳ぴょーす大富豪 歌詞`
+    2.  `電脳ぴょーす大富豪 lyrics english`
+    3.  `めちゃゴミ完絶食 歌詞`
+    4.  `めちゃゴミ完絶食 lyrics english`
+
+    I'll call the `default_api:web_search_langsearch_multi` tool with these queries. Now, the key is the structured `final_result` tool call. While I am expecting the tool call, let me just organize my thoughts: given the limited snippets in the video, I need to make sure I am searching for the complete lyrics for both songs, not just lyrics to the short excerpts.
+
+
+
+    **Analysis and Resultant Scene Structuring**
+
+    Okay, here's the breakdown of my thinking. First, I needed to get the lyrics for the songs. I started by searching for the lyrics to both "電脳ぴょーす大富豪" (Denno Pyo-s Dai Fugou) and "めちゃゴミ完絶食" (Mecha Gomi Kanzenshoku). Unfortunately, the search didn't yield the official lyrics. That's a deal-breaker, I can't start guessing. The constraint explicitly states that if I can't find them using the search tool, then I *must* set the lyrics fields to null. No improvisation.
+
+    Next, I worked on structuring the video into scenes based on the timestamps. I needed to refine the scene boundaries, particularly for the songs. I double-checked the start and end times to be precise. The initial breakdown had a slight imprecision, which I corrected. I then defined metadata for each song: title, artist, performer, and language. Based on the context and the video itself, I made the call to specify the artist of "電脳ぴょーす大富豪" as "Hololive 1st Generation" (because that's what seems to be in the video). "めちゃゴミ完絶食" is clearly Akai Haato.
+
+    Finally, I constructed the `final_result`. The `global_summary` encapsulates the video's essence: It's a promotional announcement by the Hololive 1st Gen members regarding upcoming merchandise. It includes song snippets of "Denno Pyo-s Dai Fugou" and a teaser of Akai Haato's "Mecha Gomi Kanzenshoku". I went through scene by scene. I made sure to flag scenes appropriately with `contains_vocal_music` and filled in all the relevant song metadata fields (including the lyrics being set to `null`).
+
+    Before finalizing, I did a review to confirm I adhered to all constraints: no manual transcription, null fields where necessary, and the correct formatting. It's a solid, compliant output, exactly as specified.
+
+
+...
