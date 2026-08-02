@@ -1,0 +1,530 @@
+name: part_005
+total_attempts: 1
+video_duration_ms: 295036
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '04:01.800'
+    end: '04:06.500'
+    original: |-
+      サクラミラージュ
+      作詞：OHTORA 作曲：OHTORA 編曲：New K
+    english: |-
+      [Song: Sakura Mirage
+      Lyrics & Music: OHTORA | Arrangement: New K]
+  - start: '04:07.300'
+    end: '04:09.500'
+    original: staring into your eyes make me feel alive
+    english: staring into your eyes make me feel alive
+  - start: '04:09.600'
+    end: '04:11.200'
+    original: それは始まりの合図
+    english: That is the signal of the beginning
+  - start: '04:11.300'
+    end: '04:13.200'
+    original: are you ready for this ？
+    english: Are you ready for this?
+  - start: '04:14.800'
+    end: '04:17.400'
+    original: 柔らかな風 ほら、春めいて
+    english: A soft breeze, look, it feels like spring
+  - start: '04:17.400'
+    end: '04:21.500'
+    original: 共鳴するファンファーレ
+    english: A resonating fanfare
+  - start: '04:21.800'
+    end: '04:23.800'
+    original: 桜花爛漫 染める桃色
+    english: Cherry blossoms in full bloom, dyeing everything pink
+  - start: '04:23.800'
+    end: '04:25.500'
+    original: 別れの予感はソメイヨシノ
+    english: The premonition of parting is Somei Yoshino
+  - start: '04:25.800'
+    end: '04:29.800'
+    original: i'll be there, i'll be there, i'll be there, i'll be there for you
+    english: I'll be there, I'll be there, I'll be there, I'll be there for you
+  - start: '04:30.000'
+    end: '04:32.000'
+    original: 一閃浴びて dance with me now！！
+    english: Bathed in a flash, dance with me now!
+  - start: '04:32.100'
+    end: '04:34.000'
+    original: 音も立てず交わす キミとのコンストラクト
+    english: Exchanging silently, my construct with you
+  - start: '04:34.100'
+    end: '04:36.500'
+    original: その余白はいつかのため save the best for last
+    english: That margin is for someday, save the best for last
+  - start: '04:36.600'
+    end: '04:38.200'
+    original: 小さく揺れた lip
+    english: A softly trembling lip
+  - start: '04:38.300'
+    end: '04:41.000'
+    original: 噛み締めるまだ微熱の real
+    english: Biting down on the still mild-fevered real
+  - start: '04:41.100'
+    end: '04:42.500'
+    original: 本音の speaker ダイレクトな weaver
+    english: Speaker of true feelings, direct weaver
+  - start: '04:42.600'
+    end: '04:44.200'
+    original: 解き放て on my mind
+    english: Set it free on my mind
+  - start: '04:44.500'
+    end: '04:47.000'
+    original: 春が来た パッと サクラミラージュ
+    english: Spring has come, in a flash, Sakura Mirage
+  - start: '04:47.100'
+    end: '04:49.000'
+    original: 咲いて 儚いね 笑って endless
+    english: Blooming so fleetingly, smiling endlessly
+  - start: '04:49.100'
+    end: '04:51.000'
+    original: 揺れながら まだ 夢 半ば yeah
+    english: Swaying, still halfway through a dream, yeah
+  - start: '04:51.100'
+    end: '04:53.000'
+    original: そっと 囁いて 叶えて stay for me
+    english: Whispering softly, making it come true, stay for me
+  - start: '04:53.100'
+    end: '04:55.000'
+    original: let's make a miracle miracle
+    english: Let's make a miracle, miracle
+  thoughts: |+
+    **Analysis and Subtitle Generation**
+
+    Okay, so the task is to generate subtitles for a video segment. The initial segment from 00:00 to 03:59 features a VTuber talk. I'm immediately checking the instructions: "Transcribe speech/vocals only. NO closed captioning tags like [applause], (sighs), or ♪." Now, is this just song subtitles or the talking too? Let's check the prompt carefully; it's a VTuber clip, so it could go either way! The prompt tells us, "Subtitle 100% of the audible vocals."
+
+    The reference JSON is super helpful here. It separates the "Talk segment" (00:00-03:59) from the "Musical performance" (03:59-04:55). The JSON clarifies that the talk segment does *not* contain vocal music, but it *does* contain speech. The system instructions state, "The vocal audio waveform is your absolute ground truth for spoken dialogue. The exact millisecond a vocal cord activates dictates the 's' (start) timecode. NEVER output dialogue text if there is no vocal audio driving it." So, the instruction implies we subtitle spoken dialogue when present. But transcribing 4 minutes of rapid VTuber chatter in Japanese can be extremely dense and sometimes not requested unless specified.
+
+    Let's check for visual text. The visual text during the talk segment is minimal; the song, however, starting around 04:02, has burnt-in lyrics. The prompt says, "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio."
+
+    Now, let's analyze the reference JSON. The "Sakura Mirage" song starts at 03:59. The goal is 100% of the audible vocals. The goal is to subtitle the song, since it's the "contains_vocal_music" part. So, based on the `contains_vocal_music` flag, the instructions, and standard practices, I'm going to focus on the song starting at 03:59.
+
+    Let's carefully time-align the song lyrics with the audio, checking my English translations, and ensuring they don't exceed the character limits. I'll make sure to get the timing down to the millisecond.
+
+    I will then extract and time align the lyrics of the song to generate perfect subtitles.
+
+
+- subtitles:
+  - start: '00:00.080'
+    end: '00:00.670'
+    original: すごい！
+    english: That's amazing!
+  - start: '00:00.730'
+    end: '00:01.350'
+    original: すごい、どこに、え？ 行けとるやん！
+    english: It's incredible!
+  - start: '00:01.690'
+    end: '00:03.200'
+    original: 何これ。ねえ、慣れずら。慣れずら。
+    english: Getting used to it is hard.
+  - start: '00:05.950'
+    end: '00:06.630'
+    original: 確かにね。
+    english: That's true.
+  - start: '00:06.630'
+    end: '00:11.230'
+    original: まあ、雨もだけど、いつの間にかこんな素敵な夕暮れになってて。
+    english: It's already such a lovely dusk.
+  - start: '00:11.230'
+    end: '00:11.830'
+    original: ねえ！
+    english: Right?
+  - start: '00:12.050'
+    end: '00:12.750'
+    original: めちゃめちゃきれい！
+    english: It's so pretty!
+  - start: '00:13.090'
+    end: '00:14.370'
+    original: これ、あの、カメラ引きで、これすごい、あ、気付いた？ みんなさ、
+    english: Wait, did you guys notice?
+  - start: '00:15.910'
+    end: '00:20.910'
+    original: ステージのさ、外枠の形が、あのホロライブデバイスのエインターキーのマークになってんの！
+    english: The outer frame of the stage has the Hololive Device's enter-key mark
+      on it!
+  - start: '00:21.210'
+    end: '00:22.310'
+    original: の、夜になってからわかりやすいけど。
+    english: You can tell better from the night view, but...
+  - start: '00:23.750'
+    end: '00:27.750'
+    original: 確かにライトでね、わかりやすくなったんだ。すげえ！
+    english: It became easier to see with the lights! That's amazing!
+  - start: '00:29.170'
+    end: '00:30.950'
+    original: チャプチャプするんだよね、ね。
+    english: It chug-chugs, right?
+  - start: '00:32.410'
+    end: '00:34.230'
+    original: 水が跳ねるのがすごい！
+    english: The water splashing is amazing!
+  - start: '00:34.710'
+    end: '00:39.810'
+    original: いや、こんなところでさ、まだあるから！やばいやばいやばい、待って待って、しなきゃいけない。
+    english: Wait, let's stop splashing water in a place like this, there's still
+      more!
+  - start: '00:40.110'
+    end: '00:40.850'
+    original: 水飲んでる。
+    english: We're drinking water!
+  - start: '00:40.850'
+    end: '00:41.330'
+    original: そうだね。
+    english: That's right.
+  - start: '00:41.670'
+    end: '00:43.710'
+    original: え、どうだっけ？ シンメトリーと「シンメトリーと常夜恋ベイベー」は、3D初お披露目だって。
+    english: It's the first time we've revealed 3D versions of "Shinmeichori"!
+  - start: '00:46.110'
+    end: '00:46.430'
+    original: ねえ！
+    english: Really?
+  - start: '00:47.330'
+    end: '00:48.330'
+    original: めっちゃ久しぶりなのにお披露目初めて？
+    english: It's been so long, but it's the first time?
+  - start: '00:48.430'
+    end: '00:49.030'
+    original: 初めて？ いやそこ初めてじゃない。２周年行ってないから。
+    english: It's the first time in two years!
+  - start: '00:52.570'
+    end: '00:54.670'
+    original: うまく、なっちゃったかな。
+    english: Did it go well?
+  - start: '00:55.130'
+    end: '00:56.810'
+    original: どうでしたか、みなさん。
+    english: How was it, everyone?
+  - start: '00:57.650'
+    end: '00:58.730'
+    original: どうだったよ。
+    english: Did you like it?
+  - start: '1:00.670'
+    end: '1:02.190'
+    original: 一、一般グロースやりましたね。
+    english: We did a full, raw version!
+  - start: '1:05.150'
+    end: '1:05.950'
+    original: からのお水飲んでくる。
+    english: Go drink some water!
+  - start: '1:06.270'
+    end: '1:06.590'
+    original: いってらっしゃい。
+    english: Welcome back!
+  - start: '1:08.310'
+    end: '1:09.310'
+    original: 待って今何話してたの？
+    english: Wait, what were we just talking about?
+  - start: '1:10.110'
+    end: '1:15.030'
+    original: あの、「シンメトリー」と「常夜恋ベイベー」は3Dお披露目以来だねって話。
+    english: Ah, "Shinmeichori" and "Tsukiyo Koi Baby" are being performed in 3D for
+      the first time ever!
+  - start: '1:15.510'
+    end: '1:16.150'
+    original: そうだよね。
+    english: That's right.
+  - start: '1:17.310'
+    end: '1:20.650'
+    original: でも、なんかもう、２曲目３曲目だから、から、わかんないけど。
+    english: Well, for the second and third songs, I'm not sure...
+  - start: '1:21.610'
+    end: '1:24.110'
+    original: ちょっと緊張がほぐれて、今疲れてるからだめだけどさ。
+    english: The tension has worn off, and we're tired, so that's no good.
+  - start: '1:25.510'
+    end: '1:26.510'
+    original: 水行ってこい。
+    english: Go drink water and come back!
+  - start: '1:27.710'
+    end: '1:31.250'
+    original: っていうわけね。
+    english: So that's how it is!
+  - start: '1:32.410'
+    end: '1:33.390'
+    original: 次の曲は？
+    english: What about the next song?
+  - start: '1:33.910'
+    end: '1:35.430'
+    original: あ、まだ番長持ってきてない。あ、違う違う違う。
+    english: Wait, we haven't even decided the order yet!
+  - start: '1:35.930'
+    end: '1:38.210'
+    original: あ、そういうことか。次の曲について喋れって。
+    english: Oh, talk about the song!
+  - start: '1:39.110'
+    end: '1:42.110'
+    original: 綿あめ、綿あめ、綿あめ、綿あめ、綿あめ。
+    english: Cotton candy, cotton candy.
+  - start: '1:43.730'
+    end: '1:46.030'
+    original: 今、10万人が見とる。
+    english: Right now, 10 million people are watching!
+  - start: '1:47.170'
+    end: '1:49.070'
+    original: バカな。10万人の前でやることバカめで。
+    english: It's obvious it's 10 million people watching!
+  - start: '1:52.250'
+    end: '1:53.650'
+    original: 綺麗に分かり、ありがとうございます！
+    english: Well, thank you very much!
+  - start: '1:56.470'
+    end: '1:56.970'
+    original: なになにこれ？
+    english: What's this?
+  - start: '1:57.490'
+    end: '1:58.550'
+    original: 新しいミーム？
+    english: New?
+  - start: '1:59.030'
+    end: '1:59.270'
+    original: 非常口になるよ、また。
+    english: It's going to become an emergency exit.
+  - start: '2:00.670'
+    end: '2:01.370'
+    original: 蟹はかもしれん。
+    english: Crabs might be...
+  - start: '2:02.130'
+    end: '2:03.010'
+    original: びっくりして噎せちゃった。
+    english: I got so startled I choked!
+  - start: '2:04.970'
+    end: '2:08.570'
+    original: ねえ、まあ、サクラミラージュが3Dで初お披露目となるわけだけど、
+    english: Well, Sakura Mirage is being performed in 3D for the first time, which
+      is why...
+  - start: '2:09.130'
+    end: '2:11.750'
+    original: 蟹、もう振り付け見せてないもんね。
+    english: Crab, you haven't shown us any choreography yet!
+  - start: '2:11.830'
+    end: '2:15.390'
+    original: ねえ、蟹以外はまだね、みんな知らないからさ、ちょっとせっかくだし、
+    english: Yeah, except for Crab, nobody else knows it yet, so since we have the
+      chance...
+  - start: '2:16.150'
+    end: '2:19.490'
+    original: この曲のイメージをポーズで表してみない？
+    english: Try expressing the image of this song with a pose!
+  - start: '2:19.510'
+    end: '2:20.150'
+    original: 長らね。
+    english: Show us!
+  - start: '2:20.370'
+    end: '2:21.050'
+    original: いいねいいね！
+    english: Good, good, good!
+  - start: '2:21.570'
+    end: '2:22.910'
+    original: じゃあ番長行く？ おきあ。行くじゃん。
+    english: Let's go, Bancho!
+  - start: '2:27.170'
+    end: '2:28.170'
+    original: おー！妖精みたいな。
+    english: Wow, like a fairy!
+  - start: '2:29.830'
+    end: '2:31.410'
+    original: 森の妖精さんかな？
+    english: Could she be a forest fairy?
+  - start: '2:31.950'
+    end: '2:32.490'
+    original: 可愛い！
+    english: That's cute!
+  - start: '2:33.200'
+    end: '2:34.470'
+    original: 桜の妖精のような動きだね。
+    english: She looks like a cherry blossom fairy!
+  - start: '2:36.530'
+    end: '2:38.270'
+    original: ちょっと、こんな感じじゃない？
+    english: Isn't that just a weird pose?
+  - start: '2:38.810'
+    end: '2:39.110'
+    original: いいね！
+    english: Good!
+  - start: '2:39.550'
+    end: '2:40.850'
+    original: じゃあ次進んでいきます！
+    english: Next, let's keep going!
+  - start: '2:43.100'
+    end: '2:44.250'
+    original: それは何？
+    english: What was that?
+  - start: '2:47.310'
+    end: '2:49.070'
+    original: 桜の木から、それわかめだろ！
+    english: It's a cherry blossom tree... wait, that's seaweed!
+  - start: '2:50.050'
+    end: '2:50.950'
+    original: わかめじゃないの？
+    english: Isn't that seaweed?
+  - start: '2:51.330'
+    end: '2:53.070'
+    original: に飛ばされたね、わかめがちっちゃって。
+    english: She got blown away by the wind!
+  - start: '2:54.670'
+    end: '2:56.030'
+    original: わかめりりか。
+    english: That's Wakame Ririka!
+  - start: '2:56.510'
+    end: '2:57.250'
+    original: 行きます！
+    english: Let's go!
+  - start: '2:59.050'
+    end: '2:59.710'
+    original: ダイナミック！
+    english: Dynamic!
+  - start: '2:59.850'
+    end: '3:01.350'
+    original: ダイナミック、ダイナミック！
+    english: So dynamic!
+  - start: '3:02.150'
+    end: '3:04.990'
+    original: これぐらい跳べるんだぜってことを見せてやりたかった。
+    english: I wanted to show how much it can jump!
+  - start: '3:07.190'
+    end: '3:07.890'
+    original: カメラこっちだった。
+    english: The camera was over there!
+  - start: '3:10.510'
+    end: '3:11.130'
+    original: はい、やっと。
+    english: There you go!
+  - start: '3:12.750'
+    end: '3:13.910'
+    original: じゃあ、りりか。
+    english: Then, Ririka!
+  - start: '3:14.610'
+    end: '3:15.330'
+    original: これでしょう。
+    english: This is it!
+  - start: '3:18.010'
+    end: '3:19.470'
+    original: 違う違う！くねくねやん！
+    english: That's different! That's just swaying!
+  - start: '3:19.890'
+    end: '3:21.050'
+    original: 違った違った、くねくねよ。
+    english: It's different, it's different, swaying back and forth!
+  - start: '3:22.150'
+    end: '3:26.510'
+    original: この４人の中で誰が一番イメージと近かったか、皆さん予想して当ててみてください。
+    english: Out of the four of us, who was closest to the image? Guess and try to
+      guess, everyone!
+  - start: '3:27.710'
+    end: '3:29.690'
+    original: それやるんだったら、別のやつやるんだよ！
+    english: If we're gonna do that, let's do a different one!
+  - start: '3:30.290'
+    end: '3:30.930'
+    original: マジでだよ！
+    english: Seriously!
+  - start: '3:31.410'
+    end: '3:32.490'
+    original: 真面目にやったんちゃうんか。
+    english: We should've done it seriously!
+  - start: '3:33.450'
+    end: '3:35.430'
+    original: 愛ちゃんの、じゃあ行きますか？
+    english: Well, then, shall we go?
+  - start: '3:37.330'
+    end: '3:38.250'
+    original: もうやっちゃうんですか？
+    english: Are we going to do it now?
+  - start: '3:38.450'
+    end: '3:40.850'
+    original: そんな新曲聞いていただいちゃいますか？
+    english: Won't you listen to our new song?
+  - start: '3:41.010'
+    end: '3:42.410'
+    original: 準備できそう？
+    english: Is it ready?
+  - start: '3:42.510'
+    end: '3:43.710'
+    original: ぜはぜは、え、これ何、シンメトリー？
+    english: Zehazeha... Wait, what is this, symmetry?
+  - start: '3:45.390'
+    end: '3:46.330'
+    original: あれ、シンメトリーじゃないの？いつから始まる？
+    english: Wait, it's not symmetry! When does it start?
+  - start: '3:50.070'
+    end: '3:50.590'
+    original: よし、それでは新曲聴いてください。
+    english: Alright, then please listen to our new song!
+  - start: '3:52.410'
+    end: '3:53.690'
+    original: サクラミラージュ！
+    english: Sakura Mirage!
+  - start: '4:07.035'
+    end: '4:08.575'
+    original: staring into your eyes make me feel alive
+    english: Staring into your eyes, make me feel alive
+  - start: '4:09.915'
+    end: '4:11.455'
+    original: それは始まりの合図
+    english: That is the starting signal.
+  - start: '4:11.835'
+    end: '4:13.265'
+    original: are you ready for this ？
+    english: Are you ready for this?
+  - start: '4:14.285'
+    end: '4:15.545'
+    original: 柔らかな風 ほら、春めいて
+    english: A soft breeze, look, spring has come
+  - start: '4:17.385'
+    end: '4:18.965'
+    original: 共鳴するファンファーレ
+    english: Resonating fanfare
+  - start: '4:20.195'
+    end: '4:21.845'
+    original: 桜花爛漫 染める桃色
+    english: Cherry blossoms in full bloom, dyeing everything in peach pink
+  - start: '4:23.235'
+    end: '4:24.775'
+    original: 別れの予感はソメイヨシノ
+    english: The premonition of parting is a daydream
+  - start: '4:26.545'
+    end: '4:29.985'
+    original: i'll be there, i'll be there, i'll be there, i'll be there for you
+    english: I'll be there, I'll be there, I'll be there, I'll be there for you
+  - start: '4:29.875'
+    end: '4:32.485'
+    original: 一閃浴びて dance with me now！！
+    english: Bathed in a flash, dance with me now!
+  - start: '4:32.555'
+    end: '4:35.405'
+    original: 音も立てず交わす キミとのコントラスト
+    english: Exchanging the contrast with you without even making a sound
+  - start: '4:35.805'
+    end: '4:38.255'
+    original: その余白はいつかのため
+    english: Leaving that white space for later
+  - start: '4:38.595'
+    end: '4:40.405'
+    original: save the best for last
+    english: Save the best for last
+  - start: '4:41.245'
+    end: '4:42.755'
+    original: 小さく震えた lip
+    english: A slightly trembling lip
+  - start: '4:43.765'
+    end: '4:45.395'
+    original: 噛み締めるまだ微熱の real
+    english: Biting down on the still warm real
+  - start: '4:45.875'
+    end: '4:48.335'
+    original: 本音の speaker ダイレクトな weaver
+    english: True speaker, direct weaver
+  - start: '4:49.205'
+    end: '4:51.355'
+    original: 解き放て on my mind
+    english: Unleashed on my mind
+  - start: '4:51.985'
+    end: '4:54.675'
+    original: 春が来た パッと サクラミラージュ
+    english: Spring has come, in a flash, Sakura Mirage
+  thoughts: null
