@@ -1,0 +1,63 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 60028
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber delivering a brief spoken introduction,
+    followed by a dance performance set to an electronic instrumental track. There
+    is no sung vocal music present in this segment.
+  scenes:
+  - start: '00:00.000'
+    end: '00:00.700'
+    description: A VTuber character speaks to the audience in Japanese to open her
+      birthday stream.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:00.700'
+    end: '00:54.000'
+    description: The VTuber performs a dance routine against a dynamic background
+      featuring the word 'MOTION' and birthday celebration text, accompanied by an
+      electronic instrumental track.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis and Scene Breakdown for Video with Instrumental Track**
+
+    Okay, let's break this down. The task is to analyze a video, map scenes, and identify vocal songs, with a focus on searching for lyrics – but *without* manual transcription or translation. The crucial constraints are: no manual intervention, all lyrics must be found via search (no placeholders), original artist and title for the search, and a max of 3 search turns. Alright, I'm ready.
+
+    First, I need to understand the video content. Initial assessment indicates an anime-style character, perhaps a VTuber. I see a performance starting at 0:00:500. The audio sounds like electronic/pop, maybe Vocaloid, the background has text "MOTION" and some Japanese. There's also text on screen saying "#おほしはの生誕祭2026."
+
+    Now, let's *really* listen closely to the audio. Hold on... after the character's initial spoken words, it's *instrumental*. No vocals whatsoever in the main performance! The clip is roughly 54 seconds.
+
+    Okay, this requires a self-correction. The prompt is "detect ALL vocal songs playing". Does the background music qualify as a vocal song? No, it doesn't. Checking the constraint, I need to detect all *vocal* songs. Since there are none, that's what I have to reflect.
+
+    Next, I'll draft the scene breakdown. Scene 1 runs from 0:00.000 to 0:00.700 – the character speaks in Japanese. Scene 2 covers the performance, from 0:00.700 to the end of the clip (0:54.000). The clip length seems to be correct.
+
+    Now, let's refine the scene metadata. For Scene 1, "Contains vocal music?" is false. Description: The VTuber introduces her birthday livestream segment. For Scene 2, "Contains vocal music?" is also false. Description: The VTuber performs a dance routine to an electronic instrumental track, with text overlays.
+
+    Let me verify: Are there any vocals in the music? Nope. Did I miss any songs? No. Constraint compliance: No manual transcription or lyrics search needed since no vocals.
+
+    Finally, I'll construct the tool call:
+
+    `global_summary`: The video features a VTuber delivering a brief introduction, followed by a dance performance set to an electronic instrumental track. There is no sung vocal music in this segment.
+
+    `scenes`:
+    *   Scene 1: 0:00.000 to 0:00.700. `contains_vocal_music`: false. Description: A VTuber character speaks to the audience in Japanese to open the birthday stream.
+    *   Scene 2: 0:00.700 to 0:54.000. `contains_vocal_music`: false. Description: The VTuber performs a dance routine against a backdrop featuring the word "MOTION" and birthday celebration text, accompanied by an instrumental electronic music track.
+
+    I double-checked the audio *again* just to be absolutely sure. Yep, it's 100% instrumental in the background.
+
+    The instructions say to detect *ALL* vocal songs. And, since there are no vocal songs, I simply report that fact, which meets the constraints. I considered searching for the background music title just to be extra thorough, but the task is vocal song detection, not cataloging instrumental tracks. The task is complete and compliant. Now, to generate the final tool call.
+
+
+...
