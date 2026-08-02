@@ -1,0 +1,53 @@
+name: part_014
+total_attempts: 1
+video_duration_ms: 126028
+lyrics_prompt_version: 9
+response:
+  global_summary: The video consists of a single, static illustrated image featuring
+    a character named "Nano," accompanied by a personal message in Japanese. The entire
+    duration is set to instrumental background music.
+  scenes:
+  - start: '00:00.000'
+    end: '02:06.000'
+    description: A continuous static image of a character named "Nano" with Japanese
+      text, accompanied by instrumental background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video Segment**
+
+    Okay, so the user wants me to break down this video. It's a single, static image with Japanese text and background music. Right, let's get started.
+
+    First, I need to understand the scene. It's a single, continuous shot from 00:00 to 02:06. The visuals are a static image of what looks like a VTuber or anime-style character, along with some Japanese text. The key task is to identify if there are vocals in the background music and the song. I will work step by step.
+
+    Next, the audio needs careful attention. It sounds like J-pop or vocaloid style, but it’s instrumental, or at least the vocals are very faint. The video says "detect ALL vocal songs playing", so let's re-examine that assumption. It *seems* instrumental, but I need to be certain. I'm going to listen again at a higher volume. Yep, still instrumental. No obvious singing. I'm confident in saying the music does not contain any vocal content.
+
+    Given that, my plan becomes simple: I’ll mark `contains_vocal_music` as `false`. I'm going to set all the song metadata fields to `null`.
+
+    Before committing to this, let's take an extra step to make sure I am not missing anything; let me double-check if I can identify the music. I will do a quick search.
+
+    However, the prompt is clear: “If a song title appears on screen...”. Let's check the text: "2025 4/20", "名乃 (Nano)". It’s a message of some sort: "見てくれてありがとう！ (Thank you for watching!)", "やっと春が来た！って感じがしましたね！ (It feels like spring has finally come!)", and so on. This isn't lyrics, it's a message. It could be some sort of birthday message for the character "Nano".
+
+    Okay, so this is just instrumental background music. It is clearly not the focus of the video; the visual focus is the static image and message. The music is accompanying the image. Because it's instrumental, and there are no vocals, `contains_vocal_music` must be `false`.
+
+    Therefore, I'll formulate my assessment like this:
+
+    *   **`global_summary`**: The video is a static, illustrated image of a character named "Nano," accompanied by Japanese text, all set to continuous background music.
+    *   **`scenes`**:
+        *   `start`: "00:00.000"
+        *   `end`: "02:06.000"
+        *   `description`: A static image featuring a character named "Nano" with Japanese text, set to continuous background music.
+        *   `contains_vocal_music`: false
+        *   All other fields null.
+
+    I'll double-check this: I'll listen one last time to confirm there are *no* vocals. Nope, 100% instrumental.
+
+    My plan is solid.
+
+
+...
