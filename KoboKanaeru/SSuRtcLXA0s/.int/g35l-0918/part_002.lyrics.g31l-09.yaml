@@ -1,0 +1,57 @@
+name: part_002
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: This video is a comedic roleplay/skit featuring various VTubers
+    (including Kobo Kanaeru, Takanashi Kiara, and Himemori Luna) interacting in a
+    "kindergarten" scenario. Throughout the duration of the clip, lighthearted instrumental
+    background music plays, but there are no actual vocal songs (sung musical performances)
+    present. All vocalizations are spoken dialogue by the performers as part of the
+    skit.
+  scenes:
+  - start: '00:00.000'
+    end: '04:39.000'
+    description: The entire video features a continuous comedic skit where VTubers
+      act as babies in a kindergarten setting. Instrumental background music plays
+      throughout the segment, but there are no vocal songs detected.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video and Task**
+
+    Okay, here's my breakdown of what needs to happen. The task is to analyze a video, map the scenes, identify vocal music (if any), and then use a specific tool to find the lyrics, following a strict JSON format. No manual transcription or translation, and the search tool is the *only* allowed source for lyrics. We have to parallelize the lyric searches and are limited to three search turns. Importantly, I must *not* truncate any lyrics or use placeholders.
+
+    First, I need to watch the video, map the scenes chronologically, and identify any vocal music playing, paying close attention. It starts with the video playing. *00:00 - 04:39*: The video appears to be a skit or roleplay involving VTubers like Kobo Kanaeru, Takanashi Kiara, and others, acting as babies in a "kindergarten" setting, with some background music throughout. The audio requires careful attention. Is it instrumental, or are there vocals? Initially, I detect whimsical, upbeat *instrumental* music. But is it a song? Upon a closer listen, I hear VTubers doing spoken dialogue. *Correction:* the prompt requires to "detect ALL vocal songs playing". *Re-listening:* No, the dialogue is part of the skit, spoken lines. So, *result:* no actual *vocal songs* (i.e., sung music with lyrics) are detected.
+
+    Since I haven't detected any vocal songs with lyrics, there's no song metadata to resolve. No titles, artists, or lyrics to retrieve.
+
+    Therefore, because no vocal music was identified, I skip the lyrics lookup step completely; no searching is necessary.
+
+    Now, I'll draft the JSON output based on my findings.
+
+    The overall *global summary*: The video is a comedic roleplay/skit featuring VTubers (including Kobo Kanaeru and Takanashi Kiara) acting as babies in a "kindergarten" setting. There is instrumental background music throughout, but no actual vocal songs are playing.
+
+    The *scenes* mapping is straightforward since it's one continuous scene:
+
+    *   *Scene 1 (Entire video)*:
+        *   `start`: 00:00.000
+        *   `end`: 04:39.000
+        *   `description`: VTubers engage in a roleplay skit acting as babies. Background instrumental music plays, but there is no vocal music.
+        *   `contains_vocal_music`: false
+        *   `song_title`: null
+        *   `original_artist`: null
+        *   `performer_in_video`: null
+        *   `original_language`: null
+        *   `reference_lyrics_og`: null
+        *   `reference_lyrics_en`: null
+
+    Finally, I review the response against the constraints. I confirm that I haven't done any manual transcription, I used the search tool only (or rather, I *didn't* use it because it wasn't required), and didn't truncate anything. The chronological mapping is present. Now, I'll format the JSON precisely.
+
+
+...
