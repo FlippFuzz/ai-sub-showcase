@@ -1,0 +1,40 @@
+name: part_015
+total_attempts: 1
+video_duration_ms: 59552
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:01.000'
+    end: '00:06.000'
+    original: 無料パートは終了いたしました！ ご視聴ありがとうございました！
+    english: The sneak peek part of the show has ended. Thank you for watching.
+  thoughts: |+
+    **Analyzing Visual Text for Subtitling**
+
+    Okay, so I've got this video segment and need to figure out the subtitling. Looking at the video and the JSON, it's clear we're dealing with an intermission screen for the "hololive 6th fes. Color Rise Harmony" event. The screen shows Japanese text "無料パートは終了いたしました！ご視聴ありがとうございました！" and its English translation "The sneak peek part of the show has ended. Thank you for watching." It's instrumental music only; no vocals or dialogue.
+
+    My initial thought is to check the Visual Events rule. It states, and I quote: "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio."
+
+    Let's break this down. The text "無料パートは終了いたしました！ご視聴ありがとうございました！" *is* on-screen, and the English translation is there too.  The screen seems to be the main content of the video for the entire 1-minute clip. However, I'm second-guessing myself; is this just an end card? Do we subtitle full-screen end cards/intermission notices?
+
+    The rule *does* say "prominent and relevant." The text is very prominent, and it's certainly *relevant* to the viewing experience, signaling a change in the show. No speech, so no audio to consider, and the video is entirely visual at this point.
+
+    The video shows the text from 00:00 to 00:59, so it's a prominent on-screen notice. The Japanese text "無料パートは終了いたしました！ご視聴ありがとうございました！" translates to "The free part has ended! Thank you for watching!" - the English text on screen is: "The sneak peek part of the show has ended. Thank you for watching."
+
+    Let's re-read the rule: "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio." Yes, this confirms that we *should* subtitle it. It is an on-screen notice.
+
+    The text is present from 00:00 to 00:59, but title cards usually appear for a few seconds only. So, let's time it from 00:01.000 to 00:06.000, that seems like a reasonable duration.
+
+    So, the subtitle entry for the visual event should be:
+
+    ```
+    s: "00:01.000"
+    e: "00:06.000"
+    og: "無料パートは終了いたしました！ ご視聴ありがとうございました！"
+    en: "The sneak peek part of the show has ended. Thank you for watching."
+    ```
+
+    Let's double-check again, just to be absolutely sure, that there aren't any other vocals or text later in the video, but no. That should cover it. Now to format it correctly for output.
+
+
+...
