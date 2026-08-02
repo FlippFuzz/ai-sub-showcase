@@ -1,0 +1,60 @@
+name: part_002
+total_attempts: 1
+video_duration_ms: 298955
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features two musical performances. The first part (00:00
+    - 03:12) shows VTubers Shiranui Flare, Shirakami Fubuki, Tsunomaki Watame, and
+    Omaru Polka performing a cover of "いけないfool logic". The second part (03:13 - 04:59)
+    shows Shiranui Flare and AZKi performing "ALIVE".
+  scenes:
+  - start: '00:00.000'
+    end: '03:12.000'
+    description: Four VTubers (Shiranui Flare, Shirakami Fubuki, Tsunomaki Watame,
+      Omaru Polka) perform a choreographed dance and song on a colorful stage.
+    contains_vocal_music: true
+    song_title: いけないfool logic
+    original_artist: UNISON SQUARE GARDEN
+    performer_in_video: Shiranui Flare, Shirakami Fubuki, Tsunomaki Watame, Omaru
+      Polka
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:13.000'
+    end: '04:59.000'
+    description: Shiranui Flare and AZKi perform a song together on a stage with a
+      fountain.
+    contains_vocal_music: true
+    song_title: ALIVE
+    original_artist: Shiranui Flare & AZKi
+    performer_in_video: Shiranui Flare, AZKi
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the VTuber Performance and Preparing the JSON Report**
+
+    Okay, here's what I'm thinking. The user wants me to break down this VTuber video, focusing on the songs. I need to get organized, which means first breaking the video into sections based on what's described. It looks like it’s straightforward: 0:00 to 3:12 is one song, and 3:13 to 4:59 is another. Easy enough.
+
+    Now, song identification. The prompt makes that simple, too. "いけないfool logic" (Ikenai fool logic) at the start, and then "ALIVE" with Shiranui Flare and AZKi. I'll need the composer details for each song, too. I need the original and English lyrics.
+
+    My initial plan is to search for the lyrics. I would have started with searches like "いけないfool logic 歌詞" and "いけないfool logic lyrics english." For the second song, I'd search for "ALIVE Shiranui Flare AZKi 歌詞" and "ALIVE Shiranui Flare AZKi lyrics english." I'll use those search results to populate the JSON output the user wants.
+
+    But, hang on, the prompt also says, and this is important, I need to use the *original composer*, not the performer. Right. So, before I dive into lyric searches, I need to figure out who *wrote* these songs. "いけないfool logic" is Shiranui Flare's 3rd anniversary song. That's a good starting point. I need to find the composer/lyricist. "ALIVE" is the Shiranui Flare and AZKi song. I'll search for the composer/lyricist for this one too.
+
+    So, first I will perform the searches to find the appropriate metadata (composer/lyricist), *then* I'll search for the lyrics. That's the best approach to make sure the data I'm providing in the JSON is 100% correct.
+
+
+
+    **Lyric Retrieval Assessment: A Deep Dive**
+
+    Okay, here's the breakdown of my thought process, focusing on strict adherence to the rules. I began by assessing the search results for "いけないfool logic" and "ALIVE" by Shiranui Flare & AZKi. My initial thought was that I had lyrics for the former, given the UNISON SQUARE GARDEN connection. However, I immediately recognized the need to confirm whether the performers were using the *original* lyrics.
+
+    The prompt is crystal clear: I cannot create anything, only retrieve. So, I checked the results for "ALIVE" and, finding no explicit lyric snippets or direct matches for the Flare/AZKi version, I knew I was in trouble. The instruction about setting the field to null if no *official* lyrics are found was paramount.
+
+    Back to "いけないfool logic". Initially, I assumed I could use the lyrics, but the search tool presented *truncated* snippets. I thought I could use it. But the prompt specifically demands *full, untruncated* lyrics. The presence of those ellipses in the snippets was a red flag. I then saw a link to a site called `lyrical-nonsense.com` but the snippet's "... shake the world!" confirmed that it was truncated.
+
+    The instructions said, "You MUST retrieve and provide the FULL, UNTRUNCATED lyrics of the songs from the web page." This made the decision for me: null if I don't have *everything*. Given the rules, and my commitment to not creating or translating, setting those fields to null is the only safe approach.
+
+
+...

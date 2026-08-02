@@ -1,0 +1,44 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 304015
+lyrics_prompt_version: 9
+response:
+  global_summary: The video shows four VTubers on a brightly lit stage in a castle-themed
+    venue, discussing their outfits and showcasing details like shoes and accessories.
+    There is continuous background instrumental music throughout the video, but no
+    vocal music.
+  scenes:
+  - start: '00:00.000'
+    end: '05:03.000'
+    description: Four VTubers are on a stage discussing their costumes, with frequent
+      camera zooms to highlight specific details of their outfits, including shoes,
+      dresses, and accessories. Throughout this time, instrumental background music
+      plays while they converse in Japanese.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video and Task**
+
+    Okay, here's how I'm approaching this. The task is to analyze a video of VTubers, identify scenes, detect vocal songs, and find lyrics, all programmatically. I have to avoid manual transcription or translation, use a search tool only, and stick to a maximum of three search turns. Importantly, I'm not allowed to truncate lyrics or insert placeholders. I need to be precise, especially about the vocal content.
+
+    First, I need to understand the video content. It appears to show a group of virtual idols on a stage. They seem to be chatting and showing off their outfits. The critical part is the audio. I need to confirm whether there are vocal songs playing at all. *Wait*, I should be sure to listen again. Is there any singing in the background?
+
+    *Refinement*. The instructions state, "detect ALL vocal songs playing". If there are *no* vocal songs, then I must set the `contains_vocal_music` field to `false` and keep the lyrics fields as `null`. That is the correct response!
+
+    Next is scene mapping. The video seems to be a single, continuous segment. The VTubers are on stage the entire time, even if there are slight changes in visual presentation (zooming in, etc.). I will map this as a single scene. Start at 00:00.000 and the end at approximately 05:03.000 (I'll confirm the actual end).
+
+    Since there are no vocal songs, I'm skipping the search for lyrics. The prompt is asking me to "detect ALL vocal songs", so if there aren't any, the data should reflect that.
+
+    My initial summary will be: The video features four VTubers on stage in a brightly lit, castle-like venue, engaging in conversation about their stage outfits, zooming in to show details like shoes and accessories. There is continuous instrumental background music, but no vocal music.
+
+    My scene mapping will have Start: 00:00.000 and End: 05:03.000, and `contains_vocal_music` will be `false`.
+
+    *Verification:* Okay, let me listen again, just to make sure. I hear only spoken Japanese and instrumental music. No vocals. The instructions are clear: if no vocal music, keep the lyrics data `null`. I'm ready to finalize the JSON response.
+
+
+...
