@@ -1,0 +1,130 @@
+name: part_007
+total_attempts: 1
+video_duration_ms: 300382
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '01:10.000'
+    end: '01:19.000'
+    original: The concert will be starting soon.
+    english: The concert will be starting soon.
+  - start: '01:19.000'
+    end: '01:29.000'
+    original: Attention For Visitors
+    english: '[Attention For Visitors]'
+  - start: '01:29.000'
+    end: '01:49.000'
+    original: 2nd Round of Concert Merch Sales
+    english: '[2nd Round of Concert Merch Sales]'
+  - start: '04:20.000'
+    end: '04:29.000'
+    original: The concert will be starting soon.
+    english: The concert will be starting soon.
+  - start: '04:29.000'
+    end: '04:39.000'
+    original: Attention For Visitors
+    english: '[Attention For Visitors]'
+  - start: '04:39.000'
+    end: '04:59.000'
+    original: 2nd Round of Concert Merch Sales
+    english: '[2nd Round of Concert Merch Sales]'
+  thoughts: |+
+    **Subtitle Generation for "Drawn to Dawn" Pre-Show Segment**
+
+    Okay, so I've got this video segment from 00:00 to 05:01, and the task is subtitles. Immediately, I'm checking the content: it's a pre-concert screen showing fan art messages and concert info for "Takanashi Kiara / Ninomae Ina'nis 1st Concert 'Drawn to Dawn'". The audio is purely instrumental BGM, which means *no* spoken dialogue to latch onto, which is crucial according to the "golden rules". No vocals means I look at visuals.
+
+    Now, let's get down to the brass tacks of visual text. The instructions are clear: subtitle prominent, relevant on-screen text, like titles and signs, but ignore background clutter. There's an example in the instructions to follow, so I've been checking for instances of that.
+
+    I've scanned the video and identified what is, in my professional assessment, the key visual info. There are several slides with on-screen text like "Drawn to Dawn", "The concert will be starting soon.", "Attention For Visitors", and "2nd Round of Concert Merch Sales". The vocal waveform check confirms there's zero audio.
+
+    I've honed in on the key slides and their durations, which is the crux of this.
+
+    First, I identified a cycle of prominent titles, so I then verified the exact timecodes.
+
+    -   From 01:10.000 to 01:19.000, there's "The concert will be starting soon."
+    -   Then, from 01:19.000 to 01:29.000, it's "Attention For Visitors."
+    -   This transitions to "2nd Round of Concert Merch Sales" from 01:29.000 to 01:49.000.
+
+    Then the cycle repeats:
+
+    -   From 04:20.000 to 04:29.000: "The concert will be starting soon."
+    -   Followed by 04:29.000 to 04:39.000: "Attention For Visitors."
+    -   Finally, from 04:39.000 to 04:59.000: "2nd Round of Concert Merch Sales."
+
+    I've triple-checked everything, particularly the timestamps and text, to ensure perfect compliance. There's no spoken dialogue; the subtitles are based solely on the visual events. It is now ready to build the output.
+
+
+- subtitles:
+  - start: '01:10.000'
+    end: '01:19.000'
+    original: The concert will be starting soon.
+    english: The concert will be starting soon.
+  - start: '01:19.000'
+    end: '01:29.000'
+    original: Attention For Visitors
+    english: '[Attention For Visitors]'
+  - start: '04:20.000'
+    end: '04:29.000'
+    original: The concert will be starting soon.
+    english: The concert will be starting soon.
+  - start: '04:29.000'
+    end: '04:39.000'
+    original: Attention For Visitors
+    english: '[Attention For Visitors]'
+  thoughts: |+
+    **Subtitle Generation for a Vocal-Free Video Segment**
+
+    Okay, so the task is to generate subtitles for a video segment. The first thing I've got to do is analyze the source material. It's a video showing slides related to Takanashi Kiara and Ninomae Ina'nis' 1st Concert "Drawn to Dawn," including fan art, concert info, rules, and merch. But, and this is *critical*, there's no audio at all, just instrumental background music. No vocals, no spoken dialogue, nothing.
+
+    Now, let's reference the instructions. The Golden Rule demands that subtitles are *only* generated based on the presence of spoken dialogue. "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music, long pauses, or sound effects." If there are no vocals, output nothing. However, there's an exception for prominent, relevant *visual* text.
+
+    So, I need to check the on-screen text. At 01:10 - 01:19, the screen displays "The concert will be starting soon." From 01:20 - 01:29, it says "Attention For Visitors," followed by "Please be aware of flashing lights during the performance" and "Cheering loudly is ok."  Then, from 01:30 - 01:49, we have "2nd Round of Concert Merch Sales."  There's a repeat of "The concert will be starting soon." at 04:20 - 04:29, and "Attention For Visitors" at 04:30 - 04:39. Finally, "2nd Round of Concert Merch Sales" appears at 04:40 - 05:00.
+
+    I'm checking the JSON file and it is indicating `contains_vocal_music: false`.
+
+    So, the next step is to assess if those on-screen titles, "The concert will be starting soon." or "Attention For Visitors," qualify as "prominent, relevant text" that warrants subtitling, per the exception rule. My interpretation is that yes, these are announcements and instructions, so are relevant.
+
+    To be extra certain, I need to verify that those texts are centered and clear:
+    *   01:10.000 - 01:19.000: "The concert will be starting soon."
+    *   01:19.000 - 01:29.000: "Attention For Visitors"
+    *   04:20.000 - 04:29.000: "The concert will be starting soon."
+    *   04:29.000 - 04:39.000: "Attention For Visitors"
+
+    So, now I have my timings precisely verified. And after a very thorough visual check, zero spoken words or singing.
+
+    Finally, let me construct the appropriate JSON output based on the instructions, using that correct format... Here goes:
+    ```json
+    {
+      "subs": [
+        {
+          "s": "01:10.000",
+          "e": "01:19.000",
+          "og": "The concert will be starting soon.",
+          "en": "The concert will be starting soon."
+        },
+        {
+          "s": "01:19.000",
+          "e": "01:29.000",
+          "og": "Attention For Visitors",
+          "en": "[Attention For Visitors]"
+        },
+        {
+          "s": "04:20.000",
+          "e": "04:29.000",
+          "og": "The concert will be starting soon.",
+          "en": "The concert will be starting soon."
+        },
+        {
+          "s": "04:29.000",
+          "e": "04:39.000",
+          "og": "Attention For Visitors",
+          "en": "[Attention For Visitors]"
+        }
+      ]
+    }
+    ```
+
+    Now let me go through it one more time to make sure that the timings are correct and that the structure matches the schema. I want to make sure the output is impeccable.
+
+
+...
