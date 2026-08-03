@@ -1,0 +1,25 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300048
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Subtitle Decision: Waiting Screen for Hoshimachi Suisei's Budokan Live**
+
+    Okay, so I've got this video segment – it's a waiting screen for Suisei's Budokan concert, "SUPERNOVA." The audio is purely instrumental electronic music, no vocals, no singing, no speaking. The JSON confirms this: `contains_vocal_music: false`, and `reference_lyrics_og: null`.
+
+    Now, the "ZERO GHOST SUBTITLES" rule is clear: *SILENCE* for instrumental sections unless there's a prominent *visual* event. Let's dig in a bit. Is there anything on-screen, visually, that needs subtitling?
+
+    The video starts with an "ATTENTION" notice. Let's see what that says. Okay, there's Japanese text: "ATTENTION ご来場のお客様へ", then a translation: "Please be aware of flashing lights during the performance." and "Cheering loudly is ok".
+
+    Now, the instruction set says to subtitle "prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters)." This looks like a standard notice or event info, it seems to fall under that category. Usually, UI elements are subtitled or ignored but I'm being mindful, I need to check the rules.
+
+    Let's check the examples to be sure. I'm recalling Example: Handling Silent On-Screen Text Before Dialogue (Chapter 1). Ah, it's a concert waiting screen, similar to what I'm looking at. But the English translation is *already* on screen. If English is already present, or if it's just a waiting screen loop, subtitling isn't strictly necessary unless requested, unless there are vocals. There are *no* vocals!
+
+    So, the "ZERO GHOST SUBTITLES" rule absolutely applies: no vocals, bilingual on-screen text as a disclaimer, and instrumental music means an empty subtitle list (`{ "subs": [] }`) is the correct output.
+
+    Just to be absolutely certain, let's confirm the entire video duration (00:00 to 05:01): it's background music with fan messages scrolling. No singing, no speaking. Therefore, *no subtitles* are required. I'm going with an empty list.
+
+
+...
