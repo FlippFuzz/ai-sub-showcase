@@ -1,0 +1,44 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 218028
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '03:29.000'
+    end: '03:31.000'
+    original: 手毬
+    english: '[Title: Temari]'
+  thoughts: |+
+    **Final Thoughts on Subtitling the Video**
+
+    Okay, so I've got this video that needs subtitles. It starts with a 3D intro and credits (00:00-02:40), then segues into Ninomae Ina'nis's music video for "Temari" (02:40-03:37.387). My first thought is, let's nail the rule: vocal audio is *the* ground truth. No vocals, no subtitles, except for prominent on-screen text.
+
+    The intro is a non-issue; it's instrumental.  The "Temari" portion is where it gets interesting. I need to make *absolutely* sure there are vocals.  I initially assume there are, but I've learned to be careful, so let's listen. Starting from 02:40, It sounds like instrumentals at first. Then, let's carefully review the time code again. At 03:28 or 03:29, Ina'nis appears with a red umbrella, and then the title card pops up: "手毬" (Temari). I want to carefully scan the audio, to see if there are any vocals at all. I have the reference lyrics, but I want to double-check.
+
+    I carefully analyzed the audio from 02:40 on, playing it back, scrutinizing every second. It's ambient, traditional Japanese instruments, music box chimes...but no singing, no speech. The "Temari" song appears to be an instrumental version or arrangement of the original, with music only.
+
+    This changes everything. The "contains_vocal_music": true in the reference JSON is wrong. The rules say I *ignore* that if there are no vocals. If no vocals are heard, I output nothing, except for the prominent visual text. I even go back to verify the reference lyrics. I have to be very careful.
+
+    Now, let's focus on prominent visual events. At 03:29, the title "手毬" is prominently displayed. That's a clear subtitle candidate, but I must make sure of the specific time. I pinpointed that it appears at 03:29.000 and disappears around 03:31.000, and is fully legible from that point, and will go with that time code.
+
+    I need to confirm no other text on-screen needs subtitling, like the credits, etc. I re-read the rules on UI vs. visual text. The scrolling credits are considered UI; that's just background clutter, unless it's a major title card. But "手毬" (Temari) is the *title* of the song, so I need to subtitle it.
+
+    So, the logic is now straightforward: vocal rule is paramount, so zero ghost subtitles. "手毬" is our only visual text.
+
+    The final output will be:
+
+    ```json
+    [
+      { "s": "03:29.000", "e": "03:31.000", "og": "手毬", "en": "[Title: Temari]" }
+    ]
+    ```
+
+    Final verification:
+    - Rule check: no vocals, except prominent title
+    - Format is correct
+    - JSON structure checks out.
+
+    Solid. Time to ship.
+
+
+...
