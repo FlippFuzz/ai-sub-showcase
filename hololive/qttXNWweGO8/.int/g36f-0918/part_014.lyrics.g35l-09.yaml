@@ -1,0 +1,55 @@
+name: part_014
+total_attempts: 1
+video_duration_ms: 178891
+lyrics_prompt_version: 9
+response:
+  global_summary: The video displays the official end screen for the free sneak peek
+    stream of 'hololive 7th fes. Ridin' on Dreams', featuring celebratory branding
+    and instrumental background music without any vocal performances.
+  scenes:
+  - start: '00:00.000'
+    end: '02:58.000'
+    description: The video displays an end screen for 'hololive 7th fes. Ridin' on
+      Dreams Supported by LAWSON' with Japanese and English text announcing the end
+      of the free sneak peek stream, accompanied by instrumental background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Clip**
+
+    Okay, so I've been given a video clip and I need to analyze its content. My initial thought is to break this down logically. First, let's see what we're looking at. The on-screen text confirms it's from "hololive 7th fes. Ridin' on Dreams," sponsored by Lawson. The Japanese text translates to something like "Sneak peek part has ended. Thank you for watching," which tells me this is likely an end screen.
+
+    Now, let's delve into the audio. The primary focus here is the background music. I need to identify what's playing. Around the 1:38 mark, a shift in the music occurs. I'm going to carefully analyze the audio throughout the entire video to determine if there are any vocals. The presence or absence of vocals directly affects the metadata I'll need to extract. I'll search or cross-reference it as either BGM from the event or a known track.
+
+    After going over the video from 0:00 to 2:58, I have to say, it's a static image of the event's end screen, with music playing. I focused on the audio from 0:00-01:38, which sounds like an orchestral or ambient intro. Then, from 01:38-02:58, there is a chiptune/synthwave or game-like BGM. However, after repeated listening, there are NO vocals.
+
+    The standard guidelines stipulate that if no sung vocals are present, `contains_vocal_music` needs to be set to `false`. That's critical information.
+
+    I'm thinking now about the scenes. It's essentially one long scene, the end screen, but with a musical transition. I'll divide it into two scenes:
+
+    *   Scene 1: 00:00.000 - 01:38.000 (Orchestral/Ambient BGM)
+    *   Scene 2: 01:38.000 - 02:58.000 (Chiptune/Electronic BGM)
+
+    Both of these scenes have no vocals, which means I'll be setting `contains_vocal_music` to `false` for each one. With no vocals identified, the song metadata and lyrics are going to be null. I should also double check there are *absolutely* no vocals in either track. Nope, no vocals.
+
+    Okay, I'm confident about this now. I'm ready to properly structure the JSON response, based on my analysis.
+
+
+
+    **My Analysis of the Video's Content**
+
+    Okay, so I'm looking at an end screen from the free preview portion of "hololive 7th fes. Ridin' on Dreams Supported by LAWSON." The video is pretty straightforward – it's just the end screen itself. There are no sung vocals to be found, just some background music playing.
+
+    Let's break down the scene:
+
+    *   **Scene 1:** It starts at `00:00.000` and goes until `02:58.000`. Basically, the entire clip is the end screen. It's got the "sneak peek over" message and instrumental music. No vocals, so that's `false` for vocal music presence. The song details are currently `null` because they're not provided.
+
+    As far as requirements go, I need to provide a global summary and the output needs to be in a JSON format matching the schema. Seems easy enough. The global summary is essentially: "The video displays the official end screen for the free sneak peek stream of 'hololive 7th fes. Ridin' on Dreams', featuring celebratory branding and instrumental background music without any vocal performances." Alright, let's get this output formatted correctly, and make sure everything is clearly stated.
+
+
+...
