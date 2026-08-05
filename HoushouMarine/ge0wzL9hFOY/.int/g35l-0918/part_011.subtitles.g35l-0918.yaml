@@ -1,0 +1,23 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 115018
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Subtitle Decision: End Screen Analysis**
+
+    Okay, so the goal is subtitles for this video segment. I've got the video and the reference JSON. From what I see, it's a static end screen for Houshou Marine's 1st live, with the text "無料パートは終了いたしました ご視聴ありがとうございました" (Japanese) and "The sneak peek part of the show has ended. Thank you for watching" (English). There's no audio, just silence or background music.
+
+    My initial thought was to see if there was prominent on-screen text to subtitle, as per the Visual Events exception. And yes, there's text! But wait...it's *already* burned into the screen in both Japanese and English. Now, the instructions tell me to translate prominent visual text, but exclude UI elements and "meaningless background clutter."
+
+    Okay, let's break this down. Is this text crucial? It *is* a broadcast notice saying the free part is over, which could be important to some viewers. But, it's an end screen notification. And, more crucially, it's *already* in English.
+
+    Then, there's the zero ghost subtitles rule: "Remain SILENT during pure instrumental music, long pauses, or sound effects. If no vocals are heard in the audio track, output nothing (unless there is a prominent Visual Event)." Hmmm, is this an exception? Is it a "prominent Visual Event" like a chapter title? Maybe... but it's really a broadcast notice, an end-screen, and the English is already on screen.
+
+    Let's look at the example "Handling Silent On-Screen Text Before Dialogue". They talk about chapter titles, but this is an end screen notice. My standard practice here would be to leave end-screen notices with English on-screen alone unless there is foreign text that needs to be translated. Here, the text is both English and Japanese. No vocals.
+
+    The "ZERO GHOST SUBTITLES" rule is clear: *no* vocals, *no* subtitles (unless a "prominent Visual Event"). Since there is no vocal audio and the English is burned in, an empty list of subtitles should be correct. Double-checking... `{"subs": []}`. Decision made.
+
+
+...
