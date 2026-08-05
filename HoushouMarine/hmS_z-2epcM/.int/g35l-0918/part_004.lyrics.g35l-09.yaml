@@ -1,0 +1,149 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a promotional clip for Houshou Marine's 1st live 'Ahoy!!
+    You're All Pirates', featuring sponsor acknowledgments, perfume and jewelry collaborations,
+    fan messages, and merchandise announcements with background instrumental music.
+  scenes:
+  - start: '00:00.000'
+    end: '00:07.000'
+    description: Intro sequence displaying sponsor logos and the live event title
+      card.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:07.000'
+    end: '00:25.000'
+    description: Commercial announcement for Houshou Marine's produced perfume with
+      Anideal.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:25.000'
+    end: '00:43.000'
+    description: Announcement for U-Treasure collaboration jewelry inspired by Houshou
+      Marine.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:43.000'
+    end: '02:44.000'
+    description: Scrolling fan message board background with upbeat instrumental music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:44.000'
+    end: '05:00.000'
+    description: Pre-live information, attention notices, and merchandise line-up
+      announcements for the 1st live event.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Houshou Marine Merchandise/Live Promo Video**
+
+    Okay, so I need to break down this video featuring Houshou Marine's merch and her first live event, "Ahoy!! Kimi-tachi Minna Pirates!!". My primary focus right now is the audio – what kind of music is used, and more importantly, are there any *vocal* tracks?
+
+    Let's start from the beginning. First, the intro and sponsor logos (00:00 - 00:07). Just instrumental background music there. Next up, the Anideal perfume commercial (00:07 - 00:25). It has background music, let's determine if it's instrumental or has vocals. Okay, let me carefully listen, seems like an instrumental pop/dance track.
+
+    Then, the U-Treasure jewelry announcement (00:25 - 00:43). The text mentions "I'm Your Treasure Box". Okay, I hear that music box instrumental version. But is it *just* instrumental, or does it incorporate the song? Let me double-check... yep, it's instrumental, like a chime or music box version of it or a similar instrumental.
+
+    Now, for the longer section from 00:43 to 02:44, a message board with music playing in the background. What's this track? Is it instrumental electronic or does it have vocals? It sounds like an instrumental track or chiptune/electronic beat, no prominent sung vocals. Let's see if 01:06-01:13 has any vocals in the background music.
+
+    And finally, the pre-live information, goods announcements, and tour details (02:44 - 05:00) with background music. Checking if there are vocals in that.
+
+    Right, my main task is to verify if *any* scene contains vocal music. So far, it seems like everything is instrumental, but I need to be absolutely certain. Let me go back and listen again, paying very close attention to potential background vocal tracks. No, I still don't hear any prominent vocals. Let's see, it's all instrumental.
+
+    So, let's verify if there is any vocal music in any scene. "contains_vocal_music": false. Then all of song title, artist, performer, language, and lyrics fields are `null`.
+
+    Let me do a quick search using `web_search_langsearch_multi` to check if this video is a known Hololive / Houshou Marine promotional video.
+
+
+
+    **Analysis of Houshou Marine's Promotional Video**
+
+    Okay, so I've got this promotional video for Houshou Marine's 1st Live, "Ahoy!! Kimi-tachi Minna Pirates♡". It's a classic commercial setup, showcasing sponsors, merchandise, and collaborations – perfume, jewelry, ticket info, the usual. The whole thing runs with background instrumental music, and there's some scrolling text, but no actual sung vocal music segments are present in this clip.
+
+    First, I need to break down the scenes meticulously. Let's see... the video's running from 00:00 to 05:00, and I'm segmenting it as follows:
+
+    *   **00:00.000 - 00:07.000:** That's the sponsor intro and the title card, purely instrumental music in the background.
+    *   **00:07.000 - 00:25.000:** Ah, a perfume commercial for Houshou Marine, in collaboration with Anideal.
+    *   **00:25.000 - 00:43.000:** The U-Treasure jewelry collab announcement.
+    *   **00:43.000 - 02:44.000:** Here we have a message board with fan messages and some scrolling text, using upbeat instrumental music.
+    *   **02:44.000 - 05:00.000:** Finally, pre-live information, attention notices, and merchandise announcements for the 1st Live.
+
+    Given this scene breakdown, it's clear that *none* of these segments contain any vocals—no singing whatsoever. Therefore, the `contains_vocal_music` field needs to be `false` for every single scene. Consequently, all the song metadata fields, things like `song_title`, `original_artist`, `performer_in_video`, `original_language`, and both lyric fields (`reference_lyrics_og` and `reference_lyrics_en`), should be populated with `null`.
+
+    Now, time to structure the JSON output correctly, following the specified schema:
+    ```json
+    {
+      "global_summary": "The video is a promotional clip for Houshou Marine's 1st live 'Ahoy!! You're All Pirates', featuring sponsor acknowledgments, perfume and jewelry collaborations, fan messages, and merchandise announcements with background instrumental music.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "00:07.000",
+          "description": "Intro sequence displaying sponsor logos and the live event title card.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "00:07.000",
+          "end": "00:25.000",
+          "description": "Commercial announcement for Houshou Marine's produced perfume with Anideal.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "00:25.000",
+          "end": "00:43.000",
+          "description": "Announcement for U-Treasure collaboration jewelry inspired by Houshou Marine.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "00:43.000",
+          "end": "02:44.000",
+          "description": "Scrolling fan message board background with upbeat instrumental music.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video
+
+...
