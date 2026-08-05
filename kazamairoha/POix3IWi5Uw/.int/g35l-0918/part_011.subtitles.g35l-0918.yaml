@@ -1,0 +1,113 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **My Subtitle Assessment**
+
+    Okay, so I've got this VTuber video segment – Kazama Iroha, I think – and the user wants subtitles. Right, let's dive in. First glance: it's purely instrumental chiptune music playing. No vocals, no speech. Just background music. Let's make sure, though. I'll carefully check the audio, specifically from the beginning up to the 4:59 mark, to be absolutely certain there are no buried vocalizations.
+
+    Nope. Just the background music – chimes, a music box melody, that retro game style sound. Nothing else. Let's double check *again*. The rule is clear: "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music, long pauses, or sound effects." If there's no speech, no subtitles. Simple.
+
+    Now, are there *any* visual events that might warrant a subtitle? I see product slides popping up – eye masks, plushies, keyholders, merch sets. But those are just merchandise announcements, product displays. They aren't chapter titles, essential story text, or location signs. Are product displays, in this situation, something that needs subtitling? No, it's just stream visuals. Typically, in VTuber streams with background music and no voice, no subtitles are generated because there is no dialogue or narrative title cards.
+
+    Just to be absolutely sure, let's go back and re-listen to the audio, just to confirm there isn't *any* vocal component hiding in there. Still nothing but the instrumental chiptune theme from 00:00 to 04:59. Also, let's verify that the JSON confirms what I'm hearing. Yep, all scenes have `contains_vocal_music: false`.
+
+    So, no vocal events. And no prominent visual events requiring subtitling. Therefore, the output *must* be an empty list of subtitles: `subs: []`.
+
+    Let's do one last run through the checklist:
+    -   VOCAL EVENTS: No spoken dialogue, no dialogue text, no vocal audio.
+    -   VISUAL EVENTS: No prominent story text, no title cards, no chapter headers (just product displays).
+    -   ZERO GHOST SUBTITLES: Silence during pure instrumental music.
+
+    Everything checks out. I'm going to output that empty `subs` array.
+
+
+- subtitles:
+  - start: '00:00.000'
+    end: '00:09.000'
+    original: ぽこべぇ アイマスク
+    english: '[Ponpoko Eye Mask]'
+  - start: '00:09.500'
+    end: '01:52.000'
+    original: ころりんぽこべぇぬいぐるみ
+    english: '[Kororin Ponpoko Plushie]'
+  - start: '01:52.500'
+    end: '03:45.000'
+    original: ランダムアクリルキーホルダー
+    english: '[Random Acrylic Keyholder]'
+  - start: '03:45.500'
+    end: '04:19.500'
+    original: 活動3周年記念フルセット
+    english: '[3rd Anniversary Full Set]'
+  - start: '04:20.000'
+    end: '04:59.000'
+    original: フルセット購入特典
+    english: '[Full Set Purchase Bonus]'
+  thoughts: |+
+    **My Analysis of Kazama Iroha's Merchandise Showcase**
+
+    Okay, so I need to subtitle this video of Kazama Iroha's merchandise showcase for her 3rd anniversary. First thing's first, I need to check the audio. Is she actually *speaking* in this segment, or is it just background music? I need to be *absolutely* sure. A careful listen confirms it: there are no vocal tracks, only instrumental BGM. Now, given the instructions, I have to remember the golden rule: "ZERO GHOST SUBTITLES." I'm not outputting dialogue unless there's vocal audio.
+
+    But, wait... what about on-screen text? The video is *full* of prominent product titles and descriptions. "Ponpoko Eye Mask," "Kororin Ponpoko Plushie," "Random Acrylic Keyholder" and the like are all clearly visible. That visual text rule is in effect: "If prominent, relevant text appears on screen, subtitle it... even if there is no audio."
+
+    So, my focus shifts to identifying and subtitling the important text elements. Are they UI or just clutter? No, they're prominent chapter markers/titles! Let's check how those titles change over time.
+
+    Okay, I see the titles and their on-screen durations:
+    -   00:00 - 00:09: 「ぽこべぇ アイマスク」 / 「ころりんぽこべぇぬいぐるみ」 (Ponpoko Eye Mask / Kororin Ponpoko Plushie)
+    -   01:52 - 03:45: 「ランダムアクリルキーホルダー」 (Random Acrylic Keyholder)
+    -   03:45 - 04:19: 「活動3周年記念フルセット」 (3rd Anniversary Full Set)
+    -   04:20 - 04:59: 「フルセット購入特典」 (Full Set Purchase Bonus)
+
+    I double-check the example in the prompt, looking at how the "on-screen" subtitles are handled in JSON format. Okay, I've got this. I carefully map the subtitles:
+
+    1.  00:00 - 00:09: \[Ponpoko Eye Mask]
+    2.  00:09.500 - 01:52.000: \[Kororin Ponpoko Plushie]
+    3.  01:52.500 - 03:45.000: \[Random Acrylic Keyholder]
+    4.  03:45.500 - 04:19.500: \[3rd Anniversary Full Set]
+    5.  04:20.000 - 04:59.000: \[Full Set Purchase Bonus]
+
+    Alright, that covers all the main sections; it fits the video precisely. I just need to translate the Japanese titles, then encode it all into the JSON structure, making *absolutely* certain about the formatting (MM:SS.mmm), translations, and timecodes and no overlaps. Let's make sure it's accurate:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:00.000",
+          "e": "00:09.000",
+          "og": "ぽこべぇ アイマスク",
+          "en": "[Ponpoko Eye Mask]"
+        },
+        {
+          "s": "00:09.500",
+          "e": "01:52.000",
+          "og": "ころりんぽこべぇぬいぐるみ",
+          "en": "[Kororin Ponpoko Plushie]"
+        },
+        {
+          "s": "01:52.500",
+          "e": "03:45.000",
+          "og": "ランダムアクリルキーホルダー",
+          "en": "[Random Acrylic Keyholder]"
+        },
+        {
+          "s": "03:45.500",
+          "e": "04:19.500",
+          "og": "活動3周年記念フルセット",
+          "en": "[3rd Anniversary Full Set]"
+        },
+        {
+          "s": "04:20.000",
+          "e": "04:59.000",
+          "og": "フルセット購入特典",
+          "en": "[Full Set Purchase Bonus]"
+        }
+      ]
+    }
+    ```
+
+    Now, it's time to verify that this JSON structure is correct, complete,
+
+...
