@@ -1,0 +1,52 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 300976
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Subtitle Decision for "Sakura Miko 1st Live flower fantasista!" Promotional Video**
+
+    Okay, so I'm looking at this video for "Sakura Miko 1st Live flower fantasista!" and need to decide if we generate subtitles. First, I check the reference JSON, which says `contains_vocal_music` is false. That's a good starting point. I confirm this by listening to the audio; it's indeed just an 8-bit chiptune instrumental track. No vocals whatsoever.
+
+    Now, the main instruction I need to focus on is "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music, long pauses, or sound effects. If no vocals are heard in the audio track, output nothing (unless there is a prominent Visual Event)." Okay, so no vocals, but I need to consider "prominent Visual Events."
+
+    I check the video content. There's a mix of fan messages and notice screens. Specifically, from 00:00 to 01:56, it's fan art and messages. Then, from 01:57 to 02:04, there's "The concert will be starting soon" and a Miko illustration. Following this is the "Attention" notice from 02:05 to 02:11, and then from 02:12 to 02:44, it displays some goods information. The video loops with more fan messages from 02:45 to 05:01.
+
+    Are these notice screens considered prominent visual events that should be subtitled, even without audio? The instruction says, "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio."
+
+    Let's think about this practically. A typical pre-concert waiting screen often loops a bunch of stuff. I check standard operating procedures. I can't subtitle thousands of tiny handwritten messages but I need to consider subtitling the notice screens. Let's re-read the relevant instruction again to be sure: "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio."
+
+    The key is "prominent and relevant." It's not a narrative scene title, and the notice screens might not be *essential* to the viewer experience, but they are clearly visible and relay important information.
+
+    Still, the audio is completely instrumental. No vocals. Let's go back to that "ZERO GHOST SUBTITLES" rule. The prompt specifically says "If no vocals are heard in the audio track, output nothing (unless there is a prominent Visual Event)."
+
+    I'm starting to think this is just a pre-concert loop with background chiptune. Ultimately, I'm leaning toward an empty list.
+
+    I go back and check the example 5 to consider other options. The example shows chapter titles or prominent notices can be subtitled if they are prominent visual events. But here, the fan art scrolling/flashing text in the background, are fan messages. They are not essential, but the concert waiting screen is a notice screen. But it is still just the background loop.
+
+    After a final review of the rules and the video content, and following the instruction on "ZERO GHOST SUBTITLES", I conclude the correct output should be `{ "subs": [] }`. This seems the cleanest and most accurate interpretation of the instructions, given the lack of vocals and the nature of the video as a mostly instrumental pre-concert loop.
+
+
+- subtitles: []
+  thoughts: |+
+    **Subtitle Decision: Sakura Miko 1st Live "flower fantasista!" Video**
+
+    Okay, so I need to decide on subtitles for this video about Sakura Miko's 1st Live, "flower fantasista!". The JSON says it's got fan art, messages, event info, and merch announcements, all set to an 8-bit chiptune instrumental track. The crucial thing is `contains_vocal_music`: false, so I need to verify that.
+
+    I've carefully listened to the audio, and it's definitely just the chiptune looping. No vocals whatsoever. Okay, but I need to make sure I check the *visual* element, since there is that visual event rule.
+
+    Now I'm looking at the video itself. It's chock-full of on-screen text in Japanese and English: fan messages, event dates, merchandise details, and they are visual event. But it's changing rapidly, a dense barrage of graphics. It's way too much to subtitle comprehensively. The instructions say if there is a Visual Event and it is prominent, relevant text, but that seems subjective at best.
+
+    Let me circle back to the instructions: ZERO GHOST SUBTITLES. Remain SILENT during pure instrumental music. *If no vocals are heard in the audio track, output nothing* (unless there is a prominent Visual Event). Do not use reference data to fill silent gaps. Okay, those are the rules.
+
+    Just to be absolutely sure, I've checked the audio from start to finish, from 00:00 to 05:01. Zero vocals.
+
+    So, in this case, since the audio is purely instrumental, and the on-screen visuals are not clearly relevant visual events that have to be subtitled, ZERO GHOST SUBTITLES means... nothing.
+
+    I'm checking the system instructions again to make sure I am doing the right thing.
+
+    The correct output is an empty list of subtitles (`subs: []`).
+
+
+...
