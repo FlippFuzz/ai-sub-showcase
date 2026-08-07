@@ -1,0 +1,79 @@
+name: part_002
+total_attempts: 1
+video_duration_ms: 301648
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a promotional slideshow and intermission screen
+    for the hololive English 2nd Concert 'Breaking Dimensions', showcasing fan messages,
+    fan art, merchandise, and notices with instrumental background music playing throughout.
+    There are no vocal songs with sung lyrics in this video clip.
+  scenes:
+  - start: '00:00.000'
+    end: '02:40.000'
+    description: A slideshow of fan art and heartfelt messages celebrating hololive
+      English 2nd Concert Breaking Dimensions, accompanied by instrumental background
+      music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:40.000'
+    end: '02:52.000'
+    description: An intermission screen displaying the official hashtag and a notice
+      that the concert will be starting soon, with flashing light warnings.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:52.000'
+    end: '03:36.000'
+    description: A showcase of made-to-order concert merchandise including t-shirts,
+      folding fans, keychains, and acrylic stands with background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:36.000'
+    end: '05:01.789'
+    description: A continuation of fan message and art slideshows with instrumental
+      background music until the end of the clip.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video's Audio and Scene Breakdown**
+
+    Okay, so the task is to break down this video, "hololive English 2nd Concert Breaking Dimensions" promotional material, into scenes and identify any vocal music playing. Right, let's dive in. First, I need to understand the video's content. It's a slideshow of promotional material – fan art, messages, merch – with background music. My main focus is the presence of vocal music because the instructions are clear that *if* there are *active music with sung vocals* then `contains_vocal_music: True`. Otherwise, it's `False`.
+
+    I started by analyzing the entire audio track from the start. From 0:00 to 2:40, it's definitely instrumental, some upbeat synth/pop style BGM that seems to loop or play continuously. Just to be absolutely sure, I re-checked for any hidden vocals within this instrumental track, confirming: no vocals, just music.
+
+    From 2:40 to 2:52, there's a transition screen with the "Official Hashtag / 公式ハッシュタグ #BreakingDimensions" information and a "concert starting soon" message, with instrumental BGM. Then from 2:52 to 3:36, there are merchandise slides also accompanied by BGM. Finally, from 3:36 to 5:01, there's a continuation of fan message slides, again, with background music.
+
+    The crucial question: are there any *sung* vocals? I have to be absolutely sure because the presence of any vocal music, even if background, triggers `contains_vocal_music: True`. After a thorough listen and analysis of all the audio, I can categorically state that there are *no* sung vocals, not a single one. It's all instrumental background music.
+
+    Therefore, since no scenes contain active music with sung vocals, I can confidently set `contains_vocal_music: false` for *every* scene. This also means that any song metadata fields, including the lyrics, should be null for all scenes.
+
+    So, let's define the scenes:
+
+    *   **Scene 1:** 00:00.000 to 02:40.000 - Slideshow of fan messages and art with instrumental background music.
+    *   **Scene 2:** 02:40.000 to 02:52.000 - Concert starting soon screen with BGM.
+    *   **Scene 3:** 02:52.000 to 03:36.000 - Merchandise showcase slides with BGM.
+    *   **Scene 4:** 03:36.000 to 05:01.789 - Fan art and message slides with BGM.
+
+    I've verified that all scenes lack vocal music. Now it's a matter of properly structuring the output data with these details in the appropriate JSON format. This seems straightforward.
+
+
+...

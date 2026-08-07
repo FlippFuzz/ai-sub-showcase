@@ -1,0 +1,44 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 298973
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Subtitle Decision for the Hololive Pre-Stream**
+
+    Okay, so I've got this pre-stream screen for the "hololive English 2nd Concert -Breaking Dimensions-." I know it's instrumental music, fan art, and info slides – the usual waiting room stuff. My first instinct is, "No subtitles needed," but I have to be thorough.
+
+    First, I scrutinized the audio from the start at 00:00 to 04:58.700. Pure instrumental BGM. No vocals, no singing, no spoken dialogue. Confirmed. I'm double-checking because, you know, due diligence.
+
+    Now, I'm running through the rules. The "On-Screen Text Exception" – anything prominent visually that *needs* subtitles, even without audio? I have to look carefully.
+
+    This isn't a title screen, it's a pre-stream. It's the standard kind, you know – the waiting screen loop with all the fan messages. I know from experience that typically these don't get subtitled unless it's a very specific title card.
+
+    Wait, I just checked the reference JSON and it confirms: "contains_vocal_music": false. Great!
+
+    So, applying the "zero ghost subtitles" rule: if no vocals, output nothing. I'm also looking for prominent visual events that might trigger the exception. Nope, it's just the usual pre-stream visuals. No dialogue, no vocals, and no prominent on-screen text that requires a sub.
+
+    Therefore, no subtitles are needed for this video. Time to call the `final_result` with an empty `subs` array. Done.
+
+
+- subtitles: []
+  thoughts: |+
+    **Analyzing the hololive English 2nd Concert Waiting Screen for Subtitles**
+
+    Okay, so I need to generate subtitles for this "hololive English 2nd Concert -Breaking Dimensions-" waiting screen. First, I need to confirm if there are any vocals at all. The initial data says `contains_vocal_music: false`, but I *always* double-check. I'm going to meticulously review the audio, from 00:00 to 04:58. Let's see... it's instrumental background music, with fan messages and some announcement slides.
+
+    I'm listening carefully. Yep, it's all instrumental. No vocals whatsoever. The JSON data is correct in this case. Now, let's consider the rules: "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music..." Okay, that means if there are no vocals, I need to stay silent unless there's a *prominent visual event*.
+
+    Are there prominent visual events? I see text on screen: the title "#BreakingDimensions The concert will be starting soon," "Attention For Visitors," and merchandise slides. Are these contextual? Should they be subtitled?
+
+    The rule says that important text, like titles, should be subtitled if they provide context. Merchandise slides and waiting notices are generally not narrative visual events requiring subtitles in a concert waiting room stream. Based on that, I believe that no subtitles are needed for visual text here.
+
+    But wait! This "CRITICAL" verification message is throwing me off. It says "large gaps where audio was not transcribed." Is this a test? It could be a prompt injection where the system tries to trick me to output anything. Is it testing if I output something when there's no speech? The system also says that I must regenerate the subtitles for the entire video segment, so I must rigorously check.
+
+    Let's do a full, exhaustive check of the audio again, just to be *absolutely* sure. No vocals. It's just BGM, no speech, no hidden vocals or anything. Okay, confirmed.
+
+    So, since there are no vocals, and the on-screen text isn't a *prominent* visual event (just a waiting screen), the correct output is an empty `subs` array (`{ "subs": [] }`). I'm confident. I'm going to call `final_result` with `{ "subs": [] }`.
+
+
+...
