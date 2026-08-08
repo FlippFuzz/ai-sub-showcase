@@ -1,0 +1,97 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 299990
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '02:34.000'
+    end: '02:44.000'
+    original: 開演までしばらくお待ちください。
+    english: Please wait a moment for the performance to begin.
+  thoughts: |+
+    **Subtitle Strategy for a Promotional Countdown Stream**
+
+    Okay, so I've got this video segment – it's a promotional countdown stream screen with instrumental music, no vocals. My task is to figure out the best approach for subtitling it, keeping in mind the rules: no subtitles during instrumental sections unless there's on-screen text that's relevant and prominent.
+
+    First, I need to scan for any significant on-screen text. I see the "2nd Round of Concert Merch Sales" screen initially, but my gut feeling is that it's more of an informational slide, and probably too much clutter to subtitle every bit of it. I want to look for key visual text.
+
+    Then, there are the slides:
+    *   "The concert will be starting soon." (02:34 - 02:43)
+    *   "Attention For Visitors" (02:44 - 02:53)
+
+    I have to think – does the instruction about "prominent, relevant text" apply here? I usually handle title cards and signs, etc. "The concert will be starting soon" does feel important. The original language is English, and our output is English and, if needed, translation. Since we're in English, do I need to subtitle them? Maybe not, but I should look deeper for translations.
+
+    Aha! At 02:34 there is Japanese text, "開演までしばらくお待ちください。" This translates to "Please wait a moment until the performance begins." Now, that's something that warrants subtitling!
+
+    There's other Japanese text, but some is fine print and some are scrolling fan messages. I will skip those.
+
+    I'm confirming: "開演までしばらくお待ちください。" is prominent and in a different language, so I'll subtitle that.
+
+    Let's nail down the timing for the subtitle. The text appears at 02:34.000 and disappears at 02:44.000 (when "Attention For Visitors" appears).
+
+    So, my entry is: Start at 02:34.000, end at 02:44.000. The original text is "開演までしばらくお待ちください。", and the translation is "Please wait a moment for the performance to begin."
+
+    I think that's the only critical text to capture in this segment. I've covered the VISUAL EVENTS exception and the ZERO GHOST SUBTITLES rule. I should be good.
+
+    Let's prepare the JSON response:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "02:34.000",
+          "e": "02:44.000",
+          "og": "開演までしばらくお待ちください。",
+          "en": "Please wait a moment for the performance to begin."
+        }
+      ]
+    }
+    ```
+    Clean, accurate, and correct. Done.
+
+
+- subtitles:
+  - start: '00:00.000'
+    end: '00:03.700'
+    original: 2nd Round of Concert Merch Sales
+    english: 2nd Round of Concert Merch Sales
+  - start: '02:34.500'
+    end: '02:44.200'
+    original: 開演までしばらくお待ちください。
+    english: The concert will be starting soon.
+  - start: '02:44.200'
+    end: '02:54.000'
+    original: Attention For Visitors
+    english: Attention For Visitors
+  - start: '02:54.000'
+    end: '03:13.500'
+    original: 2nd Round of Concert Merch Sales
+    english: 2nd Round of Concert Merch Sales
+  thoughts: |+
+    **Subtitle Strategy for a Promotional Countdown Video**
+
+    Alright, let's break this down. We have a 5-minute video segment, and the task is subtitling, but there's a specific constraint: no vocal audio. The description confirms "instrumental background music" and `contains_vocal_music`: false, so the vocal audio waveform rule is absolute. We can't subtitle anything *based* on audio.
+
+    But, the "VISUAL EVENTS" rule is key here. It dictates that we *do* subtitle prominent on-screen text, regardless of the audio. The question becomes, what constitutes "prominent, relevant text"?
+
+    Looking at the video, we've got a countdown stream with concert merchandise promotion, fan messages, and attention notices. Specifically, I've identified four key visual segments:
+
+    1.  **"2nd Round of Concert Merch Sales"**: This is a clear title slide with information about a merchandise sale. There is a title in english.
+    2.  **Scrolling Fan Messages**: A constant stream of messages, but a collage of many small texts. It's important to differentiate from coherent and complete messages like titles.
+    3.  **"Attention For Visitors"**: Includes warnings about flashing lights and an encouragement to cheer.
+    4.  **"The concert will be starting soon."**:  This is a significant transition point. This one also has a Japanese translation underneath, "開演までしばらくお待ちください。" which I can use as `og`.
+
+    The plan is to subtitle these distinct, title-like, screen transitions, and to leave out the more fragmented and difficult-to-parse fan messages. This strategy ensures clarity while adhering to the visual event rule. I've listened to the audio, confirming there are no vocals.
+
+    I've carefully noted the timing of each screen. Here's a list:
+    *   00:00.000 - 00:03.700: "2nd Round of Concert Merch Sales"
+    *   02:34.500 - 02:44.200: "The concert will be starting soon." (og: "開演までしばらくお待ちください。")
+    *   02:44.200 - 02:54.000: "Attention For Visitors"
+    *   02:54.000 - 03:13.500: "2nd Round of Concert Merch Sales"
+
+    After reviewing the video sequence, these are the visual events that are appropriate for subtitling. The remaining video time is comprised of continuous fan messages, so there's no need to subtitle anything from 03:13.500 to 05:00.000.  The sequence is repetitive: Merchandise Slide 1, Fan messages, "The concert will be starting soon", "Attention For Visitors", Merchandise Slide 2, Fan messages.
+
+    The formatting is strictly MM:SS.mmm, so I have verified these times. I am confident in my selection of visual events for subtitling, adhering to both the absence of vocal audio and the prominence of relevant on-screen text.
+
+
+...
