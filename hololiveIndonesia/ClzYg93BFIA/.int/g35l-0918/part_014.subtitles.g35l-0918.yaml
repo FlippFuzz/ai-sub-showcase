@@ -1,0 +1,67 @@
+name: part_014
+total_attempts: 1
+video_duration_ms: 19781
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '00:03.500'
+    original: |-
+      MARI SAMBUT HARI DEPAN DENGAN SENYUMAN
+      DAN SUPPORT TERUS KARYA-KARYA HOLO ID!
+    english: |-
+      Let's welcome the future with a smile
+      and keep supporting Holo ID's works!
+  - start: '00:03.500'
+    end: '00:07.000'
+    original: HOLOID JAYA JAYA JAYA!!!
+    english: HoloID, long live, long live, long live!
+  - start: '00:14.000'
+    end: '00:17.000'
+    original: |-
+      MARI SAMBUT HARI DEPAN DENGAN SENYUMAN
+      DAN SUPPORT TERUS KARYA-KARYA HOLO ID!
+    english: |-
+      Let's welcome the future with a smile
+      and keep supporting Holo ID's works!
+  - start: '00:17.000'
+    end: '00:19.467'
+    original: HOLOID JAYA JAYA JAYA!!!
+    english: HoloID, long live, long live, long live!
+  thoughts: |+
+    **Subtitle Generation for Video Segment**
+
+    Okay, so the user wants subtitles for this video segment. The first thing I see is some prominent on-screen text in Indonesian. Right, let's pull up the Visual Events rules – ah, yes, the On-Screen Text exception! We're good to subtitle the text since it's clearly visible. Now, does the video have any audio? I can hear "Senandung Jiwa" playing in the background, but let's carefully check if there are any vocals during the text displays (0:00-0:07 and 0:14-0:19). I'll need to confirm if it's purely instrumental music or has singing. Hmm, the reference JSON says `contains_vocal_music`: `true`, but let's trust my own ears and eyes.
+
+    Alright, the music is playing, but it's instrumental during those text blocks. Let's look closely at the text: "MARI SAMBUT HARI DEPAN DENGAN SENYUMAN DAN SUPPORT TERUS KARYA-KARYA HOLO ID! HOLOID JAYA JAYA JAYA!!!" Time to translate: "Let's welcome the future with a smile and keep supporting Holo ID's works! HoloID, live forever, live forever, live forever!!!" or "HoloID glorious, glorious, glorious!!!" ("jaya" means victorious/glorious/prosperous).
+
+    Now to get this timed correctly. The text is visible from 00:00.000 to 00:07.000, and again from 00:14.000 to 00:19.467. Since there are no vocals, we can proceed as per the rule: "If prominent, relevant text appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio."
+
+    Let's start structuring this. Block 1: 00:00.000 to 00:07.000, and it'll be a black screen from 00:08.000 to 00:14.000. Block 2: 00:14.000 to 00:19.467. I'll need to refine the text to match the screen exactly. I'll split into lines and also account for line lengths (50 character limit) so I might also make blocks.
+
+    Let's divide that into:
+
+    *   00:00.000 to 00:03.500:
+        og: "MARI SAMBUT HARI DEPAN DENGAN SENYUMAN
+    DAN SUPPORT TERUS KARYA-KARYA HOLO ID!"
+        en: "Let's welcome the future with a smile
+    and keep supporting Holo ID's works!"
+    *   00:03.500 to 00:07.000:
+        og: "HOLOID JAYA JAYA JAYA!!!"
+        en: "HoloID, long live, long live, long live!"
+
+    And for the second block, 00:14.000 to 00:19.467:
+
+    *   00:14.000 to 00:17.000:
+        og: "MARI SAMBUT HARI DEPAN DENGAN SENYUMAN
+    DAN SUPPORT TERUS KARYA-KARYA HOLO ID!"
+        en: "Let's welcome the future with a smile
+    and keep supporting Holo ID's works!"
+    *   00:17.000 to 00:19.467:
+        og: "HOLOID JAYA JAYA JAYA!!!"
+        en: "HoloID, long live, long live, long live!"
+
+    Finally, let's re-verify the timestamps and boundaries. Looks perfect! Everything aligns with the visual text rule, is accurately translated, and respects all formatting guidelines. That's a clean and professional subtitle output.
+
+
+...
