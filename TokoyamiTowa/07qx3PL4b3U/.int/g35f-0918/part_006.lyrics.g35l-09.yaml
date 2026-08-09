@@ -1,0 +1,60 @@
+name: part_006
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: Tokoyami Towa stands on stage in a virtual venue, presenting her
+    birthday merchandise items (LED art panel, acrylic stand, keyholder, cap, and
+    full set bonuses) and announcing the digital release of her new song 'SMASH IT
+    UP!'.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.500'
+    description: Tokoyami Towa presents her birthday merchandise on stage, including
+      an LED art panel, a reversible acrylic stand, costume-motif keyholders, and
+      a matching cap, followed by the announcement of her new song 'SMASH IT UP!'.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of Tokoyami Towa Video Clip**
+
+    Okay, so I've got this video of Tokoyami Towa, and my task is to break down its musical content. First, let's get a handle on what's actually *in* the video. My initial thought is to just dive right in and check for music. So, I watched it.
+
+    From the start, 0:00 to roughly 5:00, Towa is on stage, talking about her birthday merch – things like LED panels, acrylic stands, and so on – and announcing her new song "SMASH IT UP!". I was listening closely, and there's no actual singing or vocal performance in this segment. It's all announcements and conversation.
+
+    To be completely certain, I revisited to see if "SMASH IT UP!" was being played *as a song* or just being discussed. She does talk about the "新曲 SMASH IT UP!" (new song), its digital release at midnight, and says something to the effect of wanting to close out today's live with it. However, it's clear she's simply *talking* about the song; there is no performance of it.
+
+    I did a sweep for any background music, perhaps some instrumental piece, even if it's royalty-free. Still, no actual *vocal* music is present.
+
+    Now, let's align this with the instructions and the schema. The task requires a "Global summary" and "Scenes," which are chronological and non-overlapping. Given that there's no vocal music detected, the `contains_vocal_music` field will be `false` for every scene. Consequently, song metadata and lyrics fields will all be null.
+
+    As a result, I'm thinking of a single scene:
+
+    *   **Scene 1: 00:00.000 - 05:00.000** - Towa presents her birthday merchandise, and announces "SMASH IT UP!" before her final live performance. `contains_vocal_music` is false.
+
+    The instructions also mention searching for lyrics if a song is detected. While "SMASH IT UP!" is mentioned, since it's not performed in this video clip, there's no need for me to include a search for the lyrics. I re-read the instructions, and it looks like I need to use the tools available. Since there's no music, I don't need to search.
+
+    Finally, I will double-check that the video's approximate duration is correct.
+    I'm confident I can now construct the correct JSON response.
+
+
+
+    **Analysis of the Tokoyami Towa Video Clip**
+
+    Okay, so I've examined this video segment featuring Tokoyami Towa. My initial search did turn up lyrics for "SMASH IT UP" (`sm4sh it up`), but after watching the clip, it's clear she's *only* talking. This is just a birthday merchandise presentation and a song announcement, she's not actually singing the song. This is a crucial point, and it directly addresses the constraint.
+
+    The instruction is very clear: I am *not* to transcribe any audio or translate any vocals. My lyrics source is the web search, and since the video doesn't contain any singing *in this specific section*, then `contains_vocal_music` has to be `false`. This means that song title, artist, performer, language, and lyrics will all be `null` for this entire segment. It's that simple.
+
+    Now, should I break this down into multiple scenes, or keep it as one continuous scene? The entire video is Towa on stage, talking about her merch and announcing the song. I could split it by each item she presents, but since it's all non-vocal, it makes sense to keep it simple. Whether it's one long scene, or perhaps two that cover the merch and the song announcement, it doesn't change the crucial aspect that `contains_vocal_music` is `false`. All timestamps will be from 00:00.000 to the end, 04:59.123 or whatever the precise end time is.
+
+    Therefore, for the global summary, I'll state that it's "Tokoyami Towa stands on stage in a virtual venue, presenting her birthday merchandise items (LED art panel, acrylic stand, keyholder, cap, and full set bonuses) and announcing the digital release of her new song 'SMASH IT UP!'."
+
+    Then I'll call `final_result`.
+
+
+...
