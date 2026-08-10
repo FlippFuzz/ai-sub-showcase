@@ -1,0 +1,103 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video opens with an introductory title screen featuring instrumental
+    chiptune background music, followed by a compilation of a 'Telepathy Pose Challenge'
+    stream segment featuring Laplus Darkness and a guest character matching poses
+    across various themes, accompanied by background music and conversational commentary.
+  scenes:
+  - start: '00:00.000'
+    end: '00:50.485'
+    description: Opening title screen displaying the event graphics for 'ラプラス・ダークネス生誕祭
+      2024' with chiptune background music playing.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:50.485'
+    end: '05:00.000'
+    description: A compilation video of the 'Telepathy Pose Challenge' where Laplus
+      Darkness and another virtual character attempt to match poses based on various
+      prompts, accompanied by background music and voice chatter.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Content**
+
+    Okay, let's break this down. The user wants me to analyze this video, identify scenes, any vocal music, and search for lyrics if applicable. First, I'm diving into the video content itself.
+
+    From the initial inspection (00:00 to 00:50), there's clearly an introductory screen or countdown with background music. Let's make sure, step one, that there are *no* sung vocals. After the first run-through, it's instrumental BGM only and the title says something about a Laplus Darkness birthday celebration.
+
+    From 00:51 onwards, it looks like a "Telepathy Pose Challenge" with Laplus Darkness. Sounds like voice chat and no singing, but let's be thorough and check the whole thing again. We have to be 100% sure before saying no songs.
+
+    Okay, checking the timestamps again:
+
+    *   **00:00 - 00:50.485:** Opening screen, instrumental BGM. No vocals.
+    *   **00:50.485 - 05:00.000:** "Telepathy Pose Challenge" video with background music and talking. No songs with sung vocals; only background music and conversation.
+
+    To make absolutely certain, let's re-examine that background music carefully.
+
+    *   **00:00 - 00:50:** Chiptune/synth instrumental BGM.
+    *   **00:51 - 05:00:** BGM loop, instrumental.
+
+    I'm doing a quick search just in case the opening BGM or looping music has a title. But, it's pretty standard for streams to just have background BGM that isn't really intended to be something you know the title or artist of. Generally, streams and countdowns just use instrumental music.
+
+    Wait, the obvious: there are no songs with sung vocals in the video. It's just instrumental music and VTuber chat.
+
+    So, `contains_vocal_music` has to be `false` for every scene. Absolutely no singing.
+
+    Okay, let's structure the scenes:
+
+    **Scene 1:**
+
+    *   Start: 00:00.000
+    *   End: 00:50.485
+    *   Description: Opening screen with title "ラプラス・ダークネス生誕祭 2024" and instrumental music.
+    *   `contains_vocal_music`: false
+
+    **Scene 2:**
+
+    *   Start: 00:50.485
+    *   End: 05:00.000
+    *   Description: "Telepathy Pose Challenge" compilation with Laplus Darkness and another virtual character, instrumental music, and voice chat.
+    *   `contains_vocal_music`: false
+
+    Let's double-check again because it's required for the tool to work, no vocal music anywhere.
+
+    Therefore, `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` will all be `null`.
+
+    Now, let's review the required format for the `final_result`. The output needs to be a specific JSON structure to meet the tool's requirements.
+
+    ```json
+    {
+      "global_summary": "The video starts with an opening title screen featuring instrumental chiptune background music, followed by a compilation of a 'Telepathy Pose Challenge' stream segment with Laplus Darkness and another virtual character, accompanied by background music and conversational chatter.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "00:50.485",
+          "description": "Opening screen displaying the event title 'ラプラス・ダークネス生誕祭 2024' with chiptune background music.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "00:50.485",
+          "end": "05:00.000",
+          "description": "A compilation video of the 'Telepathy Pose Challenge' featuring Laplus Darkness and another participant attempting to match poses across various categories, with background music and voice chatter.",
+          "contains_vocal_music":
+
+...
