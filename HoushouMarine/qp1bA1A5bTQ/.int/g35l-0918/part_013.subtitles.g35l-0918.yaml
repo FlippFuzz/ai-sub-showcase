@@ -1,0 +1,56 @@
+name: part_013
+total_attempts: 1
+video_duration_ms: 15037
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '00:04.000'
+    original: 宝鐘マリン 3D LIVE 4th Anniversary
+    english: Houshou Marine 3D LIVE 4th Anniversary
+  - start: '00:04.000'
+    end: '00:14.653'
+    original: マリン新水着3Dお披露目！
+    english: Marine's new swimsuit 3D reveal!
+  thoughts: |+
+    **Subtitle Generation for Promotional Video**
+
+    Okay, so I've got this video segment and the user needs subtitles. My initial thought is to quickly analyze the video and audio to determine the best approach. It's a promo for Houshou Marine's 4th or maybe 5th (or 7th?) Anniversary 3D Live.
+
+    First, let's look at the audio. There's upbeat electronic music, but I think I hear a vocalization – something like "Ah~" at the beginning, around 00:00 to 00:02. Gotta check that closely. Ah, yep, around 00:00 - 00:01 there's a vocal sample ("Aah~"). Right, let's confirm the rest is just instrumental. Yup, pure instrumental/electronic upbeat music.
+
+    Next, I need to check for any prominent visual text. Okay, the screen shows "宝鐘マリン 3D LIVE 4th Anniversary" (or similar) and "マリン新水着3Dお披露目！" (Marine's new swimsuit 3D reveal!). Time to refer to the visual events rule: "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio."
+
+    Now, do I subtitle that title text, or is this "Ah~" vocal the only thing to worry about? Let's verify that vocal at 00:00-00:01 again... it's just a vocal sample ("Ah~"). No other vocals, just the background music. Let's make sure it's not a rule breaker, if the music is instrumental.
+
+    I'm thinking about the standard practices. Usually, instrumental tracks with just music don't require subtitling unless there are lyrics or vocals. But wait, there is a vocal sample at 00:00, that could be enough, and the title card is on-screen. Let's check the rules.
+
+    Ah, the "ZERO GHOST SUBTITLES" rule: "Remain SILENT during pure instrumental music, long pauses, or sound effects. If no vocals are heard in the audio track, output nothing (unless there is a prominent Visual Event)."
+
+    Here we go! Prominent visual event! The main title banner: "宝鐘マリン 3D LIVE 4th Anniversary" and "マリン新水着3Dお披露目！"
+
+    Now I need to make sure the JSON I'm working with says `contains_vocal_music: false`. Right, got it: `contains_vocal_music: false`. Confirmed. It's just instrumental/background music.
+
+    Should I subtitle the visual text? Yes, let's review the visual text rules: "Translate prominent, relevant visual text (titles, signs)."
+
+    Okay, let's define the prominent text: "宝鐘マリン 3D LIVE 4th Anniversary" (Houshou Marine 3D LIVE 4th Anniversary) and "マリン新水着3Dお披露目！" (Marine's new swimsuit 3D reveal!).
+
+    I always think the best practice is to include subtitles for promotional title cards at the start of a video, regardless.
+
+    So, timing-wise, let's set it from 00:00.000 to 00:05.000 or similar.
+    For example:
+    `og`: "宝鐘マリン 3D LIVE 4th Anniversary"
+    `en`: "Houshou Marine 3D LIVE 4th Anniversary"
+
+    The exact text on the screen:
+    Top left: "宝鐘マリン 3D LIVE 4th Anniversary"
+    Bottom right: "マリン新水着3Dお披露目！"
+
+    No spoken lyrics, so I can generate clean, accurate subtitle entries for the visual text.
+
+    Even if that vocal sample "Ah~" is just part of the intro jingle, it's enough to consider the subtitle for the visual title card as part of the overall experience. The Visual Events rule supports this. Subtitle it is!
+
+    I need to make sure the `final_result` JSON is structured correctly.
+
+
+...
