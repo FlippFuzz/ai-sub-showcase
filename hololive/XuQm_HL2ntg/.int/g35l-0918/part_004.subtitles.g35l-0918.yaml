@@ -1,0 +1,40 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **My Subtitle Strategy for the hololive 5th Fes. Video**
+
+    Okay, so I've got this video – a slideshow of fan art and messages for hololive 5th Fes. "Capture the Moment" with some upbeat instrumental music. My goal: figure out the subtitles. First, I check the rule set and the `contains_vocal_music` flag. It's false, which is good. Time to confirm. I listen carefully. Yup, pure instrumental. No vocals, no spoken dialogue.
+
+    Now, the visual side. This is where it gets tricky. I know the rules – translate *prominent*, *relevant* on-screen text. But there are *tons* of handwritten messages. Thousands, maybe? Do I subtitle *everything*? I check the guideline again: exclude meaningless clutter, UI elements. It's a collage, so it's a visual event, but subtitling every tiny note would be a mess and unreadable and unnecessary! It would violate the clutter rule.
+
+    I remember "Capture the Moment" and "hololive 5th fes." are constant throughout on screen. But are they titles? Are titles from the beginning subtitled? I look at example JSON and it looks like a title at the beginning is okay to subtitle.
+
+    Let's listen to the entire video again. No vocals! Just that instrumental track. So the music itself doesn't need subtitling, obviously. And there are no chapter titles.
+
+    The main title "Capture the Moment" *is* on screen from the very start. But, wait, it's already in English! Is that "prominent"? It *is* on screen the whole time. But subtitling a title that *is* the entire visual portion of the video is not necessary. Subtitling the title does not meet the criteria of prominent visuals, since there are no other prominent visuals that can be called out as a visual event that need to be translated.
+
+    So, no vocals, no prominent visual text that *needs* translation, no standalone titles. The video is a slideshow, it is not a visual event, not chapter titles or signs. The collages are not prominent in the traditional sense, and subtitling every note would be counterproductive.
+
+    Therefore, the correct output is an empty `subs` array. I'm going to double check and verify the JSON format with `final_result`.
+
+
+- subtitles: []
+  thoughts: |+
+    **My Subtitle Strategy for the Hololive 5th Fes. Fan Art Video**
+
+    Okay, so I'm dealing with a video featuring fan art collages and background music for the Hololive 5th fes. and I need to figure out the subtitles. First, I checked the `scene_and_lyrics_reference_json` – `"contains_vocal_music": false`. Hmm, no vocals. But I still need to be absolutely sure. Let me confirm: I'm going to listen to the audio directly. Yep, it's instrumental chiptune/rock BGM. No singing whatsoever. Double-checking, just in case... nope, purely instrumental.
+
+    Now, the rules... "ZERO GHOST SUBTITLES" kicks in here. It says to be silent during instrumental music unless there's a prominent "Visual Event." Right, so what counts as a Visual Event? I reviewed that rule: it's things like chapter titles, location signs, or letters.
+
+    What about those fan messages? I'm looking at hundreds of them, handwritten in Japanese and English, scattered all over the screen. Subtitling *all* of that would be overkill and not standard. That rule is usually for key, isolated texts.
+
+    Wait, is there a main title, or anything of that sort? Aha! There is "Capture the Moment, hololive 5th fes." visible. But it is an integral part of the art template on every slide.
+
+    Alright, so no vocals, and no isolated, prominent title cards needing individual subtitling. The rules are clear: output nothing when no vocals are heard. Since I'm also confirming no vocals, I'm going to output an empty `subs` array. Let's make sure, *just* one more quick check... nope, no vocals at all. I am going to output `subs: []`.
+
+
+...
