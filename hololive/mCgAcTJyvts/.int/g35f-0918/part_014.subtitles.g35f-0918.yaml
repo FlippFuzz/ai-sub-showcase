@@ -1,0 +1,40 @@
+name: part_014
+total_attempts: 1
+video_duration_ms: 147857
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '02:27.500'
+    original: |-
+      無料パートは終了いたしました！
+      ご視聴ありがとうございました！
+    english: |-
+      The sneak peek part of the show has ended.
+      Thank you for watching.
+  thoughts: |+
+    **Subtitle Generation for Static End Screen**
+
+    Okay, so I've got a video segment that's 2 minutes and 27 seconds long, and it's basically a static end screen. The screen displays "hololive 7th fes. Ridin' on Dreams Supported by LAWSON" along with some Japanese text that translates to "The sneak peek part of the show has ended. Thank you for watching." My task is to figure out if I need to generate subtitles for this.
+
+    The `<scene_and_lyrics_reference_json>` confirms my suspicion: it's an end screen with background music, but no vocals. That's key. Now, according to the rules, I can't generate subtitles based on audio *unless* there are vocals. But, and this is the important part, there's a specific exception for on-screen text. If it's prominent and relevant, I'm supposed to subtitle it even if there's no audio.
+
+    The text *is* prominent, it's the entire screen, so let's translate it. I can see the visual text on screen is: "無料パートは終了いたしました！ご視聴ありがとうございました！" which means, "The sneak peek part of the show has ended. Thank you for watching."
+
+    Given the static nature of the screen, the subtitle will be from the beginning (00:00.000) to the end (02:27.500) of the video segment. This should be a single subtitle block that's on screen the whole time.
+
+    Now, I need to make sure the subtitle lines are formatted correctly. I have to limit each subtitle block to 50 characters per line. Let's make sure it's correct. The English translation, "The sneak peek part of the show has ended. Thank you for watching." is 64 characters so I need to reformat that. "The sneak peek part of the show has ended. Thank you for watching." so I can make it two lines.
+
+    My final subtitle block is:
+
+    Start: 00:00.000
+    End: 02:27.500
+    og: 無料パートは終了いたしました！
+    ご視聴ありがとうございました！
+    en: The sneak peek part of the show has ended.
+    Thank you for watching.
+
+    I think that looks right. I can now call `final_result` with this information.
+
+
+...
