@@ -1,0 +1,69 @@
+name: part_002
+total_attempts: 1
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:01.000'
+    end: '00:04.500'
+    original: Midnight Grand Orchestra 1ST LIVE「Midnight Mission」
+    english: Midnight Grand Orchestra 1st LIVE "Midnight Mission"
+  - start: '00:04.500'
+    end: '00:07.500'
+    original: 開演までしばらくお待ちください
+    english: Please wait a moment for the show to start.
+  thoughts: |+
+    **Subtitle Strategy for Midnight Grand Orchestra 1st LIVE "Midnight Mission" Pre-Show**
+
+    Okay, so I've got this video segment and need to generate subtitles. First, I need to make sure there are any vocal events that I need to translate. Looking at the initial timecode range, it's all instrumental, electronic music with a waiting screen, and then some ambient concert hall sounds – no vocals detected. According to the "ZERO GHOST SUBTITLES" rule, I should remain silent if there are no vocals. However, there's the prominent visual text on the waiting screen, which I need to handle as per "Translate prominent, relevant visual text" guidelines.
+
+    Now, the waiting screen is up for a significant duration (4.5 minutes), so the initial inclination is not to subtitle every line. I'll need to focus on what to include and what not to include. The example provided shows how to handle silent on-screen text before dialogue, and that seems relevant here. I think subtitling the main title card is good practice. I'll capture the event title on screen from 00:01.000 to 00:05.000. That part is important, relevant, and it's a good place to start the subtitles.
+
+    I've got the main title: "Midnight Grand Orchestra 1ST LIVE Midnight Mission." Then, the waiting text "開演までしばらくお待ちください" (Please wait a moment until the show starts) is important too. So, let's include that from the time the main title ends.
+
+    I'll create two subtitle blocks.
+
+    *   **Block 1:** s: 00:01.000, e: 00:04.500 `og`: Midnight Grand Orchestra 1ST LIVE 「Midnight Mission」 `en`: Midnight Grand Orchestra 1st LIVE "Midnight Mission".
+    *   **Block 2:** s: 00:04.500, e: 00:07.500 `og`: 開演までしばらくお待ちください `en`: Please wait a moment for the show to start.
+
+    After 00:07.500, the same screen and background music play until 04:33. We don't need to repeat the subtitles. The other text on screen, like the rules/warnings, is just UI clutter and I can skip it. No vocals, no other subtitles needed! Now, I just need to format the JSON, and I should be good to go.
+
+
+- subtitles:
+  - start: '00:02.000'
+    end: '00:07.000'
+    original: Midnight Grand Orchestra 1ST LIVE Midnight Mission 開演までしばらくお待ちください
+    english: |-
+      Midnight Grand Orchestra 1ST LIVE "Midnight Mission"
+      Please wait a moment for the show to begin.
+  thoughts: |+
+    **My Subtitle Strategy for the MGO Waiting Screen**
+
+    Okay, here's how I'm going to approach generating subtitles for this Midnight Grand Orchestra waiting screen video. The primary goal is to produce accurate, contextually rich subtitles in JSON format using the `final_result` tool, synchronized with the audio.
+
+    First, I need to understand the scenario. I'm working with a waiting screen for a live performance. It's instrumental music initially, then transitions to audience ambiance. I've got a time range from 00:00 to 05:00. The key visual information is that "Midnight Grand Orchestra 1ST LIVE Midnight Mission" and "開演までしばらくお待ちください" ("Please wait a moment until the show starts") are displayed. Also, there are the usual disclaimers about screenshots and recording.
+
+    Next, the audio plays a big part in the rule of determining what gets subtitled and what doesn't. My instructions say to translate prominent, relevant visual text. No meaningless clutter! Since the audio is primarily instrumental, I'm specifically looking for cases where prominent, on-screen text appears, even if there's no spoken dialogue.
+
+    I've got a visual event rule I'm working from: If prominent, relevant text appears, subtitle it for the duration it is clearly visible. This seems to apply to title/status screens. It says to translate prominent, relevant visual text. So, I need to check: do I subtitle the opening notice? Yes, the visual event rule says I do, especially given the context of the start of a performance.
+
+    My plan is to provide an introductory subtitle for the title and waiting message at the start. That initial visual display of information is important. I'm going to avoid over-subtitling. I don't want subtitles that are on screen for four and a half minutes. So, I'll keep the subtitle duration shorter, like 00:02.000 to 00:08.000, similar to the example I've seen.
+
+    I'm making a key mental note that there are NO vocals. None. The audio is purely instrumental electronic music and then ambience. The JSON explicitly confirms `contains_vocal_music: false`. So, no ghost subtitles! I'm only going to subtitle that initial title card.
+
+    Now, let's craft that subtitle entry. I'll translate the Japanese. I need to format it neatly. I'll focus on the information displayed: "Midnight Grand Orchestra 1ST LIVE Midnight Mission" and "開演までしばらくお待ちください". Let's create a formatted subtitle block:
+
+    ```json
+    {
+      "s": "00:02.000",
+      "e": "00:07.000",
+      "og": "Midnight Grand Orchestra 1ST LIVE Midnight Mission 開演までしばらくお待ちください",
+      "en": "Midnight Grand Orchestra 1ST LIVE \"Midnight Mission\"
+    Please wait a moment for the show to begin."
+    }
+    ```
+
+    Finally, I'll double-check everything. I'll adhere to the JSON schema. Timecodes will be in the `MM:SS.mmm` format. The instructions are clear: remain silent during pure instrumental music unless there's a visual event. So I'll only output that initial subtitle block, and nothing else.
+
+
+...
