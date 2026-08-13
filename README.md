@@ -59,6 +59,7 @@ Each subtitle filename includes a **shortcode tag** encoding the model and promp
 
 | Shortcode | Full Model Identifier |
 | :--- | :--- |
+| **`g37f`** | `gemini-3.7-flash` |
 | **`g36f`** | `gemini-3.6-flash` |
 | **`g35f`** | `gemini-3.5-flash` |
 | **`g35l`** | `gemini-3.5-flash-lite` |
