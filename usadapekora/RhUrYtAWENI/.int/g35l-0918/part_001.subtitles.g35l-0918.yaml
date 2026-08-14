@@ -1,0 +1,57 @@
+name: part_001
+total_attempts: 2
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '01:53.800'
+    end: '01:57.000'
+    original: 1st Usada Pekora Solo Live 「うさぎ the MEGAMI!!」
+    english: 1st Usada Pekora Solo Live "Usagi the MEGAMI!!"
+  thoughts: |+
+    **Subtitle Strategy for Pre-Show Video Segment**
+
+    Okay, so I've got this video and the request is to generate subtitles. Let's break this down systematically. First, I'm looking at the initial segment from 00:00 to 05:00.  The first 1:53 is a montage of fan art set to upbeat chiptune music – no vocals, so no immediate subtitling needed there. Then, at 01:53, we hit a title card. Hold on, that's where things get interesting. The rule is: "If prominent, relevant text appears on screen, subtitle it for its visible duration, even without audio."
+
+    So, let's take a look at the title card. At 01:53 - 01:57 I see a lot of Japanese text:  "公演ハッシュタグ #うさぎメガぺこら" which translates to the event's hashtag, then "うさぎ the MEGAMI!!", "1ST USADA PEKORA SOLO LIVE" and  "開演までしばらくお待ちください" which reads "Please wait for a while until the performance starts".  This definitely qualifies as prominent and relevant text.  The video even calls out "1st Usada Pekora Solo Live" on the title card, so I'm thinking this qualifies as a title or chapter.
+
+    Alright, the audio is instrumental only from 00:00 to 05:00 so far. So the "ghost subtitles" rule applies throughout the whole video segment except for the title card.
+
+    So, let's look at the timecodes. The title card starts around 01:53.500 and is fully visible until 01:57.000 when the stage view appears.  I'm going to generate the relevant subtitles, which will be for the title card:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "01:53.500",
+          "e": "01:57.000",
+          "og": "1st Usada Pekora Solo Live 「うさぎ the MEGAMI!!」",
+          "en": "1st Usada Pekora Solo Live \"Usagi the MEGAMI!!\""
+        }
+      ]
+    }
+    ```
+
+    That should be it for this video segment.
+
+
+- subtitles:
+  - start: '01:53.500'
+    end: '01:57.000'
+    original: うさぎ the MEGAMI!!
+    english: '[Usagi the MEGAMI!! - 1st Usada Pekora Solo Live]'
+  thoughts: |+
+    **Subtitle Generation for "うさぎ the MEGAMI!!" Video**
+
+    Okay, so I need to generate subtitles for this video. First, I'll analyze the video segments: the initial montage, the title card, and the concert hall footage. The initial assessment is: a fan art montage with chiptune music, a title card, and then concert footage with pre-show ambient music, crowd cheers, and clapping. My main concern is, of course, vocals. The golden rule is clear: *no* vocal audio, *no* subtitles, unless there's a prominent visual event.
+
+    Let's do a *thorough* audio check. Listening carefully... From 00:00 to 01:53, it's just instrumental chiptune music. Then, from 01:53 to 01:57, there's ambient music accompanying the title card. Finally, from 01:57 to the end, it's ambient concert hall noise, crowd cheers, and clapping. But is the crowd cheering considered a "vocal event"?  No, usually crowd noises don't need to be subtitled unless there's actual speech.  Reviewing the reference JSON: all segments are `contains_vocal_music: false`.
+
+    Now, let's turn to visual events.  There's the title card at 01:53. The text on screen is: 公演ハッシュタグ #うさぎメガぺこら, うさぎ the MEGAMI!! 1st USADA PEKORA SOLO LIVE, and 開演までしばらくお待ちください. I'll translate this to #うさぎメガぺこら / Usagi the MEGAMI!! because this is the primary event name on the visual event. Let's make sure it's properly translated. I'll focus on the primary event name:  `#うさぎメガぺこら` or `Usagi the MEGAMI!!` and subtitle that as a visual event at 01:53.500 to 01:57.000.
+
+    The key prompt verification pass states I must ensure every vocal event is correctly synchronized. However, after carefully reviewing the audio waveform, it's clear: there are *no* vocal events—no singing, no spoken dialogue. Just music and crowd noise. Following the "Zero Ghost Subtitles" rule, which is absolutely critical, I must remain silent unless there's a prominent visual event.
+
+    Thus, the only element to subtitle is the title card. The fan art montage at the beginning has text, but it's a fast-paced collage; those messages are *decorative*, not core event information. The title card, however, is a clear, static visual event. The primary visual event is timecoded: 01:53.500 to 01:57.000, and it's translated: `#うさぎメガぺこら` (in Japanese), or `[Usagi the MEGAMI!!]` (in English). It will be formatted correctly in the final JSON output.
+
+
+...
