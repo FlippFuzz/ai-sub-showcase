@@ -1,0 +1,23 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Analyzing Subtitle Requirements for a Video Segment**
+
+    Okay, so I'm looking at this video segment and need to determine the subtitle requirements. First, I see a title card from 00:00 to 01:10 with `#桃鈴ねねの4年目` (Momosuzu Nene's 4th year). My initial thought is to subtitle it because the rule states to subtitle prominent text, even if there's no audio. However, I need to be sure. I'm checking the whole segment to see if there is any speech or singing.
+
+    Now, from 00:00 to 01:10, it's just a static title card and instrumental music – silence, really. I note that `#桃鈴ねねの4年目` is visible in the top right corner. Then, from 01:10 to 04:59, we have a 3D animated stage scene with instrumental festival music. Still no vocals. I need to make sure there are *no* vocals in this segment before I make any decisions about subtitling.
+
+    I'm listening closely again, and confirming: 00:00 - 01:10 is silent, and 01:10 - 04:59 is all instrumental music. Okay, so no vocals anywhere. But wait, what about that visible text? I need to apply the visual text rule: If it's prominent, it gets subtitled. Does this `#桃鈴ねねの4年目` tag qualify? Is it a chapter title? Location sign? In the title card, the main text is `ねねっちいわい4年目もよろしくね` and `#桃鈴ねねの4年目`, but it's a stream tag/title overlay. I'm remembering the example with chapter titles -  `<example name="Handling Silent On-Screen Text Before Dialogue">` -> `第1章` -> `[Title: Chapter 1]`.
+
+    The key here is the "ZERO GHOST SUBTITLES" rule: no subtitles for pure instrumental music unless it's a prominent *visual* event. The `#桃鈴ねねの4年目` is a stream tag, and the title card appears to be part of a waiting room standby screen with no vocals. Usually, standby screens with no vocals don't get subtitles unless there's a prominent title card or text that requires translation.
+
+    Since there are *no* vocals and the text is more of a stream overlay or background element, I'm confident in applying the "ZERO GHOST SUBTITLES" rule. I'm re-verifying, no audio waveform anywhere: 00:00 - 01:10, silence. 01:10 - 04:59, instrumental. No vocals.
+
+    Therefore, the `subs` should be empty `[]`.
+
+
+...
