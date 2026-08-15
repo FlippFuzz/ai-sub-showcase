@@ -1,0 +1,99 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 305008
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:49.000'
+    end: '00:59.000'
+    original: 開演までしばらくお待ちください
+    english: The concert will be starting soon.
+  - start: '00:59.000'
+    end: '01:09.000'
+    original: 【Attention】演出の都合上、照明の点滅にご注意ください / 声出し応援OKです
+    english: '[Attention] Please be aware of flashing lights / Cheering loudly is
+      OK.'
+  - start: '04:47.800'
+    end: '04:49.000'
+    original: Get, set, fight!
+    english: Get, set, fight!
+  thoughts: |+
+    **Subtitle Generation Strategy**
+
+    Okay, let's break this down. My task is to generate subtitles for this video segment, and it's pretty straightforward, given my expertise. The core rule is to prioritize vocal events as absolute truth – those get subtitled. Visual events, like on-screen text, are subtitled if they're *prominent* and relevant, ignoring any subtitles that are irrelevant or that provide an unnecessary transcription of the video.
+
+    The audio is instrumental, background music. That means, unless there are vocals, I'm keeping the subtitles clean and empty. Now, the visuals are what's going to occupy my attention, as those are the primary source of subtitle generation, in this case.
+
+    I've already identified the key visual texts: "開演までしばらくお待ちください / The concert will be starting soon," that will be from 00:49 to 00:59, then a chunk from 00:59 to 01:09 with "Attention ご来場のお客様へ / Attention To all visitors. Please be aware of flashing lights during the performance. / 声出し応援OKです / Cheering loudly is OK," and the "2次販売グッズ / 2nd Batch Goods" screen, with 2nd round concert goods. So, these visuals are going to get subtitled and translated.
+
+    Then, around 04:47, there's a vocal "Get, set, fight!" Let's keep a record of that. I'll translate that into the subtitles. After that, it should be pretty smooth sailing.
+
+    I need to confirm there are no CC tags and no ghost subtitles (i.e., subtitling instrumental bits or just repeating back the video). Timecodes are MM:SS.mmm format. I'll stick to that.
+
+    So, the output should look like this:
+
+    *   00:49.000 - 00:59.000: *The concert will be starting soon.*
+    *   00:59.000 - 01:09.000: *[Attention] Please be aware of flashing lights / Cheering loudly is OK.*
+    *   04:47.800 - 04:49.000: *Get, set, fight!*
+
+    A quick recheck, yes, the video is basically a loop of fans' messages with instrumental music, and at 04:47, we have the voice drop of "Get, set, fight!". All good! Let's get that JSON ready.
+
+
+- subtitles:
+  - start: '00:49.200'
+    end: '00:59.200'
+    original: 開演までしばらくお待ちください
+    english: The concert will be starting soon. Please wait a moment.
+  - start: '00:59.200'
+    end: '01:09.200'
+    original: 【Attention】演出の都合上、照明の点滅にご注意ください / 声出し応援OKです
+    english: '[Attention] Please be aware of flashing lights. / Cheering loudly is
+      OK!'
+  - start: '01:09.200'
+    end: '01:19.200'
+    original: 【2次販売グッズ】Essentials Pack 販売中
+    english: '[Concert Goods] Second round of goods now on sale: Essentials Pack'
+  - start: '01:19.200'
+    end: '01:29.200'
+    original: 【2次販売グッズ】Tシャツ、パーカー、その他グッズ販売中
+    english: '[Concert Goods] T-Shirts, Hoodies, and accessories'
+  - start: '01:29.200'
+    end: '01:39.200'
+    original: 【2次販売グッズ】タペストリー、アクリルキーホルダー、アクリルパネル販売中
+    english: '[Concert Goods] Tapestry, Acrylic Keychains, and Panels'
+  - start: '01:39.200'
+    end: '01:49.200'
+    original: 【2次販売グッズ】ランダム REBOOT コレクション販売中
+    english: '[Concert Goods] Random REBOOT Collections'
+  - start: '04:48.300'
+    end: '04:49.800'
+    original: Get up and fight!
+    english: Get up and fight!
+  thoughts: "**Subtitle Strategy for Instrumental Video**\n\nOkay, so I've got a 5-minute\
+    \ video that needs subtitles. First, I checked the audio – purely instrumental\
+    \ track, no vocals confirmed by the JSON data. But wait, I have to be thorough\
+    \ and verify there are *no* vocal cues. Looks like it's a \"waiting screen\" with\
+    \ fan messages, art, goods promotions, and music.\n\nNow, here's the curveball:\
+    \ The \"visual events\" rule. The guideline explicitly states to subtitle \"prominent,\
+    \ relevant text\" that appears on screen, even without audio.  So, I need to identify\
+    \ if this applies.\n\nThe scrolling fan messages? That's a no-go. It's a continuous,\
+    \ small text crawl – not a single \"prominent title/sign\". However, at around\
+    \ 00:50, there's a clear title: \"開演までしばらくお待ちください\"  / \"The concert will be starting\
+    \ soon.\" Plus, around 01:00, there's a clear announcement: \"Attention / Please\
+    \ be aware of flashing lights / Cheering loudly is OK\".\n\nThe question is, how\
+    \ far to go with the goods screens? Subtitling every product name and price feels\
+    \ excessive. But, I decide to subtitle the main transitions and the general category:\
+    \  \"Second round of goods on sale!\" and \"Concert Goods\".\n\nGoing back through\
+    \ the footage, at around 04:48, I think I hear a vocal sample within the instrumental\
+    \ music. Yep, it's a clear, rhythmic \"Get up and fight!\" \n\nSo, here's the\
+    \ distilled list of what I need to subtitle:\n\n1.  **00:49.200 - 00:59.200:**\
+    \ \"開演までしばらくお待ちください\" (OG: The concert will be starting soon.) (EN: The concert\
+    \ will be starting soon. Please wait a moment.)\n2.  **00:59.200 - 01:09.200:**\
+    \ \"[Attention] Please be aware of flashing lights. / Cheering loudly is OK!\"\
+    \n3.  **01:09.200 - 01:19.200:**  \"[Concert Goods] Second round of goods on sale!\"\
+    \n4.  **01:19.200 - 01:29.200:** \"Concert Goods: Apparel & Accessories\"\n5.\
+    \ **01:29.200 - 01:39.200** \"Concert Goods: Apparel & Accessories (Cont.)\"\n\
+    6.  **01:39.200 - 01:49.200:** \"Random REBOOT Collections\"\n7.  **04:48.300\
+    \ - 04:49.800:** \"Get up and fight\" (OG: Get up and fight)\n\nI'm keeping it\
+    \ concise and directly related to the prominent, visual on-screen text as requested.\
+    \  Done.\n\n\n"
