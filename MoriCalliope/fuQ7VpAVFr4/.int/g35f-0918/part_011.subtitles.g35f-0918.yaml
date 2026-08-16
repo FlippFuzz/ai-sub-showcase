@@ -1,0 +1,241 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 300488
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '00:03.500'
+    original: '...like my, my karaoke streams, and streams where I''m singing my stuff'
+    english: '...like my, my karaoke streams, and streams where I''m singing my stuff'
+  - start: '00:03.500'
+    end: '00:05.200'
+    original: and, uh, future shows.
+    english: and, uh, future shows.
+  - start: '00:05.200'
+    end: '00:10.000'
+    original: If there's a song that you really want to hear, like, I know a lot of
+      you probably wanted to hear Suden, for example.
+    english: If there's a song that you really want to hear, like, I know a lot of
+      you probably wanted to hear Suden, for example.
+  - start: '00:10.000'
+    end: '00:13.400'
+    original: So if you want to hear it, you got to stay tuned and come to the next
+      one.
+    english: So if you want to hear it, you got to stay tuned and come to the next
+      one.
+  - start: '00:13.400'
+    end: '00:15.400'
+    original: But like I said, life has no encore.
+    english: But like I said, life has no encore.
+  - start: '00:15.400'
+    end: '00:19.400'
+    original: So, um, what I want you to do now is...
+    english: So, um, what I want you to do now is...
+  - start: '00:19.400'
+    end: '00:21.000'
+    original: '...just rewatch the live.'
+    english: '...just rewatch the live.'
+  - start: '00:21.000'
+    end: '00:23.100'
+    original: And then go listen to the music.
+    english: And then go listen to the music.
+  - start: '00:23.100'
+    end: '00:24.700'
+    original: Links in the description.
+    english: Links in the description.
+  - start: '00:24.700'
+    end: '00:27.700'
+    original: Thank you, Dead Beats, always for cheering for me.
+    english: Thank you, Dead Beats, always for cheering for me.
+  - start: '00:27.700'
+    end: '00:31.900'
+    original: Thank you for supporting what I do.
+    english: Thank you for supporting what I do.
+  - start: '00:31.900'
+    end: '00:34.600'
+    original: I'm strange, but you know,
+    english: I'm strange, but you know,
+  - start: '00:34.600'
+    end: '00:38.200'
+    original: this is really fun. I'm glad I get to do this every day.
+    english: this is really fun. I'm glad I get to do this every day.
+  - start: '00:38.200'
+    end: '00:41.600'
+    original: And I put my whole heart into the new release, so...
+    english: And I put my whole heart into the new release, so...
+  - start: '00:41.600'
+    end: '00:46.400'
+    original: I'll see you guys tomorrow. We're playing a game.
+    english: I'll see you guys tomorrow. We're playing a game.
+  - start: '00:46.400'
+    end: '00:49.400'
+    original: There's a game stream tomorrow.
+    english: There's a game stream tomorrow.
+  - start: '00:49.400'
+    end: '00:52.800'
+    original: See you guys around. Thanks again, everyone!
+    english: See you guys around. Thanks again, everyone!
+  - start: '00:52.800'
+    end: '00:55.700'
+    original: I'm your Mori. Hope you'll remember me.
+    english: I'm your Mori. Hope you'll remember me.
+  - start: '00:55.700'
+    end: '00:58.200'
+    original: Peace!
+    english: Peace!
+  thoughts: |+
+    **Subtitle Generation Deep Dive**
+
+    Okay, here's the breakdown of how I'm approaching this subtitle generation. The core of it is the hierarchical decoding, prioritizing audio as the ground truth. This means I'm meticulously aligning the subtitles with the spoken word. The initial analysis of the prompt revealed an English-speaking vocalist, with a clear video timeline (even if the user’s descriptions were a bit off - always verify!). It's a 01:00 snippet, primarily dialogue.
+
+    My first step was to identify the video phases. The initial part (00:00-01:00) is dialogue. Given the instructions, which prioritize silence during instrumental portions, there’s no need to subtitle the middle instrumental part (01:00-04:00). I made sure to double-check for any prominent visual text. The "DISASTER SHOW" title screen at 01:10-01:15 is a valid case to add, but let's see, it is background/unnecessary UI elements. Since the video is just 01:00 long, the plan is to just write the dialogue. The final instrumental phase, starting around 04:32, is a no-go for subtitles, per the instructions.
+
+    Because we’re dealing with dialogue, the reference JSON isn't relevant, since there are no lyrics to use as a source. Instead, the focus is manual transcription and accurate timecode alignment. I reviewed the timestamp information from the user's prompt (always triple check the user's prompts!), the actual audio, and made precise adjustments. A key area for me was the pronunciation, making sure to get her song "Suden" (romanized "Shuden") correct.
+
+    I've refined the timecodes. I then verified the exact words used in the provided video with the audio, so there won’t be any errors or misunderstandings. From the transcription, I'll generate the subtitles, using the finalized timestamps. I'm prioritizing accuracy and adhering to the 50-character limit per line. Also, I'm ensuring there are no redundant subtitle tags.
+
+
+- subtitles:
+  - start: '00:00.000'
+    end: '00:03.900'
+    original: '...my karaoke streams, and streams where I''m singing my stuff,'
+    english: '...my karaoke streams, and streams where I''m singing my stuff,'
+  - start: '00:03.900'
+    end: '00:09.600'
+    original: and future shows, if there's a song that you really want to hear. Like,
+      I know a lot of you probably wanted to hear Shuden, for example. So...
+    english: and future shows, if there's a song that you really want to hear. Like,
+      I know a lot of you probably wanted to hear Shuden, for example. So...
+  - start: '00:09.600'
+    end: '00:13.400'
+    original: If you want to hear it, you gotta stay tuned and come to the next one.
+      But like I said,
+    english: If you want to hear it, you gotta stay tuned and come to the next one.
+      But like I said,
+  - start: '00:13.400'
+    end: '00:15.500'
+    original: life has no encore.
+    english: life has no encore.
+  - start: '00:15.500'
+    end: '00:20.100'
+    original: So, what I want you to do now is just rewatch the live.
+    english: So, what I want you to do now is just rewatch the live.
+  - start: '00:20.100'
+    end: '00:24.400'
+    original: And then go listen to the music, links in the description.
+    english: And then go listen to the music, links in the description.
+  - start: '00:24.400'
+    end: '00:27.700'
+    original: Thank you Dead Beats, always, for cheering for me.
+    english: Thank you Dead Beats, always, for cheering for me.
+  - start: '00:27.700'
+    end: '00:30.900'
+    original: Thank you for supporting what I do.
+    english: Thank you for supporting what I do.
+  - start: '00:30.900'
+    end: '00:33.400'
+    original: I'm strange,
+    english: I'm strange,
+  - start: '00:33.400'
+    end: '00:38.200'
+    original: but you know, this is really fun. I'm glad I get to do this every day.
+    english: but you know, this is really fun. I'm glad I get to do this every day.
+  - start: '00:38.200'
+    end: '00:41.800'
+    original: And I put my whole heart into the new release, so...
+    english: And I put my whole heart into the new release, so...
+  - start: '00:41.800'
+    end: '00:45.800'
+    original: I'll see you guys tomorrow. We're playing a game!
+    english: I'll see you guys tomorrow. We're playing a game!
+  - start: '00:45.800'
+    end: '00:49.000'
+    original: There's, there's a game stream tomorrow.
+    english: There's, there's a game stream tomorrow.
+  - start: '00:49.000'
+    end: '00:51.300'
+    original: See you guys around.
+    english: See you guys around.
+  - start: '00:51.300'
+    end: '00:53.300'
+    original: Thanks again, everyone.
+    english: Thanks again, everyone.
+  - start: '00:53.300'
+    end: '00:55.700'
+    original: I'm your Mori, hope you'll remember me.
+    english: I'm your Mori, hope you'll remember me.
+  - start: '00:55.700'
+    end: '00:58.200'
+    original: Peace!
+    english: Peace!
+  - start: '01:09.000'
+    end: '01:15.000'
+    original: DISASTER SHOW - Mori Calliope
+    english: DISASTER SHOW - Mori Calliope
+  - start: '04:38.000'
+    end: '04:44.000'
+    original: DISASTERPIECE - Mori Calliope
+    english: DISASTERPIECE - Mori Calliope
+  - start: '04:44.000'
+    end: '04:45.600'
+    original: Hurry up, Orpheus, time's a wasting!
+    english: Hurry up, Orpheus, time's a wasting!
+  - start: '04:45.600'
+    end: '04:47.200'
+    original: Show me what you really wanna do!
+    english: Show me what you really wanna do!
+  - start: '04:47.200'
+    end: '04:51.200'
+    original: Tonight, it's my turn to show you how obvious I can be
+    english: Tonight, it's my turn to show you how obvious I can be
+  - start: '04:51.200'
+    end: '04:55.400'
+    original: Sometimes it feels like you're playing that guitar for me and only me
+    english: Sometimes it feels like you're playing that guitar for me and only me
+  - start: '04:55.400'
+    end: '04:59.800'
+    original: Critics so loud, so predictable, they can't see what I can see
+    english: Critics so loud, so predictable, they can't see what I can see
+  thoughts: |+
+    **Final Subtitle Plan**
+
+    Okay, here's the final plan for this video segment, considering all the nuances and specific instructions I was given. I've broken it down meticulously to ensure accuracy and compliance.
+
+    First, I'm starting at the very beginning (00:00.000) and going until the end (05:00), per the prompt. My primary focus is on transcribing the spoken and sung parts *exactly* while following the "ground truth" of the vocal audio waveform for start times. I'm prioritizing spoken dialogue over any simultaneous on-screen text, following the prompt. I'm also ensuring *zero* "ghost subtitles" – I remain silent during instrumental sections or pauses. Visual titles are treated separately based on relevance.
+
+    Here's the detailed breakdown:
+
+    1.  00:00.000 - 00:03.900: "...my karaoke streams, and streams where I'm singing my stuff,"
+    2.  00:03.900 - 00:09.600: "and future shows, if there's a song that you really want to hear. Like, I know a lot of you probably wanted to hear Shuden, for example. So..."
+    3.  00:09.600 - 00:13.400: "If you want to hear it, you gotta stay tuned and come to the next one. But like I said,"
+    4.  00:13.400 - 00:15.500: "life has no encore."
+    5.  00:15.500 - 00:20.100: "So, what I want you to do now is just rewatch the live."
+    6.  00:20.100 - 00:24.400: "And then go listen to the music, links in the description."
+    7.  00:24.400 - 00:27.700: "Thank you Dead Beats, always, for cheering for me."
+    8.  00:27.700 - 00:30.900: "Thank you for supporting what I do."
+    9.  00:30.900 - 00:33.400: "I'm strange,"
+    10. 00:33.400 - 00:38.200: "but you know, this is really fun. I'm glad I get to do this every day."
+    11. 00:38.200 - 00:41.800: "And I put my whole heart into the new release, so..."
+    12. 00:41.800 - 00:45.800: "I'll see you guys tomorrow. We're playing a game!"
+    13. 00:45.800 - 00:49.000: "There's, there's a game stream tomorrow."
+    14. 00:49.000 - 00:51.300: "See you guys around."
+    15. 00:51.300 - 00:53.300: "Thanks again, everyone."
+    16. 00:53.300 - 00:55.700: "I'm your Mori, hope you'll remember me."
+    17. 00:55.700 - 00:58.200: "Peace!"
+
+    After that, there's a period of instrumental music. I'm silent here from 00:58.200 until 01:09.000.
+
+    Then comes the "DISASTER SHOW - Mori Calliope" title card. I will include this as a visual subtitle:
+
+    18. 01:09.000 - 01:15.000: "DISASTER SHOW - Mori Calliope"
+
+    More credit rolls appear. I'm ignoring those, and continuing to silence.
+
+    Then "DISASTERPIECE - Mori Calliope" title appears, which triggers another subtitle:
+
+    19. 04:38.000 - 04:44.000: "DISASTERPIECE - Mori Calliope"
+
+    Finally, we arrive at the "Orpheus"
+
+...
