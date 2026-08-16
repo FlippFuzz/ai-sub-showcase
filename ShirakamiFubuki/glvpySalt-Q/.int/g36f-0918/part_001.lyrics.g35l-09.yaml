@@ -1,0 +1,60 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: Hololive members Oozora Subaru, Sakura Miko, Nekomata Okayu, Ookami
+    Mio, and Shirakami Fubuki play a card game called 'Eto-Koba Battle' with lively
+    conversation and instrumental background music throughout.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: VTubers Oozora Subaru, Sakura Miko, Nekomata Okayu, Ookami Mio, and
+      Shirakami Fubuki play the 'Eto-Koba Battle' card game, explaining rules and
+      trying out example rounds with playful banter and instrumental BGM.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Video Clip**
+
+    Okay, let's break this down. First, I need to analyze this video clip, keeping the instructions in mind. It's a VTuber stream, specifically featuring Subaru, Miko, Okayu, Mio, and Fubuki from Hololive. They're playing "Eto-Koba Battle," so the focus is clearly on gameplay.
+
+    I need to determine if there's any vocal music involved. I'm going to listen closely. Alright, I've got the video playing. There's some BGM, light background music, that's standard for gameplay streams. But, I need to confirm if there are any *sung* vocals, a song being performed. Let me listen from the beginning, 00:00 to 05:00. Nope, just conversational dialogue and commentary from the VTubers. No singing. So, it's just instrumental BGM. Instrumental BGM definitely doesn't count as vocal music.
+
+    Let's double-check, scene by scene, just to be sure. Nope, no vocal music at all. So, the `contains_vocal_music` field will be `false` for every scene, and all of those song metadata fields – the title, artist, performer, lyrics – will be set to `null`. Simple enough.
+
+    Now, let's map out the scene. From 00:00.000 to 05:00.000 (or the end of the video, which looks like it's around the 05:00 mark) it's all gameplay and banter. So, one scene covers the entirety of the provided clip.
+
+    I'm making sure I understand the output format: We have a `global_summary` for the overview and `scenes` array that contains each scene's start, end, description, and the various `contains_vocal_music` and song data fields. Since there's no vocal music, `contains_vocal_music` will be false, and all the relevant song fields should be null.
+
+    I'll quickly construct the JSON, just to confirm.
+
+    ```json
+    {
+      "global_summary": "Hololive members Oozora Subaru, Sakura Miko, Nekomata Okayu, Ookami Mio, and Shirakami Fubuki play a card game called 'Eto-Koba Battle' with lively conversation and instrumental background music throughout.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "05:00.000",
+          "description": "VTubers Oozora Subaru, Sakura Miko, Nekomata Okayu, Ookami Mio, and Shirakami Fubuki play the 'Eto-Koba Battle' card game, explaining rules and trying out example rounds with playful banter.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    That looks perfect! It complies completely with all the instructions. No need for any external searches since there's no vocal music to identify. I'm ready to output the final result.
+
+
+...
