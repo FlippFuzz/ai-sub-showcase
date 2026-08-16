@@ -1,0 +1,47 @@
+name: part_002
+total_attempts: 1
+video_duration_ms: 300019
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **My Subtitle Assessment for Tokoyami Towa's Teaser**
+
+    Okay, so I've got this video teaser for Tokoyami Towa's "Break your XXX" solo live, and the user wants subtitles. Let's break this down systematically. My initial assessment is that we're dealing with a "zero ghost" subtitling scenario, but I'll make sure I'm right about that.
+
+    First, I examined the content. It starts with those text grids – "Break your Limit," "Break your Doubt," and so on – alongside instrumental rock music. Then, around the 0:48 mark, it's all merchandise, the classic promotional video strategy. Throughout the entire video, from beginning to end (0:00 to 4:59.999), there's *zero* vocal audio. Pure instrumental rock, all the way through, including merchandise visuals. The instructions are pretty clear here: "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music…" which basically means, if there are no vocals, we skip the subtitling, unless there's a "prominent Visual Event."
+
+    Now, that's where I need to be careful. Are those text grids and merchandise displays "prominent Visual Events"? I had to think about that. I checked the rule about text that appears on screen and I see that it includes subtitle text for: Chapter Titles, Location Signs, Letters. So I have to consider whether this applies. We've got text like "Break your XXX 応援セット" and "Break your XXX ペンライト," both in Japanese and English, appearing on screen. But, I think this is more akin to advertising. Generally, I wouldn't subtitle every single product name in a commercial display unless I was specifically instructed to. Especially in an instrumental promo video.
+
+    Okay, so I double-checked the instructions for that "ZERO GHOST SUBTITLES" rule and found that there's no vocals in the audio track. The JSON confirms `contains_vocal_music: false`. No vocals, so no subtitles.
+
+    Just to be absolutely certain, I went through the entire video, start to finish, from 0:00 to 4:59, and I confirmed that it's all pure instrumental rock, guitar riffs, drum beats, the whole bit. No vocals, no hidden snippets.
+
+    Therefore, my final conclusion: the `subs` array should be empty. No subtitles are needed here.
+
+
+- subtitles: []
+  thoughts: |+
+    **Analyzing the Subtitle Task for a Tokoyami Towa Video**
+
+    Okay, so I have a video featuring instrumental rock music, visuals of merchandise for Tokoyami Towa's "Break your xxx" live, and a grid of words. My initial instinct is to go through and make sure that this is accurately subtitled.
+
+    First, let's confirm the audio. *Listening closely*… yep, it's instrumental, all rock music, no vocals at all. I have to be completely certain, so I double-checked the audio from the beginning to almost the end, just to be sure.
+
+    Now, let's refer back to the instructions. The "ZERO GHOST SUBTITLES" rule is clear: *no subtitles for pure instrumental music unless there's a prominent visual event.* The text on-screen includes merchandise names and a grid of words like "Break your 限界." Are these *prominent, relevant* visual events?
+
+    Let's break this down. The merchandise names (e.g., "Break your xxx 応援セット ¥10,500") are pretty much on display for the viewer, and the words are just background elements, they aren't part of the core dialogue, so the visual events aren't prominent or relevant subtitles. I am almost certain that this means the "ZERO GHOST SUBTITLES" rule means I shouldn't subtitle this.
+
+    The crucial rule is "ZERO GHOST SUBTITLES." No vocals, check. No prominent visual events. No. Okay, so output an empty `subs` array.
+
+    Let's double-check the JSON format to be completely sure:
+    ```json
+    {
+      "subs": []
+    }
+    ```
+
+    Yup, it's correct. Empty `subs` array it is! This should meet the requirements.
+
+
+...

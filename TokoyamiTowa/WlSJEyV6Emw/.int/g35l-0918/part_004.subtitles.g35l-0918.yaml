@@ -1,0 +1,48 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 300020
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Subtitle Decision for Instrumental Promotional Video**
+
+    Okay, so I've got this video and the associated JSON. My task is to determine if subtitles are needed. The video runs for roughly five minutes. Initially, I noticed it's purely instrumental electronic music with visual elements. The key, based on the provided JSON, is that `contains_vocal_music` is `false` for every segment. That's a huge clue!
+
+    My first thought was, "Alright, let's look for on-screen text." The video starts with a scrolling grid of text that reads "Break your..." repeatedly, seemingly part of a promotional campaign ("Break your xxx"). Then it transitions to merchandise displays and finally a venue screen with some "Attention" notices.
+
+    I immediately referenced the "Visual Events" rule. It says that relevant, prominent on-screen text should be subtitled, even without audio. So, the question is: is this text prominent and relevant? I see thousands of smaller text entries ("Break your...") which likely are credits or names. Normally, these types of background text walls in teasers or music promos aren't individually subtitled unless they're the main titles or lyrics.
+
+    Let's look at it more closely. We have the "Break your xxx" logo and text grid. Later, there's merchandise, like "Break your xxx 応援セット," "ペンライト," "Tシャツ," and "マフラータオル" (Penlight, T-Shirt, etc.). Finally, there's the "Attention" screen.
+
+    Hmm... merchandise and venue notices. Are those "prominent visual events" that require translation? I re-read the rule: "prominent relevant text." The goods are there, the venue screen shows notices. But this is a promotional clip. The music is purely instrumental EDM.
+
+    The instruction highlights: "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music..." Aha! No vocals, no sound effects, no pauses... output nothing unless it's a "prominent Visual Event." I considered if the merchandise slide or the attention screen qualified, they're informative, not essential narrative, and it's a concert teaser. No narration, no vocals.
+
+    After double-checking, I recalled standard practice: when it's just instrumental music with scrolling names and ads, no subtitles are generated unless it's specified, or it's a title card. I confirmed *no* vocals at all in any part of the video.
+
+    The ultimate decision became clear: Since there's no spoken word, no essential narrative visual events (just merchandise ads), and the "ZERO GHOST SUBTITLES" rule is explicitly in effect, the correct approach is an empty `subs` array.
+
+    I confirmed that an empty array in the JSON output, `{ "subs": [] }`, is perfectly valid and compliant with the rules. Subtitles are not necessary here.
+
+
+- subtitles: []
+  thoughts: |+
+    **My Subtitle Strategy for the Instrumental Video**
+
+    Okay, so I've got this video. It's an instrumental electronic track, followed by a merch section, and then a concert venue scene. My task: generate subtitles. First, I need to make sure I understand the rules regarding the "ZERO GHOST SUBTITLES" directive - specifically, to *remain silent* during instrumental music, long pauses, or sound effects; and if there are no vocals in the audio, output nothing, *unless* there's a "prominent Visual Event."
+
+    The provided JSON says `contains_vocal_music`: false, so that's a good starting point, but I need to confirm the *audio* itself has no vocals. I'll listen to confirm. Yep, purely instrumental - electronic/chiptune/synth beat, nothing more.
+
+    Now for visual events. I see a *lot* of on-screen text: "Break your xxx," names in a grid, merch details, attention slides. The question is, is this text "prominent" enough to warrant subtitling? The instructions clarify the exception: "prominent, relevant text" like chapter titles, location signs, or letters. Scanning the grid of tiny fan names seems... excessive and meaningless from a practical standpoint. The main title is "Break your xxx".
+
+    I'll scrub through the entire video to double-check for any spoken vocals, just to be absolutely sure. From 00:00 to 03:48 is all instrumental music. 03:48 to 04:18: instrumental music and the merch display. 04:18 to 05:00: ambient concert venue sound, crowd murmurs, but again, no spoken vocals or dialogue.
+
+    Therefore, there are NO vocal events and NO prominent narrative visual text that needs subtitling according to instructions. The video is an instrumental promotional piece for a virtual live event.
+
+    I'll go back and carefully verify the rules: ZERO GHOST SUBTITLES dictates silence unless a prominent visual event exists. Given that there are no vocals and no prominent visual cues, the output should be an empty list.
+
+    Therefore, I'm generating `{"subs": []}`.
+
+
+...
