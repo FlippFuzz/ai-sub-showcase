@@ -1,0 +1,61 @@
+name: part_010
+total_attempts: 1
+video_duration_ms: 299281
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features virtual liver Chihaya Rindo hosting the talk/MC
+    segment of her birthday festival (輪堂千速生誕祭2026), where she discusses the setlist
+    of songs performed and introduces her new birthday merchandise items, including
+    T-shirts, pick case keyholders, bags, tissue covers, and voice packs. There are
+    no vocal song performances in this clip.
+  scenes:
+  - start: '00:00.000'
+    end: '04:58.000'
+    description: Chihaya Rindo talks on stage during her birthday festival MC segment,
+      introducing her birthday merchandise lineup and interacting with viewers.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of Chihaya Rindo's Birthday Festival Merchandise Video**
+
+    Okay, so I've got this video clip of Chihaya Rindo discussing her "Chihaya Birthday Fes 2026" merchandise. My primary task is to determine if any vocal music is present. I need to deliver a structured JSON output, so I'm paying close attention to the requirements.
+
+    First, a quick scan: from 00:00 to the end of the video, around 04:58, it's all talking. She's on stage with a mic, going over the T-shirts, keyholders, bags, tissue covers, voice packs, the full set – the usual merchandise run-down. No actual songs. I need to make *absolutely* sure, though, so I'm doing a frame-by-frame mental check, especially around any mention of "LIVE" or performances. At 00:00-00:03, she mentions something about her "first LIVE," but it's just talk about upcoming songs or previous performances, not an *actual* performance in this clip.
+
+    So, I'm confirming it. It's an MC/talking segment. No vocal music. The whole thing from start to finish is her talking about her birthday festival and the merchandise. No active musical performance in sight. I'm going to set `contains_vocal_music` to `false`.
+
+    Since there's no music, I'm thinking a single scene spanning the entire video is perfectly appropriate. There are no obvious scene transitions; it's a continuous talking segment. I've got the start and end timestamps verified (00:00.000 to 04:58.000), and I'm ready to craft the `description` for that scene.
+
+    I’m double-checking that since there is no music, I don't need to worry about song titles, artists, lyrics, or language. That simplifies things considerably.
+
+    Let's summarize: the video centers around Chihaya Rindo introducing her "Chihaya Birthday Fes 2026" merchandise.
+
+    Here’s the final output format:
+
+    ```json
+    {
+      "global_summary": "The video features the virtual liver Chihaya Rindo hosting her birthday festival talk/MC segment (\"輪堂千速生誕祭2026\"), introducing and explaining her birthday merchandise items including T-shirts, pick case keyholders, bags, tissue covers, and voice packs, with no vocal song performances.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "04:58.000",
+          "description": "Chihaya Rindo introduces and discusses merchandise for her \"Chihaya Birthday Fes 2026\" birthday festival. Items include T-shirts, key holders, bags, tissue covers, and voice packs. This segment consists of spoken content only with no singing.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+
+...
