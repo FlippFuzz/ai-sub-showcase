@@ -1,0 +1,62 @@
+name: part_002
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: Hololive members (Tokoyami Towa, Usada Pekora, Shirogane Noel, Oozora
+    Subaru, Ookami Mio) participate in a pose-matching game show in a virtual game
+    center setting, discussing and striking various poses based on prompts.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.316'
+    description: Hololive VTubers gather in a virtual game center for a pose-guessing
+      game show, talking, laughing, and reacting to different prompts with background
+      instrumental music playing.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video**
+
+    Okay, so the task is to analyze this video, break it into scenes, identify any vocal music, and search for the lyrics if necessary. First, let's start by inspecting the video itself. I'll watch it very closely, listening for any songs with sung vocals.
+
+    From the first segment, 00:00 to 05:00, it's clear the video showcases Hololive VTubers, specifically Tokoyami Towa, Usada Pekora, Shirogane Noel, Oozora Subaru, and Ookami Mio, playing a game. There's background game music, definitely instrumental BGM, but absolutely no sung vocals. I'll double-check this throughout the whole video and verify.
+
+    Okay, let's confirm the lack of vocal music by re-checking that specific time frame, 00:00 - 05:00. It's essentially casual conversation, laughter, and a game show format, all accompanied by instrumental synthesizer game music. I'm confident there are no vocals being sung by anyone. Now, to make absolutely sure, I'll scan the entire video. Nope, nothing.
+
+    Since there are no vocal music sections, all the song-related fields will have to be null or not applicable. Now, let's review the requirements to make sure I'm not missing anything: break the video into chronological scenes, detect ALL vocal songs, and use the web search tool *only if* vocal songs are found. The logic seems right. If there's no vocal music, `contains_vocal_music` is `false`, and the song fields (`song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, `reference_lyrics_en`) will all be set to `null`.
+
+    Let's look into the scenes now. The video appears to be a continuous game show segment. Based on the flow, from 00:00 to 05:00, we have the VTubers in a game show setting ("Hololive Game Center" / #トワ極重大発表) where they pose based on prompts. I think we can break it down into a single scene or a couple of scenes. One scene covering the video from 00:00.000 to approximately 05:00.320 should be fine. I'll go with the exact end timestamp, 05:00.316, so it's consistent.
+
+    So, let's confirm again: there's only background BGM, no vocal music. That means `contains_vocal_music` is indeed `false`.
+
+    Now, based on that analysis, I'll structure the data according to the JSON schema. Here's what I've got:
+
+    ```json
+    {
+      "global_summary": "Hololive members (Tokoyami Towa, Usada Pekora, Shirogane Noel, Oozora Subaru, Ookami Mio) participate in a pose-matching game show in a virtual game center setting, discussing and striking various poses based on prompts.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "05:00.316",
+          "description": "Hololive VTubers gather in a virtual game center for a pose-guessing game show, talking, laughing, and reacting to different prompts.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Since there's no vocal music, no web searches are necessary. I'm ready to call `final_result` directly with this structured data.
+
+
+...
