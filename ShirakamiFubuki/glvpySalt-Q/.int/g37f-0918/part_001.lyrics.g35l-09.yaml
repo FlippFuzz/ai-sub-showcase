@@ -1,0 +1,80 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: Hololive members Oozora Subaru, Sakura Miko, Nekomata Okayu, and
+    Ookami Mio gather in a virtual classroom setting to play and explain the card
+    game 'Eto Kotoba Battle', with Shirakami Fubuki participating via a corner video
+    overlay. Throughout the video, they discuss rules and conduct a test round with
+    lively banter and no vocal music.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: Oozora Subaru, Sakura Miko, Nekomata Okayu, and Ookami Mio sit in
+      a virtual classroom explaining the rules of the card game 'Eto Kotoba Battle'
+      and doing a test round, while Shirakami Fubuki watches and reacts from a corner
+      overlay.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Clip: Etonkoba Battle**
+
+    Okay, let's break this down systematically. The prompt requires an analysis of this video, specifically checking for vocal music. First, I'll identify the content: it's a clip featuring Hololive members Oozora Subaru, Shirakami Fubuki, Sakura Miko, Nekomata Okayu, and Ookami Mio playing "Etonkoba Battle" (絵とコバトール), which I understand is a card game. My primary task is to determine if any sung vocal music is present.
+
+    Now, let's go scene by scene, timecode by timecode. From 00:00 to 04:59, I've observed the content closely. They're talking, explaining the rules of the game, and doing a test run. There's background music (BGM), but no actual songs being *performed*—no sung vocals. I've double-checked, cross-referenced, and made sure. It's all dialogue, chatting, and that background music.
+
+    Therefore, the `contains_vocal_music` field is going to be `false` for the entire video segment (or it could be split, but for simplicity, the whole thing works). Each scene should have that set to false, and the associated "song" fields (`song_title`, `original_artist`, etc.) set to `null` because there's nothing to identify.
+
+    Let's do a content review to fully nail down the key visual and activity. From the video content: It starts with Oozora Subaru talking about the rules, at around 00:14, the camera shows four members (Sakura Miko, Nekomata Okayu, Oozora Subaru, Ookami Mio) at a virtual classroom, with Shirakami Fubuki giving commentary via a webcam overlay. They spend the whole 5 minutes (00:00.000 to 04:59.000) explaining and demonstrating "Eto Kotoba Battle". It's pretty straightforward.
+
+    Since there's no actual music to detect, there is no need for further searches. I can build the response structure directly with `contains_vocal_music: false` because there are not any songs occurring within the video. I've confirmed by listening carefully that it's all spoken dialogue with some BGM.
+
+    So I'll format the structure like this:
+
+    **Scene 1:**
+    *   Start: 00:00.000
+    *   End: 04:59.000 (or end of video)
+    *   Description: Oozora Subaru, Sakura Miko, Nekomata Okayu, and Ookami Mio are in a virtual classroom setting playing a card game called 'Eto Kotoba Battle' with Shirakami Fubuki commentary in the corner. They explain rules and do a test round with casual conversation.
+    *   `contains_vocal_music`: false
+    *   `song_title`: null
+    *   `original_artist`: null
+    *   `performer_in_video`: null
+    *   `original_language`: null
+    *   `reference_lyrics_og`: null
+    *   `reference_lyrics_en`: null
+
+    The scene description covers the whole video, from 00:00 to 04:59, which is the whole video. The timestamp is correct (`MM:SS.mmm`). It's important to make sure the data is accurate.
+
+    The JSON structure that needs to be outputted should be like this for the `final_result`:
+
+    ```json
+    {
+      "global_summary": "...",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "04:59.000",
+          "description": "...",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Now, let's write the `global_summary`: "Hololive members Oozora Subaru, Sakura Miko, Nekomata Okayu, and Ookami Mio gather in a virtual classroom setting to play and explain the card game 'Eto Kotoba Battle', with Shirakami Fubuki participating via a corner video overlay. Throughout the video, they discuss rules and conduct a test round with lively banter and no vocal music."
+
+    Okay, I've got a single-scene structure because the video is consistent
+
+...
