@@ -1,0 +1,87 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video opens with an upbeat chiptune loading screen announcing
+    the Hololive Summer Festival, featuring illustrations of Oozora Subaru and other
+    Hololive members. This transitions into a presentation segment with a four-split
+    screen showcasing various festival booths and member activities while Oozora Subaru
+    introduces them.
+  scenes:
+  - start: '00:00.000'
+    end: '03:24.000'
+    description: An announcement and loading screen with illustrations of Oozora Subaru
+      and other Hololive members, accompanied by upbeat chiptune background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:24.000'
+    end: '04:59.000'
+    description: A four-split screen view detailing the Hololive Summer Festival stalls
+      and booths, with Oozora Subaru and other members speaking and introducing the
+      events.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Hololive Summer Festival Announcement Video**
+
+    Okay, so I've been tasked with analyzing this video clip, which features Oozora Subaru and other Hololive members announcing their Summer Festival. Let's break this down. First, I'm noting the initial announcement screen, running from 00:00 to 03:24. It's got that classic "Now Loading..." aesthetic, and there's definitely background chiptune music playing. I need to figure out if it's a specific, identifiable track, or just generic game music. Initial thoughts lean towards instrumental BGM, so no vocals here, I don't need to look for any song metadata.
+
+    Then, from 03:24 to 04:59, we've got Subaru presenting the festival stalls on a four-split screen. Ah, wait. At 03:26 to 03:44, there's some singing or chanting – "Hajimattayo..." – I need to make sure this isn't a song or a jingle. It appears that it is, in fact, a jingle, not a professionally recorded song with official lyrics. I can use the same logic here; there's no official song with associated lyrics.
+
+    Now, let's verify if there are any songs. I can do a quick search if necessary, but since no commercial song with lyrics were detected, I need to make sure to set `contains_vocal_music` to `false` in both scenes. No other songs are identified.
+
+    Let me double-check each scene carefully.
+
+    Scene 1, from 00:00.000 to 03:24.000, is the intro screen. It's got Subaru artwork and upbeat chiptune BGM. The `contains_vocal_music` flag is false since it's just instrumental music.
+
+    Scene 2, from 03:24.000 to 04:59.000, features the stall presentation. Subaru is talking, and the other members are speaking, and there's that jingle from 03:26-03:44. It is not an actual song with lyrics, so `contains_vocal_music` is also false here.
+
+    Alright, the structure for the JSON is ready. It should look like this:
+
+    ```json
+    {
+      "global_summary": "The video starts with an upbeat chiptune loading screen announcing the Hololive Summer Festival, followed by a presentation segment with a four-split screen showcasing various festival booths and member activities narrated by Oozora Subaru.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "03:24.000",
+          "description": "An announcement and loading screen with illustrations of Oozora Subaru and other Hololive members, accompanied by upbeat chiptune background music.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "03:24.000",
+          "end": "04:59.000",
+          "description": "A four-split screen view detailing the Hololive Summer Festival stalls and booths, with Oozora Subaru and other members speaking and introducing the events.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Now let me go over the formatting requirements again: non-overlapping scenes, correct timestamps, and all fields accounted for. I'm ready to output the final result now.
+
+
+...
