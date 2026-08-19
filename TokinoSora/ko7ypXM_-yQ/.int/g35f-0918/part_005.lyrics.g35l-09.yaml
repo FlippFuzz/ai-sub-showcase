@@ -1,0 +1,104 @@
+name: part_005
+total_attempts: 1
+video_duration_ms: 300115
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a live virtual concert performance by Tokino
+    Sora performing her song 'Fallin' Rollin' Coaster' on a stage with dynamic lighting,
+    visual displays, and an enthusiastic audience.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: Tokino Sora performs her song 'Fallin' Rollin' Coaster' live on stage,
+      accompanied by vibrant lighting effects, holographic visuals on screens, and
+      fans waving lightsticks.
+    contains_vocal_music: true
+    song_title: Fallin' Rollin' Coaster
+    original_artist: ときのそら
+    performer_in_video: Tokino Sora
+    original_language: Japanese
+    reference_lyrics_og: |-
+      3つ数えたら 砂に描いた絵
+      消えてしまうけど それと同じで
+      君の顔ばかり 浮かべてたら
+      アイスみたいにとろけて わっかんなくなる
+      夢も愛もキュッとしていっぱい!
+      だから持ち切れない
+      でも欲張りすぎて きっと落ちていく
+
+      もう落下落下中中 恋に落ちちゃって
+      (落下落下急急) 戻れない
+      あれあれ何で? ふんわりと 心がまだ熱くなるの
+      落下落下中中 君の重力で
+      (落下落下急急) 引き寄せて
+      カレイドスコープ 覗いてるみたいで
+      ねぇ キラキラな未来みたい わからない
+
+      ah up＆down で超振り回す
+      you ＆ i 今日明日四六時中
+      カレンダー30日でも足りない
+      あれもこれもそれも全部したい
+      急キュンキュン上昇? ドキドキ拍数
+      急キュンキュン降下? 深呼吸
+      急キュンキュン上昇? ラブラブメーター
+      急キュンキュン降下? 突撃 drop
+
+      無限大の愛 だけど失敗!?
+      だけど諦めない
+      まだ欲張りだから 君と落ちていく
+
+      もう落下落下中中 心がハマって
+      (落下落下急急) 抜け出せない
+      あれあれ何で? 目まぐるしい 心がまだ熱くなるの
+      落下落下中中 スピード重視で
+      (落下落下急急) 引き寄せて
+      カレイドスコープ 覗いてるみたいで
+      ねぇ キラキラな未来みたい わからない
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video's Song**
+
+    Okay, here's the game plan. My primary objective is to crack this music mystery. I need to dissect this video, pinpoint the song that's being performed, and then find its official lyrics and a translation. Finally, I'll deliver everything in a neat, structured JSON format using `final_result`.
+
+    First step: Identifying the tune. Seems we've got Tokino Sora, the Hololive virtual YouTuber, performing. Excellent, a great starting point. Now, let's hunt for those lyrics or the song title.
+
+    I can make out some phrases from the video, like "そんだけなら一緒に泣いてもいいよ" and "大きく立ってだってきみに届けたいよ". Time to leverage my search capabilities. Let's do a quick, multi-language web search using `web_search_langsearch_multi`. Hopefully, that'll lead me to the answers.
+
+
+
+    **Finding the Lyrics**
+
+    Okay, so I need to get the definitive lyrics for "Fallin' Rollin' Coaster" by Tokino Sora. Ideally, I want the original Japanese lyrics, along with a reliable English translation if one exists. My plan is to start with a direct search for the lyrics, looking for something that is authoritative. If that doesn't yield results, I'll broaden the search a little and try something like "Fallin' Rollin' Coaster Tokino Sora lyrics" in Japanese. This should help me pinpoint exactly what I need.
+
+
+
+    **Analyzing Tokino Sora's "Fallin' Rollin' Coaster" Performance**
+
+    Okay, so the song playing is "Fallin' Rollin' Coaster" by Tokino Sora, composed by Cap Chii. My initial thought is to confirm that the entire video clip is dedicated to this single track. Let's get down to brass tacks: the video starts at 00:00.000 and runs until 04:59.something, and the listed length is 04:59, so far so good. I'll need to confirm that this is a continuous performance and not just a fragment of something larger.
+
+    Checking the start, yep, Tokino Sora is on stage right at the beginning, the song kicks in immediately. Okay, timestamp check: from 00:00.000 to 04:59.000, it's Tokino Sora performing "Fallin' Rollin' Coaster" live. Now I want to quickly pull the lyrics. Let me check PetitLyrics or Shazam for the full Japanese lyrics to make sure I have all the verses and not just a truncated version. Also, I'll need to check if there's an English translation available or whether I need to mark it as null. Let's do a search...
+
+
+
+    **Analysis and Structuring of Concert Video Data**
+
+    Okay, so I've got this video of Tokino Sora performing "Fallin' Rollin' Coaster." First, I needed to confirm the song title, artist, and release information, which I got from the initial search results, confirming it was released on September 24, 2025 on album *Pulse* by Cap Chii. Now, let's break this down systematically.
+
+    The instructions are clear: *do not* transcribe or translate anything manually. I must use search results for lyrics and translations. Since I found the official Japanese lyrics, but no English translation, `reference_lyrics_en` gets set to `null`, as per the constraint. The full Japanese lyrics are populated into `reference_lyrics_og`. I double-checked the lyrics obtained from PetitLyrics and Shazam to confirm they were complete.
+
+    Next, I need to define the scene structure. I checked the video timestamps: it starts immediately with the music and Tokino Sora singing. The video ends at around 04:59 with the music ending and applause. This means the entire video is a single, continuous scene with vocal music.
+
+    Based on this, I constructed the JSON structure.
+
+    *   `global_summary`: I wrote a broad summary about the performance.
+    *   `scenes`: There's only one scene encompassing the entire video.
+        *   I've included timestamps (`start` and `end`), a descriptive overview of the scene, and marked that it contains vocal music, setting `contains_vocal_music` to `true`.
+        *   The song details (`song_title`, `original_artist`, `performer_in_video`, `original_language`) were pulled from the initial search results.
+        *   The `reference_lyrics_og` field contains the full Japanese lyrics retrieved from the search, and, importantly, `reference_lyrics_en` is set to `null` because no English translation was found.
+
+    Finally, I did a sanity check to confirm compliance with all constraints: no manual transcription/translation, the full lyrics were retrieved without placeholders, and the absence of a translation correctly resulted in `null` value.
+
+    So, I'm confident I have a complete and accurate representation of the data and I am now ready to generate the final output.
+
+
+...
