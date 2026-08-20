@@ -1,0 +1,54 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 304015
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **My Subtitle Strategy for the "Our Bright Parade" Merchandise Video**
+
+    Okay, so I've got this Hololive Super Expo 2023 promotional video and the task is to generate subtitles. The instructions are clear – no vocals, no subtitles unless there's a *prominent* visual event. The primary concern is absolutely no "ghost subtitles," staying silent where there's no spoken audio.
+
+    First, I need to understand the content. The video is a slideshow of merchandise with instrumental music. No vocals at all, confirmed. The video showcases digital message boards, key visuals, and a range of merchandise lineups with both text and images.
+
+    Now, about those visual events... the on-screen text. I need to determine what qualifies as "prominent." Let's break down the timing: From 00:00 to 01:03, fan messages and the "HOLOLIVE SUPER EXPO 2023 デジタルメッセージボード." Then, from 01:04 to 01:24, "hololive stage DAY 1," "#ひろがるホロライブ DAY1", and "Our Bright Parade." After that, from 01:25 to 05:03, various merchandise introduction slides with headers like "グッズ ラインナップ 紹介", "商品ラインナップ!", "ホロライブ 事務所 グッズ", and so on.
+
+    The question is, do all these headers need to be subtitled? Generally, with background music and product showcases, subtitling every single product category header ("グッズ ラインナップ 紹介", etc.) feels excessive, unless explicitly instructed or if it's considered like a clear chapter title. Let's make sure!
+
+    I've confirmed that the JSON description states `contains_vocal_music: false`. That's a good initial clue. Plus, I re-listened to the audio carefully. 100% instrumental BGM (upbeat chiptune/pop instrumental). No voice acting, no singing. Zero vocals anywhere.
+
+    Checking the examples provided in the instructions further clarifies the concept. They highlight the inclusion of subtitles for title cards before dialogue. However, this is a 5-minute merchandise catalog. The on-screen text are just those standard product catalog headers.
+
+    Given "ZERO GHOST SUBTITLES," and with no spoken vocals and all on-screen text being standard catalog headers, the correct approach is an empty `subs` array. My output is going to be empty.
+
+
+- subtitles: []
+  thoughts: |+
+    **Hololive Super Expo 2023 Merchandise Showcase: Subtitle Assessment**
+
+    Okay, so the task is to generate subtitles for this Hololive Super Expo 2023 merchandise video. My initial thought is to just get straight to the point and provide them, however, I quickly glance at the footage, and the reference JSON data, and it's all instrumental. No vocals, no dialogue, no singing. Hmm, time to check the rules. "ZERO GHOST SUBTITLES": Silence for instrumental music, pauses, sound effects. No vocals means nothing, unless there's a "prominent Visual Event". Right.
+
+    So, are there any visual cues that jump out? Let's go through the video: the first minute is a "Digital Message Board" with fan art, the next part displays the key visual, then there's a goods lineup montage, which seems to include titles like "HOLOLIVE SUPER EXPO 2023," and different merchandise lines. My first instinct would be to subtitle every title, but is that necessary?
+
+    I'll check the example videos. Generally, for instrumental product showcases, without any spoken content, titling all the header cards isn't typical, especially if there's no narrative context. But the rule: "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio."
+
+    Alright, so things like "hololive SUPER EXPO 2023 DIGITAL MESSAGE BOARD," "hololive stage DAY 1 Our Bright Parade," and "グッズラインナップ紹介" (Goods Lineup Introduction) appear, but are they "prominent"? Let's double-check the audio; absolutely no vocals. Just this upbeat instrumental BGM.
+
+    Alright, so no vocals, no speech. The JSON description says "Displays digital message boards...", "Displays the key visual...", "Showcases various official merchandise lineups...". If there are no vocals, and it's not explicitly stated that we need to subtitle all text, then according to "ZERO GHOST SUBTITLES", I should output an empty subs array or no subs at all. However, it's always worth verifying if this is an empty array:
+
+    ```json
+    {
+      "subs": []
+    }
+    ```
+
+    Let's check the prompt instructions again: "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music, long pauses, or sound effects. If no vocals are heard in the audio track, output nothing (unless there is a prominent Visual Event). Do not use <scene_and_lyrics_reference_json> data to fill silent gaps."
+
+    Yep, it confirms my initial assessment. No vocals, no important narrative visual cards. It's just a merchandise catalog video. The final result should be an empty `subs` array.
+
+    Let me just double-check the BGM one more time. Wait... is that a subtle chant or a sample vocal? Nope. Just instrumental, video game style chiptune music. Drums, synths, melodies. No lyrics, no vocals.
+
+    Okay, I'm confident. The output is an empty list.
+
+
+...
