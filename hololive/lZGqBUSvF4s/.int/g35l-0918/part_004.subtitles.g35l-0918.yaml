@@ -1,0 +1,34 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 304008
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **My Subtitle Strategy for the Hololive SUPER EXPO 2023 Video**
+
+    Okay, so the goal is to generate subtitles for this Hololive SUPER EXPO 2023 video showcasing fan art and message boards. The immediate first step is to establish a vocal ground truth, which is the driver for the timing of any dialogue. I've confirmed that the video, based on the reference JSON, contains no vocal music and it's an instrumental upbeat track. To be absolutely sure, I went through the audio from beginning to end (00:00 to 05:04). The music is exactly as described; no vocals, no speech.
+
+    The prompt’s critical rule mandates I only output dialogue text when there's vocal audio, matching the millisecond of the spoken word. The core directive is *“NEVER output dialogue text if there is no vocal audio driving it”*.
+
+    The video does display text on-screen: a slideshow of fan messages and art, with the "HOLOLIVE SUPER EXPO 2023 DIGITAL MESSAGE BOARD" title logo prominently displayed. The question then becomes whether this visual text constitutes a “prominent, relevant text” that requires translation or subtitling. The prompt specifically instructs me to consider such text if prominent, but to exclude meaningless background clutter.
+
+    The main title, "HOLOLIVE SUPER EXPO 2023 DIGITAL MESSAGE BOARD" is omnipresent and it is in English, meaning that the user already understands the title. With no vocal content present, I am directed to output nothing if there is no prominent visual element.
+
+    The crucial rule of "ZERO GHOST SUBTITLES" becomes the guiding light. If there are no vocals, no long pauses, and no sound effects, I remain silent unless there is a prominent visual event. Is this title, which I have confirmed is not in Japanese and therefore does not require translation, a "prominent visual event?" The title is a banner/logo present on every slide, and it's in English.
+
+    Based on the rules, since the video is instrumental with no vocals, I believe the appropriate response is to output an empty `subs` array. The title appears in English, the video contains no dialogue, and the directives specify absolute silence during instrumental music without a prominent visual event. I'll listen again to the audio just to be certain – synth melody with drum beats, still no vocal samples or any hint of speech. That confirms it; I'm generating an empty list of subtitles.
+
+
+- subtitles: []
+  thoughts: |+
+    **Hololive Super Expo 2023 Digital Message Board Subtitle Generation**
+
+    Okay, so I'm tasked with generating subtitles for a video showcasing Hololive Super Expo 2023 fan art and digital message boards. The instructions are clear: I need to focus on the audio and any relevant on-screen text. The audio seems to be purely instrumental BGM, which initially raises a red flag. I remember the "ZERO GHOST SUBTITLES" rule: if there are no vocals or prominent sound effects, I output nothing. However, visual text needs consideration.
+
+    So, let's go step-by-step. First, I carefully reviewed the provided instructions to ensure I understand the nuances of the task. Then, I needed to ascertain the contents of the audio track. The instructions state that it's BGM, but I meticulously checked the audio for any vocals or spoken dialogue. I'm treating this audio as purely instrumental music throughout the video length (304.0 seconds). I double-checked the "ZERO GHOST SUBTITLES" rule, especially the visual text portion. The screen displays "hololive SUPER EXPO 2023 デジタルメッセージボード" (Hololive Super Expo 2023 Digital Message Board).
+
+    Now, the instructions and examples confirm this is the title, and the screen shows it through the video. Based on the "ZERO GHOST SUBTITLES" rule, the title should be subtitled since it is a prominent visual event. I'm very aware of the "CRITICAL" warning about the verification pass. I need to be 100% sure before I proceed, so the audio across the 304 seconds needed a double-check. I even had to ensure that I wasn't missing any hidden vocals or speech. There are no vocals at all. So, the correct approach based on the rules is an empty `subs` array within the `final_result` because this is pure instrumental music.
+
+
+...
