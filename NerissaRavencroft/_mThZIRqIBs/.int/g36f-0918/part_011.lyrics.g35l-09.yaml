@@ -1,0 +1,50 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 300721
+lyrics_prompt_version: 9
+response:
+  global_summary: Virtual YouTubers play a game of Posing Twister together, taking
+    turns following instructions to place hands and feet on colored spots and striking
+    various cute and funny themed poses while upbeat background music plays.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.800'
+    description: Virtual YouTubers play a game of Posing Twister, taking turns calling
+      out moves, placing hands and feet on colored dots, and performing poses with
+      upbeat background music playing throughout.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Video Clip**
+
+    Okay, let's break this down. The task is to analyze this "Posing Twister" VTuber video clip—#RissaHatchDay25—and identify any vocal music. First, I need to pinpoint scenes, check for songs, and if any are being sung. Right off the bat, I see virtual characters playing Twister and striking poses. There's background music; it's instrumental, something like upbeat video game music, definitely not a song with vocals. They're talking, making cute noises—"grr," "aww," "baubau"—but no actual singing.
+
+    I'm double-checking, just to be sure. Nope, still no song. Just background chiptune music and dialogue. The video's five minutes long. Looking back at the instructions and output format, it's pretty clear: since there's no vocal music, the `contains_vocal_music` field will be `false` for every scene, and all song metadata like title, artist, lyrics, etc., will be `null`.
+
+    Now, is this one continuous scene, or do we have distinct parts? It's the virtual characters playing Twister from start to finish. I can either treat it as a single scene spanning the whole video or maybe a few descriptive scenes; it doesn't matter too much. Let me look closer... yep, it's just one continuous game of Posing Twister.
+
+    I'll do a quick search—just to be super thorough—to confirm no recognizable song is playing. Hmm, nope. It's original stream BGM/gameplay music. No search is needed, really.
+
+    Okay, time to structure the JSON response. For the `global_summary`, something like: "Virtual YouTubers play a game of Posing Twister together, giving instructions and striking various cute and funny poses with upbeat background music playing throughout."
+
+    For the `scenes` part, it's a single scene:
+
+    *   Start: "00:00.000", End: "05:00.800". Let me quickly double-check the exact end timestamp—it seems to be around 05:00, so I'll put it at 05:00.800.
+    *   Description: "Virtual YouTubers play Posing Twister, taking turns placing hands and feet on colored spots and doing various themed poses with background music."
+    *   `contains_vocal_music`: `false`
+    *   `song_title`: `null`
+    *   `original_artist`: `null`
+    *   `performer_in_video`: `null`
+    *   `original_language`: `null`
+    *   `reference_lyrics_og`: `null`
+    *   `reference_lyrics_en`: `null`
+
+    I've got the exact end timestamp, and I've reviewed the JSON schema to ensure everything's correct. Now, I'm ready to call `default_api:final_result`. It should be good to go.
+
+
+...

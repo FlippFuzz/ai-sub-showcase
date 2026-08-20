@@ -1,0 +1,37 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300048
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **My Subtitle Strategy for this Video Segment**
+
+    Okay, so I need to create subtitles for this video segment, which runs from 00:00 to 05:00. Looking at the content, I see a "Birthday Bedroom Break-In Nerissa Ravencroft 2025 NowLoading" screen—a loading screen—with some background chiptune music. Crucially, there are **no vocals** at all in the audio. My grounding instructions are crystal clear: the presence of vocal audio is the *absolute* requirement for any dialogue subtitles. No vocals, no dialogue. Simple.
+
+    I also need to consider visual text. The instructions say to subtitle prominent, relevant text, like chapter titles. The text on the screen, "Birthday Bedroom Break-In Nerissa Ravencroft 2025," is present throughout the entire time range, but is it a title card? It's a loading screen, so it could go either way.
+
+    To be certain, I check example 5 which shows a title subtitled:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:02.000",
+          "e": "00:05.000",
+          "og": "第1章",
+          "en": "[Title: Chapter 1]"
+        },
+        ...
+      ]
+    }
+    ```
+
+    However, I decide that the visual text on this loading screen is likely not a title sequence, it is only a static background loading overlay.
+
+    To be absolutely sure, I've got to listen to the audio. I did this. I've listened to the segment from 00:00 to 05:00, and it's pure instrumental background music—no voices, no speech, no dialogue. Therefore, the "ZERO GHOST SUBTITLES" rule applies: silence during instrumental music.
+
+    I double-checked, and there's definitely no vocal content. So, I'm confident in my conclusion. The subtitle array needs to be empty: `[]`.
+
+
+...
