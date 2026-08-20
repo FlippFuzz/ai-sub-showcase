@@ -1,0 +1,40 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 301492
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **My Analysis of the Subtitle Generation Task**
+
+    Okay, so I've got this video clip, spanning from 00:00 to 05:00, and I need to generate subtitles for it. My initial thought is to analyze both the audio and visual components. The audio track, as confirmed by the JSON data (`contains_vocal_music: false`), is purely instrumental background music (BGM) with no vocals or speech. I've double-checked, and there's definitely no spoken dialogue or singing anywhere in the audio segment.
+
+    Now, I need to bring my knowledge of the "Golden Rules" into play. The rules clearly state that vocal audio is the *absolute* ground truth for dialogue, meaning no subtitles if there's no corresponding vocal. Visual events are also important; if text is prominent on screen, subtitle it for the duration it's visible. Finally, the critical "ZERO GHOST SUBTITLES" rule is paramount: silence if there are no vocals or prominent visual events. No relying on external data to fill the gaps.
+
+    I've examined the visuals, and it's a standard pre-stream/intermission screen with English text: "Attention For Visitors", "Please be aware of flashing lights during the performance.", "Cheering loudly is ok.", "hololive English 4th Concert Serendipity", "2nd Round of Concert Merch Sales", "The concert will be starting soon. 開演までしばらくお待ちください", plus some fan messages. Since this text is already in English and not a critical, non-English narrative component, it doesn't need subtitling.
+
+    Given these circumstances – purely instrumental music, no spoken audio, and existing English text on screen – standard practice dictates an empty subtitle list, `[]`. Therefore, I'm confident that the correct output is to call `default_api:final_result` with `subs: []`.
+
+
+- subtitles: []
+  thoughts: |+
+    **My Subtitle Strategy for the Video**
+
+    Okay, so I've got this video and the user wants subtitles. My first instinct is to check the duration—5:01, or 301.5 seconds. Then I need to see if there's any spoken dialogue or vocals. Looking at the scene descriptions and listening carefully, it's a pre-concert waiting screen for the Hololive English 4th Concert "Serendipity." Seems like background music (BGM) and fan messages are looping. No vocal music in any of the segments.
+
+    Wait, the key is the "vocal audio waveform" rule. *That's* my ground truth for dialogue. No vocals = no dialogue subtitles. Period. The rules are clear: I'm SILENT during purely instrumental music unless there's an exception.
+
+    But *wait*, what about visual events? There are on-screen texts: an attention notice with rules, and a "concert starting soon" message (in both English and Japanese). The rule says, "If prominent, relevant text appears on screen, subtitle it." So, I need to check those for both the start and end times to be precise.
+
+    I am re-evaluating the rule of visual text:
+    "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio."
+    "Translate prominent, relevant visual text (titles, signs). Exclude meaningless background clutter or UI elements."
+
+    Double-checking, the video is just pure instrumental BGM, no vocals. And there's no dialogue.
+
+    This is a waiting screen. The video is purely instrumental BGM, no vocals, so the `subs` should be empty `[]`.
+
+    Okay, I've got this. I need to return an empty `subs: []`. The "ZERO GHOST SUBTITLES" rule is clear: I remain silent during this type of instrumental waiting screen.
+
+
+...
