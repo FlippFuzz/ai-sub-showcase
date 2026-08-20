@@ -1,0 +1,36 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **My Subtitle Analysis: Hololive 4th Fes. Video**
+
+    Okay, so I've got this hololive 4th Fes. promotional video to subtitle, specifically for "Our Bright Parade." The video seems to be a display of merchandise, penlight colors, and fan message boards – the usual promotional fare. I’m looking at the video and the reference JSON.
+
+    First, let's establish the baseline. The reference JSON says all segments are "contains_vocal_music": false. Great, that's my first clue. My instructions are clear: "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music..." Perfect, this appears to be the case here. No vocals, singing, or even speech, just background instrumental music. No talking heads.
+
+    The question then becomes: are there *prominent* visual events? The video features merchandise prices, penlight color charts, and digital message boards with fan art and text. But hold on, these are static slides. They are *showing* information, not *narrating* it. It's not like a chapter title on-screen or a location sign. Still, let's verify if there is any speech or vocal at all.
+
+    Let's do a quick listen and inspect the video carefully, from 00:00 to 05:00. Nope. Just instrumental electronic music, BGM. Definitely no vocals, voice acting, or singing.
+
+    Alright, following the "ZERO GHOST SUBTITLES" rule, it's a clear case. No vocals, so I output nothing, *unless* there's a prominent visual event. And there are not. I have verified that.
+
+    So, according to my instructions, the appropriate output is an empty list of subtitles (`subs: []`). I need to double-check that, but I'm pretty sure the `final_result` tool requires a `subs` array. And in this case, it will be `{"subs": []}`. Case closed.
+
+
+- subtitles: []
+  thoughts: |+
+    **Hololive 4th Fes. "Our Bright Parade" Subtitle Decision**
+
+    Okay, so I'm tackling the subtitle job for this Hololive 4th Fes. "Our Bright Parade" video focusing on merchandise, penlight colors, and a digital message board. The JSON reference is in front of me, and the instructions are clear: *zero ghost subtitles* during instrumental music. This isn't a performance video; it's a promotional slideshow. No vocals. That's the first key point.
+
+    I'm initially thrown a little by the "prominent Visual Event" exception. The rule states: "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio." My first thought is whether the title screens like "Tシャツ White" or "OFFICIAL ITEMS" require subtitling, and it's something I often think about for this kind of work, but the rule also implies "relevant text", not *every* piece of text. Let me re-read the rules and think this through.
+
+    I'm seeing a lot of text on the screen: merchandise names, penlight color lists, and endless fan messages. However, I have to determine if these items are prominent and *relevant* text. I need to make the correct choice for this task.
+
+    Based on the instructions and experience, subtitling every single merchandise item or fan message would be both impractical and counter to the spirit of the rule. The video is purely instrumental and visually driven to showcase these things. My conclusion, and what I believe to be the only reasonable output, is an empty `subs` array. There are no vocal events to subtitle, and the visual text, while present, isn't *relevant* in the sense of dialogue or narration. The instructions specified the exception for "Chapter Titles, Location Signs, Letters", not product labels and fan messages. An empty array is the correct output, as it ensures compliance with the rule of remaining silent during instrumental music unless there are prominent, and relevant, text events.
+
+
+...
