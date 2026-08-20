@@ -1,0 +1,76 @@
+name: part_007
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a Hololive variety game segment where virtual
+    YouTubers like Laplus Darknesss, Shirakami Fubuki, and others participate in a
+    drawing challenge, sketching an elephant and a crow while engaging in humorous
+    banter and commentary.
+  scenes:
+  - start: '00:00.000'
+    end: '02:33.000'
+    description: The VTubers sit in a colorful virtual room and present their drawings
+      of an elephant, comparing artistic styles and laughing together.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:33.000'
+    end: '05:00.000'
+    description: The participants introduce the second drawing theme featuring crows,
+      showing off their unique artistic interpretations and joking around with each
+      other.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Hololive VTuber Video Segment**
+
+    Okay, so the task at hand is to dissect this video snippet featuring Hololive VTubers. My initial thought process is to meticulously check the content and identify any instances of actual songs being *performed*. Let's not jump the gun and immediately assume there's music; we have to be thorough.
+
+    First, I need to listen closely to the audio, scrutinize the video frames, and make sure to listen carefully. The instructions are clear: look for *vocal* songs with original artists. I'm especially aware of the caveat: no transcribing or translating, strictly search and verify.
+
+    From what I can tell, at the beginning, we're looking at a standard Hololive variety show segment. There is chatter and laughter and the VTubers are probably improvising a little. It seems like it's a game or talk show, similar to the "#らぷらすといっしょ" format. They sing short jingles, but are they performing a published vocal song? I'm not seeing any formal music track being performed.
+
+    I am hearing some background music, and some silly little melodies that I'm familiar with – like "zousan no" (elephant song) and "karasu no" (crow song). Let's see if those are traditional children's songs. Now I need to decide if snippets of a traditional children's songs should be detected as songs. While common traditional children's songs like "Zousan" by Madoka Michio exist, they are not performing a formal music segment. It's more about snippets and jokes.
+
+    From what I'm seeing throughout the video, it's a variety show segment with VTubers drawing things like elephants and crows. Let's make sure the `contains_vocal_music` field is appropriately flagged as `false`. The key is that the VTubers are humming and singing snippets of songs casually. It seems like they aren't structured music segments. I want to make sure I'm following the explicit instructions. I'm focusing on "vocal songs" with specific artists. They are just singing impromptu, nothing formal. The guidelines are important to remember: "detect ALL vocal songs playing, and use your available search tool to find the official lyrics for every single song."
+
+    Now I'm breaking down the video into logical scenes. I can split it by round, so it makes it easier to reference. Let's start by searching the program. I'm sure there's vocal music, so I will investigate. I'm thinking background music (BGM) and dialogue are obvious, but the singing is impromptu banter and children's songs sung by the speakers. Therefore, `contains_vocal_music` is `false` for all scenes since there are no pre-recorded or performed standalone songs with original artists.
+
+    Let's do a double-check now. It looks like it can be split up into these 2 scenes:
+    *   Scene 1: 00:00.000 - 02:33.000: Intro and Round 1 (Elephant)
+    *   Scene 2: 02:33.000 - 05:00.000: Round 2 (Crow)
+
+    Yes, I need to confirm: no published songs, no performances. It's variety speech content with BGM. Let's make the structure for the JSON output.
+
+    Based on the rules, here's how the JSON structure will look.
+
+    *   `global_summary`: "The video features a Hololive variety game segment where virtual YouTubers like Laplus Darknesss and Shirakami Fubuki participate in a drawing challenge, sketching an elephant and a crow while engaging in humorous banter."
+    *   `scenes`:
+
+        *   Scene 1:
+            *   `start`: "00:00.000"
+            *   `end`: "02:33.000"
+            *   `description`: "The VTubers sit in a colorful virtual room and present their drawings of an elephant, comparing styles and laughing together."
+            *   `contains_vocal_music`: false
+            *   `song_title`: null
+            *   `original_artist`: null
+            *   `performer_in_video`: null
+            *   `original_language`: null
+            *   `reference_lyrics_og`: null
+            *   `reference_lyrics_en`: null
+        *   Scene 2:
+            *   `start`: "02:33.000"
+            *   `end`: "05:00.000"
+            *   `description`: "The participants introduce the second drawing theme featuring crows, showing off their unique artistic
+
+...
