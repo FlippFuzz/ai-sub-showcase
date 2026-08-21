@@ -1,0 +1,54 @@
+name: part_008
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features virtual YouTuber Amelia Watson performing various
+    poses and movements in a 3D game environment while fellow VTubers Zeta, Mumei,
+    and Ollie guess what she is portraying. There is background instrumental game
+    music playing throughout, but no vocal music or songs are sung.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.999'
+    description: Amelia Watson acts out words through movement in a 3D room while
+      Zeta, Mumei, and Ollie watch and guess the correct answers.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Video Clip**
+
+    Okay, so I've got this video clip of Amelia Watson and some other VTubers playing a game – it looks like a charades-style thing. My initial goal here is to identify and analyze any vocal music present. I need to be thorough; I've got to find every single vocal song and get the lyrics using my tools.
+
+    Right off the bat, I need to check the audio, and it's sounding like cheerful background game music, or sound effects, but I don't *hear* any actual singing. Let's make *sure* of that though. I'm going to carefully scrub through the entire 5-minute video segment, to be certain.
+
+    Okay, after a close listen, it's confirmed. It's just instrumental music and the VTubers talking and laughing. No vocal songs at all. This means I'll need to set `contains_vocal_music` to `false`. Since no vocals, there's no need to look for song titles, artists, or lyrics.
+
+    Now I need to map the "scenes" in the video. Since there's no vocal music, it doesn't really matter how I split it. I can treat the entire thing as one scene, or split it up based on the visual cues of the game – Amelia doing the poses and the others guessing – but, either way, `contains_vocal_music` stays `false`.
+
+    Just to be absolutely sure, I'm checking that the background music *is* instrumental and not something with hidden vocals. Nope, definitely instrumental.
+
+    So, here's how I'm structuring the output, following the provided tool schema. I'm noting the `global_summary` describing the general activity in the video. I've got the scene details, including start and end timestamps, a description of the activity, and, crucially, `contains_vocal_music` set to `false`. The other song-related fields are all null because there are no songs:
+
+    *   **Global Summary**: "The video shows virtual YouTuber Amelia Watson performing various poses/movements in 3D while other VTubers (Zeta, Mumei, Ollie) guess the answers in an interactive game stream."
+
+    *   **Scene 1**:
+        *   `start`: "00:00.000"
+        *   `end`: "04:59.999"  (I'm nailing down that end timestamp by checking the video timeline)
+        *   `description`: "Amelia Watson acts out various words through movement in a 3D room while Zeta, Mumei, and Ollie watch and guess."
+        *   `contains_vocal_music`: false
+        *   `song_title`: null
+        *   `original_artist`: null
+        *   `performer_in_video`: null
+        *   `original_language`: null
+        *   `reference_lyrics_og`: null
+        *   `reference_lyrics_en`: null
+
+    Finally, since I confirmed that there's no music with vocals, there's no need to use any search tools to get song data or lyrics. I am good to go.
+
+
+...
