@@ -1,0 +1,71 @@
+name: part_021
+total_attempts: 1
+video_duration_ms: 243481
+lyrics_prompt_version: 9
+response:
+  global_summary: The video presents the ending credits of the Hololive Production
+    Countdown Live, featuring scrolling staff credits, song titles, and multi-angle
+    3D concert footage accompanied by an instrumental background medley, ending with
+    a closing message card.
+  scenes:
+  - start: '00:00.000'
+    end: '03:22.000'
+    description: Ending credits sequence featuring scrolling staff names, song titles,
+      and picture-in-picture 3D live performance clips accompanied by instrumental
+      background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:22.000'
+    end: '03:29.500'
+    description: Fade out to a final closing screen displaying the Hololive Production
+      Countdown Live logo and a New Year message.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Hololive Countdown Live Credits Video**
+
+    Alright, let's break this down. My task is to analyze this Hololive Production Countdown Live credits/outro video and identify vocal music. I'm seeing a video with a lot of scrolling credits and a collection of song titles. Looks like the following songs are listed: [RENEGADE], 「アワータイムイエロー」 (Our Time Yellow), [Genesis], [id:entity voices], 「暁岡エクステス！」 (Akatsuki Ekutesu! / Dawn Exstasis), [Run Back 'Round], [Slap by Step], [Fortune Spinner], [Hyper Jumpin'], [Dramatic XViltration!], 「青春アーカイブ」 (Seishun Archive), 「夢見る空へ」 (Yumemiru Sora e), [We are GAMERS!!!!!], 「キラメキライダー☆」 (Kirameki Rider☆), 「電脳ぴゅあ推し大宣言」 (Dennou Pure Oshi Daisengen), [Shiny Smily Story], [Prism Melody], [Show Them (Who You Are)], [All for One], 「Our Bright Parade」.
+
+    Now, I'm checking the audio. Crucially, I need to determine if there's any active vocal music *within* this video clip, not just the songs listed in the credits. I'm listening carefully. The audio is an instrumental medley or background music (BGM) track for the credits. No singing, just instrumental music. The video is labeled as the ending credits for Hololive Countdown Live 2025-2026.
+
+    I'm verifying, there are no vocals being performed in this clip. I'm referencing the provided example in the instructions to ensure I'm getting this right: "contains_vocal_music: false, song_title: null..." Since there are no vocals in this scene, I'm going with `contains_vocal_music: false`.
+
+    Let's divide the video into scenes. I'm noticing a visual change. From 00:00 to 03:22, we have the credits scrolling over stage footage. From 03:22 to 03:27, we have the fade-out, which is visual transition between the song list and the closing screen. Then, from 03:27 to 03:29, there is an end card stating the Hololive Production Countdown Live 2025-2026, and is the outro scene.
+
+    Based on the instructions, the presence of vocals determines if a search is needed, and my job is to find the lyrics of songs with active vocal music. Since the video segment is ending credits with instrumental background music (and no sung vocals), the fields for song information and lyrics will be set to `null`. This is in line with the prompt instructions.
+
+    Here is what I've identified:
+
+    *   **Global Summary:** The video presents the ending credits of the Hololive Production Countdown Live, featuring scrolling staff credits, song titles, and multi-angle 3D concert footage accompanied by an instrumental background medley, ending with a closing message card.
+    *   **Scene 1 (00:00.000 - 03:22.000):** Ending credits sequence featuring scrolling staff names, song titles, and picture-in-picture 3D live performance clips accompanied by instrumental background music.
+    *   **Scene 2 (03:22.000 - 03:29.500):** Fade out to a final closing screen displaying the Hololive Production Countdown Live 2025-2026 logo and a New Year message.
+
+    Therefore, for all scenes, I'm setting `contains_vocal_music` to `false`, and all song-related information to `null`.
+    ```json
+    {
+      "global_summary": "The video presents the ending credits of the Hololive Production Countdown Live, featuring scrolling staff credits, song titles, and multi-angle 3D concert footage accompanied by an instrumental background medley, ending with a closing message card.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "03:22.000",
+          "description": "Ending credits sequence featuring scrolling staff names, song titles, and picture-in-picture 3D live performance clips accompanied by instrumental background music.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+
+
+...
