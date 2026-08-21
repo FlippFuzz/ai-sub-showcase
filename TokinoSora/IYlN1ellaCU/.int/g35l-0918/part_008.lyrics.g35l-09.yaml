@@ -1,0 +1,88 @@
+name: part_008
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a talk show and retrospective celebrating Tokino Sora's
+    milestone of 1 million subscribers. It begins with a congratulatory video message
+    from Tenjin Kotone, followed by a discussion on a virtual stage featuring Tokino
+    Sora and guests reviewing her timeline and achievements.
+  scenes:
+  - start: '00:00.000'
+    end: '01:43.900'
+    description: Tenjin Kotone appears on screen and talks about Tokino Sora, offering
+      her congratulations and thoughts.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:43.900'
+    end: '05:00.000'
+    description: Tokino Sora and guests are seated on a virtual stage, discussing
+      a timeline display of Sora's career milestones from her 3rd and 4th years.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Clip: A Chronological Breakdown**
+
+    Alright, let's get down to brass tacks. The objective is to analyze this video and provide a structured summary. First, the video needs a scene-by-scene breakdown, with any vocal songs identified and metadata extracted, including lyrics. Let's start with a quick listen. Based on the initial visual, it looks like a virtual YouTuber event, possibly with Tokino Sora, and I'm seeing other characters on-screen.
+
+    Okay, first thing's first: vocal music. Let's see if there are any songs being performed. At the outset, it seems like a straightforward talk show or retrospective stream on Tokino Sora's history. I'll need to go through the video segment by segment to make sure. I'm checking the 0-5 minute mark, and I'm not hearing any actual musical performances or songs with sung vocals. There's background music (BGM), but that’s distinct from vocal music. I need to make sure I get that distinction correct.
+
+    I need to confirm if any song title is mentioned or sung at any point; it's easy to miss. No, nothing. It's just BGM and discussion. So I need to structure the response based on the guidance that if there's no vocal music, then all song-related metadata should be `null`. The `contains_vocal_music` field will be `false` in this case.
+
+    Now, let's identify the scenes. Visually, it seems to be split into: first, a solo speaker, and then a group discussion. I need to carefully note the scene changes.
+
+    Okay, here’s how the scenes are playing out:
+
+    *   **Scene 1 (00:00 - 01:43.900)**: At the beginning, Tenjin Kotone is on-screen, offering her congratulations and thoughts on Tokino Sora.
+    *   **Scene 2 (01:43.900 - 05:00.000)**: From that point on, Tokino Sora is on stage with guests, discussing her anniversary.
+
+    I'm confirming that there is absolutely no vocal music in this video. BGM alone is not enough to constitute "vocal music" for this analysis. With this in mind, the `contains_vocal_music` field will be `false` for each scene. And all the song metadata fields will remain at `null`.
+
+    So, the structure I have to adhere to will be something like this:
+
+    ```json
+    {
+      "global_summary": "The video features a talk show celebrating Tokino Sora's milestone, starting with a message from Tenjin Kotone and followed by a retrospective discussion on stage with Tokino Sora and guests.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "01:43.900",
+          "description": "Tenjin Kotone appears on screen, speaking about Tokino Sora and offering her congratulations.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "01:43.900",
+          "end": "05:00.000",
+          "description": "Tokino Sora and guests are seated on a virtual stage reviewing a timeline of Sora's history and milestones.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Okay, the timestamps look good, and I'm confident in the analysis. Time to output the `final_result`.
+
+
+...
