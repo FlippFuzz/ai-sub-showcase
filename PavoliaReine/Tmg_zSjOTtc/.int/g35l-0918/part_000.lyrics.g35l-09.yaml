@@ -1,0 +1,52 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a continuous pixel art animation of a DJ at a
+    console with large speakers and dancing blue ducks, accompanied by an upbeat electronic
+    chiptune instrumental background track with no vocal music.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: A continuous pixel art animation showing a DJ with sunglasses and
+      a cap behind a console, flanked by large rotating vinyl speakers, with a row
+      of dancing blue ducks at the bottom and scrolling text reading 'HAPPY BIRTHDAY'.
+      An upbeat electronic chiptune instrumental track plays throughout.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video's Audio-Visual Elements**
+
+    Okay, so the user wants me to dissect this video. My immediate goal is to break it down, pinpoint any vocal tracks, and grab those lyrics from the web. Let's see... the video is roughly five minutes long. The visuals are a pixel art scene – a DJ console, "PLEASE WAIT..." text, spinning vinyls, dancing blue ducks, and "HAPPY BIRTHDAY" scrolling across the DJ table. Visually, it's pretty straightforward.
+
+    Now, for the audio. Initially, it sounds like an instrumental chiptune or electronic background track. A repeating synthesizer beat. I need to be absolutely sure though. I'm going to listen closely to see if any vocals sneak in. *Hmm...* nope, nothing. It's purely instrumental; no sung vocals are present from beginning to end (00:00 to 04:59). Okay, I'm double-checking, just to be thorough because I know how important accuracy is, especially in my field. Still no vocals. It's a loading screen with a pixel art style and that repeating chiptune. No lyrics; no vocals.
+
+    Now, let me make sure I'm addressing the user's request precisely. Break down into scenes. Detect *all* vocal songs. If there are no vocals, `contains_vocal_music` needs to be `false`, and the song fields should be `null`.
+
+    So, the whole video duration (00:00 to 04:59) is essentially one scene: A pixel art waiting screen with a DJ, large speakers, dancing blue ducks, and an upbeat electronic chiptune instrumental track. No vocals. No need to get fancy with scene segmentation here.
+
+    Here's how I'll structure the final data:
+
+    *   **Start:** 00:00.000
+    *   **End:** 04:59.000
+    *   **Description:** Pixel art animation of a DJ in front of large speakers with dancing blue ducks, accompanied by an upbeat electronic chiptune instrumental track.
+    *   **contains\_vocal\_music:** false
+    *   **song\_title:** null
+    *   **original\_artist:** null
+    *   **performer\_in\_video:** null
+    *   **original\_language:** null
+    *   **reference\_lyrics\_og:** null
+    *   **reference\_lyrics\_en:** null
+
+    Just for due diligence, I'll do a quick search – just to rule out that this chiptune isn’t a known instrumental track. But even if it *is* a known piece of music, since there are *no* sung vocals, `contains_vocal_music` is staying false. The core of this is no vocals!
+
+    Now, I'm ready to structure the final JSON response using `default_api:final_result`.
+
+
+...
