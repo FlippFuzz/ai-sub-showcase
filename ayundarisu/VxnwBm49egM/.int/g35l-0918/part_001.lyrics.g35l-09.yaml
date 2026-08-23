@@ -1,0 +1,94 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features VTuber Ayunda Risu in a 3D stream segment where
+    she chats with viewers, introduces her first song 'KING', and presents a cinematic
+    animated transition of a rainy city street before returning to her virtual room.
+  scenes:
+  - start: '00:00.000'
+    end: '02:52.000'
+    description: Ayunda Risu stands in a virtual 3D room with checkered floor and
+      green trees, chatting with viewers and introducing her opening song 'KING'.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:52.000'
+    end: '04:59.000'
+    description: A black-and-white cinematic animation of a rainy city street featuring
+      a cardboard box, which transitions back to Risu's pink room where she pops out
+      of the box.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video Segment: A Deep Dive into "KING" by Kanaria, Performed by Ayunda Risu**
+
+    Okay, so I need to dissect this video segment. My immediate plan is to break it down chronologically, identify any vocal tracks, nail down their metadata, and then track down the official lyrics – both in the original language and an English translation. This is straightforward, let's get into it.
+
+    Right, the video starts at 00:00 with Ayunda Risu, a VTuber, in a 3D environment. She's talking, possibly singing a cover. First thing's first: let's listen carefully. The top-left corner gives us a vital clue: "KING." The accompanying hashtag, `#AyundaRisu3D`, confirms the context. So, "KING" by Kanaria. Confirmed.
+
+    Now, let's verify. From 00:00 to 02:51, Ayunda Risu introduces the song, saying she's "closing" with it. Hmm, is there any background music or instrumental? Let me check more carefully, from 00:00 onwards. Wait, the intro music is indeed "KING" instrumental or loop from 00:00 to 00:08, but she's talking over it. From 02:53, a music video/animation in black and white starts, with rain. It's in the style of Kanaria's "KING" MV. So, does it have vocals? I need to analyze the video and audio more carefully. 02:53 - 04:59 is the interesting bit.
+
+    Before I go further, let's establish a baseline with a quick web search. I need to find the official lyrics for "KING" by Kanaria; searching for "KING Kanaria lyrics" should do the trick.
+
+    Alright, the song metadata is starting to take shape: Song Title: "KING"; Original Artist: Kanaria (かなきあ / カナリア); Performer in the video: Ayunda Risu; Original Language: Japanese.
+
+    Now, I'll run a parallel search for both "KING Kanaria lyrics" and, crucially, the Japanese lyrics. This way, I have the best data to cross-reference the video segment.
+
+
+
+    **Analysis of Ayunda Risu's "KING" Video - A Technical Breakdown**
+
+    Alright, let's break this down. We've got the lyrics for Kanaria's "KING" handy, both original and translated. My primary task here is to determine if and where vocal music plays within Ayunda Risu's video, and tag accordingly, so let's get into it.
+
+    The video starts at 00:00.000, so let's start there. The first segment, from 00:00.000 to 02:51.500, seems to feature Risu in a 3D virtual environment. She's introducing her first song, "KING," and chatting with the audience. Okay, here's the critical question: is there any actual singing? No. It's all talking, an introduction, with some background instrumental music playing, which I'll have to consider for tagging.
+
+    Now, from 02:52.000 to 04:59.000, we have the animation segment, a "KING" MV recreation. We see the black-and-white rain environment, with the squirrel character, the box, etc. I'll need to confirm whether any vocal music is in this segment. Let's look at it closely. I see Risu says, "Oruyoru ganbarisuuu!" at 04:45-04:52. Right! She does say something, but is it considered a *song*? I'm inclined to say no. I'll need to listen to the whole segment from 02:52 to 04:59 to confirm. It seems to be an instrumental/atmospheric BGM, more like a dark lofi/ambient version, not a song. Wait, is there any singing between 02:53 and 04:59? No, it's instrumental, and then her spoken cheer at the end.
+
+    Okay, let's step back and summarize, keeping in mind the need to specifically *detect ALL vocal songs playing*. So:
+
+    *   **00:00 - 02:51:** Risu is talking. No actual vocal performance of "KING" or any other song. It's an introduction.
+    *   **02:52 - 04:59:** Instrumental BGM plays (sounds like an ambient/lofi beat). Rain sounds. Risu cheers or says something at the end, but no singing.
+
+    Thus, there is *no* vocal music performance in this video clip. It's entirely talking and VTuber 3D stream, where she introduces the song "KING", shows an animated vlog, and talks. This impacts how I should tag all the scenes. It's important to be correct; even if she's introducing "KING," if no one is singing it, then I have to proceed accordingly.
+
+    I need to confirm whether to set `contains_vocal_music: false` for all scenes. And since no vocal performance occurs, `song_title` should be `null` in both scenes. If there is background instrumental, and no vocals, then by the guidelines, it should be null as well (or considered as such; I'll need to confirm that that instrumental can't be listed as a song here).
+
+    Let's double-check the structure. I am confident that there are two separate scenes here.
+
+    **Scene Breakdown:**
+
+    *   **Scene 1:**
+        *   Start: 00:00.000
+        *   End: 02:52.000
+        *   Description: Ayunda Risu in a 3D virtual room, introducing "KING".
+        *   `contains_vocal_music`: false
+        *   `song_title`: null
+        *   `original_artist`: null
+        *   `performer_in_video`: null
+        *   `original_language`: null
+        *   `reference_lyrics_og`: null
+        *   `reference_lyrics_en`: null
+
+    *   **Scene 2:**
+        *   Start: 02:52.000
+        *   End: 04:59.000
+        *   Description: Black-and-white rainy animation, Risu popping out of the box in her room.
+        *   `contains_vocal_music`: false
+        *   `song_title`: null
+        *   `original_artist`: null
+        *   `performer_in_video`: null
+        *   `original_language`: null
+        *   `reference_lyrics_og`: null
+
+...
