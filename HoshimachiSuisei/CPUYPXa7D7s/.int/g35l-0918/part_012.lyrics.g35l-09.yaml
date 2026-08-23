@@ -1,0 +1,82 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video begins with Hoshimachi Suisei making announcements regarding
+    tickets, Nendoroid figures, and live streaming schedules in a virtual studio.
+    Afterwards, she transitions to a virtual stage to give a live musical performance
+    of her song '灼熱にて純情(wii-wii-woo)' with backup dancers.
+  scenes:
+  - start: '00:00.000'
+    end: '02:18.000'
+    description: Hoshimachi Suisei stands in a virtual studio presenting announcements
+      about upcoming ticket sales, Nendoroid figures, and broadcast schedules.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:19.000'
+    end: '05:00.000'
+    description: Hoshimachi Suisei performs her song '灼熱にて純情(wii-wii-woo)' live on
+      a stage accompanied by backup dancers wearing black outfits with red sashes.
+    contains_vocal_music: true
+    song_title: 灼熱にて純情(wii-wii-woo)
+    original_artist: 田淵智也
+    performer_in_video: Hoshimachi Suisei
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Pinpointing the Song**
+
+    Okay, so I need to get this video broken down quickly. My thought process is to take it apart scene by scene, identify any vocal music, and then nail down all the metadata for the song. I'll use parallel processing to speed things up, pulling lyrics from the web simultaneously.
+
+    First, I see the initial segment from 00:00 to 02:18. It's Hoshimachi Suisei, making announcements. No musical performance there; just double-checking to confirm that fact. Then, around 02:19 to 05:00, the performance starts. The title on screen clearly says "灼熱にて純情(wii-wii-woo)" (Shakunetsu nite Junjou (wii-wii-woo)).
+
+    I've got to check the credits:
+    *   Song Title: 灼熱にて純情 (wii-wii-woo) / Shakunetsu nite Junjou (wii-wii-woo)
+    *   Lyrics/Composition: 田淵智也 (Tomoya Tabuchi)
+    *   Arrangement: 堀江晶太 (Shouta Horie)
+    *   Performer: 星街すいせい (Hoshimachi Suisei)
+
+    I need to confirm the original artist. It seems Hoshimachi Suisei, and it's from her 2nd album "Specter." Now, it's time to get the lyrics!
+
+    I'll use `web_search_langsearch_multi` to run these queries in parallel:
+
+    1.  灼熱にて純情 wii-wii-woo 星街すいせい 歌詞
+    2.  Shakunetsu nite Junjou Hoshimachi Suisei lyrics English
+
+    This should give me everything I need.
+
+
+
+    **Finding the Lyrics to 灼熱にて純情 (wii-wii-woo)**
+
+    Okay, let's get down to brass tacks. I need the lyrics for "灼熱にて純情 (wii-wii-woo)." Given my experience, I know the best approach is to zero in on the Japanese lyric sites first. Forget the broad Google search; I'm going straight to Uta-Net, J-Lyric, Utamap, and Lyrical-Nonsense. Those are my go-to resources for this kind of material. Efficiency is key, and I know those sites are the most likely to have it, and to have the cleanest data. While I'm at it, since it is a Japanese song, let's also run a concurrent search for an English translation. This way, I can cross-reference and better understand the nuances of the original text. Double the search, double the insights.
+
+
+
+    Here's my thought process, distilled:
+
+    **Finding Those Lyrics**
+
+    Okay, I need to get the full lyrics for "灼熱にて純情." Let's be smart about this. Just searching for the song title alone might bring up a lot of unrelated results, or possibly even incomplete lyric snippets. I need to be specific. I'll head over to Google (or my preferred search engine) and try a couple of targeted searches. The first one will be pretty straightforward: `星街すいせい 灼熱にて純情 歌詞`. That should zero in on the specific artist and song. Just in case there are variations or alternate titles out there, and to make sure I get the whole thing I'll try `灼熱にて純情 wii-wii-woo 歌詞` as well. That specific phrase should hopefully lead me right to what I need. Perfect. This should get me the complete text.
+
+
+
+    **My Analysis of the Video Data**
+
+    Okay, so I'm processing this video data, and the first thing I had to do was check for the lyrics to "灼熱にて純情 (wii-wii-woo)." Right away, I see that the instructions are very specific. They are very clear: If the lyrics aren't directly available from the search, I absolutely *cannot* guess, transcribe, or approximate them. It's a hard rule. Since the search didn't turn up the full lyrics – only partial mentions and metadata – the `reference_lyrics_og` and `reference_lyrics_en` fields *must* be set to `null`. Simple enough. I'm following that directive precisely.
+
+    Now, let's look at the video structure itself. I've broken it down into two scenes. Scene 1 covers the announcements, from 0:00 to 2:18. It's all about tickets, figures, and streams. Definitely no vocal music there. So, `contains_vocal_music` is `false`, and the song-related fields are all `null`, as expected.
+
+    Scene 2, from 2:19 to the end at 5:00, is where things get interesting. This is the performance itself! It's "灼熱にて純情 (wii-wii-woo)" live on a virtual stage. Obviously, `contains_vocal_music` is `true`. The `song_title` is the song title. Now the original artist. Here I had to be careful. I checked the video credits, and while Hoshimachi Suisei *performs* the song, the *composer* is listed as 田淵智也 (Tomoya Tabuchi). Or Hoshimachi Suisei! As per the instructions, I can set either one. So, I will do that. Performer in video is Hoshimachi Suisei, the original language is Japanese, and *again*, because I couldn't find the full lyrics, `reference_lyrics_og` and `reference_lyrics_en` remain `null`.
+
+    Finally, I'm just reviewing the constraints to make sure the JSON response will be constructed correctly: Non-overlapping scenes, the correct timestamp format, and a clear `global_summary`. I'm confident I've got all the pieces, and I'm ready to assemble the final JSON response.
+
+
+...
