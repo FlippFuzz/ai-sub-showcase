@@ -1,0 +1,56 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 256560
+lyrics_prompt_version: 9
+response:
+  global_summary: The video shows the closing remarks of Houshou Marine's 3rd Anniversary
+    stream featuring Ookami Mio and Shirakami Fubuki, followed by a promotional voiceover
+    by Houshou Marine advertising her 3rd anniversary merchandise with instrumental
+    background music.
+  scenes:
+  - start: '00:00.000'
+    end: '01:34.000'
+    description: Houshou Marine, Ookami Mio, and Shirakami Fubuki are on stage wrapping
+      up the stream, chatting, showing off their models, and concluding with credits.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:34.000'
+    end: '04:00.000'
+    description: A promotional segment where Houshou Marine narrates and presents
+      her 3rd anniversary merchandise collection with instrumental background music
+      playing.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Content**
+
+    Okay, so the task is to break down this video and identify any vocal music, then fetch the lyrics. Let's get to it. First, I'm examining the video – it's a Hololive clip, specifically "Houshou Marine 3rd Anniversary Song Festival," featuring Marine, Mio, and Fubuki. I see the stream is wrapping up, some model updates, and then an ad for merchandise.
+
+    I need to confirm whether any actual songs with vocals are present. Going through it chronologically: from the beginning to about 1:34, it's just the VTubers talking, banter, stream ending. The credits roll. Then, from 1:35 onwards, we get an announcement with visuals and voiceover for the anniversary goods. There's background music, but my initial impression is that it's instrumental.
+
+    Let's do a more careful audio check. Listening specifically to the later segment – from 1:35 to the end – it's definitely instrumental background music, some upbeat pop or idol-stream style music. No singing or vocals there. I'm also listening very closely at 3:52, where Marine says something, just to verify it isn't any part of the start of the music. Still nothing. No sung vocals.
+
+    Re-reading the instructions to be absolutely certain: I need to *detect all vocal songs* and then get *official* lyrics. The key is "active music with *sung* vocals". Since there's only talking, narration, and instrumental music, my conclusion is that `contains_vocal_music` will be `false` for every scene, and all song-related fields should be `null`. No search is necessary.
+
+    I need to break this down into scenes to match the requested format.
+
+    Scene 1: From 0:00 to 1:34, it's the VTubers' closing talk, stream end, credits. Vocal music? No.
+
+    Scene 2: From 1:34 to the end, the goods promotion with voiceover and instrumental music. Again, no vocals.
+
+    I'm double-checking the timestamps to make sure they're right. The format requires that I explicitly identify the start and end times for each scene. Scene 1 runs from 00:00.000 to 01:34.000, and Scene 2 from 01:34.000 to 04:00.000 (the end).
+
+    Finally, I'm reviewing the JSON format: It's all straightforward given the lack of vocal music. The scene descriptions, timestamps, and `contains_vocal_music` set to `false`, with song metadata all `null`. I'm ready to output the result.
+
+
+...
