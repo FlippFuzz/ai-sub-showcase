@@ -1,0 +1,44 @@
+name: part_010
+total_attempts: 1
+video_duration_ms: 123048
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:07.500'
+    end: '00:10.133'
+    original: 常闇トワ生誕祭 BIRTHDAY FESTIVAL 2022 TOKOYAMI TOWA
+    english: '[Tokoyami Towa Birthday Festival 2022]'
+  thoughts: |+
+    **Analysis of Video Clip for Subtitling**
+
+    Okay, so I need to create subtitles for this video clip from 00:00 to 00:10. First, let's break down what's happening. From 00:00 to 00:07, it's staff credits rolling with instrumental music. No vocals, so that's a key point. Let me quickly double-check: yep, no vocals at all. The instructions emphasize subtitling "prominent, relevant text," even without audio.
+
+    I see some Japanese text on screen: staff credits like "オープニング Roly" and "エンディング Roly". But are rolling staff credits considered relevant? Generally, those aren't subtitled unless explicitly required or part of the core content. The instructions specify chapter titles or location signs. Let's list the staff credits: "サムネイル制作 IKKI", "オープニング Roly RIDE® にーぬね", "エンディング Roly RIDE®", "撮影、企画補佐: カバー株式会社", "SPECIAL THANKS 常闇春凪". Okay, so they are credits.
+
+    Then at 00:08, there's a title card: "BIRTHDAY FESTIVAL 2022 TOKOYAMI TOWA" / "常闇トワ生誕祭". This seems significant – the event title. Is this a *chapter title* or a *main title*? Definitely the *main title* screen. Now, the `contains_vocal_music` field is `false`. The rules explicitly say, "Remain SILENT during pure instrumental music unless there is a prominent Visual Event." So, what is a "prominent visual event?" I remember the JSON reference and examples.
+
+    The example shows:
+
+    ```json
+            {
+              "s": "00:02.000",
+              "e": "00:05.000",
+              "og": "第1章",
+              "en": "[Title: Chapter 1]"
+            }
+    ```
+
+    So "[Title: Chapter 1]" is a subtitled chapter title. The main title card should get subtitled.  I'm going to subtitle it. Let's refine the timestamps, it fades at 00:10.133, the screen turns green at 00:07. So the subtitle should be:
+
+    `s`: "00:07.500", `e`: "00:10.133", `og`: "常闇トワ生誕祭", `en": "[Tokoyami Towa Birthday Festival 2022]" or similar. The full screen text is `常闇トワ生誕祭 BIRTHDAY FESTIVAL 2022 TOKOYAMI TOWA`, so a more literal subtitle is likely better.
+
+    I'll check the timestamps: 00:07.500 is when the screen goes green, and the title fully appears at 00:08.00 and fades around 00:10. I think 00:07.500 to 00:10.133 works.
+
+    So, the original text is: "常闇トワ生誕祭 BIRTHDAY FESTIVAL 2022 TOKOYAMI TOWA". Let's subtitle it with a maximum 50-character limit:
+
+    `s`: "00:07.500", `e`: "00:10.133", `og`: "常闇トワ生誕祭 BIRTHDAY FESTIVAL 2022 TOKOYAMI TOWA", `en": "[Tokoyami Towa Birthday Festival 2022]"
+
+    I'll output only the subtitled line because there are no vocals or other visual events.
+
+
+...
