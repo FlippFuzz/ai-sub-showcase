@@ -1,0 +1,92 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video begins with an extended MC and chatting segment featuring
+    various Hololive VTubers in yukata on a festival stage (00:00.000 - 03:16.800),
+    followed by a musical performance of the song 'Sparklers' (03:16.800 - 05:00.000).
+  scenes:
+  - start: '00:00.000'
+    end: '03:16.800'
+    description: VTubers in yukata chatting, joking, and introducing songs on a festival-themed
+      stage decorated with lanterns and banners.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:16.800'
+    end: '05:00.000'
+    description: Virtual idols performing the song 'Sparklers' on stage under blue
+      stage lighting with a moon backdrop and on-screen credits.
+    contains_vocal_music: true
+    song_title: Sparklers
+    original_artist: null
+    performer_in_video: Hololive members
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video Data**
+
+    Okay, so the task at hand is to analyze this video and pull out specific information, particularly vocal songs and their lyrics. I need to dissect this video, segment by segment, and identify any musical components. First, I need to look at the timeline.
+
+    I see that from 00:00 to 03:16, it's a bunch of VTubers – Subaru, Korone, La+ Darkness, and Towa – chatting at a Japanese festival. That's all dialogue, no need to worry about any singing here.
+
+    Then, from 03:16 to 05:00, something pops up. Ah, "Sparklers" is playing. The credits are shown, and it seems to have been composed by Matsui Yohei, YAS, and Ishikura Takayuki. Now, this is what I need: the lyrics. Specifically, I'm going to note the timing of the credits at 03:29, which will be useful if I need to confirm something later.
+
+    So, I need to figure out the exact title, maybe the Japanese title too, if there is one. Then, I will need to search for the lyrics.
+
+    My search approach: I need to be careful with the search. I should *not* use quotation marks, and I need to prioritize searching for the original artists or composers like Matsui Yohei, YAS, and Ishikura Takayuki, or use the song title "Sparklers" directly. Seems like `web_search_langsearch_multi` is the right tool to use for this, to use the language component of the tool.
+
+
+
+    **Focusing on "Sparklers"**
+
+    Okay, let's get down to brass tacks. I need to find the lyrics for "Sparklers," specifically the version associated with Matsui Yohei, YAS, and Ishikura Takayuki, or failing that, the hololive summer version. To cut through the noise, I'm going to formulate a targeted search query. Time to see what the internet can dredge up.
+
+
+
+    **My Analysis of the Video Segment**
+
+    Okay, let's break this down systematically. We've got a video segment to analyze, and I need to extract key information about its content. The first thing I note is that the video is split into two distinct parts: talking followed by a musical performance. Specifically, from 00:00.000 to 03:16.800, there's chatter, and from 03:16.800 to 05:00.000, we have the performance of "Sparklers" by Hololive Summer characters.
+
+    Now, a critical constraint here is that I *cannot* manually transcribe or translate lyrics. Given the instruction to be very strict: If I can't find the official lyrics using the search tool, then I *must* set the lyric fields to null. This is a crucial detail. I need to make sure I'm adhering to it. Since "Sparklers" is a recent Hololive Summer original, it's very likely the lyrics might not be readily available online.
+
+    So, let's test it: I've checked the search results, and, as expected, it appears that the full lyrics of "Sparklers," composed by YAS and Ishikura Takayuki, and written by Matsui Yohei, aren't showing up. This means the `reference_lyrics_og` and `reference_lyrics_en` fields *must* be set to `null`. There's no room for guesswork here; the constraint is clear.
+
+    Now, let's meticulously verify the scene timestamps and descriptions. I'll need to double-check that the start and end times for each scene are accurate and cover the entire duration of the video.
+
+    Scene 1:
+
+    *   Starts at 00:00.000, ends at 03:16.800.
+    *   Description: Virtual VTubers (Oozora Subaru, Ookami Mio, La+ Darknesss, Hoshimachi Suisei, Nakiri Ayame, etc., appearing in various combinations throughout the talk) chatting and joking on a festival stage decorated with red-and-white banners and lanterns during a Hololive Summer stream.
+    *   `contains_vocal_music`: `false`
+    *   `song_title`: `null`
+    *   `original_artist`: `null`
+    *   `performer_in_video`: `null`
+    *   `original_language`: `null`
+    *   `reference_lyrics_og`: `null`
+    *   `reference_lyrics_en`: `null`
+
+    Scene 2:
+
+    *   Starts at 03:16.800, ends at 05:00.000 (the video's end).
+    *   Description: VTubers performing the song "Sparklers" on stage under blue stage lighting with a moon graphic in the background, accompanied by on-screen lyrics and credits (Lyrics: Yohei Matsui, Music/Arrangement: YAS, Takayuki Ishikura).
+    *   `contains_vocal_music`: `true`
+    *   `song_title`: `Sparklers`
+    *   `original_artist`: `Yohei Matsui`
+    *   `performer_in_video`: `Hololive Summer members`
+    *   `original_language`: `Japanese`
+    *   `reference_lyrics_og`: `null`
+    *   `reference_lyrics_en`: `null`
+
+    I've reviewed all instructions and constraints, including the "SEARCH FAILURE FALLBACK" which forces `reference_lyrics_og` and `reference_lyrics_en` to be `null` because the search didn't yield the official lyrics. I must also confirm that all of the chronological scenes map the entire video segment from start to end.
+
+    Everything seems to be clear and compliant with the prompt instructions. I'm ready to call `final_result`.
+
+
+...
