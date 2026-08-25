@@ -1,0 +1,86 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a Hololive VTuber collaboration featuring Shirakami
+    Fubuki, Nakiri Ayame, and Ookami Mio playing a karuta game in a traditional Japanese-style
+    room, reading cards, bantering, and tallying scores.
+  scenes:
+  - start: '00:00.000'
+    end: '02:37.000'
+    description: Shirakami Fubuki, Nakiri Ayame, and Ookami Mio play a karuta card
+      game in a traditional Japanese room, reading out humorous cards and discussing
+      gameplay.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:37.000'
+    end: '04:28.000'
+    description: The VTubers review their scores, walk around the room, and banter
+      about the results of the karuta match.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:28.000'
+    end: '04:59.000'
+    description: The trio gives closing remarks and wraps up the karuta collaboration
+      stream segment.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Audio**
+
+    Okay, so I need to get this right. First things first: let's break down this video into scenes chronologically. Right, looking at it, it's a VTuber collaboration – Shirakami Fubuki, Nakiri Ayame, and Ookami Mio – playing karuta, presumably in a Japanese-style setting. The key here is to figure out if there's *any* music playing. So, I need to carefully examine the audio and content to determine if it’s playing music.
+
+    I'm hearing them talk, and they are reading the karuta cards. This could be a performance that has music incorporated. Wait, is it? Let's check from 00:00 to 04:59. Are they singing an actual song, or is it more like speech/reading of the karuta cards, which, let's be honest, could totally be comedic parodies or rhymes?
+
+    Okay, let me check what they are reading. I've got a snippet here: "愛込めて あの狐(こ)に捧ぐ この一杯…" and then "もっちゃもっちゃ、きつねのうどん", "せっせっせーの よいよいよい！". Hmmm... are these lyrics from a known song, or are they original karuta poems or rhymes specifically created for Hololive?
+
+    Right, the smart move here is to search. Let's start with those phrases. I'll search for "もっちゃもっちゃ、きつねのうどん" and then also "あの娘に捧ぐこの一杯". The goal is to figure out if this is a genuine song, or just original dialogue, voice drama, or a skit. I need to make sure I don't give a wrong answer, so I need to check the web to determine if it's an actual song that is playing.
+
+
+
+    **Analysis of the Hololive Karuta Game Video**
+
+    Alright, let's break this down. From the looks of it, we have a Hololive collaboration featuring Shirakami Fubuki, Nakiri Ayame, and Ookami Mio playing a game of karuta. Based on the initial observation, this seems to be spoken dialogue, acting, and gaming banter; it's *not* a musical performance, so the presence of vocal music is a key consideration.
+
+    I need to confirm this definitively. Let's do a sweep of the entire video – from the very start, 00:00, all the way to 04:59.  Okay, I'm watching the flow: they're talking, laughing, reading karuta cards, interacting as their 3D avatars in a virtual room – no singing or any discernable vocal music. So, we're confirming there's *no* vocal music here. This means the `contains_vocal_music` field is definitively `false`.
+
+    Now, let's structure this into sensible scenes. It's a single continuous video of a karuta game, so we can organize it based on the action flow and visual transitions.  I'm going to break it into three scenes for clarity:
+
+    *   00:00 to 02:37: The first round of karuta gameplay and discussion within the Japanese-style room.
+    *   02:37 to 04:28: Reviewing the scores, and general banter as the characters move around.
+    *   04:28 to 04:59: Closing remarks and the ending.
+
+    I've got the scenes clearly mapped. And importantly, none of these scenes contain vocal music – the `contains_vocal_music` field will be `false` for each of them.  That means the song-specific metadata fields like `song_title`, `original_artist`, etc., are all `null`.
+
+    Time to double-check the required JSON schema, just to be sure.  We've got the `global_summary` to describe the video's core content (a VTuber collab karuta game).  Then, there is the `scenes` array, and each of those array items must contain:
+    *   `start`: with a 'MM:SS.mmm' timestamp format.
+    *   `end`: also with a 'MM:SS.mmm' timestamp format.
+    *   `description`: a descriptive string.
+    *   `contains_vocal_music`: set to `false`, since we've established there is no vocal music.
+    *   And the song metadata fields, `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en`, are all `null`.
+
+    So, the timestamps are:
+    *   Scene 1: 00:00.000 to 02:37.000
+    *   Scene 2: 02:37.000 to 04:28.000
+    *   Scene 3: 04:28.000 to 04:59.000 (video ends).
+
+    Everything is precise, confirmed and I am confident. Now, I'm ready to build the final JSON response.
+
+
+...
