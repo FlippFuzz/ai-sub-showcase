@@ -1,0 +1,128 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features Takanashi Kiara in a virtual 3D space, first
+    playing a Shiritori game with Momosuzu Nene from 00:00 to 03:26, followed by a
+    live stage performance of her original song 'SPARKS' from 03:26 to the end of
+    the video.
+  scenes:
+  - start: '00:00.000'
+    end: '03:26.000'
+    description: Takanashi Kiara stands on a virtual stage and interacts/plays a Shiritori
+      game with Momosuzu Nene (shown via picture-in-picture).
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:26.000'
+    end: '05:00.000'
+    description: Takanashi Kiara performs her original song 'SPARKS' live on stage
+      with dynamic lighting, choreography, and visual effects.
+    contains_vocal_music: true
+    song_title: SPARKS
+    original_artist: Kira
+    performer_in_video: Takanashi Kiara
+    original_language: English
+    reference_lyrics_og: |-
+      lying down on the floor
+      late night and you don't know, don't know
+      don't know what to do
+      hard to tell what's wrong, what's right
+      if yes or no, don't know
+      don't know what to do
+      the storm hits hard and you're losing the way
+      just take a chance and dance in the rain
+      'cause you got the key, never throw it away
+      don't forget, don't forget what i said
+      get out of your head
+      life is only what you make it
+      you're gonna be okay
+      so go ahead and do it, do it
+      if you want it, let's get to it
+      everybody's gonna know your name
+      'cause sparks light the flame
+      turn the dark of the night into day
+      (don't stop, don't stop, just go your own way)
+      so don't be afraid
+      trust your heart, keep your head in the game
+      (keep up, keep up, and never be afraid)
+      gonna make it hot like a volcano
+      strike a match and burn it up
+      kick your feet against the table
+      to the beat of your own drum
+      sparks light the flame, so don't wait
+      start a fire today
+      (don't stop, don't stop, just go your own way)
+      we ain't looking back, take the fast lane now
+      in the driver's seat strapped, they just gasp out loud
+      going so fast that it shouldn't be allowed
+      that's how we like it, you heard what i said
+      get out of your head
+      life is only what you make it
+      you're gonna be okay (yeah, yeah)
+      so take a step and move it, move it
+      'less you try you won't get through it
+      everybody's gonna know your name!
+      'cause sparks light the flame
+      turn the dark of the night into day
+      (don't stop, don't stop, just go your own way)
+      so don't be afraid
+      trust your heart, keep your head in the game
+      (keep up, keep up, and never be afraid)
+      let go of the past tonight
+      choose the future only you define
+      even when the flames burn too bright, you're alive
+      from the ashes you rise
+      'cause sparks light the flame
+      turn the dark of the night into day
+      (don't stop, don't stop, just go your own way)
+      so don't be afraid
+      trust your heart, keep your head in the game
+      (keep up, keep up, and never be afraid)
+      gonna make it hot like a volcano
+      strike a match and burn it up
+      kick your feet against the table
+      to the beat of your own drum
+      sparks light the flame, so don't wait
+      start a fire today
+      (don't stop, don't stop, just go your own way)
+      ah yeah
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Preparing for Lyric Retrieval**
+
+    Okay, so I need to get to work on this video. First, I have to break it down chronologically. I'll need to identify any vocal music or songs and then retrieve their official lyrics using a web search.
+
+    Looking at the video content, it seems straightforward. From 00:00 to 03:21, it's VTuber Takanashi Kiara playing Shiritori with Momosuzu Nene – just chatting and gameplay, no music, although I'll double-check that quick. Ah, yes, just chatting and gameplay between 3D avatars. Then, we have a short transition from 03:21 to 03:26, a dark screen. From 03:26 to 05:00, Kiara performs her original song "SPARKS" live on stage. The on-screen title confirms it: "SPARKS Takanashi Kiara."
+
+    Now, let's verify "SPARKS." I need to find the original artist, composer, and creator of the song, and I'll confirm who composed "SPARKS." If Takanashi Kiara *is* the composer, that's what I need.
+
+    My search queries will need to be precise. I'll use `web_search_langsearch_multi` to search for "SPARKS Takanashi Kiara lyrics."
+
+    As a reminder: I'll use the original composer for the search. I must never use quotation marks. Parallel search strategy for the initial queries!
+
+    I'll build the search queries: "SPARKS Takanashi Kiara lyrics" and "SPARKS Takanashi Kiara song credits composer". I'm ready to call the search tool.
+
+
+
+    **Analysis of "SPARKS" Lyrics and Video Segmentation**
+
+    Okay, here's what I've got so far. I've successfully retrieved the lyrics for "SPARKS," originally by Kira, as performed by Takanashi Kiara in the video. My next step is to break down the video into logical segments.
+
+    First, I've identified two key scenes. Scene 1, from 00:00.000 to 03:26.000, features Kiara and Nene playing Shiritori. Crucially, there's no vocal music here, so `contains_vocal_music` is `false`.
+
+    Then comes Scene 2, starting at 03:26.000 and ending either at the end of the video, around 05:00.000, or when the music fades around 04:59.something. I need to confirm the exact timestamp is 05:00. This scene is where Kiara performs "SPARKS." It's live, has dynamic lighting and camera work, and obviously includes vocal music, hence `contains_vocal_music` is `true`. The song title is "SPARKS," the original artist is Kira, and the performer in the video is Takanashi Kiara. The original language is English.
+
+    Now, regarding the lyrics: I've retrieved the full English lyrics from the search results. I need to make absolutely sure I'm assigning these correctly. `reference_lyrics_og` is meant to hold the *original* lyrics. Since the song is already in English, there isn't a *translation* needed. Therefore, `reference_lyrics_en` should be `null` – not the same as `reference_lyrics_og`, as the prompt specifies that it's set to null if the original language is English, no translation is found, or no song is detected. I'm going to double-check this: `reference_lyrics_og` gets the full, official original language lyrics, while `reference_lyrics_en` is the English *translation*. In this case, since the original is English, there's no English translation to provide.
+
+    To be thorough, I've verified the full, untruncated lyrics. Here they are: *[lyrics provided above]*
+
+    Finally, I'm confident in the structure and content. Everything aligns with the formatting rules and I'm ready to call the `final_result`.
+
+
+...
