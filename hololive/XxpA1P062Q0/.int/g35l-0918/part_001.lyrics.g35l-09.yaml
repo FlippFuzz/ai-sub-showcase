@@ -1,0 +1,49 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: Four VTubers (Botan, Nene, Polka, Lamy) stand on stage in idol outfits
+    and chat animatedly about their outfits and past events.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: The four VTubers chat and joke on stage while showing off their matching
+      idol outfits.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Hololive VTuber Video**
+
+    Alright, let's break this down. The user wants an analysis of this Hololive clip – featuring Noel, Nene, Polka, and Lamy (and hey, Botan too!) – and specifically, if there's any vocal music. My first step is to *verify*. I'm visually scanning the video, and I see four VTubers on stage. They're talking, joking around, moving, the usual. No singing happening. It's basically a talking head or chatting segment from a stream.
+
+    I need to confirm this definitively. I'm going to actually *watch* the beginning carefully, from 00:00 to 05:00. Yep, still just chatting, laughter, discussing their outfits (#ねぽらぼアイドル衣装 – Neporabo Idol Outfit). No vocal music in the background, nothing. So, `contains_vocal_music` is *definitely* false for this entire video.
+
+    Now, let's think about the structure. Is there more than one scene? Nope. It's a single, continuous conversation. It's a single 5 minute segment. So, the output will be one scene, from the beginning, to the end of the video, which is at 05:00.
+
+    Just to be *absolutely* sure, I'm checking for even any background music. There's some light instrumental BGM, but no actual vocals. So, `contains_vocal_music` remains unequivocally `false`.
+
+    Now, I'm formatting my findings into a JSON response, adhering to the specified schema:
+
+    *   `global_summary`: "The video features four VTubers (Shishiro Botan, Momosuzu Nene, Omaru Polka, Yukihana Lamy) chatting and showing off their idol outfits on stage."
+    *   `scenes`:
+        *   `start`: "00:00.000"
+        *   `end`: "05:00.000"
+        *   `description`: "The four VTubers stand on stage in their idol outfits, talking, laughing, and discussing their clothes and design details."
+        *   `contains_vocal_music`: false
+        *   `song_title`: null
+        *   `original_artist`: null
+        *   `performer_in_video`: null
+        *   `original_language`: null
+        *   `reference_lyrics_og`: null
+        *   `reference_lyrics_en`: null
+
+    Everything is straightforward here since there's no vocal music to identify, so it is a direct call for `final_result`.
+
+
+...
