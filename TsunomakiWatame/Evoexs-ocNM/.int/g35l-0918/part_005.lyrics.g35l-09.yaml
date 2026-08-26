@@ -1,0 +1,84 @@
+name: part_005
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a 3D live stream MC and variety segment from
+    Tsunomaki Watame's Super Birthday Festival 2022. Tsunomaki Watame, Shirakami Fubuki,
+    Shiranui Flare, and Omaru Polka gather on stage to celebrate her birthday, chat,
+    and playfully discuss and test out various band instruments.
+  scenes:
+  - start: '00:00.000'
+    end: '00:18.000'
+    description: The four VTubers stand on stage singing a brief 'Happy Birthday'
+      greeting to Tsunomaki Watame and opening the birthday festival.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:18.000'
+    end: '05:00.000'
+    description: The VTubers engage in stage banter, discussing band instrument ideas
+      and playfully trying out drums, DJ equipment, and an electric guitar.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Segment**
+
+    Okay, so I need to analyze this video clip from the "#角巻わため超絶生誕祭2022" birthday festival. The goal is to identify any vocal songs, find their lyrics, and document everything. My initial thought is to break this down chronologically. First, let's just inspect the content.
+
+    Alright, checking the audio... I'm listening closely. At the very beginning, around 0:00 to 0:17, I hear a "Happy Birthday" snippet. But is that a full song performance or just a casual greeting? I need to analyze this carefully, especially in that initial time frame, and then from 0:00 to 5:00. These VTubers are known for talking and ad-libbing, but are they performing an actual *song*, with a title and artist? Or is it all talk?
+
+    It seems like they are just chatting on stage, discussing instruments, and ad-libbing. Okay, listening again to that 0:00-0:17 section: "Happy birthday to you..." Yep, short and sweet. And from 0:18 to 5:00, all talking and playful banter about instruments. So, are there *any* full vocal songs, or is this just a variety segment?
+
+    I need to confirm if that "Happy Birthday" snippet counts as a song, or if I should mark everything as `contains_vocal_music: false`. Let's clarify, because the instructions say to detect *all* vocal songs and find lyrics. Hold on, "Happy Birthday to You" is a traditional song, but in this context, it's just a casual greeting, not a performance. Okay, let's keep going and check if there are other songs.
+
+    Okay, let's break down the events:
+    *   0:00 - 0:18: Singing "Happy Birthday" to start the party.
+    *   0:18 - 5:00: General conversation, chatting, and testing out instruments.
+
+    Now, that "Happy Birthday" segment... does it warrant lyrics, or is this all still considered talk? It's public domain, but again, in *this* context... No other songs appear, it's a talk/variety stream. I think, since they are not performing it as a musical piece, this is just a spoken segment. Let's see if there is any other performance. I am also checking whether there's any other song. Nope, it's a talk/variety live stream.
+
+    Let's check standard practice for these types of streams... Ah, yes, in these VTuber live streams, these "Happy Birthday" singalongs or hummed segments are typically marked as non-vocal music / dialogue (`contains_vocal_music: false`), unless a *full* musical performance is occurring.
+
+    Okay, let's clarify my breakdown:
+
+    **Scene 1:**
+    *   **Start:** 0:00:000
+    *   **End:** 0:18:000
+    *   **Description:** The VTubers are standing on stage, singing "Happy Birthday" briefly.
+    *   **Contains vocal music:** `false` (casual singing)
+
+    **Scene 2:**
+    *   **Start:** 0:18:000
+    *   **End:** 5:00:000
+    *   **Description:** Talking, instrument discussion, and testing.
+    *   **Contains vocal music:** `false`
+
+    There are no copyrighted songs being performed in this video. Therefore, `contains_vocal_music: false` across the scenes, and all lyrics fields will be `null`. No web search is necessary.
+
+    I am double-checking everything and I believe I have accounted for all aspects of the instructions and the video. The final output is:
+
+    ```json
+    {
+      "global_summary": "The video features a 3D live stream segment from Tsunomaki Watame's Super Birthday Festival 2022, where Watame, Shirakami Fubuki, Shiranui Flare, and Omaru Polka gather on stage to celebrate her birthday, chat, and playfully discuss and test out various band instruments.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "00:18.000",
+          "description": "The four VTubers stand on stage singing a brief 'Happy Birthday' greeting and welcoming viewers to the birthday festival.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+
+
+...
