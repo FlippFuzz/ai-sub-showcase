@@ -1,0 +1,50 @@
+name: part_008
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: Virtual YouTubers Murasaki Shion and Uruha Rushia chat, joke around,
+    and celebrate Shion's birthday on stage during a 3D live stream event with no
+    vocal music performances.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: Murasaki Shion and Uruha Rushia chat on stage during a 3D birthday
+      live stream event, discussing past streams, doing poses, and interacting with
+      the audience.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Murasaki Shion & Uruha Rushia Chat Segment**
+
+    Okay, so I've got this video clip of Murasaki Shion's 2021 Birthday Live stream, specifically the chat segment with Uruha Rushia. My goal is to analyze the content, specifically looking for vocal music. Let's see... I've checked the video, and it's definitely a VTuber 3D live stream excerpt, a talk segment. No singing, no music with vocals in sight.
+
+    Just to be absolutely sure, I've scrubbed through the first five minutes (00:00 to 05:00) – that's the relevant segment. It's just Shion and Rushia, the avatars are chatting, laughing, posing, playing around on stage with the birthday hashtag displayed. Definitely no singing.
+
+    I've even double-checked for any background music with vocals, just in case, but nope, nothing. So, I'm confident we can set `contains_vocal_music` to `false`. And since there are no songs, the song metadata fields (`song_title`, `original_artist`, etc.) should all be `null`.
+
+    Now, to structure the scene breakdown properly. Given there is no vocal music, we can have a single scene, or multiple scenes. Since there are no songs, the entire segment (00:00.000 to 05:00.000) will have `contains_vocal_music: false`.
+
+    Alright, let's nail down the exact duration. I've scanned the timestamps and it's near 05:00.000, so let's mark the end at 05:00.000.
+
+    Now, to assemble the `final_result` response using the `default_api`.
+
+    The global summary would be something like, "Virtual YouTubers Murasaki Shion and Uruha Rushia chat, joke around, and celebrate Shion's birthday on stage during a 3D live stream event."
+
+    And the scene breakdown should be:
+
+    -   Start: "00:00.000", End: "05:00.000", Description: "Murasaki Shion and Uruha Rushia chat on stage during a 3D birthday live stream event, discussing past streams, doing poses, and interacting with the audience.", `contains_vocal_music: false`, `song_title: null`, `original_artist: null`, `performer_in_video: null`, `original_language: null`, `reference_lyrics_og: null`, `reference_lyrics_en: null`.
+
+    I don't need any song searches because there are none.
+
+    Finally, I've re-reviewed all the constraints: no song transcription, search failure leads to null, and the correct format. Everything checks out.
+
+    Okay, let's call `default_api:final_result`.
+
+
+...

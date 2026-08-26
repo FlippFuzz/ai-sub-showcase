@@ -1,0 +1,94 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features VTuber Murasaki Shion presenting her birthday
+    merchandise (badges, plushies, LINE stamps, and full sets) in the first segment,
+    followed by a live musical performance of her original song 'Mage of Violet' on
+    stage.
+  scenes:
+  - start: '00:00.000'
+    end: '03:11.000'
+    description: Murasaki Shion stands on a virtual stage while presenting merchandise
+      slides including badges, plushies, and LINE stamps on the left side of the screen.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:11.000'
+    end: '05:00.000'
+    description: Murasaki Shion performs her original song 'Mage of Violet' live on
+      stage with dynamic lighting and camera movements.
+    contains_vocal_music: true
+    song_title: メイジ・オブ・ヴァイオレット
+    original_artist: かいりきベア
+    performer_in_video: 紫咲シオン
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Sourcing Song Data**
+
+    Okay, so I need to get this done efficiently. The task is clear: I need to analyze this video, segment it, identify any music, and grab the song details and lyrics. First, I need to break down the video into segments chronologically. I need to make sure to pay close attention to any vocal music in the video.
+
+    Alright, here's what I've got: from the beginning to 3:11, it's just VTuber Murasaki Shion talking about merchandise – badges, plushies, LINE stickers, that kind of thing. No music there, just talk. Then, from 3:11 to the end, around 5:00, is a live performance. It's the song "メイジ・オブ・ヴァイオレット" (Mage of Violet) by Murasaki Shion, but, ah ha! - the text on-screen at 03:12 shows the original artist/composer is かいりきベア (Kairiki Bear), which I'll verify with a quick search.
+
+    So, let's get the metadata straight:
+    *   Song Title: メイジ・オブ・ヴァイオレット (Mage of Violet)
+    *   Original Artist/Composer: かいりきベア (Kairiki Bear)
+    *   Performer in Video: 紫咲シオン (Murasaki Shion)
+    *   Original Language: Japanese
+
+    Now, I'm ready to find those lyrics. I need both the original Japanese and an English translation. I'll craft two search queries. I'll search for:
+    1.  "メイジ・オブ・ヴァイオレット かいりきベア 歌詞" (in Japanese)
+    2.  "Mage of Violet Kairiki Bear lyrics English"
+    I should be able to get these lyrics and their translations using the `web_search_langsearch_multi` function. This should be straightforward.
+
+
+
+    **My Immediate Task: Sourcing "Mage of Violet" Lyrics**
+
+    Okay, so I have the romaji lyrics for "Mage of Violet," a song by Kairiki Bear. The challenge now is to get the full picture – the original Japanese lyrics, which I'll call `reference_lyrics_og`, and a solid English translation, `reference_lyrics_en`. I need these to understand the song fully and cross-reference. Time to get to work. Let's start with a focused search. My initial query will be "メイジ・オブ・ヴァイオレット" (Mage of Violet) by かいりきベア - that should get me started. Let's see what comes up.
+
+
+
+    **Hunting for the Japanese Lyrics**
+
+    Okay, time to see if I can track down the complete Japanese lyrics for "Mage of Violet" by Kairiki Bear. I'll focus the search on finding those specific lyrics. A more direct search should yield better results than a broader one. Let's try another targeted search for 「メイジ・オブ・ヴァイオレット」 lyrics.
+
+
+
+    **Initial Assessment of "Mage of Violet" Lyrics**
+
+    Okay, so I've got "メイジ・オブ・ヴァイオレット" (Mage of Violet) by かいりきベア (Kairiki Bear), sung by 紫咲シオン (Murasaki Shion) – a good starting point. My immediate thought is to verify lyric availability and accuracy. I saw a snippet from Moegirl wiki, which is a decent starting point: "「未来を咲かせよ 次代愛って高まって 溜まったMPパワーはなて黒魔术 定の刻に集えよ闇にふるえケルベロス 切に響く言葉はブチギレ発きょうパラダイス キラリココロ奥そこまで届け これからも私の元で...」". Now, I'll double-check Snakeroot's lyrics (`http://lyrics.snakeroot.ru/M/Murasaki_Shion/murasaki_shion_mage_of_violet.html`), since I see the romaji version there. My main concern is ensuring I've got the *exact* Japanese lyrics, since that's what's needed. So, before assuming Snakeroot is complete, I'll run another search for "メイジ・オブ・ヴァイオレット" lyrics. If Snakeroot is good, I might need to properly set `reference_lyrics_og` and `reference_lyrics_en`. Let's see what the search turns up.
+
+
+
+    **My Current Approach to Lyrics Retrieval**
+
+    Okay, so I've got the romaji and English snippets for "Mage of Violet," but I need the original Japanese lyrics and a proper English translation. The system's rules state that if I can't find the *exact* original Japanese lyrics (`reference_lyrics_og`) and a solid English translation (`reference_lyrics_en`) from a reliable source—like a clean lyrics site, not just partial romaji or some Moe-girl wiki snippets—then I *must* set those reference fields to null.
+
+    Hold on, before I default to null, let's not be hasty! I need to ensure I've exhausted all options. I should try a more targeted search. Instead of just general terms, let me try a *very* specific query on Google or within my search tool: `"メイジ・オブ・ヴァイオレット" 歌詞`. That *should* hopefully unearth a full lyrics site like Uta-Net or Kasi-Time, if they have the song. I'll check and then decide if the snippets I have are sufficient or if I have to set the fields to null.
+
+
+
+    **Scene Analysis and Metadata Determination**
+
+    Alright, let's break this down systematically. I've got the romaji and English snippets for the lyrics from Snakeroot, but no single, clean source for the complete original Japanese lyrics. Moegirl wiki had snippets, but that's not official, and the instructions are clear: *complete* lyrics or `null`. Given the search fallback rules, if the lyrics are not perfectly retrieved, I **must** set the lyric fields to `null`.
+
+    I could try to argue that the Snakeroot/Moegirl lyrics *could* be considered "retrieved", but the constraint "MUST be the complete lyrics; absolutely no truncation, placeholders like '(Lyrics continue)' or '...', omissions, or summaries are allowed. NEVER transcribe manually" is absolute. I'm not going to bend on that. Since I haven't found the full, uninterrupted Japanese text block from a standard database, the safest and most compliant course of action is to set both `reference_lyrics_og` and `reference_lyrics_en` to `null`. This prevents any potential errors or misinterpretations.
+
+    Now, let's map out the scenes in the video. I've got two clear segments:
+
+    1.  **Scene 1**: Introduction, merchandise showcase. The timestamps are `00:00.000` to `03:11.000`. No vocal music here, so I set `contains_vocal_music` to `false`, and all song-related fields, including lyrics, to `null`.
+
+    2.  **Scene 2**: Live performance. Timestamps are `03:11.000` to the end of the video, at `05:00.000`. This is the song itself. The metadata is: `song_title` to `メイジ・オブ・ヴァイオレット`, `original_artist` to `かいりきベア`, `performer_in_video` to `紫咲シオン`, and `original_language` set to `Japanese`. Because of the previously discussed lyrics issue, `reference_lyrics_og` and `reference_lyrics_en` remain `null`.
+
+    I've made sure this is chronological, non-overlapping, and covers the entire video length, using the proper timestamp format. The global summary accurately captures the video's progression. It's all by the book, and perfectly compliant with the instructions. Time to generate the response.
+
+
+...
