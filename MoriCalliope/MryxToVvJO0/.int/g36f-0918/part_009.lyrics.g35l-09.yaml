@@ -1,0 +1,86 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 305981
+lyrics_prompt_version: 9
+response:
+  global_summary: The video begins with an introductory dialogue and banter between
+    Mori Calliope and a chibi character on a traditional Japanese-style stage with
+    braziers. At 01:21, the song '虚像のCarousel' by Mori Calliope and Reol starts playing,
+    featuring both virtual performers singing and dancing through the rest of the
+    video.
+  scenes:
+  - start: '00:00.000'
+    end: '01:21.000'
+    description: Introductory dialogue and banter between Mori Calliope and a chibi
+      avatar on a lantern-lit stage with fire pits.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:21.000'
+    end: '05:05.000'
+    description: Performance of the song '虚像のCarousel' featuring Mori Calliope and
+      Reol singing and dancing on the stage amidst flames and floating lanterns.
+    contains_vocal_music: true
+    song_title: 虚像のCarousel
+    original_artist: Yuki Tsujimura / Mori Calliope / Reol
+    performer_in_video: Mori Calliope & Reol
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video and Search Strategy**
+
+    Okay, so I need to get to work on this video. First, I have to break it down. I'll need to identify the scenes, look for any vocal music, and then find the lyrics for it.
+
+    Alright, the video content... From the beginning, it's dialogue, chatting between Mori Calliope and someone else, or maybe a chibi avatar – looks like a VTuber stream or a short clip setting up a song. The song title and credits appear at 01:21. Time to take a closer look at those credits: "虚像のCarousel feat. Reol," composed and arranged by Yuki Tsujimura, with lyrics by Mori Calliope, Reol, and Yuki Tsujimura.
+
+    Now, to find the lyrics. The important thing is to follow the rules: search using the *composer's* name, not the performers. The composer here is Yuki Tsujimura. The lyrics are credited to Mori Calliope, Reol, and Yuki Tsujimura. I will search for lyrics. Now, I should search for "虚像のCarousel" 歌詞 or Yuki Tsujimura 虚像のCarousel 歌詞.
+
+    So I'm going to run parallel searches:
+    *   `虚像のCarousel Yuki Tsujimura 歌詞`
+    *   `Kyozou no Carousel lyrics English` / `虚像のCarousel English translation`
+
+    I'll use the `default_api:web_search_langsearch_multi` to handle those searches efficiently.
+
+
+
+    **Lyric Acquisition and Verification**
+
+    Okay, here's the situation. I've got the English lyrics for `mori calliope × reol - kyozou no carousel` courtesy of snakeroot.ru. My next step is to obtain the original Japanese lyrics, the gold standard for my analysis, you know?
+
+    Therefore, I'm going to conduct a search using the terms `虚像のCarousel 歌詞 Mori Calliope Reol`. I'm going to quickly check the results and assess their validity. Gotta make sure I have the *true* source, otherwise, the whole analysis will be skewed.
+
+
+
+    **Finding the Kyozou no Carousel Lyrics**
+
+    Okay, so we've got the English lyrics for Mori Calliope x Reol's "Kyozou no Carousel" from snakeroot.ru, that's a good start. But I need the original Japanese to properly analyze the nuances. Right, let's try a targeted search. I'll search for `mori calliope reol 虚像のcarousel 歌詞` – no quotes this time, to be specific. Genius or utamap/j-lyric are good starting points for Japanese lyrics. Let’s see what comes up. Quick search it is.
+
+
+
+    **Finding the Japanese Lyrics for "Kyozou no Carousel"**
+
+    Okay, so I've found the English lyrics online, thanks to `snakeroot.ru`. But, as a professional, I need the *original* Japanese lyrics. Hmm, did I miss any crucial search terms? I know `snakeroot` has the lyrics, but are they in Romaji or mixed? Let's check a snippet... Yeah, it looks like it's a mix.
+
+    Right, time to get serious. I need those pure Japanese characters. No room for interpretation in my field! A quick search for "虚像のCarousel 歌詞" on sites like `uta-net`, `j-lyric`, or even `genius` should do the trick. One more focused search, and I should have the exact original Japanese lyrics for "虚像のCarousel." Let's do this.
+
+
+
+    **Analysis of "虚像のCarousel" Video Metadata**
+
+    Okay, here's what I've got after analyzing this video. I've successfully pulled the metadata for the song "虚像のCarousel." It looks like the original composition is by Yuki Tsujimura, with lyrics and performance split between Mori Calliope and Reol. Though I did notice a slightly different credit at 01:21 in the video: "虚像のCarousel feat. Reol", composed by Yuki Tsujimura, arranged by Yuki Tsujimura and MEG, with lyrics credited to Mori Calliope, Reol, and Yuki Tsujimura. The performers in the video are Mori Calliope and Reol, and the original language is a mix of Japanese and English, leaning towards English/Japanese.
+
+    Now, breaking down the video into scenes, I've got two clear segments. Scene 1 runs from the start (00:00.000) to 01:21.000. It's dialogue and banter with a chibi character on a fiery stage – no vocal music here, so I'm setting those fields to null.
+
+    Scene 2, from 01:21.000 to the end at 05:05.000, is where the actual performance of "虚像のCarousel" takes place. Mori Calliope and Reol are dancing and singing with fire and lantern decorations. Vocal music *is* present in this scene, and I've confirmed the song title. The performers are Mori Calliope and Reol as expected. The original language is Japanese.
+
+    Now, here's the tricky part, the lyrics. I did a thorough search, but the official original Japanese lyrics weren't retrieved completely and in one contiguous block. So, *that* field, `reference_lyrics_og`, has to be set to `null` because the strict rule says *complete* lyrics are required. I found the romaji/English translation lyrics from snakeroot.ru, but those were also truncated (they contained ellipses). Given the "no truncation" rule, both the `reference_lyrics_en` field *also* has to be `null`.
+
+    So, to recap: I've created chronological, non-overlapping scenes, mapping the entire video duration. Scene 1 has `contains_vocal_music`: false, and Scene 2 has `contains_vocal_music`: true with the song correctly identified. The lyric fields have been correctly set to null per the rules. Now I can construct the final result using `default_api:final_result`.
+
+
+...
