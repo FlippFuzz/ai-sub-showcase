@@ -1,0 +1,40 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 298688
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **My Analysis of the Hololive Super Expo 2022 Official Items Video Subtitling**
+
+    Okay, so I've got this video – it's a promotional slideshow for Hololive Super Expo 2022 merchandise. My initial thought is to generate the subtitles. However, as I'm going through the frames, my first priority is the audio, and it's immediately clear this is instrumental BGM only, no vocals, no singing, nothing. It's that upbeat promotional chiptune style from beginning to end, the whole five minutes.
+
+    I need to confirm this before I do anything. So I double-check. *Yep*, absolutely no vocals anywhere on the audio track. The instructions I've been given clearly state "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music, long pauses, or sound effects. If no vocals are heard in the audio track, output nothing..."
+
+    But then there's the "VISUAL EVENTS (The On-Screen Text Exception)". Now, *that* could be a wrinkle. The instructions say, "...if prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio." My concern here is the video format. I'm looking at a slideshow of products, a shopping catalog basically, with lots of on-screen text: item names, prices in Japanese, changing rapidly, all catalog-style.
+
+    Subtitling *every* item and *every* price tag, in a video like this, would be the most ridiculous clutter unless specifically requested or if it's considered to be narrative content or essential dialogue. Normally, product showcase videos without voiceover or narration, don't demand a full subtitling of every item name or price. This is just a catalog reel of official merchandise.
+
+    So, applying the rules, "ZERO GHOST SUBTITLES" applies. Since there are no vocals, and given the nature of the video, I should output an empty subtitle list: `{ "subs": [] }`. Just to be absolutely sure, I listen again, one last time. Still, definitely, without a doubt, 00:00 to 05:00 is 100% instrumental BGM with no voice acting or singing. Thus, `subs` is empty.
+
+
+- subtitles: []
+  thoughts: |+
+    **My Analysis of the Subtitle Request for the Hololive Merchandise Video**
+
+    Okay, so the task is to generate subtitles for a video showcasing official merchandise for "hololive SUPER EXPO 2022". My initial thought is to immediately check the audio stream for vocal content. Let's listen closely – is there any speech, singing, or any vocals at all? Ah, just background music, a looping instrumental. No vocals to be heard. Let's be absolutely sure.
+
+    Now, let's refer to the specific rules: "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music...". Okay, no vocals, so normally, output nothing. But hold on, the rule continues, "...unless there is a prominent Visual Event."
+
+    Right. "Visual Events" mean chapter titles, location signs, important on-screen text. This is where I have to be careful. The video is a product catalog with lots of text on screen: item names, prices, categories. I'm used to these catalog videos and I usually don't subtitle every product name, unless it's specifically required or a chapter title. Do the general guidelines apply to promotional catalog videos? Are we expected to subtitle every item name?
+
+    A quick check of the prompt instructions and rules. Ah, here's some helpful JSON. The `contains_vocal_music` field is `false` for every segment, and there are no lyric references. And to be doubly sure, the audio definitely has no vocals.
+
+    Back to the "Visual Events" rule. Merchandise slides, item names, and prices... are these "Chapter Titles," "Location Signs," or "Letters" in a narrative sense? No, not really. They are product listings. So, no prominent visual event here.
+
+    So, am I supposed to output an empty list (`{"subs": []}`)? Need to double-check the rules again to be certain: "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music... unless there is a prominent Visual Event." No vocals, the on-screen text is just product listings, not a narrative element. Therefore, no subtitles are needed.
+
+    Let's do a final sweep of the audio just to be 100% sure. Pure BGM instrumental throughout. There's my decision: the correct output is an empty list of subtitles: `{"subs": []}`.
+
+
+...

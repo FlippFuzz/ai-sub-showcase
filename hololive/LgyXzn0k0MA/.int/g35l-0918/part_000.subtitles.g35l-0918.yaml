@@ -1,0 +1,25 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 304008
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Analyzing Subtitle Requirements for a Hololive Super Expo 2022 Promotional Video**
+
+    Okay, so I'm looking at this video about Hololive Super Expo 2022 merchandise, and the task is to determine if subtitles are needed. My initial thought is that since it's a promotional video, it's likely going to have text on screen, but I need to be precise. The reference JSON indicates `contains_vocal_music: false`, meaning no vocals. The rules are pretty clear: no vocals mean no subtitles *unless* there's a prominent visual event.
+
+    So, first, I need to verify that there are *absolutely* no vocals. Let's scrub through the video (0:00 to 5:03.956). Yep, it's all instrumental background music; no voice acting, singing, or narration.
+
+    Now the visual events: are there any *prominent* text elements? The video is essentially a rolling catalog of merchandise and notices. Subtitling every product name and price for five minutes would be an unnecessary mess. But what about title cards or attention notices? The rules specifically mention "prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters)."
+
+    I see "Attention ご来場の皆様へ" at the beginning (0:00-0:04) and "hololive 3rd fes. Link Your Wish DAY 2" at 2:16-2:32. Are these considered prominent enough to warrant subtitling? They're presentational, not really *narrative*, chapter titles.
+
+    Let's revisit the core principle: "ZERO GHOST SUBTITLES." If there's no vocal audio, output nothing *unless* a prominent visual event exists. Promotional video slides are generally not considered prominent, and the important thing here is no dialogue.
+
+    Let's confirm and re-read, I have to be absolutely sure. The prompt highlights, "Do not use reference data to fill silent gaps." Thus, a visual catalog like this with no vocals means I'm looking at an empty `subs` array.
+
+    Since this video is a goods lineup and has no dialogue, returning an empty `subs` array is the correct approach. No vocals, no narrative chapter titles. Empty array it is. I'm confident.
+
+
+...
