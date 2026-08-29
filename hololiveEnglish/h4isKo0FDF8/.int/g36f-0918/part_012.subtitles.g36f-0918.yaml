@@ -1,0 +1,48 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 150035
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '02:29.000'
+    original: 無料パートは終了いたしました！ご視聴ありがとうございました！
+    english: The free preview has ended! Thank you for watching!
+  thoughts: |+
+    **Subtitle Strategy for Hololive English End Screen**
+
+    Okay, so I need to create synchronized subtitles for this 2.5-minute video segment, specifically from 00:00 to 02:30. The video is a static end screen card for the Hololive English 3rd Concert "ALL FOR ONE", with an upbeat instrumental BGM playing – no vocals.
+
+    My primary focus is the subtitle strategy, and here's my thought process:
+
+    First, I have to remember the rules. The vocal audio waveform is the *absolute* truth for spoken dialogue. No audio, no dialogue subtitles. This is clear. Now for visual text: if it's prominent and relevant (titles, signs, etc.), I need to subtitle it for the duration it's clearly visible. This is where it gets interesting... is this static end screen UI considered prominent?
+
+    The screen displays: "Official Hashtag #holoAllForOne," "The sneak peek part of the show has ended. Thank you for watching," "hololive English 3rd Concert ALL FOR ONE," and "無料パートは終了いたしました！ご視聴ありがとうございました！"
+
+    The Japanese text is key here: "無料パートは終了いたしました！ご視聴ありがとうございました！" which translates to "The free preview has ended! Thank you for watching!" This is present for the *entire* video duration, since the video is a static end screen.
+
+    The question then becomes: do I subtitle this static notice? The rules say to subtitle visual text if it is present. While it's a static end card, it *is* visual text. The rule explicitly states to exclude meaningless UI elements, so this isn't a UI element. Also, static end screens that are running continuously through the whole video without any audio vocals - do we subtitle the end screen notice or leave it empty/subtitle once?
+
+    I have to make a call on this. Given the rules about visual events, I think it's safest to subtitle the Japanese text. Now, the timing. Subtitles shouldn't drag on for 2.5 minutes in one line unless it's a visual text display or it's segmented. Given that it's a static display, I can start at 00:00.000 and run it until 02:29.000, since it's present the whole video.
+
+    Checking again – the video is *completely* static. No other vocal or visual changes. This means one entry, and I will have one line for the on-screen text.
+
+    My final output will be:
+
+    ```json
+    {
+      "subtitles": [
+        {
+          "og": "無料パートは終了いたしました！ご視聴ありがとうございました！",
+          "en": "The free preview has ended! Thank you for watching!",
+          "s": "00:00.000",
+          "e": "02:29.000"
+        }
+      ]
+    }
+    ```
+
+    Finally, I will verify the character length and proper format of start and end times to be in the proper MM:SS.mmm format to confirm everything is consistent. The final data output and formatting is correct.
+
+
+...
