@@ -1,0 +1,102 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:01.000'
+    end: '00:05.000'
+    original: 宝鐘マリン 生誕祭ライブ
+    english: Houshou Marine Birthday Live 2021
+  - start: '00:05.500'
+    end: '00:09.000'
+    original: 重大発表あり！ゲスト多数！
+    english: Major announcement! Many guests!
+  thoughts: |+
+    **Subtitle Generation for "Houshou Marine Birthday Live 2021" Waiting Screen**
+
+    Okay, so I'm presented with a video clip and the task is to generate subtitles. My first instinct is to analyze the audio and visual components. The video shows a title card: "宝鐘マリン生誕祭ライブ (Houshou Marine Birthday Live 2021)" and "重大発表あり！ゲスト多数！ (Major announcement! Many guests!)". I immediately check for any audio, expecting speech. Nope, just instrumental music, confirmed by the `contains_vocal_music`: false flag.
+
+    Since there's no speech, I pivot to visual text. The rules clearly state that prominent on-screen text, like titles, requires subtitling, even without audio. I see "宝鐘マリン 生誕祭ライブ", "HOUSHOU MARINE BIRTHDAY LIVE 2021", and "重大発表あり！ゲスト多数！".
+
+    The question then becomes: how to handle this title screen? Is it for the duration or just at the beginning? I recall standard practice with VTuber waiting screens, which often just subtitle the title briefly. I confirm this is a 5-minute clip consisting solely of the waiting screen.
+
+    Consulting the example prompt, I find an example on handling silent on-screen text before dialogue. I decide to subtitle the title cards, following the example format.
+
+    So, I'll generate the subtitles:
+
+    ```json
+    {
+      "s": "00:01.000",
+      "e": "00:05.000",
+      "og": "宝鐘マリン生誕祭ライブ",
+      "en": "Houshou Marine Birthday Live 2021"
+    },
+    {
+      "s": "00:05.500",
+      "e": "00:09.000",
+      "og": "重大発表あり！ゲスト多数！",
+      "en": "Major announcement! Many guests!"
+    }
+    ```
+
+    Since the remainder is just instrumental music, I apply the "ZERO GHOST SUBTITLES" rule, so I'll stay silent for the rest of the clip. I double-checked the timestamps, format, and text, and confirm everything aligns with the instructions. Final output: the above two subtitle entries, and then silence. Done!
+
+
+- subtitles:
+  - start: '00:01.000'
+    end: '00:04.500'
+    original: 宝鐘マリン 生誕祭ライブ
+    english: '[Houshou Marine Birthday Live 2021]'
+  - start: '00:04.500'
+    end: '00:08.000'
+    original: 重大発表あり！ゲスト多数！
+    english: '[Major announcement! Many guests!]'
+  thoughts: |+
+    **Subtitle Generation for VTuber Waiting Screen: Analysis and Solution**
+
+    Okay, so the task is to generate subtitles for a video segment. My initial thought is it's a VTuber waiting screen, potentially with on-screen text and maybe music. Right, let's start by looking at the JSON reference and the video content. I've got to ensure accuracy, and this is a strict verification run, so a thorough approach is critical. The JSON states the first part contains an "Opening title card and waiting screen," with instrumental music and no vocals, but there is spoken dialogue.
+
+    Alright, a closer look at the actual video is needed. I'll need to carefully listen to the audio to determine if there's any speech at all, despite what the JSON states. I'll need to check the audio waveform, frame by frame, across the entire video duration, which is 5 minutes. The JSON says `contains_vocal_music: false`. Okay, it seems like a static image or a loop for the teaser. The instructions emphasize a "rigorous, complete, and exhaustive" regeneration, meaning no omissions. The video segment has this text: "宝鐘マリン生誕祭ライブ" (Houshou Marine Birthday Live 2021) and "重大発表あり！ゲスト多数！" (Major announcement! Many guests!). It's critical to determine if any of that is spoken.
+
+    Listening confirms my suspicions; there's upbeat instrumental music, but no vocals or speech whatsoever. Now, the key is the "ZERO GHOST SUBTITLES" rule: silence for instrumental sections, *unless* there's a visual event. It's time to check the text on screen. Aha! "VISUAL EVENTS": if prominent, relevant text is present, subtitle it even if there's no audio.
+
+    There's clear, relevant text on the title card/waiting screen: "宝鐘マリン生誕祭ライブ" / "HOUSHOU MARINE BIRTHDAY LIVE 2021" and "重大発表あり！ゲスト多数！". The entire video, all five minutes, is this single image. So, the question is how to handle a waiting screen: I should subtitle the main title at the start. So, I should follow the example provided in the prompt, with a concise title card subtitle at the beginning.
+
+    I'll double-check the text: on the top-right it reads 宝鐘マリン, 生誕祭, ライブ, HOUSHOU MARINE, BIRTHDAY LIVE 2021 and on the bottom left 重大発表あり！ゲスト多数！. The Japanese is: `宝鐘マリン 生誕祭ライブ` which translates to `Houshou Marine Birthday Live 2021`, and `重大発表あり！ゲスト多数！` which translates to `Major announcement! Many guests!`.
+
+    I'll set precise timecodes. My analysis is that the text is displayed from 00:00 to 04:59. Here's how I will do it:
+    1st sub:
+    `s`: "00:01.000", `e`: "00:04.500"
+    `og`: "宝鐘マリン 生誕祭ライブ", `en`: "[Houshou Marine Birthday Live 2021]"
+
+    2nd sub:
+    `s`: "00:04.500", `e`: "00:08.000"
+    `og`: "重大発表あり！ゲスト多数！", `en`: "[Major announcement! Many guests!]"
+
+    After carefully reviewing the video again, there's no speech during the 5 minutes. I have to keep to the "ZERO GHOST SUBTITLES" rule. I will subtitle the on-screen text at the beginning, and then remain silent for the rest of the music.
+
+    Double-checking the JSON output format and making sure it adheres to all rules:
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:01.000",
+          "e": "00:04.500",
+          "og": "宝鐘マリン 生誕祭ライブ",
+          "en": "[Houshou Marine Birthday Live 2021]"
+        },
+        {
+          "s": "00:04.500",
+          "e": "00:08.000",
+          "og": "重大発表あり！ゲスト多数！",
+          "en": "[Major announcement! Many guests!]"
+        }
+      ]
+    }
+    ```
+
+    Everything is in order.
+
+
+...
