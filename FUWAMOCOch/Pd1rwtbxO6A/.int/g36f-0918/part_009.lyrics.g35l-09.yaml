@@ -1,0 +1,79 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 300021
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a virtual concert performance by Hololive English
+    VTubers FUWAMOCO (Fuwawa Abyssgard and Mococo Abyssgard) performing their original
+    song 'Ichizutte Trend' on a stage with energetic choreography, followed by an
+    MC and outro announcement segment.
+  scenes:
+  - start: '00:00.000'
+    end: '03:26.500'
+    description: FUWAMOCO perform their original song 'Ichizutte Trend' on a brightly
+      lit stage with colorful virtual backgrounds, dancing and singing together.
+    contains_vocal_music: true
+    song_title: 一途ってトレンド
+    original_artist: 竜志
+    performer_in_video: FUWAMOCO (Fuwawa Abyssgard & Mococo Abyssgard)
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:26.500'
+    end: '04:59.100'
+    description: FUWAMOCO stand on stage talking to the audience, introducing their
+      new original song and making announcements during the outro of the stream.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video's Music**
+
+    Okay, here's the game plan. My expertise tells me we need to dissect this video methodically. My initial thought is to break it down into scenes, identify any vocal music, and then zero in on the song metadata. Once we have the title and artist, it's time to leverage the web search tool to fetch the official lyrics.
+
+    First, let's examine the video content. I'm seeing two virtual idols—likely FUWAMOCO (or Hololive VTubers like Fuwawa and Mococo Abyssgard)—dancing and singing on a stage. There's some text in the top-left: "一途ってトレンド ♡" (Ichizutte Trend ♡). Later, around the 3:50 mark, the same text appears on screen. That's our initial lead. I'm confident that "一途ってトレンド" is a key piece of the puzzle.
+
+    Now, let's hunt for the artist or composer. Wait, hang on! At 3:51-3:53 it says "the amazing きよし竜志さん" (Kiyoshi Ryuji). Critical! Now, the rule here is: Search using the original artist or composer's name; avoid including the names of the video performers, even if they're singing a cover.
+
+    So, the search query should be "一途ってトレンド" and "きよし竜志". We will be using `web_search_langsearch_multi` to leverage parallel searches. This should expedite the process and give us the information we need, quickly.
+
+
+
+    **Analyzing the Song "Ichizu" by JYONGRI**
+
+    Okay, so the song playing is definitely "Ichizu" by JYONGRI. Now, I need to get a deeper understanding of this piece. Time to check the lyrics. Let's see... the title is "Ichizu" (一途), which also seems to be playing on the phrase "Ichizutte Trend". Right, got it. I want the most comprehensive view, so let's narrow the search and go for "JYONGRI Ichizu 歌詞" – that should give me the full Japanese lyrics alongside a reliable English translation. This is how I can really dissect the song's meaning and nuance.
+
+
+
+    **Analyzing the FUWAMOCO Track**
+
+    Okay, hold on a second. That song in the video… that's not just some random track, is it? It's "一途ってトレンド" (Ichizutte Trend) by FUWAMOCO! Right, let's dig into the details. I need to figure out who's behind this. Time to see who wrote and composed "一途ってトレンド". The video itself has a clue... aha! At the 3:51 mark, it clearly credits "Words & Music by 竜志 (Kiyoshi Ryuji) / amazing Kiyoshi Ryuji". Now, the hunt begins. I'll search for things like `"一途ってトレンド きよし竜志"`, `"一途ってトレンド 歌詞"`, or just `"FUWAMOCO 一途ってトレンド"`. That should get me some good leads.
+
+
+
+    **Analyzing the Song's Lyrics**
+
+    Okay, so the song is "一途ってトレンド" (Ichizutte Trend) by FUWAMOCO, or at least produced by Kiyoshi Ryuji. I remember seeing this announced in the video at the 04:35 mark – the release was digital, dropping at midnight. Given that it's a VTuber original and a recent digital release, finding the complete lyrics readily available on popular lyrics sites might be a challenge. They could be too new, or maybe haven't been transcribed widely.
+
+    Alright, let's try a targeted search. I'll search for either `"一途ってトレンド FUWAMOCO 歌詞"` or `"Ichizutte Trend FUWAMOCO lyrics"`. Hopefully, one of these search terms will unearth something useful. It's a fairly specific request, so it should give me some good results to work with.
+
+
+
+    **Analyzing the FUWAMOCO Video Segment**
+
+    Okay, so I've got this video of FUWAMOCO, and the title on screen in Japanese is "一途ってトレンド" (Ichizutte Trend). It's an original song, just released, so the first thing is to check for lyrics. Given the instruction to follow the rule: if the official lyrics aren't found, then I *must* set the reference lyrics fields to null. No guessing, no attempting to transcribe, that's clear. The search yielded nothing, so that's the rule I must abide by here.
+
+    Let's break down the video. The video runs from 00:00 to 04:59. I'm seeing two distinct scenes.
+
+    Scene 1, from 00:00.000 to 03:26.500: That's the actual song performance of "一途ってトレンド" by FUWAMOCO (Fuwawa and Mococo). The credits in the video itself (at 03:51) say the Words & Music are by 竜志 (Kiyoshi Ryuji), so that's the original artist. Performer in video is, of course, FUWAMOCO. The original language is Japanese. Since a search didn't get results, I'll set the reference lyrics fields (og and en) to null.
+
+    Scene 2 from 03:26.500 to 04:59.100: That's just FUWAMOCO talking, announcements, and an outro. No actual singing here, just talking. There is some background music, but it's not vocal music in the same sense, it's accompaniment. Wait, they sing a short snippet at 03:33-03:46, which is "What is, what is... Ichizutte trend...". However, since this is part of the stage banter (MC) and not a full song performance, I will still consider this scene as non-vocal music.
+
+    So, checking the JSON fields I need: I've got a global summary, scenes, with start/end timestamps, descriptions, contains_vocal_music set to true/false, song title (when appropriate), original artist, performer, language, and the null lyrics. I need to make sure the timestamps are in the right 'MM:SS.mmm' format. Those are all good. And I double-checked, I *absolutely* am not going to transcribe anything. I'm set. Now, I will generate the tool call / response according to the rules and output requirements.
+
+
+...
