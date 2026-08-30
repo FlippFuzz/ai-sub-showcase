@@ -1,0 +1,55 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: Shiranui Flare showcases her new 3D visual on stage while chatting,
+    joking, and posing with guest Hololive VTubers Hoshimachi Suisei, Sakura Miko,
+    Omaru Polka, and Shirogane Noel. The entire video segment consists of spoken conversation
+    and interactive talk without any vocal music performances.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: Shiranui Flare presents her new 3D visual on stage, interacting and
+      conversing playfully with guest Hololive members including Hoshimachi Suisei,
+      Sakura Miko, Omaru Polka, and Shirogane Noel.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the VTuber Stream**
+
+    Okay, so the user wants me to analyze this video of Shiranui Flare's 3D visual reveal stream with the other Hololive members. My first task is to determine if there's any vocal music in it. I need to make sure I'm thorough, so I'm going to watch the video carefully.
+
+    Alright, I'm watching the stream. From 00:00 to 04:59, it's clear this is a conversational stream – a chat with Suisei, Miko, Polka, and Noel. It's all talking, jokes, and poses. Definitely *no* sung songs, no vocal performances. I'm double-checking everything, just to be absolutely certain. Nope, just dialogue. The background music seems to be instrumental only.
+
+    Let's review the prompt's requirements. It's asking for a breakdown into chronological scenes, the detection of *all* vocal songs, and, importantly, if there's *no* vocal music, then `contains_vocal_music` needs to be `false`, and all those song metadata fields should be `null`.
+
+    Let's quickly scan the content again. It's the same: Flare's 3D visual showcase, chatting and interacting with other VTubers. No singing.
+
+    Now I need to structure the scenes. Since it's a single, continuous conversation, it makes sense to represent it as a single scene, covering the whole 00:00.000 to 04:59.000 timeframe. Although I'll verify if there are any visual transitions. No songs, just talking.
+
+    I'm now constructing the JSON response, following the `final_result` structure.
+    Here's my global summary: "Shiranui Flare showcases her new 3D visual on stage while chatting and interacting with guest Hololive VTubers Hoshimachi Suisei, Sakura Miko, Omaru Polka, and Shirogane Noel. The segment consists entirely of spoken conversation and playful poses without any vocal musical performances."
+    Here's my scene representation:
+    - start: "00:00.000"
+      end: "04:59.000"
+      description: "Shiranui Flare is on stage interacting and chatting with guest Hololive members (Suisei, Miko, Polka, Noel), showing off poses and discussing her new 3D visual."
+      contains_vocal_music: false
+      song_title: null
+      original_artist: null
+      performer_in_video: null
+      original_language: null
+      reference_lyrics_og: null
+      reference_lyrics_en: null
+
+    Since there is no vocal music, there's no need for any song searches. And the tool call is not required either.
+
+    Everything looks correct according to the `final_result` schema. Time to complete the task!
+
+
+...
