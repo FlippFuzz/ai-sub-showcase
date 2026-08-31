@@ -1,0 +1,30 @@
+name: part_013
+total_attempts: 1
+video_duration_ms: 88035
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '01:27.000'
+    original: 完全生3D Acoustic Live in Summer
+    english: '[Title: Fully Live 3D Acoustic Live in Summer]'
+  thoughts: |+
+    **Subtitle Generation for a Silent Title Card**
+
+    Okay, so the user needs subtitles for a video segment, from the looks of it, a title card from 00:00 to 01:27. No audio, just a static image with "完全生3D Acoustic Live in Summer" displayed. Alright, the instructions are clear: *never* output dialogue if there's no vocal audio. However, there's an exception for prominent, relevant on-screen text. "完全生3D Acoustic Live in Summer" definitely fits that bill.
+
+    So, let's translate that. "完全生3D" seems to mean something like "Fully Live 3D" or "Fully 3D Live." The rest is straightforward: "Acoustic Live in Summer".
+
+    Since the reference states `contains_vocal_music: false` and there's no audio at all, this is strictly a visual event. Therefore, I will create a single subtitle entry representing this prominent visual text displayed for the entire duration of the segment.
+
+    Here's what I'll output:
+
+    *   **s**: "00:00.000" (start time)
+    *   **e**: "01:27.000" (end time, the full segment, since the title is present the whole time)
+    *   **og**: "完全生3D Acoustic Live in Summer" (original text)
+    *   **en**: "[Title: Fully Live 3D Acoustic Live in Summer]" (English translation, using `[Title: ...]` to make it clear this is a title)
+
+    I'll double-check the rules again: *yup, this is the prominent on-screen text exception* and fits the instructions perfectly. Single subtitle block, representing the visual text, and I'll call the `final_result` tool with this output. This is a pretty straightforward application of the instructions, all things considered.
+
+
+...
