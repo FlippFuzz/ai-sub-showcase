@@ -1,0 +1,53 @@
+name: part_007
+total_attempts: 1
+video_duration_ms: 298941
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features Hololive VTuber Yukihana Lamy in her 3D model
+    during a streaming photo session and chat interaction. She playfully poses, counts
+    down, and shares results with viewers while light instrumental background music
+    plays. No vocal songs are performed.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: Hololive VTuber Yukihana Lamy conducts a 3D stream photo session
+      and chat interaction, playfully talking, posing, and tallying poll results with
+      viewers.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Segment**
+
+    Okay, so the user wants me to break down this video, identify any vocal music, and find lyrics if there are any songs. First, I need to make sure there's even any singing happening. Right, so I'm looking at the frames and listening to the audio for the first five minutes. It's Yukihana Lamy, a VTuber, doing a 3D stream, a "photo-shooting" segment to be precise. She's talking, interacting with chat, laughing, doing the countdown, there's background music (BGM) playing, but definitely no actual *songs* with lyrics being performed.
+
+    I've checked the entire clip carefully, and she's just chatting. The BGM is light instrumental or just background audio, but it's not a known song with lyrics. No vocal music at all. So, the `contains_vocal_music` field will be `false` for every scene. All the song metadata fields, like title, artist, and lyrics, will be `null`.
+
+    Now I need to map out the scenes. Since it's a continuous segment, not really a series of distinct scenes, I can divide it into logical sections or treat it as a single scene. Let's look at the flow. It's essentially one continuous scene, with minor posture changes. So I'll structure it that way. From 00:00.000 to 04:59.000. That's about 4 minutes and 59 seconds.
+
+    I've got the `final_result` schema in mind. It needs a `global_summary` and then an array of `scenes`. The schema's all good. Since there's no vocal music, the song fields are all going to be `null` and `contains_vocal_music` will be `false` for everything.
+
+    So, here's the plan. The `global_summary` will be: "The video features VTuber Yukihana Lamy in her 3D model during a streaming/photo-shooting segment, interacting with chat, counting down, and sharing results with viewers. No vocal music or songs are performed throughout the clip."
+
+    And then for the scene:
+
+    *   **Scene 1:**
+        *   `start`: "00:00.000"
+        *   `end`: "04:59.000"
+        *   `description`: "Hololive VTuber Yukihana Lamy conducts a 3D stream photo session and chat interaction, playfully talking, posing, and tallying results while light background music plays."
+        *   `contains_vocal_music`: false
+        *   `song_title`: null
+        *   `original_artist`: null
+        *   `performer_in_video`: null
+        *   `original_language`: null
+        *   `reference_lyrics_og`: null
+        *   `reference_lyrics_en`: null
+
+    Okay, and since there is no song, no web search is needed. Perfect. I'll call `final_result` now.
+
+
+...
