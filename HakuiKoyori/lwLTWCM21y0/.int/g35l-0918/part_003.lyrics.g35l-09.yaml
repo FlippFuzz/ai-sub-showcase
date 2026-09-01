@@ -1,0 +1,47 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 300015
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a relaxing chat stream segment (designated as
+    a girls' talk show featuring VTubers Yukihana Lamy, Shirogane Noel, and Hakui
+    Koyori) discussing makeup preferences and personal fetishes. There is no vocal
+    music or song performance in this video segment.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: The VTubers Yukihana Lamy, Shirogane Noel, and Hakui Koyori are engaged
+      in a casual conversation and chat show discussing makeup products, techniques,
+      and personal preferences.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Chat Video**
+
+    Okay, so I've got a video here featuring Yukihana Lamy, Shirogane Noel, Koyori Hakui, and others – a VTuber chat session. My task is to break it down, identify any vocal music, and find lyrics if songs are playing. Let's see...
+
+    First, I'll go through the video chronologically. From the initial timestamp of 00:00 to roughly 05:00, it seems to be a talking stream, a segment labelled "#すのすの女子トーク". I need to pay close attention, listening for any actual *vocal* music—songs, performances, anything sung by the VTubers themselves or playing in the background. Often in these chat streams there might be background music, but my focus is on vocal music.
+
+    Alright, I've listened closely to the first five minutes and it's all conversation, discussions about makeup and personal preferences. No singing. No vocal performances.
+
+    I've reviewed the instructions again to be absolutely sure. The prompt specifically asks me to "detect ALL vocal songs" and find the lyrics. If there's *no* vocal music, then the `contains_vocal_music` field should be `false`, and the song metadata, including lyrics, should be `null`.
+
+    I've double-checked, and there's definitely no vocal music, even in the background, just talking. It's purely voice chat. So, across the entire video, `contains_vocal_music` will be `false`.
+
+    Now, for structuring the scene breakdown. Based on the video duration, there's only one scene:
+
+    *   Scene 1: 00:00.000 to 05:00.000 (or, more precisely, 04:59.999).
+
+    I've confirmed that there's no background music with vocals or any song segment. It is primarily voice chat.
+
+    Let me just do a final quick check of the requirements again: there's a `global_summary` string, an array of `scenes`. Each scene object includes start, end, description, `contains_vocal_music`, `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, `reference_lyrics_en`.
+
+    Since there's no vocal music, this should be quite straightforward. I'm ready to construct the final response using `default_api:final_result`.
+
+
+...
