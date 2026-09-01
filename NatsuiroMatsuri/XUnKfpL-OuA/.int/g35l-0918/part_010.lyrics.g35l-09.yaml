@@ -1,0 +1,42 @@
+name: part_010
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a VTuber quiz show segment where participants listen
+    to various cicada sound effects and try to guess the corresponding species of
+    cicada, accompanied by light variety show BGM and spoken conversation with no
+    vocal music.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: VTubers participate in a quiz show discussing and guessing different
+      cicada mating calls and sound effects with light variety BGM.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Addressing the User's Request**
+
+    Okay, here's what I've gathered. The user wants me to dissect a video, segment it, identify any vocal music, and find lyrics. Let's get to work.
+
+    First, I need to understand what I'm dealing with. Looking at the video content, it's a VTuber stream or quiz show, specifically about cicada sounds. They're playing cicada sounds, having the VTubers guess what species makes what call. My initial impression is that this is unlikely to contain any actual songs with vocals.
+
+    Let's do a thorough check. I'll listen/watch from the beginning, checking from 00:00 to 05:00. No, there's no actual singing—just speech, cicada sounds, and sound effects. It's a VTuber variety/quiz segment centered around identifying cicada calls.
+
+    I'll verify this throughout the whole video just to be certain. Nope, still nothing. No song titles, no vocals, just talking and cicada sound effects.
+
+    So, I can confidently say that `contains_vocal_music` is going to be `false` for every scene. In fact, since the whole video seems to be a continuous quiz segment, I'll probably just define it as one single scene. Let's make sure I've got the start and end timestamps correct: 00:00.000 to 05:00.000 (or whatever the last frame timestamp is, which will likely be 04:59.000).
+
+    Let's keep the user's instructions in mind. I need to output a JSON following this schema, containing a `global_summary` and an array of `scenes`. Each scene will have `start`, `end`, `description`, `contains_vocal_music`, and if `contains_vocal_music` is `false`, the song fields are null.
+
+    I should also make sure no background music has sung vocals. No, the background music is light variety show BGM without vocals, it's not the focus of this video. The main audio is the VTuber conversation and cicada sound effects.
+
+    Therefore, for the whole video, I know that `contains_vocal_music` will be `false`. Now, I will put together the data and output it in the correct JSON format.
+
+
+...
