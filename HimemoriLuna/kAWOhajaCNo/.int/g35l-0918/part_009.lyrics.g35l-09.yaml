@@ -1,0 +1,46 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features Himemori Luna from Hololive celebrating her birthday
+    stream. She introduces her piano performance and plays an instrumental rendition
+    of Johann Pachelbel's Canon in D major on a grand piano in a candy-themed room.
+  scenes:
+  - start: '00:00.000'
+    end: '00:22.000'
+    description: Himemori Luna talks to the audience, explaining her plan to perform
+      a piano piece for them.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:22.000'
+    end: '04:59.000'
+    description: Himemori Luna performs an instrumental piano rendition of Pachelbel's
+      Canon on a grand piano.
+    contains_vocal_music: false
+    song_title: Canon in D
+    original_artist: Johann Pachelbel
+    performer_in_video: Himemori Luna
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of Himemori Luna's Piano Performance**
+
+    Okay, let's break down this video of Himemori Luna playing the piano. The core request is to identify vocal songs and provide lyrics, so that's the lens I'm using. First, let's look at the timestamps. From 00:00 to 00:22, Luna is talking; she's introducing her performance. This is clearly *not* the song itself. She mentions playing Pachelbel's Canon at 00:22 ("曲はパッヘルベルのカノン行くのだよ").
+
+    Now, from 00:23 to 04:59, we have the piano performance. It's Canon in D (or Pachelbel's Canon – カノン / パッヘルベルのカノン). Okay, I know this piece. It's an instrumental, classical composition. *Definitely* no vocals. The prompt asks to "detect ALL vocal songs" and search for lyrics. Since this is purely instrumental, the crucial point is `contains_vocal_music` will be `false`. I need to be precise here.
+
+    So, Scene 1 (00:00-00:22) is Luna talking, no vocals. `contains_vocal_music: false`.
+
+    Scene 2 (00:22-04:59) is the piano performance of Pachelbel's Canon. Again, purely instrumental. Therefore, `contains_vocal_music: false` here, too. However, since the song is a well-known piece, I can and should provide the song metadata, even though there are no lyrics. It's good to be thorough. The song title is "Canon in D" (or カノン / パッヘルベルのカノン). The original artist is Johann Pachelbel. The performer in the video is Himemori Luna. The original language is null since it's an instrumental piece. Therefore reference lyrics are not needed, `reference_lyrics_og` and `reference_lyrics_en` will be null.
+
+    I need to make sure my final output clearly reflects this: no vocal music was detected, even if I still provided song metadata. I'll make the final response structure reflect that. I’m thinking there will be no tool calls because no lyrics are needed. I'll construct a final result object to encapsulate all this.
+
+
+...
