@@ -1,0 +1,71 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: Yuzuki Choco is hosting a 3D stream celebrating her 2nd anniversary
+    with Oozora Subaru, chatting, laughing, and striking various cute poses in a virtual
+    room.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: Yuzuki Choco chats and strikes various poses in a 3D virtual room
+      while interacting with Oozora Subaru, with background conversation and stream
+      audio.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the VTuber Video Clip**
+
+    Okay, so the user wants me to really dig into this video and identify any vocal music, breaking it down into scenes and grabbing lyrics if there are any songs. Got it. Let's get to work.
+
+    First, I need to understand the video's content. It's a clip from a 3D VTuber stream featuring Yuzuki Choco, with Oozora Subaru also present in a smaller window and audio. I'm focusing on Choco-sensei's 2nd anniversary stream, which is called "凸ってちょこと撮影会". I need to determine if any *sung* music is present.
+
+    Alright, after a careful review, it's clear: there's no actual *singing*. It's a talking stream, a conversation. Choco is interacting, laughing, doing poses (like the "セクシーポーズ" stuff), and there's interaction with Subaru. There's definitely background music, maybe some chiptune or stream music, but *no* vocal songs. Just spoken dialogue and VTuber chat.
+
+    I've checked the first 5 minutes (00:00 to 05:00), and the same holds true. No vocals that are singing or singing vocals, just talking.
+
+    So, I need to double-check that, yes, absolutely no singing. And that means `contains_vocal_music` will be `false` for everything. Each scene will, by default, be set to `null` for song title, artist, etc.
+
+    Now, let's break down the video into scenes, or, rather, just consider the entire clip as one scene.
+
+    *   **00:00 - 05:00:** Yuzuki Choco is chatting and striking poses in a 3D virtual room while interacting with Oozora Subaru. No songs are present.
+
+    And now, based on the prompt's instructions:
+
+    *   Break into scenes - which is one, here.
+    *   Detect vocal songs - nope.
+    *   `contains_vocal_music: false`, song fields null - Yep, that's the plan.
+    *   A global summary of the content - which I'll write shortly.
+
+    So, let's craft the JSON:
+
+    ```json
+    {
+      "global_summary": "Yuzuki Choco is hosting a 3D stream celebrating her 2nd anniversary with Oozora Subaru, discussing and posing in various outfits and camera angles.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "05:00.000",
+          "description": "Yuzuki Choco chats and strikes various poses in a 3D virtual room while interacting with Oozora Subaru.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Since there's no singing, no web search for lyrics is needed. The video appears to end around the 05:00 mark. And, I'm confident about this analysis. No songs, just talk. I'm ready to output the final result now.
+
+
+...
