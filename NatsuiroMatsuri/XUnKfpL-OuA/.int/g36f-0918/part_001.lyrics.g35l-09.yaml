@@ -1,0 +1,56 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a group of VTubers participating in a drawing
+    and guessing game. The first segment focuses on the 'Kokekokko' (chicken) round,
+    followed by a transition at 03:31 to the 'Kerokero' (frog) round. No vocal songs
+    are performed during the video.
+  scenes:
+  - start: '00:00.000'
+    end: '03:31.000'
+    description: The VTubers are playing a drawing game where they draw and guess
+      the word 'Kokekokko' (chicken), talking and laughing together.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:31.000'
+    end: '04:59.000'
+    description: The VTubers transition to the second round of the drawing game, guessing
+      the word 'Kerokero' (frog).
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Stream Clip**
+
+    Alright, let's break this down. My goal here is to analyze this video clip, identify scenes, and determine if any vocal music is present. I'm seeing this is a VTuber stream, likely a multi-collab, potentially ID/EN/JP based on the VTubers present (Kobo Kanaeru, Vestia Zeta, etc. are some that stand out). My first step is to inspect the video content itself.
+
+    From the start (00:00) to around the 3:31 mark, it looks like they're playing a drawing/guessing game, specifically around the sound "コケコッコｰ" (Kokekokko, or chicken crowing). They're humming, singing, and talking about chickens. But, the question is, is this *actual* vocal music? Let's check.
+
+    I need to determine if there's any active music with sung vocals. Reading the instructions, it's pretty clear: `contains_vocal_music: True if the scene contains active music with sung vocals, False otherwise`. So, I need to listen closely. VTuber streams can be tricky - they chat, they play games, they might do sound effects, but are they singing a *song*?
+
+    I've listened carefully. Up to 4:59, there *is* background music (BGM), but no sung vocals. It's conversational speech, game banter, with light background music throughout. They are chanting things like "コケコッコｰ" and "ケロケロ" but it's not a performance of a song. So, no songs detected. We'll be using the `contains_vocal_music` field. It will be false.
+
+    Now let's break it down into scenes. From 00:00 to 03:31, it's the "コケコッコｰ" (chicken) game. From 03:31 to 04:59, it's the "ケロケロ" (frog) game. That means we have two scenes:
+
+    *   **Scene 1:** 00:00.000 to 03:31.000 - Drawing and guessing "コケコッコｰ" (chicken).
+    *   **Scene 2:** 03:31.000 to 04:59.000 - Drawing and guessing "ケロケロ" (frog).
+
+    Again, are there any songs? Nope. `contains_vocal_music` is false for both scenes, and all the song metadata fields will be `null`.
+
+    So, the global summary is: The video showcases a group of VTubers playing a drawing and guessing game, starting with "コケコッコｰ" (chicken) and transitioning to "ケロケロ" (frog). There is no vocal music performed.
+
+    Finally, I'll double-check the required response format, making sure all song-related fields are null since `contains_vocal_music` is `false`. And it seems I'm all set. Let's output the result.
+
+
+...

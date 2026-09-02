@@ -1,0 +1,63 @@
+name: part_008
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a variety show stream with Hololive VTubers (including
+    Kobo Kanaeru, Vestia Zeta, Kaela Kovalskia, Hakos Baelz, etc.) participating in
+    a quiz segment. In the first part, they discuss how to express 'dokidoki' (heart-pounding)
+    more intensely. In the second part, they listen to various cicada sound clips
+    and try to identify and imitate the cicada cries. No vocal musical performances
+    occur during this segment.
+  scenes:
+  - start: '00:00.000'
+    end: '03:18.000'
+    description: The VTubers are discussing how to express heart-pounding feelings
+      (dokidoki) more strongly in different ways, showing their written answers on
+      mini whiteboards.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:18.000'
+    end: '05:00.000'
+    description: The group moves on to a listening quiz where they play a sound clip
+      of a cicada crying and discuss what kind of cicada it is and how to describe
+      its sound.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Video Clip**
+
+    Okay, so I've got this video clip featuring the Hololive crew – Kobo Kanaeru, Vestia Zeta, Kaela Kovalskia, Hakos Baelz, and others – and the task is to analyze it, specifically for the presence of vocal music. First, let's dive into the content itself. I need to make sure I'm precise here; does the clip feature any actual singing or a complete song?
+
+    Right, after reviewing the video, it's pretty clear: it's a quiz or variety show format. There's plenty of talking, chatting, laughing, sound effects like cicada noises (that's at 3:52, right?), but absolutely no vocal performance of a song. I need to be 100% certain about this, so I'll check again. From the start (00:00) through the first five minutes (05:00), they're playing a quiz game and having a discussion, no singing.
+
+    Okay, confirmed. So, because there's no vocal music, the `contains_vocal_music` parameter needs to be set to `false` for the entire video, for every scene.
+
+    Now, I'll structure the scenes accurately, since there's no music. The parameters like `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` will all be `null` – they're irrelevant in this case.
+
+    I'm dividing the video into scenes now. The video runs from 00:00.000 to 05:00.000. I need to figure out the best way to structure it. Should I split it, or is a single scene sufficient? Let me analyze the content at each timestamp:
+
+    *   00:00.000 - 03:18.000: Discussing how to express "ドキドキ" (heart-pounding) more strongly in Japanese/English, trying out various expressions.
+    *   03:18.000 - 05:00.000: The "このセミ鳴き声は？" (What cicada cry is this?) quiz segment where they are guessing/imitating cicada sounds.
+
+    I think I'll create two scenes to differentiate them. This helps make the analysis a bit cleaner. It also matches the general flow of the stream. So, the scenes are:
+
+    *   Scene 1: 00:00.000 - 03:18.000 - VTubers discussing heart-pounding expressions and writing answers on their boards.
+    *   Scene 2: 03:18.000 - 05:00.000 - VTubers listening to a cicada sound clip and guessing what cicada it is.
+
+    One more quick double-check: is there ANY music playing? Sometimes background music can be subtle. But nope, nothing that would be classified as vocal music or a song. This is clear. Since the prompt specifies finding "ALL vocal songs," I can confirm `contains_vocal_music: false`.
+
+    Alright, I'm confident there is no search needed, no lyrics needed. I'll go ahead and construct the final response using `default_api: final_result` with all of the parameters appropriately set.
+
+
+...
