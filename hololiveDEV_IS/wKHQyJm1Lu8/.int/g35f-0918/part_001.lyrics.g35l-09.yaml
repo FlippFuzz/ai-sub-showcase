@@ -1,0 +1,52 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 299283
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features four VTubers from hololive's ReGLOSS unit on
+    a virtual outdoor stage, conversing, making announcements about their upcoming
+    2nd Anniversary 3D live stream on September 13th, and discussing their solo tracks
+    with background instrumental music playing. No vocal songs are performed.
+  scenes:
+  - start: '00:00.000'
+    end: '04:58.789'
+    description: The four members of ReGLOSS stand on a virtual outdoor stage with
+      a crowd in the background, talking, gesturing, and presenting announcements
+      regarding their 2nd Anniversary 3D live stream and solo music tracks.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the ReGLOSS Video Segment**
+
+    Okay, so I need to analyze this video segment and break it down. First, the key question: is there any vocal music? Let's take a look. I'm going to actually watch the video, paying close attention to the audio. Ah, it features the ReGLOSS VTubers – Todoroki Hajime, Ichijou Ririka, Juufuutei Raden, and Otonose Kanade – on stage, with a virtual audience. They're talking and gesturing. I need to determine if there's actual singing, or just speaking. From the initial timestamp (00:00) until the end (around 04:58 – let me confirm the exact end time… yep, the last frame shows 04:58.789), they're primarily talking, introducing upcoming events like the ReGLOSS 2nd Anniversary 3D live, and discussing solo tracks. There's background music (BGM), but no actual songs being *sung* by anyone in this clip. I need to be absolutely sure, so I'll listen again carefully. Definitely no vocal songs performed; just conversation and announcements. Therefore, the `contains_vocal_music` flag for this entire segment must be `false`. The song metadata – title, artist, performer, language, lyrics – are all `null`.
+
+    Now, how to structure this… Let's determine the scenes. Based on the video's visual content, it appears to be a single, continuous scene. There aren't any major visual changes or topic shifts that would warrant multiple scenes. It's essentially one long announcement/talk segment. The four members are on stage, moving around, with camera angle changes but still a continuous talking segment. That will map to a single scene. Therefore, the video is one continuous scene from 00:00.000 to 04:58.789.
+
+    I need to make sure I'm following all instructions. Okay, global summary, scenes list with timestamps, and the appropriate JSON structure. Right, I think I have everything.
+    ```json
+    {
+      "global_summary": "The video segment features the four ReGLOSS VTubers (Todoroki Hajime, Ichijou Ririka, Juufuutei Raden, and Otonose Kanade) on stage, talking and making announcements. The segment is a continuous talk show segment with background music (BGM), but no actual vocal songs are performed. The video lasts from 00:00.000 to 04:58.789.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "04:58.789",
+          "description": "The four ReGLOSS VTubers are on stage, talking, making announcements (such as the ReGLOSS 2nd Anniversary 3D live), and discussing solo tracks. Background music (BGM) is present, but there are no vocal songs.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+
+...
