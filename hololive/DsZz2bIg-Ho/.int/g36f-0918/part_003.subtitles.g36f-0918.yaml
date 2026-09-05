@@ -1,0 +1,90 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 295036
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:15.300'
+    end: '00:18.100'
+    original: G-A-M-E-R-S
+    english: G-A-M-E-R-S
+  - start: '00:20.500'
+    end: '00:23.400'
+    original: G-A-M-E-R-S
+    english: G-A-M-E-R-S
+  - start: '00:24.400'
+    end: '00:25.200'
+    original: おかゆ
+    english: Okayu
+  - start: '00:48.800'
+    end: '00:49.700'
+    original: ころね
+    english: Korone
+  - start: '01:48.900'
+    end: '01:50.000'
+    original: Are you ready?
+    english: Are you ready?
+  - start: '02:15.500'
+    end: '02:16.400'
+    original: Perfect!
+    english: Perfect!
+  - start: '02:47.800'
+    end: '02:50.700'
+    original: G-A-M-E-R-S
+    english: G-A-M-E-R-S
+  - start: '02:53.100'
+    end: '02:56.000'
+    original: G-A-M-E-R-S
+    english: G-A-M-E-R-S
+  - start: '03:26.300'
+    end: '03:27.100'
+    original: フブキ
+    english: Fubuki
+  - start: '03:50.800'
+    end: '03:51.600'
+    original: ミオ
+    english: Mio
+  - start: '04:43.000'
+    end: '04:45.800'
+    original: G-A-M-E-R-S
+    english: G-A-M-E-R-S
+  - start: '04:48.000'
+    end: '04:50.800'
+    original: G-A-M-E-R-S
+    english: G-A-M-E-R-S
+  - start: '04:51.300'
+    end: '04:52.200'
+    original: おかゆ
+    english: Okayu
+  thoughts: |+
+    **Hololive GAMERS Fes. Day 1 Waiting Screen Subtitle Generation**
+
+    Alright, let's get down to business. We've got a "hololive GAMERS fes." Day 1 waiting screen video segment, and the task is to generate subtitles. The provided reference JSON confirms this is a waiting screen, and that it contains no *vocal* music. The focus here is on applying the Golden Rules: prioritize *vocal* events and *prominent visual* text. No room for "ghost subtitles" on this job.
+
+    First, I examined the audio track. Initially, there's no spoken dialogue, which is the absolute ground truth. There is BGM with some electronic voice samples / chiptune vocaloid-like short voice chops like "G-A-M-E-R-S", "Okayu", "Korone", "Are you ready?", "Go!", "Perfect!", and "Mio!" in the music track. I need to figure out if these count as vocal events that need subtitling. I know it's not pure instrumental.
+
+    Next, I checked the visual elements. There's text on the screen: "Official Hashtag" and "Please wait a while until the show begins." The standard stream UI overlay is static text on the waiting screen which is generally excluded from subtitling.
+
+    We need to consider if these are BGM vocal samples or full dialogue. Based on the rules, BGM *voice samples* do count, so the next step is to accurately transcribe the exact timecodes of those samples, since that is the "vocal audio waveform ground truth".
+
+    So I carefully listened to the audio, frame by frame, and timestamped each vocal sample. Now it's a matter of creating the subtitle entries:
+
+    Here's my final list, *completely* adhering to the JSON schema:
+
+    ```json
+    {
+      "subs": [
+        { "s": "00:15.300", "e": "00:18.100", "og": "G-A-M-E-R-S", "en": "G-A-M-E-R-S" },
+        { "s": "00:20.500", "e": "00:23.400", "og": "G-A-M-E-R-S", "en": "G-A-M-E-R-S" },
+        { "s": "00:24.400", "e": "00:25.200", "og": "おかゆ", "en": "Okayu" },
+        { "s": "00:48.800", "e": "00:49.700", "og": "ころね", "en": "Korone" },
+        { "s": "01:48.900", "e": "01:50.000", "og": "Are you ready?", "en": "Are you ready?" },
+        { "s": "02:15.500", "e": "02:16.400", "og": "Perfect!", "en": "Perfect!" },
+        { "s": "02:47.800", "e": "02:50.700", "og": "G-A-M-E-R-S", "en": "G-A-M-E-R-S" },
+        { "s": "02:53.100", "e": "02:56.000", "og": "G-A-M-E-R-S", "en": "G-A-M-E-R-S" },
+        { "s": "03:26.300", "e": "03:27.100", "og": "フブキ", "en": "Fubuki" },
+        { "s": "03:50.800", "e": "03:51.600", "og": "ミオ", "en": "Mio" },
+        { "s": "04:43.000", "e": "04:45.800", "og": "G-A-M-E-R-S", "en": "G-A-M-E-R-S" },
+        { "s": "04:48.000", "e": "04:50.80
+
+...
