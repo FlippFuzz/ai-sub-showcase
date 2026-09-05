@@ -1,0 +1,70 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300088
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a waiting screen and informational slides for
+    Amane Kanata's 1st Solo Live 'LOCK ON' at Ariake Arena, displaying event notices,
+    merchandise, and fan art/messages accompanied by instrumental background music.
+  scenes:
+  - start: '00:00.000'
+    end: '00:14.000'
+    description: Introductory title screen for Amane Kanata 1st Solo Live 'LOCK ON'
+      with ambient background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:14.000'
+    end: '05:00.000'
+    description: Waiting screen displaying event attention notices, merchandise previews,
+      and scrolling fan messages with ongoing instrumental background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the "Amane Kanata 1st Solo Live LOCK ON" Video**
+
+    Okay, let's break this down. First, I need to methodically analyze this video, segmenting it into chronological scenes and determining if any vocal music is present. My initial thought is that I'll need to use a web search to find official lyrics if I do detect any vocal songs.
+
+    First step: content review. Right off the bat, from 00:00 to 00:11, it appears to be a static image – an intro screen with the event title, date, and location. There's background music, an ambient intro of some sort. I'll need to listen very carefully to this and the rest of the audio. Is there any vocal content *at all*? Let's verify and compare frames with audio.
+
+    From 00:11 onward, I detect BGM playing. It could be rock, instrumental, electronic, or perhaps even a song. I have to make absolutely certain, though, so I need to check for vocals. Let's inspect the video contents. From 00:00 to 00:14, the intro screen is visible. There are things like "ATTENTION" notices, and goods are being displayed, plus fan messages are scrolling in the background while the instrumental BGM is playing.
+
+    The key question: Does this BGM have any vocal components? I'll re-check; from 00:11 to 05:00, there's a looping instrumental rock/pop track. Are there any vocals? No sung vocals, or are there? Let's check with great care. It's a waiting screen for Amane Kanata's "LOCK ON" live event. I see information about the event (fan messages, goods, attention notices) displayed, but there are no sung vocals. It seems to be a waiting screen/countdown/informational display with BGM. Let's check again to make absolutely sure.
+
+    Since there are no lyrics, `contains_vocal_music` needs to be `false` for every scene. The song metadata and lyrics fields must be set to `null`.
+
+    Now, let's quickly review the scenes that I've identified so far.
+    *   **Scene 1:** 00:00.000 to 00:14.000 - It's an intro screen with event details, paired with some ambient or instrumental intro music.
+    *   **Scene 2:** 00:14.000 to 05:00.000 - A waiting screen displaying event notices, merchandise, and fan messages, all with instrumental background music playing continuously.
+
+    To really nail this down, let's verify if there are any vocals in this BGM. The BGM has drums, bass, synths, and electric guitar melodies, but there are definitely no vocals/singing.
+
+    Therefore, `contains_vocal_music` is definitively `false`.
+
+    Now, let's organize the final JSON response to match the defined schema:
+
+    *   `global_summary`: "The video presents a waiting screen for Amane Kanata's 1st Solo Live 'LOCK ON' at Ariake Arena, displaying notices, merchandise, and fan messages, accompanied by instrumental background music."
+    *   `scenes`:
+        *   Scene 1:
+            *   `start`: "00:00.000"
+            *   `end`: "00:14.000"
+            *   `description`: "Introductory screen displaying the title 'Amane Kanata 1st Solo Live LOCK ON' and event details with ambient background music."
+            *   `contains_vocal_music`: false
+        *   Scene 2:
+            *   `start`: "00:14.000"
+            *   `end`: "05:00.000"
+            *   `description`: "Waiting screen cycling through event notices, merchandise displays, and fan messages with ongoing instrumental background music."
+            *   `contains_vocal_music`: false
+
+    I'll double-check all the required fields for scenes again. They are: `start` (STRING), `end` (STRING), `description` (STRING), `contains_vocal_music` (BOOLEAN), `song_title` (STRING or NULL), `original_artist` (STRING or NULL), `performer_in_video` (STRING or NULL), `original_language` (STRING or NULL), `reference_lyrics_og` (STRING or NULL), and `reference_lyrics_en` (STRING or NULL). I've addressed everything correctly. Now the output is ready
+
+...
