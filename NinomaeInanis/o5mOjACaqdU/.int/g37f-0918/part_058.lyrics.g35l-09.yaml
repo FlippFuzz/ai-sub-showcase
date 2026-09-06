@@ -1,0 +1,60 @@
+name: part_058
+total_attempts: 1
+video_duration_ms: 300021
+lyrics_prompt_version: 9
+response:
+  global_summary: 'Ninomae Ina''nis streams ARK: Survival Ascended, navigating the
+    game environment, managing dinosaurs, and successfully taming a Pyromane creature.
+    There is no vocal music playing throughout the video.'
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: 'Ninomae Ina''nis plays ARK: Survival Ascended, running around the
+      map, interacting with game mechanics, and working on taming a Pyromane while
+      talking and reacting to chat.'
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Ina'nis ARK Stream**
+
+    Okay, so the user wants me to really dig into this video of Ina'nis playing ARK, listen carefully for any vocal music, and find lyrics if there are any songs. Got it. Let's see... the video shows Ina'nis, a Hololive VTuber, playing *ARK: Survival Ascended* (or something similar). She's talking, interacting with chat, and, of course, playing the game. Right, first thing, let's zero in on the audio. Are there any songs, any vocal music at all?
+
+    I'm hearing game audio – ambient sounds, dinosaur roars, and Ina's voice, primarily in Japanese. No music so far. Let's double-check, though. Sometimes streamers have background music that's very quiet. Okay, I'm going to listen again, *very* carefully, from the beginning to the end.
+
+    *   **00:00 - 05:00:** Just the game sound effects and Ina's voice. No background music. Nothing.
+
+    So, since there's no vocal music, the `contains_vocal_music` field needs to be `false` for every scene. All the song metadata fields, the song titles, artists, lyrics, etc., all have to be `null`.
+
+    Now, should I break this into scenes? It's about five minutes long, showing Ina taming a Pyromane. I could technically divide it up based on actions within the scene but since we already know there is no music, it doesn't really matter. Whether I define it as one continuous scene or several, the output will remain the same.
+
+    Let's do a quick content check to write some summaries, a general summary, and scene descriptions. Ninomae Ina'nis streams ARK: Survival Ascended. She's attempting to tame a Pyromane creature while navigating the terrain and managing her dinosaurs, and she succeeds and names her Pyromane. No music. The Global Summary should encapsulate that.
+
+    And, because there's *no* vocal music, there's no need for any web searches for lyrics. I'm verifying here that, even though the instructions say "search for lyrics," it only applies *if* a song is detected. In this case, no song detected, no search required.
+
+    Alright, time to structure this JSON output. Following the `final_result` structure... I need:
+
+    *   `global_summary`: That's the overview of the video content.
+    *   `scenes`: This will be an array with one object, and the timestamps.
+
+        *   `start`: '00:00.000'
+        *   `end`: '05:00.000'
+        *   `description`: The visual and audio description.
+        *   `contains_vocal_music`: `false`
+        *   `song_title`: `null`
+        *   `original_artist`: `null`
+        *   `performer_in_video`: `null`
+        *   `original_language`: `null`
+        *   `reference_lyrics_og`: `null`
+        *   `reference_lyrics_en`: `null`
+
+    I confirmed the timestamps and will use `00:00.000` to `05:00.000`.
+
+    Okay, I think I have everything. I've double-checked the requirements and constraints. I'm ready to output the final result now.
+
+
+...

@@ -1,0 +1,39 @@
+name: part_018
+total_attempts: 1
+video_duration_ms: 300021
+lyrics_prompt_version: 9
+response:
+  global_summary: 'The video features VTuber Ninomae Ina''nis playing Ark: Survival,
+    flying on a Pteranodon, managing her inventory and items, and exploring the landscape
+    while interacting with her chat. There is no vocal music playing throughout the
+    video.'
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: VTuber Ninomae Ina'nis plays Ark, flying on a Pteranodon, retrieving
+      items from her death cache, organizing her inventory, and navigating the map
+      while talking to her viewers.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Extracting Relevant Information**
+
+    Okay, so the user wants me to really dig into this video and give them a breakdown. I need to chronologically segment it, check for any vocal tracks, and if there are songs, find the lyrics. The input video is a VTuber, Ninomae Ina'nis, playing *Ark*. Alright, let's get started.
+
+    First things first: Is there any music playing? I'll analyze the content chronologically. Based on the initial segment from 0:00 to 5:00, there's just gameplay commentary by Ina'nis, game audio (dinosaur noises, flying, inventory sounds, the usual), and some ambient environment sounds. Definitely *no* vocal music playing in the background at all during that portion. And I'll double check the entire timestamped video - still no music.
+
+    Because there is no music, `contains_vocal_music` will be `false` for the single scene (and, if it were to continue, each subsequent scene), and therefore all the song-related fields—`song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en`—will be set to `null`.
+
+    Let's quickly create the single scene, which covers the entire video length of 0:00 to 5:00. I can check the video duration now, which is exactly at 5:00.000. It's time to build a description.
+
+    The video features Ninomae Ina'nis playing *Ark: Survival Evolved* or *Ark: Survival Ascended*. She is flying on a Pteranodon, managing inventory, navigating the game map, and chatting with viewers. Most importantly, there is *no* background vocal music.
+
+    Finally, I need to make sure the output structure is right. It requires a `global_summary`, and then a list of `scenes`, each with a `start` and `end` timestamp, `description`, a `contains_vocal_music` boolean, and song details if it's applicable. This seems like a straightforward analysis due to the absence of music. I'm ready to call `final_result`.
+
+
+...
