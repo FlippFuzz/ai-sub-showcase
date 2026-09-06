@@ -1,0 +1,60 @@
+name: part_050
+total_attempts: 1
+video_duration_ms: 300015
+lyrics_prompt_version: 9
+response:
+  global_summary: Ninomae Ina'nis plays ARK, riding a Pteranodon named TOWASAMA through
+    an ash-covered landscape, battling creatures, and interacting with her stream
+    chat. No vocal music is present in the video clip.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: Ninomae Ina'nis plays ARK, flying on her Pteranodon in a volcanic/ash
+      wasteland, fighting enemies, managing inventory and stats, and chatting with
+      viewers.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Clip**
+
+    Okay, so the user wants me to analyze this video clip using `default_api:final_result`. First things first: is there any vocal music playing? Let's give it a listen. The video shows Ninomae Ina'nis playing *ARK: Survival Evolved* or *ARK: Survival Ascended*, possibly on the Fjordur map. She's talking, interacting with chat, and playing the game. Right, let's focus on the audio.
+
+    I need to make sure I'm not missing any background music. Okay, listening carefully from the beginning, between 00:00 and 05:00, it's all gameplay sound effects – fire, flying sounds, dinosaur roars, rain – and Ina'nis's voice. Definitely *no* background music with vocals. Let's double-check, just to be absolutely certain. Yep, scanned through the whole segment again: no vocal music detected.
+
+    Since there's no music, I don't need to waste time searching for lyrics. All song-related fields (`song_title`, `original_artist`, etc.) should be `null`, and `contains_vocal_music` has to be `false`.
+
+    Now, let's break this into scenes. It's essentially continuous gameplay with commentary. Looking at the instructions and examples, scenes have to be chronological, cover the whole video, and not overlap. Let's see... the video ends around 05:00. Okay, the last frame appears to be around 04:59 or 05:00. So, let's craft a single scene since it's a relatively consistent flow.
+
+    Scene 1: 00:00.000 - 05:00.000 (or similar) - Gameplay of ARK with Ninomae Ina'nis's commentary. No vocal music.
+
+    Now, let's structure the output in the correct JSON format for `default_api:final_result`:
+
+    ```json
+    {
+      "global_summary": "Ninomae Ina'nis plays ARK: Survival Evolved, riding a Pteranodon in a volcanic/ash wasteland environment, fighting enemies, and talking with her stream chat.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "05:00.000",
+          "description": "Ninomae Ina'nis plays ARK, flying on her Pteranodon ('TOWASAMA') through an ash-covered wasteland, battling creatures, managing stats, and interacting with chat.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Alright, one last quick check: No music means no search needed. Now, let's call the `default_api:final_result` tool with this structured analysis.
+
+
+...
