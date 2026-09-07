@@ -1,0 +1,29 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 301308
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **Subtitling a Static Waiting Screen: A Thought Process**
+
+    Okay, so I've got a 5-minute video stream standby screen, and the user wants subtitles. My initial thought is to assess the content: it's a static screen with a looping animated background and on-screen text in Japanese. The text is the key here: it mentions an announcement, a "super important" reveal, a 3D new costume reveal, and a birthday live.
+
+    First, I need to check for audio. After listening, it's just instrumental BGM – chiptune or synth. No vocals, no dialogue whatsoever throughout the entire 5-minute duration.
+
+    Now, considering the visual aspect, I need to consult my rules. There's the "VISUAL EVENTS (The On-Screen Text Exception)" rule. If text is prominent and relevant, subtitle it, even without audio. The text is definitely prominent!
+
+    But wait... Is this a *title card* or *standby screen* scenario? My internal framework has examples for this, specifically looking at how we handle silent on-screen text before dialogue begins in the main content. Usually, on standby screens, there's no spoken dialogue unless it's a title card or nothing. But, if the content is silent/instrumental standby screen, should `subs` be empty `[]` or have the on-screen text?
+
+    Let's see: the "ZERO GHOST SUBTITLES" instruction is clear: *Remain SILENT during pure instrumental music*.
+
+    I recall YouTube streams usually don't have spoken subtitles on waiting screens unless there's a title card. So I need to determine if it's correct to output `[]` for this case. This static screen shows: "超重大 告知あり 3D新衣装お披露目 Luminous Stairs 鷹嶺ルイ 生誕LIVE '26."
+
+    Then, I remember instructions, "NEVER output dialogue text if there is no vocal audio driving it," which means I need to transcribe speech/vocals only and avoid including silent text, unless there is a prominent visual event. If there are no vocals in the entire 5 minutes, is an empty list `{"subs": []}` the standard expected output?
+
+    Given that there are *no* vocals in the entire video, I am 100% certain that an empty `subs: []` is the precise answer to avoid ghost subtitles. That's the correct approach in subtitling pipelines where an instrumental waiting screen loops and presents a static thumbnail or stream standby card that is silent. No need to clutter the player with 5-minute persistent subtitles.
+
+    Finally, I double-checked the audio – it's chiptune BGM the entire time. No vocals. So, the correct output is indeed `{"subs": []}`.
+
+
+...
