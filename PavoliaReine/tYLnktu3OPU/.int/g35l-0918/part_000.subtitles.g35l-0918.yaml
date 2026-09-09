@@ -1,0 +1,44 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300208
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:01.000'
+    end: '00:04.000'
+    original: 'Reine B''Day Classroom Field Trip : Food & Games with Akai Haato'
+    english: '[Reine B''Day Classroom: Field Trip - Food & Games with Akai Haato]'
+  thoughts: |+
+    **Subtitle Decision-Making: A Title Screen Analysis**
+
+    Okay, so I've got this video segment and need to generate subtitles. The video itself is a static screen, a waiting screen, specifically. It displays the title "Reine B'Day Classroom Field Trip : Food & Games with Akai Haato". The reference JSON is the key here.
+
+    First, let's establish the ground rules. The core principle is ZERO GHOST SUBTITLES: silence for instrumental music, long pauses, or sound effects *unless* there's a "prominent Visual Event." So, no vocals, no subtitles... unless there's on-screen text that's *relevant*.
+
+    Alright, the rules specify visual text inclusion. The text on the screen is clearly the title: "Reine B'Day Classroom Field Trip : Food & Games with Akai Haato." It's definitely not background clutter or UI elements; it's the main focus. It is the waiting screen for a VTuber stream.
+
+    Now, the question is: *do* we subtitle a title screen? That's where context and professional practice kick in. Title screens at the beginning of a video usually have subtitle entries, usually like `[Title: ...]` or the title text. There's an example in the JSON, showing the chapter title being subtitled.
+
+    This video is the *entirety* of this static screen. It lasts nearly five minutes. I confirmed there's no vocal audio, and the provided data shows `contains_vocal_music`: false. Even if there's background music, we still follow the vocal rule.
+
+    So, let's consider: Should we subtitle the full title? If so, we need to think about how long it appears (4:59).
+
+    I'm thinking about the standard. It usually makes sense to have the title, like from 00:01.000 to 00:04.000, so we can make this:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:01.000",
+          "e": "00:04.000",
+          "og": "Reine B'Day Classroom Field Trip : Food & Games with Akai Haato",
+          "en": "[Reine B'Day Classroom: Field Trip - Food & Games with Akai Haato]"
+        }
+      ]
+    }
+    ```
+
+    Okay, the video is completely static – just this image. The initial title card at the start will be extremely professional and adheres to the "Visual Events" rule. This is it.
+
+
+...
