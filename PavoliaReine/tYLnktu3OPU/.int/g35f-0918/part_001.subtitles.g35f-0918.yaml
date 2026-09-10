@@ -1,0 +1,67 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 302008
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '04:58.000'
+    original: 'Reine B''Day Classroom: Field Trip - Food & Games with Akai Haato'
+    english: 'Reine B''Day Classroom: Field Trip - Food & Games with Akai Haato'
+  thoughts: |+
+    **Subtitle Decision for a Vocal-Free Video Segment**
+
+    Okay, so I've got this video segment, roughly five minutes long, and the goal is subtitles. First, I check the `<scene_and_lyrics_reference_json>` and see there's only instrumental music. No vocals, from the lobby screen until the jungle transition. Right, so the initial assumption is no subtitles needed. But hold on, the instructions specify checking for *visual events*, even with no audio.
+
+    I identify the title screen, "Reine B'Day Classroom: Field Trip : Food & Games with Akai Haato," displayed for almost the entire duration. The rule says to subtitle prominent, relevant text on screen, regardless of audio. A five-minute subtitle block is a bit much, but it *is* a visual event. Is it necessary?
+
+    I consider the text itself, "Reine B'Day Classroom: Field Trip : Food & Games with Akai Haato". The question becomes should I:
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:00.000",
+          "e": "04:58.000",
+          "og": "Reine B'Day Classroom
+    Field Trip : Food & Games with Akai Haato",
+          "en": "Reine B'Day Classroom
+    Field Trip : Food & Games with Akai Haato"
+        }
+      ]
+    }
+    ```
+    Or not?
+
+    I go back to the instructions: "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music, long pauses, or sound effects." But it follows with: "If no vocals are heard in the audio track, output nothing (unless there is a prominent Visual Event)."
+
+    A waiting room screen is a gray area. Standard VTuber stream practice tends to skip these, but technically, the instructions require that if there's text visible, subtitling *is* required. Still, is this user friendly? A subtitle for five minutes of silence is usually awkward for people.
+
+    I double-check. There's only BGM and the static title from 00:00 to 04:58. The screen fades at 04:58. After the fade, the video continues with a 3D jungle, still instrumental. No vocals *at all*. I decide to err on the side of caution. Perhaps the title screen should be subtitled with, say, just a quick subtitle at the beginning, like from 00:00 to 00:10. But the rule says the *duration it is clearly visible*.
+
+    The text is visible from 00:00 to 04:58. Do I split it? No. Let's look at standard subtitle practices for a waiting screen: most of the time, they are not subtitled unless a rule demands it. But the text is the title "Reine B'Day Classroom: Field Trip : Food & Games with Akai Haato". It *is* visible.
+
+    So, according to the rule: "If prominent, relevant text (e.g., Chapter Titles, Location Signs, Letters) appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio."
+
+    I'll output:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:00.000",
+          "e": "04:58.000",
+          "og": "Reine B'Day Classroom: Field Trip : Food & Games with Akai Haato",
+          "en": "Reine B'Day Classroom: Field Trip : Food & Games with Akai Haato"
+        }
+      ]
+    }
+    ```
+
+    I make sure to check for any other on-screen text, but under "Reine B'Day Classroom", there is only "Field Trip : Food & Games with Akai Haato", and the copyright info which is not highly relevant.
+
+    No vocals, and the timecode format is correct: MM:SS.mmm.
+
+    Let's output the final result now.
+
+
+...

@@ -1,0 +1,70 @@
+name: part_002
+total_attempts: 1
+video_duration_ms: 301008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features Pavolia Reine hosting a birthday livestream segment
+    with VTuber guests Mori Calliope, Takanashi Kiara, and Vestia Zeta in a tropical
+    outdoor setting, followed by a food-tasting segment where Reine introduces various
+    traditional Indonesian dishes at Jalarasa The Breeze restaurant.
+  scenes:
+  - start: '00:00.000'
+    end: '02:27.000'
+    description: Pavolia Reine introduces her birthday livestream with guests Takanashi
+      Kiara, Mori Calliope, and Vestia Zeta in a tropical outdoor setting.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:27.000'
+    end: '05:00.000'
+    description: Pavolia Reine introduces and tastes various traditional Indonesian
+      dishes at Jalarasa The Breeze restaurant.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video: Pavolia Reine's Stream Segment**
+
+    Okay, let's break this down. The user wants an analysis of the video content, specifically regarding the presence of vocal music. First, I need to inspect the video thoroughly. It seems to be a stream featuring Pavolia Reine.
+
+    Alright, the video starts with an intro/greeting, a bit of a skit, with Kiara, Calliope, and Zeta. There's background music, a festival/tropical vibe. My initial thought is to identify this music. But, is it an actual *song* with vocals, or just background ambience? Let's check closely from 00:00 to 02:27. Listening carefully, it's clear the characters are talking, and there's definitely instrumental music. No sung vocals. Not even background vocals.
+
+    Now, let's move forward. From 02:27 onwards, it's Reine presenting Indonesian food at Jalarasa The Breeze. Again, the question: any vocal music anywhere in this? I need to check the entire video – from 00:00 to 05:00. Still instrumental tropical/lounge music, and Reine's voice, nothing sung. So I confirm: *no* vocal music in any part.
+
+    Now, I'm thinking about the data structure I need to provide. Given there's no vocal music, the `contains_vocal_music` field will be `false`, and the fields like `song_title`, `original_artist`, etc., will be `null` – as the instructions specify. Gotta double-check that though: no sung vocals, period. So, yes, `contains_vocal_music` is indeed false for the entire video.
+
+    I need to break this down into scenes to match the data structure.
+
+    Scene 1: 00:00.000 to 02:27.000 – Reine introducing her birthday stream with the guests, in a tropical setting.
+    Scene 2: 02:27.000 to 05:00.000 (the end) – Reine introducing and tasting Indonesian food.
+
+    I'm making sure to describe the BGM. While I *could* try to identify the BGM, it sounds like standard royalty-free background music used for streams. Crucially, even if the BGM had a title, there are no vocals associated with it, therefore no lyrics, artists, etc.
+
+    Now, structuring the JSON result as `final_result`. The global summary for the video should be a concise overview. I need to make sure the timestamps and descriptions are accurate. Let's make sure the scene descriptions are spot-on as well.
+
+    Here's the data structure, with the scene details:
+
+    **Scene 1:**
+    - start: "00:00.000"
+    - end: "02:27.000"
+    - description: "Pavolia Reine introduces her birthday livestream with guests Takanashi Kiara, Mori Calliope, and Vestia Zeta in a tropical outdoor setting."
+    - contains_vocal_music: false
+
+    **Scene 2:**
+    - start: "02:27.000"
+    - end: "05:00.000"
+    - description: "Pavolia Reine introduces and tastes various traditional Indonesian dishes at Jalarasa The Breeze restaurant."
+    - contains_vocal_music: false
+
+    Looks correct, everything is well documented and ready to be output.
+
+
+...
