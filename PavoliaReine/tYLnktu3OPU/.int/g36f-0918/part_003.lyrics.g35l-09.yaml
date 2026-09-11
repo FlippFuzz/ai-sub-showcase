@@ -1,0 +1,61 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: Pavolia Reine presents various traditional Indonesian dishes at
+    Jala Rasa, accompanied by light background instrumental music throughout the video.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: Pavolia Reine introduces and tastes various Indonesian specialty
+      dishes such as Kudu-Kudu Telor Asin, Iga Sapi Bakar Cabe Ijo, Nasi Goreng Ayam
+      Kampung, Nasi Liwet, Kangkung Hotplate, Coto Makassar, and Es Pisang Ijo, with
+      background instrumental music playing.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Pavolia Reine Video**
+
+    Okay, here's the breakdown. The task is to analyze this video of Pavolia Reine discussing Indonesian food, specifically to identify and find lyrics for any vocal songs present. First, I'm reviewing the content: it's Reine at a place like Jala Rasa, showcasing Indonesian dishes. Crucially, I need to determine if there are *any* vocal songs playing.
+
+    I'm listening carefully and checking the video's audio. From the description, between 00:00 and 05:00, she's speaking, and there's background music. I'm focusing on whether this BGM has any vocals. I double-checked. Nope. It's just background instrumental music. No sung vocals. Since the instruction is to "detect *ALL* vocal songs," I need to make sure I'm following that precisely. If there are no vocal songs, I have to ensure `contains_vocal_music` is `false`, and the song metadata fields are all set to `null`.
+
+    So, the next step is to accurately structure the output. I need to break down the video into scenes. I'm taking a quick scan. It looks like it is a continuous segment of Reine presenting food with BGM. I've mapped the timestamps: 00:00 to 04:59.000. It's essentially one continuous scene, unless requested, in which I would break it down by the food type she is presenting. The key is that `contains_vocal_music` is `false` for everything.
+
+    I'm structuring the output according to the `final_result` schema:
+    *   `global_summary`: I'll summarize the video content and the musical segments.
+    *   `scenes`: A chronological list of scenes.
+
+    I've defined the single scene, spanning the entire video. The end time is 04:59.000, and I'll describe the dishes she showcases. Since there are no vocal songs, `contains_vocal_music` is `false`, and all song-related fields will be `null`. No lyrics search is required.
+
+    I am double-checking the constraints: no manual transcription or translation, search failure fallback, and no lyric truncation or placeholders. No songs, so I don't need to search anything!
+    ```json
+    {
+      "global_summary": "Pavolia Reine presents various traditional Indonesian dishes at Jala Rasa, accompanied by light background instrumental music throughout the video.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "04:59.000",
+          "description": "Pavolia Reine introduces and tastes various Indonesian specialty dishes such as Kudu-Kudu Telor Asin, Iga Sapi Bakar Cabe Ijo, Nasi Goreng Ayam Kampung, Nasi Liwet, Kangkung Hotplate, Coto Makassar, and Es Pisang Ijo, with background instrumental music playing.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Now, I'll call `final_result` with this data.
+
+
+...
