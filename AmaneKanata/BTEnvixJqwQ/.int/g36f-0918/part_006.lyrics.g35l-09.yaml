@@ -1,0 +1,80 @@
+name: part_006
+total_attempts: 1
+video_duration_ms: 300048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a Hololive variety show segment ('Hololive Kakuzuke
+    SP') featuring VTubers Amane Kanata, Usada Pekora, Tokino Sora, AZKi, and Yukihana
+    Lamy in a microphone quality comparison challenge. Throughout the clip, various
+    comedic interactions, room visits, audio listening tests, and result reveals take
+    place. There are no vocal music performances or songs sung in this video segment.
+  scenes:
+  - start: '00:00.000'
+    end: '00:29.000'
+    description: Amane Kanata opens the door to Room 1, discovers it is empty, panics,
+      and rushes out amidst comedic variety show sound effects.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:29.000'
+    end: '02:07.000'
+    description: Usada Pekora introduces the microphone comparison challenge featuring
+      Yukihana Lamy's voice samples, listening closely to differentiate between Room
+      1 and Room 2.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:07.000'
+    end: '03:43.000'
+    description: Pekora visits Room 2 where Sora and AZKi are waiting and reveals
+      the results, showing that Room 2 was the high-end microphone, while Kanata reacts
+      in despair in Room 1 after guessing incorrectly.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:43.000'
+    end: '04:59.000'
+    description: 'Kanata promotes her channel membership wallpapers, the overall standings
+      are updated with Kanata dropping in rank, and Pekora introduces the next genre:
+      carrot juice.'
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video: Hololive Kakuzuke SP**
+
+    Okay, so the user wants me to analyze this video, map the scenes, detect any vocal music, and pull lyrics if there are any. Let's get to it. First, I need to thoroughly inspect the video. The content is "Hololive Kakuzuke SP," and the VTubers featured are Amane Kanata, Usada Pekora, Tokino Sora, AZKi, and Yukihana Lamy.
+
+    Right off the bat, I need to listen for vocal music segments, any songs being performed, or known songs playing in the background that I could identify. I'm focusing on "vocal music" here – actively sung vocals. Variety shows like this often have BGM – instrumental tracks, game OSTs, classical music, or sometimes original VTuber songs. I need to distinguish.
+
+    I've listened carefully to the entire first segment (00:00 - 04:59). I hear dialogue, voice acting, and some sound effects and jingles typical of a variety show. There are no sung vocals. I pay special attention to the BGM at 04:46, which is a gentle instrumental melody, possibly a music box. It's not a vocal song. I keep reviewing the instructions for the "contains_vocal_music" parameter: it should be true only if there is "active music with sung vocals."
+
+    Given the absence of any sung vocals, I'm confident that `contains_vocal_music` will be `false` for *all* scenes. I am also checking to see if there are any instrumental versions of vocal songs, since I need to return false for those as well. I've re-watched the segment to confirm; no vocals. Since there is no vocal music, I do not need to call the search tool. There is no need for any lyrics look up.
+
+    Now, let's break down the video into logical scenes. I've timestamped them and written comprehensive descriptions:
+
+    *   **Scene 1:** 00:00.000 - 00:29.000 - Amane Kanata visits Room 1 (waiting room), realizes no one is there, and panics. `contains_vocal_music: false`.
+    *   **Scene 2:** 00:29.000 - 02:07.000 - Usada Pekora explains the challenge (high-end mic vs. normal mic test featuring Yukihana Lamy's voice) and listens to the audio samples. `contains_vocal_music: false`.
+    *   **Scene 3:** 02:07.000 - 03:43.000 - Pekora reveals her choice, visits the rooms, reveals the results where Kanata got it wrong and Lamy's mic was Room 2. Kanata reacts in despair. `contains_vocal_music: false`.
+    *   **Scene 4:** 03:43.000 - 04:59.000 - Post-reveal segment where Kanata promotes her membership, then the standings are updated, and the next genre (carrot juice) is introduced. `contains_vocal_music: false`.
+
+    Since there are no songs, all song metadata fields will remain null for all scenes (title, artist, performer, language, lyrics). I've reviewed the scene details and ensured everything matches the required JSON schema, no overlapping scenes and everything correctly filled for the non-musical scenes. With this analysis complete and the structure ready, I'll now construct the final response.
+
+
+...
