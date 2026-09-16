@@ -1,0 +1,74 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 300006
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber streamer playing a cooperative bomb
+    defusal game with monkey characters across multiple levels, accompanied by game
+    sound effects and instrumental background music without any vocal songs.
+  scenes:
+  - start: '00:00.000'
+    end: '00:31.000'
+    description: The streamer plays Level 2 of the bomb defusal game, successfully
+      solving the color slider module and reviewing the report screen.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:31.000'
+    end: '02:47.000'
+    description: The streamer progresses to Level 3, tackling multiple modules under
+      time pressure and achieving an A+ report.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:47.000'
+    end: '05:00.283'
+    description: The streamer plays Level 4, encountering multiple mistakes and restarts
+      while attempting to defuse complex modules before time runs out.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Clip: Vocal Music Detection**
+
+    Okay, so I've got this video clip – it's gameplay of a "Keep Talking and Nobody Explodes" type game, but with a VTuber (looks like Ninomae Ina'nis, or someone similar) on the side, speaking Japanese, and background music. My task: determine if there's any vocal music present.
+
+    First, I need to listen carefully. Let's start by checking the audio track. From the beginning (00:00) to around 04:00, there *is* background music playing. It sounds like game BGM. My initial thought is to check if it's a copyrighted vocal song.
+
+    But wait, hold on. I need to make sure. Is it *instrumental* BGM, or are there vocals in there somewhere? Let's figure out which game this even *is*. Hmm, it's a bomb defusal game with monkey characters – "Keep Talking and Nobody Explodes for Monkeys" or something similar, perhaps a mod or fan game.
+
+    Okay, let's keep listening. Are there *any* songs with lyrics? Throughout the video, the VTuber is talking, and there's background music – sounds like chiptune or upbeat game music. So, is there *sung* music in the background? No, it's just instrumental.
+
+    Just to be absolutely sure, I'm going to double-check. I'll review the whole thing from 00:00 to 05:00 (which is the end of the video). There's BGM playing, and the VTuber (Ninomae Ina'nis, or someone similar, purple hair, octopus ears) is playing a co-op bomb defusal game with monkeys (the "Keep Talking and Nobody Explodes" style or a mod or game).
+
+    Nope. No songs with sung vocals. It's purely game sound effects, instrumental background music, and the streamer's spoken Japanese commentary.
+
+    Therefore, because there's no vocal music, the `contains_vocal_music` field will be `false` for the entire video (or for any scenes we might break it into). Now, let's look at scene boundaries, maybe represent the video as one or multiple scenes based on gameplay levels.
+
+    Okay, here are the scenes I see:
+
+    *   00:00.000 - 00:20.000: Gameplay – Level 2 color slider module.
+    *   00:20.000 - 00:32.000: Report screen (Level 2 A+).
+    *   00:32.000 - 03:26.000: Level 3 gameplay and report.
+    *   03:26.000 - 05:00.000: Level 4 gameplay and report.
+
+    Still, let's check: does any vocal music appear? No. So `contains_vocal_music` is definitively `false`, and all the song-related fields (`song_title`, `original_artist`, etc.) will be `null`.
+
+    So, quick structural check. We'll have a `global_summary` that gives a high-level overview of the video (VTuber playing a bomb defusal game with monkey characters across multiple levels). And a `scenes` list with chronological scenes with start/end times, a description, `contains_vocal_music: false`, and `null` values for all the song fields.
+
+    Finally, just to be precise, let's make sure the start and end timestamps are correct. Start is 00:00.000, and the end is around 05:00.000 (just need to check the exact end of the video). That should be it. Now, I can use the final result to prepare the tool output call.
+
+
+...
