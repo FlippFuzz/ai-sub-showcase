@@ -1,0 +1,31 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300208
+subtitles_prompt_version: 18
+responses:
+- subtitles: []
+  thoughts: |+
+    **My Subtitle Assessment for This Video Clip**
+
+    Okay, so I need to create subtitles for this 5-minute video clip. First things first, let's take a look at the video. It's a static waiting screen with background music, specifically the "Reine B'Day Classroom Field Trip" instrumental track. No dialogue, no vocals.
+
+    I need to make sure I adhere to the Golden Rules. The crucial one here is ZERO GHOST SUBTITLES: if there's no vocal audio, *absolutely nothing* should be outputted, unless a prominent visual event warrants it. I have to base my subtitles solely on the vocal audio.
+
+    Let me refresh my memory of the rules; "The vocal audio waveform is your absolute ground truth for spoken dialogue. The exact millisecond a vocal cord activates dictates the 's' (start) timecode. NEVER output dialogue text if there is no vocal audio driving it."
+
+    There is a visual event exception, so I'll consider that. The waiting screen static card / stream opening banner are usually not subtitled unless there's a specific title card that appears, in which case I will subtitle it.
+
+    Let's quickly check Example 5: `"og": "第1章", "en": "[Title: Chapter 1]"` but it's not applicable here.
+
+    For this case, however, with this pre-stream static screen, and no vocals, should I output anything or an empty list `[]`?
+
+    Wait a second... in Hololive streams (and similar content), pre-stream waiting screens *without* any dialogue at all mean... no subtitles! It's just background music until the stream starts.
+
+    Just to be absolutely certain, let's confirm: is there any speech *at all* in this audio track? Let's check from 00:00 to 05:00: pure loop BGM only. No voice whatsoever.
+
+    Alright, so the list should be empty: `{"subs": []}`.
+
+    Let's re-examine everything to be one hundred percent sure: `final_result` tool call with parameter `subs`: `[]`. Yep, all clear. Everything is perfectly consistent with the Golden Rules. No vocals = no subtitles!
+
+
+...
