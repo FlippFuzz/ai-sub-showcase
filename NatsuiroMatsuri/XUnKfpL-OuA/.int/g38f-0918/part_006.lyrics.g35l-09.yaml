@@ -1,0 +1,55 @@
+name: part_006
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a group of VTubers participating in a game show
+    or quiz segment, discussing various Japanese expressions and word choices (such
+    as 'kinkin' for cold drinks and 'kirakira' for sparkling things) with banter in
+    both Japanese and English. No vocal music or songs are performed in this segment.
+  scenes:
+  - start: '00:00.000'
+    end: '01:03.000'
+    description: The VTubers discuss the first quiz topic regarding very cold drinks,
+      writing 'KIN-KIN' and chatting cheerfully.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:03.000'
+    end: '05:00.000'
+    description: The participants move on to the next quiz topic about expressing
+      'kirakira' (sparkling/glittering) more intensely, drawing and discussing hints
+      related to Hololive member songs and other clues.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the VTuber Stream Clip**
+
+    Okay, so the user wants me to really dig into this VTuber video and pull out some key information. My task is to map out the scenes, see if there's any vocal music, and potentially search for lyrics if I find something. First things first, let's get a handle on the content. This looks like a VTuber stream clip, maybe a collaboration. It seems they're chatting and doing a quiz or game, which is common. My initial focus is *music*. I need to determine if there are any songs or sung portions. I'll need to listen very carefully to the audio, from the beginning all the way to the end.
+
+    Hmm, at 0:25, there's some cheering or chanting, a "kanpai", but that sounds more like banter than a song. Let me focus on if they are singing any songs. Around 3:28, they mention something about "Hololive member's song's lyrics" ("Nenecchi no song"), which perks my ears up. It does seem that they are talking about lyrics, but are they *performing* anything in this segment? Let's check for any actual songs, with a vocal track playing. I need to do a full review of the whole video, audio and frames.
+
+    Now, let's break down the timeline. From 0:00 to 5:00, it's pretty straightforward, a lot of talking, back-and-forth banter, a game show-style format. There's some writing on whiteboards – "KIN-KIN", "atata", "Pika Pika" and various comments, all in Japanese and English. No actual songs detected, nothing with vocals, just the conversation itself. I'm going to scan the video again, just to make absolutely certain, to make sure there are no songs. Definitely a conversational piece, not a musical performance.
+
+    Since there's no music, I'm confident in setting `contains_vocal_music` to `false`. That means all the song metadata fields – `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` – will be `null`.
+
+    Time to define the scenes. It's essentially one continuous game show segment, where they discuss different quiz questions, like "きんきん" (kinkin) and "きらきら" (kirakira). I can break it down into scenes based on the quiz titles that appear on screen. The titles are:
+
+    *   0:00 - 1:03: 「とっても冷たい飲み物」 (Very cold drink / kinkin)
+    *   1:03 - 5:00: 「きらきらをもっと強い表現」 (Stronger expression for glittering/sparkling)
+
+    Neither of those scenes contain any vocal music.
+
+    Alright, with all that in mind, I need to output this as a JSON with a `global_summary` and `scenes` object. Because there are no songs, the important point is the `contains_vocal_music` flag will be false, and all the song fields will be null. Now I need to triple check that I have met all the specific requirements: the chronological scene mapping across the video, that `contains_vocal_music` is right, and that those song fields are set to null when appropriate. Okay, I believe I have it all correct. Let's create the final output.
+
+
+...
