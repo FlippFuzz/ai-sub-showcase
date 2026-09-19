@@ -1,0 +1,102 @@
+name: part_005
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: 'The video features a 3D birthday live performance by hololive English''s
+    Takanashi Kiara, alongside guest performers Ouro Kronii, La+ Darknesss, and ReGLOSS.
+    Three distinct songs are performed: ''CH4NGE'', ''FAKE HEART'', and ''フィーリングラデーション''
+    (Feeling Graduation), complete with choreographed dance routines and stage effects.'
+  scenes:
+  - start: '00:00.000'
+    end: '00:42.000'
+    description: Takanashi Kiara and Ouro Kronii perform a choreographed dance to
+      the song CH4NGE on a decorated stage with balloons and gift boxes.
+    contains_vocal_music: true
+    song_title: CH4NGE
+    original_artist: Giga
+    performer_in_video: Takanashi Kiara & Ouro Kronii
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:42.000'
+    end: '04:04.000'
+    description: Takanashi Kiara and La+ Darknesss perform 'FAKE HEART' on a brightly
+      lit concert stage surrounded by balloons and stage lighting.
+    contains_vocal_music: true
+    song_title: FAKE HEART
+    original_artist: KIRA
+    performer_in_video: Takanashi Kiara & La+ Darknesss
+    original_language: English / Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:04.000'
+    end: '04:59.000'
+    description: Takanashi Kiara and members of ReGLOSS perform 'フィーリングラデーション' (Feeling
+      Graduation) on stage with glowing audience lightsticks visible in the arena.
+    contains_vocal_music: true
+    song_title: フィーリングラデーション
+    original_artist: OHTORA / maeshima soshi
+    performer_in_video: Takanashi Kiara & ReGLOSS
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the 3D VTuber Birthday Performance Video**
+
+    Okay, so I need to break down this 3D birthday live performance video featuring Takanashi Kiara and some other VTubers, like Kronii and La+ Darknesss. My immediate goal is to understand the musical pieces within the performance.
+
+    First, I'll segment the video chronologically. Right now, I'm focusing on the initial segments. Let's start with the first part, from 00:00 to 00:42. The initial stage performance shows Kiara and Kronii dancing. I need to identify the music.
+
+    Alright, let's see, the top-left on-screen text says "CH4NGE." Okay, great! I'll verify this quickly via a search to be sure. But, I don't want to get stuck on that one song only, so I'll also try to detect subsequent songs.
+
+    Okay, around the 00:48/00:54 mark, there's a title card that says "FAKE HEART." And I see the credits on screen: Lyrics by Kanata Okajima, monii, and KIRA. Music by KIRA, monii, and Johnny R. Moving on, around 04:07 there's "フィーリングラデーション" ("Feeling Graduation") with lyrics by OHTORA and music/arrangement by maeshima soshi.
+
+    So, now that I have the song titles and credits, I need to get the lyrics for each. I'll search for the official lyrics - both the original Japanese and an English translation, if available. For the search, I need to keep in mind, *no quotation marks*.
+
+    I'll be smart about this and design my search queries to ensure the best results. For each song, I will search for the original song artist or composer, based on the credits.
+
+    Specifically:
+
+    1.  "CH4NGE": I need to find the original artist - typically Giga. So, my queries will be `CH4NGE Giga 歌詞` and `CH4NGE Giga lyrics english`.
+    2.  "FAKE HEART": I see the credits say KIRA and monii. The queries will be `FAKE HEART KIRA monii 歌詞` and `FAKE HEART KIRA monii lyrics english`.
+    3.  "フィーリングラデーション" ("Feeling Graduation"): Based on the credits, it's OHTORA and maeshima soshi. My queries will be `フィーリングラデーション OHTORA maeshima soshi 歌詞` and `Feeling Graduation OHTORA maeshima soshi lyrics english`.
+
+    I'll execute all these searches in parallel with `web_search_langsearch_multi` to get the lyrics.
+
+
+
+    **Analyzing the Lyric Search Results**
+
+    Okay, let's dive into these search results and see what we've got. First, we have "CH4NGE" by Giga, performed by Takanashi Kiara and Ouro Kronii. The initial search gave us details and reviews, but not the full lyrics. I'm going to try a targeted search for "CH4NGE Giga 歌詞" – Japanese lyrics. If that doesn't pan out, a fallback might be needed.
+
+    Then, there's "FAKE HEART" by KIRA. The initial search was a miss; it's returning a completely different song with a few English lines. I see the note I have here; it's KIRA *feat.* Kagamine Rin/Len, so let's try a Turn 2 search immediately for "FAKE HEART 歌詞" (Japanese lyrics). This needs a fresh search.
+
+    Finally, we have "フィーリングラデーション" by OHTORA / maeshima soshi, performed by ReGLOSS and Takanashi Kiara, among others. I'll search with `フィーリングラデーション 歌詞` and `フィーリングラデーション OHTORA maeshima soshi lyrics`
+
+    So, to get what's missing, I'm going to run these Turn 2 searches in parallel:
+
+    *   `CH4NGE Giga 歌詞` (Optimizing the query or site if possible, utaten might be good)
+    *   `FAKE HEART KIRA 歌詞`
+    *   `フィーリングラデーション 歌詞 OHTORA`
+
+    That's the best way to move forward here and gather the relevant information. Parallel execution is key here to save time and I know how to interpret and filter these results.
+
+
+
+    **My Analysis of the Video and Lyric Retrieval**
+
+    Alright, let's break this down meticulously. The primary constraint here is the strict requirement regarding lyrics: if the complete, untruncated lyrics aren't directly retrievable via the search tool, I *must* set `reference_lyrics_og` and `reference_lyrics_en` to `null`. There's no room for guesswork, manual transcription, or approximation. This means I'm relying solely on the search tool's output to determine lyric availability.
+
+    Now, focusing on the video content, I've got three distinct scenes that I need to analyze for this task:
+
+    *   **Scene 1 (00:00.000 - 00:42.000):** Takanashi Kiara and Ouro Kronii are on stage, dancing, and the song is identified as "CH4NGE" by Giga. The performing artists are Kiara and Kronii. The language is Japanese. The tool didn't return complete lyrics for "CH4NGE," so I must set the lyrics fields to null.
+
+    *   **Scene 2 (00:42.000 - 04:04.000):** Kiara and La+ Darknesss are performing "FAKE HEART," with a title card at 00:54. The original artist is KIRA. The language is bilingual (English/Japanese). Again, because the search didn't provide the *full* lyrics, I must set `reference_lyrics_og` and `reference_lyrics_en` to null.
+
+    *   **Scene 3 (04:04.000 - 04:59.000):** The video transitions to the audience and stage, showcasing the "フィーリングラデーション" (Feeling Graduation) title card at 04:07, and Kiara is performing with ReGLOSS members. The original artists are OHTORA / maeshima soshi. The language is Japanese. The tool didn't return the full text here, so I need to set the lyrics fields to null.
+
+    I've carefully double-checked the timestamps (00:00.000 to the end of 04:59.000) to ensure continuous coverage and no overlap between scenes. All of this aligns perfectly with the specified output format, and I'm ready to craft the JSON response, paying extra close attention to those null values for lyrics. I'm satisfied that everything is accurate and compliant with the given instructions and constraints.
+
+
+...
