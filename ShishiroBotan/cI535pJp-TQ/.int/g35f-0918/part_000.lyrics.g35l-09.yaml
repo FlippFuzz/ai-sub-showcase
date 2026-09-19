@@ -1,0 +1,92 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a teaser/promotional clip for Shishiro Botan's Birthday
+    Festival 2026 (#獅白ぼたん生誕祭2026) titled 'Stray & Stay'. It starts with an introductory
+    montage displaying the event title, cyberpunk cityscapes, character introductions,
+    and guest line-ups with electronic background music. At 03:22, Shishiro Botan
+    takes the stage and performs a virtual concert cover of the popular song 'Renai
+    Circulation' (恋愛サーキュレーション).
+  scenes:
+  - start: '00:00.000'
+    end: '03:22.000'
+    description: Introductory video montage for Shishiro Botan's Birthday Festival
+      2026 ('Stray & Stay'), showcasing title cards, cyberpunk cityscapes, holographic
+      UI elements, and guest character lineups accompanied by electronic BGM.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:22.000'
+    end: '04:59.000'
+    description: Shishiro Botan performs a live virtual concert on stage, singing
+      'Renai Circulation' with backup dancers under pink stage lighting.
+    contains_vocal_music: true
+    song_title: 恋愛サーキュレーション
+    original_artist: meg rock
+    performer_in_video: 獅白ぼたん
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video's Music Content**
+
+    Okay, let's break this video down. First, I need to methodically analyze it, looking for vocal songs and identifying them. I'll need to use `web_search_langsearch_multi` to find the lyrics, but I have to be smart about formulating the search queries.
+
+    The video starts with an intro and title card, "Stray & Stay - Shishiro Botan Birthday Festival 2026." From 00:00 to 02:18, it seems like just BGM – instrumental or electronic music, nothing sung. Similarly, the transition from 02:18 to 03:22, showing cityscapes and guest characters, also has no vocals, just instrumental music.
+
+    Ah, here we go! From 03:22 to 04:59, Shishiro Botan is actually singing on stage. Time to ID this song. At 03:34, on-screen text gives it away: 「恋愛サーキュレーション」! Apparently, it's "Renai Circulation," originally sung by Kana Hanazawa. The credits on-screen show: 作詞: meg rock and 作曲: 神前 暁 (MONACA), so it's a cover of a song composed by Satoru Kosaki with lyrics by meg rock.
+
+    Now, the trick is the search query. I need to make sure I'm using the right names. The rule is clear: use the original artist/composer. Don't include the VTuber's name. So, I need to check who the credited songwriters are on screen. Yep, it's 作詞: meg rock and 作曲: 神前 暁 (MONACA). Okay, song title is 恋愛サーキュレーション.
+
+    Alright, time to formulate the search queries to grab the lyrics. Following the rules, my initial searches will be:
+    - Initial - Targeted Original: 恋愛サーキュレーション meg rock 神前暁 歌詞
+    - Initial - Targeted English Translation: Renai Circulation meg rock Satoru Kosaki lyrics English
+
+    Finally, from 03:22 until the end of the video at 04:59, it's all "Renai Circulation." Nothing else to analyze. Let's execute that search using `web_search_langsearch_multi`. Time to find those lyrics.
+
+
+
+    Okay, here's my take on those thoughts, tailored for an expert audience:
+
+    **Focused Lyric Retrieval**
+
+    Right, let's get down to brass tacks. I need the full lyrics for "Renai Circulation." I'm not interested in snippets or translations right now; I require the raw data. Therefore, the most efficient approach is a very targeted search. So, I'm going to initiate a search using the Japanese phrase "恋愛サーキュレーション 歌詞." That should zero in on exactly what I'm looking for - the complete lyrics of "Renai Circulation" in their original Japanese text. Time to get this data.
+
+
+
+    Okay, here's my attempt at summarizing those thoughts as a first-person narrative, keeping in mind the expert user:
+
+    **Hunting Down the Exact Lyrics**
+
+    Right, so I need to nail down the precise lyrics for "Renai Circulation." No room for ambiguity here – I need the *exact* words. Let's see... a quick search should do the trick. I'll start with something like "`Renai Circulation lyrics utanet`" or "`Renai Circulation lyrics + the Japanese characters for lyrics`" to get the most reliable results. Hopefully, this gets me to a reputable lyrics site, like Uta-Net or J-Lyric.net, or perhaps even an official source if I'm lucky. I'll need to double-check the kana and kanji, just to be absolutely sure. Gotta be meticulous about the details!
+
+
+
+    **Finding the Exact Lyrics**
+
+    Okay, so I need the full lyrics for "Renai Circulation." No problem, I'll start by searching for "恋愛サーキュレーション 歌詞" – that's the title and "lyrics" in Japanese. Let's see what comes up first. I'll check the usual suspects – J-Lyric, Mojim, and any other reputable lyric sites I know. A quick query should pinpoint the complete Japanese lyrics. Easy enough.
+
+
+
+    **My Analysis of the Video and Lyric Extraction**
+
+    Okay, I see the core rule: if I can't get the *complete* lyrics or translation via search, I *must* set the respective fields to null. No guesswork, no approximations.
+
+    Looking at the Renai Circulation example, the search didn't give me the full lyrics from sites like Uta-Net, which means the instructions are clear: `reference_lyrics_og` and `reference_lyrics_en` have to be `null`. That's the safest and most compliant approach. No need to overthink it; the prompt's rules are very specific.
+
+    Now, let's go through the video scene by scene to make sure I'm doing things correctly:
+
+    1.  **00:00.000 to 03:22.000**: Intro sequence. No vocals, just music and announcements. So, `contains_vocal_music` is `false`, and all song-related fields are `null`. Simple enough.
+
+    2.  **03:22.000 to 04:59.000**: Shishiro Botan performs "Renai Circulation." I can identify the song, original artist ("meg rock" as lyricist or "神前暁" as composer, or combined; I'll list "meg rock" as the original artist since that's more common), the performer in the video (Shishiro Botan), and the original language (Japanese). But, because the search didn't give me the *full* lyrics, `reference_lyrics_og` and `reference_lyrics_en` are definitely going to be `null`.
+
+    Finally, I'm checking the final output, and everything lines up with the schema. I'm ready to call the `final_result` tool.
+
+
+...
