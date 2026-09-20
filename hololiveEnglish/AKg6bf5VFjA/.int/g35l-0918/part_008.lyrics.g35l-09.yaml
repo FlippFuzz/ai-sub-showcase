@@ -1,0 +1,85 @@
+name: part_008
+total_attempts: 1
+video_duration_ms: 304988
+lyrics_prompt_version: 9
+response:
+  global_summary: 'The video features two musical performances by Hololive virtual
+    YouTubers in a crystal stage setting: Mori Calliope performing ''SAKURA Days''
+    from 00:00 to 02:04, followed by Takanashi Kiara performing ''本気ボンバー！！'' from
+    02:04 to the end of the video.'
+  scenes:
+  - start: '00:00.000'
+    end: '02:04.000'
+    description: Mori Calliope performs 'SAKURA Days' wearing a kimono on a stage
+      surrounded by pink crystals and cherry blossom trees.
+    contains_vocal_music: true
+    song_title: SAKURA Days
+    original_artist: null
+    performer_in_video: Mori Calliope
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:04.000'
+    end: '05:04.300'
+    description: Takanashi Kiara performs '本気ボンバー！！' in an idol outfit on a stage
+      with glowing green and blue crystals.
+    contains_vocal_music: true
+    song_title: 本気ボンバー！！
+    original_artist: null
+    performer_in_video: Takanashi Kiara
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Finding Song Information**
+
+    Okay, so the user wants me to break down this video into its parts, identify the songs, and then dig up the official lyrics and translations. Sounds like a fun challenge. Let's see... first, I need to methodically watch the video.
+
+    Alright, the first segment, from 00:00 to 02:04. The title seems to be "SAKURA Days (feat. AO)", or something very similar. The performer in the video appears to be Calliope Mori, dressed in a kimono. Now, I need to clarify who the original artist or the credits point to for "SAKURA Days". Let's start with a search for "SAKURA Days Mori Calliope" and see what comes up. Or maybe just "SAKURA Days" to start, and refine later.
+
+    Next segment, from 02:07 to the end. The title here is `本気ボンバー！！` (Honki Bomber!!). The lyrics and music are credited to つんく (Tsunku), and the performer is Takanashi Kiara, in a swimsuit/idol outfit. So, つんく is definitely the one to look for.
+
+    Now for the search part. I'll need to find the official lyrics and translations for both songs.
+
+    For "SAKURA Days", the working title is the same. I'll use searches like `SAKURA Days Mori Calliope 歌詞` or even just `SAKURA Days 歌詞` to find the Japanese lyrics. I'll need to figure out the composer, so `SAKURA Days` in its most basic form will do.
+
+    For `本気ボンバー！！` (Honki Bomber!!), since つんく (Tsunku) is credited, I'll search with that. It's a bit tricky to recall the original artist - I believe it was Berryz Kobo, but the on-screen information says it was Tsunku who wrote and composed it.
+
+    So, I think the best approach is to use the `web_search_langsearch_multi` tool. I can launch those searches in parallel, which is the most efficient way to proceed. This should get me the answers to quickly gather the information the user is seeking.
+
+
+
+    **My Search Strategy for Song Titles**
+
+    Okay, so I need to track down some specific songs. My initial approach is going to be targeted. Let's start by getting the precise titles. First, I'm after "SAKURA Days". Hmm, it looks like it features AO. I'll need to figure out who that is. I'll begin with searches like "SAKURA Days feat AO" or "SAKURA Days Mori Calliope AO" – that should identify the performer properly. I'll also try "SAKURA Days 歌詞" to see if I can find the lyrics.
+
+    Next, I need "本気ボンバー！！". The credits suggest it's by Tsunku, possibly with Berryz Kobo (or even Takanashi Kiara!). My primary search for this one will be "本気ボンバー 歌詞", and I'll also try the romanized version "Honki Bomber 歌詞" to cover all my bases. I'm aiming for the lyrics, which should lead me to the right track.
+
+
+
+    **Analyzing the Japanese Song Title**
+
+    Okay, let's break this down. That second song title at 2:10, "本気ボンバー!!" (Honki Bomber!!), and the credit to Tsunku for lyrics and music... right. I need to get my hands on those lyrics. My initial instinct is to go straight for a search. I'm going to try `本気ボンバー 歌詞 つんく` or even a direct English translation search like `Honki Bomber lyrics`. Hmm, it looks like my previous search was too broad; the lyrics aren't popping up as easily as I'd like. I'll need to refine that query. Alright, let's try a more targeted search. I'm going to add "歌ネット" (uta-net) or "j-lyric" to the search term, something like `本気ボンバー 歌詞 歌ネット` or simply `Honki Bomber 歌詞`, to see if I can get a direct hit for the lyrics that way. That should narrow it down and give me what I need.
+
+
+
+    **Analyzing the Search Results for Lyrics**
+
+    Okay, so I've got the search results for "SAKURA 歌詞" here, and I see some lyrics about "Sakura Petals" falling. Ah, wait, this is looking like an English translation, maybe for "SAKURA Days". But hold on, the instructions explicitly state I'm *not* to translate anything or manually transcribe the audio. I'm solely relying on the search tool for the lyrics. If I can't find them precisely using the tool, I must nullify the lyrics field. So, let me just confirm that these are the *exact* lyrics for either "SAKURA Days" or "本気ボンバー！！" ("Honki Bomber!!"). Just to be absolutely sure, let's run another targeted search batch to nail down those Japanese lyrics for either of those songs.
+
+
+
+    **Analyzing the Hololive Video Data**
+
+    Alright, let's break this down systematically. The search tool didn't cough up the complete official lyrics for either 'SAKURA Days' or '本気ボンバー！！'. And the instructions are crystal clear: *no guessing, no approximating*. If the lyrics aren't retrievable, the `reference_lyrics_og` and `reference_lyrics_en` fields *must* be set to `null` for *both* songs. That's a hard constraint, no exceptions. I'll make absolutely sure to handle that correctly.
+
+    Now, let's meticulously construct the JSON response according to the provided schema. The `global_summary` will be a concise overview, highlighting the two performances and the stage setting, like so.
+
+    For `scenes`, I'll structure each segment precisely. Scene 1 covers Mori Calliope's 'SAKURA Days' performance, detailing the start and end times, the visual description (kimono, pink crystals, cherry blossoms), and confirming it *does* contain vocal music. I'll flag 'SAKURA Days' by "Mori Calliope" for `original_artist` and the same for `performer_in_video` since she's the one performing it in the video, and "Japanese" for the `original_language`. Crucially, because the lyrics are missing, `reference_lyrics_og` and `reference_lyrics_en` will be `null`.
+
+    Moving on to Scene 2, covering Takanashi Kiara's '本気ボンバー！！' performance. Again, I'll record the start and end times, the description (idol swimsuit, glowing crystals). I'll mark the presence of vocal music, and the song and the performer. This song is by "つんく" (Tsunku), so that is the `original_artist`, but Kiara is performing it, so that becomes `performer_in_video`. The `original_language` is also Japanese here. And, once again, the missing lyrics mean `reference_lyrics_og` and `reference_lyrics_en` get the `null` treatment.
+
+    I'll triple-check to ensure I've covered all the bases: no manual transcription, fields appropriately set to null where lyrics are unavailable, accurate timestamps, and non-overlapping scenes that cover the entire video. Time to produce `final_result`.
+
+
+...
