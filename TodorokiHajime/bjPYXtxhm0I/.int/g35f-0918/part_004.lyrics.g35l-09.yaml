@@ -1,0 +1,98 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 299448
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a virtual live concert performance by Otonose
+    Kanade, starting with her performance of 'Marunouchi Sadistic', transitioning
+    into 'Tsuppari High School Rock'n Roll (Toko-hen)' with fellow virtual performers,
+    and ending with 'Bareru!'.
+  scenes:
+  - start: '00:00.000'
+    end: '02:21.000'
+    description: Otonose Kanade performs 'Marunouchi Sadistic' on stage under purple
+      and white lighting.
+    contains_vocal_music: true
+    song_title: 丸ノ内サディスティック
+    original_artist: 椎名林檎
+    performer_in_video: 音乃瀬奏
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:21.000'
+    end: '04:53.000'
+    description: Otonose Kanade and other virtual performers on stage singing and
+      dancing to 'Tsuppari High School Rock'n Roll (Toko-hen)'.
+    contains_vocal_music: true
+    song_title: ツッパリHigh School Rock'n Roll (登校編)
+    original_artist: 横浜銀蝿
+    performer_in_video: 音乃瀬奏 and others
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:53.000'
+    end: '04:59.000'
+    description: Otonose Kanade and another performer dancing and singing to 'Bareru!'.
+    contains_vocal_music: true
+    song_title: バレる！
+    original_artist: Creepy Nuts
+    performer_in_video: 音乃瀬奏 and others
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Content & Associated Metadata**
+
+    Okay, so I've got this video clip, and the first thing I need to do is break down its components. I see a virtual singer, possibly Otonose Kanade, with a hashtag `#おるはしの生誕祭2025` or similar. Let's make sure that that is correct, let's look at the title on the top left of the video. Ah, it says "丸ノ内サディスティック" - Marunouchi Sadistic. I need to figure out who the original artist is, and it's Ringo Sheena (椎名林檎).
+
+    Now, moving on, between 02:21 and 04:37, the title card shows "ツッパリHigh School Rock'n Roll (登校編)" (Tsuppari High School Rock'n Roll (Toko-hen)). The composer and lyricist are listed as Tamiya Yoshiyuki (タミヤヨシユキ), and there are multiple virtual talents.
+
+    Finally, from 04:53 to the end, there's another song starting, "バレる！" (Bareru! / Bareru!), and it looks like Creepy Nuts? Let's confirm that. At 04:56, it says "バレる！ 作詞: R-指定 作曲: DJ松永" (Bareru! / Creepy Nuts).
+
+    Right, now that I have the song mapping and artist identification down, I need the lyrics. My strategy is to use `default_api:web_search_langsearch_multi` to get them.
+
+    Let me just quickly clarify the details:
+
+    *   **Song 1:** Title: 丸ノ内サディスティック (Marunouchi Sadistic), Original Artist: 椎名林檎 (Ringo Sheena), Language: Japanese.
+    *   **Song 2:** Title: ツッパリHigh School Rock'n Roll (登校編) (Tsuppari High School Rock'n Roll (Toko-hen)), Original Artist: 横浜銀蝿 (Yokohama Ginbae / Tamiya Yoshiyuki), Language: Japanese.
+    *   **Song 3:** Title: バレル！ (Bareru!), Original Artist: Creepy Nuts (R-指定 / DJ松永), Language: Japanese.
+
+    Okay, following the rules, I need to craft the search queries. I will not use quotation marks, and I'll always use the original composer/artist name. I'll search for the Japanese lyrics, plus an English translation. I need to make sure to batch the search queries in the turn. Here's what I'll do:
+
+    1.  丸ノ内サディスティック 椎名林檎 歌詞
+    2.  Marunouchi Sadistic Ringo Sheena lyrics English
+    3.  ツッパリHigh School Rock'n Roll 横浜銀蝿 歌詞
+    4.  Tsuppari High School Rock n Roll lyrics English
+    5.  バレル Creepy Nuts 歌詞
+    6.  Bareru Creepy Nuts lyrics English
+
+    Now, let's get those queries executed, and let's pull in the data!
+
+
+
+    **My Retrieval Strategy for Lyric Data**
+
+    Okay, so I've pulled up something on "Marunouchi Sadistic" by Ringo Sheena. Excellent. My immediate goal is to get the precise lyrics, both in the original Japanese – that's crucial for `reference_lyrics_og` – and, if available, an English translation for `reference_lyrics_en`. That's the core.
+
+    However, before I launch into individual searches, let's broaden the scope a bit for efficiency. I'll search for the *full* lyrics of "Marunouchi Sadistic," but while I'm at it, I'll also grab the full lyrics for "Tsuppari High School Rock'n Roll" and "Barrel!". This way, I can potentially kill multiple birds with one stone, maybe encountering better, more complete lyrics for "Marunouchi Sadistic" as part of a larger set. It's about optimizing the data gathering process, really. I always strive for comprehensive results.
+
+
+
+    **My Analysis of the Video Data**
+
+    Okay, let's break this down systematically. The core instruction is non-negotiable: *no manual lyrics input*. If the search doesn't return the full lyrics or translation, it's a null. Period. We found mentions of "丸ノ内サディスティック," "ツッパリHigh School Rock'n Roll," and "バレル！", but the search results didn't provide complete lyrics for any of them. Snippets are not the full lyrics, so they don't meet the criteria. Therefore, **I must** set `reference_lyrics_og` and `reference_lyrics_en` to `null` for *every* scene. It's a binary choice: found or not found.
+
+    Let's double-check the scene data.
+
+    *   **Scene 1:** Otonose Kanade performing "丸ノ内サディスティック." Contains vocals, correct song title, artist, performer, and original language. And *critically*, `reference_lyrics_og` and `reference_lyrics_en` are set to null as required.
+
+    *   **Scene 2:** Otonose Kanade and others performing "ツッパリHigh School Rock'n Roll (登校編)." Again, the song info checks out. Contains vocals, correct song title, artist, performer, and original language. And again, `reference_lyrics_og` and `reference_lyrics_en` are null.
+
+    *   **Scene 3:** Otonose Kanade and another performer with "バレる！". Song info correct. Contains vocals, correct song title, artist, performer, and original language. And, as required, `reference_lyrics_og` and `reference_lyrics_en` are null.
+
+    The global summary confirms the scene breakdown: Virtual concert, three songs in order.
+
+    Okay, everything aligns perfectly with the instructions and the constraints. The data is structured as it needs to be. I am ready to call `final_result`.
+
+
+...
