@@ -1,0 +1,64 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber playing GeoGuessr in Japan, exploring
+    rural locations and providing commentary with instrumental background music playing
+    throughout.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: A VTuber plays GeoGuessr, navigating through rural Japanese landscapes
+      on Google Street View while speaking and providing gameplay commentary with
+      instrumental background music playing in the background.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the GeoGuessr Video**
+
+    Okay, so the user wants me to analyze this video, identify scenes, and most importantly, detect and provide information on any vocal music present, including song titles, artists, and lyrics. I'll need to search the web for lyrics if vocal music is identified. Right, let's get started.
+
+    First, I need to actually *watch* the video and give it a thorough listen. Here we go. Hmm, it appears to be a clip of someone – a VTuber, it seems, speaking Japanese – playing GeoGuessr. There's background music, of course. My primary task is to determine if any of it has vocals.
+
+    Alright, after a careful listen from the beginning, the audio is mainly the VTuber speaking *over* the BGM. From 0:00 to 5:00, it's pretty clear that it's instrumental background music, potentially a lo-fi track or game BGM. I'm focusing closely on the audio, trying to separate out if there are any sung vocals but nothing, it's purely instrumental. I'll double-check to be sure, I don't want to make a mistake. Nope, definitely just instrumental music.
+
+    So, just to be absolutely certain, let's review the instructions again: break down into chronological scenes, detect all vocal songs playing, and if no vocals are found, set the appropriate flags and null the song-related fields. Okay, I've got it. No vocals mean I'll need to set `contains_vocal_music` to `false`, and all song metadata will be `null`.
+
+    So, the summary: The video shows a VTuber in Japan, playing GeoGuessr, and providing gameplay commentary with instrumental background music in the background. It is a single continuous scene, from 00:00.000 to the end of the video, which is at 05:00.000. It doesn't look like I have to further break down into specific scenes, so it should be a single scene.
+    Final Check: No, just instrumental BGM in the video.
+
+    Time to construct the response based on the `final_result` schema then.
+
+
+
+    **Analyzing the GeoGuessr Video**
+
+    Alright, let's break this down. From what I can see in the video clip, there's absolutely no vocal music present. It's just a VTuber, probably streaming, playing GeoGuessr. There's instrumental background music, likely from the game or the stream itself, but no singing. So, I need to make sure that the `contains_vocal_music` field is set to `false` for this scene. Consequently, all the song-related fields—`song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en`—should be set to `null`.
+
+    Now, to structure the response properly:
+
+    First, a `global_summary` to give the big picture: "The video features a VTuber playing GeoGuessr in Japan, navigating through rural areas and providing gameplay commentary with instrumental background music playing throughout."
+
+    Then, for the `scenes` data:
+    The first scene (from start to end) will be:
+     - `start`: "00:00.000"
+      - `end`: "05:00.000"
+      - `description`: "A VTuber plays GeoGuessr, exploring a map in Japan and commenting on the locations with instrumental background music playing."
+      - `contains_vocal_music`: false
+      - `song_title`: null
+      - `original_artist`: null
+      - `performer_in_video`: null
+      - `original_language`: null
+      - `reference_lyrics_og`: null
+      - `reference_lyrics_en`: null
+
+    Everything looks to be in line with the schema and the constraints I've defined. I'm satisfied. Let's call the `final_result`.
+
+
+...

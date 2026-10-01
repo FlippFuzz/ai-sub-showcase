@@ -1,0 +1,69 @@
+name: part_002
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a virtual streamer playing GeoGuessr, starting
+    from the menu selection for the Japan map and continuing into gameplay where she
+    navigates a mountain road in Street View while talking. No vocal songs are played.
+  scenes:
+  - start: '00:00.000'
+    end: '00:04.000'
+    description: The virtual streamer is on the GeoGuessr menu screen, preparing to
+      start a game on the Japan map.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:04.000'
+    end: '05:00.000'
+    description: The virtual streamer plays GeoGuessr in Street View, navigating through
+      a mountainous rural area in Japan with instrumental background music playing
+      while she talks and checks the map.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the Video Clip**
+
+    Okay, let's break this down systematically. The user wants me to analyze this video clip, look for scenes, identify any vocal music, and get metadata if there is any, and lyrics. Right, let's watch it.
+
+    The video shows a VTuber playing GeoGuessr, specifically the Japan map. She's navigating a mountain road in Street View. Now, the key here is the audio. Let's start listening carefully.
+
+    At first, it sounds like there's some talking and maybe some menu sounds, or even background music. But when Street View loads at about the 6-second mark, that's it. It becomes clear: there's background music, the kind you'd expect from a video game or stream – instrumental BGM. The VTuber even mentions it ("あれBGMが乗ってる... BGM聞こえる? BGMうるさいかな...").
+
+    So, to be absolutely clear, after checking from the start to the end, about 5 minutes, there is **no vocal song** in the video. It's all instrumental background music, the in-game background music.
+
+    Therefore, for every scene, `contains_vocal_music` is going to be `false`. And that means, all the song metadata fields, `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` are definitely going to be `null`.
+
+    Let's double-check the scenes. I'm seeing two distinct segments.
+
+    Scene 1: From 00:00 to 00:04. The VTuber is at the GeoGuessr menu, selecting the Japan map. This one, no vocal music.
+
+    Scene 2: From 00:04 to 05:00. She's playing the game in Street View, driving around the mountainous area, talking, looking at the map. Again, no vocal music.
+
+    So, let me summarize it properly:
+
+    Scene 1:
+    *   Start: 00:00.000
+    *   End: 00:04.000
+    *   Description: VTuber on GeoGuessr menu, selecting Japan map.
+    *   `contains_vocal_music`: false
+
+    Scene 2:
+    *   Start: 00:04.000
+    *   End: 05:00.000
+    *   Description: VTuber plays GeoGuessr on Street View, navigating a mountainous rural area in Japan while talking and checking the map.
+    *   `contains_vocal_music`: false
+
+    And because there's *no* vocal music, all the song-related fields should be null. Time to format this into the correct JSON output.
+
+
+...
