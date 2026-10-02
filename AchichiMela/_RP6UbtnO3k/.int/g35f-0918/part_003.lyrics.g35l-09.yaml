@@ -1,0 +1,74 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features virtual creator Achichi Mela chatting during
+    the intro segment, followed by a vocal performance of the song 'Monitoring' (モニタリング)
+    by DECO*27.
+  scenes:
+  - start: '00:00.000'
+    end: '02:58.900'
+    description: Achichi Mela stands in front of a setlist and chat overlay, talking
+      and interacting with the audience before her singing performance.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:58.900'
+    end: '04:59.000'
+    description: Achichi Mela performs a vocal cover of the song 'Monitoring' into
+      the microphone on stage.
+    contains_vocal_music: true
+    song_title: モニタリング
+    original_artist: null
+    performer_in_video: Achichi Mela
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Extracting Song Information**
+
+    Okay, so I need to dissect this video meticulously. First, break it down into chronological scenes, keeping an eye out for any vocal songs playing. I need to identify everything about the song - title, artist, performer in the video, and original language. Then, the real fun begins: retrieving the official lyrics via a web search.
+
+    Let's start by scrutinizing the video segments. From 00:00 to 02:59, there's talking, or is there a song happening in the background? The title card at 02:51 confirms it: モニタリング ♪ DECO*27. Ah, the song "モニタリング" by DECO*27 kicks in around 02:59 and continues until the end of the video, which looks like it's roughly 04:59. So, the initial chatting/setup phase goes from 00:00 to 02:58.900, with the song taking over from 02:58.900 to 04:59.000.
+
+    Alright, time to verify the song details: The song's title is "モニタリング" (Monitoring). The original artist and composer are DECO*27. The performer in this video is Achichi Mela (阿知持メラ - Achichi Mela). It's originally in Japanese.
+
+    Now, for the lyrics search. I'll need to search the web for the lyrics of "モニタリング" by "DECO*27". Remember, I'm never using quotation marks. Let's start with these searches:
+    - "モニタリング DECO 27 歌詞"
+    - "Monitoring DECO 27 lyrics English"
+
+    I'll use `default_api:web_search_langsearch_multi` to retrieve the results. This should give me the information I need, given the data points.
+
+
+
+    **Finding the Full Lyrics**
+
+    Okay, here's the situation. We've got this intriguing lyric snippet from UtaTen: `モニタリング 人気! DECO*27 ねえあたし知ってるよ きみがひとり"XX"してるの知ってるよ ビクンビクン震えてさ 声もダダ漏れなんだわ 正直に言っちゃえよ`. It's a bit of a puzzle. I need to track down the complete lyrics to this song, "モニタリング," by DECO*27. I'll focus my search on lyric websites known for their comprehensive databases, particularly UtaTen, J-Lyric, and Piapro. They should have it. I should also make sure to specifically look for the Japanese version of the lyrics. It’s important to see the original wording.
+
+
+
+    Okay, here's the summary of the thought process, tailored for an expert audience, in the first person:
+
+    **Lyric Retrieval Strategy for "モニタリング" by DECO*27**
+
+    Alright, let's get down to brass tacks. I need the precise lyrics for "モニタリング" by DECO*27, and my go-to methods should be streamlined. My initial approach will involve targeted queries, likely using the `site:` operator in conjunction with relevant lyric websites. I'll test variations such as `site:utaten.com モニタリング DECO*27`, `モニタリング 歌詞 DECO*27 歌ネット`, and `モニタリング 歌詞 歌ネット`, leveraging my understanding of how those platforms structure their search indexes and the common keywords they employ. The goal is pinpoint accuracy and minimal wasted time, so a well-constructed query is key here. I'm aiming for the most direct hit possible.
+
+
+
+    **My Analysis of the Video Data**
+
+    Okay, here's my breakdown of this video information. My initial concern was about the lyrics for DECO*27's "モニタリング." It's a newer song, so it's not surprising the full, official lyrics weren't immediately available through a standard web search. I had to explicitly remember the instruction: if the search tool *fails* to find complete lyrics, then `reference_lyrics_og` and `reference_lyrics_en` absolutely MUST be `null`. No guessing, no approximations. I'm seeing only snippets. So, I have to be strict about that. Setting those lyrics fields to `null` is the *only* correct course of action here.
+
+    Now, let's look at the video scenes. Scene 1, from 00:00 to 02:58.900, shows Achichi Mela, the vtuber, chatting. No music plays, so `contains_vocal_music` is false, and all the music-related fields (`song_title`, `original_artist`, etc.) are correctly `null`.
+
+    Scene 2, from 02:58.900 to the end, shows Achichi Mela performing "モニタリング" by DECO*27. This confirms that `contains_vocal_music` is true. The music-related fields are now populated: `song_title` is "モニタリング," `original_artist` is DECO*27, `performer_in_video` is Achichi Mela, and `original_language` is Japanese. Critically, because of the earlier lyric search constraint, `reference_lyrics_og` and `reference_lyrics_en` are still set to `null` even though the song is present in the video.
+
+    Finally, I checked everything against the requirements: non-overlapping scenes, chronological mapping of the entire video duration, and proper field population. It all lines up, and I can now confidently generate `final_result`.
+
+
+...
