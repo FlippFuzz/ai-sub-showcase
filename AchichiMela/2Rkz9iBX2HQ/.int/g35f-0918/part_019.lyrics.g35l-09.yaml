@@ -1,0 +1,49 @@
+name: part_019
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features gameplay footage of a driving simulator where
+    a VTuber and game characters converse and give driving instructions, concluding
+    with a drive failed screen. There is no vocal music playing in the video.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: Gameplay of a driving simulator with character voice instructions,
+      VTuber commentary, and a drive failed screen at the end.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Clip**
+
+    Okay, so the user wants me to analyze this video. Right, let's break it down. It's a gaming clip, looks like a VTuber playing a driving sim – or maybe commenting on one. We need to check for vocal music, the key element here. I'm going to run through the video to 04:59, listen carefully for any songs with vocals.
+
+    Okay, listening through... initial impressions are conversational dialogue, voice acting from both the VTuber and the game characters. Instructions, simulation sounds, commentary, UI noises, car engine sounds... No, definitely no actual songs playing with sung vocals.
+
+    Let's double-check, though, just in case. There's some ambient background sound, maybe some game music? Gotta be thorough. No. Still no sung vocals anywhere. It's all talking, game UI elements, and those car sounds. No actual song playing. Just the VTuber and game character voices.
+
+    Alright, let's confirm the lack of a song. Nope. No song title, no original artist, no vocal music at all. Just voice chat, gameplay commentary, and those game/synthetic voices.
+
+    Okay, let's build the `final_result` tool call. Since there's absolutely no vocal music, the `global_summary` needs to reflect that: "The video shows gameplay of a driving simulation game with commentary and instructions given by characters and a VTuber, ending with a drive failed screen. There is no vocal music throughout the video."
+
+    Now, the `scenes` part:
+    -   Scene 1: From 00:00.000 to the end of the video, which is ~04:59.000.
+        -   `contains_vocal_music`: That's clearly `false`.
+        -   `description`: I'll describe the scene: "Gameplay of a driving simulation game with voice acting instructions and VTuber commentary, ending in a drive failed screen."
+        -   All the song metadata: `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` have to be `null` because, well, there's no song.
+
+    Just making sure I have the exact duration: the video is at 04:59, so the end time is set correctly.
+
+    Double-checking all the constraints: no transcription or translation, search failure fallback isn't relevant here, and no lyric truncation since there are no lyrics.
+
+    Since there is no song, the `contains_vocal_music` is `false`, and all of the song metadata are `null`.
+
+    Time to execute `final_result`.
+
+
+...

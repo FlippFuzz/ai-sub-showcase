@@ -1,0 +1,65 @@
+name: part_023
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber streaming and chatting with viewers,
+    discussing various topics such as video games, anime, and reading chat comments
+    against a calm background instrumental track.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.500'
+    description: The VTuber streams and chats continuously with viewers, discussing
+      games, anime, and reading comments on screen.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video Segment**
+
+    Okay, so I've got this video segment and I need to break it down. My first thought is to get a handle on what's actually *happening*. Is there vocal music, is it a conversation, is it a monologue? Let's start with a frame-by-frame inspection, and most importantly, the audio.
+
+    Wait a second, let's skip the audio for now and focus on the on-screen text first. I see English subtitles! Excellent. Let me quickly scan through them. Okay, I've got a few snippets from times around 00:50, 01:38, 02:26, 02:59, 03:29, and 04:43. Here they are:
+
+    *   00:50: `[MELA EN:] I'm gonna teach it real genti` / `But yeah, how long was that... two hours? hours? Two hours, one hour.`
+    *   01:38: `different worlds over and over, dein' and gettin' back in time, and then- 'not bein' able to is-!' that's pretty hopeless...` / `You did your best so praise yourself`
+    *   02:26: `And like, on top of that, this around i don't got much attachment to the i sister character yet, z'know - And right of bat - I get attacked!`
+    *   02:59: `This is just a demo version, And since it's the demo, there's probably a story mode or somethin' like that-`
+    *   03:29: `[MELA EN:] Once the product code come! Early next year. Until then, I'll play all sort games. Get better at games.`
+    *   04:43: `[MELA EN:] Teachin' like an A.I., Right`
+
+    Alright, "MELA EN" is an interesting lead. Is this a song or a VTuber or someone just talking? Is this a song by "MELA EN"? Or is the VTuber talking? Is the background music something?
+
+    Wait, hold on... that second snippet at 01:38, with the lines "different worlds over and over, dein' and gettin' back in time, and then- 'not bein' able to is-!' that's pretty hopeless..." It sounds *really* familiar. This has to be a cover or translation of DECO*27's "Salamander" (サラマンダー)!
+
+    Okay, confirmed. Time to confirm this with a quick web search. I'll search for "DECO27 サラマンダー 歌詞" (Salamander DECO27 lyrics) to nail down the specifics: the song title, the artist, the original language, and the lyrics, and finally the lyrics! Done.
+
+
+
+    **Analyzing the VTuber Stream for Vocal Music**
+
+    Okay, so this video is a VTuber stream with Aochicihimeia, and my initial thought is that it's just chatting. There's no actual song being performed in the video itself. The subtitles, indicated by `[MELA EN: ...]`, initially made me wonder if there was an overlaid song like DECO*27's "Salamander," but that appears to be translated lyrics displayed separately, possibly from chat or a translation tool. Let's confirm: "MELA EN" is the translation overlay or a user's tag, indicating English lyrics.
+
+    I need to confirm there is zero vocal music. I checked the video's audio, from 00:00 to 04:59, and it's entirely spoken dialogue, a continuous stream of the VTuber talking, reading comments, and discussing things. The subtitles are just translations of what she's saying. There's only calm instrumental BGM in the background. Absolutely no singing.
+
+    I double-checked the prompt instructions. The guideline references "non-vocal ambient visual transition," which is not a part of this video. So, the question remains: does this video contain vocal music? No. It's 100% spoken word and chatting.
+
+    Now, let's map the scenes and requirements. Since it's a single, continuous stream with no breaks, we can map it as a single scene, or multiple scenes depending on topic changes. However, the most important thing is that `contains_vocal_music` is clearly `false`.
+
+    Therefore, the `global_summary` is "The video features a VTuber chatting with viewers, discussing video games, anime, and reading chat comments with background instrumental music."
+
+    And the `scenes` structure looks like this:
+    *   Start: `00:00.000`
+    *   End: `04:59.000` or `04:59.500` - whichever matches the video length.
+    *   Description: "The VTuber streams live, interacting with chat, discussing various topics including games, anime, and daily life."
+    *   `contains_vocal_music`: `false`
+    *   All song-related fields: `null` (since there's no music).
+
+    So, all song metadata fields will be `null`.
+
+
+...
