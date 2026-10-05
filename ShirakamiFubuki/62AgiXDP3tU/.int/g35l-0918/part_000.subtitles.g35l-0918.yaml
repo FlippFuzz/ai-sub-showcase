@@ -1,0 +1,40 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300048
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.500'
+    end: '00:04.000'
+    original: ふまっくす ふるす！！ FUBUNKINGDOM STORY SIDE ROOM
+    english: Fubumaccs Fulls!! Fubukingdom Story Side Room
+  thoughts: |+
+    **Subtitle Analysis for "ふまっくす ふるす!!" Teaser**
+
+    Okay, let's break this down. My task is to generate subtitles for this video segment, and based on the provided instructions, I need to be *very* mindful of the audio content, or lack thereof. First, the video title is "ふまっくす ふるす!!" – a promotional teaser for Shirakami Fubuki. The video, from my initial glance, seems to be entirely instrumental chiptune rock music from 0:00 to 3:43. But wait, let me double-check. Just to be absolutely certain, I'll go through the audio and confirm… yep, it's instrumental. No vocals. No dialogue.
+
+    The instructions specifically state: "ZERO GHOST SUBTITLES: Remain SILENT during pure instrumental music, long pauses, or sound effects...". However, there's an exception: the "VISUAL EVENTS (The On-Screen Text Exception)". I need to look for any prominent, relevant text appearing on screen. The video *does* start with a title card, which the instructions *do* include in the rule set.
+
+    So, the critical question is: Does the title card qualify as a prominent visual event? The title card says "ふまっくす ふるす！！ FUBUNKINGDOM STORY SIDE ROOM 2026.10.5 mon 21:00 START". Hmm, *that* clearly falls under the "Chapter Titles" or "Event Titles" rule, thus, it should be subtitled. Also, if there are some rules to include the titles, I would need to find the correct translation of the titles or any other static signs.
+
+    I've confirmed the title card's timing: it's visible from 00:00 to roughly 00:04. Now, the rest of the video up to the presumed endpoint (03:43 per prompt or 05:00 in the video timeline) seems to be stage visuals. So, just to be sure, at 04:26, there are character names on screen. Since there's no audio, this falls under that exception rule.
+
+    Okay, let's assemble the subtitle data for the JSON. I'll translate the title card, set the start and end times, and put together the JSON structure. Based on everything, I'm confident in returning the title card subtitle and nothing else. Empty is also valid. This follows the instructions, and I'm ensuring there are no superfluous subtitles when there is no vocal activity, unless there's an on-screen visual. The final subtitle output should look like this:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:00.500",
+          "e": "00:04.000",
+          "og": "ふまっくす ふるす！！ FUBUNKINGDOM STORY SIDE ROOM",
+          "en": "Fubumaccs Fulls!! Fubukingdom Story Side Room"
+        }
+      ]
+    }
+    ```
+
+    This adheres to the rules. No vocals, so only the visual text is included in the format.
+
+
+...
