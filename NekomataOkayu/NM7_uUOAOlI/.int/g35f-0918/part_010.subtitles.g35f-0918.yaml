@@ -1,0 +1,51 @@
+name: part_010
+total_attempts: 1
+video_duration_ms: 56065
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '00:55.000'
+    original: 無料パートは終了いたしました。ご視聴ありがとうございました！
+    english: The sneak peek part of the show has ended. Thank you for watching.
+  thoughts: |+
+    **Subtitle Generation for "Nekomata Okayu 2nd Live" End Screen**
+
+    Okay, so I need to generate subtitles for a video segment, specifically the ending promotional screen for "Nekomata Okayu 2nd Live." The JSON reference indicates no vocal music, just instrumental electronic background music. The description confirms this, and mentions on-screen Japanese text.
+
+    Let's focus on the visual elements. The screen has the hashtag "#おかゆセカンド," the event title, a logo "ぱらこめっと りずむっ！," date/location, and some text at the bottom.
+
+    Now, according to the rules, which I know inside and out, the "VISUAL EVENTS (The On-Screen Text Exception)" rule is key here. It says to subtitle *prominent, relevant text* if it's visible, even with no audio. "ZERO GHOST SUBTITLES" also confirms silence for instrumental parts.
+
+    The text at the bottom, "無料パートは終了いたしました。ご視聴ありがとうございました！" (and its English equivalent "The sneak peek part of the show has ended. Thank you for watching."), definitely qualifies as prominent and relevant, since it's a message directly to the viewer. This text is visible throughout the video.
+
+    Considering its full duration, I have to ensure the subtitle is present for the entire video (55 seconds long). Since it's visible from start to finish, I can use a single subtitle entry, spanning the whole duration. There's no voiceover, only instrumental music.
+
+    So, the key is to create this one subtitle entry:
+
+    *   Start: 00:00.000
+    *   End: 00:55.000 (video's end)
+    *   Original text (og): "無料パートは終了いたしました。ご視聴ありがとうございました！"
+    *   English text (en): "The sneak peek part of the show has ended. Thank you for watching."
+
+    I've confirmed there's no other text that directly addresses the viewer to sub.
+
+    The final output is:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:00.000",
+          "e": "00:55.000",
+          "og": "無料パートは終了いたしました。ご視聴ありがとうございました！",
+          "en": "The sneak peek part of the show has ended. Thank you for watching."
+        }
+      ]
+    }
+    ```
+
+    That single block representing the visual event will be perfectly in line with the rules. Now, let's call the `final_result` tool with this structure.
+
+
+...
