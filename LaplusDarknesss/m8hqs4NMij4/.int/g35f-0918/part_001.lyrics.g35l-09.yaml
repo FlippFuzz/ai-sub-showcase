@@ -1,0 +1,90 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features VTuber Laplus Darknesss performing two songs
+    on a live stage ("夜行性ハイズ" and "パラサイト"), interspersed with a street interview segment
+    in Shibuya.
+  scenes:
+  - start: '00:00.000'
+    end: '03:07.000'
+    description: Laplus Darknesss performs the song 'Yakousei Haizu' on a virtual
+      concert stage with a guitar.
+    contains_vocal_music: true
+    song_title: 夜行性ハイズ
+    original_artist: null
+    performer_in_video: Laplus Darknesss
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:07.000'
+    end: '03:42.000'
+    description: A street interview segment in Shibuya where a fan talks about Laplus
+      Darknesss.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:42.000'
+    end: '04:59.000'
+    description: Laplus Darknesss performs the song 'Parasite' on stage.
+    contains_vocal_music: true
+    song_title: パラサイト
+    original_artist: null
+    performer_in_video: Laplus Darknesss
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Tracking Down Lyrics**
+
+    Okay, so I've got a video here that needs breaking down. The user wants me to identify scenes, spot any vocal music, and get the lyrics. Alright, no problem. Let's dig in.
+
+    First, I see the video starts at 00:00 with "夜行性ハイズ" (Yakousei Haizu / Nocturnal Heights) playing. The screen even tells me the title. I need to figure out who the original artist is, so I'll run a quick search. Oh, and there's a spoken segment around 03:07. I'll need to keep that in mind.
+
+    Then, at 03:42, another song begins. This one's called "パラサイト" (Parasite), and it pops up on screen around 03:58. The screen also clearly credits 作詞・作曲: DECO*27 (Lyrics/Music: DECO*27). That’s handy.
+
+    Now, I'll use `web_search_langsearch_multi` to search for the songs. I'll search for "夜行性ハイズ" to find the original artist and "パラサイト (Parasite) by DECO*27" to make sure I get the right version.
+
+    Alright, searches are on! Let's see what we can find.
+
+
+
+    **Analyzing DECO*27 Lyrics: "Yakousei Haizu" and "Parasite"**
+
+    Alright, the initial lyric search for "夜行性ハイズ" (Yakousei Haizu) by DECO*27 is complete. My next step is to specifically hunt down the *definitive* full lyrics for both "夜行性ハイズ" and "パラサイト" (Parasite), and I need them in the original Japanese. An English translation would be ideal, but I'm prepared for it not to be readily accessible online. If an English translation is unavailable, I'll flag that with a "null" entry, but the primary focus is on securing the Japanese text. My goal is to confirm the availability, or lack thereof, of quality English translations for these specific DECO*27 tracks. This detail will inform the next stage of my analysis.
+
+
+
+    **Finding the Full Lyrics**
+
+    Okay, so I need the full lyrics for "パラサイト" and "夜行性ハイズ" by DECO*27. Given my knowledge of lyric sites, I should start with Uta-Net, J-Lyric, and UtaTen. They're usually pretty reliable for this kind of thing. If I'm lucky, I'll find them outright.
+
+    But, just in case I don't get a complete hit, or if I only have fragments, I'll refine my search strategy right away. I'll use specific search queries like `パラサイト 歌詞 DECO*27` and `夜行性ハイズ 歌詞 DECO*27`. That'll filter for precisely what I'm looking for - those lyrics, and the artist. Let's get these full lyrics.
+
+
+
+    **Analyzing and Structuring Data for Vocaloid Song Identification**
+
+    Okay, so the primary task here is to meticulously analyze a video and accurately identify the music segments, their attributes, and associated metadata. I see that the instructions are clear: if I can't retrieve the complete, official lyrics for a song, I absolutely *must* set the `reference_lyrics_og` and `reference_lyrics_en` fields to `null`. I'm not guessing, I'm not approximating; I'm respecting the data integrity. Since I've only retrieved snippets for the lyrics from the search, I'll be setting those fields to `null`. No problem.
+
+    Now, let's break down the video scene by scene. I'm taking notes:
+
+    *   **Scene 1 (00:00.000 - 03:07.000):** This section features Laplus Darknesss performing "夜行性ハイズ" (Yakousei Haizu) by DECO\*27. Japanese, vocal music, confirmed. Easy.
+
+    *   **Scene 2 (03:07.000 - 03:42.000):** This is a street interview segment. No music, so `contains_vocal_music` will be `false` for this. Song title is `null`.
+
+    *   **Scene 3 (03:42.000 - end):** Ah, this is where it gets a little tricky with timestamps. The prompts have various end times so I need to be exact. It looks like it goes to approximately 04:59.000 or so. This section has Laplus Darknesss performing "パラサイト" (Parasite) also by DECO\*27. Japanese, vocal music, confirmed.
+
+    I'm double-checking the video description and prompts to make certain of the timestamps. The scene breakdown is: "00:00.000 to 03:07.000" for "夜行性ハイズ", then "03:07.000 to 03:42.000" for the Shibuya interview, and then "03:42.000 to 05:00.000 (or end of video)" for "パラサイト". Okay, I should confirm the final timestamp. The last frame is 04:59.000. Corrected.
+
+    I need to now make sure I am following all the instructions. The `contains_vocal_music` field is a boolean and everything else has been identified. Crucially, I must remember the directive about `reference_lyrics_og` and `reference_lyrics_en` being `null` because I can't access full lyrics.
+
+    I will now organize this into the `final_result` structure.
+
+
+...

@@ -1,0 +1,94 @@
+name: part_007
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a live 3D concert performance by Hololive VTuber
+    Laplus Darknesss. She first performs 'Hello/How Are You' (ハロ／ハワユ) by Nanou, followed
+    by a dance interlude, and concludes with a performance of '-ERROR' by niki.
+  scenes:
+  - start: '00:00.000'
+    end: '02:07.000'
+    description: Laplus Darknesss performs the song 'Hello/How Are You' on stage with
+      vibrant laser lights and cheering fans waving glow sticks.
+    contains_vocal_music: true
+    song_title: ハロ／ハワユ
+    original_artist: null
+    performer_in_video: ラプラス・ダークネス
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:07.000'
+    end: '02:40.000'
+    description: Interlude showing three dancers performing choreography in front
+      of a bar background.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:40.000'
+    end: '02:50.000'
+    description: Stage transition with atmospheric lighting and a microphone stand
+      set up for the next song.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:50.000'
+    end: '04:59.434'
+    description: Laplus Darknesss performs the song '-ERROR' by niki on stage with
+      a microphone stand, blue concert lighting, and digital glitch background visuals.
+    contains_vocal_music: true
+    song_title: -ERROR
+    original_artist: null
+    performer_in_video: ラプラス・ダークネス
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Pinpointing Song Details**
+
+    Okay, so I need to break down this video and extract some crucial information. My initial goal is to identify each scene, determine the song titles, artists, original language (if applicable), and track down the official lyrics. Let's dive in.
+
+    First, I'll inspect the video's structure. It looks like Song 1 runs from the beginning to about the 2:37 mark. Let's see what we can find out about it. At 2:11 there are men dancing, but let's look for on screen text or see earlier. At the very start, I hear a song playing ("ハロ / ハワユ" - Hello/How Are You?). Time to start digging for those lyrics.
+
+    I need to nail down the exact title and artist for Song 1. "ハロ／ハワユ" (Hello/How Are You). I need to determine the artist as I'm hearing multiple possibilities, Nanahira or Niki? No, wait! "ハロ／ハワユ" is by Hoe! Or is it Nanahira? Or is it originally VOCALOID and by Nanahira? Wait, No. The song "Hello/How Are You" is by Nanahira! Or Hoe / Kawaii / etc. I need to make sure I am getting the right info. Let's search.
+
+    Okay, let's skip ahead and check the second song, which starts around 2:41. At 2:43, the screen displays "-ERROR" along with "作詞・作曲: niki" (Lyrics & Music: niki).
+
+    Now, I'll use `web_search_langsearch_multi` to get the specifics on both songs, running them in parallel to save time.
+
+    For Song 1, I've got the title as "ハロ／ハワユ" (Hello/How Are You). It looks like the original artist is ホール (Hoe). Though, the original artist might be Nanahira, or Niki? Hold on. "Hello/How Are You" (ハロ／ハワユ) is a well-known Vocaloid song, so I need to verify. "Hello/How Are You" by Hoe (ナノウ / Nanou). I need to verify this information.
+
+    For Song 2, the title is "-ERROR," and the original artist is clearly niki.
+
+    Let's do some searches for both songs, in parallel.
+
+
+
+    Okay, here's what I'm thinking:
+
+    **Lyric Sourcing: Vocaloid Tracks**
+
+    Alright, time to get down to business. My immediate focus is on securing the lyrics for a couple of Vocaloid tracks. I'm aiming for the Japanese versions first and foremost, and I'll settle for that if an English translation isn't readily available. First on my list are the lyrics for "ハロ/ハワユ" (Hello/How Are You) by Nanou (ナノウ). Then, I need the lyrics for "-ERROR" by niki. The main objective is to find the original Japanese lyrics, but if English translations exist, that’s fantastic, and I'll include them. If not, it's not a deal-breaker. Japanese is the priority. Let's start digging!
+
+
+
+    **Analysis of Video Content and Lyric Retrieval**
+
+    Okay, here's the breakdown. The initial lyric search didn't give me the full lyrics for either "-ERROR" or "ハロ/ハワユ" directly in the snippets. Since the instruction is absolutely clear: if I can't *retrieve* the official lyrics, I have to set the reference lyrics to `null`. No guesswork, no transcription, nothing like that. So, I need to make absolutely sure that `reference_lyrics_og` and `reference_lyrics_en` are `null` for both songs. No compromises on that.
+
+    Now, let's nail down the video scenes. I need to make sure I've got them all chronologically, and that they cover the whole thing. I see four distinct segments. First, from 0:00 to 2:07, Laplus Darknesss is performing "ハロ/ハワユ". It's got vocals, so `contains_vocal_music` is `true`. The original artist is ナノウ (Nanou) and the performer is Laplus Darknesss. Because I can't get those full lyrics from a snippet, the `reference_lyrics_og` and `reference_lyrics_en` have to be `null`.
+
+    Next, from 2:07 to 2:40, we have an interlude with dancing. No vocals here, so `contains_vocal_music` is `false`, and all other song-related fields are `null`. Then, the stage transition from 2:40 to 2:50 which is also a non-vocal segment, and the same applies with the values. Finally, we have Laplus Darknesss performing "-ERROR" from 2:50 to the end at 4:59.434. The original artist is niki. The song has vocals, so the `contains_vocal_music` flag is `true` here. And again, even with the song identified, the lyrics remain as `null` because I don't have the full, official text in the snippet.
+
+    Alright, double-checking the constraints one last time. No manual transcription, the lyrics are `null` if the search fails. I'm mapping every second of the video, and the scenes are chronological and non-overlapping. Everything checks out. I'll make sure my final output is well-formatted.
+
+
+...
