@@ -1,0 +1,62 @@
+name: part_008
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber playing a car driving simulation game,
+    attempting to navigate out of a parking lot while dealing with traffic and failing
+    multiple times. Throughout the video, there is no vocal music or song performance,
+    only game commentary, sound effects, and synthetic voice prompts.
+  scenes:
+  - start: '00:00.000'
+    end: '03:38.000'
+    description: The VTuber faces a 'DRIVE FAILED' screen and restarts the driving
+      challenge, trying to carefully maneuver the car out of a parking space while
+      listening to navigation instructions.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:38.000'
+    end: '05:00.000'
+    description: The VTuber restarts the driving challenge from the parking lot again,
+      attempting to follow the speed and direction instructions to successfully merge
+      onto the road.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Driving Game Video**
+
+    Okay, so I've got this video clip of a VTuber playing a driving game, and the task is to analyze it for vocal music. My first step, naturally, is to actually *watch* the thing. I need to be thorough; I'll carefully check for any sung songs, background music with vocals, anything like that.
+
+    Alright, I'm watching... and the VTuber is talking, clearly providing commentary, reacting to the game. I can hear game sound effects, car noises, UI pings... but no singing. I'm focusing on the *vocal* music aspect here. Let me be absolutely certain. From the start at 00:00 all the way to 05:00, it's just the VTuber's voice, plus some in-game automated lines ("了解お兄さん、時速4キロで右に進むのじゃ..."). Nope, definitely no vocal music. It's just a straight-up "Let's Play" style clip.
+
+    Just to be completely sure, I'm going to scan the background as well. Anything faint, any ambient sound – still no vocal music. Absolutely, positively nothing.
+
+    Now, let's refresh the output requirements. Right, the JSON format. I need a `global_summary` and a `scenes` list. Each scene needs a start time, end time, description, a `contains_vocal_music` boolean, and, if applicable, song metadata. Since there's no vocal music to be found, I know a few things right off the bat:
+
+    *   `contains_vocal_music`: is going to be false for *every* scene.
+    *   `song_title`: will be `null`.
+    *   `original_artist`: will be `null`.
+    *   `performer_in_video`: will be `null`.
+    *   `original_language`: will be `null`.
+    *   `reference_lyrics_og`: will be `null`.
+    *   `reference_lyrics_en`: will be `null`.
+
+    Time to define the scenes. The whole video is 5 minutes long. Okay, it's the VTuber playing a car driving game, and messing up. I can choose to do the scenes by gameplay progression or a single scene. Length check... hmm, five minutes. Let's break it down logically. We have the first drive from the parking lot, and then a second attempt.
+
+    *   **Scene 1**: 00:00.000 - 03:38.000 – The VTuber's first driving attempt, starting from the parking lot, and ends in a failed drive.
+    *   **Scene 2**: 03:38.000 - 05:00.000 – The VTuber's second attempt, starting from the parking lot, and successfully navigating out.
+
+    Finally, I don't need to do any song searches. There's no vocal music to identify, so the `reference_lyrics_og` and `reference_lyrics_en` fields remain `null`. Good to go. Let's construct the output.
+
+
+...
