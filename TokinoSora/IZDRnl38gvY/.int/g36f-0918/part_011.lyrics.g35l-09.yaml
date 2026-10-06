@@ -1,0 +1,123 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 300015
+lyrics_prompt_version: 9
+response:
+  global_summary: The video is a virtual live concert featuring VTuber Tokino Sora,
+    opening with an introductory speech, followed by a performance of 'Electrical
+    Surfing' by 漏電破, an MC segment introducing guest performers Yuzuru Furutran and
+    Todoroki Hajime, and concluding with a group performance of 'Cinema' by Ayase.
+  scenes:
+  - start: '00:00.000'
+    end: '00:26.000'
+    description: Tokino Sora is on a virtual stage introducing herself and speaking
+      to the audience at the start of her birthday live stream.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:26.000'
+    end: '03:15.000'
+    description: Tokino Sora performs the song 'エレクトリカル・サーフィン' on a colorful, neon-lit
+      virtual stage with dancers and stage effects.
+    contains_vocal_music: true
+    song_title: エレクトリカル・サーフィン
+    original_artist: null
+    performer_in_video: Tokino Sora
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:15.000'
+    end: '04:10.000'
+    description: MC and talking segment where Tokino Sora interacts with viewers and
+      introduces guest performers.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:10.000'
+    end: '05:01.000'
+    description: Tokino Sora performs the song 'シネマ' alongside guest performers Yuzuru
+      Furutran and Todoroki Hajime on stage.
+    contains_vocal_music: true
+    song_title: シネマ
+    original_artist: null
+    performer_in_video: Tokino Sora, Yuzuru Furutran, Todoroki Hajime
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: "**Analyzing the Video Clip**\n\nOkay, let's break this down. My goal\
+    \ here is a full analysis of this video clip. I need to identify the scenes, pinpoint\
+    \ any vocal music, and, crucially, retrieve the official lyrics. \n\nAlright,\
+    \ let's start by listening to and watching the segments. First, from 00:00 to\
+    \ 00:26, we have some talking, presumably an intro. Then, from 00:26 to 03:15,\
+    \ a song starts. The on-screen text says \"エレクトリカル・サーフィン\" (Electrical Surfing),\
+    \ lyric credit to 作詞・作曲: 漏電破 (Rodenha), and the performer is listed as Tokino\
+    \ Sora (or possibly Ankimomo? I should check that again). Let's search for \"\
+    エレクトリカル・サーフィン\" and the author's name, \"漏電破\" (Rodenha), and make sure the screen\
+    \ at 00:26 says: 「エレクトリカル・サーフィン」 作詞・作曲・編曲：漏電破. Let's do a web search.\n\nNext,\
+    \ from 03:15 to 04:10, there's some MCing or talking, with guest introductions\
+    \ (Yuzuru Furutran, Todoroki Hajime, etc.). Finally, from 04:10 onwards, a second\
+    \ song is performed. The on-screen text says \"シネマ\" (Cinema), lyrics by 作詞・作曲:\
+    \ Ayase. The performers are Tokino Sora, Yuzuru Furutran, and Todoroki Hajime.\
+    \ (Or maybe Ayase, performed by Tokino Sora and guests. I'll need to confirm that.)\n\
+    \nNow, the important part: I need to get the exact original lyrics for both songs.\
+    \ To do this, I will run several web searches in parallel. I'll search for the\
+    \ Japanese lyrics, as well as English translations. Here are the search queries\
+    \ I will use:\n\n1.  エレクトリカル サーフィン 漏電破 歌詞\n2.  エレクトリカル サーフィン 漏電破 lyrics English\n\
+    3.  シネマ Ayase 歌詞\n4.  Cinema Ayase lyrics English\n\nI need to call `web_search_langsearch_multi`\
+    \ with these queries. This should give me the information I need.\n\n\n\nOkay,\
+    \ here's my thought process on this search task:\n\n**Refining Lyric Search Strategy**\n\
+    \nAlright, I've got the initial search results in front of me. Now, the key is\
+    \ to pinpoint the exact lyrics for the specific songs. For \"シネマ\" (Cinema) by\
+    \ Ayase, I'll go straight for the big players – J-Lyric, Uta-Net, and J-Lyric.net\
+    \ – knowing they're typically the most reliable sources for Japanese lyrics. I\
+    \ expect to find a verbatim transcription there. Similarly, for \"エレクトリカル・サーフィン\"\
+    \ by 漏電破 (Rodenha), I'll run the same search strategy, aiming for those same trusted\
+    \ lyric sites. This is essentially \"Turn 2\" of the search – the focused, refined\
+    \ search to get me the *exact* full lyrics I need for each song. No more general\
+    \ web queries, time to zero in!\n\n\n\n**Navigating the Lyric Retrieval Process**\n\
+    \nOkay, so we're diving into Ayase's \"エレクトリカル・サーフィン\" (Electrical Surfing) and\
+    \ \"シネマ\" (Cinema). The immediate challenge is likely the newer VTuber tracks,\
+    \ which aren't always comprehensively indexed online. My directive is clear, and\
+    \ the constraints are non-negotiable: *if* the lyrics, official or translated,\
+    \ aren't readily accessible through a simple search – no guessing, no approximating,\
+    \ no listening and transcribing. We *must* nullify the `reference_lyrics_og` and\
+    \ `reference_lyrics_en` fields.\n\nThe first step, naturally, is to verify the\
+    \ searchability of \"シネマ\" by Ayase. Let's start with a precise search strategy:\
+    \ `\"シネマ\" \"Ayase\" 歌詞` – using exact title and artist, and the \"歌詞\" (lyrics)\
+    \ keyword. Let's see if we can find them through that method, or refine the keywords\
+    \ further. The priority is accurate and verified lyric data, or, in its absence,\
+    \ a clean null value in the metadata.\n\n\n\n**My Thought Process: Analyzing the\
+    \ Video and Constructing the JSON Output**\n\nOkay, so I've got this video analysis\
+    \ task, and it's pretty straightforward, but the devil's in the details, especially\
+    \ regarding the lyrics. I need to be *absolutely* sure I follow the instructions\
+    \ to the letter, or the final output will be rejected.\n\nFirst, I realize that\
+    \ I'm dealing with the lyrics for \"シネマ\" and \"エレクトリカル・サーフィン\". The search snippets\
+    \ I've received *don't* contain the full lyrics for either song. It looks like\
+    \ it's just excerpts and maybe some reviews. That means, following the rule, I\
+    \ **must** set both the original and English reference lyrics fields to `null`.\
+    \ There's no room for guesswork here; incomplete lyrics are a no-go. No manual\
+    \ transcription, translation, or even \"trying my best\" is allowed. This is crucial\
+    \ for avoiding hallucinations.\n\nNow, I'll structure the video into scenes. I've\
+    \ got the timestamps already:\n\n*   **Scene 1:** It's the intro, Tokino Sora's\
+    \ opening presentation. No vocals, so `contains_vocal_music` is `false`.\n*  \
+    \ **Scene 2:** This is the \"エレクトリカル・サーフィン\" performance. Definitely vocal music,\
+    \ so `contains_vocal_music` is `true`. I'll fill in the song details: title, original\
+    \ artist, performer (Tokino Sora), and original language (Japanese). And again,\
+    \ since I couldn't get the full lyrics, `reference_lyrics_og` and `reference_lyrics_en`\
+    \ are `null`.\n*   **Scene 3:** The MC segment. No vocal music here either.\n\
+    *   **Scene 4:** The performance of \"シネマ\" with Tokino Sora and the guests. I'll\
+    \ include song details here too: title, original artist, performers, and language.\
+    \ And, as before, because I don't have the complete lyrics, `reference_lyrics_og`\
+    \ and `reference_lyrics_en` are set to `null`.\n\nI need to meticulously double-check\
+    \ all of this against the rules and constraints. I have to avoid making any mistakes\
+    \ with the lyric retrieval and make sure the JSON I output is valid and complies\
+    \ with the schema.\n\nAlright, time to get this JSON output using `default_api:final_result`.\n\
+    \n\n"

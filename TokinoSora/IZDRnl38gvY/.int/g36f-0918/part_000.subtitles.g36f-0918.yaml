@@ -1,0 +1,65 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '04:52.000'
+    original: ときのそら 生誕祭 2025
+    english: Tokino Sora Birthday Party 2025
+  thoughts: |+
+    **Analyzing the Intro Segment for Subtitles**
+
+    Okay, so I need to provide subtitles for this video section, specifically from the 00:00 to 05:00 mark. Looking at the video, it's a static promotional thumbnail for "ときのそらお披露目誕生日2025" (Tokino Sora Birthday Party 2025) with upbeat chiptune/electronic music in the background. My first task is to determine if any subtitles are needed.
+
+    I'm checking for vocal audio. I've listened to the entire 00:00 to 05:00 segment, and it's purely instrumental. No vocals whatsoever.  Now, the crucial part - applying the Visual Events rule: "If prominent, relevant text appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio."
+
+    On screen, from the very beginning, I see the following text: "ときのそら 生誕祭 2025" (Tokino Sora Birthday Party 2025), "告知あり♡" (Announcement included ♡), and "新衣装 お披露目" (New Outfit Reveal). It's a typical static stream thumbnail.
+
+    The question is, does this waiting/promotional graphic warrant a full-screen subtitle?  I need to check the Visual Events rule again. Yes, it does. This text *is* prominent and relevant.
+
+    I'm thinking about whether this qualifies as a title card, I have to determine whether to subtitle the main title card at 00:00 to 04:52, or skip if it's purely a waiting BGM thumbnail screen. Let's revisit the rule: "If prominent, relevant text appears on screen, subtitle it for the duration it is clearly visible, even if there is no audio." I have the text, it is visible, and it is on-screen, so I am going to apply the rule.
+
+    I reviewed example 5, which confirms that we can subtitle the title card at the start or during the duration of the waiting screen.
+
+    Let's make sure there are truly *no* vocals, I re-checked: from 00:00.000 to 04:59.850, there are *no* vocal audio activations. Okay, now let's output a subtitle for that intro title screen.
+
+    Now, let's output the subtitle for the intro title screen:
+
+    ```json
+    {
+      "subtitles": [
+        {
+          "s": "00:00.000",
+          "e": "04:52.000",
+          "og": "ときのそら 生誕祭 2025",
+          "en": "Tokino Sora Birthday Party 2025"
+        }
+      ]
+    }
+    ```
+
+    Wait, there's a little bit more. From 04:52.000 to 04:59.850, a hashtag appears in the top right: `#ときのそらお披露目誕生日2025`. Let's include that.
+    ```json
+    {
+      "subtitles": [
+        {
+          "s": "00:00.000",
+          "e": "04:52.000",
+          "og": "ときのそら 生誕祭 2025",
+          "en": "Tokino Sora Birthday Party 2025"
+        },
+        {
+          "s": "04:52.000",
+          "e": "04:59.850",
+          "og": "#ときのそらお披露目誕生日2025",
+          "en": "#TokinoSoraBirthdayParty2025"
+        }
+      ]
+    }
+    ```
+    That's it, that covers it.
+
+
+...
