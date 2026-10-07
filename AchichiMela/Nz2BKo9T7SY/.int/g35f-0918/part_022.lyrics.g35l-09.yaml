@@ -1,0 +1,53 @@
+name: part_022
+total_attempts: 1
+video_duration_ms: 300021
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber streaming an English-chat session, interacting
+    with viewers and reading chat messages in both English and Japanese from start
+    to finish. There is no vocal music or song performance in this video segment.
+  scenes:
+  - start: '00:00.000'
+    end: '05:01.352'
+    description: The VTuber streams and chats with viewers in a multilingual session,
+      discussing English learning, reading chat comments, and talking until the stream
+      ends.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Video Segment**
+
+    Okay, let's analyze this video clip. My initial thought is to identify the VTuber, but it seems that's only crucial if there's a song. First, let's just observe the video content directly. Is there any singing, any vocal music at all? Time to watch/listen.
+
+    Okay, the video depicts a VTuber streaming, engaging in conversation, and responding to the chat in both English and Japanese. No clear singing or musical performance is present. Wait, let me double-check for any background music (BGM) or any other vocal music. Listening from 00:00 to 05:00, it's clear there's BGM, but there is no sung music. There seems to be scrolling chat messages ("noji English no ja", "hola", etc.), the VTuber is chatting, and speaking, confirming no performance. I need to make *absolutely* sure. Still nothing - no songs, no singing, only speech.
+
+    Therefore, the `contains_vocal_music` field will be set to `false`, and the song metadata fields, `song_title` and friends, should all be null.
+
+    Now, let's make sure I'm following the required format for the `final_result`. I remember it requires a `global_summary` and a `scenes` list. Since there's no vocal music for the entire duration (00:00.000 to approximately 05:01.000), I can structure this into a single scene that covers the whole video segment. Even if there are a few visual changes, all scenes must have `contains_vocal_music: false` because there is no singing. The video is exactly 05:01.352 (or about 05:01).
+
+    Let me double-check the global summary and scene description. The global summary is this: The video shows a VTuber streaming, talking and reading chat messages in a multilingual chat session (English and Japanese) from start to finish without any vocal music performances.
+
+    Let me refresh myself on the output constraints:
+
+    *   `global_summary`: a string describing the overall content of the video.
+    *   `scenes`: a list of chronological, non-overlapping scenes, covering the entire video segment. Each item has:
+        *   `start`: 'MM:SS.mmm'
+        *   `end`: 'MM:SS.mmm'
+        *   `description`: a comprehensive description of the scene.
+        *   `contains_vocal_music`: boolean; should be false.
+        *   `song_title`: null
+        *   `original_artist`: null
+        *   `performer_in_video`: null
+        *   `original_language`: null
+        *   `reference_lyrics_og`: null
+        *   `reference_lyrics_en`: null
+
+    Finally, I'll format the output correctly using `default_api:final_result`.
+
+
+...

@@ -1,0 +1,42 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 300021
+lyrics_prompt_version: 9
+response:
+  global_summary: A VTuber streams a Duolingo English lesson, discussing English grammar
+    rules regarding articles like 'the gym' versus 'a gym' while reading and responding
+    to chat comments. No vocal music or songs are played throughout the video.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.350'
+    description: A VTuber is streaming a Duolingo English lesson on screen, explaining
+      and discussing grammar concepts such as 'the gym' versus 'a gym' with their
+      chat.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Video Clip**
+
+    Okay, so I need to analyze this video clip, which appears to be a VTuber doing a Duolingo English lesson focusing on the "a" versus "the" distinction with "gym." First, let's establish a baseline: Is there *any* vocal music present? Not just background music, but *sung* vocals. I'm listening... nope. The VTuber is streaming, talking, doing the lesson. No singing is going on.
+
+    Now, let's quickly review the content from the start to the end, which seems to be the entire clip. From 00:00 to 04:59, I'm getting a VTuber going through a Duolingo lesson. I need to make sure I don't miss any vocal music *anywhere* in the clip, including the background. Still nothing - just the VTuber explaining English grammar concepts.
+
+    I'll double-check those segments just to be absolutely certain. The VTuber could be any one of many, it's not a major factor because this isn't about the *performer* so much as the content. I'll need to remember that the performer ID is for singing, not the VTuber's identity. I have to verify that `contains_vocal_music` will be `false` for everything, and any associated song metadata will be `null`.
+
+    Let's do a quick content overview: the VTuber is reviewing a Duolingo English lesson about "the gym" versus "a gym" and there is absolutely no vocal music playing. She is talking and there are comments being sent in the chat. So, now it's time to build the output JSON.
+
+    Given that no vocal music was detected, the `global_summary` should describe the video as a VTuber streaming a Duolingo English lesson discussing grammar rules. The `scenes` section will consist of a single scene covering the whole clip. It will have `contains_vocal_music: false`.
+
+    Let me verify:
+    - `global_summary`: "A VTuber streams their Duolingo English lesson, discussing grammar rules regarding 'the gym' versus 'a gym' while interacting with chat. No vocal music is present." - Perfect.
+    - `scenes`: Start will be "00:00.000", end will be around "04:59.000" (I'll need to check the exact end time to be precise), Description: "A VTuber reviews a Duolingo English lesson on the screen, discussing the usage of 'the gym' versus 'a gym' and chatting with viewers." `contains_vocal_music` is `false`, and the song metadata fields should all be `null`.
+
+    Since there's no song in this video, I will call the `final_result` directly.
+
+
+...

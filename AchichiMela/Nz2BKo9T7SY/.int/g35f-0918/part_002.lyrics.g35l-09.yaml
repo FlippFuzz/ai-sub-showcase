@@ -1,0 +1,54 @@
+name: part_002
+total_attempts: 1
+video_duration_ms: 300021
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber stream where the host plays Duolingo
+    English, interacting with chat and working through language lessons with background
+    instrumental music playing throughout.
+  scenes:
+  - start: '00:00.000'
+    end: '00:10.000'
+    description: Opening stream screen with chat messages, decorative Japanese-themed
+      graphics, and background instrumental music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:10.000'
+    end: '05:00.000'
+    description: Gameplay session of Duolingo English where the VTuber solves language
+      exercises, talks with the chat, and reacts to the results with background instrumental
+      music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Stream Segment**
+
+    Alright, let's break this down. My goal is to analyze this video segment, specifically focusing on scene mapping and identifying any vocal music present. First, I need to understand the content. It seems we're dealing with a VTuber, Noja (or Aochi Himeia, etc.), streaming a Duolingo English session. I need to be *certain* about vocal music, so I'm going to carefully listen and watch.
+
+    I started by scrutinizing the initial BGM from 00:00 to 00:09. Cute chiptune instrumental, maybe some wordless vocalizations? I have to be precise. It sounds like *background* music – more of a jingle. I really need to distinguish between BGM and an actual vocal *song*. Then I expanded my inspection to the entire video.
+
+    I realized I have to segment the video logically. I think it makes sense to have an "Intro" scene up to 00:10, and then the gameplay itself. The gameplay does have background music (BGM) throughout, but that's not the same as a vocal song being performed as a standalone musical segment. Based on my experience, I'm expecting a lot of BGM in VTuber streams, likely from copyright-free sources or the game itself. However, that does not mean a vocal song. I checked the music carefully, especially that initial music from 00:00 - 00:08, but it's not a vocal song. I have to confirm.
+
+    After carefully reviewing the entire 5 minutes, I'm confident there's *no* vocal music, just instrumental BGM playing in the background. The VTuber is speaking, in Japanese ("おはようのじゃー", "英語は勉強中すのじゃ", etc.) while playing Duolingo, so `contains_vocal_music` will be `false` for every scene.
+
+    Now, to organize this into scenes. I'm thinking two scenes are optimal:
+
+    *   **Scene 1 (00:00 - 00:10):** "Opening screen with chat logs, background music, and avatar portrait." Definitely `contains_vocal_music: false`.
+    *   **Scene 2 (00:10 - 05:00):** "The VTuber plays Duolingo English, working through lessons and interacting with chat while background instrumental music plays." Also, `contains_vocal_music: false`.
+
+    Since there's no vocal music, the song metadata fields (`song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, `reference_lyrics_en`) will all be `null`.
+
+    I'm double-checking, ensuring the scene durations are correct, and confirming again that the `contains_vocal_music` flag is consistently `false` across the scenes. I'm also confirming that the `global_summary` is accurate. Now let's review to make sure the JSON structure matches the tool's expected format. Okay, everything checks out, and I'm ready to output the correct JSON!
+
+
+...
