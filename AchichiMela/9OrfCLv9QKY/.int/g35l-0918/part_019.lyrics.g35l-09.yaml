@@ -1,0 +1,48 @@
+name: part_019
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features the VTuber Achichi Mera streaming and chatting,
+    talking about various topics while interacting with chat comments on screen. There
+    is no vocal music present in the clip.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: Achichi Mera is streaming and talking to her viewers, with chat comments
+      scrolling on the left side of the screen.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Video Clip**
+
+    Okay, let's dive into this video. First, I need to understand what's being asked here – an analysis, mapping scenes, and song detection, with lyric lookup. Right, let's see what we're working with. It's Achichi Mera, a VTuber, streaming. Now, the key is the audio. Is there music? Or is it just chatting? I need to be precise here; the instructions are very clear about *vocal* music. Let's really listen closely. Nope, it's all talking. No singing. So, we are clear, no active vocal music.
+
+    Let's check back on the prompt and the "do NOT transcribe" rule. We are good there, so with no song detected, we should follow the logic path.
+
+    Okay, since there is no vocal music, the entire video (or rather this clip) seems to be a single scene. The visual context doesn't change – it's a consistent stream view. Given that, `contains_vocal_music: false` is the right call, even if there is some background music (which is unlikely), `contains_vocal_music` is for "active music with sung vocals".
+
+    Time to structure the JSON output. Let's make sure it follows the specified schema:
+
+    *   `global_summary`: "The video features a VTuber named Achichi Mera talking and chatting in a stream setup."
+    *   `scenes`:
+        *   `start`: "00:00.000"
+        *   `end`: "04:59.000" (checking the video's end timestamp)
+        *   `description`: "Achichi Mera talks and interacts with chat comments on stream."
+        *   `contains_vocal_music`: false
+        *   `song_title`: null
+        *   `original_artist`: null
+        *   `performer_in_video`: null
+        *   `original_language`: null
+        *   `reference_lyrics_og`: null
+        *   `reference_lyrics_en`: null
+
+    Looks like it's a straightforward case. No need to overcomplicate things. And finally, let's do one last check of the output format and requirements. Yep, no issues, all clear and good to go.
+
+
+...
