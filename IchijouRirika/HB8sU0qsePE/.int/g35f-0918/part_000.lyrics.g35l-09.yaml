@@ -1,0 +1,70 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video begins with an introductory illustration and background
+    music featuring Hololive VTuber Ichijo Ririka, followed by a 3D live performance
+    of her original song '今日も大天才っ！' on a theme park stage.
+  scenes:
+  - start: '00:00.000'
+    end: '03:56.000'
+    description: Intro sequence featuring an illustration of Ichijo Ririka and chibi
+      characters with chiptune background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:56.000'
+    end: '04:59.600'
+    description: Ichijo Ririka performs her original song '今日も大天才っ！' on a 3D amusement
+      park stage.
+    contains_vocal_music: true
+    song_title: 今日も大天才っ！
+    original_artist: 小池竜暉
+    performer_in_video: 一条莉々華
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video's Sonic and Visual Narrative**
+
+    Okay, so the user wants me to dissect this video. My initial approach is to break it down scene by scene, paying close attention to any vocal music. First, I'll start with a thorough inspection of the video's content and metadata.
+
+    The plan is to chronologically segment it. The initial portion, from 00:00 to 03:55, appears to be an intro or lobby graphic associated with "Ichijo Ririka's Birthday Live 2025" – a potentially crucial clue. I need to pinpoint what kind of music is playing; is it background music (BGM), or are there vocals, and if so, what are they? Around 00:57, I'm detecting what sounds like instrumental, chiptune-esque pop. However, I want to confirm if there are vocals during that opening. I'll need to listen carefully.
+
+    Then, at the 03:56 mark, it looks like a 3D stage debuts with a virtual YouTuber, Ichijo Ririka, performing a song. The song is clearly titled "今日も大天才っ！" (Kyou mo Daitensai!). The on-screen text at 04:11 is showing "作詞・作曲・編曲：小池竜暉", which means the lyricist, composer, and arranger for the song is Ryuki Koike.
+
+    Now, the core of the task is clear: I need to locate the official lyrics for "今日も大天才っ！" by Ryuki Koike. I'll search with two queries using `web_search_langsearch_multi`:
+     - "今日も大天才っ 小池竜暉 歌詞" (to get Japanese lyrics)
+     - "Kyou mo Daitensai Ryuki Koike lyrics English" (if available, or to get the original Japanese lyrics if not).
+
+
+
+    **Analyzing the Song "Kyou mo Daitensai!"**
+
+    Okay, so I've got "Kyou mo Daitensai!" stuck in my head – great, now the earworm starts. Right, this one is by Ichijo Ririka (一条莉々華). And I *think* I recall that Ryuki Koike (小池竜暉) was involved with the writing/composition/arrangement. I should confirm that quickly. Let's see if the full lyrics are readily available online. It *could* be a new original from a hololive project, so I'll need to check if they’re newly released. A quick search should turn up something. First, let's try a broad search for `"今日も大天才っ" 歌詞` (lyrics) without mentioning the artist. Then, if that's too broad, I'll refine it with `"今日も大天才っ" 小池竜暉 歌詞` to zero in on any potential information related to Koike. Should be straightforward enough.
+
+
+
+    **My Analysis of "今日も大天才っ！" and Data Fields**
+
+    Okay, so I've got "今日も大天才っ！" by Ryuki Koike to process. It's a new song from Ichijo Ririka's Hololive Dreams project (ホロドリ), and the key issue is that the full lyrics aren't indexed on the major lyric sites yet. This means I'm bound by that crucial constraint: if the search fails, the lyric fields *must* be set to null. No guesswork.
+
+    I ran the search, obviously, and it didn't turn up the goods, so `reference_lyrics_og` and `reference_lyrics_en` are definitely going to be `null`. No room for interpretation here.
+
+    Now, let's break down the video scene by scene to make sure all the data fields are correct:
+
+    *   **Scene 1 (0:00 to 3:56):** Intro with Ririka's illustration and chiptune music. Definitely *not* vocal music. So, `contains_vocal_music` is `false`, and all song-related fields (`song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, `reference_lyrics_en`) are all `null`. This checks out.
+
+    *   **Scene 2 (3:56 to 4:59.600):** This is where Ririka performs "今日も大天才っ！" on the 3D stage. `contains_vocal_music` is `true`. We know the `song_title` is "今日も大天才っ！", the `original_artist` is Ryuki Koike, and the `performer_in_video` is Ichijo Ririka. The `original_language` is clearly Japanese. And, again, because the search failed, the lyrics are `null` for both `reference_lyrics_og` and `reference_lyrics_en`.
+
+    I've also double-checked; there are no other songs to consider. Just this one performance.
+
+    Finally, I've reviewed the format and output structure of `final_result`, and it's all rock solid. It strictly follows the instructions. I'm ready to call `final_result`. Everything is as it should be.
+
+
+...

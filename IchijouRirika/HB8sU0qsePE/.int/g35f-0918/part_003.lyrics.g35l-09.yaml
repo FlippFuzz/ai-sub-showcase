@@ -1,0 +1,83 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: 'The video features a live 3D virtual idol concert ("一条莉々華誕生祭2025")
+    featuring Ichijo Ririka alongside guest performers Himemori Luna and Amane Kanata.
+    They perform two songs: ''守ってルーナイト'' (Mamotte Ruunaito) and ''特者生存ワンダラダー!!'' (Tokusha
+    Seizon Wanderadar!!) on an amusement park stage.'
+  scenes:
+  - start: '00:00.000'
+    end: '03:55.000'
+    description: Ichijo Ririka and Himemori Luna perform the upbeat song '守ってルーナイト'
+      on an amusement park stage with a Ferris wheel and carousel in the background.
+    contains_vocal_music: true
+    song_title: 守ってルーナイト
+    original_artist: ナナホシ管弦楽団
+    performer_in_video: 一条莉々華、姫森ルーナ
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:55.000'
+    end: '04:59.000'
+    description: Ichijo Ririka and Amane Kanata perform the energetic song '特者生存ワンダラダー!!'
+      on the amusement park concert stage.
+    contains_vocal_music: true
+    song_title: 特者生存ワンダラダー!!
+    original_artist: 田淵智也
+    performer_in_video: 一条莉々華、天音かなた
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the VTuber Performance**
+
+    Okay, let's break this down. My objective is to dissect this video, specifically the musical performances within it. First, I need to chronologically segment the video into distinct scenes. My primary focus is identifying and extracting the lyrics for each vocal track.
+
+    Right, the video content itself appears to feature virtual performers, or VTubers, singing and dancing. Let's see... the plan is to analyze the on-screen information. I'll need to note the song titles and the artists credited with the music.
+
+    Alright, here's what I've got:
+
+    1.  **Song 1 (00:10 - 03:50):** The title shown is "守ってルーナイト (Mamotte Ruunaito / Protect Me, Loo-knight)". The credits, listed at 00:38 and 03:49, show lyrics, music, and arrangement by ナナホシ管弦楽団 (Nanahoshi Kangengakudan), with music also credited to 岩見陸 (Iwami Riku), who appears to be the same person. The performers are 一条莉々華 (Ichijo Ririka) and 姫森ルーナ (Himemori Luna). Now, let's confirm the singer. For now, I'll search for "守ってルーナイト ナナホシ管弦楽団 歌詞".
+
+    2.  **Song 2 (03:56 onwards):** The title is "特者生存ワンダラダー!! (Tokusha Seizon Wanderadar!!)". Credits indicate lyrics and music by 田淵智也 (Tabuchi Tomoya), and arrangement by 佐高陵平 (Sataka Ryohei). The performers here are 一条莉々華 (Ichijo Ririka) and Amane Kanata, I think? Let's check.
+
+    Now, it's time to retrieve the lyrics for both songs. I'll utilize the `web_search_langsearch_multi` tool.
+
+    The rules are clear: no quotation marks in the searches, and always use the original artist/composer names. We want parallel queries.
+
+    My search queries are:
+
+    **Song 1:**
+    *   守ってルーナイト ナナホシ管弦楽団 歌詞
+    *   Mamotte Ruunaito lyrics
+
+    **Song 2:**
+    *   特者生存ワンダラダー 田淵智也 歌詞
+    *   Tokusha Seizon Wanderadar lyrics English
+
+    Okay, let's execute `web_search_langsearch_multi` and see what we get.
+
+
+
+    **Targeted Lyric Search**
+
+    Okay, so I've got a couple of tracks I need full lyrics for: "守ってルーナイト (Mamotte Ruunaito)" by ナナホシ管弦楽団 (Nanahoshi Kangengakudan) / 姫森ルーナ (Himemori Luna) and "特者生存ワンダラダー!! (Tokusha Seizon Wanderadar!!)" by 田淵智也 (Tabuchi Tomoya) / 歌: 一条莉々華 & 天音かなた. I need to get more focused with my search now. General info isn't enough, I need the *lyrics*. Time to employ `web_search_langsearch_multi` and hit up those lyric-specific sites. UtaTen, J-Lyric, and a targeted Google search using the exact song titles should do the trick. Let's dig in and see what we can unearth.
+
+
+
+    **Analyzing and Structuring the Video Data**
+
+    Alright, let's break this down. First, I see we're dealing with a video featuring performances of what appear to be original or specific Hololive songs. Based on the instructions, the critical constraint is: if direct lyric snippets aren't readily available via search, we must set those lyric fields to `null`. I've confirmed that the full, official lyrics for "守ってルーナイト" (Mamotte Ruunaito) and "特者生存ワンダラダー!!" are not showing up in the search results with direct text snippets, nor are they on readily accessible public sites (or they are exclusive to streaming/CD/hololive app). Therefore, `reference_lyrics_og` and `reference_lyrics_en` have to be `null` for both songs. That's a strict rule to ensure data integrity.
+
+    Next, I need to map out the scenes and their associated timestamps. I've got two distinct segments in this video. The first runs from 00:00.000 to 03:55.000, and it features Ichijo Ririka and Himemori Luna performing "守ってルーナイト" (or "守護ってルーナイト") on what looks like an amusement park stage. ナナホシ管弦楽団 (Nanahoshi Kangengakudan) / 岩見陸 (Iwami Riku) are the original artists.
+
+    Then, at 03:55.000, we transition to the second segment. I've confirmed by the prompt timestamp and video timestamp. We have the end of the video is 04:59.000.  Here, Ichijo Ririka and Amane Kanata are performing "特者生存ワンダラダー!!" on stage. The original artist is 田淵智也 (Tabuchi Tomoya).
+
+    I need to make sure everything's correct and follows the schema, so let's double-check: Chronological scenes covering the whole video? Check. Correctly populated fields? Check. Lyrics set to `null` where required due to the search constraint? Check.
+
+    Now, let's output this in the correct JSON format.
+
+
+...
