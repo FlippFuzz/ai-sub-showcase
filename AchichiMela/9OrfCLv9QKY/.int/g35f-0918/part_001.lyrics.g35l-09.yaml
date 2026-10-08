@@ -1,0 +1,51 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber chatting and interacting with her audience
+    about daily life topics, such as her Roomba vacuum and dating simulation games,
+    with no vocal music performances present.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: The VTuber is streaming, wearing a mask and traditional-style clothing,
+      while talking and reading chat comments about various topics including her Roomba
+      and games.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the VTuber Video**
+
+    Okay, so the task is to analyze a video of a VTuber, let's call her Aochi Chimei (or similar), for the presence of vocal music. Right, first things first, let's visually scan the video. Chatting, that's what I'm seeing, interaction with the chat, discussions about games, a Roomba... standard streaming fare.
+
+    Now, the crucial part: is there any singing? I'm going to carefully review the frames and listen to the audio, specifically looking for any vocal performance. The clip starts at 00:00 and goes to around 05:00. Watching and listening, it's all talking. Just chatting, with perhaps some instrumental background music, but no vocals. Let me be absolutely sure.
+
+    I'm double-checking. Nothing. No songs being sung or performed. Absolutely no vocal music. I'm confident. Therefore, `contains_vocal_music` is definitely `false`. That means no song metadata is needed, so that will be `null`.
+
+    Alright, let's confirm the duration. I'm seeing the end frame is 04:59, so the end time is around 05:00.000 or near there. I should double check the timestamps.
+
+    Okay, reviewing the instructions and the output schema… here's what the `final_result` needs:
+
+    *   `global_summary`: "The video features a VTuber chatting and interacting with viewers about various topics including Roomba and dating simulation games."
+    *   `scenes`:
+        *   `start`: "00:00.000"
+        *   `end`: "05:00.000" (or wherever it ends)
+        *   `description`: "The VTuber streams and chats with viewers, discussing daily events, roomba vacuums, and dating simulation games."
+        *   `contains_vocal_music`: false
+        *   `song_title`: null
+        *   `original_artist`: null
+        *   `performer_in_video`: null
+        *   `original_language`: null
+        *   `reference_lyrics_og`: null
+        *   `reference_lyrics_en`: null
+
+    Since there's no vocal music, no search for music is needed. All that's left is to construct the JSON response according to that schema. All done!
+
+
+...
