@@ -1,0 +1,60 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features two VTubers chatting and playing various tabletop
+    games from a clubhouse collection (such as Gomoku, game selection menu browsing,
+    and the card game Pig's Tail). Throughout the video, there is spoken conversation
+    and game sound effects, but no vocal music or songs are performed.
+  scenes:
+  - start: '00:00.000'
+    end: '00:30.000'
+    description: The VTubers discuss the outcome of a completed Gomoku (Five-in-a-row)
+      match and view the results screen.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '00:30.000'
+    end: '02:50.000'
+    description: The VTubers browse through the game selection menu, discussing and
+      commenting on various board games and card games.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:50.000'
+    end: '04:59.000'
+    description: The VTubers play the card game 'Pig's Tail' (ぶたのしっぽ), drawing cards
+      and reacting excitedly to the gameplay.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Clip: A No-Vocal-Music Case**
+
+    Okay, let's break this down. The user's request is straightforward: analyze a video clip, identify scenes, and, crucially, detect any vocal music and retrieve lyrics. I need to be meticulous about this, even if the answer seems obvious.
+
+    First, I'm reviewing the video content, and I can immediately see it's a VTuber stream focused on gameplay and chatting. Right away, my initial focus is on the crucial question: are there any *songs* with vocals?  After carefully examining the 00:00 to 04:59 timeframe, the answer is a clear "no". It's all chatter, game sounds, and UI interactions. The game appears to be Clubhouse Games/Asobi Taizen, with the virtual characters discussing and playing various board game simulations. So, I need to make sure `contains_vocal_music` will be `false` for every scene, and that the song metadata/lyrics fields will be `null`. The prompt states to "detect ALL vocal songs" and I must be confident in this assessment.
+
+    Now, I'm thinking about the scenes. Initially, I considered the whole clip as a single segment, but I'm going to refine it for better clarity. It looks like it's beneficial to break it into sub-scenes based on the changing gameplay activities and menus:
+
+    *   **Scene 1:** 00:00.000 to 00:30.000 - Focus on the Gomoku match results and menu.
+    *   **Scene 2:** 00:30.000 to 02:50.000 - Browsing the game selection menu, highlighting different board game options.
+    *   **Scene 3:** 02:50.000 to 04:59.000 - Active gameplay of the "Pig's Tail" (Buta no Shippo) card game.
+
+    Again, the most important thing is confirming that there is NO vocal music within *any* of those defined scenes. The audio description confirms the absence of singing: spoken conversation (from the VTubers), sound effects, and the menu interface. So, I will proceed to structure the final JSON output according to the `final_result` tool schema, knowing that the song-related fields will be null due to the lack of vocal music. I'm ready to move forward.
+
+
+...

@@ -1,0 +1,74 @@
+name: part_015
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: 'Two VTubers, Aoi and Meia, chat, laugh, and review game tournament
+    results and statistics from Clubhouse Games: 51 Worldwide Classics against each
+    other, with instrumental background music playing throughout.'
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: 'Aoi and Meia review game tournament scores and match statistics
+      from Clubhouse Games: 51 Worldwide Classics while chatting and joking with each
+      other.'
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Vocal Music Detection**
+
+    Okay, so I need to get this video analyzed and figure out the music situation. First, I need to break it down. Let's see, it's a video, so I need to think about scenes, chronological order, and music detection. The primary task is to identify ALL vocal songs and then get the lyrics.
+
+    Right, so let's start by actually *watching* the video. Wait, hold on, before I just dive in, let's look at the content first. From 0:00 to 0:32, it seems to be a menu screen with some background music. Okay, so is it *actually* background music? Gotta check the audio carefully. At 0:00-0:01, there's some upbeat menu music, characters are chatting and navigating. Let's make sure, what's playing from 0:00 to 0:32, or across the video even. Is there any actual singing? Any lyrics?
+
+    I see, the video appears to be two VTubers talking and reviewing their game tournament ("そらあおめら[アソビ大全]"). So, there's background music playing throughout, seems to be game menu music from "Clubhouse Games / 51 Worldwide Games". Hmm, is that music instrumental or does it have vocals? No, it looks like it's instrumental background music.
+
+    Okay, so the real question is: is there *any* vocal music in the whole thing? Let's check. From 0:00 to 5:00, the VTubers (Aoi / Meia) are just talking, chatting, laughing, discussing their game results. No singing. So, no vocal songs. Just to be sure, let's verify again. The key is to check if it `contains_vocal_music`. Since there is no vocal music, it should be `false` for every scene, or the whole video.
+
+    Just to be absolutely certain, let's double-check. Is there *any* music, or is it just the conversation? Yes, looks like it's a talk stream / game review between two VTubers. I can divide the video into scenes based on content changes, or treat the whole video as one with `contains_vocal_music: false`.
+
+    Let's nail down the scene structure and timestamps:
+    *   Scene 1: 00:00.000 to 00:31.900 (Menu selection with background music and commentary)
+    *   Scene 2: 00:31.900 to 05:00.000 (Discussion panel with comments on screen, talking about game results)
+
+    Now, let's verify if there's *any* vocal music in either scene. No. Just speech and instrumental BGM. Therefore, `contains_vocal_music` is `false` for everything, so song metadata and lyrics are going to be `null`. Okay, time to generate that JSON response, making sure it all fits the schema and requirements.
+
+
+
+    **My Analysis of this VTuber Video**
+
+    Okay, here's the breakdown. This video is a VTuber stream, specifically a chat between Aoi and Meia playing "Clubhouse Games: 51 Worldwide Classics". The key point is that there's no vocal music, so `contains_vocal_music` will be `false` for everything, and all the song-related fields will be `null`.
+
+    The video runs for about 5 minutes, 04:59 to be precise, and it's a single scene from 00:00 to 05:00. During this time, Aoi and Meia are going over game tournament results, chatting, and laughing – the usual stream format, with instrumental BGM in the background. They're reviewing and discussing scores and statistics in the game menu interface, along with a chat log on screen.
+
+    So, the `final_result` structure should look like this (I've double-checked, of course, to avoid any errors):
+
+    ```json
+    {
+      "global_summary": "Two VTubers, Aoi and Meia, chat, laugh, and review game tournament results and statistics from Clubhouse Games: 51 Worldwide Classics against each other, with instrumental background music playing throughout.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "05:00.000",
+          "description": "Aoi and Meia review game tournament scores and match statistics from Clubhouse Games: 51 Worldwide Classics while chatting and joking with each other.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    I've also made sure I followed all the constraints: no manual transcription or translation, search failure fallback (which wasn't needed here), and no lyric truncation or placeholders. The result is complete, accurate, and ready for output.
+
+
+...
