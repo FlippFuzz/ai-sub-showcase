@@ -1,0 +1,90 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 298445
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a Hololive production countdown live performance.
+    It opens with Usada Pekora, Minato Aqua, Gawr Gura, and Hakos Baelz performing
+    'Kawikute Gomen', followed by a calendar montage interlude, and concludes with
+    a performance of 'Tokyo Shandy Rendezvous' by Hololive members.
+  scenes:
+  - start: '00:00.000'
+    end: '02:11.000'
+    description: Hololive virtual talents Usada Pekora, Minato Aqua, Gawr Gura, and
+      Hakos Baelz perform the song 'Kawikute Gomen' on a brightly lit virtual stage.
+    contains_vocal_music: true
+    song_title: 可愛くてごめん
+    original_artist: null
+    performer_in_video: Usada Pekora, Minato Aqua, Gawr Gura, Hakos Baelz
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:11.000'
+    end: '02:37.000'
+    description: An upbeat interlude montage showing calendar dates and promotional
+      art for Hololive Production Countdown Live 2023-2024.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:37.000'
+    end: '04:57.300'
+    description: Hololive members perform the song 'Tokyo Shandy Rendezvous' on stage
+      with dynamic lighting and visual effects.
+    contains_vocal_music: true
+    song_title: トウキョウ・シャンディ・ランデヴ
+    original_artist: null
+    performer_in_video: Houshou Marine, Shirogane Noel, Natsuiro Matsuri, Takanashi
+      Kiara, Nakiri Ayame
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Video Analysis and Song Metadata**
+
+    Okay, let's break this video down. I need a solid analysis, including identifying the music and getting lyrics. First, I'll examine the video segment by segment. From 00:00 to 02:11, I'm hearing "Kawikute Gomen" (可愛くてごめん) by HoneyWorks. But wait, it looks like it's a Hololive cover – Usada Pekora, Minato Aqua, Gawr Gura, and Hakos Baelz are listed as the performers. I should double-check the performers, or confirm the original artist. Next, from 02:11 to 02:37, there's an interlude or calendar transition – likely non-vocal music or an instrumental piece. Finally, from 02:37 to the end at 04:57, "Tokyo Shandy Rendezvous" (トウキョウ・シャンディ・ランデヴ) by Tsumiki (ツミキ) is playing. The on-screen credits confirm this.
+
+    Now, for the key part: getting the lyrics. I need the official lyrics for both songs, both in the original Japanese and in English translation. So, for the first song: "Kawikute Gomen" by HoneyWorks. And for the second: "Tokyo Shandy Rendezvous" by Tsumiki.
+
+    Alright, I'll formulate my search queries to pull up the lyrics. Here's what I'll do:
+
+    1.  "可愛くてごめん HoneyWorks 歌詞" (Kawikute Gomen HoneyWorks lyrics)
+    2.  "Kawikute Gomen HoneyWorks lyrics English"
+    3.  "トウキョウシャンディランデヴ ツミキ 歌詞" (Tokyo Shandy Rendezvous Tsumiki lyrics)
+    4.  "Tokyo Shandy Rendezvous Tsumiki lyrics English"
+
+    With these queries, I can get the information I need, specifically, using `web_search_langsearch_multi`.
+
+
+
+    **Lyric Acquisition Strategy**
+
+    Okay, so we have some initial search results, but they aren't enough. We need the *full* lyrics, in both the original Japanese and an English translation, for both songs. To address this, I'm going to refine my search strategy. Specifically, I'll launch a parallel search focused *exclusively* on finding complete lyrics.
+
+    For `可愛くてごめん` (Kawikute Gomen) by shito (HoneyWorks), I'll search for `"可愛くてごめん 歌詞 shito"` and `"Kawikute Gomen lyrics English translation"`.
+
+    For `トウキョウ・シャンディ・ランデヴ` (Tokyo Shandy Rendezvous) by ツミキ (Tsumiki), I'll search for `"トウキョウ・シャンディ・ランデヴ 歌詞"` and `"Tokyo Shandy Rendezvous lyrics English translation"`. This should give us the raw material we need.
+
+
+
+    **Analyzing the Video and Applying the Lyrics Retrieval Policy**
+
+    Okay, so the search didn't cough up the *full* lyrics directly in the snippets, just excerpts. That's a critical point. The instructions are crystal clear: NO manual transcription or translation. My only source is the search tool, and if it fails to provide the complete official lyrics, I have to set the relevant fields to `null`. No guesswork, no listening, no approximations.
+
+    Let's pause and confirm: *none* of the search results yielded the complete lyrics for either song in full text. Therefore, sticking rigidly to the instructions, setting `reference_lyrics_og` and `reference_lyrics_en` to `null` is the compliant approach when complete search results aren't available. That's the correct path here.
+
+    Now, let's break down the video segments methodically.
+
+    *   **Scene 1 (00:00.000 - 02:11.000):** We have Hololive talents performing "Kawikute Gomen". Vocal music, Japanese, the original artist is HoneyWorks (or Shito), and it's performed by Usada Pekora, Minato Aqua, Gawr Gura, and Hakos Baelz. Since I haven't retrieved the full lyrics, `reference_lyrics: null`.
+
+    *   **Scene 2 (02:11.000 - 02:37.000):** This is an interlude, no vocals. Null for everything: song title, original artist, performer, language, and `reference_lyrics: null`.
+
+    *   **Scene 3 (02:37.000 - 04:57.000):** Hololive talents perform "Tokyo Shandy Rendezvous". The original artist is Tsumiki, and the performers appear to be Houshou Marine, Shirogane Noel, Natsuiro Matsuri, Takanashi Kiara, and Nakiri Ayame (or similar). Again, I'm setting `reference_lyrics: null` because full lyrics are unavailable. I'll make sure to verify the artists carefully.
+
+    The video ends around the timeframe of 04:57.300. There are no other scenes. I'm ready to structure the JSON output according to `final_result`.
+
+
+...
