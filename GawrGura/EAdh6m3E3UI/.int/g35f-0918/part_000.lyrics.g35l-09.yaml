@@ -1,0 +1,70 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video opens with a pitch-black introductory section from 00:00
+    to 01:45, followed by a virtual concert performance by Gawr Gura singing the classic
+    song 'RIDE ON TIME' originally by Tatsuro Yamashita.
+  scenes:
+  - start: '00:00.000'
+    end: '01:45.000'
+    description: Pitch-black intro sequence with no vocals or music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:45.000'
+    end: '05:00.000'
+    description: The virtual vtuber Gawr Gura performs a live 3D dance and vocal cover
+      of 'RIDE ON TIME' on a glowing stage.
+    contains_vocal_music: true
+    song_title: RIDE ON TIME
+    original_artist: 山下達郎
+    performer_in_video: Gawr Gura
+    original_language: Japanese
+    reference_lyrics_og: 青い水平線を いま駆け抜けてく とぎすまされた 時の流れ感じて AH ときめきへと 動き出す世界は 忘れかけてた
+      遠い夢の訪れ RIDE ON TIME さまよう想いなら やさしく受け止めて そっと包んで RIDE ON TIME 心に火を点けて あふれる喜びに 拡がれ
+      RIDE ON TIME 僕の輝く未来 さあ回り始めて 虚ろな日々も全て愛に溶け込む AH 何という朝 今すぐ君のもと 届けに行こう 燃える心迷わず RIDE
+      ON TIME 時よ走り出せ 愛よ光り出せ 目もくらむ程 RIDE ON TIME 心に火を点けて 飛び立つ魂に送るよ RIDE ON TIME 届けに行こう
+      燃える心今こそ RIDE ON TIME 時よ走り出せ 愛よ光り出せ 目もくらむ程 RIDE ON TIME 心に火を点けて 飛び立つ魂に送るよ RIDE
+      ON TIME RIDE ON TIME さまよう想いなら やさしく受け止めて そっと包んで RIDE ON TIME 心に火を点けて あふれる喜びに
+      拡がれ RIDE ON TIME RIDE ON TIME 時よ走り出せ 愛よ光り出せ 目もくらむ程 RIDE ON TIME 心に火を点けて 飛び立つ魂に送るよ
+      RIDE ON TIME
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video Clip**
+
+    Okay, so the user wants me to really dig into this video clip. My task is to break it down, identify scenes, spot any vocal performances, track down the lyrics, and find a good translation, all while returning a nicely structured JSON output. I've got this.
+
+    First, let's look at the content. Based on the timestamp data, it looks like there's a black screen for a while—specifically, from the start at 00:00 all the way to 01:44. It's either completely silent or has a very faint ambient sound in that initial part, it needs to be validated. Then, at 01:45 the music starts and vocals kick in. Aha! I'm seeing from the provided timestamps that at 01:45 a spotlight comes on, and a virtual character, Gawr Gura, appears and begins to sing.
+
+    Excellent! Now to figure out what she's singing. I see onscreen text, and it says "RIDE ON TIME," and I'm also seeing "Lyrics Music: 山下達郎" (Tatsuro Yamashita). So, the song is "RIDE ON TIME" by Tatsuro Yamashita. Great. To be certain, the performer in the video is Gawr Gura of Hololive English, and the original artist is the excellent Tatsuro Yamashita. The language is Japanese, of course.
+
+    Now I need to find those lyrics and a translation. I'll search for the Japanese lyrics first, and then the English translation. I'll use the queries: `RIDE ON TIME 山下達郎 歌詞` and `RIDE ON TIME Tatsuro Yamashita lyrics english`. Time to get searching with `default_api:web_search_langsearch_multi`!
+
+
+
+    **Analyzing Tatsuro Yamashita's "RIDE ON TIME" Lyrics**
+
+    Okay, so I've got the Japanese lyrics for "RIDE ON TIME" – Tatsuro Yamashita, classic. Now, the question is, how do I get to the English translation most efficiently? Let's not reinvent the wheel here. Before I start dissecting the nuances myself, let's see if a pre-existing translation is readily available. My immediate thought is to query the web. I'll search for things like "RIDE ON TIME" English translation, or maybe "lyrics translation" just in case. I'll start with a specific search query: `Ride on Time Tatsuro Yamashita English translation`. Hopefully, that will get me what I need.
+
+
+
+    **Analyzing Tatsuro Yamashita's "RIDE ON TIME" and Related Metadata**
+
+    Alright, let's break this down. First, I've got the Japanese lyrics for Tatsuro Yamashita's "RIDE ON TIME" from uta-net. I've double-checked them – they appear complete. Now, the critical question: Do we have an official English translation? The instructions are clear: if there's no complete, published translation readily available online, then `reference_lyrics_en` gets set to `null`. I've diligently searched for an English version of *Yamashita's* "RIDE ON TIME," and the results are consistently disappointing. The ZOO/AAA version, which has the same song title, is *not* the same song at all. Therefore, I must set the English translation field to `null`, as per the guidelines. No exceptions.
+
+    Next, I've reviewed the requirements for summarizing the video content. I need to generate an `global_summary`, along with `scenes` details with timestamps and metadata.
+    I've broken the video down into two scenes: the ambient intro, and the performance.
+    Scene 1, from 00:00.000 to 01:45.000, is the black screen with ambient sound. This section has no vocal music.
+    Scene 2, from 01:45.000 to 05:00.000, features Gawr Gura's performance of the song. This is the main content.
+
+    Finally, I'm verifying the timestamps and confirming all song information is accurate. The Japanese lyrics are in `reference_lyrics_og`, and, crucially, the English lyrics field, `reference_lyrics_en`, is set to `null`, as instructed.
+    Now, let's prepare the JSON response.
+
+
+...
