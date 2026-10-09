@@ -1,0 +1,52 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300008
+subtitles_prompt_version: 18
+responses:
+- subtitles:
+  - start: '00:00.000'
+    end: '00:10.000'
+    original: |-
+      ときのそら生誕祭2025
+      新衣装お披露目
+    english: |-
+      Tokino Sora Birthday Party 2025
+      New Outfit Reveal
+  thoughts: |+
+    **Subtitle Generation for Video Segment**
+
+    Okay, so I need to generate subtitles for this video segment from 00:00 to 05:00. Looking at the provided `scene_and_lyrics_reference_json`, it's mostly instrumental music with a static background image, and then a concert venue shot with some lightsticks. There are no vocals, no lyrics, and thus, no need for audio-based subtitles, which simplifies things.
+
+    Now, let's focus on those pesky visual events. The initial frame has quite a bit of on-screen text: "ときのそら生誕祭 2025" (Tokino Sora Birthday Party 2025), "YOKINOSORA BIRTHDAY PARTY 2025", "告知あり❤" (Announcement included ❤), and "新衣装お披露目" (New Outfit Reveal). This text is visible for a significant chunk, from 00:00 to 04:52. The instructions say to subtitle prominent, relevant text on-screen, even without audio.
+
+    So, the question is, how long do I display it? Do I need to transcribe it for the entire duration? That feels excessive. Often, we give this sort of "title card" text a shorter duration at the start. The instructions emphasize translating titles and signs, while excluding UI elements. Therefore, let's keep it clean.
+
+    Based on the instructions, let's create a subtitle entry for the main title card at the beginning, say, from 00:00 to 00:10. We'll include the relevant text, keeping the line length under 50 characters.
+
+    The Japanese text is "ときのそら生誕祭2025 / 新衣装お披露目," which translates to "Tokino Sora Birthday Party 2025 / New Outfit Reveal."
+
+    Now there is other text, "告知あり❤" which can be translated to "With Announcements! ❤". Let's keep the subtitle streamlined to these relevant titles.
+
+    Also, later, from 04:52 to 05:00, there's a hashtag, "#ときのそらお披露目誕生日2025" which translates to "#TokinoSoraRevealBirthday2025." However, a hashtag is a UI element, and unless it's a chapter title, it falls under the "background clutter/UI elements" exclusion.
+
+    Finally, the subtitle entry, adhering to the standard format, will be:
+
+    ```json
+    {
+      "subs": [
+        {
+          "s": "00:00.000",
+          "e": "00:10.000",
+          "og": "ときのそら生誕祭2025
+    新衣装お披露目",
+          "en": "Tokino Sora Birthday Party 2025
+    New Outfit Reveal"
+        }
+      ]
+    }
+    ```
+
+    This adheres to the "VISUAL EVENTS (The On-Screen Text Exception)" rule. The stream wait screen contains the title of the stream, so displaying it at the start is helpful. There are no other visual or audio events. Therefore, this should be sufficient.
+
+
+...
