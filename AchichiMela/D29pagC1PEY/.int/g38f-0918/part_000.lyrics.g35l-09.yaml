@@ -1,0 +1,85 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 300033
+lyrics_prompt_version: 9
+response:
+  global_summary: The video consists of a promotional montage for Hololive merchandise
+    with an upbeat instrumental background loop, followed by a VTuber live stream
+    segment where the virtual character chats with viewers and discusses a game.
+  scenes:
+  - start: '00:00.000'
+    end: '01:58.000'
+    description: Promotional montage showing Hololive merchandise, character goods,
+      and acrylic stands against an upbeat instrumental background loop.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:58.000'
+    end: '05:00.000'
+    description: VTuber live stream segment where the virtual character chats with
+      viewers, reads chat messages, and discusses a spaghetti-themed game with gift
+      notifications.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Content**
+
+    Okay, so the task is to break down this video clip, look for any vocal music, and, if found, grab the official lyrics. First, let's take a look frame-by-frame.
+
+    Right off the bat, from 0:00 to 1:58, we have what looks like a promotional montage for Hololive merchandise.  It features various goods – card sets, acrylic stands, badges, PC wallpapers, the whole shebang. There's background music, but it sounds like a catchy, instrumental loop or jingle. "ぐるぐるTIME!" or something similar.  I need to confirm if there are actually any sung vocals.  Let's check at specific timestamps. At 0:03, 0:41, 1:18, and 1:56, the "グルグルTIME!" banner is shown with anime characters, but it's *definitely* just instrumental.
+
+    Then, at 1:58, it shifts to a VTuber stream. Hmm, who is this?  Looks like Aochihime Mel / あおちひめろ.  Or wait, `aochihimeia`? The chat says `@aochihilimeia` or `aochihimeia`? Confirmed: `aochihimeia`. She's talking, reading chat, and even getting a gift notification ("SPAGHET").  Again, no singing, just a chilled instrumental track in the background.
+
+    To be thorough, let's review the whole thing again. From 0:00 to 1:58, it’s Hololive card game merchandise, and the BG music is instrumental. Then, from 1:58 to the end at 5:00, it’s a VTuber chatting. So again, there's the instrumental BGM and VTuber stream audio. It's safe to say there are *no* vocal music performances – no songs with sung vocals – in this video.
+
+    So, according to the instructions, if no vocal music is detected, then `contains_vocal_music` is `false` for all scenes, and the song metadata fields should be `null`.
+
+    So, the scene breakdown is:
+
+    Scene 1: 00:00.000 - 01:58.000: Promotional video showcasing Hololive Official Card Game merchandise with an instrumental background jingle. `contains_vocal_music`: false.
+
+    Scene 2: 01:58.000 - 05:00.000: VTuber live stream segment with chatting and a discussion about a spaghetti-themed game with gift notifications. `contains_vocal_music`: false.
+
+    I can confirm that the overall video breakdown is: an instrumental BGM promotional video followed by a talking stream, and that no music with sung vocals exists, so no search for song lyrics is needed. Therefore, I can prepare the JSON response:
+
+    `global_summary`: "The video features a promotional montage for Hololive merchandise with an upbeat instrumental BGM, followed by a VTuber live stream segment where the virtual character chats and discusses a game."
+    `scenes`: [
+      {
+        "start": "00:00.000",
+        "end": "01:58.000",
+        "description": "Promotional montage showing Hololive Official Card Game merchandise, character goods, and acrylic stands against an upbeat instrumental background loop.",
+        "contains_vocal_music": false,
+        "song_title": null,
+        "original_artist": null,
+        "performer_in_video": null,
+        "original_language": null,
+        "reference_lyrics_og": null,
+        "reference_lyrics_en": null
+      },
+      {
+        "start": "01:58.000",
+        "end": "05:00.000",
+        "description": "VTuber live stream segment where the virtual character chats with viewers, reads chat messages, and discusses a spaghetti-themed game with gift notifications.",
+        "contains_vocal_music": false,
+        "song_title": null,
+        "original_artist": null,
+        "performer_in_video": null,
+        "original_language": null,
+        "reference_lyrics_og": null,
+        "reference_lyrics_en": null
+      }
+    ]
+
+    Reviewing the output, the format and constraints are met. I am ready to return the result.
+
+
+...
