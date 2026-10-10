@@ -1,0 +1,49 @@
+name: part_001
+total_attempts: 1
+video_duration_ms: 300048
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features four virtual streamers engaged in a lively conversation
+    and discussion in a colorful studio setting, talking about recent events, fan
+    reactions, and comments without any musical performances.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: Four virtual streamers talk and chat together in front of microphones
+      in a brightly colored studio setting.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Talk Stream**
+
+    Okay, so the task is clear: I need to analyze this video, determine if there's any vocal music, and if so, find the lyrics. Let's get to work. First, a quick visual assessment. The video shows four VTubers chatting; it looks like a typical talk stream setup. Colorful background, microphones, the usual. Now for the audio. I need to listen carefully.
+
+    From 00:00 to 05:00, it sounds like just talking, mostly banter back and forth, reflecting on previous streams, comments, and the like. Okay, let's verify there isn't any background music with singing. I'm going to scan the entire time range, just to be sure. Nope. Just the VTubers chatting.
+
+    Given that it's all talking, I'm confident that the `contains_vocal_music` field should be `false`. That also means all the song-related metadata – title, artist, performer, lyrics – will be set to `null`. I'm double-checking now for an intro, outro, or background music. Still, nothing. Just the chatter of the four VTubers.
+
+    So, the video is basically a single scene of a talk stream/chitchat session. The end time is roughly at 05:00. Now, let's structure the JSON response properly, keeping in mind the schema and instructions.
+
+    The `global_summary` will describe the video as four virtual streamers chatting and reflecting on recent events, streams, and fan comments in a studio setting.
+
+    For the `scenes` array, I'll have a single entry:
+    - `start`: "00:00.000"
+    - `end`: "05:00.000" (or close to that. Let's confirm with a quick review. Yep, the ending timestamp is at 04:59.000).
+    - `description`: "Four virtual streamers are talking and chatting together in a colorful studio setting with microphones."
+    - `contains_vocal_music`: false
+    - `song_title`: null
+    - `original_artist`: null
+    - `performer_in_video`: null
+    - `original_language`: null
+    - `reference_lyrics_og`: null
+    - `reference_lyrics_en`: null
+
+    Okay, a final review. Since there's no music, there's no need for transcription, translation, or a web search. The `final_result` tool can be called directly.
+
+
+...
