@@ -1,0 +1,96 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 301108
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features VTuber Ninomae Ina'nis streaming a gaming session,
+    starting from a loading screen, moving through the game lobby settings and character
+    selections, and finally entering the gameplay where instrumental background music
+    and game sound effects play throughout.
+  scenes:
+  - start: '00:00.000'
+    end: '02:08.000'
+    description: Loading screen featuring a cute ghost graphic and ambient instrumental
+      background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:08.000'
+    end: '04:43.000'
+    description: Game lobby interface where Ninomae Ina'nis navigates settings and
+      discusses game modes with upbeat instrumental music playing in the background.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '04:43.000'
+    end: '05:01.000'
+    description: Gameplay begins as the character looks around the room and inspects
+      the bomb module with in-game sound effects and background audio.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Clip and Metadata Extraction**
+
+    Okay, so the user wants a deep dive on this video. First things first, let's establish the scope: analyze the video, identify scenes, and check for vocal music. If there *is* vocal music, I need to retrieve the official lyrics. Got it.
+
+    Right, the video shows Ninomae Ina'nis, a VTuber, playing a game. Based on the description, it's likely a "Keep Talking and Nobody Explodes"-type game, or something similar – co-op, bomb defusal, that sort of thing. But first, the audio is what I'm focused on. Let's dig in.
+
+    The video starts with a loading screen, so let's start there. And from 00:00 to 02:08, it's just instrumental loading screen music. Then, a quick transition sound. After that, it's the lobby/menu screen from 02:14 to 04:43 – let's listen closely; is this instrumental too? Yep, it sounds like upbeat, cartoonish game lobby music. Definitely instrumental. And from 04:43 to 05:01, it's gameplay sound effects and BGM.
+
+    Okay, let's be absolutely sure. Double-checking again to see if any actual songs with vocals are playing. No vocal songs. Just instrumental game music and the VTuber talking and laughing.
+
+    Wait a second, let's check the instructions again: "detect ALL vocal songs... and find the official lyrics". If there are *no* vocal songs, `contains_vocal_music` should be `false`, and the song metadata/lyrics fields should be `null`. Okay, so no search is necessary, and I need to structure the output accordingly.
+
+    I've carefully broken the video down now into scenes:
+
+    *   **Scene 1:** 00:00 to 02:08 – Loading screen with background music, which is instrumental.
+    *   **Scene 2:** 02:08 to 04:43 – Lobby screen, Ina'nis talking and setting up, again with instrumental game lobby music.
+    *   **Scene 3:** 04:43 to 05:01 – Gameplay sequence, sound effects, in-game music. All instrumental.
+
+    No vocal music in any of these scenes.
+
+    So, let's format this correctly. Here's how the output should look, following the schema.
+
+    *   `global_summary`: "The video shows VTuber Ninomae Ina'nis streaming a game lobby and gameplay with instrumental background music playing throughout."
+    *   `scenes`:
+
+        *   Scene 1:
+
+            *   `start`: "00:00.000"
+            *   `end`: "02:08.000"
+            *   `description`: "Loading screen with a cute ghost graphic and instrumental background music."
+            *   `contains_vocal_music`: `false`
+
+        *   Scene 2:
+
+            *   `start`: "02:08.000"
+            *   `end`: "04:43.000"
+            *   `description`: "Lobby screen where Ninomae Ina'nis discusses game modes, settings, and team setup with instrumental game music playing."
+            *   `contains_vocal_music`: `false`
+
+        *   Scene 3:
+
+            *   `start`: "04:43.000"
+            *   `end`: "05:01.000"
+            *   `description`: "Gameplay sequence where the player inspects the bomb and items with in-game sound effects."
+            *   `contains_vocal_music`: `false`
+
+        No search queries are needed since there is no vocal music.
+
+    Let's do a final check of all the fields and make sure everything is in place to confirm the result's integrity and compliance with the schema and the instructions. I am confident that it all looks perfect. I'm ready to output the final result now.
+
+
+...
