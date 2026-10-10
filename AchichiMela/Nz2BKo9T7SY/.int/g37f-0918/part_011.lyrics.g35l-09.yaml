@@ -1,0 +1,58 @@
+name: part_011
+total_attempts: 1
+video_duration_ms: 300021
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber streaming a Duolingo English lesson,
+    reading and translating sentences, interacting with chat, and discussing English
+    grammar while light instrumental background music plays.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: The VTuber streams Duolingo English lessons, solving exercises about
+      push-ups and gym weights while chatting with viewers.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Duolingo Video**
+
+    Okay, so I've got this video clip of a VTuber, let's call her Mera/Noja for now, playing Duolingo English. My job is to analyze it, map the scenes, and detect any songs, and of course, I must NOT transcribe or translate any lyrics myself; it's all about web search for the official stuff. First, I need to check the audio *very* carefully.
+
+    Right, the instructions. Make sure I stick to them. "Do NOT transcribe... Do NOT translate... If cannot find official lyrics, null." Got it.
+
+    Alright, let's play the clip and listen. It sounds like there's some background music, maybe game-like or stream BGM. But is it *vocal*? Let's verify. Listening... from 00:00 to 05:00, it's pretty clear: that background music is instrumental, or part of Duolingo or the stream itself. No singing. The VTuber is speaking in Japanese. Let's make absolutely sure. Re-checking... yeah, it's just the VTuber reacting to Duolingo sentences like "Push-ups are hard!" and talking with light BGM in the background. No sung vocals.
+
+    Therefore, because there's no vocal music, the `contains_vocal_music` field will be `false` for everything. No songs at all. That means `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` will all be null.
+
+    Now, let's consider the scenes. Is it just one long scene of Duolingo, or are there distinct segments? The video runs from 00:00 to 05:00. The VTuber is doing Duolingo throughout, so it's really a continuous scene. I could break it up based on UI changes, but for our purposes, since there is no vocal music, it's essentially one scene.
+
+    Now, to format the JSON response. I need: a `global_summary`, and an array of `scenes`. Each scene has `start`, `end`, `description`, `contains_vocal_music`, and all the song-related null fields. Got it. So the format is:
+    ```json
+    {
+      "global_summary": "A VTuber streams herself playing Duolingo English lessons, reacting to sentences and discussing grammar with her chat, accompanied by light background music.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "05:00.000",
+          "description": "The VTuber streams a Duolingo English lesson, reading out sentences, making guesses, and chatting with viewers with background music playing.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Okay, reviewing everything one last time to make sure I am following the instructions and that the output complies with the given constraints and is in the correct format. Everything looks good. Final output incoming.
+
+
+...
