@@ -1,0 +1,87 @@
+name: part_003
+total_attempts: 1
+video_duration_ms: 300006
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a 3D virtual live concert performance by Himemori
+    Luna, where she sings covers of popular anime songs ('Give a reason' and 'Over
+    The Future') on a vibrant stage accompanied by knight dancers.
+  scenes:
+  - start: '00:00.000'
+    end: '02:28.000'
+    description: Himemori Luna performs a virtual live cover of the anime theme song
+      'Give a reason' on a brightly lit stage with backup dancers.
+    contains_vocal_music: true
+    song_title: Give a reason
+    original_artist: 林原めぐみ
+    performer_in_video: 姫森ルーナ
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:28.000'
+    end: '05:00.000'
+    description: Himemori Luna continues her virtual live concert, performing a cover
+      of 'Over The Future' with backup dancers and dynamic stage lighting.
+    contains_vocal_music: true
+    song_title: Over The Future
+    original_artist: 可憐Girl's
+    performer_in_video: 姫森ルーナ
+    original_language: Japanese
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Song Identification**
+
+    Okay, so the user wants me to dissect this video, identify the songs, and track down the official lyrics and translations. A straightforward task, let's get to it. First, I'll meticulously watch the video, noting the timecodes for each scene and listening intently for any vocal tracks.
+
+    Alright, the video starts off with a song, "Give a reason." I'm seeing it's being sung by Himemori Luna, but I need the original artist. Let me pause and scan for any on-screen text. Aha! At the top left, it's clear: "Give a reason." And now, checking the lyrics at 02:16-02:27, the song selection screen displays information. Now, based on the text "Give a reason" I should be able to get the original artist. Yes! Megumi Hayashibara, that's it.
+
+    Moving on, from 02:28 to 05:00, there's another song. This one is titled "Over The Future," as indicated at 02:45. The text on the screen also gives us the songwriting details. Now, I'm thinking, this needs to get me to the original artist. Let me pause again and let me search it. "Over The Future." And now I can see, Karen Girl's!
+
+    Now, the fun part – finding the lyrics. I need to be precise, though. I'm going to formulate search queries for both songs to get the Japanese lyrics and English translations. I have to remember that I'm supposed to use the original composer/artist, not the performer, and no quotation marks.
+
+    Here's the plan:
+
+    1.  "Give a reason" by Megumi Hayashibara
+    2.  "Over The Future" by Karen Girl's
+
+    Therefore, my search queries will be:
+
+    1.  Give a reason 林原めぐみ 歌詞
+    2.  Give a reason Megumi Hayashibara lyrics English
+    3.  Over The Future 可憐Girl's 歌詞
+    4.  Over The Future Karen Girls lyrics English
+
+    Now, I'll call `web_search_langsearch_multi` to execute these queries in parallel and get the data. Time to get to work!
+
+
+
+    Okay, here's my take on those thoughts, framed as my own:
+
+    **Lyric Hunting: Let's Get Specific**
+
+    Right, so we're tasked with finding lyrics. I need to get started on the lyrics for "Give a Reason" and "Over The Future." Naturally, I'll begin by specifying the search terms. I'll focus my queries to yield the most useful results. First, let's get the ball rolling and search for "林原めぐみ 歌詞 Give a Reason" and "可憐Girl's 歌詞 Over The Future" to start. This way, I should be able to get a solid foundation.
+    I anticipate a good deal of readily available information, but just to make sure, let's do a more focused search to ensure that we have the entire Japanese lyrics for both songs. Gotta make sure we cover all bases.
+
+
+
+    **Analysis and Output Preparation for Virtual Live Performance**
+
+    Okay, let's break this down systematically. First, the lyrics. The search results didn't yield the full lyrics for either "Give a reason" or "Over The Future," only snippets, reviews, or unrelated articles. The instructions are clear: if the official lyrics aren't found, the `reference_lyrics_og` and `reference_lyrics_en` fields *must* be set to `null`. No guessing, no approximations, and definitely no transcribing. So, those lyrics fields will be null.
+
+    Next, the video segments and timestamps. I need to be precise. "Give a reason" starts at 00:00 and goes until 02:28. The transition with the star graphic and announcement screen confirms that. Then, "Over The Future" begins at 02:28 and continues to the video's end at 05:00.
+
+    Now, scene verification: From 00:00 to 02:28, it's Himemori Luna singing "Give a reason." From 02:28 to 05:00, she's singing "Over The Future." There are no non-vocal sections. It's strictly two vocal performances.
+
+    I need to output the following JSON schema:
+    *   `global_summary`: I'll describe a virtual live performance by Himemori Luna covering anime theme songs. It's a stage performance with knight backup dancers.
+    *   `scenes`:
+        *   Scene 1: From 00:00 to 02:28, Luna performs "Give a reason." The description will include the anime theme song reference. `contains_vocal_music` is true, and the lyrics fields are null.
+        *   Scene 2: From 02:28 to 05:00, Luna performs "Over The Future." The description will include the cover performance description. `contains_vocal_music` is true, and the lyrics fields are also null.
+
+    The original artist fields should contain original composer/original artist name, not performer and the output should avoid quotation marks.
+
+    I've checked the instructions thoroughly. No manual transcription, lyrics are set to null if not found, and the output is properly structured. Okay, I'm ready to proceed with the output.
+
+
+...
