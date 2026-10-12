@@ -1,0 +1,83 @@
+name: part_029
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber streaming live, reading marshmallow
+    messages and talking about Vocaloid and Project SEKAI with background music playing.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: A VTuber streaming and talking while reading marshmallow messages
+      on screen.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Generating the Report**
+
+    Okay, so the task is to analyze this video and provide a structured report. I need to break down the video into chronological scenes, check for any vocal music, and, crucially, use a web search *only* if I detect a song with vocals. I'm specifically *not* to transcribe or translate anything myself.
+
+    First, let's look at the content. Based on the name provided, it seems like the VTuber is Ao Kunimitsu from Hololive. I need to confirm that and then dive into the audio.
+
+    I've listened to the initial segment from 00:00 to 05:00. While there's background music, I can confidently say that there's no *vocal* music playing. Just talking and instrumental BGM.
+
+    Now, let's verify. I have to make absolutely certain, since the instructions are very specific.
+
+    I reread the instructions. "DO NOT attempt to manually transcribe... Your ONLY source... web search tool." Got it. Scenes. Vocal music. Song details – all null if no song.
+
+    Checking the video from 00:00 to 04:59. Ao-kun is talking, reading marshmallows, so no vocals. So, `contains_vocal_music` will be `false` for the entire video (or, at least, the portion I've analyzed so far).
+
+    Okay, let's create the scene description. The video runs about 04:59.
+
+    Scene 1:
+
+    *   Start: 00:00.000
+    *   End: 04:59.000 (or the end of the video)
+    *   Description: VTuber Ao Kunimitsu streaming, reading marshmallows and talking about various topics including Vocaloid and Project SEKAI.
+    *   `contains_vocal_music`: `false`
+    *   `song_title`: `null`
+    *   `original_artist`: `null`
+    *   `performer_in_video`: `null`
+    *   `original_language`: `null`
+    *   `reference_lyrics_og`: `null`
+    *   `reference_lyrics_en`: `null`
+
+    I'll do a quick search on the VTuber just to check the accuracy of the description. And that should be it.
+
+
+
+    **Analyzing the VTuber Stream Segment**
+
+    Okay, so this video features a VTuber, but it's not a music video; it's a talking stream. I need to make sure the `final_result` output is accurate based on that. Since there's no vocal music, `contains_vocal_music` has to be `false`. That means all the song metadata fields – `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` – must be set to `null`.
+
+    Now, I'll structure the `final_result` output carefully. Based on the analysis of the first 5 minutes, it's a single, continuous scene. I'm going to set it to this format:
+
+    ```json
+    {
+      "global_summary": "The video features a VTuber streaming live, reading marshmallow messages and chatting about Vocaloid and Project SEKAI with background music playing.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "04:59.000",
+          "description": "A VTuber streaming and talking while reading marshmallow messages on screen.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    I've reviewed the 0-5 minute portion, looking for any other scenes or segments that might contain vocal music. It's just a talking stream the whole time, a marshmallow Q&A with the VTuber. No vocals are present in this timeframe. Now I'm ready to call the `final_result` tool with this structure.
+
+
+...

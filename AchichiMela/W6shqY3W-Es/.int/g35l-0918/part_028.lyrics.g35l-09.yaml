@@ -1,0 +1,55 @@
+name: part_028
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber livestreaming and interacting with viewers
+    by reading marshmallow messages, sharing thoughts, and discussing topics including
+    their early encounters with Vocaloid music.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: The virtual character reads viewer marshmallow submissions, chatting
+      and reacting to comments with expressive animations and dialogue.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the Video Content**
+
+    Okay, so I'm diving into this video. The prompt is clear: I need to identify any songs mentioned or performed and then grab the official lyrics. First thing, let's establish the VTuber's identity. Okay, based on the chat, it's `@aohiuluhimela` – got it. Now, the main task: are there any songs?
+
+    I start by listening carefully and looking for any singing, even snippets. I reach the critical timestamp, around 03:25, and there's a mention. She says "テルヤワールド" ("Tell Your World") by kz (livetune). Great! But… is she *singing* it, or just *mentioning* it? Nope, it's just a response to a question about her first encounter with Vocaloid.
+
+    Okay, let's keep listening through the rest of the clip to confirm. Nothing else pops up. So, she discusses "Tell Your World" and the conversation continues. She mentions it. I need to make sure I'm following the instructions of "detect ALL vocal songs *playing*", "playing" = musical performance/playback. So it seems she is just talking and answering questions.
+
+    Wait, the instructions require a search for "ALL vocal songs playing". But… is it a vocal song performance? The video is a talking stream over BGM. No actual singing! The prompt specifically requires the identification of "vocal music," and there isn't any in this video. There is BGM, but that's not what I'm looking for.
+
+    I'm starting to think `contains_vocal_music` is going to be false here.
+
+    Let's do a final review. Okay, she's talking throughout the video, and there are NO vocal music performances. I must verify this is true and that there is no singing (or other performance). No song is played or sung. The video is entirely a conversation reading marshmallows.
+
+    Alright, I think I'm solid on this. Given the "detect ALL vocal songs playing" instruction, I'm confident in setting `contains_vocal_music: false`. There aren't any. Although the VTuber mentions "Tell Your World," I can confirm there is no musical vocal music in this video.
+
+    Now, let's structure the scenes correctly based on the talking clip video to create one or a few clean scenes, from the video start (00:00:000) to the video end, around 05:00.
+
+    I've got the data I need, so let's prepare the output.
+
+
+
+    **Final Assessment: No Vocal Music Detected**
+
+    Okay, here's the deal. I've processed the video clip, and while it's interesting, there's no actual musical performance happening. The VTuber is purely talking – answering questions, mentioning Vocaloid, even name-dropping "Tell Your World," but there's no singing, no instrumental performance, nothing that fits the definition of vocal music in this context. Therefore, the `contains_vocal_music` flag has to be `false`. That means all those song metadata fields, the lyrics – all of that goes straight to null. It's a non-issue in this case, but it is important to be accurate.
+
+    My global summary is straightforward: it's a livestream of a VTuber engaging with viewers. We're looking at a virtual character reading messages, having a chat, and reflecting on some related topics such as their first encounter with Vocaloid.
+
+    The scene breakdown is really just one continuous segment from the start to minute 5, the VTuber just talking.
+
+    So, let's call `default_api:final_result`.
+
+
+...
