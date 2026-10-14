@@ -1,0 +1,93 @@
+name: part_009
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber streaming an English learning app session,
+    where she listens to audio prompts, translates sentences, discusses English grammar
+    with chat, and works through exercises about throwing and kicking balls. No vocal
+    music or songs are performed throughout the video.
+  scenes:
+  - start: '00:00.000'
+    end: '01:30.000'
+    description: The VTuber works on listening and translation exercises in the English
+      learning app, reading and translating sentences such as 'Don't kick that ball!'
+      and 'Don't throw the ball in the house.'
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:30.000'
+    end: '03:30.000'
+    description: The VTuber interacts with chat, discussing English grammar nuances
+      (such as the use of 'the' vs 'a' and word choice) while continuing translation
+      exercises involving animal subjects and throwing balls.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:30.000'
+    end: '05:00.000'
+    description: The VTuber talks about sports context (baseball vs. basketball) regarding
+      distance in sentences and successfully completes another translation prompt
+      about throwing a ball.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the "Noja English" VTuber Stream**
+
+    Alright, let's break this down. My goal is to analyze this video and provide a structured scene breakdown, specifically identifying any instances of vocal music. First, I need to get a clear picture of the video's content. It's a VTuber, let's call her Noja, streaming a "のじゃEnglish" session, essentially a language learning app. She's working through English exercises – listening, translating, typing, and speaking. My immediate focus is, *is there any actual vocal music?*
+
+    I've examined the initial five minutes (00:00 - 05:00) of the video, paying close attention to any possible songs. It seems pretty clear. The audio primarily consists of Noja's speech, the app's sound effects, and generated voice lines from the exercises themselves. Think "Max, don't kick that ball!" kind of stuff. It's all text-to-speech or app audio, definitely not musical performances. Just to be absolutely certain, I've checked again, and yes, there is no actual song or vocal music present.
+
+    Now, let's verify the constraints. If there's no music, `contains_vocal_music` needs to be `false` for every scene, and all those music-related fields like `song_title`, `original_artist`, etc., should be `null`. That's straightforward.
+
+    Next, it's about structuring the scene breakdown. We can treat the whole thing as one continuous scene of the stream, or we can break it down, which is often a more useful approach. Let's look at the timestamps:
+
+    *   00:00 - 01:00: Listening/translation exercises ("Don't kick that ball!", "Don't throw the ball in the house").
+    *   01:00 - 02:20: Chatting about grammar, translating, reviewing chat comments.
+    *   02:20 - 03:30: Doing the bear exercise ("They can't throw a ball very far").
+    *   03:30 - 05:00: Discussing baseball vs basketball, doing the next sentence ("I can't throw...").
+
+    Based on the timestamps, I think three scenes seem logical. I'm confident there's absolutely no vocal music present across the entire video. So, `contains_vocal_music` remains `false`, and all music-related fields stay `null`.
+
+    Finally, according to the `final_result` schema, the plan is to output a `global_summary` and a list of `scenes`. The `global_summary` will succinctly describe the stream's overall content.
+
+    My breakdown would look like this:
+
+    **Scene 1:**
+
+    *   Start: "00:00.000"
+    *   End: "01:30.000"
+    *   Description: "The VTuber completes listening and translation exercises on an English learning app, translating sentences about kicking and throwing balls."
+    *   `contains_vocal_music`: false
+
+    **Scene 2:**
+
+    *   Start: "01:30.000"
+    *   End: "03:30.000"
+    *   Description: "The VTuber discusses English grammar rules and chat comments while continuing translation exercises about throwing balls."
+    *   `contains_vocal_music`: false
+
+    **Scene 3:**
+
+    *   Start: "03:30.000"
+    *   End: "05:00.000"
+    *   Description: "The VTuber chats about sports contexts in English grammar and proceeds to the next translation sentence."
+    *   `contains_vocal_music`: false
+
+    I've double-checked the timestamps, ensuring the scenes cover the whole video without gaps. Now I just need to call `final_result` to get the output JSON.
+
+
+...

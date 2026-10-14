@@ -1,0 +1,91 @@
+name: part_018
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: A VTuber streams herself playing an English learning lesson on a
+    language app (Duolingo), solving translation exercises, interacting with chat,
+    and successfully completing the lesson with celebratory reactions.
+  scenes:
+  - start: '00:00.000'
+    end: '03:32.000'
+    description: The VTuber plays through an English learning lesson, reading questions,
+      translating sentences, and working through grammar puzzles.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:32.000'
+    end: '04:59.999'
+    description: The lesson is completed successfully, and the VTuber celebrates,
+      reviews her level progression, and chats with viewers.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Video**
+
+    Okay, let's break this down. First, I need to analyze this video clip, which features a VTuber, Aoi Chihime (or Aoi Noji - I should note both names), playing a Duolingo English learning game. The initial focus is on identifying any vocal music within the provided timestamp. I'll thoroughly check for any sung songs during the video.
+
+    After watching, from 00:00 to 04:00+, I can confirm there are no vocal music, only speech, game sounds, UI effects, and background instrumental music. I'll need to double-check, though, I always do. The same holds true for the remainder of the clip. No vocal music detected.
+
+    Now, I'll need to create a complete scene mapping of the video from the very beginning. Let's start mapping the clip to the exact end timestamp, 04:59.999 (I'll confirm the final frame/subtitle timestamp to be sure).
+
+    Based on what's happening on screen, the video can logically be broken into two main scenes:
+
+    *   Scene 1: 00:00.000 - 03:32.000: This is the core of the video, where the VTuber is actively playing the Duolingo English lesson, working on translation exercises, etc.
+    *   Scene 2: 03:32.000 - 04:59.999: This scene covers the lesson completion, any level-up screens, chat interactions, and the outro.
+
+    Just to be absolutely certain, let's revisit, once more, to confirm no vocal music at any point in the video. Still no vocal music.
+
+    Now, let's build the JSON output. I'll need to structure the output precisely according to the instructions and schema: a `global_summary`, and a list of `scenes`, each with `start`, `end`, `description`, `contains_vocal_music`, and all the song-related fields (which will be `null` since there's no music).
+
+    I'll quickly verify all the timestamps: Scene 1: 00:00.000 to 03:32.000, Scene 2: 03:32.000 to 04:59.999.
+
+    Let's do a final review of the required `final_result` tool call format. I'll need:
+
+    ```json
+    {
+      "global_summary": "A VTuber is streaming herself playing an English learning app (Duolingo), solving translation exercises, interacting with chat, and successfully completing the lesson.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "03:32.000",
+          "description": "The VTuber plays through an English learning lesson on Duolingo, reading questions, arranging sentences, and solving grammar puzzles.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "03:32.000",
+          "end": "04:59.999",
+          "description": "The lesson is successfully completed, and the VTuber celebrates, checks her level progression, and chats with viewers on screen.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Okay, the structure looks good. Now, double-checking for requirements: chronological, non-overlapping scenes, the whole video covered, and no vocal music – so those song-related fields are all `null`. And finally, a valid tool call `default_api:final_result`.
+
+    Everything is set. Let's call `final_result`.
+
+
+...
