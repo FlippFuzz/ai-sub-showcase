@@ -1,0 +1,69 @@
+name: part_027
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video shows a VTuber playing a multiplayer game and chatting
+    with friends in the lobby, with no vocal music or songs playing throughout.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: The VTuber plays a platformer/driving game, loses the round, transitions
+      to the lobby, and chats lively with friends about game schedules and future
+      gaming sessions.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Video**
+
+    Okay, here's the breakdown. The user wants me to analyze this video, find any vocal songs, and provide lyrics if possible. Right, so let's get to it. First, I'll watch and listen. It's a VTuber streaming a game, likely a multiplayer one ("The Broken Ones" or something similar; there's a reference to "KING OF THE LOSERS!"). There's speech, game sounds, and what sounds like background music or chatter. The crucial question: is there actual *vocal* music—a song with lyrics?
+
+    I started by examining the first five minutes. It's gameplay, commentary, and lobby chat. No musical performance or obvious sung song, so I needed to be sure. I listened closely again throughout the clip. From the sounds of it, it is a game stream.
+
+    Specifically:
+    -   0:00-0:30: Game sounds, player voicing confusion.
+    -   0:30-0:46: "KING OF THE LOSERS!", laughing, lobby loading.
+    -   0:46-5:00: Lobby chat discussing gaming, future plans, friends.
+
+    I'm hearing no vocal music; it's just gameplay and chatter. I double-checked for any background music, but there's no prominent vocal song playing. I can confidently set `contains_vocal_music` to `false`.
+
+    Here's how I'm structuring the scene breakdown:
+
+    *   **Scene 1: 00:00.000 to 05:00.000** - Gameplay and lobby chat with a VTuber and friends. They play a driving/platformer game and chat, no vocal songs are present.
+
+    Now, to make sure I'm hitting the brief, I'll run through the criteria:
+
+    *   No vocal music -> `contains_vocal_music: false`, song metadata should be null.
+    *   The overall summary needs to cover the video content.
+
+    So, I'll prepare a JSON response:
+
+    ```json
+    {
+      "global_summary": "The video features a VTuber playing a multiplayer game and chatting with friends in the lobby, with no vocal music present.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "05:00.000",
+          "description": "A VTuber plays a platformer/driving game, loses, goes to the lobby, and chats with friends about upcoming game sessions and schedules.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Since no songs were detected, I don't need to do any web searches. It's a pretty straightforward analysis. I can call `final_result`.
+
+
+...

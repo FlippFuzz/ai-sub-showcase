@@ -1,0 +1,66 @@
+name: part_023
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: VTubers are playing a cooperative indie horror game, navigating
+    dark corridors, managing inventory items, pushing carts, and evading various monsters
+    while communicating in Japanese. No vocal music is played during the video.
+  scenes:
+  - start: '00:00.000'
+    end: '02:30.000'
+    description: The VTubers explore a dark dungeon-like area with flashlights, discussing
+      item locations, encountering a robot monster, and managing their inventory in
+      a cart.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '02:30.000'
+    end: '05:00.000'
+    description: The players navigate further through corridors and rooms, dodging
+      monsters, pushing carts, and checking their radar to find extraction points
+      and items.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Constructing the Output**
+
+    Okay, so the user wants me to really dig into this video and extract some specific information. First, I need to methodically break down the video into scenes, identify any vocal music, and pull lyrics if I find some. Let's get to it.
+
+    First, I need to *watch* the video. The description tells me it's VTubers playing a co-op horror indie game – probably something like *Content Warning* or similar, given the description of the gameplay elements. Monsters, flashlights, stamina, money… I get the picture.
+
+    Alright, the video's playing. Now, the critical question: is there any actual vocal music in the background? Let's give the audio a *very* close listen. I'm listening for distinct songs, not just ambient background stuff. So far, the audio consists of game sounds, VTubers chatting and screaming in Japanese. There is no music with singing, just the chaos of gameplay. I'm focusing on the first five minutes (00:00 to 05:00) to check this comprehensively. No luck. And it doesn't seem like the video contains any music at all.
+
+    Double-checking: I can confirm, there's absolutely no music. Just game commentary and sound effects. This means: `contains_vocal_music` is going to be `false` for every scene. Consequently, all the song-related fields: `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` are definitely going to be `null` – not applicable, in this case.
+
+    Next, I need to structure the video into scenes. Even though there's no music, dividing the video makes sense. So, let's look for logical scene changes based on actions and/or the VTubers' location. For now, it seems like the gameplay is continuous (00:00 - 05:00) with a single scene, or can be broken down into a few chronological sections.
+
+    The main idea is to structure the output using the `final_result` tool schema. It will have a `global_summary`, which will be, for now: "VTubers are playing a cooperative horror indie game (Content Warning), exploring dark corridors, collecting items, avoiding monsters, and navigating with flashlights and a radar map while chatting in Japanese."
+
+    And the `scenes` field will contain the individual scenes. I'm going to set it like this, or split it up, based on the video:
+
+    *   Scene 1: 00:00.000 to 05:00.000
+
+    I need to make sure I'm adhering to the instructions:
+
+    *   `contains_vocal_music`: *false*
+    *   `song_title`: *null*
+    *   `original_artist`: *null*
+    *   `performer_in_video`: *null*
+    *   `original_language`: *null*
+    *   `reference_lyrics_og`: *null*
+    *   `reference_lyrics_en`: *null*
+
+    Alright, I've got all the information. Let's call `default_api:final_result` and construct the JSON output with all this data!
+
+
+...
