@@ -1,0 +1,65 @@
+name: part_012
+total_attempts: 1
+video_duration_ms: 298081
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber playing GeoGuessr, exploring various
+    locations across Japan and providing commentary over instrumental background music.
+    There are no vocal songs playing in the video.
+  scenes:
+  - start: '00:00.000'
+    end: '04:57.854'
+    description: Continuous GeoGuessr gameplay featuring a VTuber avatar in the bottom
+      left corner navigating Japanese street views and maps while speaking commentary
+      with instrumental background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the GeoGuessr Video: A Vocal Music Deep Dive**
+
+    Okay, so I need to break down this video of someone playing GeoGuessr, specifically looking for vocal music and grabbing the lyrics if any are found. Let's get started.
+
+    First things first: I'm going to watch and listen closely. I've got a good ear, so I'll be able to tell if there are any vocals in the background music. The video is of a VTuber playing GeoGuessr. My initial scan confirms there *is* background music (BGM) playing from 00:00 to 04:57. Okay, let me make sure: I'm looking *very* carefully for any sung vocals in that BGM. Sometimes it can be faint, but I know this type of game play uses lots of Lofi or instrumental background music.
+
+    Alright, after careful listening, it appears to be instrumental; it's light, acoustic, or lo-fi beats—definitely no sung vocals. The only audio with spoken words is the VTuber's commentary. So there are no identifiable songs or singing in the background.
+
+    Just to be absolutely sure, I'm going to revisit the prompt. I need to make sure I am doing precisely what I'm told: "detect ALL vocal songs... and use your available search tool..." So, if there are *no* vocal songs, then the `contains_vocal_music` field has to be `false`, and all those song metadata/lyrics fields need to be `null`. Right, got it.
+
+    Okay, now let's divide this video into its scenes. It's a continuous GeoGuessr gameplay session, so I think one scene that covers the whole video is sufficient, or a few based on visual/context changes. I'll describe it:
+    - 00:00 - 04:57: It's all just the same gameplay with the VTuber in the bottom left, providing commentary.
+
+    I'll structure the output according to the `final_result` schema:
+    ```json
+    {
+      "global_summary": "The video shows a VTuber playing GeoGuessr, navigating through different locations in Japan while speaking commentary over instrumental background music.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "04:57.000",
+          "description": "GeoGuessr gameplay featuring a VTuber avatar providing commentary and navigating maps with instrumental background music playing.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    Now, let's double-check everything:
+    - No transcription of spoken speech; just a description of the scene.
+    - `contains_vocal_music` is correctly `false`.
+    - All song fields are properly `null` because no vocal music was detected.
+
+    Okay, everything looks good. Ready to move on.
+
+
+...

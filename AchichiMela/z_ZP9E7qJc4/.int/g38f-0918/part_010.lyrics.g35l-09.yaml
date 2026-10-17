@@ -1,0 +1,65 @@
+name: part_010
+total_attempts: 1
+video_duration_ms: 299781
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber playing GeoGuessr on the Japan map,
+    providing commentary and making geographical guesses while instrumental background
+    music plays throughout. There are no vocal songs with sung lyrics in the clip.
+  scenes:
+  - start: '00:00.000'
+    end: '03:08.700'
+    description: The VTuber plays the first round of GeoGuessr in Japan, navigating
+      street views and making map guesses while talking with instrumental background
+      music playing.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '03:08.700'
+    end: '05:00.000'
+    description: The VTuber reviews scores, adjusts settings, and starts a new round
+      of GeoGuessr with commentary over instrumental background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video and Vocal Music Detection**
+
+    Okay, so I've got this video of a VTuber playing GeoGuessr, specifically focused on Japan. My task is to go through the video, break it down chronologically, and critically *listen* for any vocal music – any songs with lyrics. I need to use the search tool to find the official lyrics for these songs and indicate if there are any. If I can't find them, the lyric field needs to be null.
+
+    Alright, first things first, let's watch (or listen to) this video. It's clear from the start that the VTuber is providing commentary, explaining their guesses and reasoning. Now, to the audio – is there any vocal music?
+
+    Let's carefully segment the audio and listen for sung vocals.
+
+    At the start, from 00:00 to 05:00, there's background music playing. It sounds like light, upbeat music, the kind you might expect in a game or a cute stream. I need to be *sure* this isn't vocal.
+
+    I've listened closely to the first five minutes and confirmed it's instrumental background music. No vocals, no lyrics.
+
+    Let's verify again and make sure that this holds true for the rest of the video.
+
+    I've checked the rest of the video and the VTuber is still talking and the music playing is still instrumental BGM, so there aren't any sung vocals anywhere.
+
+    Now, let me double-check the instructions. Just to be completely clear. Right, the key is to *detect ALL* vocal songs and find lyrics. If I can't find them, it's null. And, if there's no vocal music, then the field `contains_vocal_music` is set to false.
+
+    Okay, let's do a final review to make sure I haven't missed anything. I've listened to the video one more time. The VTuber is narrating, and the music is just instrumental.
+
+    Since there's no vocal music, I'll need to structure the output correctly. It's a GeoGuessr video.
+
+    I'll create a `global_summary`: a VTuber plays GeoGuessr focusing on Japan maps, making guesses while providing commentary against instrumental background music.
+
+    Since there's no vocal music, `contains_vocal_music` will be false for all scenes. I can split the video into two logical scenes based on the rounds of gameplay:
+    *   Scene 1: 00:00.000 to 03:08.000 - Gameplay round 1 (Japan map) with VTuber commentary and instrumental background music.
+    *   Scene 2: 03:08.000 to 05:00.000 - Gameplay round 2 setup and continuation with commentary and instrumental background music.
+
+    Both scenes will have `contains_vocal_music`: false. Now, let's format that into the required JSON structure.
+
+
+...
