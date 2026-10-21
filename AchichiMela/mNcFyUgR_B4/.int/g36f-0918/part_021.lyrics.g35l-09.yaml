@@ -1,0 +1,47 @@
+name: part_021
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber streaming and chatting in Japanese about
+    rhythm games, sensory perception, and musical instruments, with chat comments
+    displayed on a wooden board. No vocal music or songs are played throughout the
+    clip.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: The VTuber streams and talks about rhythm games and auditory vs.
+      visual perception while chat comments scroll on a wooden board.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of VTuber Stream Segment**
+
+    Okay, so the task is to break down this VTuber video of `@aoichichimeia` (or similar, like Aoichichi) into scenes, identify any vocal music, and retrieve lyrics. Right, let's start by actually watching and analyzing the content. First, I'm checking the initial five-minute segment (00:00-05:00) to understand what's happening. I need to be diligent about detecting *any* vocal songs, whether background music or singing. I'm listening closely, carefully examining the audio, even checking the chat for any clues.
+
+    Hmm, after a close listen, it seems to be solely talking. There's a stream of chat comments on a wooden board. No discernible background music with vocals, just the VTuber's voice. I'm verifying this: no music at any point in this section. To be absolutely sure, I'm reviewing the entire 0-5 minute duration, noting the context; it's a discussion about rhythm games, perception, instruments, etc. Still no music. I'm confirming that `contains_vocal_music` should be `false` for the whole video.
+
+    Now, let's cross-reference the instructions again: "detect ALL vocal songs playing, and use your available search tool to find the official lyrics for every single song." If no songs are present, that logic dictates that `contains_vocal_music` will be false and music-related fields will be null. I'm double-checking, listening again... it's just speech. The video's duration, based on the transcript, ends around 04:59.000 or 05:00.000, so I'm using 04:59.000.
+
+    Alright, time to construct the scene information:
+
+    *   **Start:** 00:00.000
+    *   **End:** 04:59.000
+    *   **Description:** VTuber streaming and talking about rhythm games, perception, and music instruments while chat comments scroll on a wooden board.
+    *   **Contains vocal music:** false
+    *   **Song title:** null
+    *   **Original artist:** null
+    *   **Performer in video:** null
+    *   **Original language:** null
+    *   **Reference lyrics og:** null
+    *   **Reference lyrics en:** null
+
+    Just for due diligence, I'll run a quick search, just to be absolutely certain there are no hidden songs. Nope, still just speech. I'm now making sure the final JSON structure adheres to the required fields, namely `global_summary` and the `scenes` array, making sure the latter includes all the relevant scene object fields I outlined above. Since there's no music, all song-related fields will be `null`. Now I'm ready to submit the results.
+
+
+...
