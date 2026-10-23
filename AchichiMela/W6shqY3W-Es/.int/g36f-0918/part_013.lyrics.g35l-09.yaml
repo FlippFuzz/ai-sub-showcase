@@ -1,0 +1,47 @@
+name: part_013
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: A VTuber streams and reads marshmallow questions from viewers, chatting
+    about various topics including horror music, ASMR, and previous broadcasts, with
+    light instrumental background music playing throughout. There are no vocal musical
+    performances in this video segment.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: The VTuber is streaming, reading marshmallow questions from fans
+      on screen, and chatting cheerfully about horror songs, ASMR voices, and stream
+      greetings.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    Okay, here's the breakdown of my analysis, presented as my own thought process:
+
+    **Analysis of the VTuber Video Clip**
+
+    Alright, the user wants me to analyze this video clip, and it looks like my job is to identify any vocal music within it, and find the lyrics. Let's dig in. First things first: it's a VTuber – let's see, the name tag reads "飴宮なずな" (Amamiya Nazuna?) or something similar. Her stream title has something about marshmallows.
+
+    Now, the instructions are clear: *detect ALL vocal songs playing*. So, I need to listen closely. Is there any actual *vocal* music here? Let's give it a listen from the start to around the end.
+
+    Okay, from the initial look, it seems like she's primarily talking, answering fan questions ("marshmallows"), laughing, and chatting about things like horror songs and ASMR. I can hear some background music, a soft BGM, but is anyone actually singing a song with vocals? I'll re-check the audio, just to be absolutely sure.
+
+    Nope. The VTuber is just *talking*. She mentions songs, like "Stay Steady" by Cö shu Nie and "Fox Room", but she's not *performing* or *singing* any of them. It's all conversation.
+
+    Just to be completely thorough, I'll scan the entire video. I need to be 100% certain there isn't a single vocal segment anywhere. Let's verify, just to be sure... watching the full clip... no, just talking and some background music.
+
+    Alright, the instructions say that if no songs are present, I need to set the fields to null. Given that there's *no* vocal music, it's pretty clear that `contains_vocal_music` should be `false` for everything, and all the song metadata fields, should be null.
+
+    Let's do a quick re-check from the user's timestamps: 00:00 to 05:00+, and no, still just the VTuber talking and giggling. No songs performed.
+
+    Okay, now to structure the response. The `final_result` schema wants a `global_summary` and `scenes`. The `global_summary` can be something like: "A VTuber streams and reads marshmallow questions from fans, chatting about various topics including horror music, ASMR, and past streams, with instrumental background music playing throughout." For `scenes`, it'll be a single scene spanning the entire video length, from 00:00 to the approximate end timestamp, which is likely 05:00+, the same as the final timestamps from the prompt. We'll set the scene accordingly.
+
+    Now, let's prepare the JSON response.
+
+
+...

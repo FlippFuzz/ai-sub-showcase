@@ -1,0 +1,35 @@
+name: part_007
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a VTuber streaming and answering questions from
+    viewers via Marshmallow (Q&A prompt service), discussing topics such as their
+    past lives, favorite Gundam series, and VTuber experiences. There is no vocal
+    music performed in the video.
+  scenes:
+  - start: '00:00.000'
+    end: '05:00.000'
+    description: The VTuber streams live, reading and answering viewer questions (Marshmallows)
+      regarding personal history, Gundam anime preferences, and streaming experiences,
+      accompanied by light background instrumental music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **My Analysis of the VTuber Clip**
+
+    Okay, so I've got this video clip of a VTuber, Mera, answering questions – "marshmallows" as they're calling it. My immediate task is to figure out if there's any vocal music playing. Let's do a deep dive.
+
+    First, I need to verify: is there any singing, any vocal music at all? The video description mentions background music, and I remember it's just a VTuber talking the whole time. Time to focus on the audio. After carefully listening to the clip, there *is* background music, but it's instrumental. No vocals. No singing. So, I need to confirm: does the clip contain any songs being sung? Nope, the VTuber is just talking ("でさ、考えるのがいいのかなって思うのじゃ…"). Vocal music is definitely absent. Therefore, for this scene, `contains_vocal_music` has to be `false`.
+
+    Now, let's verify across the video (00:00 to approximately 05:00, or whatever the actual timestamp is.) It's just Mera-chan talking and reading viewer questions. No singing at any point. Confirmed. So, that means `contains_vocal_music` is `false`. And because there is no music, all those music-specific fields – `song_title`, `original_artist`, `reference_lyrics_og`, and `reference_lyrics_en` – will all be `null` or a default/null value.
+
+    Alright, let's structure this into a scene breakdown, keeping in mind the schema. Since there's no vocal music, it's just one scene describing the entire video. I'll make it a single scene from 00:00 to the end of the clip (around 04:59). Then I need to confirm the schema requirements again: no songs, so no details need to be populated. The key is just the description and that `contains_vocal_music` = false, along with all the song-related values being `null`. That's the core of the work, let's format this correctly now.
+
+
+...
