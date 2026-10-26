@@ -1,0 +1,37 @@
+name: part_004
+total_attempts: 1
+video_duration_ms: 300008
+lyrics_prompt_version: 9
+response:
+  global_summary: The video features a virtual YouTuber engaged in a live streaming
+    commentary session playing GeoGuessr, discussing various tips and regional characteristics
+    to memorize (such as utility poles, manholes, flora, mountain ranges, house styles,
+    etc.) accompanied by light instrumental background music with no sung vocals.
+  scenes:
+  - start: '00:00.000'
+    end: '04:59.000'
+    description: The virtual YouTuber discusses strategies and items to memorize for
+      GeoGuessr, pointing to a notes overlay on the left while light instrumental
+      background music plays.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analysis of the VTuber Video: No Vocal Music Detected**
+
+    Okay, here's the breakdown. My task is to analyze this video, identify any vocal songs, and extract lyrics if found. Immediately, I need to start by listening to the audio. The video's about a VTuber – let's see, it's a blue-haired, horned character. I need to make sure I know who it is, but it's not critical right now. The main focus is the music. So, I'll examine the audio from the start (00:00) to the end (around 04:59).
+
+    I'm hearing a gentle, repetitive BGM, a kind of looping chiptune or cute game-like tune playing in the background. But wait – does *that* count as "vocal music"? The instructions clearly say to detect *ALL* vocal songs. Now, looking back at the instructions, I have a specific parameter `contains_vocal_music`. The prompt defines it as "True if the scene contains active music with sung vocals, False otherwise." That BGM, as pleasant as it is, has no vocals. The VTuber is *talking*, providing commentary, chatting, and playing GeoGuessr. There are no sung vocals *anywhere* in this clip. I'm going to double-check that, just to be absolutely certain. Nope. 100% talking with instrumental BGM.
+
+    Therefore, because there's no vocal music, `contains_vocal_music` will be `false` for this whole video. That means I don't need to search for any lyrics. All the song-related fields: `song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, and `reference_lyrics_en` should be `null`.
+
+    Now, about breaking down the video into scenes. Generally, I'd look for visual changes or content shifts. However, this appears to be a continuous talking segment, with the VTuber discussing GeoGuessr tips and memorization strategies. There's a notepad visible, so it's a constant stream of information. I'll treat the entire video as a single scene, or maybe a few short ones to better describe the overall discussion.
+
+    Okay, let's review the required format: I need `global_summary` and `scenes`. Each scene has a start/end time, description, boolean for vocal music, and null values for any song-related fields. Let's make sure the start is 00:00.000 and the end is around 04:59.000, that's what the last timestamp appears to be. I am ready to construct the JSON response using `default_api:final_result` - based on the information I have obtained.
+
+
+...
