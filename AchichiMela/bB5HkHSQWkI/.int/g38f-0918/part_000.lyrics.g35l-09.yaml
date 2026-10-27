@@ -1,0 +1,111 @@
+name: part_000
+total_attempts: 1
+video_duration_ms: 302608
+lyrics_prompt_version: 9
+response:
+  global_summary: The video opens with a retro-themed animated loading screen featuring
+    chiptune background music and cute character graphics, followed by a Minecraft
+    gameplay session where virtual streamers participate in a hide-and-seek event
+    and converse via voice chat.
+  scenes:
+  - start: '00:00.000'
+    end: '01:13.000'
+    description: Animated retro-style stream loading screen with pixel/window aesthetics,
+      cute character animations, and chiptune background music.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  - start: '01:13.000'
+    end: '05:02.327'
+    description: Minecraft gameplay session where virtual streamers engage in a hide-and-seek
+      event, communicating via voice chat while it rains in the game world.
+    contains_vocal_music: false
+    song_title: null
+    original_artist: null
+    performer_in_video: null
+    original_language: null
+    reference_lyrics_og: null
+    reference_lyrics_en: null
+  thoughts: |+
+    **Analyzing the Video Clip**
+
+    Okay, let's dive into this video clip. First things first: I need a detailed analysis, breaking down the scenes, identifying any vocal music present, and ideally, tracking down the official lyrics using web searches.
+
+    Let's start by watching and listening. From the initial impression (00:00 to 01:13), it's definitely got an upbeat, anime/VTuber style intro feel. I'm picking up on some music, definitely pop-oriented, and it *sounds* like there are vocals. Let's focus on this section – 00:00 to 01:13. Yep, there it is! A clear pop song – something along the lines of "のじゃのじゃ" or similar VTuber intro music, perhaps BGM, or a theme song. Now, I need to figure out *what* song this actually is.
+
+    My first thought is to use a web search or some other song identification method. But wait, let's see if the screen displays any helpful text first. Let me check the video for lyrics or on-screen text like "のじゃのじゃ！" "ホロライブアイドル", etc. Is this a specific song by a VTuber? I need to ID the artist or song title.
+
+    Okay, let's search for "のじゃのじゃ" or "ホロライブ" + "のじゃ" to see what comes up. Or, perhaps information may be available later in the video, let's quickly check the rest of the clip:
+
+    From 01:14 onwards, the video seems to transition into a Minecraft stream featuring VTubers. (ReGLOSS? Hololive? Or some derivative VTubers? Let's check the overlay text...) Okay, the overlay says "ホロライブ" or something similar? The logos and on-screen text will tell the tale. Let's make sure I'm using that information!
+
+    Okay, back to the intro from 00:00 to 01:13. Let's focus on the intro song! It's a full vocal song, no doubt about it!
+
+    Alright, it's lyric-hunting time. Time for some search queries to find those official lyrics.
+
+
+
+    **Analyzing the Intro Music**
+
+    Okay, let's dissect this intro music, specifically the segment from the very beginning, 00:00 to 01:13. My initial instinct is to give it a listen, and perhaps even search for the lyrics. I think I heard something like "よろひくなのじゃ！！" – or maybe it's just close? My expert intuition suggests this might point me in the right direction. Before I go too deep, I should check the video banner. It often has clues. Ah! It says "ホロライブ隠れんぼ" / "ホロライブアイグラ". That might be it. Now, my next step is clear. I'll search for "ホロライブ隠れんぼ" – or possibly the song name if it's explicitly mentioned in the video itself. And, of course, I'll run a precise search using the intro lyrics I thought I heard. That should narrow it down quickly.
+
+
+
+    **Analysis of the Video's Audio Content**
+
+    Okay, let's break this down systematically. First, I need to determine if there's any recognized, copyrighted vocal music in this video. The intro video has me initially checking from 00:00 to 01:13. It's a chiptune-style instrumental with some vocal samples or chops—I hear "のじゃのじゃ," which I gather is a character's catchphrase, or something along those lines, common in VTuber clips, perhaps part of a custom fan song, or stream BGM. But there's *no* full song with actual, sung lyrics there.
+
+    I'm double-checking for any sung lyrics in that 00:00-01:13 range. Nope, just the instrumental intro and the repeated vocal chops. Then, from 01:14 onwards, it transitions to Minecraft gameplay with VTubers chatting—speaking voices, game audio, rain effects, the usual. No vocal songs during that Minecraft segment either, just speech and game sounds.
+
+    To be absolutely sure, I'm doing a complete review of the video, from start to finish. The retro/cyber intro has chiptune music, the vocal sample, but *no* actual song lyrics. The Minecraft section (01:14-05:02) has VTubers talking and playing, but still no songs.
+
+    Therefore, since there's no vocal music, the `contains_vocal_music` flag is definitely `false` for every scene. I need to be exact here, so I'm verifying that the instructions are followed: "detect ALL vocal songs playing, and use your available search tool to find the official lyrics for every single song." Since there are no vocal songs, I have to set `contains_vocal_music` to `false`, and the song metadata fields (`song_title`, `original_artist`, `performer_in_video`, `original_language`, `reference_lyrics_og`, `reference_lyrics_en`) to `null`.
+
+    Now, I'm dividing the video into logical scenes.
+
+    *   **Scene 1:** 00:00.000 - 01:13.000. It's a retro-styled animated loading screen featuring a blue-haired virtual character, windows, and the chiptune background music. `Contains vocal music: false`.
+    *   **Scene 2:** 01:13.000 - 05:02.327 (end of the video). This is the Minecraft gameplay session where the virtual streamers play hide-and-seek, talking via voice chat in the game world, and we hear the rain. `Contains vocal music: false`.
+
+    I'm confirming the exact end timestamp. The last frame is at around 05:01-05:02, so I'm setting the end to 05:02.327 for precision.
+
+    I'm double-checking the required JSON structure for the final output:
+
+    ```json
+    {
+      "global_summary": "The video starts with a retro-styled animated loading screen with chiptune background music, followed by a Minecraft gameplay recording of virtual YouTubers playing hide-and-seek and chatting.",
+      "scenes": [
+        {
+          "start": "00:00.000",
+          "end": "01:13.000",
+          "description": "Animated retro-style loading screen with windows, cute character graphics, and chiptune background music.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        },
+        {
+          "start": "01:13.000",
+          "end": "05:02.327",
+          "description": "Minecraft gameplay session featuring virtual streamers in a hide-and-seek event, communicating via voice chat amidst in-game rain and environmental sounds.",
+          "contains_vocal_music": false,
+          "song_title": null,
+          "original_artist": null,
+          "performer_in_video": null,
+          "original_language": null,
+          "reference_lyrics_og": null,
+          "reference_lyrics_en": null
+        }
+      ]
+    }
+    ```
+
+    I've verified all the constraints and rules: no manual transcription or translation, correct time formatting (MM:
+
+...
