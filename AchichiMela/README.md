@@ -27,3 +27,4 @@
 | 2026-10-03 | [【8番出口】怖いの苦手なのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/KNZDbpsAnB8) | [Browse](./v/KNZDbpsAnB8) |
 | 2026-09-30 | [【GeoGuessr】なぜか場所特定が得意なのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/z_ZP9E7qJc4) | [Browse](./v/z_ZP9E7qJc4) |
 | 2026-09-30 | [【空気読み。】人外が人間社会で生きるということ。【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/jo0r-Jq12a0) | [Browse](./v/jo0r-Jq12a0) |
+| Unknown | [🔰鬼畜ゲー「Jump King」初心者大会直前練習のじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/67vqn8Hyw3I) | [Browse](./v/67vqn8Hyw3I) |
