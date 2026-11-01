@@ -3,6 +3,7 @@
 | Date (JST) | Title | Subtitles |
 | :--- | :--- | :--- |
 | 2026-10-31 | [UNDEAD covered by 熱千めら](https://youtu.be/pm4Vck0LCqE) | [Browse](./v/pm4Vck0LCqE) |
+| 2026-10-31 | [【40万人耐久?】初コメ大歓迎◎コメント拾いまくるのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/JW3o2zk4f0U) | [Browse](./v/JW3o2zk4f0U) |
 | 2026-10-30 | [初心者は1時間で「Jump King」どこまで登れるか…？！ 【ホロライブ/熱千めら】](https://youtu.be/_3_gYnsYquE) | [Browse](./v/_3_gYnsYquE) |
 | 2026-10-30 | [初対面なのに二人とも様子が…好きな電柱ありますか？【ホロライブ/AZKi/熱千めら】](https://youtu.be/4LQhvVZ2zWo) | [Browse](./v/4LQhvVZ2zWo) |
 | 2026-10-27 | [電柱ソムリエの一歩も動かないGeoGuessr【ホロライブ/熱千めら】](https://youtu.be/0PgUff6IQ-Y) | [Browse](./v/0PgUff6IQ-Y) |
