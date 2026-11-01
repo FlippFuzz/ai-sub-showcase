@@ -2,6 +2,7 @@
 
 | Date (JST) | Title | Subtitles |
 | :--- | :--- | :--- |
+| 2026-11-01 | [チラズの異変探しホラー「新幹線０号」をかっこよくプレイのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/oIgWCd0kIZc) | [Browse](./v/oIgWCd0kIZc) |
 | 2026-10-31 | [UNDEAD covered by 熱千めら](https://youtu.be/pm4Vck0LCqE) | [Browse](./v/pm4Vck0LCqE) |
 | 2026-10-31 | [【40万人耐久?】初コメ大歓迎◎コメント拾いまくるのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/JW3o2zk4f0U) | [Browse](./v/JW3o2zk4f0U) |
 | 2026-10-30 | [初心者は1時間で「Jump King」どこまで登れるか…？！ 【ホロライブ/熱千めら】](https://youtu.be/_3_gYnsYquE) | [Browse](./v/_3_gYnsYquE) |
