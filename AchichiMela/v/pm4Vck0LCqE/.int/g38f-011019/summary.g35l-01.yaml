@@ -1,0 +1,90 @@
+name: summary
+total_attempts: 0
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is 'UNDEAD covered by 熱千めら'.
+video_duration_ms: 184588
+summary_prompt_version: 1
+response:
+  overall_summary: This video is a vocal cover music video of the song 'UNDEAD' originally
+    by YOASOBI, performed by Hololive VTuber Achichi Mela (熱千めら). Featuring dynamic
+    pixel art, stylized typography, and vibrant visual effects, the music video showcases
+    Achichi Mela's vocals and distinctive character aesthetic as a salamander firefighter.
+  chapters:
+  - start: 00:00
+    end: 03:00
+    title: UNDEAD (Music Video Cover)
+    description: Full music video performance of the song 'UNDEAD' covered by Achichi
+      Mela, featuring kinetic typography, pixel art animation, and visual transformations.
+    song_title: UNDEAD
+    song_artist: YOASOBI
+  - start: 03:00
+    end: 03:04
+    title: Credits
+    description: Ending credits displaying production staff including illustration,
+      movie production, mix, and pixel art contributors.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Achichi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / ASOBI☆MAWARI-TAI!
+    persona_lore: A 415-year-old salamander firefighter alive since the Edo period
+      (born April 16, 1611). The 'good fortune' representative of the Hololive unit
+      ASOBI☆MAWARI-TAI!.
+    speech_patterns_or_ticks: 'Uses first-person pronoun ''わし'' (washi) and ends sentences
+      with ''~のじゃ'' (no ja). Catchphrase: ''火の用心じゃ〜！''.'
+    visual_cues: Blue and black split-dyed braided hair, horn-like hair ornaments,
+      blue haori jacket marked with '無炎息炎', and red eyes.
+  domain_glossary:
+  - term: アソビ☆まわり隊！
+    meaning: ASOBI☆MAWARI-TAI!, the Hololive unit that Achichi Mela belongs to.
+  - term: 火の用心じゃ〜！
+    meaning: Achichi Mela's signature greeting and catchphrase meaning 'Beware of
+      fire!'.
+  - term: サラマンダー
+    meaning: Salamander, the mythical fire-dwelling creature and species of Achichi
+      Mela.
+  thoughts:
+  - |-
+    **Initial Assessment of Video 'UNDEAD covered by 熱千めら'**
+
+    Okay, so I need to get started on analyzing this video, `video_1.webm`. It's a bit over three minutes long, specifically 184.541 seconds. The user's provided context – that it's from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel and titled "UNDEAD covered by 熱千めら" – is definitely useful.
+
+    My immediate step is to get a handle on the content. I'll load the video, but I need to do it smartly. Let's start by using `google:load_video` with `include_asr=True`. That way I can get the automatic speech recognition (ASR) data. I should also grab a few frames. That will give me a visual cue of the video's contents, to get me going.
+  - |-
+    Okay, here's my thought process regarding this video analysis:
+
+    **Analyzing Video Frames**
+
+    Alright, I need to get a grip on the visual aspects of this video. My initial thought is to examine the frames to understand the visual style – is it a certain art direction, music video details, any noteworthy illustrations, what are the credits looking like? Given the details, I need to get a low framerate view to see the essence. Let's call the `google:load_video` function, and I'll specify to include the frames, which is critical for my assessment. I'm thinking of sampling the frames at, say, 0.5 or 1 FPS initially. The video is 184.5 seconds long, so I'll adjust the sampling to achieve a representative overview, not bogging down the system, while getting enough detail for this analysis. Let's start with 1 or 0.5 to keep things manageable and see if that is enough. Then I can adjust, based on this initial glance.
+  - |-
+    Okay, here's my thought process on this:
+
+    **Identifying the Song and Relevant Information**
+
+    Alright, let's get to work. First, I need to pinpoint the song in question. I'm going to start with a hunch and assume it's "UNDEAD." However, "UNDEAD" is a fairly common title, so I'll need to figure out which version is being referenced. It could be YOASOBI, or something from DECO*27... or someone else entirely. Let's dig deeper and get this right. I need to make sure I identify the original artist.
+
+    Also, I've got "熱千めら (Achiki Mela)" in mind, which is a VTuber. I'll need to search for information about her as well.
+
+    I'll use `default_api:tinyfish_search_multi` to handle the search. Specifically, I'll search for:
+
+    *   The original artist associated with the song "UNDEAD." I'll refine this. Is it YOASOBI or DECO*27? Or another artist? I'll need to confirm the writer.
+    *   "熱千めら (Achiki Mela)," the VTuber, so that I have information available to me.
+  - |-
+    **My Assessment of Achichi Mela & "UNDEAD"**
+
+    Okay, excellent! I've got a solid grasp on Achichi Mela (熱千めら), the Hololive VTuber from ASOBI☆MAWARI-TAI!. The background info is comprehensive: Salamander firefighter by species, and that enthusiastic "火の用心じゃ〜！" (Hi no yojin ja~!) greeting. Definitely helps that she's using the `-のじゃ` (`~no ja`) sentence ending and `わし` (`washi`) as her pronoun. That kind of detail paints a picture.
+
+    Now, about that song cover: `UNDEAD` by YOASOBI. Hold on, let's just quickly verify that the attribution is accurate. Ah, yes, confirmed via search results, the cover is by Achichi Mela, with the original by YOASOBI.
+
+    Just to be absolutely certain, let's double-check the song title itself, and confirm the original title is "UNDEAD" and not in Japanese - and yes, the original is officially in English, linked to the Monogatari series theme song, Beastars, and others. Alright, good. We're on solid ground.
+  - |-
+    **JSON Structure: Analyzing and Building the Output**
+
+    Okay, let's break this down systematically. My initial thought is to make sure I am following the instructions to the letter, particularly around song titles and artists. Since the official commercial release uses Latin script for both "UNDEAD" and "YOASOBI", I'm sticking with that for the `song_title` and `song_artist` fields. The video itself is straightforward. It's a cover music video that's easily divided into a performance chapter and an end credits chapter. I'll represent that as two separate chapters in the JSON structure.
+
+    The chapter descriptions will accurately represent the video content, noting Achichi Mela's performance and the visual elements. Since the instructions state to use the native script when possible, and `YOASOBI` is a Japanese artist, I must decide whether to provide the native script of `YOASOBI` (ヨアソビ) instead of the Latin script. However, the instructions say to use the Latin script if the official release uses the Latin script, which it does in this case. So `YOASOBI` it is. The same reasoning applies to the song title, `UNDEAD`. I'm confident I'm applying the rules here.
+
+    I've carefully reviewed all the provided entities and domain glossary items. The entity for Achichi Mela is rich with detail, so I'll create detailed entries for them. And for the glossary, I'll include the relevant Japanese terms and their meanings. Finally, I'll structure the data into a valid JSON format. I must make sure that all strings are correctly enclosed and there are no extra control characters or comments. I'll adhere to the schema and formatting requirements meticulously. I'll keep the output clean and concise.
+
+    Here's the JSON structure:

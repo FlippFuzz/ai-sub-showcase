@@ -1,0 +1,738 @@
+name: part_000
+total_attempts: 0
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is 'UNDEAD covered by 熱千めら'.
+video_duration_ms: 184588
+segment_offset_ms: 0
+global_summary:
+  overall_summary: This video is a vocal cover music video of the song 'UNDEAD' originally
+    by YOASOBI, performed by Hololive VTuber Achichi Mela (熱千めら). Featuring dynamic
+    pixel art, stylized typography, and vibrant visual effects, the music video showcases
+    Achichi Mela's vocals and distinctive character aesthetic as a salamander firefighter.
+  chapters:
+  - start: 00:00
+    end: 03:00
+    title: UNDEAD (Music Video Cover)
+    description: Full music video performance of the song 'UNDEAD' covered by Achichi
+      Mela, featuring kinetic typography, pixel art animation, and visual transformations.
+    song_title: UNDEAD
+    song_artist: YOASOBI
+  - start: 03:00
+    end: 03:04
+    title: Credits
+    description: Ending credits displaying production staff including illustration,
+      movie production, mix, and pixel art contributors.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Achichi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / ASOBI☆MAWARI-TAI!
+    persona_lore: A 415-year-old salamander firefighter alive since the Edo period
+      (born April 16, 1611). The 'good fortune' representative of the Hololive unit
+      ASOBI☆MAWARI-TAI!.
+    speech_patterns_or_ticks: 'Uses first-person pronoun ''わし'' (washi) and ends sentences
+      with ''~のじゃ'' (no ja). Catchphrase: ''火の用心じゃ〜！''.'
+    visual_cues: Blue and black split-dyed braided hair, horn-like hair ornaments,
+      blue haori jacket marked with '無炎息炎', and red eyes.
+  domain_glossary:
+  - term: アソビ☆まわり隊！
+    meaning: ASOBI☆MAWARI-TAI!, the Hololive unit that Achichi Mela belongs to.
+  - term: 火の用心じゃ〜！
+    meaning: Achichi Mela's signature greeting and catchphrase meaning 'Beware of
+      fire!'.
+  - term: サラマンダー
+    meaning: Salamander, the mythical fire-dwelling creature and species of Achichi
+      Mela.
+  thoughts:
+  - |-
+    **Initial Assessment of Video 'UNDEAD covered by 熱千めら'**
+
+    Okay, so I need to get started on analyzing this video, `video_1.webm`. It's a bit over three minutes long, specifically 184.541 seconds. The user's provided context – that it's from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel and titled "UNDEAD covered by 熱千めら" – is definitely useful.
+
+    My immediate step is to get a handle on the content. I'll load the video, but I need to do it smartly. Let's start by using `google:load_video` with `include_asr=True`. That way I can get the automatic speech recognition (ASR) data. I should also grab a few frames. That will give me a visual cue of the video's contents, to get me going.
+  - |-
+    Okay, here's my thought process regarding this video analysis:
+
+    **Analyzing Video Frames**
+
+    Alright, I need to get a grip on the visual aspects of this video. My initial thought is to examine the frames to understand the visual style – is it a certain art direction, music video details, any noteworthy illustrations, what are the credits looking like? Given the details, I need to get a low framerate view to see the essence. Let's call the `google:load_video` function, and I'll specify to include the frames, which is critical for my assessment. I'm thinking of sampling the frames at, say, 0.5 or 1 FPS initially. The video is 184.5 seconds long, so I'll adjust the sampling to achieve a representative overview, not bogging down the system, while getting enough detail for this analysis. Let's start with 1 or 0.5 to keep things manageable and see if that is enough. Then I can adjust, based on this initial glance.
+  - |-
+    Okay, here's my thought process on this:
+
+    **Identifying the Song and Relevant Information**
+
+    Alright, let's get to work. First, I need to pinpoint the song in question. I'm going to start with a hunch and assume it's "UNDEAD." However, "UNDEAD" is a fairly common title, so I'll need to figure out which version is being referenced. It could be YOASOBI, or something from DECO*27... or someone else entirely. Let's dig deeper and get this right. I need to make sure I identify the original artist.
+
+    Also, I've got "熱千めら (Achiki Mela)" in mind, which is a VTuber. I'll need to search for information about her as well.
+
+    I'll use `default_api:tinyfish_search_multi` to handle the search. Specifically, I'll search for:
+
+    *   The original artist associated with the song "UNDEAD." I'll refine this. Is it YOASOBI or DECO*27? Or another artist? I'll need to confirm the writer.
+    *   "熱千めら (Achiki Mela)," the VTuber, so that I have information available to me.
+  - |-
+    **My Assessment of Achichi Mela & "UNDEAD"**
+
+    Okay, excellent! I've got a solid grasp on Achichi Mela (熱千めら), the Hololive VTuber from ASOBI☆MAWARI-TAI!. The background info is comprehensive: Salamander firefighter by species, and that enthusiastic "火の用心じゃ〜！" (Hi no yojin ja~!) greeting. Definitely helps that she's using the `-のじゃ` (`~no ja`) sentence ending and `わし` (`washi`) as her pronoun. That kind of detail paints a picture.
+
+    Now, about that song cover: `UNDEAD` by YOASOBI. Hold on, let's just quickly verify that the attribution is accurate. Ah, yes, confirmed via search results, the cover is by Achichi Mela, with the original by YOASOBI.
+
+    Just to be absolutely certain, let's double-check the song title itself, and confirm the original title is "UNDEAD" and not in Japanese - and yes, the original is officially in English, linked to the Monogatari series theme song, Beastars, and others. Alright, good. We're on solid ground.
+  - |-
+    **JSON Structure: Analyzing and Building the Output**
+
+    Okay, let's break this down systematically. My initial thought is to make sure I am following the instructions to the letter, particularly around song titles and artists. Since the official commercial release uses Latin script for both "UNDEAD" and "YOASOBI", I'm sticking with that for the `song_title` and `song_artist` fields. The video itself is straightforward. It's a cover music video that's easily divided into a performance chapter and an end credits chapter. I'll represent that as two separate chapters in the JSON structure.
+
+    The chapter descriptions will accurately represent the video content, noting Achichi Mela's performance and the visual elements. Since the instructions state to use the native script when possible, and `YOASOBI` is a Japanese artist, I must decide whether to provide the native script of `YOASOBI` (ヨアソビ) instead of the Latin script. However, the instructions say to use the Latin script if the official release uses the Latin script, which it does in this case. So `YOASOBI` it is. The same reasoning applies to the song title, `UNDEAD`. I'm confident I'm applying the rules here.
+
+    I've carefully reviewed all the provided entities and domain glossary items. The entity for Achichi Mela is rich with detail, so I'll create detailed entries for them. And for the glossary, I'll include the relevant Japanese terms and their meanings. Finally, I'll structure the data into a valid JSON format. I must make sure that all strings are correctly enclosed and there are no extra control characters or comments. I'll adhere to the schema and formatting requirements meticulously. I'll keep the output clean and concise.
+
+    Here's the JSON structure:
+response:
+  subtitles:
+  - start: '00:00.680'
+    end: '00:01.050'
+    original: Unhappy?
+    english: Unhappy?
+  - start: '00:01.050'
+    end: '00:02.150'
+    original: 悩める人の子よ
+    english: O, troubled children of mankind,
+  - start: '00:02.150'
+    end: '00:03.350'
+    original: 人成らざる者も
+    english: and those who are not human as well,
+  - start: '00:03.350'
+    end: '00:05.450'
+    original: Be happy! 弛まず目指せよ
+    english: Be happy! Steadfastly aim for it,
+  - start: '00:05.450'
+    end: '00:06.650'
+    original: アンデッド！生きているんだね
+    english: Undead! You're truly alive, aren't you?
+  - start: '00:06.700'
+    end: '00:08.850'
+    original: 目を逸らした過去も
+    english: Both the past you averted your eyes from,
+  - start: '00:08.850'
+    end: '00:10.950'
+    original: 退屈な未来も
+    english: and the tedious future,
+  - start: '00:10.950'
+    end: '00:12.150'
+    original: カウンセリング
+    english: be it counseling,
+  - start: '00:12.150'
+    end: '00:14.300'
+    original: 古今東西 ピースピース
+    english: or peace signs across all times and places!
+  - start: '00:14.350'
+    end: '00:15.350'
+    original: Unhappy?
+    english: Unhappy?
+  - start: '00:15.850'
+    end: '00:16.850'
+    original: Unlucky?
+    english: Unlucky?
+  - start: '00:17.000'
+    end: '00:18.000'
+    original: Be happy!
+    english: Be happy!
+  - start: '00:18.600'
+    end: '00:20.500'
+    original: アンデッド！アンデッド！
+    english: Undead! Undead!
+  - start: '00:26.500'
+    end: '00:27.500'
+    original: ねえ ねえ ねえ
+    english: Hey, hey, hey...
+  - start: '00:27.500'
+    end: '00:30.900'
+    original: 何だかどうして戦ってるようなそんな気がするの
+    english: Why does it feel like I'm somehow in a battle?
+  - start: '00:30.900'
+    end: '00:33.700'
+    original: 触れられない 触れたくもない
+    english: Unable to touch, or even wanting to touch,
+  - start: '00:33.700'
+    end: '00:37.350'
+    original: もうとっくに死んでる 透明な亡霊と対決
+    english: Confronting a transparent ghost that died long, long ago,
+  - start: '00:37.350'
+    end: '00:40.000'
+    original: 幼気で痛い記憶の奥
+    english: deep within tender yet aching memories.
+  - start: '00:40.000'
+    end: '00:42.300'
+    original: 残念？もう居ないのに
+    english: A disappointment? Even though she's no longer here...
+  - start: '00:42.300'
+    end: '00:44.200'
+    original: あれ？そっちが良い？アイロニーね
+    english: Huh? What an irony that it's actually preferred,
+  - start: '00:44.200'
+    end: '00:47.300'
+    original: 透かされているのは現在の自分？
+    english: or is it my present self being seen right through?
+  - start: '00:47.300'
+    end: '00:50.800'
+    original: ナンセンス 消えないレッテル Yes! 要はコンプレックス
+    english: Nonsense, an indelible label—yes, in short, a complex.
+  - start: '00:50.800'
+    end: '00:54.400'
+    original: 取り憑かれているみたい 巻き付いたまま
+    english: It's like I'm possessed, tightly coiled around me,
+  - start: '00:54.400'
+    end: '00:58.900'
+    original: まだ離れない 在りし日の自分
+    english: still unable to let go of who I used to be.
+  - start: '00:58.900'
+    end: '01:00.400'
+    original: アンデッド！
+    english: Undead!
+  - start: '01:00.400'
+    end: '01:03.200'
+    original: 死んじゃいない お前とお前の連鎖
+    english: You're not dead—a chain reaction between you and yourself.
+  - start: '01:03.200'
+    end: '01:07.000'
+    original: 生きていることとは変わり続けることだ
+    english: To be alive is to keep changing.
+  - start: '01:07.000'
+    end: '01:10.900'
+    original: 不幸に甘んじて 満足するなよ
+    english: Don't settle for misfortune and be satisfied!
+  - start: '01:10.900'
+    end: '01:13.800'
+    original: 幸せになろうとしないなんて卑怯だ
+    english: Not even trying to find happiness is just cowardly.
+  - start: '01:13.800'
+    end: '01:17.300'
+    original: この世この世は 奇怪奇怪ファンタジー
+    english: This world, this world is a bizarre, strange fantasy.
+  - start: '01:17.300'
+    end: '01:20.500'
+    original: 次は鬼が出るか蛇が出るか
+    english: Will a demon or a serpent appear next?
+  - start: '01:20.500'
+    end: '01:24.000'
+    original: 出会って遭ってやっと始まる物語
+    english: A story that finally begins when we meet and encounter fate.
+  - start: '01:24.000'
+    end: '01:27.400'
+    original: さあ人か化物か 閑話休題 ピースピース
+    english: Come now, human or monster? All aside, peace, peace!
+  - start: '01:27.400'
+    end: '01:30.300'
+    original: Past and future can't change the past
+    english: Past and future can't change the past
+  - start: '01:30.300'
+    end: '01:33.300'
+    original: Past and future, run for the future
+    english: Past and future, run for the future
+  - start: '01:33.300'
+    end: '01:35.300'
+    original: カッ カッ カットイン 何だかどうして
+    english: Cut, cut, cut in—why does it feel like...
+  - start: '01:35.300'
+    end: '01:40.200'
+    original: 未来になんぞ何の希望もない 期待出来ないような気がして
+    english: '...there''s no hope or expectation whatsoever for the future?'
+  - start: '01:40.200'
+    end: '01:44.200'
+    original: もう随分生きている 既視感とテンプレで食傷
+    english: Having lived so long, I'm sick of the déjà vu and clichés,
+  - start: '01:44.200'
+    end: '01:47.400'
+    original: 素敵な出来事の気配もない
+    english: without a trace of any wonderful event.
+  - start: '01:47.400'
+    end: '01:51.300'
+    original: 残念 積んだ経験の因果 形骸化された神話と退屈な進化
+    english: A disappointment? The karma of accumulated experience, hollowed-out myths,
+      and boring evolution.
+  - start: '01:51.300'
+    end: '01:53.900'
+    original: 要は刺激が欲しいんだ 飽きちゃった
+    english: In short, I just want excitement—I got bored,
+  - start: '01:53.900'
+    end: '01:57.400'
+    original: なんて 整っていくガイダンス 増えるコンプライアンス
+    english: as guidance is refined and compliance grows.
+  - start: '01:57.400'
+    end: '02:00.800'
+    original: 蓋されていくみたい 吸い尽くして
+    english: It feels like the lid is closing in—suck it all dry.
+  - start: '02:00.800'
+    end: '02:05.600'
+    original: あれもこれもどれも 同じ味がする
+    english: This, that, and everything else tastes the exact same.
+  - start: '02:05.600'
+    end: '02:07.400'
+    original: アンデッド！
+    english: Undead!
+  - start: '02:07.400'
+    end: '02:10.500'
+    original: 死んじゃいない お前とお前の連鎖
+    english: You're not dead—a chain reaction between you and yourself.
+  - start: '02:10.500'
+    end: '02:14.300'
+    original: 何時の世も過去も未来も現在にあるんだ
+    english: In every era, the past and future both exist in the present!
+  - start: '02:14.300'
+    end: '02:18.800'
+    original: 生きていることを 愚直に果たせよ 目指せハッピーエンド
+    english: Fulfill living with foolish sincerity—aim for a happy ending!
+  - start: '02:18.800'
+    end: '02:20.500'
+    original: アンデッド！
+    english: Undead!
+  - start: '02:20.500'
+    end: '02:23.200'
+    original: 死んじゃいない お前に言っているんだ
+    english: I'm talking to you, the one who isn't dead!
+  - start: '02:23.200'
+    end: '02:26.900'
+    original: 幸せを諦めてしまうな 人で在れ
+    english: Don't give up on happiness—stay human!
+  - start: '02:26.900'
+    end: '02:30.800'
+    original: ただ苦しみに慣れて耐えているだけじゃ
+    english: Just getting used to suffering and enduring it...
+  - start: '02:30.800'
+    end: '02:34.400'
+    original: 死んでいるも同然 屍のアンデッド
+    english: '...is no different from being dead—a corpse-like undead.'
+  - start: '02:34.400'
+    end: '02:36.700'
+    original: 悩める人の子よ
+    english: O, troubled children of mankind,
+  - start: '02:36.700'
+    end: '02:37.800'
+    original: 人成らざる者も
+    english: and those who are not human as well,
+  - start: '02:37.800'
+    end: '02:39.900'
+    original: Be happy! 弛まず目指せよ
+    english: Be happy! Steadfastly aim for it,
+  - start: '02:39.900'
+    end: '02:41.200'
+    original: アンデッド！生きているんだろ
+    english: Undead! You're alive, aren't you?
+  - start: '02:41.200'
+    end: '02:43.300'
+    original: 不幸に浸るも
+    english: Whether wallowing in misfortune,
+  - start: '02:43.300'
+    end: '02:45.700'
+    original: 幸せになるのも そう全部全部お前だ
+    english: or finding happiness, yes, it's all up to you!
+  - start: '02:45.700'
+    end: '02:49.000'
+    original: 古今東西 一切合切 森羅万象 ピースピース
+    english: Across all times and places, absolutely everything in creation, peace,
+      peace!
+  - start: '02:49.000'
+    end: '02:52.000'
+    original: Past and future can't change the past
+    english: Past and future can't change the past
+  - start: '02:52.000'
+    end: '02:55.200'
+    original: Past and future, run for the future
+    english: Past and future, run for the future
+  - start: '02:55.200'
+    end: '02:57.000'
+    original: 人の在る所に
+    english: Wherever humans exist,
+  - start: '02:57.000'
+    end: '02:58.700'
+    original: 何時も憂い事
+    english: there is always sorrow.
+  - start: '02:58.700'
+    end: '03:01.300'
+    original: 生き抜けこの化物ばかりの物語
+    english: Survive this story full of nothing but monsters!
+  thoughts:
+  - |-
+    **Subtitle Refinement: YOASOBI's "UNDEAD" Cover**
+
+    Okay, here's the task: I need to meticulously refine these Achichi Mela subtitles for the "UNDEAD" cover. The key is precision. First, I'm absolutely preserving those timestamps. They are frozen – start and end times are sacred. The number of subtitle blocks must remain identical.
+
+    Now, it's all about accuracy. I'm going to cross-reference every draft line against the official lyrics of "UNDEAD". I've got the mandate: phonetic accuracy, translation polish, lyric fidelity, and strict formatting rules. I need to make sure the phonetic transcriptions are correct, paying close attention to any puns or homophones. I must also ensure the English translation reflects the correct meaning of the Kanji. I need to maintain the flow of the narrative across the lines, while strictly following the MM:SS.mmm format without any sound descriptions.
+
+    I've already started. For the opening lines, I need to fix the draft's transcription of "Be happy! 弛まず目指せよ" and also the "アンデッド！生きているんだね" stanza. I'm double-checking the lyrics: "Be happy! 弛まず目指せよ" is indeed what YOASOBI sings. I need to do the same for the other lines in the stanza. The original lyrics are: `アンデッド！生きているんだね`.
+
+    When I compare the next set of lines, I need to make sure I am updating the transcriptions: `ねえ ねえ ねえ ねえ何だかどうして / 戦ってるようなそんな気がするの`.
+
+    For the parts where the original lyrics are `触れられない 触れたくもない / 過去の自分自分自分自分と`, the draft is showing some deviation. It has the lyrics `どれどれ 過去の自分 / とうに とっくに死んでる透明な亡霊と対決`. I need to ensure that the lyrics match the official lines: `触れられない 触れたくもない / 過去の自分自分自分自分と`. I'll have to rely on the video frames or audio if Achichi Mela is singing differently here, and verify the correct text to update.
+  - |-
+    **My Reasoning on Data Loading**
+
+    Okay, so I'm looking at this data loading configuration, and I see a potential conflict. If `include_frames` is True, then `include_asr` *cannot* be True. That's a fundamental constraint. Either we're getting frames *without* Automatic Speech Recognition (ASR) data, or we're loading ASR data separately. However, the system already has ASR data, transcriptions, and initial search results. I'll load frames. I will load frames from frame 0 up to 40000.
+  - |-
+    {
+      "subs": [
+        {
+          "s": "00:00.680",
+          "e": "00:01.050",
+          "og": "Unhappy?",
+          "en": "Unhappy?"
+        },
+        {
+          "s": "00:01.050",
+          "e": "00:02.150",
+          "og": "悩める人の子よ",
+          "en": "O, troubled children of mankind,"
+        },
+        {
+          "s": "00:02.150",
+          "e": "00:03.350",
+          "og": "人成らざる者も",
+          "en": "and those who are not human as well,"
+        },
+        {
+          "s": "00:03.350",
+          "e": "00:05.450",
+          "og": "Be happy! 弛まず目指せよ",
+          "en": "Be happy! Steadfastly aim for it,"
+        },
+        {
+          "s": "00:05.450",
+          "e": "00:06.650",
+          "og": "アンデッド！生きているんだね",
+          "en": "Undead! You're truly alive, aren't you?"
+        },
+        {
+          "s": "00:06.700",
+          "e": "00:08.850",
+          "og": "目を逸らした過去も",
+          "en": "Both the past you averted your eyes from,"
+        },
+        {
+          "s": "00:08.850",
+          "e": "00:10.950",
+          "og": "退屈な未来も",
+          "en": "and the tedious future,"
+        },
+        {
+          "s": "00:10.950",
+          "e": "00:12.150",
+          "og": "カウンセリング",
+          "en": "be it counseling,"
+        },
+        {
+          "s": "00:12.150",
+          "e": "00:14.300",
+          "og": "古今東西 ピースピース",
+          "en": "or peace signs across all times and places!"
+        },
+        {
+          "s": "00:14.350",
+          "e": "00:15.350",
+          "og": "Unhappy?",
+          "en": "Unhappy?"
+        },
+        {
+          "s": "00:15.850",
+          "e": "00:16.850",
+          "og": "Unlucky?",
+          "en": "Unlucky?"
+        },
+        {
+          "s": "00:17.000",
+          "e": "00:18.000",
+          "og": "Be happy!",
+          "en": "Be happy!"
+        },
+        {
+          "s": "00:18.600",
+          "e": "00:20.500",
+          "og": "アンデッド！アンデッド！",
+          "en": "Undead! Undead!"
+        },
+        {
+          "s": "00:26.500",
+          "e": "00:27.500",
+          "og": "ねえ ねえ ねえ",
+          "en": "Hey, hey, hey..."
+        },
+        {
+          "s": "00:27.500",
+          "e": "00:30.900",
+          "og": "何だかどうして戦ってるようなそんな気がするの",
+          "en": "Why does it feel like I'm somehow in a battle?"
+        },
+        {
+          "s": "00:30.900",
+          "e": "00:33.700",
+          "og": "触れられない 触れたくもない",
+          "en": "Unable to touch, or even wanting
+lyrics_prompt_version: 10
+draft_subtitles:
+- start: '00:00.680'
+  end: '00:01.050'
+  original: Unhappy?
+  english: Unhappy?
+- start: '00:01.050'
+  end: '00:02.150'
+  original: 悩める人の子よ
+  english: O, troubled children of mankind,
+- start: '00:02.150'
+  end: '00:03.350'
+  original: 人ならざる者も
+  english: and those who are not human as well,
+- start: '00:03.350'
+  end: '00:05.450'
+  original: ありのまま生きる目指せよ
+  english: aim to live just as you are,
+- start: '00:05.450'
+  end: '00:06.650'
+  original: 生きているんだろう
+  english: for you are alive, aren't you?
+- start: '00:06.700'
+  end: '00:08.850'
+  original: 目を逸らした過去も
+  english: Both the past you averted your eyes from,
+- start: '00:08.850'
+  end: '00:10.950'
+  original: 退屈な未来も
+  english: and the tedious future,
+- start: '00:10.950'
+  end: '00:12.150'
+  original: やれカウンセリング
+  english: be it counseling,
+- start: '00:12.150'
+  end: '00:14.300'
+  original: やれ古今東西ピースピース
+  english: or peace signs across all times and places!
+- start: '00:14.350'
+  end: '00:15.350'
+  original: Unhappy?
+  english: Unhappy?
+- start: '00:15.850'
+  end: '00:16.850'
+  original: Unlucky?
+  english: Unlucky?
+- start: '00:17.000'
+  end: '00:18.000'
+  original: Be happy?
+  english: Be happy?
+- start: '00:18.600'
+  end: '00:20.500'
+  original: UNDEAD UNDEAD
+  english: UNDEAD, UNDEAD...
+- start: '00:26.500'
+  end: '00:27.500'
+  original: ねえ ねえ ねえ
+  english: Hey, hey, hey...
+- start: '00:27.500'
+  end: '00:30.900'
+  original: 何だかどうして戦ってるようなそんな気がすんの？
+  english: Why does it feel like I'm somehow in a battle?
+- start: '00:30.900'
+  end: '00:33.700'
+  original: どれどれ 過去の自分
+  english: Let's see... is it my past self?
+- start: '00:33.700'
+  end: '00:37.350'
+  original: とうに とっくに死んでる透明な亡霊と対決
+  english: Confronting a transparent ghost that died long, long ago,
+- start: '00:37.350'
+  end: '00:40.000'
+  original: 痛い気配で痛い記憶の奥
+  english: with a painful presence deep inside aching memories.
+- start: '00:40.000'
+  end: '00:42.300'
+  original: 残念？もういないのに
+  english: A disappointment? Even though she's no longer here...
+- start: '00:42.300'
+  end: '00:44.200'
+  original: あれ？そっちが喰いアイロニー
+  english: Huh? What an irony that it's consuming me,
+- start: '00:44.200'
+  end: '00:47.300'
+  original: 蝕まれてるのは今の自分なのに
+  english: even though it's my present self that's being eaten away.
+- start: '00:47.300'
+  end: '00:50.800'
+  original: 消えないレッテル 要はコンプレックス
+  english: An indelible label—in short, a complex.
+- start: '00:50.800'
+  end: '00:54.400'
+  original: 取り憑かれてるみたい 巻き付いたまま
+  english: It's like I'm possessed, tightly coiled around me,
+- start: '00:54.400'
+  end: '00:58.900'
+  original: まだ離れない 在りし日の自分
+  english: still unable to let go of who I used to be.
+- start: '00:58.900'
+  end: '01:00.400'
+  original: UNDEAD
+  english: UNDEAD
+- start: '01:00.400'
+  end: '01:03.200'
+  original: 死んじゃいない お前とお前の連鎖
+  english: You're not dead—a chain reaction between you and yourself.
+- start: '01:03.200'
+  end: '01:07.000'
+  original: 生きていることとは変わり続けることだ
+  english: To be alive is to keep changing.
+- start: '01:07.000'
+  end: '01:10.900'
+  original: 不幸に甘んじて満足するなよ Satisfaction
+  english: Don't settle for misfortune and call it satisfaction!
+- start: '01:10.900'
+  end: '01:13.800'
+  original: 幸せになろうとしないなんて 窮屈だ
+  english: Not even trying to find happiness is just suffocating.
+- start: '01:13.800'
+  end: '01:17.300'
+  original: この世この世は奇怪奇怪ファンタジー
+  english: This world, this world is a bizarre, strange fantasy.
+- start: '01:17.300'
+  end: '01:20.500'
+  original: 次は鬼が出るか蛇が出るか
+  english: Will a demon or a serpent appear next?
+- start: '01:20.500'
+  end: '01:24.000'
+  original: 出逢って遭ってやっと始まる物語
+  english: A story that finally begins when we meet and encounter fate.
+- start: '01:24.000'
+  end: '01:27.400'
+  original: さあ人か化け物か 顔文字かいピースピース
+  english: Come now, human or monster? Or just an emoticon? Peace, peace!
+- start: '01:27.400'
+  end: '01:30.300'
+  original: Past & future... can't change the past...
+  english: Past & future... can't change the past...
+- start: '01:30.300'
+  end: '01:33.300'
+  original: Past & future... run for the future...
+  english: Past & future... run for the future...
+- start: '01:33.300'
+  end: '01:35.300'
+  original: カットイン 何だかどうして
+  english: Cut in—why does it feel like...
+- start: '01:35.300'
+  end: '01:40.200'
+  original: 未来になんぞ何の希望もない 期待も出来ないような気がして
+  english: '...there''s no hope or expectation whatsoever for the future?'
+- start: '01:40.200'
+  end: '01:44.200'
+  original: もう随分生きてる既視感とテンプレで食傷
+  english: Having lived so long, I'm sick of the déjà vu and clichés,
+- start: '01:44.200'
+  end: '01:47.400'
+  original: 素敵な出来事の気配もない
+  english: without a trace of any wonderful event.
+- start: '01:47.400'
+  end: '01:51.300'
+  original: 残念？積んだ経験の因果形骸化された進歩と退屈な進化
+  english: A disappointment? The karma of accumulated experience, hollowed-out progress,
+    and boring evolution.
+- start: '01:51.300'
+  end: '01:53.900'
+  original: 要は刺激が欲しいんだ 飽きちゃった
+  english: In short, I just want excitement—I got bored,
+- start: '01:53.900'
+  end: '01:57.400'
+  original: なんて 整っていくガイダンス 増えるコンプライアンス
+  english: as guidance is refined and compliance grows.
+- start: '01:57.400'
+  end: '02:00.800'
+  original: 蓋されていくみたい 吸い尽くして
+  english: It feels like the lid is closing in—suck it all dry.
+- start: '02:00.800'
+  end: '02:05.600'
+  original: あれも これも どれも同じ味がする
+  english: This, that, and everything else tastes the exact same.
+- start: '02:05.600'
+  end: '02:07.400'
+  original: UNDEAD
+  english: UNDEAD
+- start: '02:07.400'
+  end: '02:10.500'
+  original: 死んじゃいない お前とお前の連鎖
+  english: You're not dead—a chain reaction between you and yourself.
+- start: '02:10.500'
+  end: '02:14.300'
+  original: 何時の世も過去も未来も今にあるんだ
+  english: In every era, the past and future both exist in the present!
+- start: '02:14.300'
+  end: '02:18.800'
+  original: 生きていることを愚直に果たせよ 目指せハッピーエンド
+  english: Fulfill living with foolish sincerity—aim for a happy ending!
+- start: '02:18.800'
+  end: '02:20.500'
+  original: UNDEAD
+  english: UNDEAD
+- start: '02:20.500'
+  end: '02:23.200'
+  original: 死んじゃいない お前に言ってるんだ
+  english: I'm talking to you, the one who isn't dead!
+- start: '02:23.200'
+  end: '02:26.900'
+  original: 幸せを諦めてしまうな 人で在れ
+  english: Don't give up on happiness—stay human!
+- start: '02:26.900'
+  end: '02:30.800'
+  original: ただ苦しみに慣れて耐えているだけじゃ
+  english: Just getting used to suffering and enduring it...
+- start: '02:30.800'
+  end: '02:34.400'
+  original: 死んでるも同然 屍のアンデッド
+  english: '...is no different from being dead—a corpse-like undead.'
+- start: '02:34.400'
+  end: '02:36.700'
+  original: 悩める人の子よ
+  english: O, troubled children of mankind,
+- start: '02:36.700'
+  end: '02:37.800'
+  original: 人ならざる者も
+  english: and those who are not human as well,
+- start: '02:37.800'
+  end: '02:39.900'
+  original: ありのまま生きる目指せよ
+  english: aim to live just as you are,
+- start: '02:39.900'
+  end: '02:41.200'
+  original: 生きているんだろう
+  english: for you are alive, aren't you?
+- start: '02:41.200'
+  end: '02:43.300'
+  original: 不幸に浸るも
+  english: Whether wallowing in misfortune,
+- start: '02:43.300'
+  end: '02:45.700'
+  original: 幸せになるのも そう全部全部お前だ
+  english: or finding happiness, yes, it's all up to you!
+- start: '02:45.700'
+  end: '02:49.000'
+  original: 古今東西一切合切森羅万象 ピースピース
+  english: Across all times and places, absolutely everything in creation, peace,
+    peace!
+- start: '02:49.000'
+  end: '02:52.000'
+  original: Past & future... can't change the past...
+  english: Past & future... can't change the past...
+- start: '02:52.000'
+  end: '02:55.200'
+  original: Past & future... run for the future...
+  english: Past & future... run for the future...
+- start: '02:55.200'
+  end: '02:57.000'
+  original: 人の在る所に
+  english: Wherever humans exist,
+- start: '02:57.000'
+  end: '02:58.700'
+  original: 何時も綺麗事
+  english: there are always platitudes.
+- start: '02:58.700'
+  end: '03:01.300'
+  original: 生き抜けこの化け物ばかりの物語
+  english: Survive this story full of nothing but monsters!
+detected_performances:
+- title: UNDEAD
+  artist: YOASOBI
+  start: 00:00
+  end: 03:01
