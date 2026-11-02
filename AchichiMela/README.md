@@ -15,11 +15,11 @@
 | 2026-10-24 | [既プレイなのに反応が初見すぎる「夜勤事件」【ホロライブ/熱千めら】](https://youtu.be/ZQJkVI2CWq0) | [Browse](./v/ZQJkVI2CWq0) |
 | 2026-10-23 | [【#ホロ鯖かくれんぼ】先輩コラボ解禁なのじゃあああああ！！！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/bB5HkHSQWkI) | [Browse](./v/bB5HkHSQWkI) |
 | 2026-10-21 | [【のじゃEnglish】日本語って…主題ないのじゃ？！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/fDYDxbqHn3o) | [Browse](./v/fDYDxbqHn3o) |
+| 2026-10-20 | [【空気読み。2】無知とは時に卑劣のじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/poERFwoVxxE) | [Browse](./v/poERFwoVxxE) |
 | 2026-10-20 | [【配信OP】インターネット火消しのじゃ～【熱千めら/ホロライブ】](https://youtu.be/_8EFStz9Hcs) | [Browse](./v/_8EFStz9Hcs) |
 | 2026-10-20 | [【マシュマロ雑談】１００個の質問に答えますのじゃ【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/W6shqY3W-Es) | [Browse](./v/W6shqY3W-Es) |
 | 2026-10-20 | [【収益化記念配信リレー】歌いますのじゃ！祝！収益化！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/Ozmk8fKIvVU) | [Browse](./v/Ozmk8fKIvVU) |
 | 2026-10-19 | [【のじゃEnglish】単数と複数の違いのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/nyvtNTotwdw) | [Browse](./v/nyvtNTotwdw) |
-| 2026-10-18 | [【空気読み。2】無知とは時に卑劣のじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/poERFwoVxxE) | [Browse](./v/poERFwoVxxE) |
 | 2026-10-17 | [ホロライブ新人ユニットがホラゲ「R.E.P.O.」で遊ぶのじゃ【アソビ★まわり隊！】](https://youtu.be/xKhbOWNoYN8) | [Browse](./v/xKhbOWNoYN8) |
 | 2026-10-17 | [ホラゲ「8番のりば」が怖すぎて記憶消えたのじゃ【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/nxuUKS_yq44) | [Browse](./v/nxuUKS_yq44) |
 | 2026-10-17 | [【リズム天国】大人気リズムゲームを初見プレイのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/mNcFyUgR_B4) | [Browse](./v/mNcFyUgR_B4) |
