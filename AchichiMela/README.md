@@ -11,6 +11,7 @@
 | 2026-10-28 | [【のじゃEnglish】wouldとcouldの違いのじゃ！(雑談多め)【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/F3z7xeNZJRI) | [Browse](./v/F3z7xeNZJRI) |
 | 2026-10-27 | [電柱ソムリエの一歩も動かないGeoGuessr【ホロライブ/熱千めら】](https://youtu.be/0PgUff6IQ-Y) | [Browse](./v/0PgUff6IQ-Y) |
 | 2026-10-26 | [【タンポポは耐える。】「のじゃ」を取り戻すぽぽ！！！【ホロライブ/熱千めら】](https://youtu.be/g2fCOjojJhQ) | [Browse](./v/g2fCOjojJhQ) |
+| 2026-10-25 | [【一ヶ月記念】お部屋にご招待しちゃいますのじゃ…【ホロライブ/熱千めら】](https://youtu.be/N3z6TI4ED7o) | [Browse](./v/N3z6TI4ED7o) |
 | 2026-10-24 | [既プレイなのに反応が初見すぎる「夜勤事件」【ホロライブ/熱千めら】](https://youtu.be/ZQJkVI2CWq0) | [Browse](./v/ZQJkVI2CWq0) |
 | 2026-10-23 | [【#ホロ鯖かくれんぼ】先輩コラボ解禁なのじゃあああああ！！！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/bB5HkHSQWkI) | [Browse](./v/bB5HkHSQWkI) |
 | 2026-10-21 | [【のじゃEnglish】日本語って…主題ないのじゃ？！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/fDYDxbqHn3o) | [Browse](./v/fDYDxbqHn3o) |
