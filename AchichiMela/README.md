@@ -34,6 +34,7 @@
 | 2026-10-06 | [【#アソビまわり隊歌枠リレー】4人コラボで歌うのじゃ！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/WBgYlpUP0zc) | [Browse](./v/WBgYlpUP0zc) |
 | 2026-10-06 | [【無免許】AI妹 VS のじゃ口調指示厨【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/2Rkz9iBX2HQ) | [Browse](./v/2Rkz9iBX2HQ) |
 | 2026-10-04 | [【インターネット防災訓練】炎上から学ぶのじゃ。【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/enA66OJbYmU) | [Browse](./v/enA66OJbYmU) |
+| 2026-10-04 | [【初配信】火消し開始なのじゃ！！！  #ホロライブ #アソビまわり隊  #熱千めら初配信](https://youtu.be/CEo1T9NzynY) | [Browse](./v/CEo1T9NzynY) |
 | 2026-10-04 | [【のじゃEnglish】 架空の彼女を探していますのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/6dLFYgSqSl0) | [Browse](./v/6dLFYgSqSl0) |
 | 2026-10-03 | [【GeoGuessr】なぜか場所特定が得意なのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/z_ZP9E7qJc4) | [Browse](./v/z_ZP9E7qJc4) |
 | 2026-10-03 | [【歌枠】はじめての歌枠なのじゃ！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/_RP6UbtnO3k) | [Browse](./v/_RP6UbtnO3k) |
