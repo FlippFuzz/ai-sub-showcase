@@ -23,7 +23,7 @@
 | 2026-10-20 | [【収益化記念配信リレー】歌いますのじゃ！祝！収益化！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/Ozmk8fKIvVU) | [Browse](./v/Ozmk8fKIvVU) |
 | 2026-10-20 | [【防災訓練】インターネット・ヒヤリハットをご紹介しますのじゃ【ホロライブ/熱千めら】](https://youtu.be/F53LLDirjFw) | [Browse](./v/F53LLDirjFw) |
 | 2026-10-19 | [【のじゃEnglish】単数と複数の違いのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/nyvtNTotwdw) | [Browse](./v/nyvtNTotwdw) |
-| 2026-10-17 | [【リズム天国】大人気リズムゲームを初見プレイのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/mNcFyUgR_B4) | [Browse](./v/mNcFyUgR_B4) |
+| 2026-10-13 | [【リズム天国】大人気リズムゲームを初見プレイのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/mNcFyUgR_B4) | [Browse](./v/mNcFyUgR_B4) |
 | 2026-10-13 | [Meet Achichi Mela! hololive's Newest Talent's Self-Intro noja!](https://youtu.be/hyIBT46FaE8) | [Browse](./v/hyIBT46FaE8) |
 | 2026-10-13 | [【のじゃEnglish】「a」と「the」の違いについて勉強のじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/Nz2BKo9T7SY) | [Browse](./v/Nz2BKo9T7SY) |
 | 2026-10-13 | [【アソビ大全】「運」の熱千めら VS「知」の宙科そぴあ【ホロライブ】](https://youtu.be/LyPzb9zrjXU) | [Browse](./v/LyPzb9zrjXU) |
