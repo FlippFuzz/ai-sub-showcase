@@ -30,8 +30,8 @@
 | 2026-10-13 | [【SPAGHET】フブキ先輩がパスタを殴るホラゲーをくださったのじゃ【ホロライブ】](https://youtu.be/D29pagC1PEY) | [Browse](./v/D29pagC1PEY) |
 | 2026-10-13 | [【てあカノ】VS共感性羞恥のギャルゲーなのじゃ【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/9OrfCLv9QKY) | [Browse](./v/9OrfCLv9QKY) |
 | 2026-10-10 | [【#アソビまわり隊歌枠リレー】トップバッターなのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/fvBAsGLCq1c) | [Browse](./v/fvBAsGLCq1c) |
-| 2026-10-10 | [【#アソビまわり隊歌枠リレー】4人コラボで歌うのじゃ！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/WBgYlpUP0zc) | [Browse](./v/WBgYlpUP0zc) |
 | 2026-10-10 | [【無免許】AI妹 VS のじゃ口調指示厨【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/2Rkz9iBX2HQ) | [Browse](./v/2Rkz9iBX2HQ) |
+| 2026-10-06 | [【#アソビまわり隊歌枠リレー】4人コラボで歌うのじゃ！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/WBgYlpUP0zc) | [Browse](./v/WBgYlpUP0zc) |
 | 2026-10-03 | [【歌枠】はじめての歌枠なのじゃ！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/_RP6UbtnO3k) | [Browse](./v/_RP6UbtnO3k) |
 | 2026-10-03 | [【8番出口】怖いの苦手なのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/KNZDbpsAnB8) | [Browse](./v/KNZDbpsAnB8) |
 | 2026-09-30 | [【GeoGuessr】なぜか場所特定が得意なのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/z_ZP9E7qJc4) | [Browse](./v/z_ZP9E7qJc4) |
