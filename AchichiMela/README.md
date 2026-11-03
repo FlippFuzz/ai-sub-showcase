@@ -2,6 +2,7 @@
 
 | Date (JST) | Title | Subtitles |
 | :--- | :--- | :--- |
+| 2026-11-03 | [自分の声「のじゃ」だけで動物園を作るゲームのじゃ！【ホロライブ/熱千めら】](https://youtu.be/qZ1GbjDVhjo) | [Browse](./v/qZ1GbjDVhjo) |
 | 2026-11-01 | [チラズの異変探しホラー「新幹線０号」をかっこよくプレイのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/oIgWCd0kIZc) | [Browse](./v/oIgWCd0kIZc) |
 | 2026-10-31 | [UNDEAD covered by 熱千めら](https://youtu.be/pm4Vck0LCqE) | [Browse](./v/pm4Vck0LCqE) |
 | 2026-10-31 | [【40万人耐久?】初コメ大歓迎◎コメント拾いまくるのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/JW3o2zk4f0U) | [Browse](./v/JW3o2zk4f0U) |
