@@ -2,6 +2,7 @@
 
 | Date (JST) | Title | Subtitles |
 | :--- | :--- | :--- |
+| 2026-11-04 | [【のじゃEnglish】everydayとevery dayの違い…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/pc9jj2KhcKs) | [Browse](./v/pc9jj2KhcKs) |
 | 2026-11-03 | [自分の声「のじゃ」だけで動物園を作るゲームのじゃ！【ホロライブ/熱千めら】](https://youtu.be/qZ1GbjDVhjo) | [Browse](./v/qZ1GbjDVhjo) |
 | 2026-11-01 | [チラズの異変探しホラー「新幹線０号」をかっこよくプレイのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/oIgWCd0kIZc) | [Browse](./v/oIgWCd0kIZc) |
 | 2026-10-31 | [UNDEAD covered by 熱千めら](https://youtu.be/pm4Vck0LCqE) | [Browse](./v/pm4Vck0LCqE) |
