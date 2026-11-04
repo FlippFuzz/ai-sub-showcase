@@ -2,6 +2,7 @@
 
 | Date (JST) | Title | Subtitles |
 | :--- | :--- | :--- |
+| 2026-11-02 | [【 3DLIVE 】速報！夏色まつり古神曲ライブ~ktkr(ﾟ∀ﾟ)視聴キボンヌ~【ホロライブ/夏色まつり】](https://flippfuzz.github.io/ai-sub-player/?uploader=NatsuiroMatsuri&v=oMXaXv1q7kw) | [Browse](./v/oMXaXv1q7kw) |
 | 2026-09-30 | [[Onomatopoeia Quiz] How Well Can Hololive's International Members Understand Japanese Onomatopoei...](https://flippfuzz.github.io/ai-sub-player/?uploader=NatsuiroMatsuri&v=XUnKfpL-OuA) | [Browse](./v/XUnKfpL-OuA) |
 | 2025-11-30 | [【 #夏色まつり誕生祭2025 】重大告知あり！アイドル革命進行中！～今日の主役は夢の途中～　【ホロライブ/夏色まつり】](https://flippfuzz.github.io/ai-sub-player/?uploader=NatsuiroMatsuri&v=L-XVS13TRTI) | [Browse](./v/L-XVS13TRTI) |
 | 2025-10-31 | [【3D LIVE】#夏色FullBloom / 夏色まつり誕生ライブ【ホロライブ/夏色まつり】](https://flippfuzz.github.io/ai-sub-player/?uploader=NatsuiroMatsuri&v=pKc5qSSWJQs) | [Browse](./v/pKc5qSSWJQs) |
