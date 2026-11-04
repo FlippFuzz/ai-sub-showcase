@@ -2,4 +2,4 @@
 
 | Date (JST) | Title | Subtitles |
 | :--- | :--- | :--- |
-| 2026-10-10 | [【アソビ★まわり隊！】クイズ！イグノーベル賞【宙科そぴあ/ホロライブ】](https://youtu.be/p7obMZ1KlVE) | [Browse](./v/p7obMZ1KlVE) |
+| 2026-10-10 | [【アソビ★まわり隊！】クイズ！イグノーベル賞【宙科そぴあ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=SorashinaSopia&v=p7obMZ1KlVE) | [Browse](./v/p7obMZ1KlVE) |

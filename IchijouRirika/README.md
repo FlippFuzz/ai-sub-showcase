@@ -2,4 +2,4 @@
 
 | Date (JST) | Title | Subtitles |
 | :--- | :--- | :--- |
-| 2025-10-31 | [【＃一条莉々華生誕祭2025】初の生誕ライブ開幕！！一条莉々華生誕祭ライブ2025【一条莉々華/hololive DEV_IS　ReGLOSS】](https://youtu.be/HB8sU0qsePE) | [Browse](./v/HB8sU0qsePE) |
+| 2025-10-31 | [【＃一条莉々華生誕祭2025】初の生誕ライブ開幕！！一条莉々華生誕祭ライブ2025【一条莉々華/hololive DEV_IS　ReGLOSS】](https://flippfuzz.github.io/ai-sub-player/?uploader=IchijouRirika&v=HB8sU0qsePE) | [Browse](./v/HB8sU0qsePE) |
