@@ -39,6 +39,7 @@
 | 2026-10-04 | [【インターネット防災訓練】炎上から学ぶのじゃ。【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/enA66OJbYmU) | [Browse](./v/enA66OJbYmU) |
 | 2026-10-04 | [【歌枠】はじめての歌枠なのじゃ！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/_RP6UbtnO3k) | [Browse](./v/_RP6UbtnO3k) |
 | 2026-10-04 | [【初配信】火消し開始なのじゃ！！！  #ホロライブ #アソビまわり隊  #熱千めら初配信](https://youtu.be/CEo1T9NzynY) | [Browse](./v/CEo1T9NzynY) |
+| 2026-10-04 | [【自作アニメ】episode 0【ホロライブ/熱千めら】](https://youtu.be/AOYniXn3zZM) | [Browse](./v/AOYniXn3zZM) |
 | 2026-10-04 | [【のじゃEnglish】 架空の彼女を探していますのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/6dLFYgSqSl0) | [Browse](./v/6dLFYgSqSl0) |
 | 2026-10-03 | [【GeoGuessr】なぜか場所特定が得意なのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/z_ZP9E7qJc4) | [Browse](./v/z_ZP9E7qJc4) |
 | 2026-10-03 | [【8番出口】怖いの苦手なのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/KNZDbpsAnB8) | [Browse](./v/KNZDbpsAnB8) |
