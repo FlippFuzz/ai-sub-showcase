@@ -2,6 +2,7 @@
 
 | Date (JST) | Title | Subtitles |
 | :--- | :--- | :--- |
+| 2026-11-04 | [ホロライブの麻雀アプリ「ホロじゃん」を先行プレイのじゃ！【アソビ★まわり隊！/ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=HJGLBGgzldQ) | [Browse](./v/HJGLBGgzldQ) |
 | 2026-11-04 | [【のじゃEnglish】everydayとevery dayの違い…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=pc9jj2KhcKs) | [Browse](./v/pc9jj2KhcKs) |
 | 2026-11-03 | [自分の声「のじゃ」だけで動物園を作るゲームのじゃ！【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=qZ1GbjDVhjo) | [Browse](./v/qZ1GbjDVhjo) |
 | 2026-11-01 | [チラズの異変探しホラー「新幹線０号」をかっこよくプレイのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=oIgWCd0kIZc) | [Browse](./v/oIgWCd0kIZc) |
