@@ -35,10 +35,10 @@
 | 2026-10-06 | [【無免許】AI妹 VS のじゃ口調指示厨【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/2Rkz9iBX2HQ) | [Browse](./v/2Rkz9iBX2HQ) |
 | 2026-10-04 | [【初配信振り返り】ホロライブの新人だけど質問ある？【熱千めら/ホロライブ/アソビ★まわり隊！】](https://youtu.be/mvLjwGCje64) | [Browse](./v/mvLjwGCje64) |
 | 2026-10-04 | [【インターネット防災訓練】炎上から学ぶのじゃ。【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/enA66OJbYmU) | [Browse](./v/enA66OJbYmU) |
+| 2026-10-04 | [【歌枠】はじめての歌枠なのじゃ！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/_RP6UbtnO3k) | [Browse](./v/_RP6UbtnO3k) |
 | 2026-10-04 | [【初配信】火消し開始なのじゃ！！！  #ホロライブ #アソビまわり隊  #熱千めら初配信](https://youtu.be/CEo1T9NzynY) | [Browse](./v/CEo1T9NzynY) |
 | 2026-10-04 | [【のじゃEnglish】 架空の彼女を探していますのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/6dLFYgSqSl0) | [Browse](./v/6dLFYgSqSl0) |
 | 2026-10-03 | [【GeoGuessr】なぜか場所特定が得意なのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/z_ZP9E7qJc4) | [Browse](./v/z_ZP9E7qJc4) |
-| 2026-10-03 | [【歌枠】はじめての歌枠なのじゃ！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/_RP6UbtnO3k) | [Browse](./v/_RP6UbtnO3k) |
 | 2026-10-03 | [【8番出口】怖いの苦手なのじゃ…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/KNZDbpsAnB8) | [Browse](./v/KNZDbpsAnB8) |
 | 2026-10-03 | [#熱千めら デビューPV【アソビ★まわり隊！】](https://youtu.be/HUdqaVqqv7Y) | [Browse](./v/HUdqaVqqv7Y) |
 | 2026-09-30 | [【空気読み。】人外が人間社会で生きるということ。【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/jo0r-Jq12a0) | [Browse](./v/jo0r-Jq12a0) |
