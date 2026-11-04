@@ -34,6 +34,7 @@
 | 2026-10-06 | [【#アソビまわり隊歌枠リレー】トップバッターなのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/fvBAsGLCq1c) | [Browse](./v/fvBAsGLCq1c) |
 | 2026-10-06 | [【#アソビまわり隊歌枠リレー】4人コラボで歌うのじゃ！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/WBgYlpUP0zc) | [Browse](./v/WBgYlpUP0zc) |
 | 2026-10-06 | [【無免許】AI妹 VS のじゃ口調指示厨【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/2Rkz9iBX2HQ) | [Browse](./v/2Rkz9iBX2HQ) |
+| 2026-10-04 | [アソビ★まわり隊！メンバーを紹介するのじゃ！【熱千めら/ホロライブ/アソビ★まわり隊！】](https://youtu.be/oidlBKgCeW8) | [Browse](./v/oidlBKgCeW8) |
 | 2026-10-04 | [【初配信振り返り】ホロライブの新人だけど質問ある？【熱千めら/ホロライブ/アソビ★まわり隊！】](https://youtu.be/mvLjwGCje64) | [Browse](./v/mvLjwGCje64) |
 | 2026-10-04 | [【空気読み。】人外が人間社会で生きるということ。【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/jo0r-Jq12a0) | [Browse](./v/jo0r-Jq12a0) |
 | 2026-10-04 | [【インターネット防災訓練】炎上から学ぶのじゃ。【ホロライブ/アソビ★まわり隊！/熱千めら】](https://youtu.be/enA66OJbYmU) | [Browse](./v/enA66OJbYmU) |
