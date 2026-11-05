@@ -1,12 +1,12 @@
 # アキロゼCh。Vtuber/ホロライブ所属
 
-| Date (JST) | Title | Subtitles |
-| :--- | :--- | :--- |
-| 2026-02-28 | [【 3DLIVE 】#アキロゼ生誕祭2026 ーLife is GAMEー【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=_tBlI-l8WLk) | [Browse](./v/_tBlI-l8WLk) |
-| 2025-10-31 | [【 3DLIVE 】#アキロゼ生誕祭2025 ーYour True Colorsー【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=etiR9Qnqlmc) | [Browse](./v/etiR9Qnqlmc) |
-| 2024-10-31 | [【 #アキロゼ生誕祭2024 】ーFantasia of Bremenー￤3DLIVE【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=pFZiKpoxuvw) | [Browse](./v/pFZiKpoxuvw) |
-| 2023-10-31 | [【  #アキロゼ生誕祭2023 】ーStart your journeyー￤3DLIVE【ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=n-pNnnM2ERs) | [Browse](./v/n-pNnnM2ERs) |
-| 2023-10-31 | [【 #アキロゼ5周年Live 】ーHistoric ROUTE ５ー￤3DLIVE【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=hURqBaVxnSg) | [Browse](./v/hURqBaVxnSg) |
-| 2022-10-31 | [【#アキロゼ4周年LIVE】全編歌ライブ！みんなと歌って踊って3D LIVE 「ROSE of the LAMP」【アキ・ローゼンタール/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=mknggf96fuI) | [Browse](./v/mknggf96fuI) |
-| 2022-10-31 | [【#アキロゼ生誕祭2022】Wonder Shower Musical !!!!【3DLIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=TsRo8VuubSk) | [Browse](./v/TsRo8VuubSk) |
-| 2021-10-31 | [[#AkiRoseBirthday2021] 3D birthday celebration in my first idol costume! [HoloLive/AkiRose]](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=1Ts7X3vtYgQ) | [Browse](./v/1Ts7X3vtYgQ) |
+| Date (JST) | Thumbnail | Title | Best Model |
+| :--- | :---: | :--- | :---: |
+| 2026-02-28 | <a href="https://youtu.be/_tBlI-l8WLk"><img src="https://i.ytimg.com/vi/_tBlI-l8WLk/mqdefault.jpg" width="100" /></a> | [【 3DLIVE 】#アキロゼ生誕祭2026 ーLife is GAMEー【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=_tBlI-l8WLk) | [3.6-flash](./v/_tBlI-l8WLk) |
+| 2025-10-31 | <a href="https://youtu.be/etiR9Qnqlmc"><img src="https://i.ytimg.com/vi/etiR9Qnqlmc/mqdefault.jpg" width="100" /></a> | [【 3DLIVE 】#アキロゼ生誕祭2025 ーYour True Colorsー【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=etiR9Qnqlmc) | [3.5-lite](./v/etiR9Qnqlmc) |
+| 2024-10-31 | <a href="https://youtu.be/pFZiKpoxuvw"><img src="https://i.ytimg.com/vi/pFZiKpoxuvw/mqdefault.jpg" width="100" /></a> | [【 #アキロゼ生誕祭2024 】ーFantasia of Bremenー￤3DLIVE【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=pFZiKpoxuvw) | [3.5-lite](./v/pFZiKpoxuvw) |
+| 2023-10-31 | <a href="https://youtu.be/n-pNnnM2ERs"><img src="https://i.ytimg.com/vi/n-pNnnM2ERs/mqdefault.jpg" width="100" /></a> | [【  #アキロゼ生誕祭2023 】ーStart your journeyー￤3DLIVE【ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=n-pNnnM2ERs) | [3.5-lite](./v/n-pNnnM2ERs) |
+| 2023-10-31 | <a href="https://youtu.be/hURqBaVxnSg"><img src="https://i.ytimg.com/vi/hURqBaVxnSg/mqdefault.jpg" width="100" /></a> | [【 #アキロゼ5周年Live 】ーHistoric ROUTE ５ー￤3DLIVE【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=hURqBaVxnSg) | [3.5-lite](./v/hURqBaVxnSg) |
+| 2022-10-31 | <a href="https://youtu.be/mknggf96fuI"><img src="https://i.ytimg.com/vi/mknggf96fuI/mqdefault.jpg" width="100" /></a> | [【#アキロゼ4周年LIVE】全編歌ライブ！みんなと歌って踊って3D LIVE 「ROSE of the LAMP」【アキ・ローゼンタール/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=mknggf96fuI) | [3.5-lite](./v/mknggf96fuI) |
+| 2022-10-31 | <a href="https://youtu.be/TsRo8VuubSk"><img src="https://i.ytimg.com/vi/TsRo8VuubSk/mqdefault.jpg" width="100" /></a> | [【#アキロゼ生誕祭2022】Wonder Shower Musical !!!!【3DLIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=TsRo8VuubSk) | [3.5-lite](./v/TsRo8VuubSk) |
+| 2021-10-31 | <a href="https://youtu.be/1Ts7X3vtYgQ"><img src="https://i.ytimg.com/vi/1Ts7X3vtYgQ/mqdefault.jpg" width="100" /></a> | [[#AkiRoseBirthday2021] 3D birthday celebration in my first idol costume! [HoloLive/AkiRose]](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=1Ts7X3vtYgQ) | [3.5-lite](./v/1Ts7X3vtYgQ) |

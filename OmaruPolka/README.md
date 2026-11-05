@@ -1,15 +1,15 @@
 # Polka Ch. 尾丸ポルカ
 
-| Date (JST) | Title | Subtitles |
-| :--- | :--- | :--- |
-| 2026-01-31 | [【OmaruPolkaBirthday2026】Glitter of Love \| Birthday 3D Live【hololive】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=zzVcTQOdLZE) | [Browse](./v/zzVcTQOdLZE) |
-| 2025-10-31 | [【#尾丸ポルカ生誕祭2025】PuPPet~ポルカのおもちゃ箱~【尾丸ポルカ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=a4T91LLjjJw) | [Browse](./v/a4T91LLjjJw) |
-| 2024-10-31 | [【3D LIVE】Omaru Poruka Birthday Concert2024!! POL ROCK FES!!!!!](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=W25VvoWh5zY) | [Browse](./v/W25VvoWh5zY) |
-| 2024-10-31 | [【#尾丸ポルカ3周年】POLPOLPOLKA! ~遅れてやってきたぞ💓記念3DLIVE~【尾丸ポルカ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=EDWxOuVDUJk) | [Browse](./v/EDWxOuVDUJk) |
-| 2023-10-31 | [【BIRTHDAY💗3DLIVE】4人なら絶対てーきあつにまけないもん！【#尾丸ポルカ生誕祭2023】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=DW_8xrtourE) | [Browse](./v/DW_8xrtourE) |
-| 2022-10-31 | [【#尾丸ポルカ生誕祭】ポルカプロデュース!最強アイドルグループ3DLIVE!](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=ywvR52V7HiI) | [Browse](./v/ywvR52V7HiI) |
-| 2022-10-31 | [【 #ねぽらぼアイドル衣装 】アイドル衣装お披露目POL！！リレーするPOLよ！！！！！【尾丸ポルカ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=jrRr7c2N8E0) | [Browse](./v/jrRr7c2N8E0) |
-| 2022-10-31 | [舞台 「尾丸ポルカ」～あゝ素晴らしきアイドル人生かな～【#尾丸ポルカ2周年】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=jEaTxwIKamw) | [Browse](./v/jEaTxwIKamw) |
-| 2021-10-31 | [【#尾丸ポルカ一周年】エッ！？1時間でガチの即興曲を！？いい話もあるよ！【3DLIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=as7iNw5gSi8) | [Browse](./v/as7iNw5gSi8) |
-| 2021-10-31 | [【#尾丸ポルカ3D】尾丸ポルカ3Dお披露目するか！ポルカおるよ！【ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=GnW76d1A3YQ) | [Browse](./v/GnW76d1A3YQ) |
-| 2021-10-31 | [【#尾丸ポルカ爆誕祭​】激烈モーレツ3D歌ライブパッションバースデー【ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=E2CJV9UqTRM) | [Browse](./v/E2CJV9UqTRM) |
+| Date (JST) | Thumbnail | Title | Best Model |
+| :--- | :---: | :--- | :---: |
+| 2026-01-31 | <a href="https://youtu.be/zzVcTQOdLZE"><img src="https://i.ytimg.com/vi/zzVcTQOdLZE/mqdefault.jpg" width="100" /></a> | [【OmaruPolkaBirthday2026】Glitter of Love \| Birthday 3D Live【hololive】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=zzVcTQOdLZE) | [3.6-flash](./v/zzVcTQOdLZE) |
+| 2025-10-31 | <a href="https://youtu.be/a4T91LLjjJw"><img src="https://i.ytimg.com/vi/a4T91LLjjJw/mqdefault.jpg" width="100" /></a> | [【#尾丸ポルカ生誕祭2025】PuPPet~ポルカのおもちゃ箱~【尾丸ポルカ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=a4T91LLjjJw) | [3.5-lite](./v/a4T91LLjjJw) |
+| 2024-10-31 | <a href="https://youtu.be/W25VvoWh5zY"><img src="https://i.ytimg.com/vi/W25VvoWh5zY/mqdefault.jpg" width="100" /></a> | [【3D LIVE】Omaru Poruka Birthday Concert2024!! POL ROCK FES!!!!!](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=W25VvoWh5zY) | [3.5-lite](./v/W25VvoWh5zY) |
+| 2024-10-31 | <a href="https://youtu.be/EDWxOuVDUJk"><img src="https://i.ytimg.com/vi/EDWxOuVDUJk/mqdefault.jpg" width="100" /></a> | [【#尾丸ポルカ3周年】POLPOLPOLKA! ~遅れてやってきたぞ💓記念3DLIVE~【尾丸ポルカ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=EDWxOuVDUJk) | [3.5-lite](./v/EDWxOuVDUJk) |
+| 2023-10-31 | <a href="https://youtu.be/DW_8xrtourE"><img src="https://i.ytimg.com/vi/DW_8xrtourE/mqdefault.jpg" width="100" /></a> | [【BIRTHDAY💗3DLIVE】4人なら絶対てーきあつにまけないもん！【#尾丸ポルカ生誕祭2023】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=DW_8xrtourE) | [3.5-lite](./v/DW_8xrtourE) |
+| 2022-10-31 | <a href="https://youtu.be/ywvR52V7HiI"><img src="https://i.ytimg.com/vi/ywvR52V7HiI/mqdefault.jpg" width="100" /></a> | [【#尾丸ポルカ生誕祭】ポルカプロデュース!最強アイドルグループ3DLIVE!](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=ywvR52V7HiI) | [3.5-lite](./v/ywvR52V7HiI) |
+| 2022-10-31 | <a href="https://youtu.be/jrRr7c2N8E0"><img src="https://i.ytimg.com/vi/jrRr7c2N8E0/mqdefault.jpg" width="100" /></a> | [【 #ねぽらぼアイドル衣装 】アイドル衣装お披露目POL！！リレーするPOLよ！！！！！【尾丸ポルカ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=jrRr7c2N8E0) | [3.5-lite](./v/jrRr7c2N8E0) |
+| 2022-10-31 | <a href="https://youtu.be/jEaTxwIKamw"><img src="https://i.ytimg.com/vi/jEaTxwIKamw/mqdefault.jpg" width="100" /></a> | [舞台 「尾丸ポルカ」～あゝ素晴らしきアイドル人生かな～【#尾丸ポルカ2周年】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=jEaTxwIKamw) | [3.5-lite](./v/jEaTxwIKamw) |
+| 2021-10-31 | <a href="https://youtu.be/as7iNw5gSi8"><img src="https://i.ytimg.com/vi/as7iNw5gSi8/mqdefault.jpg" width="100" /></a> | [【#尾丸ポルカ一周年】エッ！？1時間でガチの即興曲を！？いい話もあるよ！【3DLIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=as7iNw5gSi8) | [3.5-lite](./v/as7iNw5gSi8) |
+| 2021-10-31 | <a href="https://youtu.be/GnW76d1A3YQ"><img src="https://i.ytimg.com/vi/GnW76d1A3YQ/mqdefault.jpg" width="100" /></a> | [【#尾丸ポルカ3D】尾丸ポルカ3Dお披露目するか！ポルカおるよ！【ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=GnW76d1A3YQ) | [3.5-lite](./v/GnW76d1A3YQ) |
+| 2021-10-31 | <a href="https://youtu.be/E2CJV9UqTRM"><img src="https://i.ytimg.com/vi/E2CJV9UqTRM/mqdefault.jpg" width="100" /></a> | [【#尾丸ポルカ爆誕祭​】激烈モーレツ3D歌ライブパッションバースデー【ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=E2CJV9UqTRM) | [3.5-lite](./v/E2CJV9UqTRM) |

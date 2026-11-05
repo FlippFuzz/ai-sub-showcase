@@ -1,10 +1,10 @@
 # Roboco Ch. - ロボ子
 
-| Date (JST) | Title | Subtitles |
-| :--- | :--- | :--- |
-| 2026-08-31 | [【3DLIVE】重大告知付き！ 今年は深海で #ロボ子海底3Dライブ  🪸　【ホロライブ/ロボ子さん】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=9uv6ihLUXtQ) | [Browse](./v/9uv6ihLUXtQ) |
-| 2025-10-31 | [【３DLIVE】新衣装初お披露目❤本日限定開店！はろーぼ飯店へようこそ🐉　【ホロライブ/  #ロボ子爆誕2025】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=BA-YWCSgkQo) | [Browse](./v/BA-YWCSgkQo) |
-| 2023-10-31 | [【全身３D/ #ロボ子爆誕2023】Glory Days 💎今年で７才になったよ！大人可愛い新衣装でアイドルIKZ✨【ロボ子さん /ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=2ISrlJUE08A) | [Browse](./v/2ISrlJUE08A) |
-| 2022-10-31 | [【＃ロボ子4周年記念LIVE 】４周年３D IDOL LIVE🎉cuteにcoolに楽しんでIKZ🎉 【3D LIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=Lw3sBpkC3Rw) | [Browse](./v/Lw3sBpkC3Rw) |
-| 2021-10-31 | [【３D全身】３周年記念🎉泣いて笑って…バラードオンリーライブ-Robot Memory-【ホロライブ/ロボ子さん】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=QA8KoMko9u8) | [Browse](./v/QA8KoMko9u8) |
-| 2020-10-31 | [【3D全身配信】３０万人記念！アイドルライブ【ホロライブ/ロボ子さん】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=Eck6xeVUp78) | [Browse](./v/Eck6xeVUp78) |
+| Date (JST) | Thumbnail | Title | Best Model |
+| :--- | :---: | :--- | :---: |
+| 2026-08-31 | <a href="https://youtu.be/9uv6ihLUXtQ"><img src="https://i.ytimg.com/vi/9uv6ihLUXtQ/mqdefault.jpg" width="100" /></a> | [【3DLIVE】重大告知付き！ 今年は深海で #ロボ子海底3Dライブ  🪸　【ホロライブ/ロボ子さん】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=9uv6ihLUXtQ) | [3.7-flash](./v/9uv6ihLUXtQ) |
+| 2025-10-31 | <a href="https://youtu.be/BA-YWCSgkQo"><img src="https://i.ytimg.com/vi/BA-YWCSgkQo/mqdefault.jpg" width="100" /></a> | [【３DLIVE】新衣装初お披露目❤本日限定開店！はろーぼ飯店へようこそ🐉　【ホロライブ/  #ロボ子爆誕2025】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=BA-YWCSgkQo) | [3.6-flash](./v/BA-YWCSgkQo) |
+| 2023-10-31 | <a href="https://youtu.be/2ISrlJUE08A"><img src="https://i.ytimg.com/vi/2ISrlJUE08A/mqdefault.jpg" width="100" /></a> | [【全身３D/ #ロボ子爆誕2023】Glory Days 💎今年で７才になったよ！大人可愛い新衣装でアイドルIKZ✨【ロボ子さん /ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=2ISrlJUE08A) | [3.5-lite](./v/2ISrlJUE08A) |
+| 2022-10-31 | <a href="https://youtu.be/Lw3sBpkC3Rw"><img src="https://i.ytimg.com/vi/Lw3sBpkC3Rw/mqdefault.jpg" width="100" /></a> | [【＃ロボ子4周年記念LIVE 】４周年３D IDOL LIVE🎉cuteにcoolに楽しんでIKZ🎉 【3D LIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=Lw3sBpkC3Rw) | [3.5-lite](./v/Lw3sBpkC3Rw) |
+| 2021-10-31 | <a href="https://youtu.be/QA8KoMko9u8"><img src="https://i.ytimg.com/vi/QA8KoMko9u8/mqdefault.jpg" width="100" /></a> | [【３D全身】３周年記念🎉泣いて笑って…バラードオンリーライブ-Robot Memory-【ホロライブ/ロボ子さん】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=QA8KoMko9u8) | [3.5-lite](./v/QA8KoMko9u8) |
+| 2020-10-31 | <a href="https://youtu.be/Eck6xeVUp78"><img src="https://i.ytimg.com/vi/Eck6xeVUp78/mqdefault.jpg" width="100" /></a> | [【3D全身配信】３０万人記念！アイドルライブ【ホロライブ/ロボ子さん】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=Eck6xeVUp78) | [3.5-lite](./v/Eck6xeVUp78) |

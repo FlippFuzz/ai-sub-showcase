@@ -1,10 +1,10 @@
 # Hakos Baelz Ch. hololive
 
-| Date (JST) | Title | Subtitles |
-| :--- | :--- | :--- |
-| 2026-08-31 | [≪3D Bae-gemite Extravaganza!! ≫ It is TIME ... w/ HUGE ANNOUNCEMENTS! #BaeBig5th](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=Pd70RRzTioc) | [Browse](./v/Pd70RRzTioc) |
-| 2026-02-28 | [≪ReCOLOR 3D LIVE≫ Hakos Baelz Birthday Live 2026 + NEW 3D OUTFIT! #ReCOLOR3D](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=khQRCrrtVjA) | [Browse](./v/khQRCrrtVjA) |
-| 2025-10-31 | [≪-KAGURA- Dance of the Gods 3D LIVE≫ Hakos Baelz Birthday 2025 + ANNOUNCEMENTS! #BaeDDay2025](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=viPlIHvk724) | [Browse](./v/viPlIHvk724) |
-| 2024-10-31 | [≪3D PERFORMANCE LIVE≫ #CHU2BAE](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=zZhyeaw148k) | [Browse](./v/zZhyeaw148k) |
-| 2024-10-31 | [≪DREAMCATCHER 3D LIVE≫ Hakos Baelz Birthday Celebration 2024! #BaeDay2024](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=TQSikoeVXoE) | [Browse](./v/TQSikoeVXoE) |
-| 2023-10-31 | [≪3D SHOWCASE≫ ƎNOZ N∩Ⅎ ƎH⊥ O⊥ ƎWOϽ˥ƎM #RatIdol3D](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=Qd5HBpoOIJA) | [Browse](./v/Qd5HBpoOIJA) |
+| Date (JST) | Thumbnail | Title | Best Model |
+| :--- | :---: | :--- | :---: |
+| 2026-08-31 | <a href="https://youtu.be/Pd70RRzTioc"><img src="https://i.ytimg.com/vi/Pd70RRzTioc/mqdefault.jpg" width="100" /></a> | [≪3D Bae-gemite Extravaganza!! ≫ It is TIME ... w/ HUGE ANNOUNCEMENTS! #BaeBig5th](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=Pd70RRzTioc) | [3.7-flash](./v/Pd70RRzTioc) |
+| 2026-02-28 | <a href="https://youtu.be/khQRCrrtVjA"><img src="https://i.ytimg.com/vi/khQRCrrtVjA/mqdefault.jpg" width="100" /></a> | [≪ReCOLOR 3D LIVE≫ Hakos Baelz Birthday Live 2026 + NEW 3D OUTFIT! #ReCOLOR3D](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=khQRCrrtVjA) | [3.6-flash](./v/khQRCrrtVjA) |
+| 2025-10-31 | <a href="https://youtu.be/viPlIHvk724"><img src="https://i.ytimg.com/vi/viPlIHvk724/mqdefault.jpg" width="100" /></a> | [≪-KAGURA- Dance of the Gods 3D LIVE≫ Hakos Baelz Birthday 2025 + ANNOUNCEMENTS! #BaeDDay2025](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=viPlIHvk724) | [3.5-lite](./v/viPlIHvk724) |
+| 2024-10-31 | <a href="https://youtu.be/zZhyeaw148k"><img src="https://i.ytimg.com/vi/zZhyeaw148k/mqdefault.jpg" width="100" /></a> | [≪3D PERFORMANCE LIVE≫ #CHU2BAE](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=zZhyeaw148k) | [3.5-lite](./v/zZhyeaw148k) |
+| 2024-10-31 | <a href="https://youtu.be/TQSikoeVXoE"><img src="https://i.ytimg.com/vi/TQSikoeVXoE/mqdefault.jpg" width="100" /></a> | [≪DREAMCATCHER 3D LIVE≫ Hakos Baelz Birthday Celebration 2024! #BaeDay2024](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=TQSikoeVXoE) | [3.5-lite](./v/TQSikoeVXoE) |
+| 2023-10-31 | <a href="https://youtu.be/Qd5HBpoOIJA"><img src="https://i.ytimg.com/vi/Qd5HBpoOIJA/mqdefault.jpg" width="100" /></a> | [≪3D SHOWCASE≫ ƎNOZ N∩Ⅎ ƎH⊥ O⊥ ƎWOϽ˥ƎM #RatIdol3D](https://flippfuzz.github.io/ai-sub-player/?uploader=HakosBaelz&v=Qd5HBpoOIJA) | [3.5-lite](./v/Qd5HBpoOIJA) |

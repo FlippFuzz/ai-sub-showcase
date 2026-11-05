@@ -1,9 +1,9 @@
 # Pavolia Reine Ch. hololive
 
-| Date (JST) | Title | Subtitles |
-| :--- | :--- | :--- |
-| 2026-09-30 | [【 #ReineMEPtember2026 】Reine B'Day Classroom -Field Trip: Food & Games-](https://flippfuzz.github.io/ai-sub-player/?uploader=PavoliaReine&v=tYLnktu3OPU) | [Browse](./v/tYLnktu3OPU) |
-| 2025-10-31 | [《Peafowl of The Blue Flame》 Pavolia Reine 3D Birthday Live 2025 #ReineMEPtember2025](https://flippfuzz.github.io/ai-sub-player/?uploader=PavoliaReine&v=zKuxe-5Jxyc) | [Browse](./v/zKuxe-5Jxyc) |
-| 2024-10-31 | [《BIRDS NIGHT OUT》 Pavolia Reine 3D Birthday Live 2024 #ReineMeptember2024](https://flippfuzz.github.io/ai-sub-player/?uploader=PavoliaReine&v=DNDhaDTXta4) | [Browse](./v/DNDhaDTXta4) |
-| 2023-10-31 | [【3D SHOWCASE】Attention Please!! Special Tea Party with Pavolia Reine!!! #PavoliaReine3D](https://flippfuzz.github.io/ai-sub-player/?uploader=PavoliaReine&v=aBgFX_2oIU4) | [Browse](./v/aBgFX_2oIU4) |
-| 2022-10-31 | [【#Reine2ndMEPtember】BABY 3D BIRTHDAY CONCERT!!! (Surprises Inside)【Pavolia Reine/hololiveID 2nd gen】](https://flippfuzz.github.io/ai-sub-player/?uploader=PavoliaReine&v=Tmg_zSjOTtc) | [Browse](./v/Tmg_zSjOTtc) |
+| Date (JST) | Thumbnail | Title | Best Model |
+| :--- | :---: | :--- | :---: |
+| 2026-09-30 | <a href="https://youtu.be/tYLnktu3OPU"><img src="https://i.ytimg.com/vi/tYLnktu3OPU/mqdefault.jpg" width="100" /></a> | [【 #ReineMEPtember2026 】Reine B'Day Classroom -Field Trip: Food & Games-](https://flippfuzz.github.io/ai-sub-player/?uploader=PavoliaReine&v=tYLnktu3OPU) | [3.7-flash](./v/tYLnktu3OPU) |
+| 2025-10-31 | <a href="https://youtu.be/zKuxe-5Jxyc"><img src="https://i.ytimg.com/vi/zKuxe-5Jxyc/mqdefault.jpg" width="100" /></a> | [《Peafowl of The Blue Flame》 Pavolia Reine 3D Birthday Live 2025 #ReineMEPtember2025](https://flippfuzz.github.io/ai-sub-player/?uploader=PavoliaReine&v=zKuxe-5Jxyc) | [3.6-flash](./v/zKuxe-5Jxyc) |
+| 2024-10-31 | <a href="https://youtu.be/DNDhaDTXta4"><img src="https://i.ytimg.com/vi/DNDhaDTXta4/mqdefault.jpg" width="100" /></a> | [《BIRDS NIGHT OUT》 Pavolia Reine 3D Birthday Live 2024 #ReineMeptember2024](https://flippfuzz.github.io/ai-sub-player/?uploader=PavoliaReine&v=DNDhaDTXta4) | [3.5-lite](./v/DNDhaDTXta4) |
+| 2023-10-31 | <a href="https://youtu.be/aBgFX_2oIU4"><img src="https://i.ytimg.com/vi/aBgFX_2oIU4/mqdefault.jpg" width="100" /></a> | [【3D SHOWCASE】Attention Please!! Special Tea Party with Pavolia Reine!!! #PavoliaReine3D](https://flippfuzz.github.io/ai-sub-player/?uploader=PavoliaReine&v=aBgFX_2oIU4) | [3.5-lite](./v/aBgFX_2oIU4) |
+| 2022-10-31 | <a href="https://youtu.be/Tmg_zSjOTtc"><img src="https://i.ytimg.com/vi/Tmg_zSjOTtc/mqdefault.jpg" width="100" /></a> | [【#Reine2ndMEPtember】BABY 3D BIRTHDAY CONCERT!!! (Surprises Inside)【Pavolia Reine/hololiveID 2nd gen】](https://flippfuzz.github.io/ai-sub-player/?uploader=PavoliaReine&v=Tmg_zSjOTtc) | [3.5-lite](./v/Tmg_zSjOTtc) |

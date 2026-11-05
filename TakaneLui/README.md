@@ -1,12 +1,12 @@
 # Lui ch. 鷹嶺ルイ - holoX -
 
-| Date (JST) | Title | Subtitles |
-| :--- | :--- | :--- |
-| 2026-06-30 | [【3DLIVE】超重大告知アリ！3D新衣装お披露目！！『Luminous Stairs』【鷹嶺ルイ/ホロライブ】#鷹嶺ルイ超重大生誕LIVE](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=T71ds94dnnM) | [Browse](./v/T71ds94dnnM) |
-| 2025-10-31 | [【 3D LIVE 】Lapis Lazuli / 重大告知アリ！【 #鷹嶺ルイ重大告知LIVE 】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=PHrZ_dRSy_4) | [Browse](./v/PHrZ_dRSy_4) |
-| 2025-10-31 | [【3DLIVE】重大告知あり‼パワーアップして帰ってきた音楽番組『MUSIC GARDEN』🎤✨【#鷹嶺ルイ生誕祭2025】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=28P_1Y0WbrM) | [Browse](./v/28P_1Y0WbrM) |
-| 2024-10-31 | [【 重大告知あり‼ 】#鷹嶺ルイ2周年LIVE 『ANIMAL』【3D LIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=oU85vmx7jn8) | [Browse](./v/oU85vmx7jn8) |
-| 2024-10-31 | [【 超重大告知あり‼ 】#鷹嶺ルイ生誕バンドLIVE 『L -challenger-』【生バンド3D LIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=dLybZ8wDxVo) | [Browse](./v/dLybZ8wDxVo) |
-| 2023-10-31 | [【#鷹嶺ルイ1周年LIVE】Growth ーこれが私の成長ー【3D LIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=y-gW-iI1eAo) | [Browse](./v/y-gW-iI1eAo) |
-| 2023-10-31 | [【3DLIVE】重大告知あり‼ゲスト多数の音楽番組『MUSIC GARDEN』🎤略してMガデ！【#鷹嶺ルイ生誕祭2023】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=nlfGHej2OyA) | [Browse](./v/nlfGHej2OyA) |
-| 2022-10-31 | [【#鷹嶺ルイ3D】アーカイブ復活！！！これが私の成長の軌跡🥀【鷹嶺ルイ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=jYWhdr73i6A) | [Browse](./v/jYWhdr73i6A) |
+| Date (JST) | Thumbnail | Title | Best Model |
+| :--- | :---: | :--- | :---: |
+| 2026-06-30 | <a href="https://youtu.be/T71ds94dnnM"><img src="https://i.ytimg.com/vi/T71ds94dnnM/mqdefault.jpg" width="100" /></a> | [【3DLIVE】超重大告知アリ！3D新衣装お披露目！！『Luminous Stairs』【鷹嶺ルイ/ホロライブ】#鷹嶺ルイ超重大生誕LIVE](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=T71ds94dnnM) | [3.7-flash](./v/T71ds94dnnM) |
+| 2025-10-31 | <a href="https://youtu.be/PHrZ_dRSy_4"><img src="https://i.ytimg.com/vi/PHrZ_dRSy_4/mqdefault.jpg" width="100" /></a> | [【 3D LIVE 】Lapis Lazuli / 重大告知アリ！【 #鷹嶺ルイ重大告知LIVE 】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=PHrZ_dRSy_4) | [3.6-flash](./v/PHrZ_dRSy_4) |
+| 2025-10-31 | <a href="https://youtu.be/28P_1Y0WbrM"><img src="https://i.ytimg.com/vi/28P_1Y0WbrM/mqdefault.jpg" width="100" /></a> | [【3DLIVE】重大告知あり‼パワーアップして帰ってきた音楽番組『MUSIC GARDEN』🎤✨【#鷹嶺ルイ生誕祭2025】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=28P_1Y0WbrM) | [3.6-flash](./v/28P_1Y0WbrM) |
+| 2024-10-31 | <a href="https://youtu.be/oU85vmx7jn8"><img src="https://i.ytimg.com/vi/oU85vmx7jn8/mqdefault.jpg" width="100" /></a> | [【 重大告知あり‼ 】#鷹嶺ルイ2周年LIVE 『ANIMAL』【3D LIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=oU85vmx7jn8) | [3.5-lite](./v/oU85vmx7jn8) |
+| 2024-10-31 | <a href="https://youtu.be/dLybZ8wDxVo"><img src="https://i.ytimg.com/vi/dLybZ8wDxVo/mqdefault.jpg" width="100" /></a> | [【 超重大告知あり‼ 】#鷹嶺ルイ生誕バンドLIVE 『L -challenger-』【生バンド3D LIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=dLybZ8wDxVo) | [3.6-flash](./v/dLybZ8wDxVo) |
+| 2023-10-31 | <a href="https://youtu.be/y-gW-iI1eAo"><img src="https://i.ytimg.com/vi/y-gW-iI1eAo/mqdefault.jpg" width="100" /></a> | [【#鷹嶺ルイ1周年LIVE】Growth ーこれが私の成長ー【3D LIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=y-gW-iI1eAo) | [3.5-lite](./v/y-gW-iI1eAo) |
+| 2023-10-31 | <a href="https://youtu.be/nlfGHej2OyA"><img src="https://i.ytimg.com/vi/nlfGHej2OyA/mqdefault.jpg" width="100" /></a> | [【3DLIVE】重大告知あり‼ゲスト多数の音楽番組『MUSIC GARDEN』🎤略してMガデ！【#鷹嶺ルイ生誕祭2023】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=nlfGHej2OyA) | [3.5-lite](./v/nlfGHej2OyA) |
+| 2022-10-31 | <a href="https://youtu.be/jYWhdr73i6A"><img src="https://i.ytimg.com/vi/jYWhdr73i6A/mqdefault.jpg" width="100" /></a> | [【#鷹嶺ルイ3D】アーカイブ復活！！！これが私の成長の軌跡🥀【鷹嶺ルイ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=jYWhdr73i6A) | [3.5-lite](./v/jYWhdr73i6A) |

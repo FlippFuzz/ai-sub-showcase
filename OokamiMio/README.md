@@ -1,13 +1,13 @@
 # Mio Channel 大神ミオ
 
-| Date (JST) | Title | Subtitles |
-| :--- | :--- | :--- |
-| 2026-09-30 | [【 3D LIVE 】RosaMiAによる、初めてのアコースティックライブ【生歌唱】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=PlDgodRmrn0) | [Browse](./v/PlDgodRmrn0) |
-| 2025-10-31 | [【 チラ見せ】大神ミオ 1st Live.「Our Sparkle」ぴあアリーナMM](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=pChQkIDyOJA) | [Browse](./v/pChQkIDyOJA) |
-| 2024-10-31 | [大神ミオ５周年記念ライブ『ナイトループ』【 ホロライブ / 大神ミオ 】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=YqPVwYLcvrY) | [Browse](./v/YqPVwYLcvrY) |
-| 2024-10-31 | [【３DLive】晴れ時々にわかミオ【 #大神ミオ生誕ライブ2024 】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=VzecQUmB1sY) | [Browse](./v/VzecQUmB1sY) |
-| 2023-10-31 | [歌って笑って？！ミオサマーパーティ ～今年の誕生日はケーキ食べれるのか？！～](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=8CKhYDlwrZg) | [Browse](./v/8CKhYDlwrZg) |
-| 2023-10-31 | [大神ミオ４周年記念ライブ - Mio Forest night party -](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=0WLlmgirGD8) | [Browse](./v/0WLlmgirGD8) |
-| 2021-10-31 | [大神ミオ２周年記念３Dライブ【2nd anniversary】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=mmUVwNut2-Y) | [Browse](./v/mmUVwNut2-Y) |
-| 2021-10-31 | [【３D】ライブも企画も！誕生日祭だーー！！！！【 #大神ミオ誕生日 】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=ChMwx4yeI3g) | [Browse](./v/ChMwx4yeI3g) |
-| 2021-10-31 | [【３D】ウクレレ発表会 ～1ヶ月練習した結果～【大神ミオ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=5k-jSFD9NE0) | [Browse](./v/5k-jSFD9NE0) |
+| Date (JST) | Thumbnail | Title | Best Model |
+| :--- | :---: | :--- | :---: |
+| 2026-09-30 | <a href="https://youtu.be/PlDgodRmrn0"><img src="https://i.ytimg.com/vi/PlDgodRmrn0/mqdefault.jpg" width="100" /></a> | [【 3D LIVE 】RosaMiAによる、初めてのアコースティックライブ【生歌唱】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=PlDgodRmrn0) | [3.7-flash](./v/PlDgodRmrn0) |
+| 2025-10-31 | <a href="https://youtu.be/pChQkIDyOJA"><img src="https://i.ytimg.com/vi/pChQkIDyOJA/mqdefault.jpg" width="100" /></a> | [【 チラ見せ】大神ミオ 1st Live.「Our Sparkle」ぴあアリーナMM](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=pChQkIDyOJA) | [3.6-flash](./v/pChQkIDyOJA) |
+| 2024-10-31 | <a href="https://youtu.be/YqPVwYLcvrY"><img src="https://i.ytimg.com/vi/YqPVwYLcvrY/mqdefault.jpg" width="100" /></a> | [大神ミオ５周年記念ライブ『ナイトループ』【 ホロライブ / 大神ミオ 】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=YqPVwYLcvrY) | [3.5-lite](./v/YqPVwYLcvrY) |
+| 2024-10-31 | <a href="https://youtu.be/VzecQUmB1sY"><img src="https://i.ytimg.com/vi/VzecQUmB1sY/mqdefault.jpg" width="100" /></a> | [【３DLive】晴れ時々にわかミオ【 #大神ミオ生誕ライブ2024 】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=VzecQUmB1sY) | [3.5-lite](./v/VzecQUmB1sY) |
+| 2023-10-31 | <a href="https://youtu.be/8CKhYDlwrZg"><img src="https://i.ytimg.com/vi/8CKhYDlwrZg/mqdefault.jpg" width="100" /></a> | [歌って笑って？！ミオサマーパーティ ～今年の誕生日はケーキ食べれるのか？！～](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=8CKhYDlwrZg) | [3.5-lite](./v/8CKhYDlwrZg) |
+| 2023-10-31 | <a href="https://youtu.be/0WLlmgirGD8"><img src="https://i.ytimg.com/vi/0WLlmgirGD8/mqdefault.jpg" width="100" /></a> | [大神ミオ４周年記念ライブ - Mio Forest night party -](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=0WLlmgirGD8) | [3.5-lite](./v/0WLlmgirGD8) |
+| 2021-10-31 | <a href="https://youtu.be/mmUVwNut2-Y"><img src="https://i.ytimg.com/vi/mmUVwNut2-Y/mqdefault.jpg" width="100" /></a> | [大神ミオ２周年記念３Dライブ【2nd anniversary】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=mmUVwNut2-Y) | [3.5-lite](./v/mmUVwNut2-Y) |
+| 2021-10-31 | <a href="https://youtu.be/ChMwx4yeI3g"><img src="https://i.ytimg.com/vi/ChMwx4yeI3g/mqdefault.jpg" width="100" /></a> | [【３D】ライブも企画も！誕生日祭だーー！！！！【 #大神ミオ誕生日 】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=ChMwx4yeI3g) | [3.5-lite](./v/ChMwx4yeI3g) |
+| 2021-10-31 | <a href="https://youtu.be/5k-jSFD9NE0"><img src="https://i.ytimg.com/vi/5k-jSFD9NE0/mqdefault.jpg" width="100" /></a> | [【３D】ウクレレ発表会 ～1ヶ月練習した結果～【大神ミオ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=5k-jSFD9NE0) | [3.5-lite](./v/5k-jSFD9NE0) |
