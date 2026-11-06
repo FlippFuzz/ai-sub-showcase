@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;10&#8209;10 | <a href="https://youtu.be/62AgiXDP3tU"><img src="https://i.ytimg.com/vi/62AgiXDP3tU/mqdefault.jpg" width="100" /></a> | [【#ふぉっくするーむ】白上フブキ生誕3DLIVE「ふぉっくするーむ!!」【白上フブキ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShirakamiFubuki&v=62AgiXDP3tU) | [3.5-flash<br>0918](./v/62AgiXDP3tU) |
+| 2026&#8209;10&#8209;07 | <a href="https://youtu.be/62AgiXDP3tU"><img src="https://i.ytimg.com/vi/62AgiXDP3tU/mqdefault.jpg" width="100" /></a> | [【#ふぉっくするーむ】白上フブキ生誕3DLIVE「ふぉっくするーむ!!」【白上フブキ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShirakamiFubuki&v=62AgiXDP3tU) | [3.5-flash<br>0918](./v/62AgiXDP3tU) |
 | 2026&#8209;08&#8209;13 | <a href="https://youtu.be/glvpySalt-Q"><img src="https://i.ytimg.com/vi/glvpySalt-Q/mqdefault.jpg" width="100" /></a> | [【#ホロボドゲ部】第２回!!エトコトバトルホロメン対決【ホロライブ/白上フブキ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShirakamiFubuki&v=glvpySalt-Q) | [3.7-flash<br>0918](./v/glvpySalt-Q) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/ES9vrNjxiIQ"><img src="https://i.ytimg.com/vi/ES9vrNjxiIQ/mqdefault.jpg" width="100" /></a> | [【重大告知あり！！】FBKINGDOM Fest. #機密解禁フブキングダム【白上フブキ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShirakamiFubuki&v=ES9vrNjxiIQ) | [3.5-lite<br>0918](./v/ES9vrNjxiIQ) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/BRiz6VMcL8c"><img src="https://i.ytimg.com/vi/BRiz6VMcL8c/mqdefault.jpg" width="100" /></a> | [【チラ見せ】Shirakami Fubuki 1stLIVE FBKINGDOM “ANTHEM”](https://flippfuzz.github.io/ai-sub-player/?uploader=ShirakamiFubuki&v=BRiz6VMcL8c) | [3.5-lite<br>0918](./v/BRiz6VMcL8c) |
