@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;09&#8209;30 | <a href="https://youtu.be/cI535pJp-TQ"><img src="https://i.ytimg.com/vi/cI535pJp-TQ/mqdefault.jpg" width="100" /></a> | [【 #獅白ぼたん生誕祭2026 】重大告知あります！獅白ぼたん生誕3D LIVE✨『Stray&Stay』【獅白ぼたん/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShishiroBotan&v=cI535pJp-TQ) | [3.7-flash<br>0918](./v/cI535pJp-TQ) |
+| 2026&#8209;10&#8209;06 | <a href="https://youtu.be/cI535pJp-TQ"><img src="https://i.ytimg.com/vi/cI535pJp-TQ/mqdefault.jpg" width="100" /></a> | [【 #獅白ぼたん生誕祭2026 】重大告知あります！獅白ぼたん生誕3D LIVE✨『Stray&Stay』【獅白ぼたん/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShishiroBotan&v=cI535pJp-TQ) | [3.7-flash<br>0918](./v/cI535pJp-TQ) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/GmbIaroMuiU"><img src="https://i.ytimg.com/vi/GmbIaroMuiU/mqdefault.jpg" width="100" /></a> | [【3DLIVE】ゲスト＆告知あり✨獅白ぼたん生誕3D LIVE 『MUST RELIVE』【#獅白ぼたん生誕祭2025 /ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShishiroBotan&v=GmbIaroMuiU) | [3.6-flash<br>0918](./v/GmbIaroMuiU) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/dsH4DXtSpqk"><img src="https://i.ytimg.com/vi/dsH4DXtSpqk/mqdefault.jpg" width="100" /></a> | [【3DLIVE】『Connect Addict』✨3rd Anniversary Live【#獅白ぼたん3周年】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShishiroBotan&v=dsH4DXtSpqk) | [3.5-lite<br>0918](./v/dsH4DXtSpqk) |
 | 2022&#8209;10&#8209;31 | <a href="https://youtu.be/tJqCyCoZ4wA"><img src="https://i.ytimg.com/vi/tJqCyCoZ4wA/mqdefault.jpg" width="100" /></a> | [【 #ねぽらぼアイドル衣装 】告知もあるよ！獅白ぼたんのアイドル衣装お披露目！【獅白ぼたん/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShishiroBotan&v=tJqCyCoZ4wA) | [3.5-lite<br>0918](./v/tJqCyCoZ4wA) |
