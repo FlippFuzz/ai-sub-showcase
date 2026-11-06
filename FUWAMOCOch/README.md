@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;08&#8209;31 | <a href="https://youtu.be/Pd1rwtbxO6A"><img src="https://i.ytimg.com/vi/Pd1rwtbxO6A/mqdefault.jpg" width="100" /></a> | [【3D LIVE CONCERT 3周年記念ライブ】thanks to hololive🐾 重大告知あり✨️【#FWMC3rd】](https://flippfuzz.github.io/ai-sub-player/?uploader=FUWAMOCOch&v=Pd1rwtbxO6A) | [3.7-flash<br>0918](./v/Pd1rwtbxO6A) |
+| 2026&#8209;09&#8209;07 | <a href="https://youtu.be/Pd1rwtbxO6A"><img src="https://i.ytimg.com/vi/Pd1rwtbxO6A/mqdefault.jpg" width="100" /></a> | [【3D LIVE CONCERT 3周年記念ライブ】thanks to hololive🐾 重大告知あり✨️【#FWMC3rd】](https://flippfuzz.github.io/ai-sub-player/?uploader=FUWAMOCOch&v=Pd1rwtbxO6A) | [3.7-flash<br>0918](./v/Pd1rwtbxO6A) |
 | 2026&#8209;02&#8209;28 | <a href="https://youtu.be/7M4E3WGWlRM"><img src="https://i.ytimg.com/vi/7M4E3WGWlRM/mqdefault.jpg" width="100" /></a> | [【3D LIVE CONCERT 生誕ライブ】FUWAMOCO wacha wacha birthday festival 🎂🐾 【#FWMCbday26】](https://flippfuzz.github.io/ai-sub-player/?uploader=FUWAMOCOch&v=7M4E3WGWlRM) | [3.6-flash<br>0918](./v/7M4E3WGWlRM) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/ouQF2A1l_cI"><img src="https://i.ytimg.com/vi/ouQF2A1l_cI/mqdefault.jpg" width="100" /></a> | [【3D LIVE CONCERT 生誕ライブ】FUWAMOCO birthday party night 🎂🐾 【#FWMCbday25】](https://flippfuzz.github.io/ai-sub-player/?uploader=FUWAMOCOch&v=ouQF2A1l_cI) | [3.5-lite<br>0918](./v/ouQF2A1l_cI) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/zqiU63uqC9U"><img src="https://i.ytimg.com/vi/zqiU63uqC9U/mqdefault.jpg" width="100" /></a> | [【FUWAMOCO 3D DEBUT】BAU BAU and BEYOND 🐾🩵🩷 #FWMC3D 【3Dお披露目】](https://flippfuzz.github.io/ai-sub-player/?uploader=FUWAMOCOch&v=zqiU63uqC9U) | [3.5-lite<br>0918](./v/zqiU63uqC9U) |
