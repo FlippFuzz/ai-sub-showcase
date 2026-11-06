@@ -1,0 +1,716 @@
+name: part_007
+total_attempts: 0
+user_context: 'This is a YouTube video from IRyS Ch. hololive channel. The video title
+  is ''【Free Preview】IRyS 1st Concert “HOPE ||: Beyond the Stars”【#IRySConcert2026】''.'
+video_duration_ms: 300789
+segment_offset_ms: 2101112
+global_summary:
+  overall_summary: 'This video is a free preview broadcast of ''IRyS 1st Concert “HOPE
+    ||: Beyond the Stars”'', held by hololive English VSinger IRyS at SGC Hall Ariake
+    in Tokyo on October 6, 2026. The preview includes pre-show venue notices, fan
+    messages, three energetic live performances (''BE MY FLAME'', ''Escalate'', and
+    ''MUSE'') accompanied by a live band and backing dancers, an interactive MC segment
+    introducing her 1st album ''DANGERyS'' and concert merchandise/streaming options,
+    and a transition into her upcoming ballad before concluding the free broadcast.'
+  chapters:
+  - start: 00:00
+    end: '24:00'
+    title: Pre-Show & Fan Messages
+    description: Pre-concert waiting screen displaying venue rules, safety notices,
+      and fan celebration messages.
+    song_title: null
+    song_artist: null
+  - start: '24:00'
+    end: '34:34'
+    title: Venue Announcements & Opening Greetings
+    description: Pre-show house announcements in Japanese and English regarding concert
+      guidelines, light stick color prompts, and audience cheering.
+    song_title: null
+    song_artist: null
+  - start: '34:34'
+    end: '39:00'
+    title: BE MY FLAME Performance
+    description: Opening live performance of 'BE MY FLAME' from IRyS's 1st album 'DANGERyS'
+      featuring a live band and backing dancers.
+    song_title: BE MY FLAME
+    song_artist: IRyS
+  - start: '39:00'
+    end: '43:00'
+    title: Escalate Performance
+    description: Live performance of the energetic Eurobeat track 'Escalate' with
+      full stage production.
+    song_title: Escalate
+    song_artist: IRyS
+  - start: '43:00'
+    end: '47:01'
+    title: MUSE Performance & Band Introduction
+    description: Live performance of 'MUSE' followed by the introduction of the live
+      band members.
+    song_title: MUSE
+    song_artist: IRyS
+  - start: '47:01'
+    end: '55:50'
+    title: MC Segment & Album Discussion
+    description: IRyS talks to the audience about her first solo concert, her album
+      'DANGERyS', streaming ticket options, and introduces the next ballad.
+    song_title: null
+    song_artist: null
+  - start: '55:50'
+    end: '1:00:05'
+    title: Free Preview End Card
+    description: Concluding placeholder screen announcing the end of the free broadcast
+      portion for YouTube and TikTok viewers.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: IRyS
+    original_name: アイリス
+    role_or_affiliation: hololive English -Promise- / VSinger
+    persona_lore: A Nephilim (half-demon, half-angel) who once brought hope to 'The
+      Paradise' during the ancient age and awakened in the current era to deliver
+      hope through lyrics and songs.
+    speech_patterns_or_ticks: Greeting catchphrase 'HiRyS, it's IRyS!', enthusiastic
+      and cheerful tone with playful banter.
+    visual_cues: Red twin-tailed hair with a halo headpiece, elf ears, angelic/demonic
+      wings, and concert outfit with 'HOPE' branding.
+  domain_glossary:
+  - term: DANGERyS
+    meaning: IRyS's 1st full-length studio album released in July 2026, known for
+      its signature Eurobeat tracks and diverse musical styles.
+  - term: 'HOPE ||: Beyond the Stars'
+    meaning: IRyS's 1st solo live concert held at SGC Hall Ariake in Tokyo on October
+      6, 2026.
+  - term: Nephilim
+    meaning: Mythical hybrid species of half-angel and half-demon, representing IRyS's
+      character lore.
+  - term: hololive English -Promise-
+    meaning: The hololive English branch unit that IRyS belongs to alongside Ceres
+      Fauna, Ouro Kronii, Nanashi Mumei, and Hakos Baelz.
+  - term: Penlight Color Prompt
+    meaning: On-screen display shown on side monitors during the concert advising
+      fans which color light sticks to use for each song.
+  thoughts:
+  - |-
+    Here's my analysis of the request, thinking out loud:
+
+    **Diving into the IRyS Concert Preview**
+
+    Okay, so the user wants me to get my hands dirty with `video_1.webm`. They're specifically calling it `IRyS 1st Concert “HOPE ||: Beyond the Stars”【#IRySConcert2026】` (Free Preview), which gives me a good starting point. I understand this is likely a short preview of a larger concert.
+
+    My immediate instinct is to jump in and start the process. The core instruction is to use `load_video` and, importantly, they want me to include `asr=True`. This tells me they're interested in analyzing the *audio* alongside the visual content. I will take this into consideration for my analysis. I'll get to work and report on my findings!
+  - |-
+    Okay, here's my analysis of these thoughts, assuming I'm the expert:
+
+    **Video Content Analysis Strategy**
+
+    Right, let's break this video down methodically. My initial thought is to tackle this with a frame-by-frame analysis combined with timestamp correlation, particularly focusing on identifying song segments. However, the first phase involves clarifying the content of initial time segments such as 00:00 to 23:57. I'll need to load up those frames or investigate that audio to determine if it's actual content or generic placeholders/ads.
+
+    The plan now is to confirm my working hypothesis: let's correlate song titles with their associated timestamps to gain structural information and understand what to expect. That first section needs validation: I'll need to load specific frames around key timestamps: 23:57, 34:30, 39:00, 43:00, and 55:30. This approach - multiple `load_video` calls with `include_frames=True` at these specific intervals - is the way to visually ground the timeline in reality and identify what's going on.
+  - |-
+    Here's my take on the process, tailored for an expert audience:
+
+    **Analyzing the Concert Footage: Time-Based Retrieval**
+
+    Okay, so I need to get a handle on the concert footage and figure out the sequence of events. Instead of sifting through the entire recording, I'll strategically target specific time segments. Frames from 23:00 to 60:00 should give me the core components. I'm thinking this range will encompass the meat of the performance – the details I need to reconstruct the flow of the concert. Within that timeframe, I expect to find the musical performances themselves, the band introductions which can be crucial for understanding the lineup, any stage banter or announcements from the MC, and probably some transitional material that helps piece the entire concert together. This approach of time-based retrieval is much more efficient than a blind search, and should let me get the data I need fast.
+  - |-
+    **Analyzing Video Frame Sampling Strategy**
+
+    Okay, so I'm looking at this video and trying to figure out the best way to analyze it frame by frame, given some performance constraints. My initial thought was, "Okay, the previous test with a really low frame rate (0.1 fps) took about 37 seconds, sampling from 23 seconds of video, so maybe specifying the start time would speed things up." I considered starting at 23 seconds (23000ms) and going to 60 seconds (60000ms) but then realized, wait, 60 seconds is just one minute. The whole video is a *full* hour long (3605 seconds).
+
+    So, how do I get a good overview of the *entire* video? I could try sampling at a very low fps throughout, or perhaps use specific intervals. I started thinking about loading frames from 23 seconds to the very end. But I quickly realized that loading an entire hour, even at a low frame rate, might be problematic because of potential token limits. Too many frames might exceed the allocated token budget.
+
+    Then, I remember the context of the video. The concert *actually* starts around the 23-minute mark in the audio transcription, as it mentions "23:57 本日はアイリスファーストコンサート。" in the transcript. So, maybe focusing on that part is best. So let's load frames from 1380000ms (23 minutes) onwards.
+
+    I'm thinking a low frame rate like 0.05 fps or something similar would be better. Given this, I want to break down the task into smaller chunks, say 5-10 minute intervals to ensure each section is manageable. For the first step, I'll go from 23 minutes (1380000ms) to, let's say, 30 minutes (1800000ms). That should give me a good initial dataset to analyze.
+  - |-
+    Here's my take on those thoughts:
+
+    **Time Range Analysis**
+
+    Alright, I need to zoom in on a specific period. I'm thinking, let's zero in on the time range from 1,800,000 to 2,700,000. That covers a nice, manageable block of time – roughly equivalent to a 30-minute to 45-minute window, depending on the context. This range should offer enough granularity to spot any interesting patterns or anomalies, without being so broad that I get overwhelmed with data. It's the sweet spot for this analysis, allowing me to focus my attention effectively.
+  - |-
+    Here's my take on the video's analysis, presented as if it were my thought process:
+
+    **Diving Deeper into the Video**
+
+    Okay, now that I've reviewed the initial portion, I need to get a comprehensive understanding. Let's shift our focus to the remaining timeframe. Specifically, I need to meticulously examine the content from the 45-minute mark (2700000 milliseconds) all the way through to the very end of the video, which is at 3605000 milliseconds. This segment is likely critical; I anticipate it will contain critical insights or the key findings of the experiment being discussed. I will need to take detailed notes on the specific events to be certain that I do not miss any key piece of data.
+  - |-
+    Okay, here's my thought process on this:
+
+    **Analyzing the Concert Preview for IRyS's Music**
+
+    Alright, let's dive into this. The objective is clear: I need to figure out if there's any connection between this concert free preview and IRyS's discography. My primary focus is on identifying any potential links to her album "Dangeris" or the setlist from her "HOPE ||: Beyond the Stars" concert. My strategy is simple: I'll use the `tinyfish_search_multi` tool. This is the optimal approach for searching multiple sources and retrieving relevant information efficiently. Specifically, I'll direct the search towards finding the setlist from her first concert, "Beyond the Stars," and also look for mentions of her album, "Dangeris." This should give me a quick and comprehensive overview of any overlapping content.
+  - |-
+    **My Analysis of the Concert Preview**
+
+    Okay, so here's what I've got: I've just reviewed the free preview of IRyS's first solo concert, "HOPE ||: Beyond the Stars." From the looks of it, it was held at SGC Hall Ariake in Tokyo on October 6, 2026. This preview gives us a taste of the show's structure.
+
+    First, there was the pre-show stuff: venue rules, fan messages, the usual. Then, the venue announcements and a greeting from IRyS, both in Japanese and English. That kicks off a string of musical performances. We got three songs in the preview: "BE MY FLAME," "Escalate," and "MUSE." Each one was accompanied by a live band and some dancers. It looks like the songs were from her album, "DANGERyS" -- at least "BE MY FLAME" was. I verified the lyrics to determine "Escalate" and "MUSE" from their respective song sections.
+
+    Following the music, there was a talking segment, a MC segment, where she talked about the concert, her album, streaming options, and what's coming next. She also introduced the next song, which was a ballad. Then, the preview concluded with an end card for the YouTube and TikTok viewers.
+
+    I also went ahead and took notes on the chapters, entities and a glossary: hololive English, the Nephilim lore, her album, the concert itself, and the penlight color prompts.
+  - |-
+    Okay, here's the summary, rendered as your internal thought process:
+
+    **Finalizing the Output**
+
+    Alright, I've processed the request and arrived at the optimal output format. The task is complete, and I've ensured all requirements have been met. There's no further need for additional function calls or iterations. I'm confident in the precision and suitability of the information. I'll now deliver the minified JSON directly.
+response:
+  subtitles:
+  - start: '00:00.552'
+    end: '00:02.012'
+    original: Got my heart goin' up in flames
+    english: Got my heart goin' up in flames
+  - start: '00:02.192'
+    end: '00:03.522'
+    original: Tell me you can feel the searing heat
+    english: Tell me you can feel the searing heat
+  - start: '00:03.682'
+    end: '00:06.142'
+    original: Are you gonna run away, or burn with me?
+    english: Are you gonna run away, or burn with me?
+  - start: '00:06.322'
+    end: '00:07.472'
+    original: I'm caught up in a heat wave, I'll never get enough
+    english: I'm caught up in a heat wave, I'll never get enough
+  - start: '00:07.472'
+    end: '00:09.132'
+    original: Fanning the flame of love
+    english: Fanning the flame of love
+  - start: '00:09.302'
+    end: '00:10.592'
+    original: Fire lover, be my flame
+    english: Fire lover, be my flame
+  - start: '00:10.592'
+    end: '00:12.782'
+    original: Keep me burning
+    english: Keep me burning
+  - start: '00:12.982'
+    end: '00:15.362'
+    original: Fire lover, call my name
+    english: Fire lover, call my name
+  - start: '00:15.542'
+    end: '00:17.392'
+    original: Sweet love burn me away
+    english: Sweet love burn me away
+  - start: '00:17.652'
+    end: '00:19.492'
+    original: Got my heart goin' up in flames
+    english: Got my heart goin' up in flames
+  - start: '00:19.662'
+    end: '00:20.972'
+    original: Tell me you can feel the searing heat
+    english: Tell me you can feel the searing heat
+  - start: '00:21.142'
+    end: '00:23.772'
+    original: Are you gonna run away, or burn with me?
+    english: Are you gonna run away, or burn with me?
+  - start: '00:23.942'
+    end: '00:26.562'
+    original: Blazin' fire, make me a believer
+    english: Blazin' fire, make me a believer
+  - start: '00:26.742'
+    end: '00:28.972'
+    original: I'm gettin' dizzy from the smoke in the air
+    english: I'm gettin' dizzy from the smoke in the air
+  - start: '00:29.142'
+    end: '00:34.462'
+    original: Wild desire, burnin' like a fever, come hold me close if you dare
+    english: Wild desire, burnin' like a fever, come hold me close if you dare
+  - start: '00:34.722'
+    end: '00:37.282'
+    original: Fire lover, be my flame
+    english: Fire lover, be my flame
+  - start: '00:37.482'
+    end: '00:39.922'
+    original: Keep me burning
+    english: Keep me burning
+  - start: '00:40.112'
+    end: '00:44.332'
+    original: Fire lover, call my name
+    english: Fire lover, call my name
+  - start: '00:45.322'
+    end: '00:47.362'
+    original: Sweet love burn me away
+    english: Sweet love burn me away
+  - start: '00:49.122'
+    end: '00:51.342'
+    original: Blazin' fire
+    english: Blazin' fire
+  - start: '00:57.212'
+    end: '00:59.392'
+    original: みんなで一緒にいくぞ！
+    english: Everyone, let's go together!
+  - start: '01:13.122'
+    end: '01:15.542'
+    original: I'm gonna, wanna turn it up, I'm burnin' up, can't get enough
+    english: I'm gonna, wanna turn it up, I'm burnin' up, can't get enough
+  - start: '01:15.722'
+    end: '01:18.422'
+    original: Maybe I'm too hot to touch, it's your fault, baby
+    english: Maybe I'm too hot to touch, it's your fault, baby
+  - start: '01:18.592'
+    end: '01:21.362'
+    original: I can't hide it anymore, I'm bearing my soul
+    english: I can't hide it anymore, I'm bearing my soul
+  - start: '01:21.522'
+    end: '01:24.182'
+    original: Let these flames swallow me whole
+    english: Let these flames swallow me whole
+  - start: '01:25.822'
+    end: '01:29.462'
+    original: This is how we're gonna play, a dangerous game, got your fire runnin'
+      through my veins
+    english: This is how we're gonna play, a dangerous game, got your fire runnin'
+      through my veins
+  - start: '01:29.822'
+    end: '01:31.962'
+    original: Baby, can't you read between the lines?
+    english: Baby, can't you read between the lines?
+  - start: '01:32.122'
+    end: '01:34.222'
+    original: (Look at me, look at me turnin' to ash, breakin' me, shakin' me, makin'
+      me crash)
+    english: (Look at me, look at me turnin' to ash, breakin' me, shakin' me, makin'
+      me crash)
+  - start: '01:37.822'
+    end: '01:40.422'
+    original: Gonna sear it all away until you're mine
+    english: Gonna sear it all away until you're mine
+  - start: '01:44.222'
+    end: '01:46.462'
+    original: I'm caught up in a heat wave, I'll never get enough
+    english: I'm caught up in a heat wave, I'll never get enough
+  - start: '01:46.622'
+    end: '01:49.362'
+    original: Fanning the flame of love (And now it's taking over)
+    english: Fanning the flame of love (And now it's taking over)
+  - start: '01:49.522'
+    end: '01:52.182'
+    original: Blazin' fire, make me a believer
+    english: Blazin' fire, make me a believer
+  - start: '01:52.322'
+    end: '01:54.462'
+    original: I'm gettin' dizzy from the smoke in the air
+    english: I'm gettin' dizzy from the smoke in the air
+  - start: '01:56.222'
+    end: '02:01.362'
+    original: Wild desire, burnin' like a fever, come hold me close if you dare
+    english: Wild desire, burnin' like a fever, come hold me close if you dare
+  - start: '02:02.122'
+    end: '02:06.362'
+    original: Fire lover, be my flame, keep me burning, fire lover, call my name
+    english: Fire lover, be my flame, keep me burning, fire lover, call my name
+  - start: '02:12.822'
+    end: '02:15.362'
+    original: Sweet love burn me away
+    english: Sweet love burn me away
+  - start: '02:17.222'
+    end: '02:19.462'
+    original: Blazin' fire, make me a believer
+    english: Blazin' fire, make me a believer
+  - start: '02:41.222'
+    end: '02:43.362'
+    original: Show me your illusion
+    english: Show me your illusion
+  - start: '02:43.522'
+    end: '02:46.362'
+    original: It doesn't matter if it's real or a dream
+    english: It doesn't matter if it's real or a dream
+  - start: '02:47.122'
+    end: '02:50.362'
+    original: Wild desire, fueling my delusion, I want you burning for me
+    english: Wild desire, fueling my delusion, I want you burning for me
+  - start: '02:53.122'
+    end: '02:57.362'
+    original: Blazin' fire, make me a believer, I'm gettin' dizzy from the smoke in
+      the air
+    english: Blazin' fire, make me a believer, I'm gettin' dizzy from the smoke in
+      the air
+  - start: '02:59.822'
+    end: '03:04.362'
+    original: Wild desire, burnin' like a fever, come hold me close if you dare
+    english: Wild desire, burnin' like a fever, come hold me close if you dare
+  - start: '03:05.122'
+    end: '03:08.362'
+    original: Fire lover, be my flame
+    english: Fire lover, be my flame
+  - start: '03:09.122'
+    end: '03:13.362'
+    original: Keep me burning, fire lover, call my name
+    english: Keep me burning, fire lover, call my name
+  - start: '03:14.822'
+    end: '03:19.362'
+    original: Sweet love burn me away
+    english: Sweet love burn me away
+  - start: '03:20.122'
+    end: '03:22.362'
+    original: Blazin' fire, make me a believer
+    english: Blazin' fire, make me a believer
+  - start: '03:43.122'
+    end: '03:45.362'
+    original: Heart stops, breathe out
+    english: Heart stops, breathe out
+  - start: '03:49.122'
+    end: '03:52.362'
+    original: Unlocked, free me
+    english: Unlocked, free me
+  - start: '03:53.122'
+    end: '03:55.362'
+    original: ESCALATE
+    english: ESCALATE
+  - start: '03:55.622'
+    end: '03:57.362'
+    original: さあ まだまだ回していくよ
+    english: Come on, we're going to keep spinning it!
+  - start: '03:57.622'
+    end: '03:59.362'
+    original: SGC!!
+    english: SGC!!
+  - start: '04:01.122'
+    end: '04:03.462'
+    original: Let's escalate!
+    english: Let's escalate!
+  - start: '04:06.122'
+    end: '04:10.362'
+    original: Spun out n' left for dead, stranded with my regret and I couldn't forget
+      the words ringing in my head
+    english: Spun out n' left for dead, stranded with my regret and I couldn't forget
+      the words ringing in my head
+  - start: '04:13.122'
+    end: '04:15.362'
+    original: Saying 'You're such a wreck', if you say so, I guess I'm -
+    english: Saying 'You're such a wreck', if you say so, I guess I'm -
+  - start: '04:16.822'
+    end: '04:20.362'
+    original: Headed toward the fire, my head is stuck in overdrive
+    english: Headed toward the fire, my head is stuck in overdrive
+  - start: '04:22.122'
+    end: '04:25.362'
+    original: Rammin' through, straight into what they all said I can't do
+    english: Rammin' through, straight into what they all said I can't do
+  - start: '04:26.122'
+    end: '04:30.362'
+    original: Ready to burn the tires, this is my desire, get, set, now drive!
+    english: Ready to burn the tires, this is my desire, get, set, now drive!
+  - start: '04:31.122'
+    end: '04:35.362'
+    original: Go hit the gas, don't hover the brakes, do what it takes till they know
+      your name
+    english: Go hit the gas, don't hover the brakes, do what it takes till they know
+      your name
+  - start: '04:35.822'
+    end: '04:39.362'
+    original: Steerin' yourself right toward your fate, crash into it cause it's all
+      yours to take
+    english: Steerin' yourself right toward your fate, crash into it cause it's all
+      yours to take
+  - start: '04:41.122'
+    end: '04:47.362'
+    original: So ready up! No, don't contemplate, can't waste your life there's just
+      no time to wait, you'll never break
+    english: So ready up! No, don't contemplate, can't waste your life there's just
+      no time to wait, you'll never break
+  - start: '04:49.122'
+    end: '04:54.362'
+    original: And it's no mistake that you've got this far, don't you be afraid, believe
+      and escalate
+    english: And it's no mistake that you've got this far, don't you be afraid, believe
+      and escalate
+  - start: '05:00.122'
+    end: '05:00.789'
+    original: Let's...
+    english: Let's...
+  thoughts:
+  - |-
+    **Subtitle Refinement: Initial Assessment**
+
+    Okay, so the user wants me to go through these draft subtitles for IRyS's "BE MY FLAME" and "Escalate," and rigorously refine them. The key is absolute precision: I need to work only from official lyrics, preserve all existing timestamps (start and end) exactly as they are, and output valid JSON. No deviations from the format.
+
+    The primary task is to correct any mis-transcriptions, replace any awkward or inaccurate English translations with versions that are faithful to the corrected lyrics (paying close attention to narrative flow and ellipses across line breaks). Visual tags are to be kept as is. *Absolutely* no sound descriptions or extraneous tags like "[applause]" or "♪" allowed.
+
+    I'll proceed block by block, comparing the draft with the official lyrics. For example, looking at the first block, "Got my heart burning up in the flame," I see some possibilities for change. I need to make sure I am looking at the correct song's lyrics. Then, I need to check the exact lyrics for the beginning. I should probably load the video around the specific timestamp, just to be sure. I'll need to use `google:load_video` to help me. I can check with the ASR or inspect the video frames if I need them.
+  - |-
+    **Subtitle Refinement: A Meticulous Alignment**
+
+    Okay, so the task is clear: I need to meticulously align these draft subtitles with the official lyrics for IRyS's songs "BE MY FLAME" and "Escalate." I'm treating this like a precision instrument – every timestamp, every word, every detail *must* be perfect. I've got the ASR and official lyrics as my gold standard, and I need to make sure the drafts, in both original language (`og`) and English (`en`), reflect the true performance.
+
+    I began by reviewing the official lyrics for "BE MY FLAME," cross-referencing them against the draft subtitles one by one. I had to pay close attention to the timing, comparing the ASR output and the draft lyrics to the provided lyrics. As an example, the initial draft of subtitle item 1 started with "Got my heart burning up in the flame," while the correct lyric was "Got my heart goin' up in flames" , I updated it accordingly. Each one had to be checked carefully against the provided lyrics. Sometimes the original draft was correct, but I confirmed it either way. Where any discrepancies arose, such as in item 3 (where the draft stated "Yeah, we can take it higher, higher" but the official lyrics are "Are you gonna run away, or burn with me?"), I corrected the `og` and `en` fields to match. I'm also ensuring the correct timestamp information (`s` and `e`) is preserved precisely. I made careful notes on each item, tracking the corrections. This process continued through all of the "BE MY FLAME" subtitles, keeping an eye on the details for any edits, especially after the chorus and into the second half of the song. I am also preserving the stage callouts and other non-lyrical sections of the song verbatim, like the audience's greetings and the introductions.
+
+    Once "BE MY FLAME" was thoroughly revised, I moved on to "Escalate." This demanded a similar level of precision and attention. I had to break down the lyrics by phrase, matching them with the draft subtitles. A good example is item 47, where the draft had "High stops, breathing out" and had to be edited to "Heart stops, breathe out". Each item was examined carefully, making sure everything was correct. Again, I used the official lyrics as the ultimate authority, and any deviations were corrected. I'm also mindful of retaining the flow and rhythm of the song. As the same, I need to keep the spoken words/callouts unchanged.
+
+    The final step is to create a JSON document. I need to make sure the whole file is valid, with all information, without any errors.
+lyrics_prompt_version: 10
+draft_subtitles:
+- start: '00:00.552'
+  end: '00:02.012'
+  original: Got my heart burning up in the flame
+  english: Got my heart burning up in the flame
+- start: '00:02.192'
+  end: '00:03.522'
+  original: Hear and feel the heat and heat
+  english: Hear and feel the heat and heat
+- start: '00:03.682'
+  end: '00:06.142'
+  original: Yeah, we can take it higher, higher
+  english: Yeah, we can take it higher, higher
+- start: '00:06.322'
+  end: '00:07.472'
+  original: Burn it like a fever
+  english: Burn it like a fever
+- start: '00:07.472'
+  end: '00:09.132'
+  original: Come on, we cook it up today!
+  english: Come on, we cook it up today!
+- start: '00:09.302'
+  end: '00:10.592'
+  original: Fire your love, baby, be my flame
+  english: Fire your love, baby, be my flame
+- start: '00:10.592'
+  end: '00:12.782'
+  original: Keep me burning, fire your love for my name
+  english: Keep me burning, fire your love for my name
+- start: '00:12.982'
+  end: '00:15.362'
+  original: Please love, burn me away
+  english: Please love, burn me away
+- start: '00:15.542'
+  end: '00:17.392'
+  original: Raise your fire, yeah...
+  english: Raise your fire, yeah...
+- start: '00:17.652'
+  end: '00:19.492'
+  original: Got my heart burning up in the flame
+  english: Got my heart burning up in the flame
+- start: '00:19.662'
+  end: '00:20.972'
+  original: Hear and feel the heat and heat
+  english: Hear and feel the heat and heat
+- start: '00:21.142'
+  end: '00:23.772'
+  original: Yeah, we can take it higher, higher
+  english: Yeah, we can take it higher, higher
+- start: '00:23.942'
+  end: '00:26.562'
+  original: Raise your fire, make me a believer
+  english: Raise your fire, make me a believer
+- start: '00:26.742'
+  end: '00:28.972'
+  original: I'm getting dizzy from the smoke in the air
+  english: I'm getting dizzy from the smoke in the air
+- start: '00:29.142'
+  end: '00:34.462'
+  original: Wild desire, burning like a fever, come on if you're close and you dare
+  english: Wild desire, burning like a fever, come on if you're close and you dare
+- start: '00:34.722'
+  end: '00:37.282'
+  original: Fire your love, be my flame
+  english: Fire your love, be my flame
+- start: '00:37.482'
+  end: '00:39.922'
+  original: Keep me burning, fire your love for my name
+  english: Keep me burning, fire your love for my name
+- start: '00:40.112'
+  end: '00:44.332'
+  original: Please love, burn me away
+  english: Please love, burn me away
+- start: '00:45.322'
+  end: '00:47.362'
+  original: Raise your fire, yeah...
+  english: Raise your fire, yeah...
+- start: '00:49.122'
+  end: '00:51.342'
+  original: Raise your fire, yeah...
+  english: Raise your fire, yeah...
+- start: '00:57.212'
+  end: '00:59.392'
+  original: みんなで一緒にい go!
+  english: Everyone, let's go together!
+- start: '01:13.122'
+  end: '01:15.542'
+  original: I'm gonna want to turn it up, I'm burning up, can't get enough
+  english: I'm gonna want to turn it up, I'm burning up, can't get enough
+- start: '01:15.722'
+  end: '01:18.422'
+  original: Maybe I'm too hot to touch, it's your fault, baby
+  english: Maybe I'm too hot to touch, it's your fault, baby
+- start: '01:18.592'
+  end: '01:21.362'
+  original: I can't hide it anymore, I'm bearing my soul
+  english: I can't hide it anymore, I'm bearing my soul
+- start: '01:21.522'
+  end: '01:24.182'
+  original: Let the flame swallow me whole
+  english: Let the flame swallow me whole
+- start: '01:25.822'
+  end: '01:29.462'
+  original: This is how we're gonna play a dangerous game, call your fire for me through
+    the pain
+  english: This is how we're gonna play a dangerous game, call your fire for me through
+    the pain
+- start: '01:29.822'
+  end: '01:31.962'
+  original: Baby, can't you feel
+  english: Baby, can't you feel
+- start: '01:32.122'
+  end: '01:34.222'
+  original: Between the line
+  english: Between the line
+- start: '01:37.822'
+  end: '01:40.422'
+  original: The spirit all awake, surrender my mind
+  english: The spirit all awake, surrender my mind
+- start: '01:44.222'
+  end: '01:46.462'
+  original: Caught in a heatwave, will never get enough
+  english: Caught in a heatwave, will never get enough
+- start: '01:46.622'
+  end: '01:49.362'
+  original: And in the flame of love, now we're taking it higher
+  english: And in the flame of love, now we're taking it higher
+- start: '01:49.522'
+  end: '01:52.182'
+  original: Blazing fire, make me a believer
+  english: Blazing fire, make me a believer
+- start: '01:52.322'
+  end: '01:54.462'
+  original: I'm getting dizzy from the smoke in the air
+  english: I'm getting dizzy from the smoke in the air
+- start: '01:56.222'
+  end: '02:01.362'
+  original: Wild desire, burning like a fever, come on if you're close and you dare
+  english: Wild desire, burning like a fever, come on if you're close and you dare
+- start: '02:02.122'
+  end: '02:06.362'
+  original: Fire your love, be my flame, keep me burning, fire your love for my name
+  english: Fire your love, be my flame, keep me burning, fire your love for my name
+- start: '02:12.822'
+  end: '02:15.362'
+  original: Please love, burn me away
+  english: Please love, burn me away
+- start: '02:17.222'
+  end: '02:19.462'
+  original: Blazing fire, make me a believer
+  english: Blazing fire, make me a believer
+- start: '02:41.222'
+  end: '02:43.362'
+  original: Show me your illusion
+  english: Show me your illusion
+- start: '02:43.522'
+  end: '02:46.362'
+  original: It doesn't matter if it's real or a dream
+  english: It doesn't matter if it's real or a dream
+- start: '02:47.122'
+  end: '02:50.362'
+  original: Wild desire, fueling my delusion, I want you to burn it for me
+  english: Wild desire, fueling my delusion, I want you to burn it for me
+- start: '02:53.122'
+  end: '02:57.362'
+  original: Blazing fire, make me a believer, I'm getting dizzy from the smoke in
+    the air
+  english: Blazing fire, make me a believer, I'm getting dizzy from the smoke in the
+    air
+- start: '02:59.822'
+  end: '03:04.362'
+  original: Wild desire, burning like a fever, come on if you're close and you dare
+  english: Wild desire, burning like a fever, come on if you're close and you dare
+- start: '03:05.122'
+  end: '03:08.362'
+  original: Fire your love, be my flame
+  english: Fire your love, be my flame
+- start: '03:09.122'
+  end: '03:13.362'
+  original: Keep me burning, fire your love for my name
+  english: Keep me burning, fire your love for my name
+- start: '03:14.822'
+  end: '03:19.362'
+  original: Please love, burn me away
+  english: Please love, burn me away
+- start: '03:20.122'
+  end: '03:22.362'
+  original: Blazing fire, make me a believer
+  english: Blazing fire, make me a believer
+- start: '03:43.122'
+  end: '03:45.362'
+  original: High stops, breathing out
+  english: High stops, breathing out
+- start: '03:49.122'
+  end: '03:52.362'
+  original: Lost, breathing
+  english: Lost, breathing
+- start: '03:53.122'
+  end: '03:55.362'
+  original: Me and SCO! Hey!
+  english: Me and SCO! Hey!
+- start: '03:55.622'
+  end: '03:57.362'
+  original: さあ まだまだ回していくよ
+  english: Come on, we're going to keep spinning it!
+- start: '03:57.622'
+  end: '03:59.362'
+  original: SGC!!
+  english: SGC!!
+- start: '04:01.122'
+  end: '04:03.462'
+  original: Let's escalate!
+  english: Let's escalate!
+- start: '04:06.122'
+  end: '04:10.362'
+  original: Burn out in my fortune, shattered is my regret and I couldn't forget the
+    words ringing in my head
+  english: Burn out in my fortune, shattered is my regret and I couldn't forget the
+    words ringing in my head
+- start: '04:13.122'
+  end: '04:15.362'
+  original: Say you'll touch a wreck if you say so again
+  english: Say you'll touch a wreck if you say so again
+- start: '04:16.822'
+  end: '04:20.362'
+  original: I'm headed toward the fire, my head is getting overdrive
+  english: I'm headed toward the fire, my head is getting overdrive
+- start: '04:22.122'
+  end: '04:25.362'
+  original: Turn it up into what they all said you can't do
+  english: Turn it up into what they all said you can't do
+- start: '04:26.122'
+  end: '04:30.362'
+  original: Ready to burn the tires, Mr. Vice's wide-eyed drive
+  english: Ready to burn the tires, Mr. Vice's wide-eyed drive
+- start: '04:31.122'
+  end: '04:35.362'
+  original: Go hit the gas, go over the brakes, do what it takes till they know your
+    name
+  english: Go hit the gas, go over the brakes, do what it takes till they know your
+    name
+- start: '04:35.822'
+  end: '04:39.362'
+  original: During your song, right toward your fate, crashes do wait 'cause there's
+    all you can take
+  english: During your song, right toward your fate, crashes do wait 'cause there's
+    all you can take
+- start: '04:41.122'
+  end: '04:47.362'
+  original: So ready up, no, don't try to play, you'll miss your life, there's just
+    no time to wait, you'll never break
+  english: So ready up, no, don't try to play, you'll miss your life, there's just
+    no time to wait, you'll never break
+- start: '04:49.122'
+  end: '04:54.362'
+  original: And it's a mistake that you got this far, don't you be afraid, feel even
+    and escalate
+  english: And it's a mistake that you got this far, don't you be afraid, feel even
+    and escalate
+- start: '05:00.122'
+  end: '05:00.789'
+  original: Let's...
+  english: Let's...
+detected_performances:
+- title: BE MY FLAME
+  artist: IRyS
+  start: 00:00
+  end: 03:59
+- title: Escalate
+  artist: IRyS
+  start: 03:59
+  end: 05:00
