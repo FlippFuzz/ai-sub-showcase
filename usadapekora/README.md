@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;07&#8209;31 | <a href="https://youtu.be/WJWg8kGKoP0"><img src="https://i.ytimg.com/vi/WJWg8kGKoP0/mqdefault.jpg" width="100" /></a> | [【#兎田ぺこら7周年記念LIVE】7周年3D LIVE！NewOutfit BONUS!!【ホロライブ/兎田ぺこら】](https://flippfuzz.github.io/ai-sub-player/?uploader=usadapekora&v=WJWg8kGKoP0) | [3.7-flash<br>0918](./v/WJWg8kGKoP0) |
+| 2026&#8209;08&#8209;07 | <a href="https://youtu.be/WJWg8kGKoP0"><img src="https://i.ytimg.com/vi/WJWg8kGKoP0/mqdefault.jpg" width="100" /></a> | [【#兎田ぺこら7周年記念LIVE】7周年3D LIVE！NewOutfit BONUS!!【ホロライブ/兎田ぺこら】](https://flippfuzz.github.io/ai-sub-player/?uploader=usadapekora&v=WJWg8kGKoP0) | [3.7-flash<br>0918](./v/WJWg8kGKoP0) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/uB6GxHc7PRc"><img src="https://i.ytimg.com/vi/uB6GxHc7PRc/mqdefault.jpg" width="100" /></a> | [【#兎田ぺこら生誕祭2025】生誕3D LIVE！FEVER！！！！！！！ぺこ！【ホロライブ/兎田ぺこら】](https://flippfuzz.github.io/ai-sub-player/?uploader=usadapekora&v=uB6GxHc7PRc) | [3.5-lite<br>0918](./v/uB6GxHc7PRc) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/E2D_YFRHFG8"><img src="https://i.ytimg.com/vi/E2D_YFRHFG8/mqdefault.jpg" width="100" /></a> | [【#兎田ぺこら6周年記念LIVE】周年3D LIVE！ぺこらRUSH！！！！！！！ぺこ！【ホロライブ/兎田ぺこら】](https://flippfuzz.github.io/ai-sub-player/?uploader=usadapekora&v=E2D_YFRHFG8) | [3.6-flash<br>0918](./v/E2D_YFRHFG8) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/RhUrYtAWENI"><img src="https://i.ytimg.com/vi/RhUrYtAWENI/mqdefault.jpg" width="100" /></a> | [【チラ見せ】1st兎田ぺこらいぶ「うさぎ the MEGAMI!!」【ホロライブ/兎田ぺこら】](https://flippfuzz.github.io/ai-sub-player/?uploader=usadapekora&v=RhUrYtAWENI) | [3.5-lite<br>0918](./v/RhUrYtAWENI) |
