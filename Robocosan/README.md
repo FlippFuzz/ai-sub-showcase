@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;08&#8209;31 | <a href="https://youtu.be/9uv6ihLUXtQ"><img src="https://i.ytimg.com/vi/9uv6ihLUXtQ/mqdefault.jpg" width="100" /></a> | [【3DLIVE】重大告知付き！ 今年は深海で #ロボ子海底3Dライブ  🪸　【ホロライブ/ロボ子さん】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=9uv6ihLUXtQ) | [3.7-flash<br>0918](./v/9uv6ihLUXtQ) |
+| 2026&#8209;08&#8209;07 | <a href="https://youtu.be/9uv6ihLUXtQ"><img src="https://i.ytimg.com/vi/9uv6ihLUXtQ/mqdefault.jpg" width="100" /></a> | [【3DLIVE】重大告知付き！ 今年は深海で #ロボ子海底3Dライブ  🪸　【ホロライブ/ロボ子さん】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=9uv6ihLUXtQ) | [3.7-flash<br>0918](./v/9uv6ihLUXtQ) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/BA-YWCSgkQo"><img src="https://i.ytimg.com/vi/BA-YWCSgkQo/mqdefault.jpg" width="100" /></a> | [【３DLIVE】新衣装初お披露目❤本日限定開店！はろーぼ飯店へようこそ🐉　【ホロライブ/  #ロボ子爆誕2025】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=BA-YWCSgkQo) | [3.6-flash<br>0918](./v/BA-YWCSgkQo) |
 | 2023&#8209;10&#8209;31 | <a href="https://youtu.be/2ISrlJUE08A"><img src="https://i.ytimg.com/vi/2ISrlJUE08A/mqdefault.jpg" width="100" /></a> | [【全身３D/ #ロボ子爆誕2023】Glory Days 💎今年で７才になったよ！大人可愛い新衣装でアイドルIKZ✨【ロボ子さん /ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=2ISrlJUE08A) | [3.5-lite<br>0918](./v/2ISrlJUE08A) |
 | 2022&#8209;10&#8209;31 | <a href="https://youtu.be/Lw3sBpkC3Rw"><img src="https://i.ytimg.com/vi/Lw3sBpkC3Rw/mqdefault.jpg" width="100" /></a> | [【＃ロボ子4周年記念LIVE 】４周年３D IDOL LIVE🎉cuteにcoolに楽しんでIKZ🎉 【3D LIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=Robocosan&v=Lw3sBpkC3Rw) | [3.5-lite<br>0918](./v/Lw3sBpkC3Rw) |
