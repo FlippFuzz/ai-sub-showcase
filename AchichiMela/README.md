@@ -2,6 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
+| 2026&#8209;11&#8209;07 | <a href="https://youtu.be/aLR5By86tVo"><img src="https://i.ytimg.com/vi/aLR5By86tVo/mqdefault.jpg" width="100" /></a> | [【#ホロ鯖ARK】完全初見ARK🔰ホロライブの新人がゆく！！！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=aLR5By86tVo) | [3.5-lite<br>011019](./v/aLR5By86tVo) |
 | 2026&#8209;11&#8209;06 | <a href="https://youtu.be/9R1sId-lrgo"><img src="https://i.ytimg.com/vi/9R1sId-lrgo/mqdefault.jpg" width="100" /></a> | [一配信で喜怒哀楽が全部見れるホラゲ「新幹線０号」【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=9R1sId-lrgo) | [3.6-flash<br>011019](./v/9R1sId-lrgo) |
 | 2026&#8209;11&#8209;05 | <a href="https://youtu.be/pc9jj2KhcKs"><img src="https://i.ytimg.com/vi/pc9jj2KhcKs/mqdefault.jpg" width="100" /></a> | [【のじゃEnglish】everydayとevery dayの違い…【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=pc9jj2KhcKs) | [3.6-flash<br>011019](./v/pc9jj2KhcKs) |
 | 2026&#8209;11&#8209;04 | <a href="https://youtu.be/HJGLBGgzldQ"><img src="https://i.ytimg.com/vi/HJGLBGgzldQ/mqdefault.jpg" width="100" /></a> | [ホロライブの麻雀アプリ「ホロじゃん」を先行プレイのじゃ！【アソビ★まわり隊！/ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=HJGLBGgzldQ) | [3.5-lite<br>011019](./v/HJGLBGgzldQ) |
