@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;05&#8209;31 | <a href="https://youtu.be/8W_Pml3XIdM"><img src="https://i.ytimg.com/vi/8W_Pml3XIdM/mqdefault.jpg" width="100" /></a> | [【生誕3Dライブ】#ラプさま大解放2026 超超超豪華ゲストありのラプ様ご褒美ライブ⁉重大告知もあるよ‼🔥【ラプラス・ダークネス/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=LaplusDarknesss&v=8W_Pml3XIdM) | [3.7-flash<br>0918](./v/8W_Pml3XIdM) |
+| 2026&#8209;06&#8209;08 | <a href="https://youtu.be/8W_Pml3XIdM"><img src="https://i.ytimg.com/vi/8W_Pml3XIdM/mqdefault.jpg" width="100" /></a> | [【生誕3Dライブ】#ラプさま大解放2026 超超超豪華ゲストありのラプ様ご褒美ライブ⁉重大告知もあるよ‼🔥【ラプラス・ダークネス/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=LaplusDarknesss&v=8W_Pml3XIdM) | [3.7-flash<br>0918](./v/8W_Pml3XIdM) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/m8hqs4NMij4"><img src="https://i.ytimg.com/vi/m8hqs4NMij4/mqdefault.jpg" width="100" /></a> | [いつか吾輩もあの頃のインターネットって言われる日が来るのかな #ラプラス・バースデイ2025](https://flippfuzz.github.io/ai-sub-player/?uploader=LaplusDarknesss&v=m8hqs4NMij4) | [3.6-flash<br>0918](./v/m8hqs4NMij4) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/q4XGBW-UGg0"><img src="https://i.ytimg.com/vi/q4XGBW-UGg0/mqdefault.jpg" width="100" /></a> | [🛸【ラプ様生誕祭2024】う、うまれる！#ラプ様と愉快な仲間たち【3D LIVE】💜](https://flippfuzz.github.io/ai-sub-player/?uploader=LaplusDarknesss&v=q4XGBW-UGg0) | [3.5-lite<br>0918](./v/q4XGBW-UGg0) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/abXN62S7pyU"><img src="https://i.ytimg.com/vi/abXN62S7pyU/mqdefault.jpg" width="100" /></a> | [【 #ラプラス2周年LIVE 】アイドルLIVE！？やります！🔥 [ 超最強ゲスト多数参戦！]【3D LIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=LaplusDarknesss&v=abXN62S7pyU) | [3.5-lite<br>0918](./v/abXN62S7pyU) |
