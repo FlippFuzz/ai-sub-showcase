@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;04&#8209;30 | <a href="https://youtu.be/FgA6hgxJH4I"><img src="https://i.ytimg.com/vi/FgA6hgxJH4I/mqdefault.jpg" width="100" /></a> | [【 #不知火フレア生誕祭2026 】BEMANI楽曲３D LIVE！みんなで盛り上がれ！【不知火フレア/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShiranuiFlare&v=FgA6hgxJH4I) | [3.6-flash<br>0918](./v/FgA6hgxJH4I) |
+| 2026&#8209;04&#8209;08 | <a href="https://youtu.be/FgA6hgxJH4I"><img src="https://i.ytimg.com/vi/FgA6hgxJH4I/mqdefault.jpg" width="100" /></a> | [【 #不知火フレア生誕祭2026 】BEMANI楽曲３D LIVE！みんなで盛り上がれ！【不知火フレア/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShiranuiFlare&v=FgA6hgxJH4I) | [3.6-flash<br>0918](./v/FgA6hgxJH4I) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/XcRns_s_wQ8"><img src="https://i.ytimg.com/vi/XcRns_s_wQ8/mqdefault.jpg" width="100" /></a> | [【3DLIVE】３D新衣装も！ #不知火フレア生誕祭2025 ゲストと一緒に盛り上がろう🎉【不知火フレア/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShiranuiFlare&v=XcRns_s_wQ8) | [3.5-lite<br>0918](./v/XcRns_s_wQ8) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/u8AeA1ucX2o"><img src="https://i.ytimg.com/vi/u8AeA1ucX2o/mqdefault.jpg" width="100" /></a> | [【3DLIVE】#不知火フレア生誕祭2024 ゲストも沢山！みんなで盛り上がろう！🎉【不知火フレア/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShiranuiFlare&v=u8AeA1ucX2o) | [3.5-lite<br>0918](./v/u8AeA1ucX2o) |
 | 2023&#8209;10&#8209;31 | <a href="https://youtu.be/7lJ5kdZGFgk"><img src="https://i.ytimg.com/vi/7lJ5kdZGFgk/mqdefault.jpg" width="100" /></a> | [【#不知火フレア4周年記念LIVE】平成初期アニソン祭り【不知火フレア/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShiranuiFlare&v=7lJ5kdZGFgk) | [3.5-lite<br>0918](./v/7lJ5kdZGFgk) |
