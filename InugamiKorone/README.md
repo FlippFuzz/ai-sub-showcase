@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;06&#8209;30 | <a href="https://youtu.be/Z1_nnb7LxYs"><img src="https://i.ytimg.com/vi/Z1_nnb7LxYs/mqdefault.jpg" width="100" /></a> | [【3DLIVE】Lazy DOOG Night! 【戌神ころね】#戌神ころね7周年](https://flippfuzz.github.io/ai-sub-player/?uploader=InugamiKorone&v=Z1_nnb7LxYs) | [3.7-flash<br>0918](./v/Z1_nnb7LxYs) |
+| 2026&#8209;07&#8209;08 | <a href="https://youtu.be/Z1_nnb7LxYs"><img src="https://i.ytimg.com/vi/Z1_nnb7LxYs/mqdefault.jpg" width="100" /></a> | [【3DLIVE】Lazy DOOG Night! 【戌神ころね】#戌神ころね7周年](https://flippfuzz.github.io/ai-sub-player/?uploader=InugamiKorone&v=Z1_nnb7LxYs) | [3.7-flash<br>0918](./v/Z1_nnb7LxYs) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/ASwjM25ax58"><img src="https://i.ytimg.com/vi/ASwjM25ax58/mqdefault.jpg" width="100" /></a> | [【3D Live】 戌神ころね6th記念★☆ 3D＆パペットライブ！？ 【#戌神ころね6周年】](https://flippfuzz.github.io/ai-sub-player/?uploader=InugamiKorone&v=ASwjM25ax58) | [3.5-lite<br>0918](./v/ASwjM25ax58) |
 | 2023&#8209;10&#8209;31 | <a href="https://youtu.be/o3JeicqyVG0"><img src="https://i.ytimg.com/vi/o3JeicqyVG0/mqdefault.jpg" width="100" /></a> | [【#戌神ころね4周年】みんなのおかげで4周年、本当にありがとう！！！4th anniversary Live☆★【戌神ころね/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=InugamiKorone&v=o3JeicqyVG0) | [3.5-lite<br>0918](./v/o3JeicqyVG0) |
 | 2023&#8209;10&#8209;31 | <a href="https://youtu.be/Zvb8xKmP-9U"><img src="https://i.ytimg.com/vi/Zvb8xKmP-9U/mqdefault.jpg" width="100" /></a> | [【3D LIVE】遅れたけど、誕生日3Dライブやります！ /  BIRTHDAY 3D LIVE！【#戌神ころね生誕祭2022】](https://flippfuzz.github.io/ai-sub-player/?uploader=InugamiKorone&v=Zvb8xKmP-9U) | [3.5-lite<br>0918](./v/Zvb8xKmP-9U) |
