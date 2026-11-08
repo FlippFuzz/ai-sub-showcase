@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;06&#8209;30 | <a href="https://youtu.be/T71ds94dnnM"><img src="https://i.ytimg.com/vi/T71ds94dnnM/mqdefault.jpg" width="100" /></a> | [【3DLIVE】超重大告知アリ！3D新衣装お披露目！！『Luminous Stairs』【鷹嶺ルイ/ホロライブ】#鷹嶺ルイ超重大生誕LIVE](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=T71ds94dnnM) | [3.7-flash<br>0918](./v/T71ds94dnnM) |
+| 2026&#8209;07&#8209;08 | <a href="https://youtu.be/T71ds94dnnM"><img src="https://i.ytimg.com/vi/T71ds94dnnM/mqdefault.jpg" width="100" /></a> | [【3DLIVE】超重大告知アリ！3D新衣装お披露目！！『Luminous Stairs』【鷹嶺ルイ/ホロライブ】#鷹嶺ルイ超重大生誕LIVE](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=T71ds94dnnM) | [3.7-flash<br>0918](./v/T71ds94dnnM) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/PHrZ_dRSy_4"><img src="https://i.ytimg.com/vi/PHrZ_dRSy_4/mqdefault.jpg" width="100" /></a> | [【 3D LIVE 】Lapis Lazuli / 重大告知アリ！【 #鷹嶺ルイ重大告知LIVE 】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=PHrZ_dRSy_4) | [3.6-flash<br>0918](./v/PHrZ_dRSy_4) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/28P_1Y0WbrM"><img src="https://i.ytimg.com/vi/28P_1Y0WbrM/mqdefault.jpg" width="100" /></a> | [【3DLIVE】重大告知あり‼パワーアップして帰ってきた音楽番組『MUSIC GARDEN』🎤✨【#鷹嶺ルイ生誕祭2025】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=28P_1Y0WbrM) | [3.6-flash<br>0918](./v/28P_1Y0WbrM) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/oU85vmx7jn8"><img src="https://i.ytimg.com/vi/oU85vmx7jn8/mqdefault.jpg" width="100" /></a> | [【 重大告知あり‼ 】#鷹嶺ルイ2周年LIVE 『ANIMAL』【3D LIVE】](https://flippfuzz.github.io/ai-sub-player/?uploader=TakaneLui&v=oU85vmx7jn8) | [3.5-lite<br>0918](./v/oU85vmx7jn8) |
