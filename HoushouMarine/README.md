@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;08&#8209;31 | <a href="https://youtu.be/qp1bA1A5bTQ"><img src="https://i.ytimg.com/vi/qp1bA1A5bTQ/mqdefault.jpg" width="100" /></a> | [【水着新衣装お披露目!!】#宝鐘マリン7周年3DLIVE【ホロライブ/宝鐘マリン】](https://flippfuzz.github.io/ai-sub-player/?uploader=HoushouMarine&v=qp1bA1A5bTQ) | [3.7-flash<br>0918](./v/qp1bA1A5bTQ) |
+| 2026&#8209;09&#8209;07 | <a href="https://youtu.be/qp1bA1A5bTQ"><img src="https://i.ytimg.com/vi/qp1bA1A5bTQ/mqdefault.jpg" width="100" /></a> | [【水着新衣装お披露目!!】#宝鐘マリン7周年3DLIVE【ホロライブ/宝鐘マリン】](https://flippfuzz.github.io/ai-sub-player/?uploader=HoushouMarine&v=qp1bA1A5bTQ) | [3.5-lite<br>011019](./v/qp1bA1A5bTQ) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/hmS_z-2epcM"><img src="https://i.ytimg.com/vi/hmS_z-2epcM/mqdefault.jpg" width="100" /></a> | [【チラ見せ】宝鐘マリン1stライブ「Ahoy!! キミたちみんなパイレーツ♡」【DAY2】](https://flippfuzz.github.io/ai-sub-player/?uploader=HoushouMarine&v=hmS_z-2epcM) | [3.5-lite<br>0918](./v/hmS_z-2epcM) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/ge0wzL9hFOY"><img src="https://i.ytimg.com/vi/ge0wzL9hFOY/mqdefault.jpg" width="100" /></a> | [【チラ見せ】宝鐘マリン1stライブ「Ahoy!! キミたちみんなパイレーツ♡」【DAY1】](https://flippfuzz.github.io/ai-sub-player/?uploader=HoushouMarine&v=ge0wzL9hFOY) | [3.5-lite<br>0918](./v/ge0wzL9hFOY) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/NxtHvRVLzXM"><img src="https://i.ytimg.com/vi/NxtHvRVLzXM/mqdefault.jpg" width="100" /></a> | [【重大発表あり!!!】宝鐘マリン生誕祭 3D LIVE！豪華ゲスト＆新曲お披露目！【ホロライブ/宝鐘マリン】](https://flippfuzz.github.io/ai-sub-player/?uploader=HoushouMarine&v=NxtHvRVLzXM) | [3.5-lite<br>0918](./v/NxtHvRVLzXM) |

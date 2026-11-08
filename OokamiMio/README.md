@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;09&#8209;30 | <a href="https://youtu.be/PlDgodRmrn0"><img src="https://i.ytimg.com/vi/PlDgodRmrn0/mqdefault.jpg" width="100" /></a> | [【 3D LIVE 】RosaMiAによる、初めてのアコースティックライブ【生歌唱】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=PlDgodRmrn0) | [3.7-flash<br>0918](./v/PlDgodRmrn0) |
+| 2026&#8209;10&#8209;07 | <a href="https://youtu.be/PlDgodRmrn0"><img src="https://i.ytimg.com/vi/PlDgodRmrn0/mqdefault.jpg" width="100" /></a> | [【 3D LIVE 】RosaMiAによる、初めてのアコースティックライブ【生歌唱】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=PlDgodRmrn0) | [3.5-lite<br>011019](./v/PlDgodRmrn0) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/pChQkIDyOJA"><img src="https://i.ytimg.com/vi/pChQkIDyOJA/mqdefault.jpg" width="100" /></a> | [【 チラ見せ】大神ミオ 1st Live.「Our Sparkle」ぴあアリーナMM](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=pChQkIDyOJA) | [3.6-flash<br>0918](./v/pChQkIDyOJA) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/YqPVwYLcvrY"><img src="https://i.ytimg.com/vi/YqPVwYLcvrY/mqdefault.jpg" width="100" /></a> | [大神ミオ５周年記念ライブ『ナイトループ』【 ホロライブ / 大神ミオ 】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=YqPVwYLcvrY) | [3.5-lite<br>0918](./v/YqPVwYLcvrY) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/VzecQUmB1sY"><img src="https://i.ytimg.com/vi/VzecQUmB1sY/mqdefault.jpg" width="100" /></a> | [【３DLive】晴れ時々にわかミオ【 #大神ミオ生誕ライブ2024 】](https://flippfuzz.github.io/ai-sub-player/?uploader=OokamiMio&v=VzecQUmB1sY) | [3.5-lite<br>0918](./v/VzecQUmB1sY) |

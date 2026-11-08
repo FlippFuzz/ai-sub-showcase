@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;10&#8209;25 | <a href="https://youtu.be/nlU8K-cuW7o"><img src="https://i.ytimg.com/vi/nlU8K-cuW7o/mqdefault.jpg" width="100" /></a> | [【歌舞伎町路上ライブ】"ZOMBIE! ZOMBIE!! ZOMBIE!!! "【星街すいせい / ＃ほしまちすたじお】](https://flippfuzz.github.io/ai-sub-player/?uploader=HoshimachiSuisei&v=nlU8K-cuW7o) | [3.5-lite<br>011019](./v/nlU8K-cuW7o) |
+| 2026&#8209;10&#8209;24 | <a href="https://youtu.be/nlU8K-cuW7o"><img src="https://i.ytimg.com/vi/nlU8K-cuW7o/mqdefault.jpg" width="100" /></a> | [【歌舞伎町路上ライブ】"ZOMBIE! ZOMBIE!! ZOMBIE!!! "【星街すいせい / ＃ほしまちすたじお】](https://flippfuzz.github.io/ai-sub-player/?uploader=HoshimachiSuisei&v=nlU8K-cuW7o) | [3.5-lite<br>011019](./v/nlU8K-cuW7o) |
 | 2026&#8209;03&#8209;31 | <a href="https://youtu.be/Jz2xEfAjC8Y"><img src="https://i.ytimg.com/vi/Jz2xEfAjC8Y/mqdefault.jpg" width="100" /></a> | [【8周年アコースティックLIVE】#星街すいせい重大発表LIVE](https://flippfuzz.github.io/ai-sub-player/?uploader=HoshimachiSuisei&v=Jz2xEfAjC8Y) | [3.6-flash<br>0918](./v/Jz2xEfAjC8Y) |
 | 2026&#8209;02&#8209;28 | <a href="https://youtu.be/MX4G_JcdZPo"><img src="https://i.ytimg.com/vi/MX4G_JcdZPo/mqdefault.jpg" width="100" /></a> | [【チラ見せ】Hoshimachi Suisei Live "SuperNova: REBOOT"](https://flippfuzz.github.io/ai-sub-player/?uploader=HoshimachiSuisei&v=MX4G_JcdZPo) | [3.6-flash<br>0918](./v/MX4G_JcdZPo) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/ysmbvtf3_bc"><img src="https://i.ytimg.com/vi/ysmbvtf3_bc/mqdefault.jpg" width="100" /></a> | [【チラ見せ】Hoshimachi Suisei Live Tour 2024 "Spectra of Nova"【福岡サンパレス】](https://flippfuzz.github.io/ai-sub-player/?uploader=HoshimachiSuisei&v=ysmbvtf3_bc) | [3.5-lite<br>0918](./v/ysmbvtf3_bc) |

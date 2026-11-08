@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;07&#8209;31 | <a href="https://youtu.be/dU3UiVZJLxw"><img src="https://i.ytimg.com/vi/dU3UiVZJLxw/mqdefault.jpg" width="100" /></a> | [【チラ見せ】桃鈴ねね 1st Live 「花咲く＊ねねねねねねねね超開花！」【 #ねね超開花】](https://flippfuzz.github.io/ai-sub-player/?uploader=MomosuzuNene&v=dU3UiVZJLxw) | [3.7-flash<br>0918](./v/dU3UiVZJLxw) |
+| 2026&#8209;08&#8209;07 | <a href="https://youtu.be/dU3UiVZJLxw"><img src="https://i.ytimg.com/vi/dU3UiVZJLxw/mqdefault.jpg" width="100" /></a> | [【チラ見せ】桃鈴ねね 1st Live 「花咲く＊ねねねねねねねね超開花！」【 #ねね超開花】](https://flippfuzz.github.io/ai-sub-player/?uploader=MomosuzuNene&v=dU3UiVZJLxw) | [3.5-lite<br>011019](./v/dU3UiVZJLxw) |
 | 2026&#8209;03&#8209;31 | <a href="https://youtu.be/YgZNZM81OcA"><img src="https://i.ytimg.com/vi/YgZNZM81OcA/mqdefault.jpg" width="100" /></a> | [【 超重大告知あり‼ 】 #桃鈴ねね誕生日ライブ2026 ～Liminal～【 桃鈴ねね / 3DLive 】](https://flippfuzz.github.io/ai-sub-player/?uploader=MomosuzuNene&v=YgZNZM81OcA) | [3.6-flash<br>0918](./v/YgZNZM81OcA) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/d-Ua7CIU34I"><img src="https://i.ytimg.com/vi/d-Ua7CIU34I/mqdefault.jpg" width="100" /></a> | [【 #桃鈴ねね誕生日Live2025 】ゲストあり！新衣装お披露目あり！ねねリズムバースデーライブ！【 桃鈴ねね / hololive 】](https://flippfuzz.github.io/ai-sub-player/?uploader=MomosuzuNene&v=d-Ua7CIU34I) | [3.5-lite<br>0918](./v/d-Ua7CIU34I) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/mlsJvmN-z74"><img src="https://i.ytimg.com/vi/mlsJvmN-z74/mqdefault.jpg" width="100" /></a> | [【 #桃鈴ねね生誕祭2024 】ムシキングとラブベリ実機で遊んでみた‼ライブパートもあるよん‼【桃鈴ねね/hololive】](https://flippfuzz.github.io/ai-sub-player/?uploader=MomosuzuNene&v=mlsJvmN-z74) | [3.5-flash<br>0918](./v/mlsJvmN-z74) |
