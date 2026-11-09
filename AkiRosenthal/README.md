@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;02&#8209;28 | <a href="https://youtu.be/_tBlI-l8WLk"><img src="https://i.ytimg.com/vi/_tBlI-l8WLk/mqdefault.jpg" width="100" /></a> | [【 3DLIVE 】#アキロゼ生誕祭2026 ーLife is GAMEー【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=_tBlI-l8WLk) | [3.6-flash<br>0918](./v/_tBlI-l8WLk) |
+| 2026&#8209;03&#8209;08 | <a href="https://youtu.be/_tBlI-l8WLk"><img src="https://i.ytimg.com/vi/_tBlI-l8WLk/mqdefault.jpg" width="100" /></a> | [【 3DLIVE 】#アキロゼ生誕祭2026 ーLife is GAMEー【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=_tBlI-l8WLk) | [3.6-flash<br>0918](./v/_tBlI-l8WLk) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/etiR9Qnqlmc"><img src="https://i.ytimg.com/vi/etiR9Qnqlmc/mqdefault.jpg" width="100" /></a> | [【 3DLIVE 】#アキロゼ生誕祭2025 ーYour True Colorsー【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=etiR9Qnqlmc) | [3.5-lite<br>0918](./v/etiR9Qnqlmc) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/pFZiKpoxuvw"><img src="https://i.ytimg.com/vi/pFZiKpoxuvw/mqdefault.jpg" width="100" /></a> | [【 #アキロゼ生誕祭2024 】ーFantasia of Bremenー￤3DLIVE【ホロライブ/アキ・ローゼンタール】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=pFZiKpoxuvw) | [3.5-lite<br>0918](./v/pFZiKpoxuvw) |
 | 2023&#8209;10&#8209;31 | <a href="https://youtu.be/n-pNnnM2ERs"><img src="https://i.ytimg.com/vi/n-pNnnM2ERs/mqdefault.jpg" width="100" /></a> | [【  #アキロゼ生誕祭2023 】ーStart your journeyー￤3DLIVE【ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=AkiRosenthal&v=n-pNnnM2ERs) | [3.5-lite<br>0918](./v/n-pNnnM2ERs) |
