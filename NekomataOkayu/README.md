@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;02&#8209;28 | <a href="https://youtu.be/rYpbqdD1oiQ"><img src="https://i.ytimg.com/vi/rYpbqdD1oiQ/mqdefault.jpg" width="100" /></a> | [【 3D LIVE 】ゲストもたくさん❕重大告知アリ❕みんなで楽しも🍙💜💜【 #猫又おかゆ生誕祭2026 】](https://flippfuzz.github.io/ai-sub-player/?uploader=NekomataOkayu&v=rYpbqdD1oiQ) | [3.6-flash<br>0918](./v/rYpbqdD1oiQ) |
+| 2026&#8209;03&#8209;08 | <a href="https://youtu.be/rYpbqdD1oiQ"><img src="https://i.ytimg.com/vi/rYpbqdD1oiQ/mqdefault.jpg" width="100" /></a> | [【 3D LIVE 】ゲストもたくさん❕重大告知アリ❕みんなで楽しも🍙💜💜【 #猫又おかゆ生誕祭2026 】](https://flippfuzz.github.io/ai-sub-player/?uploader=NekomataOkayu&v=rYpbqdD1oiQ) | [3.6-flash<br>0918](./v/rYpbqdD1oiQ) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/NM7_uUOAOlI"><img src="https://i.ytimg.com/vi/NM7_uUOAOlI/mqdefault.jpg" width="100" /></a> | [【チラ見せ】猫又おかゆ 2nd Live "ぺるそにゃ～りすぺくと" 【 #おかゆセカンド 】](https://flippfuzz.github.io/ai-sub-player/?uploader=NekomataOkayu&v=NM7_uUOAOlI) | [3.6-flash<br>0918](./v/NM7_uUOAOlI) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/E1Qy0OttVcs"><img src="https://i.ytimg.com/vi/E1Qy0OttVcs/mqdefault.jpg" width="100" /></a> | [【 3D LIVE 】ゲスト盛りだくさん！重大告知アリアリ🎂😸【 #⁠猫又おかゆ生誕祭2025 】](https://flippfuzz.github.io/ai-sub-player/?uploader=NekomataOkayu&v=E1Qy0OttVcs) | [3.5-lite<br>0918](./v/E1Qy0OttVcs) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/zoHoVtb-yww"><img src="https://i.ytimg.com/vi/zoHoVtb-yww/mqdefault.jpg" width="100" /></a> | [【ゲスト多数！超重大告知も！】#猫又おかゆ生誕祭2024  Cat♥Hoodie  楽しんでいってネ🍰🎉【猫又おかゆ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=NekomataOkayu&v=zoHoVtb-yww) | [3.5-lite<br>0918](./v/zoHoVtb-yww) |
