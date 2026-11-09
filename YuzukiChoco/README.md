@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;02&#8209;28 | <a href="https://youtu.be/_1PGuuEP7ps"><img src="https://i.ytimg.com/vi/_1PGuuEP7ps/mqdefault.jpg" width="100" /></a> | [【重大告知あり】新３Dお披露目?！癒月ちょこ生誕祭2026🎂 【ホロライブ/癒月ちょこ】](https://flippfuzz.github.io/ai-sub-player/?uploader=YuzukiChoco&v=_1PGuuEP7ps) | [3.6-flash<br>0918](./v/_1PGuuEP7ps) |
+| 2026&#8209;03&#8209;08 | <a href="https://youtu.be/_1PGuuEP7ps"><img src="https://i.ytimg.com/vi/_1PGuuEP7ps/mqdefault.jpg" width="100" /></a> | [【重大告知あり】新３Dお披露目?！癒月ちょこ生誕祭2026🎂 【ホロライブ/癒月ちょこ】](https://flippfuzz.github.io/ai-sub-player/?uploader=YuzukiChoco&v=_1PGuuEP7ps) | [3.6-flash<br>0918](./v/_1PGuuEP7ps) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/Z96aINLMDJo"><img src="https://i.ytimg.com/vi/Z96aINLMDJo/mqdefault.jpg" width="100" /></a> | [【#癒月ちょこ生誕祭2025】ゲスト多数！ちょこのお誕生日LIVE🎂【ホロライブ/癒月ちょこ】](https://flippfuzz.github.io/ai-sub-player/?uploader=YuzukiChoco&v=Z96aINLMDJo) | [3.5-lite<br>0918](./v/Z96aINLMDJo) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/YjTnRIIczcE"><img src="https://i.ytimg.com/vi/YjTnRIIczcE/mqdefault.jpg" width="100" /></a> | [【#ブラちょこ】Black choco Christmas！5周年３DLIVE！【ホロライブ/癒月ちょこ】](https://flippfuzz.github.io/ai-sub-player/?uploader=YuzukiChoco&v=YjTnRIIczcE) | [3.5-lite<br>0918](./v/YjTnRIIczcE) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/5rns6j2eHcQ"><img src="https://i.ytimg.com/vi/5rns6j2eHcQ/mqdefault.jpg" width="100" /></a> | [【#癒月ちょこ生誕祭2024】‐ GotCheat‐コラボ者多数！重大告知あり！3DBirthdayLIVE!!!【ホロライブ/癒月ちょこ】](https://flippfuzz.github.io/ai-sub-player/?uploader=YuzukiChoco&v=5rns6j2eHcQ) | [3.5-lite<br>0918](./v/5rns6j2eHcQ) |
