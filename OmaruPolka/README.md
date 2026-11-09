@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;01&#8209;31 | <a href="https://youtu.be/zzVcTQOdLZE"><img src="https://i.ytimg.com/vi/zzVcTQOdLZE/mqdefault.jpg" width="100" /></a> | [【OmaruPolkaBirthday2026】Glitter of Love \| Birthday 3D Live【hololive】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=zzVcTQOdLZE) | [3.6-flash<br>0918](./v/zzVcTQOdLZE) |
+| 2026&#8209;02&#8209;08 | <a href="https://youtu.be/zzVcTQOdLZE"><img src="https://i.ytimg.com/vi/zzVcTQOdLZE/mqdefault.jpg" width="100" /></a> | [【OmaruPolkaBirthday2026】Glitter of Love \| Birthday 3D Live【hololive】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=zzVcTQOdLZE) | [3.6-flash<br>0918](./v/zzVcTQOdLZE) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/a4T91LLjjJw"><img src="https://i.ytimg.com/vi/a4T91LLjjJw/mqdefault.jpg" width="100" /></a> | [【#尾丸ポルカ生誕祭2025】PuPPet~ポルカのおもちゃ箱~【尾丸ポルカ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=a4T91LLjjJw) | [3.5-lite<br>0918](./v/a4T91LLjjJw) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/W25VvoWh5zY"><img src="https://i.ytimg.com/vi/W25VvoWh5zY/mqdefault.jpg" width="100" /></a> | [【3D LIVE】Omaru Poruka Birthday Concert2024!! POL ROCK FES!!!!!](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=W25VvoWh5zY) | [3.5-lite<br>0918](./v/W25VvoWh5zY) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/EDWxOuVDUJk"><img src="https://i.ytimg.com/vi/EDWxOuVDUJk/mqdefault.jpg" width="100" /></a> | [【#尾丸ポルカ3周年】POLPOLPOLKA! ~遅れてやってきたぞ💓記念3DLIVE~【尾丸ポルカ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=OmaruPolka&v=EDWxOuVDUJk) | [3.5-lite<br>0918](./v/EDWxOuVDUJk) |
