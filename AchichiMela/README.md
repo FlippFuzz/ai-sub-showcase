@@ -2,6 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
+| 2026&#8209;11&#8209;09 | <a href="https://youtu.be/JyHztd5iGqs"><img src="https://i.ytimg.com/vi/JyHztd5iGqs/mqdefault.jpg" width="100" /></a> | [過酷な山登りゲーム「PEAK」のじゃEnglishで挑む！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=JyHztd5iGqs) | [3.5-lite<br>011019](./v/JyHztd5iGqs) |
 | 2026&#8209;11&#8209;08 | <a href="https://youtu.be/4AWfksK_tbY"><img src="https://i.ytimg.com/vi/4AWfksK_tbY/mqdefault.jpg" width="100" /></a> | [Minecraft競馬🏇ドパマンダーの初ギャンブル #ホロ1GP【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=4AWfksK_tbY) | [3.5-lite<br>011019](./v/4AWfksK_tbY) |
 | 2026&#8209;11&#8209;07 | <a href="https://youtu.be/y4TuInevWV0"><img src="https://i.ytimg.com/vi/y4TuInevWV0/mqdefault.jpg" width="100" /></a> | [AZKi先輩のホロメンMAPで一歩も動かずにGeoGuessr【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=y4TuInevWV0) | [3.8-flash<br>011019](./v/y4TuInevWV0) |
 | 2026&#8209;11&#8209;07 | <a href="https://youtu.be/aLR5By86tVo"><img src="https://i.ytimg.com/vi/aLR5By86tVo/mqdefault.jpg" width="100" /></a> | [【#ホロ鯖ARK】初見ARKで大パニック？！ホロライブ新人がゆく！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=aLR5By86tVo) | [3.8-flash<br>011019](./v/aLR5By86tVo) |
