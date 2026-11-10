@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2025&#8209;12&#8209;31 | <a href="https://youtu.be/wlPLYUOmtHE"><img src="https://i.ytimg.com/vi/wlPLYUOmtHE/mqdefault.jpg" width="100" /></a> | [【チラ見せ】ReGLOSS 1st Live "Flashpoint"【有明アリーナ】](https://flippfuzz.github.io/ai-sub-player/?uploader=hololiveDEV_IS&v=wlPLYUOmtHE) | [3.6-flash<br>0918](./v/wlPLYUOmtHE) |
+| 2026&#8209;01&#8209;08 | <a href="https://youtu.be/wlPLYUOmtHE"><img src="https://i.ytimg.com/vi/wlPLYUOmtHE/mqdefault.jpg" width="100" /></a> | [【チラ見せ】ReGLOSS 1st Live "Flashpoint"【有明アリーナ】](https://flippfuzz.github.io/ai-sub-player/?uploader=hololiveDEV_IS&v=wlPLYUOmtHE) | [3.6-flash<br>0918](./v/wlPLYUOmtHE) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/wKHQyJm1Lu8"><img src="https://i.ytimg.com/vi/wKHQyJm1Lu8/mqdefault.jpg" width="100" /></a> | [ReGLOSS - SPECIAL LIVE！【YouTube Music Weekend 10.0】](https://flippfuzz.github.io/ai-sub-player/?uploader=hololiveDEV_IS&v=wKHQyJm1Lu8) | [3.6-flash<br>0918](./v/wKHQyJm1Lu8) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/qc2owX4GFwA"><img src="https://i.ytimg.com/vi/qc2owX4GFwA/mqdefault.jpg" width="100" /></a> | [【 #ReGLOSS3Dライブ 】Sakura Mirage / 新曲サクラミラージュ披露！【 ミニライブ 】](https://flippfuzz.github.io/ai-sub-player/?uploader=hololiveDEV_IS&v=qc2owX4GFwA) | [3.5-lite<br>0918](./v/qc2owX4GFwA) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/lXten0BT3ZE"><img src="https://i.ytimg.com/vi/lXten0BT3ZE/mqdefault.jpg" width="100" /></a> | [【#ReGLOSS2周年】ReGLOSS 2nd Anniversary](https://flippfuzz.github.io/ai-sub-player/?uploader=hololiveDEV_IS&v=lXten0BT3ZE) | [3.6-flash<br>0918](./v/lXten0BT3ZE) |
