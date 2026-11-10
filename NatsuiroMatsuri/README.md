@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;11&#8209;02 | <a href="https://youtu.be/oMXaXv1q7kw"><img src="https://i.ytimg.com/vi/oMXaXv1q7kw/mqdefault.jpg" width="100" /></a> | [【 3DLIVE 】速報！夏色まつり古神曲ライブ~ktkr(ﾟ∀ﾟ)視聴キボンヌ~【ホロライブ/夏色まつり】](https://flippfuzz.github.io/ai-sub-player/?uploader=NatsuiroMatsuri&v=oMXaXv1q7kw) | [3.5-lite<br>011019](./v/oMXaXv1q7kw) |
+| 2026&#8209;11&#8209;02 | <a href="https://youtu.be/oMXaXv1q7kw"><img src="https://i.ytimg.com/vi/oMXaXv1q7kw/mqdefault.jpg" width="100" /></a> | [【 3DLIVE 】速報！夏色まつり古神曲ライブ~ktkr(ﾟ∀ﾟ)視聴キボンヌ~【ホロライブ/夏色まつり】](https://flippfuzz.github.io/ai-sub-player/?uploader=NatsuiroMatsuri&v=oMXaXv1q7kw) | [3.6-flash<br>011019](./v/oMXaXv1q7kw) |
 | 2026&#8209;09&#8209;30 | <a href="https://youtu.be/XUnKfpL-OuA"><img src="https://i.ytimg.com/vi/XUnKfpL-OuA/mqdefault.jpg" width="100" /></a> | [[Onomatopoeia Quiz] How Well Can Hololive's International Members Understand Japanese Onomatopoei...](https://flippfuzz.github.io/ai-sub-player/?uploader=NatsuiroMatsuri&v=XUnKfpL-OuA) | [3.8-flash<br>0918](./v/XUnKfpL-OuA) |
 | 2025&#8209;11&#8209;30 | <a href="https://youtu.be/L-XVS13TRTI"><img src="https://i.ytimg.com/vi/L-XVS13TRTI/mqdefault.jpg" width="100" /></a> | [【 #夏色まつり誕生祭2025 】重大告知あり！アイドル革命進行中！～今日の主役は夢の途中～　【ホロライブ/夏色まつり】](https://flippfuzz.github.io/ai-sub-player/?uploader=NatsuiroMatsuri&v=L-XVS13TRTI) | [3.6-flash<br>0918](./v/L-XVS13TRTI) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/pKc5qSSWJQs"><img src="https://i.ytimg.com/vi/pKc5qSSWJQs/mqdefault.jpg" width="100" /></a> | [【3D LIVE】#夏色FullBloom / 夏色まつり誕生ライブ【ホロライブ/夏色まつり】](https://flippfuzz.github.io/ai-sub-player/?uploader=NatsuiroMatsuri&v=pKc5qSSWJQs) | [3.5-lite<br>0918](./v/pKc5qSSWJQs) |
