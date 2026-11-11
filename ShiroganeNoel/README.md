@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2025&#8209;11&#8209;30 | <a href="https://youtu.be/eV59GTk0J3s"><img src="https://i.ytimg.com/vi/eV59GTk0J3s/mqdefault.jpg" width="100" /></a> | [【#白銀ノエル生誕祭2025】生誕 3D LIVE 睡夢 - suimu -【白銀ノエル/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShiroganeNoel&v=eV59GTk0J3s) | [3.6-flash<br>0918](./v/eV59GTk0J3s) |
+| 2025&#8209;12&#8209;08 | <a href="https://youtu.be/eV59GTk0J3s"><img src="https://i.ytimg.com/vi/eV59GTk0J3s/mqdefault.jpg" width="100" /></a> | [【#白銀ノエル生誕祭2025】生誕 3D LIVE 睡夢 - suimu -【白銀ノエル/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShiroganeNoel&v=eV59GTk0J3s) | [3.6-flash<br>0918](./v/eV59GTk0J3s) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/fTupWAFy6wo"><img src="https://i.ytimg.com/vi/fTupWAFy6wo/mqdefault.jpg" width="100" /></a> | [【#白銀ノエル生誕祭2024】Shirogane Noel Xmas 3D LIVE 【白銀ノエル/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShiroganeNoel&v=fTupWAFy6wo) | [3.5-lite<br>0918](./v/fTupWAFy6wo) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/Si2W-gcT1Lw"><img src="https://i.ytimg.com/vi/Si2W-gcT1Lw/mqdefault.jpg" width="100" /></a> | [【#白銀ノエル生誕祭2023】3Dバラエティ！あびゃびゃ！全国おいしい発見！～高級食材で牛丼づくりに挑む～【白銀ノエル/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShiroganeNoel&v=Si2W-gcT1Lw) | [3.5-lite<br>0918](./v/Si2W-gcT1Lw) |
 | 2023&#8209;10&#8209;31 | <a href="https://youtu.be/Q7KmABONtXk"><img src="https://i.ytimg.com/vi/Q7KmABONtXk/mqdefault.jpg" width="100" /></a> | [【#白銀ノエル4周年】ゲストいっぱい！3D LIVE ✨最高の夏にしようね🎶【白銀ノエル/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=ShiroganeNoel&v=Q7KmABONtXk) | [3.5-lite<br>0918](./v/Q7KmABONtXk) |
