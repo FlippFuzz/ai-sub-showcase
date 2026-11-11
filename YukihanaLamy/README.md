@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2025&#8209;11&#8209;30 | <a href="https://youtu.be/mjXO5WWADww"><img src="https://i.ytimg.com/vi/mjXO5WWADww/mqdefault.jpg" width="100" /></a> | [【#ラミィ生誕3Dヒーローショー】雪花ラミィ生誕３DLIVE『 ホロレンジャー』ゲスト＆告知あり！【 雪花ラミィ /ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=YukihanaLamy&v=mjXO5WWADww) | [3.6-flash<br>0918](./v/mjXO5WWADww) |
+| 2025&#8209;12&#8209;08 | <a href="https://youtu.be/mjXO5WWADww"><img src="https://i.ytimg.com/vi/mjXO5WWADww/mqdefault.jpg" width="100" /></a> | [【#ラミィ生誕3Dヒーローショー】雪花ラミィ生誕３DLIVE『 ホロレンジャー』ゲスト＆告知あり！【 雪花ラミィ /ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=YukihanaLamy&v=mjXO5WWADww) | [3.6-flash<br>0918](./v/mjXO5WWADww) |
 | 2023&#8209;10&#8209;31 | <a href="https://youtu.be/hzmimWcN34Q"><img src="https://i.ytimg.com/vi/hzmimWcN34Q/mqdefault.jpg" width="100" /></a> | [[Lamy's Birthday Celebration 2022] We'll do whatever we want again this year! 1 Million Yen Drink...](https://flippfuzz.github.io/ai-sub-player/?uploader=YukihanaLamy&v=hzmimWcN34Q) | [3.5-lite<br>0918](./v/hzmimWcN34Q) |
 | 2023&#8209;10&#8209;31 | <a href="https://youtu.be/215Bq5oo9Bw"><img src="https://i.ytimg.com/vi/215Bq5oo9Bw/mqdefault.jpg" width="100" /></a> | [【#雪花ラミィ3周年LIVE】ラミィの『大好き』詰め合わせ！Lamy＊Love♡Fest☆【雪花ラミィ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=YukihanaLamy&v=215Bq5oo9Bw) | [3.5-lite<br>0918](./v/215Bq5oo9Bw) |
 | 2022&#8209;10&#8209;31 | <a href="https://youtu.be/hEkHj1WZekU"><img src="https://i.ytimg.com/vi/hEkHj1WZekU/mqdefault.jpg" width="100" /></a> | [【#雪花ラミィ生誕ライブ】ゲストいっぱい！誕生日LIVE【雪花ラミィ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=YukihanaLamy&v=hEkHj1WZekU) | [3.5-lite<br>0918](./v/hEkHj1WZekU) |
