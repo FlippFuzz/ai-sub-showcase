@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2025&#8209;10&#8209;31 | <a href="https://youtu.be/uRa-uLMea7w"><img src="https://i.ytimg.com/vi/uRa-uLMea7w/mqdefault.jpg" width="100" /></a> | [【 #百鬼あやめ7周年新衣装3D 】百鬼あやめ７周年記念ライブ  ～天女繚華～ 【百鬼あやめ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=NakiriAyame&v=uRa-uLMea7w) | [3.6-flash<br>0918](./v/uRa-uLMea7w) |
+| 2025&#8209;11&#8209;08 | <a href="https://youtu.be/uRa-uLMea7w"><img src="https://i.ytimg.com/vi/uRa-uLMea7w/mqdefault.jpg" width="100" /></a> | [【 #百鬼あやめ7周年新衣装3D 】百鬼あやめ７周年記念ライブ  ～天女繚華～ 【百鬼あやめ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=NakiriAyame&v=uRa-uLMea7w) | [3.6-flash<br>0918](./v/uRa-uLMea7w) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/d4l17lJKhDE"><img src="https://i.ytimg.com/vi/d4l17lJKhDE/mqdefault.jpg" width="100" /></a> | [【 ＃百鬼あやめ生誕祭2024】Dream Festival‼ ～Nakiriayame 7th BirthDay～【百鬼あやめ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=NakiriAyame&v=d4l17lJKhDE) | [3.5-lite<br>0918](./v/d4l17lJKhDE) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/FOai83VIogA"><img src="https://i.ytimg.com/vi/FOai83VIogA/mqdefault.jpg" width="100" /></a> | [【 ＃百鬼あやめ生誕祭2023 】Nakiriayame 6th BirthDay  ～Shoot the heart～](https://flippfuzz.github.io/ai-sub-player/?uploader=NakiriAyame&v=FOai83VIogA) | [3.5-lite<br>0918](./v/FOai83VIogA) |
 | 2022&#8209;10&#8209;31 | <a href="https://youtu.be/mwJGZ8YU7o4"><img src="https://i.ytimg.com/vi/mwJGZ8YU7o4/mqdefault.jpg" width="100" /></a> | [【＃百鬼あやめ４周年記念 / 3DLIVE】Nakiriayame 4th anniversary　~Hapiness to you ♡~](https://flippfuzz.github.io/ai-sub-player/?uploader=NakiriAyame&v=mwJGZ8YU7o4) | [3.5-lite<br>0918](./v/mwJGZ8YU7o4) |
