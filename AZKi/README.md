@@ -2,6 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
+| 2026&#8209;11&#8209;12 | <a href="https://youtu.be/AhCOzPaFyh4"><img src="https://i.ytimg.com/vi/AhCOzPaFyh4/mqdefault.jpg" width="100" /></a> | [【オフコラボ】#あずめら 国道トレカ開封！？～推し国道を見つけよう～【ホロライブ / AZKi / 熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AZKi&v=AhCOzPaFyh4) | [3.5-lite<br>011019](./v/AhCOzPaFyh4) |
 | 2026&#8209;07&#8209;08 | <a href="https://youtu.be/Kib9k58WLn0"><img src="https://i.ytimg.com/vi/Kib9k58WLn0/mqdefault.jpg" width="100" /></a> | [【3D LIVE】AZKi 8th Birthday Live "Cross Over" 新衣装お披露目＆重大告知【#AZKi生誕ライブ2026】](https://flippfuzz.github.io/ai-sub-player/?uploader=AZKi&v=Kib9k58WLn0) | [3.7-flash<br>0918](./v/Kib9k58WLn0) |
 | 2025&#8209;12&#8209;08 | <a href="https://youtu.be/7UlZnyO79Xg"><img src="https://i.ytimg.com/vi/7UlZnyO79Xg/mqdefault.jpg" width="100" /></a> | [【チラ見せ】AZKi SOLO LiVE 2025 "Departure"【ぴあアリーナMM】](https://flippfuzz.github.io/ai-sub-player/?uploader=AZKi&v=7UlZnyO79Xg) | [3.6-flash<br>0918](./v/7UlZnyO79Xg) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/gdQ4eN9wzZg"><img src="https://i.ytimg.com/vi/gdQ4eN9wzZg/mqdefault.jpg" width="100" /></a> | [【3D LIVE】AZKi 7th Birthday Live "Sweet Pop Story" 新衣装お披露目＆重大発表【#AZKi生誕ライブ2025】](https://flippfuzz.github.io/ai-sub-player/?uploader=AZKi&v=gdQ4eN9wzZg) | [3.6-flash<br>0918](./v/gdQ4eN9wzZg) |
