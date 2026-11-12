@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;06&#8209;30 | <a href="https://youtu.be/BADL5x3Ftzc"><img src="https://i.ytimg.com/vi/BADL5x3Ftzc/mqdefault.jpg" width="100" /></a> | [【 3DLIVE 】"アニソン Night Fever２" / 重大告知あり！【 #角巻わため生誕祭2026 】](https://flippfuzz.github.io/ai-sub-player/?uploader=TsunomakiWatame&v=BADL5x3Ftzc) | [3.7-flash<br>0918](./v/BADL5x3Ftzc) |
+| 2026&#8209;07&#8209;13 | <a href="https://youtu.be/BADL5x3Ftzc"><img src="https://i.ytimg.com/vi/BADL5x3Ftzc/mqdefault.jpg" width="100" /></a> | [【 3DLIVE 】"アニソン Night Fever２" / 重大告知あり！【 #角巻わため生誕祭2026 】](https://flippfuzz.github.io/ai-sub-player/?uploader=TsunomakiWatame&v=BADL5x3Ftzc) | [3.7-flash<br>0918](./v/BADL5x3Ftzc) |
 | 2025&#8209;10&#8209;31 | <a href="https://youtu.be/rhgRzAgYKDM"><img src="https://i.ytimg.com/vi/rhgRzAgYKDM/mqdefault.jpg" width="100" /></a> | [【3DLIVE】重大告知あり！"アニソン Night Fever!!"【#角巻わため生誕祭2025】](https://flippfuzz.github.io/ai-sub-player/?uploader=TsunomakiWatame&v=rhgRzAgYKDM) | [3.6-flash<br>0918](./v/rhgRzAgYKDM) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/fcFwvfav6mQ"><img src="https://i.ytimg.com/vi/fcFwvfav6mQ/mqdefault.jpg" width="100" /></a> | [【3DLIVE】Revival / 重大告知あり！【#角巻わため生誕祭2024】](https://flippfuzz.github.io/ai-sub-player/?uploader=TsunomakiWatame&v=fcFwvfav6mQ) | [3.5-lite<br>0918](./v/fcFwvfav6mQ) |
 | 2024&#8209;10&#8209;31 | <a href="https://youtu.be/aBU9HgJmUWk"><img src="https://i.ytimg.com/vi/aBU9HgJmUWk/mqdefault.jpg" width="100" /></a> | [【チラ見せ枠】わためぇ Night Fever!! in TOKYO GARDEN THEATER【角巻わため/ホロライブ４期生】](https://flippfuzz.github.io/ai-sub-player/?uploader=TsunomakiWatame&v=aBU9HgJmUWk) | [3.5-lite<br>0918](./v/aBU9HgJmUWk) |
