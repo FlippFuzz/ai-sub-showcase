@@ -2,6 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
+| 2026&#8209;11&#8209;08 | <a href="https://youtu.be/bEYM4SkDMCI"><img src="https://i.ytimg.com/vi/bEYM4SkDMCI/mqdefault.jpg" width="100" /></a> | [【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-](https://flippfuzz.github.io/ai-sub-player/?uploader=TokinoSora&v=bEYM4SkDMCI) | [3.5-lite<br>011019](./v/bEYM4SkDMCI) |
 | 2026&#8209;06&#8209;08 | <a href="https://youtu.be/sflyOJD5y50"><img src="https://i.ytimg.com/vi/sflyOJD5y50/mqdefault.jpg" width="100" /></a> | [【#ときのそらお披露目誕生日2026】１０年目に向けた最高のパフォーマンスを！～告知もあるよ～【ホロライブ/ときのそら】](https://flippfuzz.github.io/ai-sub-player/?uploader=TokinoSora&v=sflyOJD5y50) | [3.7-flash<br>0918](./v/sflyOJD5y50) |
 | 2026&#8209;02&#8209;08 | <a href="https://youtu.be/ko7ypXM_-yQ"><img src="https://i.ytimg.com/vi/ko7ypXM_-yQ/mqdefault.jpg" width="100" /></a> | [【チラ見せ枠_NIGHT】ときのそら New Year’s Party 2026『Dreams in Motion』](https://flippfuzz.github.io/ai-sub-player/?uploader=TokinoSora&v=ko7ypXM_-yQ) | [3.6-flash<br>0918](./v/ko7ypXM_-yQ) |
 | 2026&#8209;02&#8209;08 | <a href="https://youtu.be/5NbNvtpj2-c"><img src="https://i.ytimg.com/vi/5NbNvtpj2-c/mqdefault.jpg" width="100" /></a> | [【チラ見せ枠_DAY】ときのそら New Year’s Party 2026『Dreams in Motion』](https://flippfuzz.github.io/ai-sub-player/?uploader=TokinoSora&v=5NbNvtpj2-c) | [3.6-flash<br>0918](./v/5NbNvtpj2-c) |
