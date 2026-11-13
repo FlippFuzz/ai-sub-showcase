@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;11&#8209;13 | <a href="https://youtu.be/xebosvJFBR0"><img src="https://i.ytimg.com/vi/xebosvJFBR0/mqdefault.jpg" width="100" /></a> | [【義務きゃー】幽霊調査ホラゲ「Phasmophobia」【ホロライブ/百灯キョーコ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=xebosvJFBR0) | [gemini-3.5-flash-lite<br>011019](./v/xebosvJFBR0) |
+| 2026&#8209;11&#8209;13 | <a href="https://youtu.be/xebosvJFBR0"><img src="https://i.ytimg.com/vi/xebosvJFBR0/mqdefault.jpg" width="100" /></a> | [【義務きゃー】幽霊調査ホラゲ「Phasmophobia」【ホロライブ/百灯キョーコ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=xebosvJFBR0) | [gemini-3.6-flash<br>011019](./v/xebosvJFBR0) |
 | 2026&#8209;11&#8209;12 | <a href="https://youtu.be/87_E4xb__H0"><img src="https://i.ytimg.com/vi/87_E4xb__H0/mqdefault.jpg" width="100" /></a> | [サラマンダーから見た人間社会の「空気読み。3」【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=87_E4xb__H0) | [gemini-4-hydrogen<br>011019](./v/87_E4xb__H0) |
 | 2026&#8209;11&#8209;11 | <a href="https://youtu.be/q3gGvOxaJ7o"><img src="https://i.ytimg.com/vi/q3gGvOxaJ7o/mqdefault.jpg" width="100" /></a> | [【のじゃEnglish】のじゃが「knoja」な理由のじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=q3gGvOxaJ7o) | [gemini-4-hydrogen<br>011019](./v/q3gGvOxaJ7o) |
 | 2026&#8209;11&#8209;10 | <a href="https://youtu.be/JyHztd5iGqs"><img src="https://i.ytimg.com/vi/JyHztd5iGqs/mqdefault.jpg" width="100" /></a> | [過酷な山登りゲーム「PEAK」のじゃEnglishで挑む！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=JyHztd5iGqs) | [gemini-4-hydrogen<br>011019](./v/JyHztd5iGqs) |
