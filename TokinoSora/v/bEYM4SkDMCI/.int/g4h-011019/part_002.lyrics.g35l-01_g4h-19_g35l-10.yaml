@@ -1,0 +1,703 @@
+name: part_002
+total_attempts: 1
+user_context: This is a YouTube video from SoraCh. ときのそらチャンネル channel. The video title
+  is '【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-'.
+segment_index: null
+video_duration_ms: 297788
+segment_offset_ms: 603016
+global_summary:
+  overall_summary: This video is the YouTube free preview stream of Tokino Sora's
+    9th Anniversary Party concert titled 'Everyday of Light' -Moonlight Stage-, held
+    at Pia Arena MM. The broadcast showcases high-energy live band performances of
+    her original tracks such as 'Marugoto Mirai', vibrant stage choreography, audience
+    call-and-response segments interacting with fans across various arena sections
+    and online streams, and concludes with the end of the free YouTube preview portion.
+  chapters:
+  - start: 00:00
+    end: 02:50
+    title: Opening Overture & Pre-Show Vibe
+    description: Opening hype and musical overture leading into the concert.
+    song_title: null
+    song_artist: null
+  - start: 02:50
+    end: 05:00
+    title: 'Song Performance: マルゴトミライ (Marugoto Mirai)'
+    description: Live band performance of Tokino Sora's upbeat original song 'Marugoto
+      Mirai' with vibrant choreography.
+    song_title: マルゴトミライ
+    song_artist: ときのそら
+  - start: 05:00
+    end: '10:00'
+    title: Concert Interlude & Visual Montage
+    description: Atmospheric transition showcasing concert visuals, stage lighting,
+      and venue atmosphere at Pia Arena MM.
+    song_title: null
+    song_artist: null
+  - start: '10:00'
+    end: '20:00'
+    title: Live Song Medley & Performance Tracks
+    description: A continuous sequence of energetic live performances featuring dynamic
+      vocals and band accompaniment.
+    song_title: null
+    song_artist: ときのそら
+  - start: '20:00'
+    end: '23:50'
+    title: MC Talk & Audience Call and Response
+    description: Tokino Sora interacts with the live audience across arena seats,
+      floor levels, female fans, and online viewers, introducing the live band.
+    song_title: null
+    song_artist: null
+  - start: '23:50'
+    end: '28:22'
+    title: End of Free YouTube Preview & Stream Closing
+    description: Closing announcements for the free YouTube portion of the livestream,
+      directing viewers to the ticketed broadcast.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Tokino Sora
+    original_name: ときのそら
+    role_or_affiliation: Hololive / Victor Entertainment
+    persona_lore: Hololive's very first virtual idol (0th generation), debuted in
+      September 2017. Known for her angelic singing voice, earnest personality, and
+      dream of performing major venue concerts.
+    speech_patterns_or_ticks: Cheerful and polite registers, enthusiastic exclamations
+      like 'イェーイ！' and 'みんな盛り上がってる！'.
+    visual_cues: Brown hair in twin-tails with a star hairclip, white dress with a
+      light blue and pink gradient jacket.
+  domain_glossary: []
+  thoughts:
+  - |-
+    **Analyzing Tokino Sora's 9th Anniversary Party Video**
+
+    Okay, so I need to dig into this `video_1.webm` file. The user wants a breakdown of the video content, and based on the information provided, it looks like it's from Tokino Sora's YouTube channel, specifically the 'Tokino Sora Channel.' The title, '【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-,' gives me a good starting point. This suggests it's a "sneak peek" or "preview" of a stage performance from her 9th Anniversary Party, specifically the "Moonlight Stage." The video is a little over 28 minutes long (1720 seconds), which should give me a good chunk of content to work with.
+
+    I'll be using `load_video` to load the video. Since the context provided indicates the user may want a transcript of the speech present in the video, I'll be using `include_asr=True` so that the automatic speech recognition (ASR) is included in the analysis. This will make it easier to understand what's actually being said during the video and allow me to extract any information the user might find important. I'll need to keep an eye out for interesting segments and any context that relates to the Moonlight Stage and Sora's anniversary. Let's see what we can find!
+  - |-
+    **Analyzing the Video ASR and Its Structure**
+
+    Okay, let's dive into this video's ASR and understand its structure. First, I need to know the video's length; it's 1720 seconds, about 28 minutes and 40 seconds. I need to break down the timeline to see what's happening at key timestamps.
+
+    My initial thought is that the first segment, roughly from 00:00 to 02:50, might be an introduction or the beginning of a song, perhaps even a prelude. I should check frames around 00:00 to 07:00, 10:00, and so on. This will help me identify any songs being sung, visual events, and the end of any free preview.
+
+    Hold on, I see something around 23:50: "というわけでYouTubeの無料配信はここまで。続きが見たい人は、概要欄から見に来てね。" This tells me the free YouTube stream ends around 23:50 - 24:10. Interesting! That changes things.
+
+    So, what's happening after 24:10? Ah, it seems there are random English text-to-speech or audio clips inserted, like podcasts or test clips ("Welcome to the daily devotional for the first week of advent...").
+
+    To get accurate visual information and timestamps, I need to load and analyze frames from the video. The best approach is to use `load_video` with `include_frames=True`. Considering the video's length, I should load frames at a low frame rate, say fps=0.1 or 0.2, or check specific intervals. Wait, maybe fps=0.05 would be even better; or load chunks. Let's see what tools I have available.
+
+    I'll use `load_video`, which has the parameters `start_time`, `end_time`, and `fps`.
+
+    My plan is to load frames from 0 to 1720 seconds in batches or at a low fps, and start with fps=0.05 (1 frame every 20 seconds). With a 1720 second video, that gives me approximately 86 frames to analyze, which is easily manageable. That should give me the information I need to understand this video's organization.
+  - |-
+    Here's my thought process, as I analyze this information:
+
+    **Analyzing the Performance Data**
+
+    Okay, so we're starting with a video and some audio. My immediate instinct is to break it down. First, I need to identify the content, so I'll prioritize identifying the songs and setlist. I'll need to dig into the ASR (Automatic Speech Recognition) data and individual frames to pinpoint the musical pieces and structure of the performance. This should allow me to create the list of songs, as well as identify any visual cues for the chapters. I know it's there somewhere.
+
+    Now, I think I've got enough to start with, I should leverage web search to corroborate and expand on what I have. I'll search for information on `ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-`. The search will likely provide details about the artist, event specifics, and potentially official setlists or fan-made analyses. To maximize the efficiency of my search, I'll strategically formulate search queries using `tinyfish_search_multi` to get the most relevant information back to work with.
+  - |-
+    Here's my thought process, summarized as you requested:
+
+    **Finding the "ときのそら 9th Anniversary Party" Setlist**
+
+    Okay, so I need the precise setlist for "ときのそら 9th Anniversary Party 「Everyday of Light」 Night." My initial instinct is to go straight to the source, which is often the seeasaawiki page, as it's usually the most comprehensive for these kinds of events. Alternatively, a more targeted search directly for the setlist with the event name should also do the trick. Either way, that's where I'll begin my research. The specifics are key here, so I need to find the exact song order and titles.
+  - |-
+    Here's a summary of my thought process:
+
+    **Searching for the Complete Setlist**
+
+    Okay, I need to get the definitive setlist for Tokino Sora's 9th Anniversary Party, specifically the "Everyday of Light" event. My best bet is going to be the seeasaawiki page. That's typically where I find the most complete and reliable information for Hololive events like this. I'll search for the event name verbatim, including the full title, to avoid any ambiguity or potential misinterpretations from the search function. Hopefully, I'll find a nice, clean table listing all the songs performed that night. That's the data I'm after. Let's see what the wiki has to offer!
+  - |-
+    Okay, here's my take on those thoughts, tailored for an expert audience:
+
+    **Analyzing the Seesaw Wiki Information Retrieval Strategy**
+
+    Alright, I'm thinking strategically here. I want to get at the core content on the seesaawiki page, and I need a direct, efficient path. My initial instinct is to go wide with a Google search. But I won't limit myself to the site search operator - I'm interested in the *general* indexing of that content, not necessarily just what their search algorithm decides is relevant. Therefore I'll begin a generic search without `site:`, which could give me broader access to the information. Failing that, a direct query of the seesaawiki page text using, perhaps, an API, would be the next logical step. By skipping the `site:` operator at first I open up the potential for related or referenced content to surface. If that doesn't work, I'll go directly to the source.
+  - |-
+    {
+      "overall_summary": "I'm looking at the YouTube free preview of Tokino Sora's 9th Anniversary concert, \"Everyday of Light\" - specifically, the Moonlight Stage held at Pia Arena MM. It's a high-energy performance featuring live band arrangements of her original songs, with 'Marugoto Mirai' as a notable example. The broadcast includes energetic stage choreography, audience interaction with fans in the arena and those watching online, and it ends with the closing of the free preview segment.",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "02:50",
+          "title": "Opening Overture & Pre-Show Vibe",
+          "description": "The concert kicks off with an exciting musical overture to set the mood."
+        },
+        {
+          "start": "02:50",
+          "end": "05:00",
+          "title": "Song Performance: マルゴトミライ (Marugoto Mirai)",
+          "description": "Tokino Sora performs 'Marugoto Mirai', a high-energy original song, accompanied by a live band and dynamic choreography.",
+          "song_artist": "ときのそら",
+          "song_title": "マルゴトミライ"
+        },
+        {
+          "start": "05:00",
+          "end": "10:00",
+          "title": "Concert Interlude & Visual Montage",
+          "description": "A visual transition showcasing the concert's venue, Pia Arena MM, with atmospheric lighting and musical ambiance."
+        },
+        {
+          "start": "10:00",
+          "end": "20:00",
+          "title": "Live Song Medley & Performance Tracks",
+          "description": "A medley of lively live performances continue, featuring Tokino Sora's vocals and band backing.",
+          "song_artist": "ときのそら",
+          "song_title": null
+        },
+        {
+          "start": "20:00",
+          "end": "23:50",
+          "title": "MC Talk & Audience Call and Response",
+          "description": "Tokino Sora interacts with the audience in the arena, from multiple floor levels, including women, and acknowledges viewers online, including introducing the band.",
+          "arena_section": "floor levels, girls",
+          "viewer_location": "online"
+        },
+        {
+          "start": "23:50",
+          "end": "28:22",
+          "title": "End of Free YouTube Preview & Stream Closing",
+          "description": "The free YouTube preview segment concludes, directing viewers to the paid/ticketed stream for the full concert experience."
+        }
+      ],
+      "entities": [
+        {
+          "name": "Tokino Sora",
+          "original_name": "ときのそら",
+          "persona_lore": "Hololive's first VTuber and idol, who debuted in September 2017. Known for her angelic voice and a gentle personality.",
+          "role_or_affiliation": "Hololive's 0th Generation Virtual Idol",
+          "speech_patterns_or_ticks": "Energetic and polite speech, including enthusiastic phrases like 'イェーイ！' and 'みんな盛り上がってる！'",
+          "visual_cues": "Brown twin-tails with a star hairclip, white dress and light blue/pink gradient jacket."
+        }
+      ],
+      "domain_glossary": [
+        {
+          "term": "ときのそら",
+          "meaning": "Hololive's virtual idol and singer from the 0th generation."
+        },
+        {
+          "term": "Everyday of Light",
+          "meaning": "The title of Tokino Sora's 9th Anniversary concert."
+        },
+        {
+          "term": "Moonlight Stage",
+          "meaning": "The night performance of Tokino Sora's 9th Anniversary concert."
+        },
+        {
+          "term": "マルゴトミライ",
+          "meaning": "A signature original song by Tokino Sora performed at the concert."
+        },
+        {
+          "term": "チラ見せ枠",
+          "meaning": "The free preview segment of the livestream."
+        }
+      ]
+    }
+model_name: null
+service_tier: null
+agentic_video: true
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.000'
+    end: '00:03.300'
+    original: 茜色じゃなくて薄明色 正夢ってかまさに夢
+    english: '...not madder red, but twilight color—a prophetic dream, literally a
+      dream come true!'
+  - start: '00:03.300'
+    end: '00:08.600'
+    original: 叶っちゃうのかい？笑っちゃうくらい長くて短い道のりの答えを、見つけよっ！
+    english: Is it gonna come true? Let's find the answer to this laughably long yet
+      short journey!
+  - start: '00:11.100'
+    end: '00:16.200'
+    original: ああ 始まりだった 幕開けだった 僕らのストーリーだから
+    english: Ah, it was the beginning, the curtain rising on our story, so...
+  - start: '00:16.200'
+    end: '00:21.800'
+    original: パーティー！Let's go, let's go! あれもこれもマルゴトミライ
+    english: Party! Let's go, let's go! This and that, all together in Marugoto Mirai!
+  - start: '00:21.900'
+    end: '00:26.600'
+    original: みんなー！盛り上がってくれてありがとう！
+    english: Everyone! Thank you for getting into the groove!
+  - start: '00:31.100'
+    end: '00:35.800'
+    original: 歩いて 走って 走って 歩いて つまずいて起き上がって
+    english: Walking, running, running, walking, stumbling and getting back up...
+  - start: '00:35.800'
+    end: '00:40.700'
+    original: 笑って 泣いて 泣いて 笑って 少しずつレベルアップ！
+    english: Laughing, crying, crying, laughing, leveling up little by little!
+  - start: '00:40.900'
+    end: '00:45.700'
+    original: 迷って ぐるって モヤって 解って 手繰り寄せたこの場所
+    english: Lost, spinning in circles, hazy, then finally understanding—this place
+      I pulled close to me...
+  - start: '00:45.800'
+    end: '00:53.800'
+    original: 歌って 歌って 響かせた！ この音を合図に 繋がって ここまできたから
+    english: Singing and singing, letting it resound! Using this sound as our cue,
+      we've connected and come this far, so...
+  - start: '00:53.900'
+    end: '00:59.700'
+    original: 貫き通せ 高まる心拍수는 限界突破
+    english: Push right through! A pounding heartbeat, breaking past the limits!
+  - start: '00:59.700'
+    end: '01:04.200'
+    original: メーター振り切ってけ 最高潮を再更新へ
+    english: Max out the meter, pushing the climax to new heights!
+  - start: '01:04.900'
+    end: '01:10.300'
+    original: さあ 夢を語って 夜更かしあって 踊り明かそうか キラリ
+    english: Come on, let's talk about our dreams, stay up late together, and dance
+      the night away, sparkling bright!
+  - start: '01:10.300'
+    end: '01:14.700'
+    original: うんと うんと おっきい「まさか！」
+    english: Way, way bigger "No way!"!
+  - start: '01:14.800'
+    end: '01:20.300'
+    original: わー！ 声を出そうぜ 心はそう絶対に ミライむきでワハハ
+    english: Whoa! Raise your voices, keep your hearts absolutely facing the future,
+      and laugh out loud!
+  - start: '01:20.300'
+    end: '01:25.200'
+    original: よっしゃ、よっしゃ！ 目と目あわせ 乾杯！
+    english: Alright, alright! Eyes meeting eyes, let's toast!
+  - start: '01:28.300'
+    end: '01:30.600'
+    original: 見てたい！見せたい！叫んで！
+    english: Wanna watch it all! Wanna show you! Shout it out!
+  - start: '01:30.600'
+    end: '01:34.700'
+    original: いっせーので！ まだまだ行けるね？ついてきて！
+    english: On three! We can still keep going, right? Follow my lead!
+  - start: '01:34.800'
+    end: '01:39.500'
+    original: 駆け抜ける日もあったり 空見上げる日もあったり
+    english: Some days we dash right through, some days we look up at the sky...
+  - start: '01:39.500'
+    end: '01:44.700'
+    original: あっちこっち寄り道したり でもそれがなんだかいい感じ！
+    english: Taking detours here and there, yet somehow that feels just right!
+  - start: '01:44.800'
+    end: '01:49.800'
+    original: 最初のひとことも 最後のひとかけらも
+    english: Both the very first word and the very last fragment...
+  - start: '01:49.800'
+    end: '01:54.300'
+    original: 眩しい思い出にしよう
+    english: '...let''s turn them into dazzling memories!'
+  - start: '01:54.500'
+    end: '01:59.800'
+    original: さあ まだまだいけるよ 止まれないから
+    english: Come on, we can still go further, because we can't stop!
+  - start: '01:59.800'
+    end: '02:06.800'
+    original: 元気よく、すごいよく！らららっていけ！ 高鳴っていけ！ Go, go, go!
+    english: Full of energy, super great! Sing out la-la-la, let your heart pound!
+      Go, go, go!
+  - start: '02:07.100'
+    end: '02:12.400'
+    original: 笑顔でマルゴトミライ！ 元気にマルゴトミライ！
+    english: With a smile, Marugoto Mirai! Full of energy, Marugoto Mirai!
+  - start: '02:14.700'
+    end: '02:23.000'
+    original: ちっちゃくマルゴトミライ！ でっかくマルゴトミライ！ 全力マルゴトミライ！
+    english: Tiny-sized Marugoto Mirai! Huge-sized Marugoto Mirai! Full-power Marugoto
+      Mirai!
+  - start: '02:24.800'
+    end: '02:30.200'
+    original: ああ キラリ光った 今、目が合った たくさんの大切たちと
+    english: Ah, sparkling brightly, our eyes just met—with so many precious things
+      and people...
+  - start: '02:30.200'
+    end: '02:35.000'
+    original: いつまでだって どこまでだって 踊り明かそうか キラリ
+    english: No matter how long, no matter how far, let's dance the night away, sparkling
+      bright!
+  - start: '02:35.100'
+    end: '02:42.800'
+    original: さあ 夢よ叶って もう鳴り出してる 音に漂った ヒカリ
+    english: Come on, dreams coming true, the sound is already ringing out—the light
+      drifting in the sound!
+  - start: '02:42.900'
+    end: '02:47.600'
+    original: ずっと ずっと ずっと ずっと 夢見た彼方！
+    english: Always, always, always, always the faraway horizon we dreamed of!
+  - start: '02:47.600'
+    end: '02:53.000'
+    original: わー！ 声を出そうぜ 心はそう絶対に ミライむきでワハハ
+    english: Whoa! Raise your voices, keep your hearts absolutely facing the future,
+      and laugh out loud!
+  - start: '02:53.000'
+    end: '02:58.000'
+    original: よっしゃ、よっしゃ！ 目と目あわせ 乾杯！
+    english: Alright, alright! Eyes meeting eyes, let's toast!
+  - start: '02:59.500'
+    end: '03:03.500'
+    original: はい！ はい！ はい！ はい！ はい！
+    english: Hey! Hey! Hey! Hey! Hey!
+  - start: '03:20.000'
+    end: '03:26.800'
+    original: さあ始まったよ夜公演！まだまだいけるー？！
+    english: Alright, the night performance has begun! Can you still keep going?!
+  - start: '03:27.800'
+    end: '03:34.200'
+    original: はい！ はいはいはい！ はいはいはい！ はいはいはい！ はいはいはい！
+    english: Hey! Hey, hey, hey! Hey, hey, hey! Hey, hey, hey! Hey, hey, hey!
+  - start: '03:34.800'
+    end: '03:37.200'
+    original: 「せーのっ！」 「ケセラソラ！」
+    english: '"One, two!" "Que Sera Sora!"'
+  - start: '03:37.200'
+    end: '03:42.500'
+    original: はい！ はい！ はい！ はい！ はい！ はい！ はい！ はい！
+    english: Hey! Hey! Hey! Hey! Hey! Hey! Hey! Hey!
+  - start: '03:46.200'
+    end: '03:51.500'
+    original: おはよう 朝日に今日もご挨拶 ってあれ？ウソ！もうこんな時間？
+    english: Good morning! Greeting the morning sun again today—wait, huh? No way!
+      It's this late already?!
+  - start: '03:51.600'
+    end: '03:56.800'
+    original: 午後から予定あるのに すぐに支度をしなきゃ いってきまーす！
+    english: I've got plans this afternoon, so I gotta get ready right away! I'm heading
+      out!
+  - start: '03:56.900'
+    end: '04:01.300'
+    original: 慌てて飛び出して気付く こっちじゃなーいっ！ここどこ？ 助けてあん肝～っ！
+    english: Rushing out the door, I realize—not this way! Where am I?! Help me, Ankimo!
+  - start: '04:01.300'
+    end: '04:05.000'
+    original: トラブルばっか 転んで起きての毎日です
+    english: Nothing but trouble—every day is stumbling and getting back up!
+  - start: '04:05.400'
+    end: '04:10.000'
+    original: 何でも思い通りとか そんなおいしい話は無いけど
+    english: Things always going your way—there's no story quite that sweet, but...
+  - start: '04:10.000'
+    end: '04:17.200'
+    original: 心の曇り空を晴らす合言葉 唱えたら ね？ほら、快晴でしょ？
+    english: The magic word to clear the cloudy skies of your heart—once you chant
+      it, see, it's totally clear skies, right?
+  - start: '04:17.200'
+    end: '04:21.500'
+    original: ずっと皆に届けたい 歌もダンスも元気も
+    english: I always want to deliver to everyone—songs, dancing, and energy too!
+  - start: '04:21.500'
+    end: '04:26.400'
+    original: きっと同じ空の下 笑顔も分け合えるよ
+    english: Surely under the same sky, we can share our smiles together!
+  - start: '04:26.400'
+    end: '04:31.500'
+    original: ちょっと疲れちゃうときも 涙が出そうなときも
+    english: Even when you get a little tired, even on days when tears seem ready
+      to fall...
+  - start: '04:31.500'
+    end: '04:35.000'
+    original: いつもの魔法の言葉 今日も
+    english: '...always use that magic word today too!'
+  - start: '04:35.000'
+    end: '04:39.200'
+    original: ケセラセラのそら 「せーのっ！」 「ケセラソラ！」
+    english: The Que Sera Sora sky! "One, two!" "Que Sera Sora!"
+  - start: '04:39.800'
+    end: '04:43.800'
+    original: はい！ はい！ はい！ はい！ はい！ はい！
+    english: Hey! Hey! Hey! Hey! Hey! Hey!
+  - start: '04:47.800'
+    end: '04:53.500'
+    original: 今日も一日頑張ろーっ！ カメラにマイクに よし、準備オッケー！
+    english: Let's do our best today too! Camera and mic—alright, preparation OK!
+  - start: '04:53.500'
+    end: '04:57.788'
+    original: お水もちゃんとあるし そらともいれば無敵だ
+    english: I've got my water all set, and with Soratomo here, I'm invincible...
+  thoughts:
+  - |-
+    **Refining Subtitles for Sora's Anniversary Concert**
+
+    Okay, the user wants me to refine subtitles for a specific musical segment in Tokino Sora's 9th Anniversary Party concert, specifically the "Everyday of Light" -Moonlight Stage-. My first step is to confirm the time window of this segment. Let's see... the prompt gives us `10:03.016 to 15:00.804`. Got it. Now, to make sure I'm working with the right content and can accurately refine those subtitles, I need to verify what's actually being performed in that time frame.
+
+    I'll need to load the video and check the ASR or video content to identify the song. I'll use the `load_video` tool to load the segment. That's from 10:03:016 to 15:00.804 which, after doing the math: 10 * 60 * 1000 + 3 * 1000 + 16 = 603016 ms, and 15 * 60 * 1000 + 804 = 900804 ms. I'll make sure to load the video with `include_asr: true` so I can have the automatic speech recognition data to work with.
+  - |-
+    Here's my thought process, summarized as you requested:
+
+    **Assessing Video Segment Duration Discrepancies**
+
+    Okay, first things first, I need to verify either the video's duration or confirm the timestamp formatting. I'm seeing the `object:video` reports a duration of `297.766` seconds. Hmm, that's roughly 4 minutes and 57 seconds. But wait... the user prompt clearly states the relevant segment spans from `10:03.016` to `15:00.804`. That's not lining up.
+
+    Aha! The file name is `video_1.webm`, and it seems the duration of the video file is *precisely* 297.766 seconds. This suggests that the local file `video_1.webm` is either a chunk extracted from the larger video stream, or the full video file is only about 5 minutes long. Okay, this is likely a segment and not the full video. Therefore, if that is the case, I should load frames or AasR data covering that total time, from 0 to 297766 milliseconds.
+  - |-
+    **Analyzing Subtitles and Song Alignment**
+
+    Okay, let's dive into these draft subtitles. My initial thought is to cross-reference them with the Automatic Speech Recognition (ASR) data and the song titles to ensure accuracy. First, a quick check to confirm what songs are in this video is essential. Ah, "マルゴトミライ" by Tokino Sora is first. Now, let's examine the subtitles' starting segment: `{"s": "00:00.000", "e": "00:03.300", "og": "じゃなくて薄明の 正夢ってかまさに夢", "en": "...not just a dream, it's a twilight prophetic dream—literally a dream come true!"}`. That needs to line up.
+
+    Right, time to pinpoint the exact lyrics. I need the official lyrics for "マルゴトミライ." I'll also need to verify the second song playing in the video. The subtitles seem to indicate that another song begins around 03:36 – possibly "せーの！ケセラセラ！" or just "ケセラセラ" by Tokino Sora, which I suspect will be the case, and I’ll confirm that by verifying Tokino Sora’s discography (does Tokino Sora have multiple versions/covers?)
+
+    To get this done efficiently, I'll leverage either `tinyfish_search_multi` or `search_lrclib_lyrics_database` to find those official lyrics.
+
+    Let's start with a quick search for "マルゴトミライ". The results show "ときのそら「マルゴトミライ」歌詞" with an intro that begins: "Take off! 上げてけ声量紡ぐエピソードの先へ行こう！ 茜色じゃなくて薄明色正夢ってかまさに夢かなっ..." – that aligns with the subtitles, which is a good sign. Next, I'll use `search_lrclib_lyrics_database` again for "マルゴトミライ", and I'll use a web search for the second song.
+  - |-
+    **My Approach to Uncovering Lyrics**
+
+    Okay, so LRCLIB came up empty for "マルゴトミライ" by 時のそら. No problem, let's broaden the search. I'll drop the artist name for now – it's possible the database isn't perfectly indexed. If that fails, I'll hit the web; sometimes a good old-fashioned web search is the most effective approach to get the official lyrics.
+
+    Right, time to leverage `tinyfish_search_multi`. I'll use that to query for "マルゴトミライ" and 時のそら. Now, there's a second song I need to identify. Hmm, let's see, the lyrics around 3:36 are key here: "おはよう 朝日に今日もご挨拶 てあね うそ! もうこんな時間! 午後から予定あるのに すぐに支度をしなきゃ 行ってきます! ... トラブルばっか転んで起きての毎日です ... ケセラセラ". I'll search for those lyrics. That should quickly identify the second song.
+  - |-
+    Okay, here's my summary, tailored for an expert audience, in the first person:
+
+    **Lyric Verification & Retrieval Protocol**
+
+    Alright, let's get down to brass tacks. I've got two tracks on the docket: "マルゴトミライ" (Marugoto Mirai) and "ケ・セラ・ソラ！" (Ke Sera Sora!). My immediate priority is absolute lyric accuracy. We're talking Kanji, furigana, line breaks, and translations - the whole shebang. No room for ambiguity or errors.
+
+    To achieve this, I'm going to leverage `tinyfish_fetch`. I'll hit up Genius and/or Lyrical-Nonsense for those complete lyric sets. This approach gives me a reliable and comprehensive data source, allowing me to rigorously validate and integrate these lyrics into the system, ensuring the highest level of textual fidelity. That's the first critical step. Let's get to it.
+  - |-
+    **Final Subtitle Refinement - A Deep Dive**
+
+    Okay, here's the breakdown of my thought process. The official lyrics for "マルゴトミライ" and "ケ・セラ・ソラ！" are now in hand, and the draft subtitles need a meticulous going-over. My primary concern is absolute fidelity to the draft's *immutable* timestamps. I'm not touching those. Second, I need to ensure phonetics match the lyrics, which will require several revisions. Then I'll refine the Japanese, correcting mis-transcriptions, interpreting puns, and addressing homophones based on the official source. Finally, the English translations need polishing to reflect those Kanji corrections and the overall context. No sound effects or tags whatsoever.
+
+    For the first block, the draft was close, but the official lyric revealed a critical change from "茜色" to "薄明色". The *og* line becomes `茜色じゃなくて薄明色 正夢ってかまさに夢`, or `薄明色 正夢ってかまさに夢`, polishing the *en* to mirror that subtle nuance.
+
+    The second block was nearly perfect, so only minor refinements were needed. Third block had the proper lyric already, so it's a direct copy. The fourth block needed a fix; the idols often say `パーティー！Let's go, let's go!` or `パーッと`, so I'll incorporate that or keep the original. Block 5 looks good.
+
+    Block 6 revealed the vital error. The draft had "俯いて起き上がって" (looking down, then getting up), but the official lyrics are "つまずいて起き上がって" (stumbling and getting up). It's a significant change, so I've corrected it. Block 7 needed only polishing to match the song. Block 8 had a good starting point, which had a direct translation from the lyrics. Block 9 needed to extend the line, in the official lyrics. Blocks 10 and 11, the *og* was cleaned up a bit to match the original, as well as the translation to be more exact.
+
+    For Block 12, I had to double-check against a couple of sources, as the lyrics are close, but slightly different. And the line needs to be adjusted in *og*. Blocks 13, 14, and 15 all needed some corrections against the official source, particularly clarifying the nuances in the Japanese. Block 16 needed some re-writing to match the source. Block 17 was a copy.
+
+    Blocks 18, 19, 20, 21 and 22 needed direct matches. Block 23 needed refinement. Block 24 I'll correct to reflect the official. The translation matches and is retained. For Block 25 I'll refine the *og* to reflect the official lyrics and I'll extend to have the proper *og*. Block 26 needed a minor adjustment and the *en* will match the changes. Block 27 needs a direct copy. Block 28 showed a need to re-write, the current *og* doesn't make sense without the source. Block 29 is a direct copy. Blocks 30 and 31 needed some editing to match the original. Block 32 is perfect.
+
+    The process repeats for the second song, "ケ・セラ・ソラ！". Block 33 is fine for the *og* as it's the live intro. I made it a point to retain the live calls. Blocks 34, 35, 36 and 37 are a direct match. Block 38, I'll match the lyrics. Block 39 had a major rewrite and the *og* needs to be updated. Block 40 is a direct match. Block 41 is almost the match. Block 42 *og* had a mis-transcription, correcting it to "快晴でしょ？". Block 43 is a perfect match. Block 44 needs some correction, and the *en* needs updating to match. Block 45 is a perfect match. Block 46 *og* needs rewriting to match the *en*, so that needs to happen. Block 47 needs to include the lyrics from the official source. Block 48 is a perfect match. Block 49, the *og* is a bit long, so I'll shorten it. Block 50 *og* needs a fix and it should be updated, as per mandate, as the official version.
+
+    I've meticulously cross-referenced every single line, ensured phonetic compatibility, and made adjustments to both the original Japanese and the English translations. The timestamps are pristine. Now I'm ready for the final output.
+lyrics_prompt_version: 10
+draft_subtitles:
+- start: '00:00.000'
+  end: '00:03.300'
+  original: じゃなくて薄明の 正夢ってかまさに夢
+  english: '...not just a dream, it''s a twilight prophetic dream—literally a dream
+    come true!'
+- start: '00:03.300'
+  end: '00:08.600'
+  original: 叶っちゃうのかい？笑っちゃうくらい長くて短い道のりの答えを見つけよう
+  english: Is it gonna come true? Let's find the answer to this laughably long yet
+    short journey!
+- start: '00:11.100'
+  end: '00:16.200'
+  original: ああ始まりだった 幕開けだった 僕らのストーリーだから
+  english: Ah, it was the beginning, the curtain rising on our story, so...
+- start: '00:16.200'
+  end: '00:21.800'
+  original: パーッとレッツゴーレッツゴー あれもこれもマルゴトミライ
+  english: Let's go, let's go in a flash! This and that, all together in Marugoto
+    Mirai!
+- start: '00:21.900'
+  end: '00:26.600'
+  original: みんなー！乗ってくれてありがとう！
+  english: Everyone! Thank you for getting into the groove!
+- start: '00:31.100'
+  end: '00:35.800'
+  original: 歩いて走って走って歩いて 俯いて起き上がって
+  english: Walking, running, running, walking, looking down then getting back up...
+- start: '00:35.800'
+  end: '00:40.700'
+  original: 笑って泣いて泣いて笑って 少しずつレベルアップ
+  english: Laughing, crying, crying, laughing, leveling up little by little!
+- start: '00:40.900'
+  end: '00:45.700'
+  original: 迷ってぐるって もやってわかって 手繰り寄せたこの場所
+  english: Lost, spinning in circles, hazy, then finally understanding—this place
+    I pulled close to me...
+- start: '00:45.800'
+  end: '00:53.800'
+  original: 歌って歌って響かせた この音を合図に繋がって ここまで来たから
+  english: Singing and singing, letting it resound—connected by the cue of this sound,
+    we've made it this far, so...
+- start: '00:53.900'
+  end: '00:59.700'
+  original: 貫き通せ 高鳴る心拍数 限界突破
+  english: Push right through! A pounding heartbeat, breaking past the limits!
+- start: '00:59.700'
+  end: '01:04.200'
+  original: 振り切って 最高潮の最高地点
+  english: Go all out to the highest peak of the climax!
+- start: '01:04.900'
+  end: '01:10.300'
+  original: さあ夢を語って分かち合って 踊り明かそう限りない
+  english: Come on, let's talk about our dreams, share them, and dance the night away
+    endlessly!
+- start: '01:10.300'
+  end: '01:14.700'
+  original: あっと あっと 大きいますか
+  english: Whoa, whoa, are we going big?!
+- start: '01:14.800'
+  end: '01:20.300'
+  original: わー声を出そうぜ 心を通ぜ 大胆に未来向きで踊ろうな
+  english: Whoa, let's raise our voices, connect our hearts, and dance boldly facing
+    the future!
+- start: '01:20.300'
+  end: '01:25.200'
+  original: よっしゃ よっしゃ 認め合う時間だ
+  english: Alright, alright! It's time to acknowledge each other!
+- start: '01:28.300'
+  end: '01:30.600'
+  original: 見てたい！見せたい！叫んで！
+  english: Wanna watch! Wanna show you! Shout it out!
+- start: '01:30.600'
+  end: '01:34.700'
+  original: いっせーので！まだまだいけるね ついてきて！
+  english: One, two, go! We can still keep going, right? Follow my lead!
+- start: '01:34.800'
+  end: '01:39.500'
+  original: 駆け抜ける日もあったり 空見上げる日もあったり
+  english: Some days we dash right through, some days we look up at the sky...
+- start: '01:39.500'
+  end: '01:44.700'
+  original: あっちこっち寄り道したり でもそれがなんだかいい感じ
+  english: Taking detours here and there, yet somehow that feels just right!
+- start: '01:44.800'
+  end: '01:49.800'
+  original: 最初の一言も 最後の一欠片も
+  english: Both the very first word and the very last fragment...
+- start: '01:49.800'
+  end: '01:54.300'
+  original: 眩しい思い出にしよう
+  english: '...let''s turn them into dazzling memories!'
+- start: '01:54.500'
+  end: '01:59.800'
+  original: そっからまだ行けるよ 止まれないから
+  english: From there we can still go further, because we can't stop!
+- start: '01:59.800'
+  end: '02:06.800'
+  original: 元気よくすごく良く 繋がって行け 繋がって行け Go Go Go
+  english: Full of energy, super great, keep connecting, keep connecting, Go Go Go!
+- start: '02:07.100'
+  end: '02:12.400'
+  original: 笑顔でマルゴトミライ 元気にマルゴトミライ
+  english: With a smile, Marugoto Mirai! Full of energy, Marugoto Mirai!
+- start: '02:14.700'
+  end: '02:23.000'
+  original: ちっちゃくマルゴトミライ でっかくマルゴトミライ 全力でマルゴトミライ
+  english: Small-sized Marugoto Mirai! Huge-sized Marugoto Mirai! Full-power Marugoto
+    Mirai!
+- start: '02:24.800'
+  end: '02:30.200'
+  original: ああキラリ光った 今目が合った たくさんの大切と
+  english: Ah, sparkling brightly, our eyes just met—with so many precious ones...
+- start: '02:30.200'
+  end: '02:35.000'
+  original: いつまでだって どこまでだって 踊り明かそう限りない
+  english: '...no matter how long, no matter how far, let''s dance the night away
+    endlessly!'
+- start: '02:35.100'
+  end: '02:42.800'
+  original: はちゃめちゃに 刻んだ未来だ 夢を語って 頬鳴り出して 音に輝く光
+  english: A wildly etched future! Talking of dreams, cheeks bursting with excitement,
+    light shining in the sound!
+- start: '02:42.900'
+  end: '02:47.600'
+  original: ずっと ずっと 夢見てた彼方
+  english: Always, always, the faraway horizon I dreamed of!
+- start: '02:47.600'
+  end: '02:53.000'
+  original: わー声を出そうぜ 心をどうぞ 大胆に未来向きで踊ろうな
+  english: Whoa, let's raise our voices! Give it our hearts, and dance boldly facing
+    the future!
+- start: '02:53.000'
+  end: '02:58.000'
+  original: よっしゃ よっしゃ 認め合う時間だ
+  english: Alright, alright! It's time to acknowledge each other!
+- start: '02:59.500'
+  end: '03:03.500'
+  original: はい！はい！はい！はい！はい！
+  english: Hey! Hey! Hey! Hey! Hey!
+- start: '03:20.000'
+  end: '03:26.800'
+  original: さあ始まったよ夜公演！まだまだいけるー？！
+  english: Alright, the night show has begun! Can you still keep going?!
+- start: '03:27.800'
+  end: '03:34.200'
+  original: はい！はいはいはい！はいはいはい！はいはいはい！はいはいはい！
+  english: Hey! Hey, hey, hey! Hey, hey, hey! Hey, hey, hey! Hey, hey, hey!
+- start: '03:34.800'
+  end: '03:37.200'
+  original: せーの！ケセラセラ！
+  english: One, two! Que Sera Sera!
+- start: '03:37.200'
+  end: '03:42.500'
+  original: はい！はい！はい！はい！はい！はい！はい！はい！
+  english: Hey! Hey! Hey! Hey! Hey! Hey! Hey! Hey!
+- start: '03:46.200'
+  end: '03:51.500'
+  original: おはよう 朝に今日もご挨拶 ってあれ？嘘！もうこんな時間？！
+  english: Good morning! Greeting the morning again today—wait, huh? No way! It's
+    this late already?!
+- start: '03:51.600'
+  end: '03:56.800'
+  original: 午後から予定あるのに すぐに支度をしなきゃ いってきます！
+  english: I've got plans this afternoon, so I gotta get ready right away! I'm heading
+    out!
+- start: '03:56.900'
+  end: '04:01.300'
+  original: 慌てて飛び出して気づく こっちじゃない！ここどこ？！って聞いて今！
+  english: Rushing out the door, I realize—not this way! Where am I?! Ask someone
+    right now!
+- start: '04:01.300'
+  end: '04:05.000'
+  original: トラブルばっか 転んで起きての毎日です
+  english: Nothing but trouble—every day is stumbling and getting back up!
+- start: '04:05.400'
+  end: '04:10.000'
+  original: なんでも思い通りとか そんな美味しい話はないけど
+  english: Things always going your way—there's no story quite that sweet, but...
+- start: '04:10.000'
+  end: '04:17.200'
+  original: 心の曇り空 晴らす合言葉 唱えたらね ほら 完成でしょ？
+  english: '...the magic word to clear the cloudy skies of your heart—once you chant
+    it, see, it''s all set, right?'
+- start: '04:17.200'
+  end: '04:21.500'
+  original: ずっとみんなに届けたい 歌もダンスも元気も
+  english: I always want to deliver to everyone—songs, dancing, and energy too!
+- start: '04:21.500'
+  end: '04:26.400'
+  original: きっと同じ空の下 笑顔合わせ会えるよ
+  english: Surely under the same sky, we'll meet with matching smiles!
+- start: '04:26.400'
+  end: '04:31.500'
+  original: ちょっと疲れちゃう時も 涙が出ちゃう日も
+  english: Even when you get a little tired, even on days when tears fall...
+- start: '04:31.500'
+  end: '04:35.000'
+  original: いつも守るからね今日も
+  english: '...I''ll always protect you, today too!'
+- start: '04:35.000'
+  end: '04:39.200'
+  original: ケセラセラの空 せーの！ケセラセラ！
+  english: A Que Sera Sera sky! One, two! Que Sera Sera!
+- start: '04:39.800'
+  end: '04:43.800'
+  original: はい！はい！はい！はい！はい！はい！
+  english: Hey! Hey! Hey! Hey! Hey! Hey!
+- start: '04:47.800'
+  end: '04:53.500'
+  original: そうそうね 今日も一日頑張ろう カメラにマイクにお洋服 準備OK！
+  english: That's right, let's do our best today too! Camera, mic, outfit—all ready,
+    OK!
+- start: '04:53.500'
+  end: '04:57.788'
+  original: お水もちゃんとあるし そらともいれば無敵だ
+  english: I've got my water all set, and with Soratomo here, I'm invinci...
+detected_performances:
+- title: マルゴトミライ
+  artist: ときのそら
+  start: 00:00
+  end: 03:17
+- title: null
+  artist: ときのそら
+  start: 03:17
+  end: 04:57

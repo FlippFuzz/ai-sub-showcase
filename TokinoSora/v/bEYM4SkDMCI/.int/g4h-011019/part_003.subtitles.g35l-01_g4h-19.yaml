@@ -1,0 +1,506 @@
+name: part_003
+total_attempts: 1
+user_context: This is a YouTube video from SoraCh. ときのそらチャンネル channel. The video title
+  is '【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-'.
+segment_index: null
+video_duration_ms: 301241
+segment_offset_ms: 900804
+global_summary:
+  overall_summary: This video is the YouTube free preview stream of Tokino Sora's
+    9th Anniversary Party concert titled 'Everyday of Light' -Moonlight Stage-, held
+    at Pia Arena MM. The broadcast showcases high-energy live band performances of
+    her original tracks such as 'Marugoto Mirai', vibrant stage choreography, audience
+    call-and-response segments interacting with fans across various arena sections
+    and online streams, and concludes with the end of the free YouTube preview portion.
+  chapters:
+  - start: 00:00
+    end: 02:50
+    title: Opening Overture & Pre-Show Vibe
+    description: Opening hype and musical overture leading into the concert.
+    song_title: null
+    song_artist: null
+  - start: 02:50
+    end: 05:00
+    title: 'Song Performance: マルゴトミライ (Marugoto Mirai)'
+    description: Live band performance of Tokino Sora's upbeat original song 'Marugoto
+      Mirai' with vibrant choreography.
+    song_title: マルゴトミライ
+    song_artist: ときのそら
+  - start: 05:00
+    end: '10:00'
+    title: Concert Interlude & Visual Montage
+    description: Atmospheric transition showcasing concert visuals, stage lighting,
+      and venue atmosphere at Pia Arena MM.
+    song_title: null
+    song_artist: null
+  - start: '10:00'
+    end: '20:00'
+    title: Live Song Medley & Performance Tracks
+    description: A continuous sequence of energetic live performances featuring dynamic
+      vocals and band accompaniment.
+    song_title: null
+    song_artist: ときのそら
+  - start: '20:00'
+    end: '23:50'
+    title: MC Talk & Audience Call and Response
+    description: Tokino Sora interacts with the live audience across arena seats,
+      floor levels, female fans, and online viewers, introducing the live band.
+    song_title: null
+    song_artist: null
+  - start: '23:50'
+    end: '28:22'
+    title: End of Free YouTube Preview & Stream Closing
+    description: Closing announcements for the free YouTube portion of the livestream,
+      directing viewers to the ticketed broadcast.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Tokino Sora
+    original_name: ときのそら
+    role_or_affiliation: Hololive / Victor Entertainment
+    persona_lore: Hololive's very first virtual idol (0th generation), debuted in
+      September 2017. Known for her angelic singing voice, earnest personality, and
+      dream of performing major venue concerts.
+    speech_patterns_or_ticks: Cheerful and polite registers, enthusiastic exclamations
+      like 'イェーイ！' and 'みんな盛り上がってる！'.
+    visual_cues: Brown hair in twin-tails with a star hairclip, white dress with a
+      light blue and pink gradient jacket.
+  domain_glossary: []
+  thoughts:
+  - |-
+    **Analyzing Tokino Sora's 9th Anniversary Party Video**
+
+    Okay, so I need to dig into this `video_1.webm` file. The user wants a breakdown of the video content, and based on the information provided, it looks like it's from Tokino Sora's YouTube channel, specifically the 'Tokino Sora Channel.' The title, '【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-,' gives me a good starting point. This suggests it's a "sneak peek" or "preview" of a stage performance from her 9th Anniversary Party, specifically the "Moonlight Stage." The video is a little over 28 minutes long (1720 seconds), which should give me a good chunk of content to work with.
+
+    I'll be using `load_video` to load the video. Since the context provided indicates the user may want a transcript of the speech present in the video, I'll be using `include_asr=True` so that the automatic speech recognition (ASR) is included in the analysis. This will make it easier to understand what's actually being said during the video and allow me to extract any information the user might find important. I'll need to keep an eye out for interesting segments and any context that relates to the Moonlight Stage and Sora's anniversary. Let's see what we can find!
+  - |-
+    **Analyzing the Video ASR and Its Structure**
+
+    Okay, let's dive into this video's ASR and understand its structure. First, I need to know the video's length; it's 1720 seconds, about 28 minutes and 40 seconds. I need to break down the timeline to see what's happening at key timestamps.
+
+    My initial thought is that the first segment, roughly from 00:00 to 02:50, might be an introduction or the beginning of a song, perhaps even a prelude. I should check frames around 00:00 to 07:00, 10:00, and so on. This will help me identify any songs being sung, visual events, and the end of any free preview.
+
+    Hold on, I see something around 23:50: "というわけでYouTubeの無料配信はここまで。続きが見たい人は、概要欄から見に来てね。" This tells me the free YouTube stream ends around 23:50 - 24:10. Interesting! That changes things.
+
+    So, what's happening after 24:10? Ah, it seems there are random English text-to-speech or audio clips inserted, like podcasts or test clips ("Welcome to the daily devotional for the first week of advent...").
+
+    To get accurate visual information and timestamps, I need to load and analyze frames from the video. The best approach is to use `load_video` with `include_frames=True`. Considering the video's length, I should load frames at a low frame rate, say fps=0.1 or 0.2, or check specific intervals. Wait, maybe fps=0.05 would be even better; or load chunks. Let's see what tools I have available.
+
+    I'll use `load_video`, which has the parameters `start_time`, `end_time`, and `fps`.
+
+    My plan is to load frames from 0 to 1720 seconds in batches or at a low fps, and start with fps=0.05 (1 frame every 20 seconds). With a 1720 second video, that gives me approximately 86 frames to analyze, which is easily manageable. That should give me the information I need to understand this video's organization.
+  - |-
+    Here's my thought process, as I analyze this information:
+
+    **Analyzing the Performance Data**
+
+    Okay, so we're starting with a video and some audio. My immediate instinct is to break it down. First, I need to identify the content, so I'll prioritize identifying the songs and setlist. I'll need to dig into the ASR (Automatic Speech Recognition) data and individual frames to pinpoint the musical pieces and structure of the performance. This should allow me to create the list of songs, as well as identify any visual cues for the chapters. I know it's there somewhere.
+
+    Now, I think I've got enough to start with, I should leverage web search to corroborate and expand on what I have. I'll search for information on `ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-`. The search will likely provide details about the artist, event specifics, and potentially official setlists or fan-made analyses. To maximize the efficiency of my search, I'll strategically formulate search queries using `tinyfish_search_multi` to get the most relevant information back to work with.
+  - |-
+    Here's my thought process, summarized as you requested:
+
+    **Finding the "ときのそら 9th Anniversary Party" Setlist**
+
+    Okay, so I need the precise setlist for "ときのそら 9th Anniversary Party 「Everyday of Light」 Night." My initial instinct is to go straight to the source, which is often the seeasaawiki page, as it's usually the most comprehensive for these kinds of events. Alternatively, a more targeted search directly for the setlist with the event name should also do the trick. Either way, that's where I'll begin my research. The specifics are key here, so I need to find the exact song order and titles.
+  - |-
+    Here's a summary of my thought process:
+
+    **Searching for the Complete Setlist**
+
+    Okay, I need to get the definitive setlist for Tokino Sora's 9th Anniversary Party, specifically the "Everyday of Light" event. My best bet is going to be the seeasaawiki page. That's typically where I find the most complete and reliable information for Hololive events like this. I'll search for the event name verbatim, including the full title, to avoid any ambiguity or potential misinterpretations from the search function. Hopefully, I'll find a nice, clean table listing all the songs performed that night. That's the data I'm after. Let's see what the wiki has to offer!
+  - |-
+    Okay, here's my take on those thoughts, tailored for an expert audience:
+
+    **Analyzing the Seesaw Wiki Information Retrieval Strategy**
+
+    Alright, I'm thinking strategically here. I want to get at the core content on the seesaawiki page, and I need a direct, efficient path. My initial instinct is to go wide with a Google search. But I won't limit myself to the site search operator - I'm interested in the *general* indexing of that content, not necessarily just what their search algorithm decides is relevant. Therefore I'll begin a generic search without `site:`, which could give me broader access to the information. Failing that, a direct query of the seesaawiki page text using, perhaps, an API, would be the next logical step. By skipping the `site:` operator at first I open up the potential for related or referenced content to surface. If that doesn't work, I'll go directly to the source.
+  - |-
+    {
+      "overall_summary": "I'm looking at the YouTube free preview of Tokino Sora's 9th Anniversary concert, \"Everyday of Light\" - specifically, the Moonlight Stage held at Pia Arena MM. It's a high-energy performance featuring live band arrangements of her original songs, with 'Marugoto Mirai' as a notable example. The broadcast includes energetic stage choreography, audience interaction with fans in the arena and those watching online, and it ends with the closing of the free preview segment.",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "02:50",
+          "title": "Opening Overture & Pre-Show Vibe",
+          "description": "The concert kicks off with an exciting musical overture to set the mood."
+        },
+        {
+          "start": "02:50",
+          "end": "05:00",
+          "title": "Song Performance: マルゴトミライ (Marugoto Mirai)",
+          "description": "Tokino Sora performs 'Marugoto Mirai', a high-energy original song, accompanied by a live band and dynamic choreography.",
+          "song_artist": "ときのそら",
+          "song_title": "マルゴトミライ"
+        },
+        {
+          "start": "05:00",
+          "end": "10:00",
+          "title": "Concert Interlude & Visual Montage",
+          "description": "A visual transition showcasing the concert's venue, Pia Arena MM, with atmospheric lighting and musical ambiance."
+        },
+        {
+          "start": "10:00",
+          "end": "20:00",
+          "title": "Live Song Medley & Performance Tracks",
+          "description": "A medley of lively live performances continue, featuring Tokino Sora's vocals and band backing.",
+          "song_artist": "ときのそら",
+          "song_title": null
+        },
+        {
+          "start": "20:00",
+          "end": "23:50",
+          "title": "MC Talk & Audience Call and Response",
+          "description": "Tokino Sora interacts with the audience in the arena, from multiple floor levels, including women, and acknowledges viewers online, including introducing the band.",
+          "arena_section": "floor levels, girls",
+          "viewer_location": "online"
+        },
+        {
+          "start": "23:50",
+          "end": "28:22",
+          "title": "End of Free YouTube Preview & Stream Closing",
+          "description": "The free YouTube preview segment concludes, directing viewers to the paid/ticketed stream for the full concert experience."
+        }
+      ],
+      "entities": [
+        {
+          "name": "Tokino Sora",
+          "original_name": "ときのそら",
+          "persona_lore": "Hololive's first VTuber and idol, who debuted in September 2017. Known for her angelic voice and a gentle personality.",
+          "role_or_affiliation": "Hololive's 0th Generation Virtual Idol",
+          "speech_patterns_or_ticks": "Energetic and polite speech, including enthusiastic phrases like 'イェーイ！' and 'みんな盛り上がってる！'",
+          "visual_cues": "Brown twin-tails with a star hairclip, white dress and light blue/pink gradient jacket."
+        }
+      ],
+      "domain_glossary": [
+        {
+          "term": "ときのそら",
+          "meaning": "Hololive's virtual idol and singer from the 0th generation."
+        },
+        {
+          "term": "Everyday of Light",
+          "meaning": "The title of Tokino Sora's 9th Anniversary concert."
+        },
+        {
+          "term": "Moonlight Stage",
+          "meaning": "The night performance of Tokino Sora's 9th Anniversary concert."
+        },
+        {
+          "term": "マルゴトミライ",
+          "meaning": "A signature original song by Tokino Sora performed at the concert."
+        },
+        {
+          "term": "チラ見せ枠",
+          "meaning": "The free preview segment of the livestream."
+        }
+      ]
+    }
+model_name: null
+service_tier: null
+agentic_video: false
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.300'
+    end: '00:03.100'
+    original: それじゃ 今日は何をしようかな
+    english: Well then, what should we do today?
+  - start: '00:03.100'
+    end: '00:06.100'
+    original: お歌に 楽団に コラボコラボねー！
+    english: Songs, a live band, and a collaboration!
+  - start: '00:06.100'
+    end: '00:10.450'
+    original: みんなと笑い飛ばせば また明日も晴れ晴れだ
+    english: If we laugh it all away together, tomorrow will be bright and sunny too
+  - start: '00:10.450'
+    end: '00:15.900'
+    original: よっしゃ！ はい！ はい！ はい！ はい！ はい！ はい！ はい！ はい！
+    english: Alright! Hey! Hey! Hey! Hey! Hey! Hey! Hey! Hey!
+  - start: '00:18.400'
+    end: '00:21.200'
+    original: みんなの歌声 もっと もっと もっと！
+    english: Everyone's singing voices, louder, louder, louder!
+  - start: '00:21.200'
+    end: '00:23.300'
+    original: はい！ はい！ はい！ はい！ はい！
+    english: Hey! Hey! Hey! Hey! Hey!
+  - start: '00:32.700'
+    end: '00:37.500'
+    original: ほっと ため息こぼして ふと夜空を見上げたら
+    english: Letting out a small sigh, I suddenly looked up at the night sky
+  - start: '00:37.500'
+    end: '00:42.200'
+    original: ぱっと 満天の星たちが キラキラ瞬いてた
+    english: And suddenly, a sky full of stars was twinkling brightly
+  - start: '00:42.500'
+    end: '00:47.300'
+    original: ずっと 追いかけ続けたい 雲より高い夢でも
+    english: I want to keep chasing them forever, even dreams higher than the clouds
+  - start: '00:47.300'
+    end: '00:52.200'
+    original: もっと 強く羽ばたいて 空まで駆けていくよ
+    english: I'll flap my wings even stronger and soar all the way to the sky
+  - start: '00:52.400'
+    end: '00:57.400'
+    original: そっと 背中押すような 温もりに包まれて
+    english: Wrapped in a warmth that gently pushes me forward
+  - start: '00:57.400'
+    end: '01:02.300'
+    original: いつまでも 止まらない 明日もずっと
+    english: Never stopping, tomorrow and forevermore
+  - start: '01:02.300'
+    end: '01:05.700'
+    original: ケセラセラの空
+    english: The sky of Que Sera, Sera
+  - start: '01:05.700'
+    end: '01:07.800'
+    original: せーの ケセラセラ！
+    english: Ready, Que Sera, Sera!
+  - start: '01:07.800'
+    end: '01:12.300'
+    original: はい！ はい！ はい！ はい！ はい！ はい！ はい！ はい！
+    english: Hey! Hey! Hey! Hey! Hey! Hey! Hey! Hey!
+  - start: '01:28.500'
+    end: '01:33.900'
+    original: こここ恋する 私輝く ほらね キラキラキラ煌めいてる
+    english: F-f-falling in love, I shine; look, I'm sparkling, sparkling brightly
+  - start: '01:33.900'
+    end: '01:42.400'
+    original: たたた太陽 みたいに笑う 私の 目ま目ま目まぐるしいラブストーリー
+    english: Smiling like the s-s-sun, my dizzying, dizzying love story
+  - start: '01:42.800'
+    end: '01:45.600'
+    original: はい！ はい！ はい！ はい！
+    english: Hey! Hey! Hey! Hey!
+  - start: '01:45.600'
+    end: '01:49.500'
+    original: みんな 盛り上がってくよー！
+    english: Let's get hyped up, everyone!
+  - start: '01:51.000'
+    end: '01:56.300'
+    original: あーもう 今日も今日とて 今度ばかりは許せないの
+    english: Ugh, even today, I just can't let it slide this time
+  - start: '01:56.300'
+    end: '02:01.900'
+    original: その悪気なさげな 君の笑顔が
+    english: That seemingly innocent smile of yours...
+  - start: '02:01.900'
+    end: '02:06.900'
+    original: だい だい だい だい だい 嫌いだ いつからか大好きになった
+    english: '...I hate, hate, hate, hate, hate it—yet before I knew it, I fell in
+      love with it'
+  - start: '02:06.900'
+    end: '02:11.900'
+    original: 今日のところは 許してあげるわ
+    english: I'll forgive you for today
+  - start: '02:11.900'
+    end: '02:17.500'
+    original: だから ほら 早く 君から答え聞かせて
+    english: So come on, hurry up and let me hear your answer
+  - start: '02:17.500'
+    end: '02:23.400'
+    original: いつまで待たせるの もう 目をそらさないで
+    english: How long are you going to make me wait? Come on, don't look away
+  - start: '02:23.400'
+    end: '02:28.500'
+    original: こここ恋する 私からまず いつも 君 君 君を探してる
+    english: F-f-falling in love, starting with me, I'm always looking for you, you,
+      you
+  - start: '02:28.500'
+    end: '02:34.300'
+    original: たたた太陽 みたいに笑う その笑顔が大好きなんです
+    english: Smiling like the s-s-sun, I just love that smile of yours
+  - start: '02:34.300'
+    end: '02:39.400'
+    original: こここ恋する 私輝く ほらね キラキラキラ煌めいてる
+    english: F-f-falling in love, I shine; look, I'm sparkling, sparkling brightly
+  - start: '02:39.400'
+    end: '02:47.500'
+    original: たたた太陽 みたいに笑う 私と君の 目ま目ま目まぐるしいラブストーリー
+    english: Smiling like the s-s-sun, yours and my dizzying, dizzying love story
+  - start: '02:51.800'
+    end: '02:57.500'
+    original: ずっと 気になってた 君にふさわしいのかな
+    english: It's always been on my mind—am I good enough for you?
+  - start: '02:57.500'
+    end: '03:02.900'
+    original: 想いほど 自信届かないから
+    english: Because my confidence doesn't match how much I care
+  - start: '03:02.900'
+    end: '03:08.500'
+    original: ぐるぐるぐる 探して巡る プラスとマイナス思考回路
+    english: Spinning round and round, searching and looping, positive and negative
+      thought circuits
+  - start: '03:08.500'
+    end: '03:13.800'
+    original: 今日のところは 一休みするわ
+    english: I'll take a little break for today
+  - start: '03:13.800'
+    end: '03:19.100'
+    original: でもね 本音だよ 二人見てきた景色で
+    english: But you know, it's how I really feel—through the scenery the two of us
+      have seen...
+  - start: '03:19.100'
+    end: '03:25.700'
+    original: 特別へと変わる もう 手を離さないわ
+    english: '...it turns into something special; I won''t let go of your hand anymore'
+  - start: '03:25.700'
+    end: '03:31.200'
+    original: こここ恋する 私変われる いつも 君 君 君を想うから
+    english: F-f-falling in love, I can change, because I'm always thinking of you,
+      you, you
+  - start: '03:31.200'
+    end: '03:36.800'
+    original: たたた大胆 無敵になれる どうして 黙ったりはしないで
+    english: Becoming b-b-bold and invincible—why? Don't go quiet on me
+  - start: '03:36.800'
+    end: '03:42.200'
+    original: こここ恋する 私輝く ほらね キラキラキラ煌めいてる
+    english: F-f-falling in love, I shine; look, I'm sparkling, sparkling brightly
+  - start: '03:42.200'
+    end: '03:50.200'
+    original: たたた単純 明快でいて まだまだ 終わ 終わ 終わらないラブストーリー
+    english: Keeping it s-s-simple and clear, a love story that's still far from over
+  - start: '03:53.500'
+    end: '04:00.000'
+    original: はい！ はい！ はい！ はい！ はい！ はい！ はい！ はい！
+    english: Hey! Hey! Hey! Hey! Hey! Hey! Hey! Hey!
+  - start: '04:00.500'
+    end: '04:04.200'
+    original: みんな ありがとうー！
+    english: Thank you, everyone!
+  - start: '04:04.200'
+    end: '04:09.600'
+    original: 二人 翼は ないけれど つないだ両手で無敵なの
+    english: The two of us don't have wings, but with our hands held together, we're
+      invincible
+  - start: '04:09.600'
+    end: '04:15.100'
+    original: 疑う余地も ないわ 期待してて
+    english: There's no room for doubt—look forward to it
+  - start: '04:15.100'
+    end: '04:20.400'
+    original: こここ恋する 私ときめく ずっと 君 君 君と探してく
+    english: F-f-falling in love, my heart races; I'll keep searching together with
+      you, you, you
+  - start: '04:20.400'
+    end: '04:26.100'
+    original: だだだ大好き そんな気持ちを 10年 100年 いつまででも
+    english: I l-l-love you—those feelings, for 10 years, 100 years, forevermore
+  - start: '04:26.100'
+    end: '04:32.300'
+    original: ここここここ恋する 私輝く ほらね キラキラキラ煌めいてる
+    english: F-f-f-f-falling in love, I shine; look, I'm sparkling, sparkling brightly
+  - start: '04:32.300'
+    end: '04:37.500'
+    original: たたた太陽 みたいに笑う 私と君の 目ま目ま目まぐるしい
+    english: Smiling like the s-s-sun, yours and my dizzying, dizzying...
+  - start: '04:37.500'
+    end: '04:43.000'
+    original: いつでも ぐるぐる忙しい ラブストーリー
+    english: '...always spinning-round-and-round busy love story'
+  - start: '04:45.000'
+    end: '04:47.000'
+    original: はい！ はい！
+    english: Hey! Hey!
+  - start: '04:56.000'
+    end: '04:59.500'
+    original: イェーイ！
+    english: Yay!
+  thoughts:
+  - |-
+    {
+      "segments": [
+        {
+          "start": "00:00.300",
+          "end": "00:03.100",
+          "text": "それじゃ 今日は何をしようかな",
+          "translation": "Well then, what should we do today?"
+        },
+        {
+          "start": "00:03.100",
+          "end": "00:06.100",
+          "text": "お歌に たくさん コラボコラボへー！",
+          "translation": "With songs and mischief, let's collaborate!"
+        },
+        {
+          "start": "00:06.100",
+          "end": "00:10.450",
+          "text": "みんなと笑い飛ばせば また明日も晴れ晴れだ",
+          "translation": "If we laugh it all away together, tomorrow will be bright and sunny too"
+        },
+        {
+          "start": "00:10.450",
+          "end": "00:15.900",
+          "text": "よっしゃ！ はい！",
+          "translation": "Alright! Hey! Hey! Hey! Hey! Hey! Hey! Hey! Hey!"
+        },
+        {
+          "start": "00:18.400",
+          "end": "00:21.200",
+          "text": "みんなの声 もっと もっと もっと！",
+          "translation": "Everyone's voices, louder, louder, louder!"
+        },
+        {
+          "start": "00:21.200",
+          "end": "00:23.300",
+          "text": "はい！ はい！ はい！ はい！ はい！",
+          "translation": "Hey! Hey! Hey! Hey! Hey!"
+        },
+        {
+          "start": "00:23.300",
+          "end": "00:32.700",
+          "text": "(Instrumental break)",
+          "translation": "(Instrumental break)"
+        },
+        {
+          "start": "00:32.700",
+          "end": "00:37.500",
+          "text": "ほっと ため息こぼして ふと夜空を見上げたら",
+          "translation": "Letting out a small sigh, I suddenly looked up at the night sky"
+        },
+        {
+          "start": "00:37.500",
+          "end": "00:42.200",
+          "text": "ぱっと 満天の星たちが キラキラ瞬いてた",
+          "translation": "And suddenly, a sky full of stars was twinkling brightly"
+        },
+        {
+          "start": "00:42.500",
+          "end": "00:47.300",
+          "text": "ずっと 追いかけ続けたい 雲より高い夢でも",
+          "translation": "I want to keep chasing them forever, even dreams higher than the clouds"
+        },
+        {
+          "start": "00:47.300",
+          "end": "00:52.200",
+          "text": "もっと 強く羽ばたいて 空まで駆けていくよ",
+          "translation": "I'll flap my wings even stronger and soar all the way to the sky"
+        },
+        {
+          "start": "00:52.400",
+          "end": "00:57.400",
+          "text": "そっと 背中押すような 温もりに包まれて",
+          "translation": "Wrapped in a warmth that gently pushes my back forward"
+        },
+        {
+          "start": "00:57.400",
+          "end": "01:02.300",
+          "text": "いつまでも 止まらない 明日もずっと",
+          "translation": "Never stopping, tomorrow and forevermore"
+        },
+        {
+          "start": "01:02.300",
+          "end": "01:05.700",
+          "text": "ケセラ
+  detected_musical_performances:
+  - title: null
+    artist: ときのそら
+    start: 00:00
+    end: 01:22
+  - title: null
+    artist: ときのそら
+    start: 01:23
+    end: 05:00
+subtitles_prompt_version: 19

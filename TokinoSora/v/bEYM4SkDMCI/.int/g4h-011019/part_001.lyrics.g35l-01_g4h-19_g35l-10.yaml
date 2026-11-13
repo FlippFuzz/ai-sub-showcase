@@ -1,0 +1,493 @@
+name: part_001
+total_attempts: 1
+user_context: This is a YouTube video from SoraCh. ときのそらチャンネル channel. The video title
+  is '【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-'.
+segment_index: null
+video_duration_ms: 302008
+segment_offset_ms: 301008
+global_summary:
+  overall_summary: This video is the YouTube free preview stream of Tokino Sora's
+    9th Anniversary Party concert titled 'Everyday of Light' -Moonlight Stage-, held
+    at Pia Arena MM. The broadcast showcases high-energy live band performances of
+    her original tracks such as 'Marugoto Mirai', vibrant stage choreography, audience
+    call-and-response segments interacting with fans across various arena sections
+    and online streams, and concludes with the end of the free YouTube preview portion.
+  chapters:
+  - start: 00:00
+    end: 02:50
+    title: Opening Overture & Pre-Show Vibe
+    description: Opening hype and musical overture leading into the concert.
+    song_title: null
+    song_artist: null
+  - start: 02:50
+    end: 05:00
+    title: 'Song Performance: マルゴトミライ (Marugoto Mirai)'
+    description: Live band performance of Tokino Sora's upbeat original song 'Marugoto
+      Mirai' with vibrant choreography.
+    song_title: マルゴトミライ
+    song_artist: ときのそら
+  - start: 05:00
+    end: '10:00'
+    title: Concert Interlude & Visual Montage
+    description: Atmospheric transition showcasing concert visuals, stage lighting,
+      and venue atmosphere at Pia Arena MM.
+    song_title: null
+    song_artist: null
+  - start: '10:00'
+    end: '20:00'
+    title: Live Song Medley & Performance Tracks
+    description: A continuous sequence of energetic live performances featuring dynamic
+      vocals and band accompaniment.
+    song_title: null
+    song_artist: ときのそら
+  - start: '20:00'
+    end: '23:50'
+    title: MC Talk & Audience Call and Response
+    description: Tokino Sora interacts with the live audience across arena seats,
+      floor levels, female fans, and online viewers, introducing the live band.
+    song_title: null
+    song_artist: null
+  - start: '23:50'
+    end: '28:22'
+    title: End of Free YouTube Preview & Stream Closing
+    description: Closing announcements for the free YouTube portion of the livestream,
+      directing viewers to the ticketed broadcast.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Tokino Sora
+    original_name: ときのそら
+    role_or_affiliation: Hololive / Victor Entertainment
+    persona_lore: Hololive's very first virtual idol (0th generation), debuted in
+      September 2017. Known for her angelic singing voice, earnest personality, and
+      dream of performing major venue concerts.
+    speech_patterns_or_ticks: Cheerful and polite registers, enthusiastic exclamations
+      like 'イェーイ！' and 'みんな盛り上がってる！'.
+    visual_cues: Brown hair in twin-tails with a star hairclip, white dress with a
+      light blue and pink gradient jacket.
+  domain_glossary: []
+  thoughts:
+  - |-
+    **Analyzing Tokino Sora's 9th Anniversary Party Video**
+
+    Okay, so I need to dig into this `video_1.webm` file. The user wants a breakdown of the video content, and based on the information provided, it looks like it's from Tokino Sora's YouTube channel, specifically the 'Tokino Sora Channel.' The title, '【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-,' gives me a good starting point. This suggests it's a "sneak peek" or "preview" of a stage performance from her 9th Anniversary Party, specifically the "Moonlight Stage." The video is a little over 28 minutes long (1720 seconds), which should give me a good chunk of content to work with.
+
+    I'll be using `load_video` to load the video. Since the context provided indicates the user may want a transcript of the speech present in the video, I'll be using `include_asr=True` so that the automatic speech recognition (ASR) is included in the analysis. This will make it easier to understand what's actually being said during the video and allow me to extract any information the user might find important. I'll need to keep an eye out for interesting segments and any context that relates to the Moonlight Stage and Sora's anniversary. Let's see what we can find!
+  - |-
+    **Analyzing the Video ASR and Its Structure**
+
+    Okay, let's dive into this video's ASR and understand its structure. First, I need to know the video's length; it's 1720 seconds, about 28 minutes and 40 seconds. I need to break down the timeline to see what's happening at key timestamps.
+
+    My initial thought is that the first segment, roughly from 00:00 to 02:50, might be an introduction or the beginning of a song, perhaps even a prelude. I should check frames around 00:00 to 07:00, 10:00, and so on. This will help me identify any songs being sung, visual events, and the end of any free preview.
+
+    Hold on, I see something around 23:50: "というわけでYouTubeの無料配信はここまで。続きが見たい人は、概要欄から見に来てね。" This tells me the free YouTube stream ends around 23:50 - 24:10. Interesting! That changes things.
+
+    So, what's happening after 24:10? Ah, it seems there are random English text-to-speech or audio clips inserted, like podcasts or test clips ("Welcome to the daily devotional for the first week of advent...").
+
+    To get accurate visual information and timestamps, I need to load and analyze frames from the video. The best approach is to use `load_video` with `include_frames=True`. Considering the video's length, I should load frames at a low frame rate, say fps=0.1 or 0.2, or check specific intervals. Wait, maybe fps=0.05 would be even better; or load chunks. Let's see what tools I have available.
+
+    I'll use `load_video`, which has the parameters `start_time`, `end_time`, and `fps`.
+
+    My plan is to load frames from 0 to 1720 seconds in batches or at a low fps, and start with fps=0.05 (1 frame every 20 seconds). With a 1720 second video, that gives me approximately 86 frames to analyze, which is easily manageable. That should give me the information I need to understand this video's organization.
+  - |-
+    Here's my thought process, as I analyze this information:
+
+    **Analyzing the Performance Data**
+
+    Okay, so we're starting with a video and some audio. My immediate instinct is to break it down. First, I need to identify the content, so I'll prioritize identifying the songs and setlist. I'll need to dig into the ASR (Automatic Speech Recognition) data and individual frames to pinpoint the musical pieces and structure of the performance. This should allow me to create the list of songs, as well as identify any visual cues for the chapters. I know it's there somewhere.
+
+    Now, I think I've got enough to start with, I should leverage web search to corroborate and expand on what I have. I'll search for information on `ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-`. The search will likely provide details about the artist, event specifics, and potentially official setlists or fan-made analyses. To maximize the efficiency of my search, I'll strategically formulate search queries using `tinyfish_search_multi` to get the most relevant information back to work with.
+  - |-
+    Here's my thought process, summarized as you requested:
+
+    **Finding the "ときのそら 9th Anniversary Party" Setlist**
+
+    Okay, so I need the precise setlist for "ときのそら 9th Anniversary Party 「Everyday of Light」 Night." My initial instinct is to go straight to the source, which is often the seeasaawiki page, as it's usually the most comprehensive for these kinds of events. Alternatively, a more targeted search directly for the setlist with the event name should also do the trick. Either way, that's where I'll begin my research. The specifics are key here, so I need to find the exact song order and titles.
+  - |-
+    Here's a summary of my thought process:
+
+    **Searching for the Complete Setlist**
+
+    Okay, I need to get the definitive setlist for Tokino Sora's 9th Anniversary Party, specifically the "Everyday of Light" event. My best bet is going to be the seeasaawiki page. That's typically where I find the most complete and reliable information for Hololive events like this. I'll search for the event name verbatim, including the full title, to avoid any ambiguity or potential misinterpretations from the search function. Hopefully, I'll find a nice, clean table listing all the songs performed that night. That's the data I'm after. Let's see what the wiki has to offer!
+  - |-
+    Okay, here's my take on those thoughts, tailored for an expert audience:
+
+    **Analyzing the Seesaw Wiki Information Retrieval Strategy**
+
+    Alright, I'm thinking strategically here. I want to get at the core content on the seesaawiki page, and I need a direct, efficient path. My initial instinct is to go wide with a Google search. But I won't limit myself to the site search operator - I'm interested in the *general* indexing of that content, not necessarily just what their search algorithm decides is relevant. Therefore I'll begin a generic search without `site:`, which could give me broader access to the information. Failing that, a direct query of the seesaawiki page text using, perhaps, an API, would be the next logical step. By skipping the `site:` operator at first I open up the potential for related or referenced content to surface. If that doesn't work, I'll go directly to the source.
+  - |-
+    {
+      "overall_summary": "I'm looking at the YouTube free preview of Tokino Sora's 9th Anniversary concert, \"Everyday of Light\" - specifically, the Moonlight Stage held at Pia Arena MM. It's a high-energy performance featuring live band arrangements of her original songs, with 'Marugoto Mirai' as a notable example. The broadcast includes energetic stage choreography, audience interaction with fans in the arena and those watching online, and it ends with the closing of the free preview segment.",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "02:50",
+          "title": "Opening Overture & Pre-Show Vibe",
+          "description": "The concert kicks off with an exciting musical overture to set the mood."
+        },
+        {
+          "start": "02:50",
+          "end": "05:00",
+          "title": "Song Performance: マルゴトミライ (Marugoto Mirai)",
+          "description": "Tokino Sora performs 'Marugoto Mirai', a high-energy original song, accompanied by a live band and dynamic choreography.",
+          "song_artist": "ときのそら",
+          "song_title": "マルゴトミライ"
+        },
+        {
+          "start": "05:00",
+          "end": "10:00",
+          "title": "Concert Interlude & Visual Montage",
+          "description": "A visual transition showcasing the concert's venue, Pia Arena MM, with atmospheric lighting and musical ambiance."
+        },
+        {
+          "start": "10:00",
+          "end": "20:00",
+          "title": "Live Song Medley & Performance Tracks",
+          "description": "A medley of lively live performances continue, featuring Tokino Sora's vocals and band backing.",
+          "song_artist": "ときのそら",
+          "song_title": null
+        },
+        {
+          "start": "20:00",
+          "end": "23:50",
+          "title": "MC Talk & Audience Call and Response",
+          "description": "Tokino Sora interacts with the audience in the arena, from multiple floor levels, including women, and acknowledges viewers online, including introducing the band.",
+          "arena_section": "floor levels, girls",
+          "viewer_location": "online"
+        },
+        {
+          "start": "23:50",
+          "end": "28:22",
+          "title": "End of Free YouTube Preview & Stream Closing",
+          "description": "The free YouTube preview segment concludes, directing viewers to the paid/ticketed stream for the full concert experience."
+        }
+      ],
+      "entities": [
+        {
+          "name": "Tokino Sora",
+          "original_name": "ときのそら",
+          "persona_lore": "Hololive's first VTuber and idol, who debuted in September 2017. Known for her angelic voice and a gentle personality.",
+          "role_or_affiliation": "Hololive's 0th Generation Virtual Idol",
+          "speech_patterns_or_ticks": "Energetic and polite speech, including enthusiastic phrases like 'イェーイ！' and 'みんな盛り上がってる！'",
+          "visual_cues": "Brown twin-tails with a star hairclip, white dress and light blue/pink gradient jacket."
+        }
+      ],
+      "domain_glossary": [
+        {
+          "term": "ときのそら",
+          "meaning": "Hololive's virtual idol and singer from the 0th generation."
+        },
+        {
+          "term": "Everyday of Light",
+          "meaning": "The title of Tokino Sora's 9th Anniversary concert."
+        },
+        {
+          "term": "Moonlight Stage",
+          "meaning": "The night performance of Tokino Sora's 9th Anniversary concert."
+        },
+        {
+          "term": "マルゴトミライ",
+          "meaning": "A signature original song by Tokino Sora performed at the concert."
+        },
+        {
+          "term": "チラ見せ枠",
+          "meaning": "The free preview segment of the livestream."
+        }
+      ]
+    }
+model_name: null
+service_tier: null
+agentic_video: true
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.000'
+    end: '00:04.350'
+    original: 時を越えて この空に響くように
+    english: Transcending time, so it echoes across this sky
+  - start: '00:04.350'
+    end: '00:08.850'
+    original: 笑顔の花を咲かそう
+    english: Let's make flowers of smiles bloom
+  - start: '00:08.850'
+    end: '00:14.100'
+    original: こんな瞬間を
+    english: Moments just like this...
+  - start: '00:15.250'
+    end: '00:18.650'
+    original: キラキラ止まんない 君のこと大好きだ
+    english: The sparkling won't stop, I love you so much!
+  - start: '00:18.650'
+    end: '00:22.400'
+    original: 何年先も思い出せるように
+    english: So we can remember it even years from now
+  - start: '00:22.400'
+    end: '00:26.050'
+    original: 素敵なワンシーンを 声を合わせてシグナル
+    english: A wonderful scene, our voices together as a signal
+  - start: '00:26.050'
+    end: '00:30.200'
+    original: 君とだからこんなに輝ける
+    english: It's because I'm with you that I can shine this brightly
+  - start: '00:30.200'
+    end: '00:32.800'
+    original: Hey! Hey! Turn it up tonight!
+    english: Hey! Hey! Turn it up tonight!
+  - start: '00:33.200'
+    end: '00:35.800'
+    original: Hey! Hey! Turn it up tonight!
+    english: Hey! Hey! Turn it up tonight!
+  - start: '00:36.300'
+    end: '00:38.900'
+    original: Hey! Hey! Turn it up tonight!
+    english: Hey! Hey! Turn it up tonight!
+  - start: '00:39.400'
+    end: '00:41.500'
+    original: Hey! Hey!
+    english: Hey! Hey!
+  - start: '00:43.200'
+    end: '00:44.700'
+    original: Fuu!
+    english: Woo!
+  - start: '00:48.800'
+    end: '00:54.500'
+    original: 一度きりの私の物語を
+    english: My one-and-only story...
+  - start: '00:54.500'
+    end: '01:00.800'
+    original: 運命を超えて煌めくんだ
+    english: '...transcends fate and sparkles brightly!'
+  - start: '01:00.800'
+    end: '01:03.200'
+    original: 行こう！
+    english: Let's go!
+  - start: '01:31.500'
+    end: '01:38.500'
+    original: '[Title: Everyday of Light]'
+    english: '[Title: Everyday of Light]'
+  - start: '03:54.300'
+    end: '03:56.500'
+    original: '[Text: 2026.11.7]'
+    english: '[Text: 2026.11.7]'
+  - start: '03:56.800'
+    end: '04:03.400'
+    original: Sunlight, Moonlight, Everyday, All night
+    english: Sunlight, Moonlight, Everyday, All night
+  - start: '04:03.800'
+    end: '04:10.500'
+    original: Sunlight, Moonlight, Everyday, All night
+    english: Sunlight, Moonlight, Everyday, All night
+  - start: '04:11.000'
+    end: '04:14.500'
+    original: '[Text: Are you READY?]'
+    english: '[Text: Are you READY?]'
+  - start: '04:11.000'
+    end: '04:18.000'
+    original: Sunlight, Moonlight, Everyday, All night
+    english: Sunlight, Moonlight, Everyday, All night
+  - start: '04:18.200'
+    end: '04:25.200'
+    original: Sunlight, Moonlight, Everyday, All night
+    english: Sunlight, Moonlight, Everyday, All night
+  - start: '04:44.600'
+    end: '04:53.500'
+    original: '[Title: 9th Anniversary Party Everyday of Light]'
+    english: '[Title: 9th Anniversary Party Everyday of Light]'
+  - start: '04:57.800'
+    end: '05:00.100'
+    original: テイクオフ！ 上げてけ せーの！
+    english: Take off! Turn it up, ready, go!
+  - start: '05:00.100'
+    end: '05:02.008'
+    original: えーっと、その先へ...
+    english: Let's see, onward beyond that...
+  thoughts:
+  - |-
+    **Refining Subtitles: A Quick Reality Check**
+
+    Okay, so the task is to refine these subtitles for a musical performance video segment. The user wants the subtitles to cover a specific window from 05:01.008 to 10:03.016 of the full video. My initial thought is to just dive right in, but first, let's just make sure we're on the same page. A quick reality check is in order.
+
+    I need to confirm what's actually in that timeframe. Let's see...the prompt mentions draft subtitles, which *should* be my starting point, but I need to ensure they match the requested video segment. The user provides `<draft_subtitles_to_refine>`, so I need to check those first. Hmm, looking at the provided subtitles, they span from 00:00.000 to 05:02.008, not 05:01.008 to 10:03.016 like the user wants. Alright, let's load the video ASR or check video frames using `google:load_video` to verify the actual content from 05:01 to 10:03. Got it. This is the correct procedure, and will hopefully give me a perfect starting point.
+  - |-
+    **Analyzing Video Content and Discrepancies**
+
+    Okay, so I need to verify some video content, specifically between the 5:01 and 10:03 mark. My initial thought was to use `google:load_video` with options for frames, audio, or ASR to get a handle on it. However, I think loading the video frames at a lower frame rate, like 0.5 or 1 fps, between 5:00 and 10:00 (converting that to milliseconds, which comes out to roughly between 300,000ms and 600,000ms), might be a more efficient way to review the content. Before I dive in further, I need to check the chunk size or total video duration. Wait a second, the prompt says the video duration is 302 seconds. That's about 5 minutes and 2 seconds. That's a huge clue! Hold on, this isn't making sense. The segment time window mentions `05:01.008 to 10:03.016` while the video file `video_1.webm` has `duration_seconds:302`. I'm going to load the entire video's ASR or transcript to understand the entire context of the video.
+  - |-
+    **Analyzing the Subtitle Data**
+
+    Okay, let's break this down. First, I need to understand the source material and the task at hand. The prompt gives me a set of draft subtitles, which I see are in both Japanese and English. It looks like a timed subtitle file, given the structure with start and end times ("s" and "e") and the original ("og") and English translation ("en").
+
+    My initial observation is that this is likely a song, given the lyrical nature of the text. The presence of phrases like "shining," "echoes," and "smiles blooming" are pretty standard in music. I'm especially curious about what song is being performed here.
+
+    Based on the initial lines I'm thinking I need to understand what song is playing at the beginning of the video (00:00 to 01:03). I need to determine what the proper title and lyrics are. I'm going to look at the lyrics provided ("越えて この空に響くように") and use that as the basis for my search. I'm going to search for Tokino Sora's songs because that name seems associated with the title "Everyday of Light". I need to find the correct lyrics, potentially using a lyrics database or the web to ensure I have the accurate details. I will now leverage `search_lrclib_lyrics_database` or a web search function for the best match. This is the first step in refining these subtitles.
+  - |-
+    Okay, here's my breakdown of what I'm thinking, keeping in mind my expertise:
+
+    **Analyzing "KIRAMEKI MODE!" Performance for Refinement**
+
+    Alright, so the song is "KIRAMEKI MODE!" feat. Hibisaki Riona, by Tokino Sora, arranged and composed by TeddyLoid. Good, good. Now, to really nail this performance, I need to meticulously refine every line. This means understanding the precise nuance of the lyrics. It's not enough to *know* the song, I have to *internalize* it.
+
+    Therefore, the next logical step is to grab those full lyrics. I need the definitive version, so I'll utilize `tinyfish_search_multi` to ensure a comprehensive and accurate search, pinpointing the most reliable source for the complete text of "KIRAMEKI MODE!". With that, I can begin the meticulous analysis.
+  - |-
+    **Ensuring Subtitle Accuracy for "KIRAMEKI MODE!"**
+
+    Alright, before I finalize these subtitles, I need to make absolutely certain the lyrics are perfectly accurate. There's no room for error here. To confirm, I'll head over to Uta-Net or Utaten – those are usually the most reliable sources. Let's use `tinyfish_search_multi` to search for the lyrics text of 「キラメキ MODE！ feat. 響咲リオナ」 specifically on those sites. Precision is key; I need to verify every single word to ensure the draft is flawless.
+  - |-
+    **Subtitle Verification - キラメキMODE! feat. 響咲リオナ**
+
+    Okay, time to get to work. I need to meticulously verify these draft subtitles for 「キラメキMODE！ feat. 響咲リオナ」 against the actual, official lyrics. The goal here is perfection: spot any discrepancies in the original Japanese (`og`) and, crucially, ensure the English translation (`en`) reflects the true meaning. The timestamps are non-negotiable; they have to remain *exactly* as they are. This requires a forensic approach, block by block.
+
+    Let's dive right in. Take this first block: `{"s": "00:00.000", "e": "00:04.350", "og": "越えて この空に響くように", "en": "Beyond, so it echoes across this sky"}`. *Wait a second*, is that actually the correct lyrical phrasing? I need to double-check this. Time to consult the authoritative sources. I'll hit up Uta-Net for the lyrics, or failing that, a more general search for the verses of `キラメキMODE!`. I can try Genius too. I'm going to search for the exact lyric lines from `キラメキMODE!` and cross-reference them with the draft. Accuracy is paramount. Let's make sure we are not using something like a fan-translation for the original text!
+  - |-
+    Okay, here's my summarization of those thoughts, tailored for an expert audience:
+
+    **Precise Lyric Retrieval: A Necessary First Step**
+
+    Right, so to get this right, the first step is always precision. I need to nail down the exact lyrics for "キラメキMODE!" It's critical for any analysis, translation, or comparison to have the canonical text. Therefore, I'm going to head straight to the usual reliable sources – Genius and Uta-Net are my go-to's for this sort of thing. I'll craft a targeted search query and see what comes up. No point in wasting time with approximations when the definitive version is likely readily available. Let's make sure we have the *right* text to work with before we go any further.
+  - |-
+    Here's my attempt at summarizing the thought process, tailored for an expert audience:
+
+    **Analyzing Lyric Retrieval Strategies for キラメキMODE!**
+
+    Okay, so I need to nail down the precise lyrics for "キラメキMODE!". My immediate thought is to leverage my existing tools, so `tinyfish_search_multi` seems like the perfect starting point. I could try Genius first, due to their established lyric database and generally high accuracy. Then, if that doesn't provide the expected results, or if I want a broader search, Uta-Net would be the next logical target. Their Japanese language focus and dedicated lyric content often makes them more comprehensive, especially for Japanese music. This dual-pronged approach gives me a good chance of finding the exact lyrics without diving into a deep web crawl. The `tinyfish_search_multi` function likely handles the query formatting and site interaction gracefully, saving me time on the lower-level implementation details.
+  - |-
+    Here's my thought process, summarized as you requested:
+
+    **Kicking Off the Lyric Hunt**
+
+    Okay, so I need to find the exact lyrics for "キラメキMODE!" It's time to get down to brass tacks. I'm thinking the best way to do this, given my needs, is to leverage my custom tool. `tinyfish_search_multi` feels like the perfect starting point. I can quickly query multiple lyric sites simultaneously, which should significantly speed up the process compared to manually searching each one. I'll focus on Genius and Uta-Net. They're usually pretty reliable for this kind of thing, and it'll minimize any potential for ambiguity in the search. Let's get to it!
+  - |-
+    **Initial Assessment and Data Verification**
+
+    Okay, first things first, let me clarify the context. I need to pinpoint the specific musical content at certain timecodes. My initial task is to identify what song is being performed within the specified timeframes: 03:56-04:26 and 04:56-05:02, while considering the associated draft subtitles. I should cross-reference this information with the subtitled lyrics to derive the song information.
+
+    Therefore, let's parse those draft subtitles:
+  - |-
+    **Analysis and Refinement of "キラメキMODE！" Lyrics**
+
+    Okay, so "キラメキMODE！" by Tokino Sora feat. Hibisaki Riona. Let's get this right. First, I need to verify each line against the official sources – Uta-Net, Genius, and UtaTen. It's crucial to cross-reference to ensure phonetic accuracy and proper kanji usage, and to make sure I'm adhering to the audio. My initial draft often needs refinement based on this process.
+
+    Starting from the top. The first line, "越えて この空に響くように" versus "時を越えて この空に響くように" or "何年先の時を越えてこの空に響くように"? The official lyrics use "時を越えて", and the audio confirms it. Line 2, "笑顔の花を咲かそう", that looks fine as is. Line 3, "こんな瞬間を", confirmed.
+
+    Line 4 is interesting. "キラキラ止まんない 君のこと大好きだ" versus "キラキラ止まんない！君のこと大好きだ！" versus "キラキラとそのまま 君のこと大好きだ"? Based on the audio, I'll go with the first version, no exclamation. Line 5, "何年先も思い出せるように", perfect. Line 6 is a bit tricky: "素敵なワンシーンを 声を合わせてシグナル" versus "素敵なラブレターを... 声を合わせてシグナル" or "素敵なワンシーンを". I'll default to the "ワンシーン" phrasing as it seems most common. And Line 7, "君とだからこんなに輝ける", good.
+
+    Lines 8, 9, 10, "Hey! Hey! Turn it up night!" need to be "Hey! Hey! Turn it up tonight!". And then the "Hey! Hey!" and "Fuu!" is all right. Line 13, "一度きりの私の物語は" becomes "一度きりの私の物語を". Line 14, "運命を超えて煌めくんだ" is correct. Then "行こう！" at the end, that's fine.
+
+    The visual tags should remain untouched. "Sunlight, Moonlight, Everyday, All night" appears, and is probably the chorus of a separate song, so I'll preserve it as-is. Similarly with the visual text tags. Stage callouts and banter, "テイクオフ！" etc. and the "えーっと" are kept verbatim.
+
+    Now, final JSON structure. All timestamps are fixed, in the correct order. Phonetic compatibility and lyric refinement are done. The English translations are polished. No sound effects. No irrelevant annotations. Ready to go.
+lyrics_prompt_version: 10
+draft_subtitles:
+- start: '00:00.000'
+  end: '00:04.350'
+  original: 越えて この空に響くように
+  english: Beyond, so it echoes across this sky
+- start: '00:04.350'
+  end: '00:08.850'
+  original: 笑顔の花を咲かそう
+  english: Let's make flowers of smiles bloom
+- start: '00:08.850'
+  end: '00:14.100'
+  original: こんな瞬間を
+  english: Moments just like this...
+- start: '00:15.250'
+  end: '00:18.650'
+  original: キラキラ止まんない 君のこと大好きだ
+  english: The sparkling won't stop, I love you so much!
+- start: '00:18.650'
+  end: '00:22.400'
+  original: 何年先も思い出せるように
+  english: So we can remember it even years from now
+- start: '00:22.400'
+  end: '00:26.050'
+  original: 素敵なワンシーンを 声を合わせてシグナル
+  english: A wonderful scene, our voices together as a signal
+- start: '00:26.050'
+  end: '00:30.200'
+  original: 君とだからこんなに輝ける
+  english: It's because I'm with you that I can shine this brightly
+- start: '00:30.200'
+  end: '00:32.800'
+  original: Hey! Hey! Turn it up night!
+  english: Hey! Hey! Turn it up night!
+- start: '00:33.200'
+  end: '00:35.800'
+  original: Hey! Hey! Turn it up night!
+  english: Hey! Hey! Turn it up night!
+- start: '00:36.300'
+  end: '00:38.900'
+  original: Hey! Hey! Turn it up night!
+  english: Hey! Hey! Turn it up night!
+- start: '00:39.400'
+  end: '00:41.500'
+  original: Hey! Hey!
+  english: Hey! Hey!
+- start: '00:43.200'
+  end: '00:44.700'
+  original: Fuu!
+  english: Woo!
+- start: '00:48.800'
+  end: '00:54.500'
+  original: 一度きりの私の物語は
+  english: My one-and-only story...
+- start: '00:54.500'
+  end: '01:00.800'
+  original: 運命を超えて煌めくんだ
+  english: '...transcends fate and sparkles brightly!'
+- start: '01:00.800'
+  end: '01:03.200'
+  original: 行こう！
+  english: Let's go!
+- start: '01:31.500'
+  end: '01:38.500'
+  original: '[Title: Everyday of Light]'
+  english: '[Title: Everyday of Light]'
+- start: '03:54.300'
+  end: '03:56.500'
+  original: '[Text: 2026.11.7]'
+  english: '[Text: 2026.11.7]'
+- start: '03:56.800'
+  end: '04:03.400'
+  original: Sunlight, Moonlight, Everyday, All night
+  english: Sunlight, Moonlight, Everyday, All night
+- start: '04:03.800'
+  end: '04:10.500'
+  original: Sunlight, Moonlight, Everyday, All night
+  english: Sunlight, Moonlight, Everyday, All night
+- start: '04:11.000'
+  end: '04:14.500'
+  original: '[Text: Are you READY?]'
+  english: '[Text: Are you READY?]'
+- start: '04:11.000'
+  end: '04:18.000'
+  original: Sunlight, Moonlight, Everyday, All night
+  english: Sunlight, Moonlight, Everyday, All night
+- start: '04:18.200'
+  end: '04:25.200'
+  original: Sunlight, Moonlight, Everyday, All night
+  english: Sunlight, Moonlight, Everyday, All night
+- start: '04:44.600'
+  end: '04:53.500'
+  original: '[Title: 9th Anniversary Party Everyday of Light]'
+  english: '[Title: 9th Anniversary Party Everyday of Light]'
+- start: '04:57.800'
+  end: '05:00.100'
+  original: テイクオフ！ 上げてけ せーの！
+  english: Take off! Turn it up, ready, go!
+- start: '05:00.100'
+  end: '05:02.008'
+  original: えーっと、その先へ...
+  english: Let's see, onward beyond that...
+detected_performances:
+- title: null
+  artist: ときのそら
+  start: 00:00
+  end: 01:12
+- title: null
+  artist: ときのそら
+  start: 03:56
+  end: 04:26
+- title: null
+  artist: ときのそら
+  start: 04:56
+  end: 05:02
