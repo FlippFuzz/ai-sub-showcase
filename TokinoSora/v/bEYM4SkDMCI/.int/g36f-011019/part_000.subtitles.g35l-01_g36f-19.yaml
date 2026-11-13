@@ -1,0 +1,534 @@
+name: part_000
+total_attempts: 1
+user_context: This is a YouTube video from SoraCh. ときのそらチャンネル channel. The video title
+  is '【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-'.
+segment_index: null
+video_duration_ms: 301008
+segment_offset_ms: 0
+global_summary:
+  overall_summary: This YouTube free preview stream features highlights from Tokino
+    Sora's 9th Anniversary Party titled 'Everyday of Light' (Moonlight Stage), held
+    at Pia Arena MM. The video opens with an introductory teaser and call practice
+    for the lead anniversary track 'Marugoto Mirai', transitions into energetic live
+    concert performances backed by a full live band, and concludes with an MC session
+    where Tokino Sora interacts with the audience, shouts out to various seating sections
+    (including arena, balcony, and online viewers), and introduces her live band members
+    before closing the free YouTube broadcast.
+  chapters:
+  - start: 00:00
+    end: 06:10
+    title: Opening Teaser & Call Practice
+    description: Preview segment introducing the 9th Anniversary Party Night show
+      with call-and-response practice for the opening songs.
+    song_title: null
+    song_artist: null
+  - start: 06:10
+    end: '20:00'
+    title: Live Concert Performance (Moonlight Stage)
+    description: Excerpts of live musical performances featuring choreography, stage
+      effects, and full band accompaniment.
+    song_title: マルゴトミライ
+    song_artist: ときのそら
+  - start: '20:00'
+    end: '24:10'
+    title: MC & Band Introduction
+    description: Tokino Sora addresses the live arena and streaming audience, reflects
+      on the concert theme, and introduces the live band members.
+    song_title: null
+    song_artist: null
+  - start: '24:10'
+    end: '28:40'
+    title: Stream Outro & Ticket Notice
+    description: Closing announcement indicating the end of the free YouTube preview
+      portion and directing viewers to purchase tickets for the full stream.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Tokino Sora
+    original_name: ときのそら
+    role_or_affiliation: Hololive / Virtual Idol
+    persona_lore: A virtual idol affiliated with Hololive (0th generation) who debuted
+      in 2017 with the dream of performing at major arenas. Renowned for her clear
+      singing voice, dedication to her fans, and her mascot bear Ankimo.
+    speech_patterns_or_ticks: Cheerful and polite greetings like 'Ohasora!', enthusiastic
+      and energetic delivery during live MCs.
+    visual_cues: Brown hair styled in twin tails with star hair accessories, wearing
+      the 9th anniversary pastel-colored jacket and white dress outfit.
+  - name: Ankimo
+    original_name: あん肝
+    role_or_affiliation: Mascot Character
+    persona_lore: Tokino Sora's loyal teddy bear mascot character, often featured
+      alongside her in merchandise and promotional content.
+    speech_patterns_or_ticks: null
+    visual_cues: A brown teddy bear wearing headphones and a red bow tie.
+  domain_glossary:
+  - term: ときのそら
+    meaning: Hololive's 0th generation virtual idol and pioneer VTuber, known for
+      her pristine vocals and landmark arena concerts.
+  - term: そらとも
+    meaning: The official fan community and fandom name for Tokino Sora's supporters.
+  - term: あん肝
+    meaning: Tokino Sora's iconic teddy bear mascot character, named after a fan mishearing.
+  - term: Everyday of Light
+    meaning: The title of Tokino Sora's 9th Anniversary Party live concert event held
+      at Pia Arena MM.
+  - term: Moonlight Stage
+    meaning: The designation for the evening show (Night performance) of the 9th Anniversary
+      Party.
+  - term: マルゴトミライ
+    meaning: An upbeat original pop song by Tokino Sora from her 9th anniversary EP
+      'CHECK!', featuring interactive audience call-and-response.
+  thoughts:
+  - |-
+    **Initial Assessment of Video Processing**
+
+    Okay, so I have `video_1.webm` here, clocking in at a respectable 1720 seconds, or roughly 28 and a half minutes. That's a decent chunk of content to digest. The user has provided some useful context – this is from SoraCh. ときのそらチャンネル, specifically a video titled  '【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-'. Good, that gives me a preliminary understanding of the subject matter: it's a snippet, presumably a "teaser" ("チラ見せ") from Tokino Sora's 9th Anniversary Party, specifically the "Moonlight Stage."
+
+    My immediate instinct is to load up the ASR transcript – assuming one exists – and get a handle on the narrative flow and identify key talking points. Simultaneously, I should probably inspect the video itself. Visual cues are critical. I want to correlate the audio transcript with the actual events taking place on screen. This first pass will help me build a mental model of the video's structure and major segments, allowing me to focus my analytical efforts later on.
+  - |-
+    **Analyzing the Preview Video**
+
+    Okay, let's break down this video's structure, specifically focusing on the ASR and video content. This video, `【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-`, is clearly a "チラ見せ枠" – a teaser or preview of the paid Night show's "Moonlight Stage" live concert. My initial goal is to understand the content of `video_1.webm`.
+
+    First, the given timestamps suggest a song performance or preview segment from 00:00 to 02:40. I need to get a better handle on precisely *what* songs are included here, whether it is one song or multiple, and how they contribute to the preview. The best approach is visual inspection.
+
+    I'm thinking of loading frames to analyze visual cues, such as titles, setlists, and song names. Loading every single frame would be overkill. I will sample frames with a frame rate of about `fps=0.2`, approximately every 5 seconds. To be safe I will also try `fps=0.1`, which will provide a frame every 10 seconds. However, I want to keep the process efficient, without taking unnecessary steps, so I will initially load all frames from 00:00 to 25:00 using the `load_video` function with `include_frames=true`.
+
+    Let's use `load_video` with `filename="video_1.webm"`, `include_frames=true`, and `fps=0.1`.
+  - |-
+    **Analyzing the Sora Tokino Stream's Structure**
+
+    Okay, so I'm looking closely at this segment from the Tokino Sora 9th Anniversary stream, specifically the "Everyday of Light" - Moonlight Stage night show. The frames from 24:00 to 28:40 are showing the static ending card, which is the "free part is over" screen. But the audio during that time, between 25:00 and 28:40, is throwing me a curveball. The ASR is picking up what sounds like stock audio – truck tires, meeting snippets, generic marketing stuff, business presentations. Definitely not related to the visual content. This is likely background filler, test audio, or something the editor accidentally left in.
+
+    Let's break down the overall video structure. From 00:00 to 06:10, we've got the teaser intro, countdown, or opening animation – potentially even preview clips before the stream kicks off. I'll focus on 00:00-06:00: music with the title card or live footage.
+
+    From 06:10 to 24:10, this is the free preview of the "Everyday of Light" - Moonlight Stage- Night show. Specifically:
+
+    *   06:10 - 20:00: This segment includes the live concert performances, the songs. Things like "パーフェクト", "ココココ恋する私", and probably other songs or a medley of songs.
+    *   20:00 - 24:10: This segment included the MC talk, greetings, band introductions, and closing of the YouTube free preview stream.
+
+    Now, I'll search for accurate song titles and context for the Tokino Sora 9th Anniversary Party "Everyday of Light" to confirm what's there.
+  - |-
+    Okay, here's my interpretation of that thought process, tailored for an expert audience:
+
+    **Targeted Retrieval: Sora Tokino's Discography**
+
+    Right, let's cut to the chase and refine the search query. Instead of a general broad stroke, I need to focus on specific retrieval. Given the context, I'm going to explicitly target Tokino Sora's released music. I'm thinking specifically of her album or, even better, individual tracks within it. I recall "マルゴトミライ (Marugoto Mirai)" as a key piece from a recent project. Yes, that's it - and the collection "Everyday of Light". It's a precise musical thread I'm following here. My immediate goal is to acquire the targeted search result - Sora's music or songs.
+  - |-
+    **Analyzing Tokino Sora's 9th Anniversary Party Preview**
+
+    Okay, this is extremely helpful in breaking down the YouTube preview of Tokino Sora's 9th Anniversary Party "Everyday of Light" - Moonlight Stage. I'm seeing a clear structure emerge. The free preview is designed to be a teaser, enticing viewers to purchase the full paid stream. It's a strategic move, showcasing the energetic live performance, connecting with the audience, and creating that sense of FOMO. It seems the core of the preview revolves around the live concert highlights, offering a taste of the production value and Sora's stage presence, including a focus on the opening and key performance sections.
+
+    Now, let's look at the details. We have a distinct four-chapter structure. The initial teaser includes the opening tracks call practice, a smart move, priming the audience. Following that, the main course is the live concert footage, the heart of this showcase. The performance section seems focused on songs from the Night Show/Moonlight Stage, highlighting energetic choreography and band backing. This includes hits such as "マルゴトミライ." Then there's an MC segment, where Sora directly engages with the audience, sharing her thoughts and introducing the band members, creating a personal connection. Finally, there is the outro card, a crucial call to action to get people to purchase the full ticket. The presentation is professional and well-structured, a smart way to generate buzz.
+  - |-
+    **My Analysis & JSON Preparation**
+
+    Okay, perfect, the mascot is `Ankimo`. That's a great choice. Let's get this organized properly. Time to build that `domain_glossary`. We've got: `ときのそら` (Tokino Sora), the Hololive 0th gen VTuber, the pioneer with the beautiful voice, and the arena dreams. Then there's `そらとも` (Soratomo), the dedicated fanbase. Of course, `あん肝` (Ankimo), her hilarious teddy bear mascot and origin, from a funny mishearing. We have `Everyday of Light`, the 9th Anniversary concert, a huge deal. Also, `Moonlight Stage`, the night show segment of the concert. And finally, `マルゴトミライ` (Marugoto Mirai), the lead song, upbeat and interactive.
+
+    Alright, let's make sure we've got all the formatting right. Just a valid JSON object. No comments. No control characters. Double quotes where they need to be. It's a single object, so no array needed.
+
+    Now, checking the schema requirements... `overall_summary`, `chapters`, `domain_glossary`, and `entities`. Everything's there. The data fits perfectly with the schema and the instructions are clear. Good.
+
+    {
+      "overall_summary": "This JSON object encapsulates the key elements related to Tokino Sora, a virtual idol (VTuber) from Hololive, focusing on her 9th Anniversary celebrations. It includes a glossary of relevant terms, detailed definitions and the plans for the overall format.",
+      "chapters": [],
+      "domain_glossary": [
+        {
+          "term": "ときのそら",
+          "meaning": "Hololive's 0th generation virtual idol and pioneer VTuber, known for her pristine singing voice and dream of performing at major arenas."
+        },
+        {
+          "term": "そらとも",
+          "meaning": "The official fan community / fandom name for Tokino Sora's supporters."
+        },
+        {
+          "term": "あん肝",
+          "meaning": "Tokino Sora's iconic teddy bear mascot character, named after a hilarious mishearing of \"ankimono\" (memorization)."
+        },
+        {
+          "term": "Everyday of Light",
+          "meaning": "The title of Tokino Sora's 9th Anniversary Party concert event held at Pia Arena MM in November 2026."
+        },
+        {
+          "term": "Moonlight Stage",
+          "meaning": "The night show segment of the 9th Anniversary Party live concert."
+        },
+        {
+          "term": "マルゴトミライ",
+          "meaning": "Lead original song from Tokino Sora's 9th Anniversary EP \"CHECK!\", featuring upbeat pop rhythms and interactive audience call-and-response."
+        }
+      ],
+      "entities": []
+    }
+model_name: null
+service_tier: null
+agentic_video: false
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.000'
+    end: '00:01.120'
+    original: つ、遂に来ました！
+    english: F-Finally, it's here!
+  - start: '00:01.120'
+    end: '00:03.580'
+    original: もうそらちゃんのこと考えない夜なんてありません！
+    english: There's no night where I don't think about Sora-chan!
+  - start: '00:03.580'
+    end: '00:06.120'
+    original: てかてかてかライブも全通なんなら全曲全力で歌います！
+    english: I mean, I'm going to every live show, and I'll sing every song with all
+      my power!
+  - start: '00:06.120'
+    end: '00:09.120'
+    original: もう私が私にコールしたい！
+    english: I want to call to myself!
+  - start: '00:09.120'
+    end: '00:11.400'
+    original: その生涯人生 ALWAYS 推したい
+    english: My whole lifetime, ALWAYS wanting to support you!
+  - start: '00:11.400'
+    end: '00:14.100'
+    original: 夏秋春冬 縦横無尽
+    english: Summer, autumn, spring, winter, everywhere without bounds!
+  - start: '00:14.100'
+    end: '00:16.600'
+    original: 誕生日 記念日 一切「いいね」したい
+    english: Birthdays, anniversaries, I want to 'like' them all!
+  - start: '00:16.600'
+    end: '00:19.300'
+    original: 全身全霊 コメントしたい
+    english: With all my body and soul, I want to comment!
+  - start: '00:19.300'
+    end: '00:23.600'
+    original: あーもう駄目だー 辛ーい
+    english: Ah, I can't take it anymore! It's so painful!
+  - start: '00:23.600'
+    end: '00:28.900'
+    original: やっぱ そらちゃんが 本気で全部好き やっぱり今日も好き 本気で言うと存在を愛してる
+    english: As expected, I love everything about Sora-chan! I love her today too!
+      Honestly, I love her very existence!
+  - start: '00:28.900'
+    end: '00:34.000'
+    original: 尊い君が 好きで 好きで 尊すぎて無理 尊がり輝け S-O-R-A
+    english: Precious you, I love you, love you, so precious it's impossible! Glow
+      with preciousness, S-O-R-A!
+  - start: '00:34.000'
+    end: '00:39.000'
+    original: 頑張り屋で好き しゃべり方も好き 優しくて好き 声出なくなっちゃう 待って待って
+    english: I love how hard-working you are! I love how you talk! I love your kindness!
+      My voice is fading away, wait, wait!
+  - start: '00:39.000'
+    end: '00:44.200'
+    original: こんなに好き好き ハウリングな恋のオーバードライブ
+    english: I love you so much, a howling overdrive of love!
+  - start: '00:44.200'
+    end: '00:46.000'
+    original: てか本当好きすぎるー
+    english: I mean, I seriously love you too much!
+  - start: '00:49.000'
+    end: '00:51.300'
+    original: 超絶好き好き
+    english: Overwhelmingly love, love!
+  - start: '00:55.200'
+    end: '00:56.800'
+    original: え？そらちゃんの魅力ですか？
+    english: Eh? Sora-chan's charm?
+  - start: '00:56.800'
+    end: '00:59.800'
+    original: いやそれって「酸素おいしいですか？」みたいな質問ですよね？
+    english: Wait, isn't that question like asking 'Is oxygen delicious?'
+  - start: '00:59.800'
+    end: '01:03.000'
+    original: でも強いて言うなら、五感で堪能できるところですかね？
+    english: But if I had to say, it's that you can enjoy her with all five senses!
+  - start: '01:03.000'
+    end: '01:05.100'
+    original: え？あ、はい！モニターに映ってますよ？
+    english: Eh? Ah, yes! She's on the monitor!
+  - start: '01:05.100'
+    end: '01:07.500'
+    original: 空と同じ色の家建てたい
+    english: I want to build a house the same color as the sky!
+  - start: '01:07.500'
+    end: '01:09.900'
+    original: 何百坪だって買いますから
+    english: Even if it's hundreds of tsubo, I'll buy it!
+  - start: '01:09.900'
+    end: '01:12.600'
+    original: てかできれば全員同じ家の町にしたい
+    english: I mean, if possible, I want to make a town where everyone lives in the
+      same house!
+  - start: '01:12.600'
+    end: '01:15.000'
+    original: 家だったら一様そらと空にしたい
+    english: If it's a house, I want to make it Sora and the sky!
+  - start: '01:15.000'
+    end: '01:19.400'
+    original: あー 尊くて 辛ーい
+    english: Ah, you're so precious it's painful!
+  - start: '01:19.400'
+    end: '01:21.000'
+    original: 本当に？
+    english: Really?
+  - start: '01:21.000'
+    end: '01:22.000'
+    original: あー！ごめんなさい！
+    english: Ah! I'm sorry!
+  - start: '01:22.000'
+    end: '01:25.000'
+    original: ちょっとそらちゃん愛が大きすぎて高すぎて旅に行けません！
+    english: My love for Sora-chan is too big and high, I can't go on a journey!
+  - start: '01:25.000'
+    end: '01:29.800'
+    original: そもそも私が今まで溜めに溜めた思いがこんな三拍子の曲で収まるわけがないですよ！
+    english: There's no way all these feelings I've accumulated could fit into a 3-beat
+      song like this!
+  - start: '01:29.800'
+    end: '01:34.000'
+    original: あーもう！ちょっとギターうるさい！静かにして！ベースも！
+    english: Ah, jeez! Guitar, shut up! Be quiet! Bass too!
+  - start: '01:34.000'
+    end: '01:38.800'
+    original: あーもう涙出てきた！感謝！そう感謝です！そらちゃんへの感謝の気持ちをこの声に乗せて…
+    english: Ah, tears are coming out! Gratitude! Yes, gratitude! Putting these feelings
+      of gratitude to Sora-chan into this voice...
+  - start: '01:38.800'
+    end: '01:40.100'
+    original: 歌います！
+    english: I'll sing!
+  - start: '01:40.100'
+    end: '01:45.300'
+    original: やっぱ そらちゃんが 本気で全部好き やっぱり今日も好き 本気で言うとマジで愛してる
+    english: As expected, I love everything about Sora-chan! After all, I love her
+      today too! Honestly, I seriously love her!
+  - start: '01:45.300'
+    end: '01:50.500'
+    original: 我が人生に好き 君が目にとまり 一緒に同じ夢を目指したいな
+    english: I love her in my life! You caught my eye, I want to aim for the same
+      dream together!
+  - start: '01:50.500'
+    end: '01:55.700'
+    original: 本気で全部好き やっぱり今日も好き 本気で言うと存在を愛してる
+    english: Honestly, I love everything! After all, I love her today too! Honestly,
+      I love her very existence!
+  - start: '01:55.700'
+    end: '02:00.900'
+    original: どんな君が好き 尊すぎて無理 腹から声出せ S-O-R-A!
+    english: Whatever kind of you, I love you! You're so precious it's impossible!
+      Shout from your gut, S-O-R-A!
+  - start: '02:01.000'
+    end: '02:06.000'
+    original: 指の動き好き 声の倍音好き たまに配信でフニャってなるところも本当に好きです
+    english: I love the movement of your fingers! I love the harmonics of your voice!
+      I really love how you sometimes get flustered on streams!
+  - start: '02:06.000'
+    end: '02:10.000'
+    original: 前髪のカーブ好き 暴走する恋のオーバードライブ
+    english: I love the curve of your bangs! A runaway overdrive of love!
+  - start: '02:10.000'
+    end: '02:14.900'
+    original: 高まって好きすぎ ちょっと本当無理すぎ 好き好き好き好きらぶー
+    english: Excited, I love you too much! This is really too impossible! Love, love,
+      love, love, love!
+  - start: '02:19.000'
+    end: '02:20.500'
+    original: 好き好き好き好き
+    english: Love, love, love, love!
+  - start: '02:24.000'
+    end: '02:25.500'
+    original: 好き好き好き好き
+    english: Love, love, love, love!
+  - start: '02:34.000'
+    end: '02:35.800'
+    original: マジで昇天していく
+    english: Seriously ascending!
+  - start: '02:39.000'
+    end: '02:40.500'
+    original: ぜーったいペルフェクト！
+    english: De-finitely Perfect!
+  - start: '02:40.500'
+    end: '02:44.000'
+    original: Hey! Hey! Turn it up lights!
+    english: Hey! Hey! Turn it up lights!
+  - start: '02:44.000'
+    end: '02:47.800'
+    original: Hey! Hey! Turn it up lights!
+    english: Hey! Hey! Turn it up lights!
+  - start: '02:48.000'
+    end: '02:51.500'
+    original: Hey! Hey! Turn it up lights!
+    english: Hey! Hey! Turn it up lights!
+  - start: '02:53.500'
+    end: '02:57.400'
+    original: 風まかせ飛び出して 笑うだけで Perfect Day
+    english: Jumping out into the wind, just laughing makes it a Perfect Day
+  - start: '02:57.400'
+    end: '03:00.800'
+    original: ノープランでもいいジャン 君がいれば OK
+    english: No plan is fine too, as long as you're here it's OK
+  - start: '03:01.000'
+    end: '03:04.800'
+    original: 寄り道遠回りしても 全部思い出になるね
+    english: Even if we take detours or long ways around, it all becomes memories
+  - start: '03:04.800'
+    end: '03:08.000'
+    original: まだ帰りたくないと 同じタイミングで
+    english: At the same timing of 'I don't want to go home yet'
+  - start: '03:08.200'
+    end: '03:11.800'
+    original: Hands up! 心に Ride on! 高くなっていく感情
+    english: Hands up! Ride on in your heart! Emotions rising higher
+  - start: '03:11.800'
+    end: '03:15.000'
+    original: パツパツモードでもいい 楽しいが最優先
+    english: Even in a packed schedule mode it's fine, fun comes first!
+  - start: '03:15.000'
+    end: '03:18.500'
+    original: クラップと声をちょうだい 重なれば問題ない
+    english: Give me claps and voices, if they overlap there's no problem
+  - start: '03:18.500'
+    end: '03:22.000'
+    original: 一瞬だって逃したくない このまま朝まで All night
+    english: Don't want to miss even a second, like this all night until morning
+  - start: '03:22.200'
+    end: '03:26.000'
+    original: もっと騒ごうよ まだ終われない
+    english: Let me hear more noise, we can't end yet!
+  - start: '03:26.000'
+    end: '03:29.000'
+    original: キラキラともる
+    english: Shining brightly
+  - start: '03:29.200'
+    end: '03:32.800'
+    original: 君と最高ジャン 歌って踊って
+    english: With you it's the best, singing and dancing
+  - start: '03:32.800'
+    end: '03:36.500'
+    original: 今日をもっと好きになる 奇跡ならステキな
+    english: Falling in love with today even more, if it's a miracle
+  - start: '03:36.500'
+    end: '03:40.000'
+    original: この瞬間を連れて行こう
+    english: Let's take this wonderful moment along
+  - start: '03:40.000'
+    end: '03:43.000'
+    original: 笑っていようよ 全部パーフェクト
+    english: Let's keep smiling, everything is Perfect!
+  - start: '03:48.500'
+    end: '03:50.000'
+    original: 全部パーフェクト！
+    english: Everything Perfect!
+  - start: '03:50.000'
+    end: '03:53.600'
+    original: ちょうだい 声をちょうだい まだまだ遊び足りない
+    english: Gimme, give me your voice! Still haven't played enough!
+  - start: '03:53.600'
+    end: '03:57.200'
+    original: テンションあげて Everybody この景色は更新中
+    english: Raise your tension, Everybody! This scenery is updating
+  - start: '03:57.200'
+    end: '04:00.800'
+    original: Rush up! 輝く Ways 繋がっていく Fusing Great
+    english: Rush up! Shining ways, connecting and fusing great
+  - start: '04:00.800'
+    end: '04:04.000'
+    original: 目が合う度笑っちゃう その感じが最高じゃない？
+    english: Smiling every time our eyes meet, isn't that feeling the best?
+  - start: '04:04.000'
+    end: '04:07.500'
+    original: 嫌なこと忘れちゃって 好きなように Move in now
+    english: Forget the bad things, move in now as you like
+  - start: '04:07.500'
+    end: '04:11.000'
+    original: くだらない一言で また笑い止まらない
+    english: With just a silly word, laughing won't stop again
+  - start: '04:11.000'
+    end: '04:14.600'
+    original: ちょっと無茶なのにお願い 君がいると楽しいね
+    english: Even though it's a bit reckless, please, with you it's fun
+  - start: '04:14.600'
+    end: '04:18.000'
+    original: 気付けば隣にいる それがなんか嬉しい
+    english: Before I know it, you're by my side, somehow that makes me happy
+  - start: '04:18.000'
+    end: '04:21.800'
+    original: もっと行けそうじゃない？ まだ止まれない
+    english: Doesn't it feel like we can go further? Can't stop yet!
+  - start: '04:21.800'
+    end: '04:24.500'
+    original: キラキラ駆け出して
+    english: Sparkling, running out
+  - start: '04:24.500'
+    end: '04:28.200'
+    original: 君とならどこまででも テンションだって
+    english: Wherever with you, even our tension
+  - start: '04:28.200'
+    end: '04:31.800'
+    original: シンクロしていく音で
+    english: With sounds synchronizing
+  - start: '04:31.800'
+    end: '04:35.400'
+    original: 合図ひとつで Jump up!
+    english: Jump up with a single signal!
+  - start: '04:35.400'
+    end: '04:39.000'
+    original: 会いあえば 全部パーフェクト
+    english: When we meet, everything is Perfect
+  - start: '04:59.200'
+    end: '05:01.008'
+    original: 何気ない日の
+    english: An ordinary day's...
+  thoughts:
+  - |-
+    {
+      "summary": {
+        "00:00.000-05:01.008": {
+          "thought_process": "**Analysis of Audio and Subtitle Requests**\n\nAlright, let's break this down. They want synchronized subtitles and music detection for this video segment. My initial impression is that the audio starts with a call-and-response track, maybe an automated practice or intro piece. I need to be precise, so I'll transcribe the Japanese and translate, paying close attention to the lyric structure as it sounds like \"Sora-chan Suki\" or something similar is happening.\n\nFrom 00:00:000 to 00:46.000, it's pretty clear: \"Sora-chan Suki,\" a song of pure, unadulterated adoration. I'm transcribing it now, line by line. It's a cascade of emotions, from the initial \"F-Finally, it's here!\" to the overwhelming \"Sora-chan, I love everything about you!\" Wait, I need to check the lyric for the song title, that's important.\n\nThen the interlude, I'll identify the crowd chatter and the call during the instrumental part, just in case that will need to be marked.\n\nNow, at 00:54, it seems like a spoken dialogue is starting. The audio says \"Eh? Sora-chan's charm?\" and it says it's \"Five senses\" (that is, she's wonderful!) and that she is on the monitor (to see her).\n\nFrom 01:05.100 to 01:21.000 it is the next song part. It seems like it is a love song about Sora.\n\nFrom 01:21.000 to 02:37.000, it seems like the song is continuing with additional passionate parts.\n\nAnd from 02:40.000 to 05:01.008, another song starts. Seems like the tempo is changing. This is \"パーフェクト\" / \"Perfect\" (or a similar song). The lyrics say something like \"Everything Perfect!\" and that the user does not want the night to end. The call is \"Hey! Hey! Turn it up lights!\" during the beginning of the song. The flow is perfect, as everything ends in a perfect day.\n\nI need to double-check every timestamp and transcript for accuracy. Then organize it into the requested JSON structure. This feels like an incredibly structured, fervent fan experience; it's practically textbook idol worship. Time to get this structured properly into the JSON and double check all of the information with the subtitles."
+        },
+        "music_detections": [
+          {
+            "start": "00:00.000",
+            "end": "02:37.000",
+            "artist": "ときのそら",
+            "title": null
+          },
+          {
+            "start": "02:38.000",
+            "end": "05:01.008",
+            "artist": "ときのそら",
+            "title": null
+          }
+        ],
+        "subtitles": [
+          {
+            "start": "00:00.000",
+            "end": "00:01.120",
+            "text": "つっ、遂に来ました！",
+            "translation": "F-Finally, it's here!"
+          },
+          {
+            "start": "00:01.120",
+            "end": "00:03.580",
+            "text": "うっ、もうそらちゃんのこと考えない夜なんてありません！",
+            "translation": "There's no night where I don't think about Sora-chan!"
+          },
+          {
+            "start": "00:03.580",
+            "end": "00:06.120",
+            "text": "てかてかてかライブも全通なんなら全曲全力で歌います！",
+            "translation": "I mean, I'm going to every live show, and I'll sing every song with all my power!"
+          },
+          {
+            "start": "00:06.120",
+            "end": "00:09.120",
+  detected_musical_performances:
+  - title: null
+    artist: ときのそら
+    start: 00:00
+    end: 02:37
+  - title: null
+    artist: ときのそら
+    start: 02:38
+    end: 05:01
+subtitles_prompt_version: 19

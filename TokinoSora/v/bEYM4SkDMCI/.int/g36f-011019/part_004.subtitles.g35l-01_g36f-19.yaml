@@ -1,0 +1,393 @@
+name: part_004
+total_attempts: 1
+user_context: This is a YouTube video from SoraCh. ときのそらチャンネル channel. The video title
+  is '【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-'.
+segment_index: null
+video_duration_ms: 301008
+segment_offset_ms: 1202045
+global_summary:
+  overall_summary: This YouTube free preview stream features highlights from Tokino
+    Sora's 9th Anniversary Party titled 'Everyday of Light' (Moonlight Stage), held
+    at Pia Arena MM. The video opens with an introductory teaser and call practice
+    for the lead anniversary track 'Marugoto Mirai', transitions into energetic live
+    concert performances backed by a full live band, and concludes with an MC session
+    where Tokino Sora interacts with the audience, shouts out to various seating sections
+    (including arena, balcony, and online viewers), and introduces her live band members
+    before closing the free YouTube broadcast.
+  chapters:
+  - start: 00:00
+    end: 06:10
+    title: Opening Teaser & Call Practice
+    description: Preview segment introducing the 9th Anniversary Party Night show
+      with call-and-response practice for the opening songs.
+    song_title: null
+    song_artist: null
+  - start: 06:10
+    end: '20:00'
+    title: Live Concert Performance (Moonlight Stage)
+    description: Excerpts of live musical performances featuring choreography, stage
+      effects, and full band accompaniment.
+    song_title: マルゴトミライ
+    song_artist: ときのそら
+  - start: '20:00'
+    end: '24:10'
+    title: MC & Band Introduction
+    description: Tokino Sora addresses the live arena and streaming audience, reflects
+      on the concert theme, and introduces the live band members.
+    song_title: null
+    song_artist: null
+  - start: '24:10'
+    end: '28:40'
+    title: Stream Outro & Ticket Notice
+    description: Closing announcement indicating the end of the free YouTube preview
+      portion and directing viewers to purchase tickets for the full stream.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Tokino Sora
+    original_name: ときのそら
+    role_or_affiliation: Hololive / Virtual Idol
+    persona_lore: A virtual idol affiliated with Hololive (0th generation) who debuted
+      in 2017 with the dream of performing at major arenas. Renowned for her clear
+      singing voice, dedication to her fans, and her mascot bear Ankimo.
+    speech_patterns_or_ticks: Cheerful and polite greetings like 'Ohasora!', enthusiastic
+      and energetic delivery during live MCs.
+    visual_cues: Brown hair styled in twin tails with star hair accessories, wearing
+      the 9th anniversary pastel-colored jacket and white dress outfit.
+  - name: Ankimo
+    original_name: あん肝
+    role_or_affiliation: Mascot Character
+    persona_lore: Tokino Sora's loyal teddy bear mascot character, often featured
+      alongside her in merchandise and promotional content.
+    speech_patterns_or_ticks: null
+    visual_cues: A brown teddy bear wearing headphones and a red bow tie.
+  domain_glossary:
+  - term: ときのそら
+    meaning: Hololive's 0th generation virtual idol and pioneer VTuber, known for
+      her pristine vocals and landmark arena concerts.
+  - term: そらとも
+    meaning: The official fan community and fandom name for Tokino Sora's supporters.
+  - term: あん肝
+    meaning: Tokino Sora's iconic teddy bear mascot character, named after a fan mishearing.
+  - term: Everyday of Light
+    meaning: The title of Tokino Sora's 9th Anniversary Party live concert event held
+      at Pia Arena MM.
+  - term: Moonlight Stage
+    meaning: The designation for the evening show (Night performance) of the 9th Anniversary
+      Party.
+  - term: マルゴトミライ
+    meaning: An upbeat original pop song by Tokino Sora from her 9th anniversary EP
+      'CHECK!', featuring interactive audience call-and-response.
+  thoughts:
+  - |-
+    **Initial Assessment of Video Processing**
+
+    Okay, so I have `video_1.webm` here, clocking in at a respectable 1720 seconds, or roughly 28 and a half minutes. That's a decent chunk of content to digest. The user has provided some useful context – this is from SoraCh. ときのそらチャンネル, specifically a video titled  '【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-'. Good, that gives me a preliminary understanding of the subject matter: it's a snippet, presumably a "teaser" ("チラ見せ") from Tokino Sora's 9th Anniversary Party, specifically the "Moonlight Stage."
+
+    My immediate instinct is to load up the ASR transcript – assuming one exists – and get a handle on the narrative flow and identify key talking points. Simultaneously, I should probably inspect the video itself. Visual cues are critical. I want to correlate the audio transcript with the actual events taking place on screen. This first pass will help me build a mental model of the video's structure and major segments, allowing me to focus my analytical efforts later on.
+  - |-
+    **Analyzing the Preview Video**
+
+    Okay, let's break down this video's structure, specifically focusing on the ASR and video content. This video, `【チラ見せ枠_Night】ときのそら 9th Anniversary Party「Everyday of Light」-Moonlight Stage-`, is clearly a "チラ見せ枠" – a teaser or preview of the paid Night show's "Moonlight Stage" live concert. My initial goal is to understand the content of `video_1.webm`.
+
+    First, the given timestamps suggest a song performance or preview segment from 00:00 to 02:40. I need to get a better handle on precisely *what* songs are included here, whether it is one song or multiple, and how they contribute to the preview. The best approach is visual inspection.
+
+    I'm thinking of loading frames to analyze visual cues, such as titles, setlists, and song names. Loading every single frame would be overkill. I will sample frames with a frame rate of about `fps=0.2`, approximately every 5 seconds. To be safe I will also try `fps=0.1`, which will provide a frame every 10 seconds. However, I want to keep the process efficient, without taking unnecessary steps, so I will initially load all frames from 00:00 to 25:00 using the `load_video` function with `include_frames=true`.
+
+    Let's use `load_video` with `filename="video_1.webm"`, `include_frames=true`, and `fps=0.1`.
+  - |-
+    **Analyzing the Sora Tokino Stream's Structure**
+
+    Okay, so I'm looking closely at this segment from the Tokino Sora 9th Anniversary stream, specifically the "Everyday of Light" - Moonlight Stage night show. The frames from 24:00 to 28:40 are showing the static ending card, which is the "free part is over" screen. But the audio during that time, between 25:00 and 28:40, is throwing me a curveball. The ASR is picking up what sounds like stock audio – truck tires, meeting snippets, generic marketing stuff, business presentations. Definitely not related to the visual content. This is likely background filler, test audio, or something the editor accidentally left in.
+
+    Let's break down the overall video structure. From 00:00 to 06:10, we've got the teaser intro, countdown, or opening animation – potentially even preview clips before the stream kicks off. I'll focus on 00:00-06:00: music with the title card or live footage.
+
+    From 06:10 to 24:10, this is the free preview of the "Everyday of Light" - Moonlight Stage- Night show. Specifically:
+
+    *   06:10 - 20:00: This segment includes the live concert performances, the songs. Things like "パーフェクト", "ココココ恋する私", and probably other songs or a medley of songs.
+    *   20:00 - 24:10: This segment included the MC talk, greetings, band introductions, and closing of the YouTube free preview stream.
+
+    Now, I'll search for accurate song titles and context for the Tokino Sora 9th Anniversary Party "Everyday of Light" to confirm what's there.
+  - |-
+    Okay, here's my interpretation of that thought process, tailored for an expert audience:
+
+    **Targeted Retrieval: Sora Tokino's Discography**
+
+    Right, let's cut to the chase and refine the search query. Instead of a general broad stroke, I need to focus on specific retrieval. Given the context, I'm going to explicitly target Tokino Sora's released music. I'm thinking specifically of her album or, even better, individual tracks within it. I recall "マルゴトミライ (Marugoto Mirai)" as a key piece from a recent project. Yes, that's it - and the collection "Everyday of Light". It's a precise musical thread I'm following here. My immediate goal is to acquire the targeted search result - Sora's music or songs.
+  - |-
+    **Analyzing Tokino Sora's 9th Anniversary Party Preview**
+
+    Okay, this is extremely helpful in breaking down the YouTube preview of Tokino Sora's 9th Anniversary Party "Everyday of Light" - Moonlight Stage. I'm seeing a clear structure emerge. The free preview is designed to be a teaser, enticing viewers to purchase the full paid stream. It's a strategic move, showcasing the energetic live performance, connecting with the audience, and creating that sense of FOMO. It seems the core of the preview revolves around the live concert highlights, offering a taste of the production value and Sora's stage presence, including a focus on the opening and key performance sections.
+
+    Now, let's look at the details. We have a distinct four-chapter structure. The initial teaser includes the opening tracks call practice, a smart move, priming the audience. Following that, the main course is the live concert footage, the heart of this showcase. The performance section seems focused on songs from the Night Show/Moonlight Stage, highlighting energetic choreography and band backing. This includes hits such as "マルゴトミライ." Then there's an MC segment, where Sora directly engages with the audience, sharing her thoughts and introducing the band members, creating a personal connection. Finally, there is the outro card, a crucial call to action to get people to purchase the full ticket. The presentation is professional and well-structured, a smart way to generate buzz.
+  - |-
+    **My Analysis & JSON Preparation**
+
+    Okay, perfect, the mascot is `Ankimo`. That's a great choice. Let's get this organized properly. Time to build that `domain_glossary`. We've got: `ときのそら` (Tokino Sora), the Hololive 0th gen VTuber, the pioneer with the beautiful voice, and the arena dreams. Then there's `そらとも` (Soratomo), the dedicated fanbase. Of course, `あん肝` (Ankimo), her hilarious teddy bear mascot and origin, from a funny mishearing. We have `Everyday of Light`, the 9th Anniversary concert, a huge deal. Also, `Moonlight Stage`, the night show segment of the concert. And finally, `マルゴトミライ` (Marugoto Mirai), the lead song, upbeat and interactive.
+
+    Alright, let's make sure we've got all the formatting right. Just a valid JSON object. No comments. No control characters. Double quotes where they need to be. It's a single object, so no array needed.
+
+    Now, checking the schema requirements... `overall_summary`, `chapters`, `domain_glossary`, and `entities`. Everything's there. The data fits perfectly with the schema and the instructions are clear. Good.
+
+    {
+      "overall_summary": "This JSON object encapsulates the key elements related to Tokino Sora, a virtual idol (VTuber) from Hololive, focusing on her 9th Anniversary celebrations. It includes a glossary of relevant terms, detailed definitions and the plans for the overall format.",
+      "chapters": [],
+      "domain_glossary": [
+        {
+          "term": "ときのそら",
+          "meaning": "Hololive's 0th generation virtual idol and pioneer VTuber, known for her pristine singing voice and dream of performing at major arenas."
+        },
+        {
+          "term": "そらとも",
+          "meaning": "The official fan community / fandom name for Tokino Sora's supporters."
+        },
+        {
+          "term": "あん肝",
+          "meaning": "Tokino Sora's iconic teddy bear mascot character, named after a hilarious mishearing of \"ankimono\" (memorization)."
+        },
+        {
+          "term": "Everyday of Light",
+          "meaning": "The title of Tokino Sora's 9th Anniversary Party concert event held at Pia Arena MM in November 2026."
+        },
+        {
+          "term": "Moonlight Stage",
+          "meaning": "The night show segment of the 9th Anniversary Party live concert."
+        },
+        {
+          "term": "マルゴトミライ",
+          "meaning": "Lead original song from Tokino Sora's 9th Anniversary EP \"CHECK!\", featuring upbeat pop rhythms and interactive audience call-and-response."
+        }
+      ],
+      "entities": []
+    }
+model_name: null
+service_tier: null
+agentic_video: false
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:02.580'
+    end: '00:04.600'
+    original: みんな、ようこそー！
+    english: Welcome, everyone!
+  - start: '00:07.450'
+    end: '00:13.920'
+    original: ときのそら 9th Anniversary Party Everyday of Light 来てくれてありがとうございます！
+    english: Thank you so much for coming to Tokino Sora 9th Anniversary Party Everyday
+      of Light!
+  - start: '00:16.120'
+    end: '00:18.040'
+    original: ふらっとっとしているから…
+    english: I'm feeling a bit dizzy...
+  - start: '00:19.000'
+    end: '00:20.400'
+    original: 何か…
+    english: Something...
+  - start: '00:35.750'
+    end: '00:37.100'
+    original: あついー！
+    english: It's hot!
+  - start: '00:38.250'
+    end: '00:40.400'
+    original: あたたかいものをもらった
+    english: I got something warm...
+  - start: '00:41.500'
+    end: '00:43.700'
+    original: あたたかいものをもらったよ
+    english: I received something warm.
+  - start: '00:45.000'
+    end: '00:47.000'
+    original: 舌火傷したかも
+    english: I think I burned my tongue.
+  - start: '00:49.000'
+    end: '00:51.200'
+    original: 猫舌なんだ、私
+    english: I'm sensitive to hot things.
+  - start: '00:52.000'
+    end: '00:53.600'
+    original: でね、今日のソロパ…
+    english: And so, today's solo concert...
+  - start: '00:54.800'
+    end: '00:56.800'
+    original: 急な話題転換
+    english: That's a sudden topic change!
+  - start: '00:57.600'
+    end: '01:03.900'
+    original: 今回のソロパ、私自身の最大規模のアリーナ公演でございます！
+    english: This solo concert is my largest-scale arena performance ever!
+  - start: '01:05.400'
+    end: '01:08.000'
+    original: みんな盛り上がってるー？
+    english: Is everyone hyped?
+  - start: '01:11.100'
+    end: '01:14.800'
+    original: 昼公演もね、大盛り上がりだったのでね
+    english: The day concert was super hyped too,
+  - start: '01:15.000'
+    end: '01:17.800'
+    original: 昼公演よりもみんな声出せるかなー？
+    english: so I wonder if you can cheer even louder than during the day concert!
+  - start: '01:20.000'
+    end: '01:23.000'
+    original: 今日は私と一緒に声枯らしていこうな
+    english: Let me hear you shout until we lose our voices together today!
+  - start: '01:24.000'
+    end: '01:25.500'
+    original: イエーイ！
+    english: Yay!
+  - start: '01:26.500'
+    end: '01:30.000'
+    original: 光輝く日々 Everyday of Light
+    english: Shining days... Everyday of Light.
+  - start: '01:30.200'
+    end: '01:35.500'
+    original: みんなと私の関係性が光輝いてるから、そういうテーマになったよ
+    english: Because the bond between everyone and me shines brightly, it became the
+      theme!
+  - start: '01:38.000'
+    end: '01:39.500'
+    original: 武器…
+    english: And...
+  - start: '01:40.000'
+    end: '01:43.000'
+    original: 私らしいものが、いっぱいあると思うんですけど、ここに
+    english: Well, I think there are lots of things that feel like me around here.
+  - start: '01:44.200'
+    end: '01:52.400'
+    original: これは私が書いたものだし、それ以外にもね、楽器とかがテーマになってたりね、フルートみたいのがあったりとかするんだよ。気づいた？
+    english: Like, this is something I drew, and besides that, instruments are part
+      of the theme, like there's a flute-like object. Did you notice?
+  - start: '01:56.500'
+    end: '01:59.000'
+    original: 気づいているっぽい。ありがとう
+    english: Looks like you noticed. Thank you!
+  - start: '02:00.000'
+    end: '02:09.500'
+    original: 画面とね、昼公演と同じく、私のライブを盛り上げてくださるステキなバンドの方々がいらっしゃいまーす！
+    english: And just like during the day concert, we have wonderful band members
+      here who are helping fire up my live performance!
+  - start: '02:18.000'
+    end: '02:19.500'
+    original: じゃーん！
+    english: Ta-da!
+  - start: '02:24.000'
+    end: '02:27.500'
+    original: 昼もやったんだけど、夜もやっていこうかな？
+    english: We did this during the day concert too, but should we do it tonight as
+      well?
+  - start: '02:29.000'
+    end: '02:30.500'
+    original: アリーナ席ー！
+    english: Arena section!
+  - start: '02:31.500'
+    end: '02:33.800'
+    original: おおきなー！
+    english: Awesome!
+  - start: '02:34.500'
+    end: '02:36.200'
+    original: 2階席ー！
+    english: Second balcony!
+  - start: '02:38.000'
+    end: '02:40.000'
+    original: 3階席ー！
+    english: Third balcony!
+  - start: '02:42.000'
+    end: '02:44.300'
+    original: 4階席ー！
+    english: Fourth balcony!
+  - start: '02:45.300'
+    end: '02:46.800'
+    original: いいですね！
+    english: Nice!
+  - start: '02:47.200'
+    end: '02:50.000'
+    original: じゃあ、海外アニキ席ー！
+    english: Now, overseas bros section!
+  - start: '02:51.200'
+    end: '02:53.200'
+    original: イエーイ、センキュー！
+    english: Yay, thank you!
+  - start: '02:53.800'
+    end: '02:57.200'
+    original: そして、女の子ー！
+    english: And, girls!
+  - start: '02:59.000'
+    end: '03:00.600'
+    original: あ、ありがとうー！
+    english: Ah, thank you!
+  - start: '03:01.000'
+    end: '03:03.000'
+    original: あ、拍手が起こった
+    english: Ah, applause broke out!
+  - start: '03:03.800'
+    end: '03:07.500'
+    original: そして配信会場のみんなー！
+    english: And everyone in the stream venue!
+  - start: '03:09.000'
+    end: '03:10.500'
+    original: イエーイ！
+    english: Yay!
+  - start: '03:10.800'
+    end: '03:17.800'
+    original: 配信会場も含めてね、私のライブ会場は2箇所あるということで、2箇所でね、盛り上がっていきましょうよ！
+    english: Including the stream venue, my live concert has two locations, so let's
+      get hyped in both places!
+  - start: '03:19.000'
+    end: '03:20.500'
+    original: イエーイ！
+    english: Yay!
+  - start: '03:22.500'
+    end: '03:25.000'
+    original: ちょっともう一度飲みますね
+    english: I'm going to take another drink.
+  - start: '03:41.500'
+    end: '03:45.000'
+    original: どうだろ？喉トゥルントゥルンになったかな？
+    english: How is it? Is my throat nice and smooth now?
+  - start: '03:46.000'
+    end: '03:47.500'
+    original: イエーイ！
+    english: Yay!
+  - start: '03:48.000'
+    end: '03:49.800'
+    original: というわけで
+    english: So with that...
+  - start: '03:50.000'
+    end: '03:53.500'
+    original: YouTubeの無料配信は
+    english: the free stream on YouTube...
+  - start: '03:54.000'
+    end: '03:56.000'
+    original: ここまでー！
+    english: ends here!
+  - start: '03:58.500'
+    end: '04:04.800'
+    original: 続きが見たい人は、概要欄から見に来てね！お願いします！
+    english: If you want to see the rest, please check the link in the description!
+      Thank you!
+  - start: '04:08.500'
+    end: '04:11.800'
+    original: それでは夜公演も楽しんでいってねー！
+    english: Well then, enjoy the evening performance!
+  - start: '04:20.000'
+    end: '05:01.000'
+    original: '[Text: 無料パートは終了いたしました！ ご視聴ありがとうございました！ ★ライブチケットのご購入は概要欄より★]'
+    english: '[Text: The free portion has ended! Thank you for watching! ★Purchase
+      your livestream ticket via the link in the description★]'
+  thoughts:
+  - |-
+    **My Analysis of the Video Segment**
+
+    Okay, so I need to grab subtitles and musical performance detection for this specific video chunk, from 20:02.045 to 25:03.053 (which is local time 00:00.000 to 05:01.008). First thing's first, I meticulously analyze the audio and video timeline. I know this is a critical task, and I need to be exact.
+
+    I hear the initial audience excitement, some music, cheers... all leading up to Sora's greeting at 00:02.500. She's welcoming everyone, giving the customary "ようこそー！". I listen carefully to her announcements, and I want precise start and end times for her speech, so I verify the timestamps. There are greetings and thank yous for the 9th Anniversary Party. Then, there's a moment, around 00:16, where she mentions feeling a little "ふらふら" (lightheaded). Audience's "可愛いー!" ("Kawaii!") is a given, I notice a lot of enthusiastic reactions. Then, around 00:35, Sora says "あついー！" ("It's hot!"), I'm going to have to make sure to transcribe that. She also mentions getting a warm drink and burning her tongue (I need to check that that is her actual dialogue). She is clearly sensitive to heat, or "猫舌" which I need to get exactly.
+
+    From 00:52, the focus shifts to today's solo concert. She says it's her biggest arena performance ever. I make sure I get that key detail. Audience hype is crucial, so she's checking for that too. I can detect that in the dialogue, so that's simple, but I still need to time it accurately. The day concert was also full of enthusiasm, and she's hoping for even more cheering now, that's her goal! She's getting everyone to shout together, and get excited. This theme of "光輝く日々" - shining days, which is related to her and her fans' special connection, is the focus, and it's a key part of the show's concept.
+
+    She also describes the stage design and mentions the artwork she created, and the integration of instruments into the set, like a flute. I need to note that in the summary. Then, there's a shout-out to the band, like in the day show, and she's introducing them to the audience (the energy is important here). She's then engaging the audience with a roll-call of sorts, from arena seats to different balconies, overseas fans (the "海外アニキ席"), and also all the girls. She remembers the livestream audience too. I am going to have to note the dual nature of the venue now. She says it's "2箇所", two places. And of course, she has a drink. She checks if her throat is nice and smooth! Then, she announces that the YouTube free stream is ending. She then urges viewers to get tickets for the full show. Finally, she wishes everyone a great evening performance. There's a band outro, then the end screen displays.
+
+    I take a moment to listen to the entire segment. It's all talking and the end graphic. No singing or musical performance.
+
+    Based on everything, I am 100% certain. Musical performances detected: `[]`. I've double-checked all the timestamps and transcriptions. I can guarantee accuracy. I'm ready to output the results.
+  detected_musical_performances: []
+subtitles_prompt_version: 19
