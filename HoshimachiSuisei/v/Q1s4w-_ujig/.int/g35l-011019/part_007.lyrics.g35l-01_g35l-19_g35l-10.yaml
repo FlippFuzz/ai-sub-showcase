@@ -1,0 +1,590 @@
+name: part_007
+total_attempts: 1
+user_context: This is a YouTube video from Suisei Channel channel. The video title
+  is '【チラ見せ】Hoshimachi Suisei Live Tour 2024 "Spectra of Nova"【おおきにアリーナ舞洲】'.
+segment_index: null
+video_duration_ms: 304997
+segment_offset_ms: 2100163
+global_summary:
+  overall_summary: This video is the YouTube free preview broadcast ('Chiramise')
+    of Hoshimachi Suisei's solo live tour, 'Hoshimachi Suisei Live Tour 2024 "Spectra
+    of Nova"', recorded at Ookini Arena Maishima in Osaka. The stream opens with a
+    pre-show waiting loop displaying fan messages and official merchandise information,
+    followed by venue announcements from Suisei herself. The broadcast then showcases
+    a selection of live performances featuring powerful vocals and dynamic stage production,
+    followed by an engaging MC segment where Suisei interacts with the audience in
+    Osaka. The video concludes with the end of the free preview portion, directing
+    viewers to paid streaming platforms to watch the rest of the concert.
+  chapters:
+  - start: 00:00
+    end: '26:30'
+    title: Pre-Show Waiting Screen & Fan Messages
+    description: Pre-show loop featuring fan art/messages ('Spectra of Nova') and
+      official tour merchandise displays.
+    song_title: null
+    song_artist: null
+  - start: '26:30'
+    end: '28:40'
+    title: Pre-Show Venue Announcement
+    description: Venue rules and audience guidelines announced by Hoshimachi Suisei
+      prior to the concert start.
+    song_title: null
+    song_artist: null
+  - start: '28:40'
+    end: '33:50'
+    title: Pre-Show Countdown & Venue Atmosphere
+    description: Atmosphere and countdown leading into the live performance start
+      at Ookini Arena Maishima.
+    song_title: null
+    song_artist: null
+  - start: '33:50'
+    end: '37:37'
+    title: 'Live Performance: 駆けろ'
+    description: Opening live performance segment featuring energetic vocals and choreography.
+    song_title: 駆けろ
+    song_artist: 星街すいせい
+  - start: '37:37'
+    end: '42:00'
+    title: 'Live Performance: 先駆者'
+    description: Live performance of Senkusha with dynamic stage lighting and crowd
+      interaction.
+    song_title: 先駆者
+    song_artist: 星街すいせい
+  - start: '42:00'
+    end: '45:40'
+    title: 'Live Performance: AWAKE'
+    description: Live performance of AWAKE showcasing Suisei's signature vocal range.
+    song_title: AWAKE
+    song_artist: 星街すいせい
+  - start: '45:40'
+    end: '50:33'
+    title: Osaka MC Segment
+    description: MC talk where Hoshimachi Suisei interacts with the Osaka audience,
+      talks about the tour, and announces future events.
+    song_title: null
+    song_artist: null
+  - start: '50:33'
+    end: '53:20'
+    title: Post-MC Performance & Free Preview End
+    description: Continuation of the live preview and announcement closing the free
+      YouTube broadcast portion.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Hoshimachi Suisei
+    original_name: 星街すいせい
+    role_or_affiliation: Hololive Production
+    persona_lore: A virtual idol who loves singing and connecting with fans, known
+      for her powerful vocals and musical dedication, working toward performing at
+      Nippon Budokan.
+    speech_patterns_or_ticks: Energetic and friendly idol speech register, frequently
+      addressing fans warmly and enthusiastically.
+    visual_cues: Light blue hair in twin tails with a star-shaped beret, dark stage
+      outfit with orange and blue accents, holding a custom microphone.
+  domain_glossary:
+  - term: Spectra of Nova
+    meaning: Hoshimachi Suisei's first major solo live tour in 2024 held across Saitama,
+      Osaka, and Fukuoka.
+  - term: 星詠み
+    meaning: Official fandom name for Hoshiyomi, supporters of Hoshimachi Suisei.
+  - term: おおきにアリーナ舞洲
+    meaning: Ookini Arena Maishima, the venue in Osaka where the second stop of the
+      live tour took place.
+  - term: ホロライブ
+    meaning: Hololive, a female VTuber production agency under Cover Corp.
+  - term: 駆けろ
+    meaning: Song title by Hoshimachi Suisei performed during the tour.
+  - term: 先駆者
+    meaning: Song title ('Senkusha') by Hoshimachi Suisei.
+  - term: AWAKE
+    meaning: Song title by Hoshimachi Suisei debuted during the tour.
+  - term: '#掛け巡る星街'
+    meaning: Official live tour hashtag for fan posts and reactions.
+  thoughts:
+  - |-
+    Okay, here's my take on that.
+
+    **Analyzing the Suisei Channel Video**
+
+    Alright, let's dive into this! The first thing I need to do is get my hands on the data for this Suisei Channel video, specifically the one titled `【チラ見せ】Hoshimachi Suisei Live Tour 2024 "Spectra of Nova"【おおきにアリーナ舞洲】`. It looks like it's a promotional video or a preview of something. My immediate thought is to start with the Automated Speech Recognition (ASR) transcript, that will be my core input, and combine it with visual information. I'll need to load up the video data.
+
+    I'm thinking the best approach here will be to use a `load_video` function, which I trust will give me a proper data structure. To get the transcript in one go, I'll set `include_asr=True`. This should give me both the video frames (or at least a reasonable sample of frames) and the ASR data. From there, I'll be able to start to make correlations and analyze the content effectively.
+  - |-
+    **Analyzing the "video_1.webm" Data**
+
+    Okay, let's break this down. We've got a video, `video_1.webm`, clocking in at 57 minutes. The transcript is... interesting, to say the least. It's a mishmash of stock audio – English podcast intros, AI tutorials, even meditation snippets and phishing warnings. But, wait... there's actual *Japanese concert footage* of Hoshimachi Suisei's "Spectra of Nova" tour! Specifically, the Osaka / Maishima leg! This is going to require some careful parsing.
+
+    My immediate next step is to isolate the concert video sections. From the ASR data, the announcement before the concert starts around 26:00:  `26:00 よーい` followed by the introduction `26:23 本日は星町彗星ライブツアー2024 スペクトラオブノヴァにご来場いただき誠にありがとうございます。星町彗星です。`.  The songs themselves begin around 34:00.
+
+    I think the best approach is to either load video frames to inspect the visual structure or check particular segments, using something like `load_video`. But, before I get too deep into frame-by-frame analysis, a quick search for details on the "Hoshimachi Suisei Live Tour 2024 Spectra of Nova" concert would be useful, a `tinyfish_search_multi` query should get some helpful background information. This will help confirm the timing and structure of the concert video.
+  - |-
+    **Analyzing the Hoshimachi Suisei "Spectra of Nova" Free Preview**
+
+    Okay, so I'm looking at this YouTube video, which seems to be the free preview, or "chiramise," of the Hoshimachi Suisei Live Tour 2024 "Spectra of Nova" from the Ookini Arena Maishima in Osaka. The video file is `video_1.webm` and runs for 57 minutes, about 3420 seconds.
+
+    Hold on, I need to understand why I'm seeing potentially unrelated audio/transcripts at the beginning or middle, such as AI tutorials or car reviews, like I've seen before. That likely means this is a test video, perhaps containing inserted segments or placeholder audio. To confirm this, I need to scrutinize the video frames themselves. I need to load and inspect them, maybe use `load_video` with `include_frames=True` at specific intervals or timestamps.
+
+    Specifically, I'll pay close attention to the ASR (Automatic Speech Recognition) between 26:00 and 51:00. Around 26:30, it seems to start: "本日は星町水星ライブツアー2024スペクトラオブノヴァにご来場いただき誠にありがとうございます。星町水星です。" Then from 33:50 onwards, we should hear songs ("大阪盛り上がっていきましょう..."). Around 45:43, we should hear MC talk ("大阪！おきにおきにおきにおきに..."). And finally at 50:33, we hear a call to action "YouTube、TikTokでご覧の方は、ここまで。この先を無料でみられると思うな。そうだよ。という。ぜひね、概要欄から配信サイトに飛んで、是非チケットを買ってください。" That's definitely the classic free preview!
+
+    But what about those first 26 minutes and the other parts? To get a clear picture, I need to examine frames at key timestamps: 00:00, 10:00, 20:00, 26:00, 35:00, 45:00, and 52:00.
+
+    I'll use `load_video` with `include_frames=True`. I'll try an fps of 0.01 initially, but if that yields too few frames, I'll adjust. Given the video's 3420-second duration, fps=0.01 gives about 34 frames, so I may lower it to fps=0.005 for about 17 frames with `start_time=0` and `end_time=3420000`. This should provide enough data to get a sense of what's going on throughout the video and confirm the nature of those initial segments.
+  - |-
+    **Analyzing the Video Structure**
+
+    Okay, this is straightforward. Let's break down the video's timeline meticulously. From the very beginning, 00:00 to 26:30, we have the pre-show loop. This is classic: fan messages, merchandise highlights, the whole "Spectra of Nova" aesthetic. Good for building anticipation. Then, from 26:30 to 28:40, we get the pre-show venue announcement, a necessary formality, and it looks like Suisei herself is doing the honors, which is smart branding.
+
+    The visuals from 28:40 to 33:50 are the standard waiting/countdown sequence. No surprises there. The actual live performance begins at 33:50 and runs until 45:40. We need to confirm the specific songs, starting with "雨のせい、あるいは" or something similar. Time to cross-reference that setlist.
+
+    Following the music, we have the MC segment from 45:40 to 50:33. Suisei addressing the audience at Ookini Arena Maishima in Osaka. And then, from 50:33 to 53:20, we have the post-MC song performance and the standard end screen. This also includes the announcement of the end of the free preview ("無料パートは終了いたしました"). Okay, so that's the overall structure. Now, I need to verify that setlist for the Osaka concert. Let's pull up the performance records from Ookini Arena Maishima. That's the key to solidifying this breakdown.
+  - |-
+    **Analyzing the Osaka Song Lineup and Preview Video**
+
+    Okay, so I'm trying to figure out which songs are actually *in* this free preview for the Osaka set. First, I need to list the potential contenders: "駆けろ (Kakero)," "先駆者 (Senkusha)," "AWAKE," "自分勝手Dazzling (Jibunkatte Dazzling)," "Starry Jet," and potentially "DEADPOOL" (feat. 花譜) or "一世風靡" (feat. 花譜) – that guest feature is key.
+
+    Right, the key is `video_1.webm`. Let's see what the timestamps show. Apparently, there is a cluster of songs somewhere between 33:50 and 45:40. It seems the video shows Song 1 / 2 (e.g. 駆けろ / 先駆者) around the 33:50 to 37:30 mark. Then other songs that are not numbered start at the 38:00 to 45:40 range.
+
+    Now, to nail down *exactly* which tracks are included in that video preview, I'll need to get some concrete evidence. I'm going to pull some frames or analyze the exact timestamps within that 33:50 to 45:40 window. To do that quickly and efficiently, I'll use `load_video` with a reduced frame rate (fps=0.05) to get a good overview of the content without bogging down. I'll load from 33:00 to 46:00 to give myself a little buffer on either end. Hopefully, that will give me the clarity I need.
+  - |-
+    Okay, here's my summary, tailored as requested:
+
+    **Recalibrating the Timing Parameters**
+
+    Alright, hang on a second. I just realized something about that `start_time` value I was using. 3300000 milliseconds, or 3300 seconds – that's 55 minutes! No wonder the relevant section was running so late in the process. It's clear now that was my issue. I need to bring that down into a more appropriate timeframe. Let's adjust the `start_time` parameter to a more suitable window. I think setting it to 2000000 milliseconds (that's 2000 seconds, or 33 minutes and 20 seconds) to 2800000ms (that will be 46 minutes 40 seconds) is the correct window.
+  - |-
+    **My Analysis & Summary of the Video**
+
+    Okay, here's the breakdown. This is a pretty straightforward task. We've got a free preview stream ("Chiramise") of Hoshimachi Suisei's "Spectra of Nova" live tour. My job is to provide a complete summary in a particular JSON format, so I'll create the structure with all the pieces required.
+
+    I need to nail the `overall_summary`, then give the `chapters` with precise timestamps and descriptions. For any musical segments, I'll include the `song_title` and `song_artist` in the original Japanese script when it's available. No need for romanization unless it's been officially released that way. Next, I'll identify the key `entities` - mainly Suisei herself, and then finally create a `domain_glossary` with relevant jargon and terminology, ensuring the meaning is clear.
+
+    I'll keep a close eye on the JSON formatting, making sure there are no control characters embedded within strings, and that it's all valid JSON, adhering to the schema precisely. No extra comments or anything outside the JSON, either. Let's make sure it's perfect. This is the finished product:
+
+    {
+      "overall_summary": "This video is the YouTube free preview broadcast (\"Chiramise\") of Hoshimachi Suisei's solo live tour, \"Hoshimachi Suisei Live Tour 2024 \"Spectra of Nova\"\", recorded at Ookini Arena Maishima in Osaka. The stream opens with a pre-show waiting loop displaying fan messages and official merchandise information, followed by venue announcements from Suisei herself. The broadcast then showcases a selection of live performances from the concert featuring powerful vocals and dynamic stage production, followed by an engaging MC segment where Suisei interacts with the audience in Osaka. The video concludes with the end of the free preview portion, directing viewers to paid streaming platforms to watch the rest of the concert.",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "26:30",
+          "title": "Pre-Show Waiting Screen & Fan Messages",
+          "description": "Pre-show loop featuring fan art/messages ('Spectra of Nova') and official tour merchandise displays."
+        },
+        {
+          "start": "26:30",
+          "end": "28:40",
+          "title": "Pre-Show Venue Announcement",
+          "description": "Venue rules and audience guidelines announced by Hoshimachi Suisei prior to the concert start."
+        },
+        {
+          "start": "28:40",
+          "end": "33:50",
+          "title": "Pre-Show Countdown & Venue Atmosphere",
+          "description": "Atmosphere and countdown leading into the live performance start at Ookini Arena Maishima."
+        },
+        {
+          "start": "33:50",
+          "end": "37:37",
+          "title": "Live Performance: 駆けろ",
+          "description": "Opening live performance segment featuring energetic vocals and choreography.",
+          "song_artist": "星街すいせい",
+          "song_title": "駆けろ"
+        },
+        {
+          "start": "37:37",
+          "end": "42:00",
+          "title": "Live Performance: 先駆者",
+          "description": "Live performance of Senkusha with dynamic stage lighting and crowd interaction.",
+          "song_artist": "星街すいせい",
+          "song_title": "先駆者"
+        },
+        {
+          "start": "42:00",
+          "end": "45:40",
+          "title": "Live Performance: AWAKE",
+          "description": "Live performance of AWAKE showcasing Suisei's signature vocal range.",
+          "song_artist": "星街すいせい",
+          "song_title": "AWAKE"
+        },
+        {
+          "start": "45:40",
+          "end": "50:33",
+          "title": "Osaka MC Segment",
+          "description": "MC talk where Hoshimachi Suisei interacts with the Osaka audience, talks about the tour, and announces future events."
+        },
+        {
+          "start": "50:33",
+          "end": "53:20",
+          "title": "Post-MC Performance & Free Preview End",
+          "description": "Continuation of the live preview and announcement closing the free YouTube broadcast portion."
+model_name: null
+service_tier: null
+agentic_video: true
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.163'
+    end: '00:05.350'
+    original: 透明で 鮮明で 叫び声あげるマイノリティー
+    english: Transparent and vivid, the minority raising their shouts
+  - start: '00:06.000'
+    end: '00:12.100'
+    original: 健気に 失敗しては学んでいく
+    english: Courageously, learning through our failures
+  - start: '00:13.100'
+    end: '00:16.800'
+    original: もう このままずっと降りやまない雨の世界で
+    english: Now, in this world of endless, unceasing rain...
+  - start: '00:17.500'
+    end: '00:20.800'
+    original: 愛するしかない それしかない 器用じゃないから
+    english: We have no choice but to love it, nothing else, because we aren't so
+      clever
+  - start: '00:23.500'
+    end: '00:28.400'
+    original: そう 白紙になった青春の 何ページ目だったっけ
+    english: Yes, what page of our blank youth was it again?
+  - start: '00:29.000'
+    end: '00:35.200'
+    original: 忘れ物思い出せないまま 忘れそう このままじゃ
+    english: Unable to remember what we forgot, about to forget it all just like this
+  - start: '00:54.500'
+    end: '01:00.300'
+    original: 風の形 見えない 見えないよ あなたが
+    english: The shape of the wind, invisible, invisible to you...
+  - start: '01:01.800'
+    end: '01:06.200'
+    original: あなただって同じ じっとなんてしてられない
+    english: You're the same way, you can't just stay still
+  - start: '01:07.500'
+    end: '01:11.500'
+    original: 動き出すよ この身かけて
+    english: I'm starting to move, risking this very body
+  - start: '01:12.500'
+    end: '01:16.800'
+    original: 零さないよ 泣いたってしょうがないさ
+    english: I won't let it spill, it can't be helped if I cry
+  - start: '01:21.000'
+    end: '01:26.500'
+    original: ねえ このままずっと降りやまない雨の世界で
+    english: Hey, in this world of endless, unceasing rain...
+  - start: '01:27.000'
+    end: '01:31.500'
+    original: もう悲しくない 人は慣れる生き物だから
+    english: We aren't sad anymore, because humans are creatures who get used to it
+  - start: '01:32.000'
+    end: '01:36.500'
+    original: そう 白紙になった青春の 何ページ目だったっけ
+    english: Yes, what page of our blank youth was it again?
+  - start: '01:37.000'
+    end: '01:42.500'
+    original: 今 君に会いたいと 涙こらえて
+    english: Holding back my tears, wishing to see you right now
+  - start: '01:43.000'
+    end: '01:46.800'
+    original: さよならだ さよならなんだって認めたくないけど
+    english: It's goodbye, even though I don't want to admit it's goodbye
+  - start: '01:47.800'
+    end: '01:53.000'
+    original: 雨上がりのこの世界が眩しいから
+    english: Because this world after the rain is so dazzling
+  - start: '01:54.000'
+    end: '02:01.200'
+    original: もう帰らない 振り返らない 思い出とともに 新しい風にあおられ
+    english: Never returning, never looking back, alongside our memories, stirred
+      by a new wind
+  - start: '02:04.000'
+    end: '02:10.500'
+    original: そしてまた君に会いたいと願い 駆けてゆく
+    english: And once again wishing to see you, I run forward
+  - start: '02:14.000'
+    end: '02:20.000'
+    original: 駆けてゆく 駆けてゆく
+    english: Running forward, running forward
+  - start: '02:37.000'
+    end: '02:40.500'
+    original: 声に出してください！
+    english: Let me hear your voices!
+  - start: '03:00.500'
+    end: '03:04.500'
+    original: 消えはしないで
+    english: Don't fade away
+  - start: '03:05.000'
+    end: '03:09.500'
+    original: 闇深いほどに隠せない
+    english: However deep the darkness, it cannot be hidden
+  - start: '03:11.000'
+    end: '03:15.500'
+    original: 何処に居ようが 輝くものしか
+    english: No matter where you are, only what shines...
+  - start: '03:19.000'
+    end: '03:26.500'
+    original: 此処にない 日々は一進一退 落ち着かない 絶えない傷でも ギリギリが良いって
+    english: '...is here. Days are one step forward, one step back, never settling,
+      even with endless scars, saying being on the edge is good'
+  - start: '03:30.800'
+    end: '03:36.000'
+    original: 「いつかきっと」じゃ 何にも刺激はない
+    english: Saying 'someday for sure' holds no stimulation at all
+  - start: '03:37.000'
+    end: '03:42.500'
+    original: 確かなビートが 示してる方へ行けよ
+    english: Go to where the certain beat points
+  - start: '03:45.000'
+    end: '03:52.500'
+    original: 咲かせ 咲かせよ 咲かせきるまで 澄み切る闇は無限の木立
+    english: Bloom, make it bloom, until it blooms fully. The crystal-clear darkness
+      is an infinite grove
+  - start: '03:56.000'
+    end: '04:03.000'
+    original: 旅する理由は理屈じゃないの 瞬く生命よ 咲き誇れ
+    english: The reason for journeying isn't logical; flash of life, bloom proudly
+  - start: '04:16.000'
+    end: '04:22.000'
+    original: 殻に篭って 怯える背に吹く
+    english: Cooped up in a shell, blowing on timid backs...
+  - start: '04:25.000'
+    end: '04:31.500'
+    original: 受けて立とうか 開拓者たちの
+    english: Shall I take up the challenge? The footprints of pioneers...
+  - start: '04:35.000'
+    end: '04:39.000'
+    original: 夢の跡
+    english: The traces of their dreams
+  - start: '04:40.000'
+    end: '04:47.000'
+    original: 自分に期待して何が悪い 本当の敵も味方も己って
+    english: What's wrong with expecting things from yourself? That the true enemy
+      and ally are oneself
+  - start: '04:49.000'
+    end: '04:55.000'
+    original: ほら明快 だから正気と狂気できりきり舞
+    english: Look, it's crystal clear. So sanity and madness make us spin in a whirlwind
+  - start: '04:56.000'
+    end: '05:05.160'
+    original: 次から次へと 過去に手を振っていけよ
+    english: From one thing to the next, wave goodbye to the past and go!
+  thoughts:
+  - |-
+    **Refining the Subtitles for the Musical Performance**
+
+    Okay, so we have this draft set of subtitles for the musical performance, and my immediate focus is on refining them. The key segments are "Kakero" and "Senkusha." Let's establish our ground truth. Do we load the video using `load_video`? Perhaps the official lyrics from the initial search will suffice. We want to be efficient and work fast but be accurate.
+
+    Ideally, we'd verify the timestamps and audio against the video, but the draft timestamps are locked in. Accuracy is paramount. Let's see... Maybe loading video frames or the transcript around the start and end of each segment will provide extra certainty, or directly using the official lyrics against the drafts.
+
+    Now, let's nail down the timing. The segment runs from 35:00.163 to 40:05.160. Quick check... the video file is `video_1.webm`, and it's 304.972 seconds long. That's around five minutes, so it should be the correct segment. To be 100% sure, let's load the video ASR or frames using `load_video` to cross-reference and confirm everything is right in `video_1.webm`.
+  - |-
+    **A Deep Dive into Subtitles: A Process of Verification and Refinement**
+
+    Okay, here's my thought process as I've gone through this detailed subtitle verification. First, the ASR and initial search give us a direct line to the official lyrics. That's our anchor point – the *truth*. I'm an expert, and I know the nuances of language and music, so I have to make sure we're getting this right. I'm meticulous, always making sure things are correct.
+
+    I begin by cross-referencing *every single* draft subtitle block against those official lyrics and the provided timing information. It's a line-by-line inspection, a critical comparison to ensure complete accuracy. The initial draft often has phonetic mis-transcriptions or slightly off wording—but that's easily fixed using the official lyrics. I can correct those immediately using the provided text.
+
+    Then, there's the nuance. Are there any parts that need polishing? Any places where an official translation has clarified a meaning or used a more natural phrasing? It's essential to check if the English translation is as natural as possible. I am translating between languages, so I must make sure that it sounds good in both languages.
+
+    However, I'm careful with live concert ad-libs or stage banter. If the draft includes a callout from the singer or a greeting from the crowd, it must be exactly preserved; those moments are unique. I need to make sure that the meaning behind the lyrics remains, but that the call out is not changed!
+
+    The process is repetitive, but important. Each block gets its moment of careful consideration. Sometimes there are slight variations between the draft and the official lyrics. This could be due to live performances, so I have to make the decision whether or not to change the content.
+
+    My goal is to achieve total fidelity. Every subtitle block must be perfectly aligned with the music, the official lyrics, and most importantly, the *intention* of the song. It's about precision, it's about art, and it's about honoring the music and the artist. Only when I'm 100% confident can I output the final, verified JSON data.
+
+    {
+      "subs": [
+        {
+          "s": "00:00.163",
+          "e": "00:05.350",
+          "og": "透明で 鮮明で 叫び声あげるマイノリティー",
+          "en": "Transparent and vivid, the minority raising their shouts"
+        },
+        {
+          "s": "00:06.000",
+          "e": "00:12.100",
+          "og": "健気に 失敗しては学んでいく",
+          "en": "Courageously, learning through our failures"
+        },
+        {
+          "s": "00:13.100",
+          "e": "00:16.800",
+          "og": "もう このままずっと降りやまない雨の世界で",
+          "en": "Now, in this world of endless, unceasing rain..."
+        },
+        {
+          "s": "00:17.500",
+          "e": "00:20.800",
+          "og": "愛するしかない それしかない 器用じゃないから",
+          "en": "We have no choice but to love it, nothing else, because we aren't so clever"
+        },
+        {
+          "s": "00:23.500",
+          "e": "00:28.400",
+          "og": "そう 白紙になった青春の 何ページ目だったっけ",
+          "en": "Yes, what page of our blank youth was it again?"
+        },
+        {
+          "s": "00:29.000",
+          "e": "00:35.200",
+          "og": "忘れ物思い出せないまま 忘れそう このままじゃ",
+          "en": "Unable to remember what we forgot, about to forget it all just like this"
+        },
+        {
+          "s": "00:54.500",
+          "e": "01:00.300",
+          "og": "風の形 見えない 見えないよ あなたが",
+          "en": "The shape of the wind, invisible, invisible to you..."
+        },
+        {
+          "s": "01:01.800",
+          "e": "01:0
+lyrics_prompt_version: 10
+draft_subtitles:
+- start: '00:00.163'
+  end: '00:05.350'
+  original: この道こなしていく まとめで 鮮明で 叫び声上げる前の
+  english: Navigating this road, neatly and vividly, before raising a shout...
+- start: '00:06.000'
+  end: '00:12.100'
+  original: 息の根止まらぬように 確かめ合う 失敗して学んでいく
+  english: So life doesn't get cut off, confirming with each other, learning from
+    our failures as we go
+- start: '00:13.100'
+  end: '00:16.800'
+  original: もうこのままずっと 降りやまない雨の世界だ
+  english: This world is an endless rain that will never stop
+- start: '00:17.500'
+  end: '00:20.800'
+  original: 愛するしかない それしかない 気のせいじゃないから
+  english: We have no choice but to love it, nothing else, because it's not just my
+    imagination
+- start: '00:23.500'
+  end: '00:28.400'
+  original: そう白紙になった青春の何ページ目だっけ
+  english: Yes, what page of this blank youth are we on again?
+- start: '00:29.000'
+  end: '00:35.200'
+  original: 忘れ物 思い出せないまま 忘れそう このままじゃ
+  english: Unable to remember what I forgot, about to forget it all just like this...
+- start: '00:54.500'
+  end: '01:00.300'
+  original: 風の形に見えない 見えないよ あなただって同じ
+  english: The shape of the wind is invisible, invisible, and you're the exact same
+    way
+- start: '01:01.800'
+  end: '01:06.200'
+  original: じっとなんてしてられない 動き出すよ
+  english: I can't just stay still, I'm going to start moving
+- start: '01:07.500'
+  end: '01:11.500'
+  original: この身焦がして この身燃やして
+  english: Scorching this body, setting this body ablaze
+- start: '01:12.500'
+  end: '01:16.800'
+  original: 泣いちゃってしょうがないさ 泣いたってしょうがないさ
+  english: It can't be helped if I cry, it can't be helped if I weep
+- start: '01:21.000'
+  end: '01:26.500'
+  original: ねぇ このままずっと 降りやまない雨の世界だ
+  english: Hey, this world is an endless rain that will never stop
+- start: '01:27.000'
+  end: '01:31.500'
+  original: もう確かない 人はなれる 生き物だから
+  english: We're living creatures who can become certain of nothing
+- start: '01:32.000'
+  end: '01:36.500'
+  original: そう白紙になった青春の何ページ目だっけ
+  english: Yes, what page of this blank youth are we on again?
+- start: '01:37.000'
+  end: '01:42.500'
+  original: 今 君に会いたいと涙 こぼれ声 さようなら
+  english: Now, tears of wanting to see you spill over, and my voice says goodbye
+- start: '01:43.000'
+  end: '01:46.800'
+  original: さよならなんて 認め たくないけど
+  english: Even though I don't want to admit goodbye
+- start: '01:47.800'
+  end: '01:53.000'
+  original: 雨上がりの この世界が 眩しかったわ
+  english: This post-rain world was so dazzling
+- start: '01:54.000'
+  end: '02:01.200'
+  original: もう帰らない 振り返らない 思い出とともに 新しい風に煽られ
+  english: Never returning, never looking back, whipped by a new wind alongside our
+    memories
+- start: '02:04.000'
+  end: '02:10.500'
+  original: そしてまた 君に会いたいと願い かけていく
+  english: And once again, making a wish to see you, carrying it forward
+- start: '02:14.000'
+  end: '02:20.000'
+  original: かけていく 駆けていく
+  english: Carrying it forward, carrying it forward
+- start: '02:37.000'
+  end: '02:40.500'
+  original: 声に出してください！
+  english: Let me hear your voices!
+- start: '03:00.500'
+  end: '03:04.500'
+  original: 気を失わないで
+  english: Don't lose consciousness
+- start: '03:05.000'
+  end: '03:09.500'
+  original: 深すぎるほどに 隠せない
+  english: So profound it can't be hidden
+- start: '03:11.000'
+  end: '03:15.500'
+  original: どこにようが 輝くものしか
+  english: No matter where you are, only what shines
+- start: '03:19.000'
+  end: '03:26.500'
+  original: ここにない 日々は一緒にいたい 落ち着かない 絶えない傷でもぎりぎりだって
+  english: Isn't here. Days when we want to be together, unable to settle down, even
+    with endless scars, just barely holding on
+- start: '03:30.800'
+  end: '03:36.000'
+  original: 明かしたい 自らがきっとじゃ 何の刺激もない
+  english: Wanting to reveal it ourselves, otherwise there's no stimulation at all
+- start: '03:37.000'
+  end: '03:42.500'
+  original: 確かなビートが示している方へ 行こう
+  english: Let's go towards where the certain beat is pointing
+- start: '03:45.000'
+  end: '03:52.500'
+  original: さあかせ さかせよ さかせ 切るまで 紡ぎ切る 闇は無限の形
+  english: Come on, make it bloom, make it bloom until we cut it off, weaving through
+    the endless darkness of shapes
+- start: '03:56.000'
+  end: '04:03.000'
+  original: 旅をするわけは理屈じゃないの 瞬くいのちを咲き誇れ
+  english: The reason for journeying isn't logical; let your fleeting life bloom proudly
+- start: '04:16.000'
+  end: '04:22.000'
+  original: 空にこもって 怯えぬ背に吹く
+  english: Trapped in the sky, blowing on timid backs
+- start: '04:25.000'
+  end: '04:31.500'
+  original: 風はない 抜けてたどる 開拓者たちの
+  english: There is no wind, following the pioneers who broke through
+- start: '04:35.000'
+  end: '04:39.000'
+  original: 夢の音
+  english: The sound of dreams
+- start: '04:40.000'
+  end: '04:47.000'
+  original: 自由に生きたいして何が悪い 本当の敵も味方もおどれって
+  english: What's wrong with wanting to live freely? Even true enemies and allies,
+    dance!
+- start: '04:49.000'
+  end: '04:55.000'
+  original: ほら冥界 だからきっと今日切り切り舞い
+  english: Look, the netherworld, so surely today is a whirlwind
+- start: '04:56.000'
+  end: '05:05.160'
+  original: 次から次へと過去に手を振って 行こう
+  english: From one thing to the next, waving goodbye to the past, let's go
+detected_performances:
+- title: 駆けろ
+  artist: 星街すいせい
+  start: 00:00
+  end: 02:36
+- title: 先駆者
+  artist: 星街すいせい
+  start: 02:36
+  end: 05:05
