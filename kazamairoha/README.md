@@ -2,6 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
+| 2026&#8209;11&#8209;17 | <a href="https://youtu.be/Kpe1dOPOntI"><img src="https://i.ytimg.com/vi/Kpe1dOPOntI/mqdefault.jpg" width="100" /></a> | [【オフコラボ】正解しないとたべれません🍪 #ホロ都道府県クッキーバトル 🔥熱千めらVS鈴鳴つづり【風真いろは/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=kazamairoha&v=Kpe1dOPOntI) | [gemini-3.5-flash-lite<br>011019](./v/Kpe1dOPOntI) |
 | 2026&#8209;07&#8209;08 | <a href="https://youtu.be/23UEX1Yh43U"><img src="https://i.ytimg.com/vi/23UEX1Yh43U/mqdefault.jpg" width="100" /></a> | [【3DLIVE】Wind Trails🍃#風真いろは生誕ライブ2026 告知&ゲストあり🎈【風真いろは/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=kazamairoha&v=23UEX1Yh43U) | [gemini-3.7-flash<br>0918](./v/23UEX1Yh43U) |
 | 2025&#8209;11&#8209;14 | <a href="https://youtu.be/42h4ydJS3zk"><img src="https://i.ytimg.com/vi/42h4ydJS3zk/mqdefault.jpg" width="100" /></a> | [【3DLIVE】#風真いろは生誕LIVE2025 告知&ゲストあり🎈これが風真いろはです！~Reversible~【風真いろは/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=kazamairoha&v=42h4ydJS3zk) | [gemini-3.6-flash<br>0918](./v/42h4ydJS3zk) |
 | 2025&#8209;11&#8209;08 | <a href="https://youtu.be/POix3IWi5Uw"><img src="https://i.ytimg.com/vi/POix3IWi5Uw/mqdefault.jpg" width="100" /></a> | [[Mini 3D LIVE] #KazamaIroha3rdAnniversary Multiple reveals 🎀 Mini 3D LIVE included 🎺 Starting lin...](https://flippfuzz.github.io/ai-sub-player/?uploader=kazamairoha&v=POix3IWi5Uw) | [gemini-3.5-flash-lite<br>011019](./v/POix3IWi5Uw) |
