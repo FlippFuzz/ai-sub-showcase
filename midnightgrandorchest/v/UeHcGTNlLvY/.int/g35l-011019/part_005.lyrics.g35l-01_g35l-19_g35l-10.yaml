@@ -1,0 +1,437 @@
+name: part_005
+total_attempts: 1
+user_context: This is a YouTube video from Midnight Grand Orchestra channel. The video
+  title is '【冒頭無料配信】Midnight Grand Orchestra 1st LIVE「Midnight Mission」'.
+segment_index: null
+video_duration_ms: 300008
+segment_offset_ms: 1500040
+global_summary:
+  overall_summary: This video is the YouTube free opening stream of Midnight Grand
+    Orchestra's 1st LIVE 'Midnight Mission', held at Toyosu PIT on February 20, 2024.
+    The music project consists of Hololive VTuber Hoshimachi Suisei and sound producer
+    Taku Inoue. The broadcast features pre-show venue announcements followed by explosive
+    live performances of four songs ('Never Ending Midnights', 'SOS', 'Midnight Mission',
+    and 'Igniter') complete with stunning sci-fi visual effects and concert production,
+    concluding with streaming ticket details.
+  chapters:
+  - start: 00:00
+    end: '15:01'
+    title: Pre-show Waiting Screen
+    description: Waiting screen displaying concert information and hashtags prior
+      to the start of the live stream.
+    song_title: null
+    song_artist: null
+  - start: '15:01'
+    end: '22:08'
+    title: Opening Announcements & Venue Guide
+    description: Pre-show venue announcements detailing audience guidelines, photography
+      bans, and safety instructions.
+    song_title: null
+    song_artist: null
+  - start: '22:08'
+    end: '26:05'
+    title: Never Ending Midnights
+    description: The opening live performance of the concert, featuring high-energy
+      vocals and immersive cosmic visuals.
+    song_title: Never Ending Midnights
+    song_artist: Midnight Grand Orchestra
+  - start: '26:05'
+    end: '30:28'
+    title: SOS
+    description: The second song performance with dynamic stage lighting and electronic
+      beats.
+    song_title: SOS
+    song_artist: Midnight Grand Orchestra
+  - start: '30:28'
+    end: '34:12'
+    title: Midnight Mission
+    description: The titular track performance showcasing elaborate sci-fi spaceship
+      navigation interface visuals.
+    song_title: Midnight Mission
+    song_artist: Midnight Grand Orchestra
+  - start: '34:12'
+    end: '37:45'
+    title: Igniter
+    description: The fourth song of the setlist, driving the live concert energy to
+      a peak with heavy synth-rock sounds.
+    song_title: Igniter
+    song_artist: Midnight Grand Orchestra
+  - start: '37:45'
+    end: '45:40'
+    title: Streaming Ticket & Event Information
+    description: Post-performance closing screen displaying online streaming ticket
+      pricing, purchase deadlines, and archive viewing periods.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Hoshimachi Suisei
+    original_name: 星街すいせい
+    role_or_affiliation: Lead Vocalist / Hololive Production
+    persona_lore: A VTuber idol affiliated with Hololive Production who sings and
+      streams, partnering in Midnight Grand Orchestra.
+    speech_patterns_or_ticks: null
+    visual_cues: Blue hair, dark military-style concert costume with beret and sci-fi
+      aesthetic.
+  - name: Taku Inoue
+    original_name: TAKU INOUE
+    role_or_affiliation: Sound Producer & Composer / Midnight Grand Orchestra
+    persona_lore: Renowned Japanese sound producer, DJ, and composer collaborating
+      on electronic and pop music projects.
+    speech_patterns_or_ticks: null
+    visual_cues: Performs on stage playing guitar/synthesizer in minimalist dark attire.
+  domain_glossary:
+  - term: Midnight Grand Orchestra
+    meaning: A musical project formed by VTuber Hoshimachi Suisei and sound producer
+      Taku Inoue.
+  - term: Midnight Mission
+    meaning: The 1st LIVE concert of Midnight Grand Orchestra held at Toyosu PIT on
+      February 20, 2024.
+  - term: Toyosu PIT
+    meaning: A live music venue located in Tokyo where the concert took place.
+  - term: SPWN
+    meaning: The virtual event streaming and ticketing platform hosting the live broadcast.
+  - term: Hololive Production
+    meaning: A prominent VTuber agency managing talent such as Hoshimachi Suisei.
+  thoughts:
+  - |-
+    **Initial Assessment of Video Processing Task**
+
+    Okay, so I have a new task: analyze this video, `video_1.webm`. It's a fairly substantial one at 45 minutes and 40 seconds – 2740 seconds to be exact. The context is helpful; I know this is a YouTube video from the Midnight Grand Orchestra channel, specifically their first live performance, titled '【冒頭無料配信】Midnight Grand Orchestra 1st LIVE「Midnight Mission」'. Knowing the source and context is crucial for targeted analysis.
+
+    To get started and understand the video's layout, I need to get a handle on its structure. My immediate thought is to load the video and obtain an initial representation of its content. I'll utilize the ASR data if available, or extract some frames/audio to establish a baseline. This will allow me to build a timeline and begin to grasp the video's flow. Let's call `load_video` with the `include_asr=True` parameter. That should give me a solid foundation to work from.
+  - |-
+    **Analyzing the ASR and Video Structure**
+
+    Okay, let's dive into this ASR and video file. The initial part, before the 15-minute mark, is clearly filler – maybe some generic audio/video related to farmers markets or video editing, that kind of thing. But then, *bam*, at 15:01, the speech-to-text gives us that Japanese phrase: `いつもエコ内とブランドオーケストラファーストライブエコ内とミッションにご来場頂きまして誠にありがとうございます。` Wait a minute... the ASR translates "Midnight Grand Orchestra" as "エコ内とブランドオーケストラ"? That's our key. This is the "Midnight Grand Orchestra 1st LIVE 「Midnight Mission」" concert!
+
+    So, first things first, I need to verify that timestamp, and then I'll cross-reference the video frames from around the 15:00 to 17:00 window. I'll need to check the entire video for visual cues, of course. I'll load key frames or check timestamps, to map out the structure of the video.
+
+    Then, I'll leverage `tinyfish_search_multi` and plug in the exact search terms: "Midnight Grand Orchestra 1st LIVE Midnight Mission". That should provide me with all the concert details, like the setlist, the names of the members - Hoshimachi Suisei, and TAKUYA KANAZAWA (or Takuya Kanazawa), the composing partner and sound producer, etc. This is the most efficient path to confirm and validate the identified concert information.
+  - |-
+    Okay, here's my interpretation of that thought process, tailored for an expert audience:
+
+    **Analyzing Midnight Grand Orchestra "Midnight Mission" Setlist**
+
+    Alright, let's get down to brass tacks. This video is showing *something* from the Midnight Grand Orchestra's "Midnight Mission" live performance. My primary goal here is to establish absolute certainty about the specific songs and their chronology. I need the definitive setlist – the actual sequence and precise timestamps – to contextualize what I'm seeing and hearing. This level of granular detail is essential for any serious analysis or comparative study. No room for guesswork; I want empirical verification of the performance's structure. That precise setlist is the key to unlocking the video's contents, and the timestamps are critical for any time-based analysis I may want to perform.
+  - |-
+    Okay, here's my take on those thoughts, tailored for an expert audience:
+
+    **Analyzing the Midnight Grand Orchestra Live Tracklist**
+
+    Right, let's get down to brass tacks. I need to nail down the precise tracklist for Midnight Grand Orchestra's "Midnight Mission" first live performance. No room for guesswork here. Given my knowledge of their discography and live performance tendencies, knowing the actual sequence will allow me to delve into more meaningful analysis. This isn't just about surface-level fan enthusiasm; I'm looking to understand the narrative arc of the show, the flow from one composition to the next, the intentionality behind the arrangements, and potentially uncover any subtle musical cues or thematic connections I might have missed in previous reviews or discussions. Time to fire up the search and get to work. I have a feeling there might be some hidden gems in the order, and I need to uncover them!
+  - |-
+    **Analyzing the Video Preview**
+
+    Okay, so I need to get a handle on this video, `video_1.webm`. First, I'll confirm its duration. 2740 seconds, roughly 45 and a half minutes. That tells me the scope of the preview. Now, to understand the content, I'm thinking I'll examine the video segments. Since it's a "free preview," I'll want to get the gist of where the cuts are and get the segments' overview. Rather than just relying on ASR or raw timestamps, I'll take a more visual approach.
+
+    I'll selectively load key frames at intervals – around the beginning, then at the 15-minute mark, 22 minutes, 30 minutes, and 34 minutes – to see what segments are there. I'm hoping to get a representative look at the concert to understand this "free preview" of the "Midnight Grand Orchestra 1st LIVE『Midnight Mission』."
+
+    For this, I'll use `load_video`, but I'll make sure to specify `include_frames=True`, and I'll include timestamps or FPS as necessary. This approach should provide the most insightful visual data to help me rapidly evaluate the structure and content of the preview.
+  - |-
+    **Analyzing the Video's Structure**
+
+    Okay, so the video kicks off with that "Midnight Grand Orchestra 1st LIVE Midnight Mission. 開演までしばらくお待ちください #MGO_LIVE" screen. Standard opening stuff, but let's dig into the actual content structure, right? To get a good grip on the video, my approach is to load specific chunks – frame ranges, to be precise. I'm thinking, let's look at it in bitesize parts.
+
+    Specifically, I'll examine the video by loading frames from 15:00 to 2740 (or those frames in chunks to get a high-level view of the video). I'll start with those specific parts: frames 15:00 to 900, then 900 to 1800, and finally, 1800 to 2740. That should give a reasonable overview of the overall structure and give enough data to decide where to dive deeper.
+  - |-
+    Okay, here's my take on those thoughts, tailored for an expert audience:
+
+    **Analyzing the Timeframe for Data Loading**
+
+    Right, let's see. 900,000 milliseconds – a quick mental conversion tells me that's 900 seconds, or 15 minutes. Got it. Now, given that initial point, I'm thinking about loading data specifically from the 15-minute mark to the 30-minute mark, which corresponds to the 900,000 to 1,800,000 millisecond range. This likely represents a critical segment within the dataset, or a period where certain events of interest occur. My next step will be to determine the data loading strategies in order to process the timeframe efficiently.
+  - |-
+    Okay, here's my interpretation of that thought process, tailored for an expert audience:
+
+    **Analyzing the Time Slice**
+
+    Alright, my immediate thought is to zero in on that specific time window: 30:00 to 45:40, which translates to 1,800,000 to 2,740,000 milliseconds. This is standard practice, of course; clearly defining the period of interest is paramount before diving into any analysis. No point in wading through extraneous data. I want to pull up the relevant time stamps so I don't lose the forest for the trees. I need to keep the wider context in mind while I'm focused on the minutiae of this slice. What questions should I have ready before I even start to look at what happened?
+  - |-
+    **Analysis of Midnight Grand Orchestra's "Midnight Mission" Opening Stream**
+
+    Okay, so this is the free opening of Midnight Grand Orchestra's "Midnight Mission" live, from Toyosu PIT on February 20, 2024. I've got the timestamp information here. The initial ASR has the usual placeholder text before the stream starts for real. Looks like the opening announcement starts around 15:01, with the actual concert beginning at roughly 22:08 with "Never Ending Midnights," followed by "SOS," "Midnight Mission," and then "Igniter" before the closing. Let me break down the sections: Pre-show waiting screen from 00:00 to 15:01, the pre-show announcements from 15:01 to 22:08, and the music from there until roughly 37:45, and then the ticket details until the end. I need to get the song titles and artists exactly right, no room for error there. This requires careful verification, and since the video is an archive of the live, I will specify them. I'm noting Hoshimachi Suisei and Taku Inoue as the key entities here, as Midnight Grand Orchestra consists of those two. Hololive Production, SPWN, and Toyosu PIT are key concepts for this, too. Alright, I've got the glossary and entity descriptions ready, and I'll make sure the JSON is perfect. Double-checking: make sure all strings are properly quoted and no extraneous characters, particularly tabs or newlines, are used. Everything must be valid JSON, no comments, and conform to the schema. Single-line output to be absolutely safe from any control tokens. Let's make sure that's all correct. Here's the output:
+
+    {"overall_summary":"This video is the YouTube free opening stream of Midnight Grand Orchestra's 1st LIVE 'Midnight Mission', held at Toyosu PIT on February 20, 2024. The music project consists of Hololive VTuber Hoshimachi Suisei and sound producer Taku Inoue. The broadcast features pre-show venue announcements followed by explosive live performances of four songs ('Never Ending Midnights', 'SOS', 'Midnight Mission', and 'Igniter') complete with stunning sci-fi visual effects and concert production, concluding with streaming ticket details.","chapters":[{"start":"00:00","end":"15:01","title":"Pre-show Waiting Screen","description":"Waiting screen displaying concert information and hashtags prior to the start of the live stream."},{"start":"15:01","end":"22:08","title":"Opening Announcements & Venue Guide","description":"Pre-show venue announcements detailing audience guidelines, photography bans, and safety instructions."},{"start":"22:08","end":"26:05","title":"Never Ending Midnights","description":"The opening live performance of the concert, featuring high-energy vocals and immersive cosmic visuals.","song_artist":"Midnight Grand Orchestra","song_title":"Never Ending Midnights"},{"start":"26:05","end":"30:28","title":"SOS","description":"The second song performance with dynamic stage lighting and electronic beats.","song_artist":"Midnight Grand Orchestra","song_title":"SOS"},{"start":"30:28","end":"34:12","title":"Midnight Mission","description":"The titular track performance showcasing elaborate sci-fi spaceship navigation interface visuals.","song_artist":"Midnight Grand Orchestra","song_title":"Midnight Mission"},{"start":"34:12","end":"37:45","title":"Igniter","description":"The fourth song of the setlist, driving the live concert energy to a peak with heavy synth-rock sounds.","song_artist":"Midnight Grand Orchestra","song_title":"Igniter"},{"start":"37:45","end":"45:40","title":"Streaming Ticket & Event Information","description":"Post-performance closing screen displaying online streaming ticket pricing, purchase deadlines, and archive viewing periods."}],"domain_glossary":[{"term":"Midnight Grand Orchestra","meaning":"A musical project formed by VTuber Hoshimachi Suisei and sound producer Taku Inoue."},{"term":"Midnight Mission","meaning":"The 1st LIVE concert of Midnight Grand Orchestra held at Toyosu PIT on February 20, 2024."},{"term":"Toyosu PIT","meaning":"A live music venue located in Tokyo where the concert took place."},{"term":"SPWN","meaning":"The virtual event streaming and ticketing platform hosting the live broadcast."},{"term":"Hololive Production","meaning":"A prominent VTuber agency managing talent such as Hoshimachi Suisei."}],"entities":[{"name":"Hoshimachi Suisei","original_name":"星街すいせい","persona_
+model_name: null
+service_tier: null
+agentic_video: true
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:59.130'
+    end: '01:05.800'
+    original: さあ！
+    english: Now!
+  - start: '01:20.180'
+    end: '01:24.420'
+    original: 声が聞こえてる 聞こえてる
+    english: I hear your voice, I hear it...
+  - start: '01:24.420'
+    end: '01:28.320'
+    original: 声が聞こえてる 向こうから
+    english: I hear your voice from across the way,
+  - start: '01:28.320'
+    end: '01:31.920'
+    original: 頭に響いたアラートを辿って
+    english: following the alert echoing in my head,
+  - start: '01:32.220'
+    end: '01:33.520'
+    original: 今
+    english: now.
+  - start: '01:34.220'
+    end: '01:37.320'
+    original: 宇宙は騒いでる 騒いでる
+    english: The cosmos is in an uproar, in an uproar,
+  - start: '01:37.320'
+    end: '01:40.820'
+    original: 未確認ヒール ランペイジ
+    english: unconfirmed heal rampage,
+  - start: '01:40.820'
+    end: '01:43.720'
+    original: アレグロ背負って 駆け出して
+    english: carrying allegro on my back, I start running!
+  - start: '01:44.220'
+    end: '01:47.720'
+    original: さぁ
+    english: Now!
+  - start: '02:01.880'
+    end: '02:07.780'
+    original: SOS oh, SOS oh, SOS oh, SOS oh
+    english: SOS oh, SOS oh, SOS oh, SOS oh
+  - start: '02:07.780'
+    end: '02:11.880'
+    original: SOSを追って 西北西に千光年 あぁ もう
+    english: Chasing the SOS, a thousand light-years to the west-northwest, ah already...
+  - start: '02:11.880'
+    end: '02:15.380'
+    original: 向かっている さぁ
+    english: Heading out, now!
+  - start: '02:15.380'
+    end: '02:21.880'
+    original: SOS oh, SOS oh, SOS oh, SOS oh
+    english: SOS oh, SOS oh, SOS oh, SOS oh
+  - start: '02:21.880'
+    end: '02:28.380'
+    original: SOSを追って 警報 先方接近中だ さぁ 歌っていけ 歌っていけ
+    english: Chasing the SOS, alarm, vanguard approaching, come on, keep singing,
+      keep singing!
+  - start: '02:28.380'
+    end: '02:30.580'
+    original: Ah
+    english: Ah
+  - start: '02:41.880'
+    end: '02:47.780'
+    original: 波に飲まれるな 飲まれるな 波に飲まれるな 声を出せ
+    english: Don't get swallowed by the waves, don't get swallowed, don't get swallowed
+      by the waves, let your voice out!
+  - start: '02:47.780'
+    end: '02:51.880'
+    original: 彼方で光った ポイントに目掛けて
+    english: Aiming for the point that shone in the distance,
+  - start: '02:52.380'
+    end: '02:53.680'
+    original: 今
+    english: now.
+  - start: '02:54.380'
+    end: '02:57.480'
+    original: 宇宙は騒いでる 騒いでる
+    english: The cosmos is in an uproar, in an uproar,
+  - start: '02:57.480'
+    end: '03:00.880'
+    original: 規格外ゲノム トランジション
+    english: Out-of-spec genome transition,
+  - start: '03:00.880'
+    end: '03:03.980'
+    original: アレグロ背負って 負けなしで
+    english: carrying allegro on my back, undefeated...
+  - start: '03:04.480'
+    end: '03:09.180'
+    original: さぁ
+    english: Now!
+  - start: '03:12.180'
+    end: '03:15.580'
+    original: 僕の番だ
+    english: It's my turn!
+  - start: '03:25.580'
+    end: '03:30.180'
+    original: あぁ
+    english: Ah...
+  - start: '03:39.880'
+    end: '03:45.580'
+    original: SOS oh, SOS oh, SOS oh, SOS oh
+    english: SOS oh, SOS oh, SOS oh, SOS oh
+  - start: '03:45.580'
+    end: '03:49.880'
+    original: SOSを追って 西北西に千光年 あぁ もう
+    english: Chasing the SOS, a thousand light-years to the west-northwest, ah already...
+  - start: '03:49.880'
+    end: '03:53.380'
+    original: 向かっている さぁ
+    english: Heading out, now!
+  - start: '03:53.380'
+    end: '04:00.080'
+    original: SOS oh, SOS oh, SOS oh, SOS oh
+    english: SOS oh, SOS oh, SOS oh, SOS oh
+  - start: '04:00.080'
+    end: '04:06.880'
+    original: SOSを追って 警報 絶望 絶体絶命 さぁ 歌っていけ 歌っていけ
+    english: Chasing the SOS, alarm, despair, absolute crisis, come on, keep singing,
+      keep singing!
+  - start: '04:06.880'
+    end: '04:10.580'
+    original: Ah 抗っていて 笑ったまま歌え
+    english: Ah, fighting back, singing with a smile!
+  - start: '04:16.880'
+    end: '04:22.080'
+    original: 歌っていけ さぁ
+    english: Keep singing, now...
+  thoughts:
+  - |-
+    **Refining Midnight Grand Orchestra Subtitles: A Deep Dive**
+
+    Okay, here's the deal. I've been tasked with refining the subtitles for Midnight Grand Orchestra's "SOS" segment from their 1st LIVE "Midnight Mission," specifically, the "SOS" song and the end of "Never Ending Midnights" intro to "SOS." The mandate is clear: frozen timestamps, phonetic accuracy, translation polish, and perfect JSON formatting. No problem, this is right in my wheelhouse.
+
+    First, I meticulously cross-referenced the provided draft subtitles with the official lyrics. That meant diving into the official lyrics for "SOS," and that was the key.  I started by going block by block, comparing what was given with what was *actually* supposed to be there. I made sure to preserve the exact start and end timestamps from the draft; immutable. Then it was a matter of verifying phonetic accuracy and the kanji.
+
+    Immediately, I found some mis-transcriptions.  Like the classic "heard but not understood" errors you see in live performances. One major fix involved correcting the block that had "警報全発 センコウネンダンも向かっている" to "SOSを追って 西北西に千光年 あぁ もう," which is what the official lyrics said.  Another similar major fix was correcting "警報全発 全機チューンアウト 打ち上げていけ 打ち上げていけ" to "SOSを追って 警報 先方接近中だ さぁ 歌っていけ 歌っていけ", and again "荒らしていけ" was correctly identified as "抗っていて 笑ったまま歌え".  This is what the kanji was, and what I knew the translation should look like.  I also corrected for the phrase "空は騒いでる 騒いでる", and replaced it with "宇宙は騒いでる 騒いでる", and some other edits with some similar phonetic mismatches.
+
+    This wasn't just a simple translation; it was a forensic examination of the text. I went line by line, comparing both og and en, and applying my knowledge of both language and the music to deliver something clean.
+
+    After correcting those major errors, I double-checked every single other block and double-checked the official lyrics from LRCLIB/search results for "SOS" matched the music, and was accurate.
+
+    Then, the final step: packaging it all into a clean, valid JSON object, matching the specified schema with the exact number of subtitle blocks and matching timestamps, without any extraneous characters or formatting errors, ready for upload.  I've done this a thousand times.  All the timestamps are right, all the lyrics are correct, and the JSON is perfect.
+lyrics_prompt_version: 10
+draft_subtitles:
+- start: '00:59.130'
+  end: '01:05.800'
+  original: さあ！
+  english: Now!
+- start: '01:20.180'
+  end: '01:24.420'
+  original: 声が聞こえてる 聞こえてる
+  english: I hear your voice, I hear it...
+- start: '01:24.420'
+  end: '01:28.320'
+  original: 声が聞こえてる 向こうから
+  english: I hear your voice from across the way,
+- start: '01:28.320'
+  end: '01:31.920'
+  original: 頭に響いた アラートを辿って
+  english: following the alert echoing in my head,
+- start: '01:32.220'
+  end: '01:33.520'
+  original: 今
+  english: now.
+- start: '01:34.220'
+  end: '01:37.320'
+  original: 空は騒いでる 騒いでる
+  english: The sky is in an uproar, in an uproar,
+- start: '01:37.320'
+  end: '01:40.820'
+  original: 未確認ヒール ランペイジ
+  english: unconfirmed heal rampage,
+- start: '01:40.820'
+  end: '01:43.720'
+  original: アレグロ背負って 駆け出して
+  english: carrying allegro on my back, I start running!
+- start: '01:44.220'
+  end: '01:47.720'
+  original: さあ！
+  english: Now!
+- start: '02:01.880'
+  end: '02:07.780'
+  original: SOS SOS SOS SOS
+  english: SOS SOS SOS SOS
+- start: '02:07.780'
+  end: '02:11.880'
+  original: 警報全発 センコウネンダンも向かっている
+  english: All alarms firing, flash smoke rounds are also heading out.
+- start: '02:11.880'
+  end: '02:15.380'
+  original: 向かっている さあ！
+  english: Heading out, now!
+- start: '02:15.380'
+  end: '02:21.880'
+  original: SOS SOS SOS SOS
+  english: SOS SOS SOS SOS
+- start: '02:21.880'
+  end: '02:28.380'
+  original: 警報全発 全機チューンアウト 打ち上げていけ 打ち上げていけ
+  english: All alarms firing, all units tune out, launch them up, launch them up,
+- start: '02:28.380'
+  end: '02:30.580'
+  original: 荒らしていけ
+  english: ravage it all!
+- start: '02:41.880'
+  end: '02:47.780'
+  original: 波に呑まれるな 呑まれるな 波に呑まれるな 声を上げろ
+  english: Don't get swallowed by the waves, don't get swallowed, don't get swallowed
+    by the waves, raise your voice!
+- start: '02:47.780'
+  end: '02:51.880'
+  original: 彼方で光った ポイントに目掛けて
+  english: Aiming for the point that shone in the distance,
+- start: '02:52.380'
+  end: '02:53.680'
+  original: 今
+  english: now.
+- start: '02:54.380'
+  end: '02:57.480'
+  original: 空は騒いでる 騒いでる
+  english: The sky is in an uproar, in an uproar,
+- start: '02:57.480'
+  end: '03:00.880'
+  original: 規格外のムート トランジション
+  english: out-of-spec mute transition,
+- start: '03:00.880'
+  end: '03:03.980'
+  original: アレグロ背負って 負け出して
+  english: carrying allegro on my back, I start fighting back...
+- start: '03:04.480'
+  end: '03:09.180'
+  original: さあ！
+  english: Now!
+- start: '03:12.180'
+  end: '03:15.580'
+  original: 僕の番だ
+  english: It's my turn!
+- start: '03:25.580'
+  end: '03:30.180'
+  original: ああ……
+  english: Ah...
+- start: '03:39.880'
+  end: '03:45.580'
+  original: SOS SOS SOS SOS
+  english: SOS SOS SOS SOS
+- start: '03:45.580'
+  end: '03:49.880'
+  original: 警報全発 センコウネンダンも向かっている
+  english: All alarms firing, flash smoke rounds are also heading out.
+- start: '03:49.880'
+  end: '03:53.380'
+  original: 向かっている さあ！
+  english: Heading out, now!
+- start: '03:53.380'
+  end: '04:00.080'
+  original: SOS SOS SOS SOS
+  english: SOS SOS SOS SOS
+- start: '04:00.080'
+  end: '04:06.880'
+  original: 警報全発 全機チューンアウト 打ち上げていけ 打ち上げていけ
+  english: All alarms firing, all units tune out, launch them up, launch them up,
+- start: '04:06.880'
+  end: '04:10.580'
+  original: 荒らしていけ 笑ったまま
+  english: ravage it all, while keeping a smile!
+- start: '04:16.880'
+  end: '04:22.080'
+  original: 打ち上げていけ さあ……
+  english: Launch them up, now...
+detected_performances:
+- title: Never Ending Midnights
+  artist: Midnight Grand Orchestra
+  start: 00:00
+  end: 01:06
+- title: SOS
+  artist: Midnight Grand Orchestra
+  start: 01:06
+  end: 04:24
