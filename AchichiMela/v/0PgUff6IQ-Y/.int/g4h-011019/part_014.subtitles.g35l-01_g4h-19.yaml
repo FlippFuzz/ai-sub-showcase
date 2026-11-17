@@ -1,0 +1,470 @@
+name: part_014
+total_attempts: 1
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '電柱ソムリエの一歩も動かないGeoGuessr【ホロライブ/熱千めら】'.
+segment_index: null
+video_duration_ms: 306288
+segment_offset_ms: 4200666
+global_summary:
+  overall_summary: In this livestream from Hololive's 'Asobi★Mawaritai!' unit member
+    Netsuchi Mela (熱千めら), she plays GeoGuessr in 'no-move' mode while sharing her
+    extensive knowledge and strategies for identifying Japanese locations using utility
+    pole plates, regional electric companies (such as TEPCO, Chubu Electric, and Hokkaido
+    Electric), area codes, asphalt markings, housing styles, and regional topography.
+    Throughout the stream, Mela combines quirky commentary and interactive banter
+    with her chat ('dopari-listeners') with humorous insights into why humans don't
+    normally memorize telephone area codes or utility plate numbers.
+  chapters:
+  - start: 00:00
+    end: 03:30
+    title: Opening Banter and Stream Setup
+    description: Mela starts the stream wearing a mask, greets her chat, and talks
+      about her vtuber debut and recent streaming activities.
+    song_title: null
+    song_artist: null
+  - start: 03:30
+    end: 07:40
+    title: Discovering Her GeoGuessr Talent
+    description: Mela discusses how she didn't realize until her debut stream that
+      identifying Japanese regions by telephone poles and utility plates was considered
+      a rare special skill.
+    song_title: null
+    song_artist: null
+  - start: 07:40
+    end: '35:00'
+    title: GeoGuessr Beginner Lecture
+    description: Mela explains the fundamentals of GeoGuessr, including 47 prefectures,
+      area codes, utility poles, manholes, house roofs, and asphalt markings like
+      stop signs and diamond marks.
+    song_title: null
+    song_artist: null
+  - start: '35:00'
+    end: '61:00'
+    title: 'No-Move GeoGuessr: Rounds 1 to 4'
+    description: Mela plays GeoGuessr in no-move mode, analyzing electric poles, region
+      plates, terrain, and weather, visiting places like Gotemba in Shizuoka, Ube
+      in Yamaguchi, Itakura in Gunma, and Otaru in Hokkaido.
+    song_title: null
+    song_artist: null
+  - start: '61:00'
+    end: '63:30'
+    title: Electric Power Company Plate Breakdown
+    description: Mela breaks down the differences between TEPCO, Chubu Electric, Tohoku
+      Electric, and Hokkaido Electric utility poles and their top plates.
+    song_title: null
+    song_artist: null
+  - start: '63:30'
+    end: '19:00'
+    title: 'No-Move GeoGuessr: Round 5 Onward & Rapid Play'
+    description: Mela plays rapid-fire no-move rounds in Osaka, Tokushima, Iwate/Akita,
+      Okinawa, and Miyagi, interacting with chat and refining her regional deduction
+      skills.
+    song_title: null
+    song_artist: null
+  - start: '19:00'
+    end: '31:00'
+    title: Stream Wrap-Up and Schedule Announcements
+    description: Mela reflects on her love for GeoGuessr, discusses future collaboration
+      plans with AZKi, announces the weekly schedule, and gives closing remarks.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Netsuchi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A 415-year-old fire salamander firefighter from the Edo period who
+      serves as the 'goryaku' (good fortune/protection) representative for the Hololive
+      unit 'Asobi★Mawaritai!'.
+    speech_patterns_or_ticks: Uses the old-fashioned pronoun 'washi' (わし), sentence
+      ending '-のじゃ' / '-のじゃー', and signature greetings like 'あらあら、めろめろ、あちち、めろー'.
+    visual_cues: Red and fire motif, salamander traits, starts streams wearing a mask
+      before removing it.
+  domain_glossary:
+  - term: ジオゲッサー
+    meaning: GeoGuessr, a geography browser game where players are dropped into Google
+      Street View locations and must guess where they are on a map.
+  - term: ノームーブ
+    meaning: No-Move mode in GeoGuessr where players cannot move, walk, or pan away
+      from their initial spawn point.
+  - term: 電柱ソムリエ
+    meaning: A nickname or slang for someone who identifies geographic locations based
+      on utility pole plates, wiring, and hardware.
+  - term: 市外局番
+    meaning: Japanese telephone area codes (e.g., 03 for Tokyo, 01 for Hokkaido) used
+      to narrow down regions in GeoGuessr.
+  - term: 低圧スペーサー
+    meaning: Low-voltage utility pole fittings commonly found on Hokkaido Electric
+      Power poles.
+  - term: 東電 / 中電 / 北電
+    meaning: Regional electric power companies (TEPCO, Chubu Electric, Hokkaido Electric)
+      whose pole plates and structural designs vary across Japan.
+  - term: どぱる
+    meaning: Mela's coined slang for getting extremely excited or thrilled when successfully
+      guessing a location.
+  - term: アソビ★まわり隊！
+    meaning: Hololive unit consisting of Netsuchi Mela, Momosuzu Kyoko, Suzune Tsuzuri,
+      and Soraka Sopia.
+  thoughts:
+  - |-
+    **Analyzing a Long GeoGuessr Video: Initial Thoughts**
+
+    Okay, here's what I'm thinking. I've got `video_1.webm` to look at, which is a significant chunk of time – over two hours. That's a dedicated session! The user context tells me it's from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel, and the video title is something about a "Telephone Pole Sommelier" doing GeoGuessr, specifically "Don't-Move-Anymore GeoGuessr" – that's potentially interesting. A static GeoGuessr round could provide a fascinating set of challenges.
+
+    Before I dive too deep, I need to know the context of "Netsuchi Mela". I'm remembering that ReGLOSS / Hololive / Hololive Indonesia / Hololive English / Dev_Is are mentioned, so I should clarify. Is "熱千めら" a specific person or a group? Should I search for “熱千めら” to see, or should I start with the ASR for this video? Let's be efficient here. I think I'll use `load_video` with `include_asr=True` to get an initial overview. The ASR will give me a first pass at the content. It will also help me identify "Netsuchi Mela" and save time. Let's start there.
+  - |-
+    **My Analysis of the Video Content**
+
+    Okay, fantastic! I've got the ASR data and a general understanding of the video's subject matter. Now, let's break down the requirements and approach this systematically.
+
+    First, I need to generate an `overall_summary` – a concise overview, maybe one or two paragraphs max. I'll need to encapsulate the core purpose, the overall tone of the video, and how the narrative progresses.
+
+    Next is the `chapters` section. I'll divide the video into natural segments chronologically, accurately marking the timestamps in `MM:SS` or `HH:MM:SS` format. For each chapter, I'll need a clear title, a brief description of the content, and then the metadata for `song_title` and `song_artist`, which will be `null` since this appears to be a gameplay or chat stream, not a performance.
+
+    The `entities` section is next, and I need to be precise here. I know the central figure is Netsuchi Mela (熱千めら), and I have some initial information about her persona, like the fire salamander motif, her role in disaster prevention or fire protection, and some of her characteristic speech patterns. I should include all these details. I have to confirm her affiliation by searching, to ensure I'm using the correct term: Hololive, Hololive production, or perhaps Dev_Is/ReGLOSS? I'll need to search to confirm this detail. I'll also note her speech patterns/ticks such as `-のじゃ`, `-のじゃー`, `-おじゃばんわ`, `-どぱる`, `-ドパリスナー`, and `-ドパワッパ`. And finally, I should list any of her visual cues such as salamander elements and the red/fire theme.
+
+    Finally, I'll address the `domain_glossary`. I understand this video likely involves GeoGuessr, so I will need to identify and define relevant terms such as "Nomove mode," "pole plates" (likely referring to NTT plates and utility pole plates), "area codes" (市外局番), "diamond marks" (ダイヤマーク), and any other GeoGuessr-specific vocabulary that comes up.
+
+    Before I dive into any of this, I'll do a quick search for "Netsuchi Mela" (`熱千めら`) to verify her official lore, confirm agency affiliation, and pinpoint her debut date if possible. This upfront research is critical for accuracy.
+  - |-
+    {
+      "summary": {
+        "header": "**A GeoGuessr Deep Dive with Netsuchi Mela**",
+        "content": "Right, here's what I've got from the stream. Netsuchi Mela, the Hololive fire salamander, is back at it, this time focusing on GeoGuessr. It's a 'no-move' playthrough, which means we're really digging into the details. She's using her 'Telephone Pole Sommelier' skills, as she calls it. Apparently, identifying locations based on utility pole plates (TEPCO, Chubu Electric, Hokkaido Electric – all crucial details), area codes, asphalt markings, and the architecture is her specialty, and, frankly, fascinating. We're looking at things like those low-voltage spacers on Hokkaido poles and the whole game of distinguishing them. She's got this whole schtick with old-fashioned language and expressions like 'washi' and 'doparu' when she gets excited about a good find. The stream breaks down nicely: intro and introductions, her explanation of how she discovered her unusual ability, the fundamentals of GeoGuessr and the Japanese prefectures, then the actual gameplay with rounds in places like Gotemba, Ube, Itakura, and Otaru. We get a real deep dive into the electric company pole distinctions. It concludes with rapid-fire rounds and some announcements. It's clear she's focusing on her 'Asobi★Mawaritai!' unit activities, as well. All very structured and well-presented.",
+        "key_elements": {
+          "focus": "No-Move GeoGuessr",
+          "strategy": "Utility pole and regional cues identification",
+          "personality": "Quirky commentary, slang, and old-fashioned language",
+          "expertise": "Japanese regional geography",
+          "references": [
+            "TEPCO, Chubu Electric, Hokkaido Electric",
+            "Area codes (e.g., 03, 01)",
+            "Asphalt markings like 'tomare'",
+            "Low-voltage spacers"
+          ]
+        }
+model_name: null
+service_tier: null
+agentic_video: false
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.700'
+    end: '00:01.250'
+    original: ん。
+    english: Hmm.
+  - start: '00:02.450'
+    end: '00:03.850'
+    original: いう感じ。
+    english: Something like that.
+  - start: '00:04.720'
+    end: '00:06.550'
+    original: 次行くのじゃー！
+    english: Off to the next one!
+  - start: '00:06.800'
+    end: '00:07.850'
+    original: よいしょー！
+    english: Here we go!
+  - start: '00:08.900'
+    end: '00:09.600'
+    original: ほう。
+    english: Oh.
+  - start: '00:09.900'
+    end: '00:14.000'
+    original: まずこれを見た時に、坂だなって思う。坂だなって思うのじゃ。
+    english: First, when I look at this, I think, "That's a hill." Yeah, definitely
+      a slope.
+  - start: '00:14.200'
+    end: '00:21.950'
+    original: あの、坂って... あの、それこそさ、関東平野とかだったらさ、坂ないじゃん。
+    english: You know, slopes... like, if this were the Kanto Plain or something,
+      there wouldn't be hills like this.
+  - start: '00:22.200'
+    end: '00:26.150'
+    original: だから平野じゃないのかも、みたいなのを軽く思っておきます。
+    english: So I'll keep in the back of my mind that this might not be a flat plain.
+  - start: '00:27.050'
+    end: '00:28.800'
+    original: 思っておきまして...
+    english: Keeping that in mind...
+  - start: '00:29.500'
+    end: '00:31.050'
+    original: 旗がある。
+    english: There's a flag.
+  - start: '00:31.850'
+    end: '00:34.250'
+    original: ふんふんふん。ふんふんふん。
+    english: Hmm, hmm, hmm. Hmm, hmm, hmm.
+  - start: '00:35.100'
+    end: '00:39.850'
+    original: なんかやけに... うわ、こっちに市街地あるタイプの坂。
+    english: Why is it so... Whoa, it's the kind of hill with a downtown area down
+      on this side.
+  - start: '00:40.700'
+    end: '00:41.550'
+    original: お！
+    english: Oh!
+  - start: '00:42.200'
+    end: '00:43.800'
+    original: 末広町！
+    english: Suehiro-cho!
+  - start: '00:44.000'
+    end: '00:46.850'
+    original: んー、なんかこういう地名めちゃくちゃ多いよね。
+    english: Hmm, there are a ton of places with names like that, though.
+  - start: '00:47.150'
+    end: '00:48.500'
+    original: あ、灯油タンク！
+    english: Oh, a kerosene tank!
+  - start: '00:48.650'
+    end: '00:54.300'
+    original: お主ら見て？これは灯油タンクなのじゃ。灯油タンクとは寒い地域にしかないもの。
+    english: Look, everyone! This is a kerosene tank. Kerosene tanks are only found
+      in cold regions.
+  - start: '00:54.900'
+    end: '00:58.150'
+    original: 寒い地域にしかない灯油タンク。ここにもあるね。
+    english: A kerosene tank that's only in cold areas. There's one here too.
+  - start: '00:58.300'
+    end: '01:00.800'
+    original: 色付きの灯油タンク珍しいな。
+    english: A colored kerosene tank is pretty rare.
+  - start: '01:00.900'
+    end: '01:05.000'
+    original: わしがよく見る灯油タンクは割とあの... なんだろう、白めというか。
+    english: The ones I usually see are kind of... what do you call it, more on the
+      white side.
+  - start: '01:05.200'
+    end: '01:09.250'
+    original: おっ！お主ら見て！北海道確定なのじゃー！
+    english: Oh! Look, everyone! Hokkaido is confirmed!
+  - start: '01:10.000'
+    end: '01:14.400'
+    original: よし。ちょっとじゃあ画像を表示しますか。
+    english: Alright. Let me pull up a picture for a sec.
+  - start: '01:14.900'
+    end: '01:17.900'
+    original: はい。えー北海道確定です。
+    english: Okay. Yes, Hokkaido is confirmed.
+  - start: '01:18.600'
+    end: '01:22.000'
+    original: えー電柱のプレートを見るんですけど、
+    english: So, we look at the plate on the utility pole,
+  - start: '01:22.250'
+    end: '01:26.700'
+    original: ここにね... てか最近上げたショートに書いた気がするんじゃが、
+    english: and right here... actually, I think I wrote about this in a Short I uploaded
+      recently,
+  - start: '01:27.100'
+    end: '01:30.650'
+    original: えーここに、北海道電力、北電と書いてありますね。
+    english: right here, it says Hokkaido Electric Power, "Hokuden."
+  - start: '01:30.800'
+    end: '01:33.550'
+    original: 北電と書いてあって、えー...
+    english: It says Hokuden, and um...
+  - start: '01:34.600'
+    end: '01:40.250'
+    original: 48、41、60区って書いてあるじゃろ？
+    english: it says "48, 41, 60-ku," see?
+  - start: '01:40.650'
+    end: '01:43.900'
+    original: で、ここには色々数字が書いてあるでしょ？
+    english: And there are various numbers written right here, right?
+  - start: '01:44.300'
+    end: '01:48.750'
+    original: で、どこを見るかというと、この41という数字を見ます。
+    english: So, where do we look? We look at this number, 41.
+  - start: '01:49.000'
+    end: '01:56.500'
+    original: 見えるかなお主らに。ちょっと角度があれだからあれなんだけど、ここね、ここ。ここに41と書いてありますのじゃ。
+    english: Can you all see it? The angle is a bit awkward, so it's hard to make
+      out, but right here. It says 41 right here.
+  - start: '01:57.100'
+    end: '02:05.450'
+    original: この50は大きいよ、大きいんじゃなくて、このちっちゃいとこ。ちっちゃいとこの41ってところを見ております。
+    english: This 50 is big—not the big one, the small part here. I'm looking at the
+      41 in the small section.
+  - start: '02:05.750'
+    end: '02:10.300'
+    original: あ、ちなみに明瞭に見えているかと言われると、わしに別に明瞭には見えておりませんのじゃ。
+    english: Oh, by the way, if you ask whether I can see it clearly, I can't actually
+      see it all that clearly myself.
+  - start: '02:10.650'
+    end: '02:14.800'
+    original: なんかなんとなく41っぽいな、みたいな感じで。
+    english: It's just kind of a gut feeling like, "That looks like a 41."
+  - start: '02:14.950'
+    end: '02:19.050'
+    original: 左に4、右に1って書いてある41がここに見えますのじゃ。
+    english: I can see a 41 right here, with a 4 on the left and a 1 on the right.
+  - start: '02:19.350'
+    end: '02:23.500'
+    original: で、えっと... なんで41だと...
+    english: And, um... why does 41 mean...
+  - start: '02:23.900'
+    end: '02:30.600'
+    original: えっと、41だと札幌の近くなんだけど、なんで41だと札幌の近くかを説明させていただきますのじゃ。
+    english: Well, 41 means it's near Sapporo, so let me explain why 41 means near
+      Sapporo.
+  - start: '02:30.850'
+    end: '02:32.900'
+    original: え、北海道があるでしょ？
+    english: So, here's Hokkaido, right?
+  - start: '02:33.100'
+    end: '02:34.700'
+    original: んー、なんか... こういう感じか。
+    english: Hmm, something... like this, I guess.
+  - start: '02:35.100'
+    end: '02:37.200'
+    original: これ北海道ね、お主ら。
+    english: This is Hokkaido, everyone.
+  - start: '02:37.350'
+    end: '02:44.950'
+    original: これが北海道だとした時に、なんか... えっと、なんかこんな感じで、なんか分けられるの。
+    english: Assuming this is Hokkaido, well... um, it's divided up something like
+      this.
+  - start: '02:45.100'
+    end: '02:51.600'
+    original: ちょ、これざっくりでごめんね。こんな感じで、なんかマス目みたいな感じで区分みたいな感じで分かれていて、
+    english: Sorry this is super rough. It's split up into grid squares or zones like
+      this,
+  - start: '02:51.900'
+    end: '02:56.100'
+    original: 分かれていて、で、なんか... えっとね、4、4、4...
+    english: it's divided up, and um... let's see, 4, 4, 4...
+  - start: '02:56.250'
+    end: '03:02.150'
+    original: ここが1ね。0、1、2、3、4、5みたいな感じで...
+    english: Here is 1. Like 0, 1, 2, 3, 4, 5...
+  - start: '03:02.500'
+    end: '03:05.350'
+    original: 縦軸横軸が振られています。
+    english: There are vertical and horizontal axes assigned to it.
+  - start: '03:05.500'
+    end: '03:12.950'
+    original: 振られていまして、で、ここ？ちょうどこの札幌あたりの、札幌小樽とか触れるところが4なんだよね。
+    english: They're assigned like that, and here—right around Sapporo, the part touching
+      Sapporo and Otaru is 4.
+  - start: '03:13.250'
+    end: '03:13.950'
+    original: うん。
+    english: Yeah.
+  - start: '03:14.150'
+    end: '03:17.200'
+    original: そう。なんか3、2みたいな感じで。
+    english: Right. Like 3, 2, and so on.
+  - start: '03:18.100'
+    end: '03:22.700'
+    original: そう。で、4と1だから、ここが41なの。
+    english: Right. So with 4 and 1, this square here is 41.
+  - start: '03:23.100'
+    end: '03:29.500'
+    original: で、これが41ですよってのを、この... ここでね、示しております。
+    english: And the fact that this is 41 is what's indicated right here.
+  - start: '03:30.000'
+    end: '03:36.200'
+    original: 示されていて、だから43だったらっつったら、43だったら、あの... 帯広らへん？
+    english: It's indicated there, so if it were 43, then 43 would be... around Obihiro?
+  - start: '03:36.500'
+    end: '03:40.750'
+    original: この辺だから。そう、43だったら帯広らへんになるよとか、
+    english: Because it's around here. Yeah, 43 would put it around Obihiro,
+  - start: '03:41.000'
+    end: '03:45.100'
+    original: みたいな感じで、まあ大体何番はどこどこみたいなのを覚えておく。
+    english: and like that, you just memorize roughly which number corresponds to
+      which area.
+  - start: '03:45.250'
+    end: '03:49.550'
+    original: なんか20番は函館だなとか、を覚える。
+    english: Like remembering that the 20s are Hakodate, and so on.
+  - start: '03:49.650'
+    end: '03:57.200'
+    original: ておくと、この電柱を見ただけで、あ、これは大体この辺なんじゃないかみたいなのが分かってきますのじゃ。
+    english: If you do that, just by looking at the utility pole, you can figure out
+      roughly what area it's in.
+  - start: '03:57.650'
+    end: '04:02.250'
+    original: ので、え、ここは北海道の、え、札幌付近。
+    english: So, um, this is near Sapporo in Hokkaido.
+  - start: '04:02.500'
+    end: '04:05.900'
+    original: ま、もしくは小樽とか。まあ結構広いんじゃよな、この辺。
+    english: Well, or maybe Otaru. This zone is pretty big, after all.
+  - start: '04:06.100'
+    end: '04:07.600'
+    original: 石狩市？
+    english: Ishikari City?
+  - start: '04:07.800'
+    end: '04:12.600'
+    original: うん、結構この辺のどこか、ってことまで分かるのじゃ。
+    english: Yeah, we can narrow it down to somewhere around this general area.
+  - start: '04:12.800'
+    end: '04:13.450'
+    original: うん。
+    english: Yeah.
+  - start: '04:13.600'
+    end: '04:19.050'
+    original: ってことまで分かった時に、えっと... で、南に...
+    english: Once we know that much, um... and to the south...
+  - start: '04:19.200'
+    end: '04:21.700'
+    original: これ海かな？なんだろな。
+    english: Is that the sea? What is that?
+  - start: '04:21.850'
+    end: '04:25.100'
+    original: 海ではないけど、海ではないけど...
+    english: It's not the sea, it's not the sea, but...
+  - start: '04:25.950'
+    end: '04:30.650'
+    original: 南にもしかして市街地があるか、ちょっと高くなってるのか？
+    english: Could there be a city area to the south, or is this just on higher ground?
+  - start: '04:30.800'
+    end: '04:38.500'
+    original: で、この高くなってるのが、その... こっちの山の方の上にいて見下ろしてる形なのかみたいなの判別がまだつかないんだけど。
+    english: And I can't quite tell yet if being up high means we're up on the mountains
+      over here looking down.
+  - start: '04:38.750'
+    end: '04:41.800'
+    original: でも北海道で末広町、わし聞いたことあるんだよな。
+    english: Still, I feel like I've heard of a Suehiro-cho in Hokkaido before.
+  - start: '04:41.950'
+    end: '04:43.250'
+    original: 札幌近くで。
+    english: Somewhere near Sapporo.
+  - start: '04:43.450'
+    end: '04:44.900'
+    original: 聞いたことある気がする。
+    english: I feel like I've heard of it.
+  - start: '04:45.050'
+    end: '04:49.700'
+    original: てかここまでさ情報わかってたら割とローラーでいけそうではある。ちょっと他の山見るか。
+    english: Honestly, knowing this much info, I could probably just comb the map
+      to find it. Let's check the other mountains.
+  - start: '04:50.600'
+    end: '04:51.500'
+    original: えー...
+    english: Let's see...
+  - start: '04:51.900'
+    end: '04:57.700'
+    original: 東... 東方向も結構ね、曇ってるから分かりづらいんだけどね。
+    english: East... it's pretty cloudy looking east too, so it's hard to tell,
+  - start: '04:58.000'
+    end: '05:01.700'
+    original: 何もなさそうにね、見えるんだよね。
+    english: it looks like there's nothing much over there.
+  - start: '05:02.600'
+    end: '05:04.200'
+    original: うん、西...
+    english: Hmm, west...
+  - start: '05:04.600'
+    end: '05:06.288'
+    original: なんか思った...
+    english: Wait, it's more than I...
+  thoughts:
+  - |-
+    **Mela's GeoGuessr Breakdown: Hokkaido Hunt**
+
+    Alright, let's dive in! Hmm, like that, yeah, we're off! Hmm, off to the next one! Here we go! Oh. First, when I look at this, I think, "That's a slope." Yeah, definitely a slope. Hmm, a slope, you know, if this were the Kanto Plain or something, there wouldn't be hills like this. So I'll keep in the back of my mind that this might not be a flat plain. Keeping that in mind... There's a flag. Hmm, hmm, hmm. Hmm, hmm, hmm. Why is it so... Whoa, it's the kind of hill with a downtown area over on this side. Oh! Suehiro-cho! Hmm, there are so many places with names like this, though. Oh, a kerosene tank! Look, you guys! This is a kerosene tank. Kerosene tanks are only found in cold regions. A kerosene tank that's only in cold areas. There's one here too. A colored kerosene tank is pretty rare. The ones I usually see are kind of... what do you call it, more on the white side. Oh! Look, you all! Hokkaido is confirmed! Alright. Let me pull up an image for a sec. Okay. Yes, Hokkaido is confirmed. So, we look at the plate on the utility pole, and right here... actually, I think I wrote about this in a Short I uploaded recently, right here, it says Hokkaido Electric Power, "Hokuden." It says Hokuden, and um... it says "48, 41, 60-ku," see? And there are various numbers written right here, right? So, where do we look? We look at this number, 41. Can you all see it? The angle is a bit awkward so it's hard to tell, but right here. It says 41 right here. This 50 is big—not the big one, the small part here. I'm looking at the 41 in the small section. Oh, by the way, if you ask whether I can see it clearly, I can't actually see it all that clearly myself. It's just kind of a gut feeling like, "That looks like a 41." I can see a 41 right here, with a 4 on the left and a 1 on the right. And, um... why does 41 mean... Well, 41 means it's near Sapporo, so let me explain why 41 means near Sapporo. So, here's Hokkaido, right? Hmm, something... like this, I guess. This is Hokkaido, everyone. Assuming this is Hokkaido, well... um, it's divided up something like this. Sorry this is super rough. It's split up into grid squares or zones like this, it's divided up, and um... let's see, 4, 4, 4... Here is 1. Like 0, 1, 2, 3, 4, 5... There are vertical and horizontal axes assigned to it. They're assigned like that, and here—right around Sapporo, the part touching Sapporo and Otaru is 4. Yeah. Right. Like 3, 2, and so on. Right. So with 4 and 1, this square here is 41. And the fact that this is 41 is what's indicated right here. It's indicated there, so if it were 43, then 43 would be... around Obihiro? Because it's around here. Yeah, 43 would put it around Obihiro, and like that, you just memorize roughly which number corresponds to which area. Like remembering that the 20s are Hakodate, and so on. If you do that, just by looking at the utility pole, you can figure out roughly what area it's in. So, um, this is near Sapporo in Hokkaido. Well, or maybe Otaru. This zone is pretty big, after all. Ishikari City? Yeah, we can narrow it down to somewhere around this general area. Yeah. Once we know that much, um... and to the south... Is that the sea? What is that? It's not the sea, it's not the sea, but... Could there be a city area to the south, or is this just on higher ground? And I can't quite tell yet if being up high means we're up on the mountains over here looking down. Still, I feel like I've heard of a Suehiro-cho in Hokkaido before. Somewhere near Sapporo. I feel like I've heard
+  detected_musical_performances: []
+subtitles_prompt_version: 19

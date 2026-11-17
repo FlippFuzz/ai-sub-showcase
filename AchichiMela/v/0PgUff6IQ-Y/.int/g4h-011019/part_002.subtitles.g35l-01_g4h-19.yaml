@@ -1,0 +1,494 @@
+name: part_002
+total_attempts: 1
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '電柱ソムリエの一歩も動かないGeoGuessr【ホロライブ/熱千めら】'.
+segment_index: null
+video_duration_ms: 295855
+segment_offset_ms: 604369
+global_summary:
+  overall_summary: In this livestream from Hololive's 'Asobi★Mawaritai!' unit member
+    Netsuchi Mela (熱千めら), she plays GeoGuessr in 'no-move' mode while sharing her
+    extensive knowledge and strategies for identifying Japanese locations using utility
+    pole plates, regional electric companies (such as TEPCO, Chubu Electric, and Hokkaido
+    Electric), area codes, asphalt markings, housing styles, and regional topography.
+    Throughout the stream, Mela combines quirky commentary and interactive banter
+    with her chat ('dopari-listeners') with humorous insights into why humans don't
+    normally memorize telephone area codes or utility plate numbers.
+  chapters:
+  - start: 00:00
+    end: 03:30
+    title: Opening Banter and Stream Setup
+    description: Mela starts the stream wearing a mask, greets her chat, and talks
+      about her vtuber debut and recent streaming activities.
+    song_title: null
+    song_artist: null
+  - start: 03:30
+    end: 07:40
+    title: Discovering Her GeoGuessr Talent
+    description: Mela discusses how she didn't realize until her debut stream that
+      identifying Japanese regions by telephone poles and utility plates was considered
+      a rare special skill.
+    song_title: null
+    song_artist: null
+  - start: 07:40
+    end: '35:00'
+    title: GeoGuessr Beginner Lecture
+    description: Mela explains the fundamentals of GeoGuessr, including 47 prefectures,
+      area codes, utility poles, manholes, house roofs, and asphalt markings like
+      stop signs and diamond marks.
+    song_title: null
+    song_artist: null
+  - start: '35:00'
+    end: '61:00'
+    title: 'No-Move GeoGuessr: Rounds 1 to 4'
+    description: Mela plays GeoGuessr in no-move mode, analyzing electric poles, region
+      plates, terrain, and weather, visiting places like Gotemba in Shizuoka, Ube
+      in Yamaguchi, Itakura in Gunma, and Otaru in Hokkaido.
+    song_title: null
+    song_artist: null
+  - start: '61:00'
+    end: '63:30'
+    title: Electric Power Company Plate Breakdown
+    description: Mela breaks down the differences between TEPCO, Chubu Electric, Tohoku
+      Electric, and Hokkaido Electric utility poles and their top plates.
+    song_title: null
+    song_artist: null
+  - start: '63:30'
+    end: '19:00'
+    title: 'No-Move GeoGuessr: Round 5 Onward & Rapid Play'
+    description: Mela plays rapid-fire no-move rounds in Osaka, Tokushima, Iwate/Akita,
+      Okinawa, and Miyagi, interacting with chat and refining her regional deduction
+      skills.
+    song_title: null
+    song_artist: null
+  - start: '19:00'
+    end: '31:00'
+    title: Stream Wrap-Up and Schedule Announcements
+    description: Mela reflects on her love for GeoGuessr, discusses future collaboration
+      plans with AZKi, announces the weekly schedule, and gives closing remarks.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Netsuchi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A 415-year-old fire salamander firefighter from the Edo period who
+      serves as the 'goryaku' (good fortune/protection) representative for the Hololive
+      unit 'Asobi★Mawaritai!'.
+    speech_patterns_or_ticks: Uses the old-fashioned pronoun 'washi' (わし), sentence
+      ending '-のじゃ' / '-のじゃー', and signature greetings like 'あらあら、めろめろ、あちち、めろー'.
+    visual_cues: Red and fire motif, salamander traits, starts streams wearing a mask
+      before removing it.
+  domain_glossary:
+  - term: ジオゲッサー
+    meaning: GeoGuessr, a geography browser game where players are dropped into Google
+      Street View locations and must guess where they are on a map.
+  - term: ノームーブ
+    meaning: No-Move mode in GeoGuessr where players cannot move, walk, or pan away
+      from their initial spawn point.
+  - term: 電柱ソムリエ
+    meaning: A nickname or slang for someone who identifies geographic locations based
+      on utility pole plates, wiring, and hardware.
+  - term: 市外局番
+    meaning: Japanese telephone area codes (e.g., 03 for Tokyo, 01 for Hokkaido) used
+      to narrow down regions in GeoGuessr.
+  - term: 低圧スペーサー
+    meaning: Low-voltage utility pole fittings commonly found on Hokkaido Electric
+      Power poles.
+  - term: 東電 / 中電 / 北電
+    meaning: Regional electric power companies (TEPCO, Chubu Electric, Hokkaido Electric)
+      whose pole plates and structural designs vary across Japan.
+  - term: どぱる
+    meaning: Mela's coined slang for getting extremely excited or thrilled when successfully
+      guessing a location.
+  - term: アソビ★まわり隊！
+    meaning: Hololive unit consisting of Netsuchi Mela, Momosuzu Kyoko, Suzune Tsuzuri,
+      and Soraka Sopia.
+  thoughts:
+  - |-
+    **Analyzing a Long GeoGuessr Video: Initial Thoughts**
+
+    Okay, here's what I'm thinking. I've got `video_1.webm` to look at, which is a significant chunk of time – over two hours. That's a dedicated session! The user context tells me it's from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel, and the video title is something about a "Telephone Pole Sommelier" doing GeoGuessr, specifically "Don't-Move-Anymore GeoGuessr" – that's potentially interesting. A static GeoGuessr round could provide a fascinating set of challenges.
+
+    Before I dive too deep, I need to know the context of "Netsuchi Mela". I'm remembering that ReGLOSS / Hololive / Hololive Indonesia / Hololive English / Dev_Is are mentioned, so I should clarify. Is "熱千めら" a specific person or a group? Should I search for “熱千めら” to see, or should I start with the ASR for this video? Let's be efficient here. I think I'll use `load_video` with `include_asr=True` to get an initial overview. The ASR will give me a first pass at the content. It will also help me identify "Netsuchi Mela" and save time. Let's start there.
+  - |-
+    **My Analysis of the Video Content**
+
+    Okay, fantastic! I've got the ASR data and a general understanding of the video's subject matter. Now, let's break down the requirements and approach this systematically.
+
+    First, I need to generate an `overall_summary` – a concise overview, maybe one or two paragraphs max. I'll need to encapsulate the core purpose, the overall tone of the video, and how the narrative progresses.
+
+    Next is the `chapters` section. I'll divide the video into natural segments chronologically, accurately marking the timestamps in `MM:SS` or `HH:MM:SS` format. For each chapter, I'll need a clear title, a brief description of the content, and then the metadata for `song_title` and `song_artist`, which will be `null` since this appears to be a gameplay or chat stream, not a performance.
+
+    The `entities` section is next, and I need to be precise here. I know the central figure is Netsuchi Mela (熱千めら), and I have some initial information about her persona, like the fire salamander motif, her role in disaster prevention or fire protection, and some of her characteristic speech patterns. I should include all these details. I have to confirm her affiliation by searching, to ensure I'm using the correct term: Hololive, Hololive production, or perhaps Dev_Is/ReGLOSS? I'll need to search to confirm this detail. I'll also note her speech patterns/ticks such as `-のじゃ`, `-のじゃー`, `-おじゃばんわ`, `-どぱる`, `-ドパリスナー`, and `-ドパワッパ`. And finally, I should list any of her visual cues such as salamander elements and the red/fire theme.
+
+    Finally, I'll address the `domain_glossary`. I understand this video likely involves GeoGuessr, so I will need to identify and define relevant terms such as "Nomove mode," "pole plates" (likely referring to NTT plates and utility pole plates), "area codes" (市外局番), "diamond marks" (ダイヤマーク), and any other GeoGuessr-specific vocabulary that comes up.
+
+    Before I dive into any of this, I'll do a quick search for "Netsuchi Mela" (`熱千めら`) to verify her official lore, confirm agency affiliation, and pinpoint her debut date if possible. This upfront research is critical for accuracy.
+  - |-
+    {
+      "summary": {
+        "header": "**A GeoGuessr Deep Dive with Netsuchi Mela**",
+        "content": "Right, here's what I've got from the stream. Netsuchi Mela, the Hololive fire salamander, is back at it, this time focusing on GeoGuessr. It's a 'no-move' playthrough, which means we're really digging into the details. She's using her 'Telephone Pole Sommelier' skills, as she calls it. Apparently, identifying locations based on utility pole plates (TEPCO, Chubu Electric, Hokkaido Electric – all crucial details), area codes, asphalt markings, and the architecture is her specialty, and, frankly, fascinating. We're looking at things like those low-voltage spacers on Hokkaido poles and the whole game of distinguishing them. She's got this whole schtick with old-fashioned language and expressions like 'washi' and 'doparu' when she gets excited about a good find. The stream breaks down nicely: intro and introductions, her explanation of how she discovered her unusual ability, the fundamentals of GeoGuessr and the Japanese prefectures, then the actual gameplay with rounds in places like Gotemba, Ube, Itakura, and Otaru. We get a real deep dive into the electric company pole distinctions. It concludes with rapid-fire rounds and some announcements. It's clear she's focusing on her 'Asobi★Mawaritai!' unit activities, as well. All very structured and well-presented.",
+        "key_elements": {
+          "focus": "No-Move GeoGuessr",
+          "strategy": "Utility pole and regional cues identification",
+          "personality": "Quirky commentary, slang, and old-fashioned language",
+          "expertise": "Japanese regional geography",
+          "references": [
+            "TEPCO, Chubu Electric, Hokkaido Electric",
+            "Area codes (e.g., 03, 01)",
+            "Asphalt markings like 'tomare'",
+            "Low-voltage spacers"
+          ]
+        }
+model_name: null
+service_tier: null
+agentic_video: false
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.000'
+    end: '00:04.100'
+    original: とか、を当てていくのがムーブね。
+    english: '...or things like that—guessing those is the Move style.'
+  - start: '00:05.050'
+    end: '00:09.100'
+    original: ムーブはAZKi先輩がよくやってらっしゃるのはムーブ。
+    english: Move is what AZKi-senpai usually plays.
+  - start: '00:09.450'
+    end: '00:11.000'
+    original: 「そのマスクはいつ外す？」
+    english: '"When are you taking off that mask?"'
+  - start: '00:11.150'
+    end: '00:13.200'
+    original: マスク外してほしいの、お主？
+    english: Do you want me to take off the mask?
+  - start: '00:13.950'
+    end: '00:16.050'
+    original: わしのお顔を見れなくて耐えられないの？
+    english: Can you not bear not seeing my face?
+  - start: '00:16.150'
+    end: '00:17.850'
+    original: どぱわっぱなの？
+    english: Are you a dopa-brat?
+  - start: '00:17.950'
+    end: '00:20.600'
+    original: 仮面1つで耐えられないの、お主ら？
+    english: You lot can't even handle a single mask?
+  - start: '00:21.050'
+    end: '00:23.000'
+    original: しょうがないな、じゃあ仮面だけ外してあげるよ。
+    english: Can't be helped. I'll just take off the mask for you, then.
+  - start: '00:23.250'
+    end: '00:24.300'
+    original: しょうがないから。
+    english: Since I have no choice.
+  - start: '00:24.650'
+    end: '00:26.700'
+    original: ちょ、どぱリスナーがいるから...
+    english: Wait, since there are dopa-listeners here...
+  - start: '00:26.750'
+    end: '00:29.500'
+    original: どぱリスナーがいるから仮面だけ外してあげるのじゃ。
+    english: Since there are dopa-listeners here, I'll take off just the mask.
+  - start: '00:29.600'
+    end: '00:30.900'
+    original: しょうがないな。
+    english: Oh well.
+  - start: '00:31.350'
+    end: '00:33.000'
+    original: 人間は生き急いでるのじゃ。
+    english: Humans are always in such a rush.
+  - start: '00:33.100'
+    end: '00:34.100'
+    original: 耐えられない？
+    english: You can't wait?
+  - start: '00:34.450'
+    end: '00:35.300'
+    original: 高評価押した？
+    english: Did you hit the like button?
+  - start: '00:35.400'
+    end: '00:36.250'
+    original: えらいね。
+    english: Good job.
+  - start: '00:36.350'
+    end: '00:42.400'
+    original: 高評価を人間たちがいい子に押せたなら、わしはお面外してあげるけど。
+    english: If you humans were good and pressed the like button, I'll take off my
+      mask for you.
+  - start: '00:43.250'
+    end: '00:46.200'
+    original: お主ら、わしのお顔見たい？
+    english: Do you all want to see my face?
+  - start: '00:46.500'
+    end: '00:47.550'
+    original: 見たいか？
+    english: Want to see it?
+  - start: '00:50.900'
+    end: '00:51.900'
+    original: ん？押した？
+    english: Hm? Did you press it?
+  - start: '00:52.100'
+    end: '00:53.500'
+    original: 高評価押せた？
+    english: Were you able to hit like?
+  - start: '00:54.300'
+    end: '00:56.400'
+    original: どっちでもいい？見たいんじゃろ！
+    english: Either is fine? You totally want to see it!
+  - start: '00:58.150'
+    end: '01:00.050'
+    original: はい、じゃあお面を外しつつ...
+    english: Alright, taking off the mask now...
+  - start: '01:00.150'
+    end: '01:01.000'
+    original: よいしょ。
+    english: There we go.
+  - start: '01:01.200'
+    end: '01:03.900'
+    original: ま、これがジオゲッサーというゲームですのじゃ。
+    english: Well, that's what the game GeoGuessr is.
+  - start: '01:04.250'
+    end: '01:04.700'
+    original: うん。
+    english: Yeah.
+  - start: '01:05.050'
+    end: '01:10.300'
+    original: 写真を見て、Googleマップを見て、自分の現在地を当てるゲーム。
+    english: You look at the picture, look at Google Maps, and guess your current
+      location.
+  - start: '01:10.650'
+    end: '01:17.850'
+    original: いろんなマップが、それこそホロメンマップとかね、ホロメンにまつわる場所のマップとかいろいろあって、
+    english: There are all sorts of maps, like a Holomem map—maps of places related
+      to Hololive members—and lots of others.
+  - start: '01:18.200'
+    end: '01:25.250'
+    original: で、わしが前回遊んだのはジャパンマップ、日本のどこが表示される日本の、日本マップなのじゃ。
+    english: And the one I played last time was the Japan map, a map of Japan where
+      somewhere in Japan gets shown.
+  - start: '01:26.050'
+    end: '01:26.550'
+    original: そう。
+    english: Right.
+  - start: '01:27.000'
+    end: '01:30.250'
+    original: んで、ま、ジオゲッサーってのがこういうゲームと分かった時に、
+    english: So, once you understand that GeoGuessr is that kind of game...
+  - start: '01:31.050'
+    end: '01:34.300'
+    original: じゃあジオゲッサーのノームーブについてちょっとお話をさせてください。
+    english: Let me talk a bit about GeoGuessr's No-Move mode.
+  - start: '01:34.700'
+    end: '01:38.250'
+    original: ジオゲッサーまず覚えなきゃいけないことが結構いっぱいあります。
+    english: First off, there's actually quite a lot you need to memorize for GeoGuessr.
+  - start: '01:38.600'
+    end: '01:40.250'
+    original: お主ら何か分かる？
+    english: Do you all know what they are?
+  - start: '01:40.650'
+    end: '01:44.450'
+    original: お主ら、ジオゲッサーちょっとやってみたいなって思ってるお主らいると思うんだけど、
+    english: I think some of you might be thinking you'd like to try GeoGuessr,
+  - start: '01:45.200'
+    end: '01:50.700'
+    original: ジオゲッサーってある程度知っておくと便利なものがあるの。
+    english: and there are things that are really handy to know beforehand.
+  - start: '01:52.200'
+    end: '01:55.900'
+    original: もう電柱とかそういうレベルじゃなくて、
+    english: Not even at the level of utility poles or anything like that yet.
+  - start: '01:57.900'
+    end: '01:59.500'
+    original: 例えばじゃ日本ね？
+    english: For example, say you're doing Japan, right?
+  - start: '01:59.650'
+    end: '02:01.300'
+    original: 日本マップをやるってなったら、
+    english: If you're going to play the Japan map...
+  - start: '02:01.400'
+    end: '02:03.050'
+    original: 日本語？その通りなのじゃ。
+    english: '"Japanese?" Exactly right!'
+  - start: '02:03.150'
+    end: '02:04.500'
+    original: 日本語なのじゃ。
+    english: It's Japanese.
+  - start: '02:04.800'
+    end: '02:07.150'
+    original: 日本語はまず絶対覚えなきゃいけないね。
+    english: First, you definitely have to know Japanese.
+  - start: '02:08.050'
+    end: '02:10.450'
+    original: とりあえず都道府県、正しいです！
+    english: '"For starters, the prefectures." Correct!'
+  - start: '02:10.550'
+    end: '02:12.400'
+    original: あなたとても正しいですのじゃ。
+    english: You are completely right.
+  - start: '02:12.500'
+    end: '02:15.300'
+    original: その通り、都道府県を覚えなきゃいけません！
+    english: Exactly, you have to memorize the prefectures!
+  - start: '02:16.700'
+    end: '02:22.100'
+    original: そう、47都道府県が分からないとそもそも結構ムズイ。
+    english: Yeah, if you don't know the 47 prefectures, it's pretty tough to begin
+      with.
+  - start: '02:22.300'
+    end: '02:32.900'
+    original: なんか、あの例えばさ、なんでもいいよ、東京都ってのをどっかの看板で見つけたとするじゃろ？東京都って見つけても「え、東京どこ？」つって地図から探して押さなきゃいけないから、
+    english: Like, say you spot "Tokyo" on a sign somewhere, right? Even if you find
+      "Tokyo," you'd be like "Wait, where's Tokyo?" and have to hunt for it on the
+      map to click it.
+  - start: '02:33.150'
+    end: '02:38.300'
+    original: そもそもある程度47都道府県を覚えてなきゃ難しいですのじゃ。
+    english: So unless you've got the 47 prefectures somewhat memorized, it's pretty
+      hard.
+  - start: '02:38.900'
+    end: '02:39.350'
+    original: うん。
+    english: Yeah.
+  - start: '02:39.500'
+    end: '02:41.050'
+    original: 「まつり先輩じゃあ無理だ」
+    english: '"Then Matsuri-senpai wouldn''t be able to do it."'
+  - start: '02:41.350'
+    end: '02:42.200'
+    original: 大丈夫！
+    english: It's okay!
+  - start: '02:42.950'
+    end: '02:47.700'
+    original: 大丈夫なのじゃ、わしはジオゲッサーを始めて47都道府県覚えましたのじゃ。
+    english: It's fine! I only memorized the 47 prefectures after starting GeoGuessr.
+  - start: '02:48.850'
+    end: '02:49.300'
+    original: うん。
+    english: Yeah.
+  - start: '02:50.150'
+    end: '02:54.300'
+    original: 都道府県覚えたの、わしジオゲッサー始めてからだから...
+    english: Since I learned the prefectures after starting GeoGuessr...
+  - start: '02:55.550'
+    end: '02:56.400'
+    original: 大丈夫。
+    english: it's totally fine.
+  - start: '02:56.750'
+    end: '03:02.250'
+    original: あの1年前に始めたんじゃけど、1年前まで都道府県言えなかったからね、わし。
+    english: I started about a year ago, and up until a year ago, I couldn't even
+      name all the prefectures.
+  - start: '03:03.000'
+    end: '03:04.100'
+    original: 言えなかったから。
+    english: I really couldn't.
+  - start: '03:04.750'
+    end: '03:08.250'
+    original: 大丈夫ですまつり先輩、今からでも覚えられます！
+    english: You'll be fine, Matsuri-senpai! You can still learn them starting now!
+  - start: '03:08.700'
+    end: '03:12.000'
+    original: ジオゲッサーのためだけに47都道府県覚えましたわし。
+    english: I memorized all 47 prefectures solely for GeoGuessr.
+  - start: '03:13.200'
+    end: '03:13.700'
+    original: うん。
+    english: Yeah.
+  - start: '03:14.700'
+    end: '03:15.200'
+    original: うん。
+    english: Yeah.
+  - start: '03:15.400'
+    end: '03:17.300'
+    original: いけますのじゃ、全然いけますのじゃ。
+    english: You can do it, you can totally do it.
+  - start: '03:19.650'
+    end: '03:25.800'
+    original: 400年生きてきて都道府県全部言えないの割と義務教育の敗北感ありますが、
+    english: Having lived for 400 years and still not being able to name all the prefectures
+      feels like a bit of a defeat for compulsory education, though...
+  - start: '03:25.900'
+    end: '03:30.200'
+    original: ありますが、ま、覚えたらもういいんですよ。覚えちまえばこっちのもんなのじゃ。
+    english: '...though once you learn them, it''s all good! Once you memorize them,
+      you''re set.'
+  - start: '03:31.050'
+    end: '03:33.700'
+    original: 「1年前も電柱好きだった？」いや全く気にしてなかった。
+    english: '"Did you like utility poles a year ago too?" No, I didn''t care about
+      them at all.'
+  - start: '03:34.600'
+    end: '03:37.500'
+    original: ジオゲッサーを始めるまでは全く気にしてなかったのじゃ。
+    english: I paid zero attention to them until I started GeoGuessr.
+  - start: '03:38.750'
+    end: '03:39.150'
+    original: うん。
+    english: Yeah.
+  - start: '03:39.500'
+    end: '03:42.100'
+    original: ま、とりあえず都道府県は覚えましょう。
+    english: Anyway, for starters, let's memorize the prefectures.
+  - start: '03:42.450'
+    end: '03:49.900'
+    original: で、都道府県が覚えられたら余裕あったら市とかも覚えたいの。市とか区とか。
+    english: And once you've memorized the prefectures, if you have room to spare,
+      you'll want to learn cities and wards too.
+  - start: '03:50.900'
+    end: '03:54.600'
+    original: そのそもそも区がある市ってのがさ、一部じゃろ？
+    english: To begin with, only certain cities even have wards, right?
+  - start: '03:54.800'
+    end: '04:08.500'
+    original: だからこの市には、なんか北区とかを見た時に、北区ってことは九州だったらなんか福岡とか、なんか区がある県はこことここだからみたいな感じで、
+    english: So when you see something like "Kita Ward," you can think, "If it's in
+      Kyushu, Kita Ward means Fukuoka or..." knowing which prefectures have wards,
+  - start: '04:08.600'
+    end: '04:13.100'
+    original: あの、ある程度市と区を覚えなきゃいけない。
+    english: so you have to memorize cities and wards to some extent.
+  - start: '04:13.150'
+    end: '04:16.750'
+    original: これはでもちょっとあれね、ムズ要素ね、ムズ要素。
+    english: Though this part is a bit of a difficult element, a tough one.
+  - start: '04:18.000'
+    end: '04:20.700'
+    original: フブキ先輩もいらっしゃったの？ちょっと見逃したのじゃ。
+    english: Was Fubuki-senpai here too? I missed that.
+  - start: '04:21.500'
+    end: '04:21.950'
+    original: うん。
+    english: Yeah.
+  - start: '04:23.100'
+    end: '04:30.200'
+    original: ま、でも一旦都道府県はマストで覚えたい、そして市と区を覚えられるといいよねって感じで、
+    english: Still, for now, prefectures are a must-learn, and it's nice if you can
+      learn cities and wards too.
+  - start: '04:30.700'
+    end: '04:35.800'
+    original: あの、わしは、えっと、まだ覚えてない。わし覚え中。
+    english: As for me, um, I haven't memorized them yet. I'm still learning them.
+  - start: '04:36.850'
+    end: '04:43.900'
+    original: これわし覚え中。わし覚え中も書いとくか。わし覚え中。
+    english: I'm still learning this. Let me write down "Still learning" too. "Still
+      learning."
+  - start: '04:44.000'
+    end: '04:46.100'
+    original: うん、これわし覚え中なのじゃ。
+    english: Yeah, I'm still learning this part.
+  - start: '04:46.250'
+    end: '04:55.500'
+    original: んで、ノームーブをやるとなった時に、ま、次に覚えてもいいかなみたいなやつが、まあ...
+    english: And then, when it comes to playing No-Move, the next thing that might
+      be good to learn is, well...
+  thoughts:
+  - |-
+    {
+      "summary": "**Alright, let's break down this GeoGuessr business. First, I need to be precise with the audio; synchronizing the speech is key. We're not dealing with any music here, just the background sounds and voices. I'll translate the utterances, of course. Oh, and no singing!**\n\nIt seems that the 'Move' style is all about guessing, and AZKi-senpai really excels at it! Some of you dopa-listeners have been wondering when I'll take off my mask, haven't you? Can't handle the mystery? You want to see my face? Alright, if you humans are good and like this stream, then I'll take the mask off, since I must. Now, before I do that, GeoGuessr itself is a game where you get a picture from Google Maps and have to pinpoint your location. There are all kinds of maps: Holomem maps, maps of places related to Hololive members, etc. The one I last played was the Japan map, so you get to figure out where in Japan you are!\n\nAlright, let's talk about the No-Move mode of GeoGuessr. There's a lot to know. I think some of you are curious, and there are some things you should know. It's not just about utility poles, but if you're playing the Japan map, you must know Japanese, first and foremost. Knowing the prefectures is a must! I really had to learn those! I've lived for 400 years and still couldn't name the prefectures? That's kinda a defeat for basic education, but once I learned them, it was smooth sailing! Matsuri-senpai, it's fine; you can do it too! I memorized them for GeoGuessr! I learned them just one year ago, after I started playing! The prefecture learning got me started, and you can absolutely do it! So yeah, let's memorize the prefectures. Also, if you have time, you can also learn cities and wards. But let's memorize prefectures first.\n\nCities and wards are a little tougher. It's like knowing that “Kita Ward” means Fukuoka, or knowing what prefectures have different wards. I'm still learning those! I didn't see Fubuki-senpai here, did I? (laughs)"
+    }
+  detected_musical_performances: []
+subtitles_prompt_version: 19

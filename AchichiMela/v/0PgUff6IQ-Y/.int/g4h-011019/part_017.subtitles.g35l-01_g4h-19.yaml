@@ -1,0 +1,467 @@
+name: part_017
+total_attempts: 1
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '電柱ソムリエの一歩も動かないGeoGuessr【ホロライブ/熱千めら】'.
+segment_index: null
+video_duration_ms: 296975
+segment_offset_ms: 5104250
+global_summary:
+  overall_summary: In this livestream from Hololive's 'Asobi★Mawaritai!' unit member
+    Netsuchi Mela (熱千めら), she plays GeoGuessr in 'no-move' mode while sharing her
+    extensive knowledge and strategies for identifying Japanese locations using utility
+    pole plates, regional electric companies (such as TEPCO, Chubu Electric, and Hokkaido
+    Electric), area codes, asphalt markings, housing styles, and regional topography.
+    Throughout the stream, Mela combines quirky commentary and interactive banter
+    with her chat ('dopari-listeners') with humorous insights into why humans don't
+    normally memorize telephone area codes or utility plate numbers.
+  chapters:
+  - start: 00:00
+    end: 03:30
+    title: Opening Banter and Stream Setup
+    description: Mela starts the stream wearing a mask, greets her chat, and talks
+      about her vtuber debut and recent streaming activities.
+    song_title: null
+    song_artist: null
+  - start: 03:30
+    end: 07:40
+    title: Discovering Her GeoGuessr Talent
+    description: Mela discusses how she didn't realize until her debut stream that
+      identifying Japanese regions by telephone poles and utility plates was considered
+      a rare special skill.
+    song_title: null
+    song_artist: null
+  - start: 07:40
+    end: '35:00'
+    title: GeoGuessr Beginner Lecture
+    description: Mela explains the fundamentals of GeoGuessr, including 47 prefectures,
+      area codes, utility poles, manholes, house roofs, and asphalt markings like
+      stop signs and diamond marks.
+    song_title: null
+    song_artist: null
+  - start: '35:00'
+    end: '61:00'
+    title: 'No-Move GeoGuessr: Rounds 1 to 4'
+    description: Mela plays GeoGuessr in no-move mode, analyzing electric poles, region
+      plates, terrain, and weather, visiting places like Gotemba in Shizuoka, Ube
+      in Yamaguchi, Itakura in Gunma, and Otaru in Hokkaido.
+    song_title: null
+    song_artist: null
+  - start: '61:00'
+    end: '63:30'
+    title: Electric Power Company Plate Breakdown
+    description: Mela breaks down the differences between TEPCO, Chubu Electric, Tohoku
+      Electric, and Hokkaido Electric utility poles and their top plates.
+    song_title: null
+    song_artist: null
+  - start: '63:30'
+    end: '19:00'
+    title: 'No-Move GeoGuessr: Round 5 Onward & Rapid Play'
+    description: Mela plays rapid-fire no-move rounds in Osaka, Tokushima, Iwate/Akita,
+      Okinawa, and Miyagi, interacting with chat and refining her regional deduction
+      skills.
+    song_title: null
+    song_artist: null
+  - start: '19:00'
+    end: '31:00'
+    title: Stream Wrap-Up and Schedule Announcements
+    description: Mela reflects on her love for GeoGuessr, discusses future collaboration
+      plans with AZKi, announces the weekly schedule, and gives closing remarks.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Netsuchi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A 415-year-old fire salamander firefighter from the Edo period who
+      serves as the 'goryaku' (good fortune/protection) representative for the Hololive
+      unit 'Asobi★Mawaritai!'.
+    speech_patterns_or_ticks: Uses the old-fashioned pronoun 'washi' (わし), sentence
+      ending '-のじゃ' / '-のじゃー', and signature greetings like 'あらあら、めろめろ、あちち、めろー'.
+    visual_cues: Red and fire motif, salamander traits, starts streams wearing a mask
+      before removing it.
+  domain_glossary:
+  - term: ジオゲッサー
+    meaning: GeoGuessr, a geography browser game where players are dropped into Google
+      Street View locations and must guess where they are on a map.
+  - term: ノームーブ
+    meaning: No-Move mode in GeoGuessr where players cannot move, walk, or pan away
+      from their initial spawn point.
+  - term: 電柱ソムリエ
+    meaning: A nickname or slang for someone who identifies geographic locations based
+      on utility pole plates, wiring, and hardware.
+  - term: 市外局番
+    meaning: Japanese telephone area codes (e.g., 03 for Tokyo, 01 for Hokkaido) used
+      to narrow down regions in GeoGuessr.
+  - term: 低圧スペーサー
+    meaning: Low-voltage utility pole fittings commonly found on Hokkaido Electric
+      Power poles.
+  - term: 東電 / 中電 / 北電
+    meaning: Regional electric power companies (TEPCO, Chubu Electric, Hokkaido Electric)
+      whose pole plates and structural designs vary across Japan.
+  - term: どぱる
+    meaning: Mela's coined slang for getting extremely excited or thrilled when successfully
+      guessing a location.
+  - term: アソビ★まわり隊！
+    meaning: Hololive unit consisting of Netsuchi Mela, Momosuzu Kyoko, Suzune Tsuzuri,
+      and Soraka Sopia.
+  thoughts:
+  - |-
+    **Analyzing a Long GeoGuessr Video: Initial Thoughts**
+
+    Okay, here's what I'm thinking. I've got `video_1.webm` to look at, which is a significant chunk of time – over two hours. That's a dedicated session! The user context tells me it's from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel, and the video title is something about a "Telephone Pole Sommelier" doing GeoGuessr, specifically "Don't-Move-Anymore GeoGuessr" – that's potentially interesting. A static GeoGuessr round could provide a fascinating set of challenges.
+
+    Before I dive too deep, I need to know the context of "Netsuchi Mela". I'm remembering that ReGLOSS / Hololive / Hololive Indonesia / Hololive English / Dev_Is are mentioned, so I should clarify. Is "熱千めら" a specific person or a group? Should I search for “熱千めら” to see, or should I start with the ASR for this video? Let's be efficient here. I think I'll use `load_video` with `include_asr=True` to get an initial overview. The ASR will give me a first pass at the content. It will also help me identify "Netsuchi Mela" and save time. Let's start there.
+  - |-
+    **My Analysis of the Video Content**
+
+    Okay, fantastic! I've got the ASR data and a general understanding of the video's subject matter. Now, let's break down the requirements and approach this systematically.
+
+    First, I need to generate an `overall_summary` – a concise overview, maybe one or two paragraphs max. I'll need to encapsulate the core purpose, the overall tone of the video, and how the narrative progresses.
+
+    Next is the `chapters` section. I'll divide the video into natural segments chronologically, accurately marking the timestamps in `MM:SS` or `HH:MM:SS` format. For each chapter, I'll need a clear title, a brief description of the content, and then the metadata for `song_title` and `song_artist`, which will be `null` since this appears to be a gameplay or chat stream, not a performance.
+
+    The `entities` section is next, and I need to be precise here. I know the central figure is Netsuchi Mela (熱千めら), and I have some initial information about her persona, like the fire salamander motif, her role in disaster prevention or fire protection, and some of her characteristic speech patterns. I should include all these details. I have to confirm her affiliation by searching, to ensure I'm using the correct term: Hololive, Hololive production, or perhaps Dev_Is/ReGLOSS? I'll need to search to confirm this detail. I'll also note her speech patterns/ticks such as `-のじゃ`, `-のじゃー`, `-おじゃばんわ`, `-どぱる`, `-ドパリスナー`, and `-ドパワッパ`. And finally, I should list any of her visual cues such as salamander elements and the red/fire theme.
+
+    Finally, I'll address the `domain_glossary`. I understand this video likely involves GeoGuessr, so I will need to identify and define relevant terms such as "Nomove mode," "pole plates" (likely referring to NTT plates and utility pole plates), "area codes" (市外局番), "diamond marks" (ダイヤマーク), and any other GeoGuessr-specific vocabulary that comes up.
+
+    Before I dive into any of this, I'll do a quick search for "Netsuchi Mela" (`熱千めら`) to verify her official lore, confirm agency affiliation, and pinpoint her debut date if possible. This upfront research is critical for accuracy.
+  - |-
+    {
+      "summary": {
+        "header": "**A GeoGuessr Deep Dive with Netsuchi Mela**",
+        "content": "Right, here's what I've got from the stream. Netsuchi Mela, the Hololive fire salamander, is back at it, this time focusing on GeoGuessr. It's a 'no-move' playthrough, which means we're really digging into the details. She's using her 'Telephone Pole Sommelier' skills, as she calls it. Apparently, identifying locations based on utility pole plates (TEPCO, Chubu Electric, Hokkaido Electric – all crucial details), area codes, asphalt markings, and the architecture is her specialty, and, frankly, fascinating. We're looking at things like those low-voltage spacers on Hokkaido poles and the whole game of distinguishing them. She's got this whole schtick with old-fashioned language and expressions like 'washi' and 'doparu' when she gets excited about a good find. The stream breaks down nicely: intro and introductions, her explanation of how she discovered her unusual ability, the fundamentals of GeoGuessr and the Japanese prefectures, then the actual gameplay with rounds in places like Gotemba, Ube, Itakura, and Otaru. We get a real deep dive into the electric company pole distinctions. It concludes with rapid-fire rounds and some announcements. It's clear she's focusing on her 'Asobi★Mawaritai!' unit activities, as well. All very structured and well-presented.",
+        "key_elements": {
+          "focus": "No-Move GeoGuessr",
+          "strategy": "Utility pole and regional cues identification",
+          "personality": "Quirky commentary, slang, and old-fashioned language",
+          "expertise": "Japanese regional geography",
+          "references": [
+            "TEPCO, Chubu Electric, Hokkaido Electric",
+            "Area codes (e.g., 03, 01)",
+            "Asphalt markings like 'tomare'",
+            "Low-voltage spacers"
+          ]
+        }
+model_name: null
+service_tier: null
+agentic_video: false
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.100'
+    end: '00:01.900'
+    original: ま、多分、えっと
+    english: Well, maybe, um...
+  - start: '00:02.400'
+    end: '00:04.000'
+    original: どこ、どこではないっつったか。
+    english: Which place did I say it wasn't?
+  - start: '00:05.350'
+    end: '00:08.500'
+    original: 長野か。長野ではないみたいな。そう、長野だ。
+    english: Nagano, right? Like, "it's not Nagano." Yeah, Nagano.
+  - start: '00:08.500'
+    end: '00:14.700'
+    original: 長野ではないなって言った理由は、あの長野県の場合はNTTプレート、この下のプレートが横向きなのじゃ。
+    english: The reason I said it's not Nagano is that in Nagano Prefecture, the NTT
+      plate—this bottom plate—is horizontal.
+  - start: '00:14.950'
+    end: '00:18.000'
+    original: 長野県は中部電力なんだけど、
+    english: Nagano Prefecture uses Chubu Electric Power, though...
+  - start: '00:18.800'
+    end: '00:24.300'
+    original: 長野電...だめだ。長野県は中部電力だから、またプレートの形が違うんじゃけど、
+    english: Nagano Elec... oops. Since Nagano uses Chubu Electric, the plate shape
+      is different there too, but...
+  - start: '00:24.300'
+    end: '00:29.800'
+    original: でも、その少なくとも縦縦だったから、長野ではないな、みたいな
+    english: still, since it was at least vertical-vertical, I figured it's not Nagano...
+  - start: '00:30.000'
+    end: '00:33.000'
+    original: のを消去法で判断したりしてる。
+    english: '...using process of elimination to figure it out.'
+  - start: '00:33.100'
+    end: '00:34.200'
+    original: そう。
+    english: Yeah.
+  - start: '00:34.200'
+    end: '00:44.000'
+    original: だから、まあもし、あの、電柱を見つけたとして、わあ電柱だ！と思って、あ、電柱縦だからもしかして、これは
+    english: So, well, suppose you find a utility pole and think, "Ooh, a utility
+      pole! Oh, it's vertical, so maybe this means..."
+  - start: '00:44.000'
+    end: '00:47.500'
+    original: あの、北陸と東北は除外だ！って思った時に、
+    english: '"...we can rule out Hokuriku and Tohoku!" When you think that...'
+  - start: '00:47.800'
+    end: '00:54.300'
+    original: お主一旦待つのじゃ。それは本当に、本当に電力会社のプレートですか？
+    english: Hold on a second there. Is that really, truly an electric company plate?
+  - start: '00:54.300'
+    end: '00:55.500'
+    original: みたいな。
+    english: Something like that.
+  - start: '00:55.500'
+    end: '00:58.700'
+    original: うん。それはもしかしてNTTのプレートかもしれません。
+    english: Yeah. That might actually be an NTT plate.
+  - start: '00:58.700'
+    end: '01:02.900'
+    original: だから、なんか、例えば、すごいね、
+    english: So, like, for example, really...
+  - start: '01:03.600'
+    end: '01:06.500'
+    original: ノー、ノーズームとかのモードの場合、
+    english: In a no-zoom mode or something...
+  - start: '01:06.800'
+    end: '01:09.100'
+    original: ズームしちゃダメなモードの場合、
+    english: In a mode where you aren't allowed to zoom...
+  - start: '01:09.400'
+    end: '01:11.000'
+    original: ここから動かせないわけ。
+    english: '...you can''t move from right here.'
+  - start: '01:11.000'
+    end: '01:19.800'
+    original: ここから動かせない時、ここについてるプレートが、果たしてNTTのものなのか、あの電力会社のものなのかが判断できなくて、
+    english: When you can't move from here, you can't tell whether the plate attached
+      here is from NTT or from the electric company...
+  - start: '01:20.000'
+    end: '01:22.800'
+    original: 判断できないからすっごい難しい、みたいな。
+    english: '...and because you can''t tell, it becomes super difficult, you know?'
+  - start: '01:24.300'
+    end: '01:25.200'
+    original: うん。
+    english: Yeah.
+  - start: '01:26.500'
+    end: '01:33.000'
+    original: 難しいですのじゃ。とても、とても難しい。でも覚えたら割と一瞬ですよ、お主ら。
+    english: It's difficult indeed. Very, very difficult. But once you memorize it,
+      it's pretty much instant, everyone.
+  - start: '01:33.000'
+    end: '01:34.200'
+    original: うん。
+    english: Yeah.
+  - start: '01:35.000'
+    end: '01:46.700'
+    original: ま、あと遠目で見て分かるのは、こっちの方がちっちゃいかな。NTTのプレートの方が北海道電力のプレートよりはちっちゃいかな。北海道電力書くこといっぱいあるから結構でかめ、でかめではある気がするのじゃ。
+    english: Well, another thing you can tell from afar is this one's smaller, maybe.
+      The NTT plate is smaller than the Hokkaido Electric plate. Hokkaido Electric
+      has a lot written on it, so I feel like theirs is pretty big—on the larger side.
+  - start: '01:47.800'
+    end: '01:48.800'
+    original: うん。
+    english: Yeah.
+  - start: '01:50.000'
+    end: '01:52.700'
+    original: みたいな感じ。
+    english: That kind of thing.
+  - start: '01:52.800'
+    end: '01:56.300'
+    original: すごい、今日すごい沢山のことを知ってるんじゃない？お主ら。
+    english: Wow, aren't you all learning a crazy amount of stuff today?
+  - start: '01:57.000'
+    end: '02:03.600'
+    original: 今回結構、アーカイブを見直して勉強できるぐらいのこと教え込んでるんじゃない？
+    english: Aren't I basically teaching you enough this time that you could rewatch
+      the VOD to study?
+  - start: '02:04.000'
+    end: '02:08.800'
+    original: なんか、めら組とわし、もしかして大会に出ようとしてるのかな？
+    english: Like, are the Mela-gumi and I maybe trying to enter a tournament or something?
+  - start: '02:10.000'
+    end: '02:12.600'
+    original: 一緒に大会に出ようとしてる人みたい。
+    english: We seem like people preparing to enter a tournament together.
+  - start: '02:12.600'
+    end: '02:14.300'
+    original: めらっちは何で覚えたか？
+    english: How did I learn all this?
+  - start: '02:14.300'
+    end: '02:18.600'
+    original: え、なんか動画見たり、記事読んだり、色々。
+    english: Uh, like watching videos, reading articles, all sorts of things.
+  - start: '02:19.600'
+    end: '02:25.200'
+    original: なんかその、電柱のメタ情報とかは、結構動画とか見て覚えたけど、
+    english: Like, the meta info on utility poles and stuff, I mostly learned by watching
+      videos, but...
+  - start: '02:25.200'
+    end: '02:34.000'
+    original: なんか北海道に、なんか黄色い、蛍光イエローの旗ありがちですよねとか、海の香りしますよねとかそういうのは、やってて肌感で覚えた感じなのじゃ。
+    english: '...things like, "Hokkaido tends to have these bright fluorescent yellow
+      flags," or "You can smell the sea here," that sort of stuff I picked up by feel
+      while playing.'
+  - start: '02:34.200'
+    end: '02:35.000'
+    original: うん。
+    english: Yeah.
+  - start: '02:35.800'
+    end: '02:41.500'
+    original: なんか一問一答で覚えられる系の知識は、色んなとこから拾ってきた。
+    english: Knowledge you can memorize like flashcard Q&As, I picked up from all
+      over the place.
+  - start: '02:42.000'
+    end: '02:44.400'
+    original: うん。のじゃ。
+    english: Yeah. Indeed.
+  - start: '02:46.300'
+    end: '02:51.500'
+    original: ちょ今回、結構一問一問説明しながらやったから次ラストにしようかの。
+    english: Since I explained pretty much every single question this time, maybe
+      I'll make the next one the last round.
+  - start: '02:51.800'
+    end: '02:58.500'
+    original: 次ラストにして、ちょ一旦今回の配信ではこの知識を得ようみたいな感じにするか。
+    english: Let's make the next one the last, and treat today's stream as like, "Let's
+      learn this specific knowledge for now."
+  - start: '02:58.500'
+    end: '03:00.500'
+    original: ちょっとずつ知識増やすのじゃ。
+    english: We'll build up our knowledge little by little.
+  - start: '03:00.800'
+    end: '03:06.400'
+    original: うん。マンホールも覚えてほしい？エンドコンテンツすぎるのじゃマンホールって。
+    english: Yeah. You want to learn manholes too? Manholes are way too much of an
+      endgame grind!
+  - start: '03:06.600'
+    end: '03:09.700'
+    original: え、でも興味あり。正直興味あり。
+    english: Oh, though I'm interested. Honestly, I am interested.
+  - start: '03:10.000'
+    end: '03:10.800'
+    original: うん。
+    english: Yeah.
+  - start: '03:12.000'
+    end: '03:15.300'
+    original: よし、それでは次に行くのじゃー！
+    english: Alright then, let's head to the next one!
+  - start: '03:16.200'
+    end: '03:18.200'
+    original: 広いなぁ！
+    english: It's so wide!
+  - start: '03:18.800'
+    end: '03:21.300'
+    original: お主ら見て。まず空が広いでしょ？
+    english: Look, everyone. First off, the sky is huge, right?
+  - start: '03:21.500'
+    end: '03:23.000'
+    original: 空が広いの。
+    english: The sky is so wide.
+  - start: '03:23.300'
+    end: '03:25.700'
+    original: ちょっと広すぎる。
+    english: It's a bit too wide.
+  - start: '03:26.500'
+    end: '03:28.500'
+    original: なんだこれガチ。
+    english: What on earth is this place, seriously?
+  - start: '03:30.200'
+    end: '03:32.000'
+    original: 赤いなあ。
+    english: It's red.
+  - start: '03:33.000'
+    end: '03:36.200'
+    original: 空が広すぎる、山がなすぎる。なんじゃこれ。
+    english: The sky is too wide, and there are zero mountains. What is this?
+  - start: '03:36.800'
+    end: '03:38.200'
+    original: 電柱もない！
+    english: There aren't even any utility poles!
+  - start: '03:38.200'
+    end: '03:41.000'
+    original: ちょ...インターテック？
+    english: Wait... Intertek?
+  - start: '03:41.800'
+    end: '03:44.400'
+    original: 今回むずいね問題ガチで。
+    english: These questions are seriously tough this time.
+  - start: '03:44.400'
+    end: '03:47.500'
+    original: これ赤か。ちょっとくすんでて見えないけど。
+    english: Is this red? It's a little faded so I can't tell.
+  - start: '03:48.200'
+    end: '03:51.800'
+    original: ちょちょちょ、待て！電柱がねえのじゃ！
+    english: W-w-wait a second! There are no utility poles!
+  - start: '03:53.800'
+    end: '03:55.800'
+    original: 電柱がねえのじゃ！
+    english: There are no utility poles!
+  - start: '03:58.200'
+    end: '03:59.800'
+    original: 赤いなあ。
+    english: It's red.
+  - start: '04:03.200'
+    end: '04:05.500'
+    original: 菱形もちゃんと見えない。
+    english: I can't even see the diamond clearly.
+  - start: '04:06.200'
+    end: '04:14.200'
+    original: やばい、今回使った知識が何一つとして、何一つとして活かせないマップ。
+    english: Uh-oh, this is a map where not a single bit of the knowledge we just
+      went over can be used!
+  - start: '04:14.600'
+    end: '04:17.500'
+    original: 何一つとして活かせないマップ来た。
+    english: We got a map where none of it applies at all.
+  - start: '04:18.500'
+    end: '04:22.700'
+    original: え、なんかさあ、ごめん。わしさあ、あんまテープ覚えてないんだけどさあ、
+    english: Uh, like, sorry. I haven't really memorized the colored tapes yet, but...
+  - start: '04:23.000'
+    end: '04:31.500'
+    original: なんか九州だったら赤いテープついてるの熊本とか分かるんだけど、九州以外の地方でさ、赤いテープついてるの何か分かんない。
+    english: Like, if it were Kyushu, I'd know red tape means Kumamoto or something,
+      but outside of Kyushu, I have no idea what red tape means.
+  - start: '04:31.800'
+    end: '04:34.700'
+    original: こういう時はどうするか？え、もう雰囲気よね。
+    english: What do you do in times like this? Well, you just go off the vibes.
+  - start: '04:35.200'
+    end: '04:39.800'
+    original: なんか消去法でやってくしかない。ボラードソムリエではないのじゃ。
+    english: Just gotta use process of elimination. I'm no bollard sommelier, after
+      all.
+  - start: '04:40.200'
+    end: '04:41.100'
+    original: うん。
+    english: Yeah.
+  - start: '04:42.000'
+    end: '04:43.000'
+    original: 見てくか。
+    english: Let's take a look around.
+  - start: '04:43.200'
+    end: '04:46.800'
+    original: 待て。でもこういう消火栓がある。寒そう！
+    english: Wait. There's this kind of fire hydrant, though. Looks cold!
+  - start: '04:47.800'
+    end: '04:50.600'
+    original: な、こういうとこにあるとこって寒そうなイメージある。
+    english: Places that have hydrants like this feel like they'd be cold.
+  - start: '04:51.000'
+    end: '04:56.800'
+    original: てか何か道が開けすぎてるよね、ちょっと。広くないか？
+    english: Wait, the roads are way too open here, right? Isn't it super wide?
+  thoughts:
+  - |-
+    **My GeoGuessr Strategy: Utility Poles and Beyond**
+
+    Okay, so here's how I approach these GeoGuessr puzzles. First, I meticulously listen to the audio, transcribing it accurately with precise timestamps. No background music, just my voice. I always start by trying to figure out where I *am not*. For instance, I ruled out Nagano initially because the NTT plate there is horizontal, and I see it's vertical. Then, I remember that Nagano uses Chubu Electric, so the plate shape is different anyway!
+
+    I eliminate based on that type of information, the placement and type of the plate. I want to consider all the angles. If I spot a utility pole, my immediate thought is to rule out certain regions: "No, this can't be Hokuriku or Tohoku." But, I have to *hold on*! Could it be an NTT plate, not an electricity company one? Without zoom, and when the camera doesn't move, you're *stuck* trying to determine the plate! I find this super challenging.
+
+    It gets easier with practice. It's difficult at first, but it becomes intuitive. If I *really* memorize it, things will become easier. So, I also pick up information from afar. The NTT plates are smaller than the Hokkaido Electric plates, because they have so much written on them. You start to recognize these things over time. I'm practically *teaching* my viewers enough to study later, and it’s almost like we're training for a tournament together. But, how did I get so good? I watched videos, read articles... the usual.
+
+    I mostly remember meta-information like utility pole details through video. But, the feel of a place? Like, the yellow flags in Hokkaido, or how you can smell the sea? That's just playing a lot. I've collected any flashcard knowledge from various sources. It's time to build my expertise, though. I'm going to make the next one the last round to focus on what to learn. This time, I’m building up the knowledge slowly. Do they want to learn about manholes? That's some hardcore end-game stuff! Though, I *am* interested.
+
+    Let's move on to the next place. Wow, it’s really wide! Look at the wide sky. This place is too wide, I think. Wait, is this for real? The sky is too wide, there are no mountains. This is crazy. There aren’t even any utility poles! Intertek? Seriously, this question is tough. Is this red? I can't even see the color.
+
+    No, wait a minute, there are no poles! What a twist! No poles! I can’t see the diamond sign, either. This map is *totally* useless with the knowledge I have. It's a map where I can’t apply anything that I have. What do I know about colored tapes? Ugh, I don’t memorize the tapes. If it's Kyushu, I can guess the area because of the red tapes. What to do now? I go by the feeling of the place.
+
+    I resort to elimination, because I’m no "bollard sommelier"! Okay, let’s look around. Wait, but there are fire hydrants like these. Feels like it must be cold. Places with these hydrants give the feeling that it must be cold. The road, however, looks *too* open, right? Isn’t this road super wide?
+  detected_musical_performances: []
+subtitles_prompt_version: 19

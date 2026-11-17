@@ -1,0 +1,484 @@
+name: part_003
+total_attempts: 1
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '電柱ソムリエの一歩も動かないGeoGuessr【ホロライブ/熱千めら】'.
+segment_index: null
+video_duration_ms: 301841
+segment_offset_ms: 900224
+global_summary:
+  overall_summary: In this livestream from Hololive's 'Asobi★Mawaritai!' unit member
+    Netsuchi Mela (熱千めら), she plays GeoGuessr in 'no-move' mode while sharing her
+    extensive knowledge and strategies for identifying Japanese locations using utility
+    pole plates, regional electric companies (such as TEPCO, Chubu Electric, and Hokkaido
+    Electric), area codes, asphalt markings, housing styles, and regional topography.
+    Throughout the stream, Mela combines quirky commentary and interactive banter
+    with her chat ('dopari-listeners') with humorous insights into why humans don't
+    normally memorize telephone area codes or utility plate numbers.
+  chapters:
+  - start: 00:00
+    end: 03:30
+    title: Opening Banter and Stream Setup
+    description: Mela starts the stream wearing a mask, greets her chat, and talks
+      about her vtuber debut and recent streaming activities.
+    song_title: null
+    song_artist: null
+  - start: 03:30
+    end: 07:40
+    title: Discovering Her GeoGuessr Talent
+    description: Mela discusses how she didn't realize until her debut stream that
+      identifying Japanese regions by telephone poles and utility plates was considered
+      a rare special skill.
+    song_title: null
+    song_artist: null
+  - start: 07:40
+    end: '35:00'
+    title: GeoGuessr Beginner Lecture
+    description: Mela explains the fundamentals of GeoGuessr, including 47 prefectures,
+      area codes, utility poles, manholes, house roofs, and asphalt markings like
+      stop signs and diamond marks.
+    song_title: null
+    song_artist: null
+  - start: '35:00'
+    end: '61:00'
+    title: 'No-Move GeoGuessr: Rounds 1 to 4'
+    description: Mela plays GeoGuessr in no-move mode, analyzing electric poles, region
+      plates, terrain, and weather, visiting places like Gotemba in Shizuoka, Ube
+      in Yamaguchi, Itakura in Gunma, and Otaru in Hokkaido.
+    song_title: null
+    song_artist: null
+  - start: '61:00'
+    end: '63:30'
+    title: Electric Power Company Plate Breakdown
+    description: Mela breaks down the differences between TEPCO, Chubu Electric, Tohoku
+      Electric, and Hokkaido Electric utility poles and their top plates.
+    song_title: null
+    song_artist: null
+  - start: '63:30'
+    end: '19:00'
+    title: 'No-Move GeoGuessr: Round 5 Onward & Rapid Play'
+    description: Mela plays rapid-fire no-move rounds in Osaka, Tokushima, Iwate/Akita,
+      Okinawa, and Miyagi, interacting with chat and refining her regional deduction
+      skills.
+    song_title: null
+    song_artist: null
+  - start: '19:00'
+    end: '31:00'
+    title: Stream Wrap-Up and Schedule Announcements
+    description: Mela reflects on her love for GeoGuessr, discusses future collaboration
+      plans with AZKi, announces the weekly schedule, and gives closing remarks.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Netsuchi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A 415-year-old fire salamander firefighter from the Edo period who
+      serves as the 'goryaku' (good fortune/protection) representative for the Hololive
+      unit 'Asobi★Mawaritai!'.
+    speech_patterns_or_ticks: Uses the old-fashioned pronoun 'washi' (わし), sentence
+      ending '-のじゃ' / '-のじゃー', and signature greetings like 'あらあら、めろめろ、あちち、めろー'.
+    visual_cues: Red and fire motif, salamander traits, starts streams wearing a mask
+      before removing it.
+  domain_glossary:
+  - term: ジオゲッサー
+    meaning: GeoGuessr, a geography browser game where players are dropped into Google
+      Street View locations and must guess where they are on a map.
+  - term: ノームーブ
+    meaning: No-Move mode in GeoGuessr where players cannot move, walk, or pan away
+      from their initial spawn point.
+  - term: 電柱ソムリエ
+    meaning: A nickname or slang for someone who identifies geographic locations based
+      on utility pole plates, wiring, and hardware.
+  - term: 市外局番
+    meaning: Japanese telephone area codes (e.g., 03 for Tokyo, 01 for Hokkaido) used
+      to narrow down regions in GeoGuessr.
+  - term: 低圧スペーサー
+    meaning: Low-voltage utility pole fittings commonly found on Hokkaido Electric
+      Power poles.
+  - term: 東電 / 中電 / 北電
+    meaning: Regional electric power companies (TEPCO, Chubu Electric, Hokkaido Electric)
+      whose pole plates and structural designs vary across Japan.
+  - term: どぱる
+    meaning: Mela's coined slang for getting extremely excited or thrilled when successfully
+      guessing a location.
+  - term: アソビ★まわり隊！
+    meaning: Hololive unit consisting of Netsuchi Mela, Momosuzu Kyoko, Suzune Tsuzuri,
+      and Soraka Sopia.
+  thoughts:
+  - |-
+    **Analyzing a Long GeoGuessr Video: Initial Thoughts**
+
+    Okay, here's what I'm thinking. I've got `video_1.webm` to look at, which is a significant chunk of time – over two hours. That's a dedicated session! The user context tells me it's from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel, and the video title is something about a "Telephone Pole Sommelier" doing GeoGuessr, specifically "Don't-Move-Anymore GeoGuessr" – that's potentially interesting. A static GeoGuessr round could provide a fascinating set of challenges.
+
+    Before I dive too deep, I need to know the context of "Netsuchi Mela". I'm remembering that ReGLOSS / Hololive / Hololive Indonesia / Hololive English / Dev_Is are mentioned, so I should clarify. Is "熱千めら" a specific person or a group? Should I search for “熱千めら” to see, or should I start with the ASR for this video? Let's be efficient here. I think I'll use `load_video` with `include_asr=True` to get an initial overview. The ASR will give me a first pass at the content. It will also help me identify "Netsuchi Mela" and save time. Let's start there.
+  - |-
+    **My Analysis of the Video Content**
+
+    Okay, fantastic! I've got the ASR data and a general understanding of the video's subject matter. Now, let's break down the requirements and approach this systematically.
+
+    First, I need to generate an `overall_summary` – a concise overview, maybe one or two paragraphs max. I'll need to encapsulate the core purpose, the overall tone of the video, and how the narrative progresses.
+
+    Next is the `chapters` section. I'll divide the video into natural segments chronologically, accurately marking the timestamps in `MM:SS` or `HH:MM:SS` format. For each chapter, I'll need a clear title, a brief description of the content, and then the metadata for `song_title` and `song_artist`, which will be `null` since this appears to be a gameplay or chat stream, not a performance.
+
+    The `entities` section is next, and I need to be precise here. I know the central figure is Netsuchi Mela (熱千めら), and I have some initial information about her persona, like the fire salamander motif, her role in disaster prevention or fire protection, and some of her characteristic speech patterns. I should include all these details. I have to confirm her affiliation by searching, to ensure I'm using the correct term: Hololive, Hololive production, or perhaps Dev_Is/ReGLOSS? I'll need to search to confirm this detail. I'll also note her speech patterns/ticks such as `-のじゃ`, `-のじゃー`, `-おじゃばんわ`, `-どぱる`, `-ドパリスナー`, and `-ドパワッパ`. And finally, I should list any of her visual cues such as salamander elements and the red/fire theme.
+
+    Finally, I'll address the `domain_glossary`. I understand this video likely involves GeoGuessr, so I will need to identify and define relevant terms such as "Nomove mode," "pole plates" (likely referring to NTT plates and utility pole plates), "area codes" (市外局番), "diamond marks" (ダイヤマーク), and any other GeoGuessr-specific vocabulary that comes up.
+
+    Before I dive into any of this, I'll do a quick search for "Netsuchi Mela" (`熱千めら`) to verify her official lore, confirm agency affiliation, and pinpoint her debut date if possible. This upfront research is critical for accuracy.
+  - |-
+    {
+      "summary": {
+        "header": "**A GeoGuessr Deep Dive with Netsuchi Mela**",
+        "content": "Right, here's what I've got from the stream. Netsuchi Mela, the Hololive fire salamander, is back at it, this time focusing on GeoGuessr. It's a 'no-move' playthrough, which means we're really digging into the details. She's using her 'Telephone Pole Sommelier' skills, as she calls it. Apparently, identifying locations based on utility pole plates (TEPCO, Chubu Electric, Hokkaido Electric – all crucial details), area codes, asphalt markings, and the architecture is her specialty, and, frankly, fascinating. We're looking at things like those low-voltage spacers on Hokkaido poles and the whole game of distinguishing them. She's got this whole schtick with old-fashioned language and expressions like 'washi' and 'doparu' when she gets excited about a good find. The stream breaks down nicely: intro and introductions, her explanation of how she discovered her unusual ability, the fundamentals of GeoGuessr and the Japanese prefectures, then the actual gameplay with rounds in places like Gotemba, Ube, Itakura, and Otaru. We get a real deep dive into the electric company pole distinctions. It concludes with rapid-fire rounds and some announcements. It's clear she's focusing on her 'Asobi★Mawaritai!' unit activities, as well. All very structured and well-presented.",
+        "key_elements": {
+          "focus": "No-Move GeoGuessr",
+          "strategy": "Utility pole and regional cues identification",
+          "personality": "Quirky commentary, slang, and old-fashioned language",
+          "expertise": "Japanese regional geography",
+          "references": [
+            "TEPCO, Chubu Electric, Hokkaido Electric",
+            "Area codes (e.g., 03, 01)",
+            "Asphalt markings like 'tomare'",
+            "Low-voltage spacers"
+          ]
+        }
+model_name: null
+service_tier: null
+agentic_video: false
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.280'
+    end: '00:02.180'
+    original: ああ、市外局番かな？
+    english: Ah, area codes, maybe?
+  - start: '00:02.450'
+    end: '00:04.700'
+    original: お主ら市外局番わかる？
+    english: Do you all know what area codes are?
+  - start: '00:07.600'
+    end: '00:09.750'
+    original: 市外局番を知っていますか？
+    english: Do you know about area codes?
+  - start: '00:11.150'
+    end: '00:13.200'
+    original: お主ら、あ、あの全部言わないでね。
+    english: Hey you guys, uh, don't say the whole thing, okay?
+  - start: '00:13.250'
+    end: '00:14.700'
+    original: 全部言っちゃダメなんだけど、
+    english: You mustn't say your whole number, but...
+  - start: '00:14.700'
+    end: '00:17.250'
+    original: その実家の固定電話の...
+    english: for your parents' house landline...
+  - start: '00:17.550'
+    end: '00:19.000'
+    original: 言っちゃダメだよ！
+    english: Don't say it!
+  - start: '00:19.000'
+    end: '00:22.000'
+    original: 絶対書かないでね！絶対コメントに書かないでね、危ないからね！
+    english: Definitely don't write it! Never write it in the comments, it's dangerous!
+  - start: '00:22.400'
+    end: '00:24.800'
+    original: 市外局番というのがあって...
+    english: There's this thing called an area code...
+  - start: '00:25.800'
+    end: '00:26.500'
+    original: そう。
+    english: Yeah.
+  - start: '00:27.000'
+    end: '00:28.500'
+    original: 絶対書かないでね！
+    english: Definitely don't write it!
+  - start: '00:29.000'
+    end: '00:30.650'
+    original: 090は違うのじゃ。
+    english: 090 isn't one.
+  - start: '00:30.800'
+    end: '00:32.350'
+    original: 090は違うのじゃ。
+    english: 090 isn't it.
+  - start: '00:34.100'
+    end: '00:35.000'
+    original: なんか...
+    english: Like...
+  - start: '00:35.500'
+    end: '00:38.500'
+    original: 例えば東京だったら03とか。
+    english: For example, in Tokyo it's 03 or something.
+  - start: '00:39.400'
+    end: '00:46.300'
+    original: 東京の固定電話は割と03とか、あの044とかか、から始まるのが多いみたいな。
+    english: Tokyo landlines mostly start with 03, or like 044 or something like that.
+  - start: '00:46.900'
+    end: '00:51.000'
+    original: ちょこれもね、ちょ分かりやすくね、お主らに見せてあげる。
+    english: Let me show this to you all in an easy-to-understand way.
+  - start: '00:51.500'
+    end: '00:54.300'
+    original: 例えば...これ北海道ね。
+    english: For example... this is Hokkaido.
+  - start: '00:54.300'
+    end: '00:55.800'
+    original: これが日本だとして...
+    english: Assuming this is Japan...
+  - start: '00:56.000'
+    end: '01:02.100'
+    original: これが日本だとした時に、あの北海道の市外局番は絶対に01なの。
+    english: Assuming this is Japan, Hokkaido's area code is always 01.
+  - start: '01:02.100'
+    end: '01:03.400'
+    original: 01から始まるの。
+    english: It starts with 01.
+  - start: '01:03.900'
+    end: '01:05.800'
+    original: 01から始まるのが北海道なんじゃよ。
+    english: The ones starting with 01 are Hokkaido.
+  - start: '01:05.900'
+    end: '01:07.800'
+    original: あ、0120は違うよ！
+    english: Oh, 0120 is different!
+  - start: '01:07.800'
+    end: '01:12.600'
+    original: 0120は違うけど、その札幌あたりが011...
+    english: 0120 is different, but around Sapporo it's 011...
+  - start: '01:13.000'
+    end: '01:15.300'
+    original: で、なんかその...みたいな感じで、
+    english: and like that... sort of thing,
+  - start: '01:15.300'
+    end: '01:19.200'
+    original: まあその、北海道の中でも細かく分かれてくんじゃけど、
+    english: well, it gets divided even further within Hokkaido,
+  - start: '01:20.400'
+    end: '01:23.100'
+    original: ま、この辺は01から始まるよね、とか。
+    english: like, this area starts with 01, or...
+  - start: '01:23.400'
+    end: '01:26.700'
+    original: 九州だったら09から始まるよね、とか。
+    english: if it's Kyushu, it starts with 09, or...
+  - start: '01:27.500'
+    end: '01:30.000'
+    original: そう。あ、0120は違うのじゃ。
+    english: Right. Oh, 0120 is different.
+  - start: '01:30.200'
+    end: '01:34.200'
+    original: そう。で、なんかこの辺も、なんか01の...
+    english: Yeah. And around here too, it's like 01...
+  - start: '01:34.600'
+    end: '01:40.200'
+    original: で、あの北海道が016までだから、こっから017だな、とか。
+    english: And since Hokkaido goes up to 016, from here it's 017, or...
+  - start: '01:40.200'
+    end: '01:41.000'
+    original: そう。
+    english: Yeah.
+  - start: '01:41.200'
+    end: '01:45.200'
+    original: で、なんかだいたいこの辺が02から始まるな、とか。
+    english: And roughly around here starts with 02, or...
+  - start: '01:45.800'
+    end: '01:51.700'
+    original: で東京03で、この周りの方が04だな、とか。
+    english: Then Tokyo is 03, and the surrounding areas are 04, or...
+  - start: '01:53.500'
+    end: '01:55.800'
+    original: そう、上から順番になってるのじゃ。
+    english: Yeah, they go in order from the top.
+  - start: '01:56.000'
+    end: '01:58.000'
+    original: でなんかこの辺が05で...
+    english: And around here is 05...
+  - start: '01:58.000'
+    end: '02:02.000'
+    original: ちょ、下手くそだな。書くのが下手くそで圧迫されてきちゃってるんじゃが。
+    english: Wait, I'm bad at this. My drawing is so bad it's getting all cramped
+      up.
+  - start: '02:02.500'
+    end: '02:04.200'
+    original: でなんか07...
+    english: And then like 07...
+  - start: '02:05.300'
+    end: '02:06.100'
+    original: そう。
+    english: Yeah.
+  - start: '02:07.600'
+    end: '02:12.100'
+    original: でなんかここにまあ、ちょっと地図がごちゃごちゃだから06が入りきらないんじゃけど。
+    english: And here, well, the map is a bit messy so 06 doesn't quite fit.
+  - start: '02:12.600'
+    end: '02:14.200'
+    original: で08...
+    english: Then 08...
+  - start: '02:15.100'
+    end: '02:18.800'
+    original: でこっちも08ね。これ08後半...がこっち。
+    english: And here is 08 too. The latter half of 08... is over here.
+  - start: '02:20.400'
+    end: '02:21.100'
+    original: うん。
+    english: Yeah.
+  - start: '02:22.400'
+    end: '02:25.000'
+    original: みたいなのがあるの。
+    english: There's a system like that.
+  - start: '02:26.300'
+    end: '02:27.800'
+    original: みたいなのがあるのじゃ。
+    english: There's a system like that.
+  - start: '02:27.800'
+    end: '02:36.200'
+    original: ちょ06、ちょっとわしの地図が...地図のデフォルメが下手すぎて追いやられた。追いやられてしまったんじゃが。うん。
+    english: Wait, 06... my map simplification was so bad that 06 got pushed out.
+      It got pushed out, yeah.
+  - start: '02:36.900'
+    end: '02:44.700'
+    original: で、例えばお主らがジオゲッサーでね、知らないところに降り立ったとするじゃろ？
+    english: And say, in GeoGuessr, you drop into some unknown place, right?
+  - start: '02:44.900'
+    end: '02:49.000'
+    original: 降り立った時に、「はっ、広告がある！」って思うの。
+    english: When you land there, you think, "Aha, there's an ad!"
+  - start: '02:49.000'
+    end: '02:50.600'
+    original: いろんな広告があるじゃろ？
+    english: There are all kinds of ads, right?
+  - start: '02:51.400'
+    end: '02:56.000'
+    original: なんか歯医者さんの広告とかさ、看板があると思うの。
+    english: Like a dentist's ad or something, there are signboards.
+  - start: '02:56.000'
+    end: '02:59.000'
+    original: で、そこにだいたい固定電話の番号が書いてるのじゃ。
+    english: And usually, a landline phone number is written on them.
+  - start: '02:59.400'
+    end: '03:02.000'
+    original: そう。09なんとかみたいなのが書いてあって、
+    english: Yeah. Something like 09-whatever is written there,
+  - start: '03:02.400'
+    end: '03:09.000'
+    original: 「あ、09ってことは九州あたりかな」とか、その看板をパッと見て市外局番で当てるみたいな。
+    english: and you go, "Oh, 09 means somewhere around Kyushu," and you glance at
+      the sign and guess from the area code.
+  - start: '03:10.300'
+    end: '03:18.600'
+    original: ま逆に0120とか080とか、明らかにこれは携帯電話だなとかフリーダイヤルだなとか、そういうのは参考にならないんじゃけど。
+    english: Conversely, 0120 or 080, which are obviously cell phones or toll-free
+      numbers, aren't helpful at all, though.
+  - start: '03:19.000'
+    end: '03:22.800'
+    original: そんな感じで地方を絞っていくみたいなのがあって。
+    english: Things like that let you narrow down the region.
+  - start: '03:23.200'
+    end: '03:27.200'
+    original: で結構見落としがちなのが、ちょっと今沖縄の話しなかったんだけど、
+    english: And what people tend to overlook—I didn't mention Okinawa just now,
+  - start: '03:27.200'
+    end: '03:30.000'
+    original: 沖縄が098で...
+    english: Okinawa is 098...
+  - start: '03:30.200'
+    end: '03:37.700'
+    original: で沖縄098なんじゃけど、沖縄とあの宮崎？宮崎だっけ？も098だっけ？
+    english: And Okinawa is 098, but Okinawa and... Miyazaki? Was it Miyazaki? Is
+      that 098 too?
+  - start: '03:38.500'
+    end: '03:40.700'
+    original: うん、なんか098だった気がする。
+    english: Yeah, I feel like it was 098.
+  - start: '03:42.000'
+    end: '03:42.800'
+    original: うん。
+    english: Yeah.
+  - start: '03:43.200'
+    end: '03:49.500'
+    original: から、なんかその...それでなんかどっちか惑わされないようにみたいな。
+    english: So, yeah... you have to be careful not to get tricked between the two,
+      or something like that.
+  - start: '03:49.500'
+    end: '03:52.700'
+    original: とか、まいろいろそういうのもあるんじゃけど。
+    english: And well, there's all sorts of stuff like that.
+  - start: '03:53.000'
+    end: '03:53.700'
+    original: うん。
+    english: Yeah.
+  - start: '03:53.800'
+    end: '03:58.200'
+    original: みたいな感じで、市外局番は結構マストで覚えた方がいい。
+    english: So like that, area codes are pretty much a must to memorize.
+  - start: '03:58.500'
+    end: '04:04.200'
+    original: ジオゲッサーをやってく、ノームーブでやってく上で覚えておくと結構楽。
+    english: It makes things much easier when playing GeoGuessr, especially in No-Move
+      mode.
+  - start: '04:04.300'
+    end: '04:08.000'
+    original: だから市外局番は覚えたい。
+    english: So, I want to memorize area codes.
+  - start: '04:09.800'
+    end: '04:11.600'
+    original: あとはなんだろう...
+    english: What else is there...
+  - start: '04:12.800'
+    end: '04:14.000'
+    original: 電柱か！
+    english: Utility poles!
+  - start: '04:14.600'
+    end: '04:15.700'
+    original: 電柱ね。
+    english: Utility poles, yeah.
+  - start: '04:17.200'
+    end: '04:22.800'
+    original: 電柱は...今日の配信は結構電柱を見て当てていくんじゃけど。
+    english: Utility poles... in today's stream, I'll be guessing a lot by looking
+      at utility poles.
+  - start: '04:25.000'
+    end: '04:25.800'
+    original: うん。
+    english: Yeah.
+  - start: '04:26.700'
+    end: '04:36.200'
+    original: 当てていくんじゃけど、えっと、電柱のその使ってるパーツみたいなのを見て「あ、これは何電力だな」とか、
+    english: I'll be guessing with them, and um, you look at the parts used on the
+      utility pole and go "Oh, this is such-and-such Electric Power," or...
+  - start: '04:36.400'
+    end: '04:42.600'
+    original: パーツとか、あの付いてるもの、付いてるプレートとかを見て当てたり...もできる。
+    english: you can also guess by looking at the parts or the attached stuff, like
+      the plates attached to them.
+  - start: '04:42.600'
+    end: '04:53.500'
+    original: ただし中国電力という結構トリッキーな電力会社があって、中国電力は結構いろんな電力のものがごちゃ混ぜになっていたりみたいな...
+    english: However, there's a pretty tricky power company called Chugoku Electric
+      Power, and Chugoku Electric tends to have a mix of parts from various other
+      power companies...
+  - start: '04:54.800'
+    end: '05:01.700'
+    original: ちょっと難しい...完全に電柱で100%判断できることもあれば、できないこともあるみたいな。
+    english: it's a bit difficult... sometimes you can tell 100% from the utility
+      pole, and sometimes you can't.
+  thoughts:
+  - |-
+    **My Thoughts on Area Codes and GeoGuessr**
+
+    Okay, here's what I'm thinking. I'm going to carefully transcribe this audio, making sure to capture every timestamp. No singing or music here, just the stream of thought. I need to be precise.
+
+    Let's see… I'm thinking about area codes. Remember, don't just blurt them out! Never post someone's personal info! But area codes, like the ones used with landlines, can be really useful. I want to point out how area codes can be used to figure out locations.
+
+    Like, if I see a sign in a GeoGuessr game, I can sometimes use that number to tell what area it's from. The trick is to focus on landline numbers and ignore free ones or cell phone numbers. I want to memorize them!
+
+    For instance, when I see a sign, I think, "Oh, that's 09, that might be Kyushu!". I just have to know, 0120 isn't helpful, and neither is 080. If I see 09, that might be Kyushu! And Tokyo is 03, sometimes 044, which is helpful.
+
+    Now, I was looking at a map. Hokkaido, for example, is always 01, like 011 and so on. It's like a system. Kyushu is 09. Sometimes you have to think and compare, what is 0120... is that the same?
+
+    So if I'm in GeoGuessr, and I see a landline number on a sign, I can use that to narrow down the area. I could look at a map, and use that as a guide. They mostly go in order, from 01 through 09.
+
+    Oh, and don't forget Okinawa. It's 098. Well, it's 098! And that, I have to remember. Oh! Is Miyazaki also 098?
+
+    Another thing to remember is power poles. I'm going to focus on them for the stream today. I can guess locations by looking at power poles. You can identify the electrical company by looking at the parts, or the plates. But sometimes, it's tricky. There's this company, Chugoku Electric Power, that mixes up parts! So, sometimes I can't rely completely on just the poles.
+  detected_musical_performances: []
+subtitles_prompt_version: 19

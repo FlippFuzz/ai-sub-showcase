@@ -1,0 +1,413 @@
+name: part_016
+total_attempts: 1
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '電柱ソムリエの一歩も動かないGeoGuessr【ホロライブ/熱千めら】'.
+segment_index: null
+video_duration_ms: 303815
+segment_offset_ms: 4800435
+global_summary:
+  overall_summary: In this livestream from Hololive's 'Asobi★Mawaritai!' unit member
+    Netsuchi Mela (熱千めら), she plays GeoGuessr in 'no-move' mode while sharing her
+    extensive knowledge and strategies for identifying Japanese locations using utility
+    pole plates, regional electric companies (such as TEPCO, Chubu Electric, and Hokkaido
+    Electric), area codes, asphalt markings, housing styles, and regional topography.
+    Throughout the stream, Mela combines quirky commentary and interactive banter
+    with her chat ('dopari-listeners') with humorous insights into why humans don't
+    normally memorize telephone area codes or utility plate numbers.
+  chapters:
+  - start: 00:00
+    end: 03:30
+    title: Opening Banter and Stream Setup
+    description: Mela starts the stream wearing a mask, greets her chat, and talks
+      about her vtuber debut and recent streaming activities.
+    song_title: null
+    song_artist: null
+  - start: 03:30
+    end: 07:40
+    title: Discovering Her GeoGuessr Talent
+    description: Mela discusses how she didn't realize until her debut stream that
+      identifying Japanese regions by telephone poles and utility plates was considered
+      a rare special skill.
+    song_title: null
+    song_artist: null
+  - start: 07:40
+    end: '35:00'
+    title: GeoGuessr Beginner Lecture
+    description: Mela explains the fundamentals of GeoGuessr, including 47 prefectures,
+      area codes, utility poles, manholes, house roofs, and asphalt markings like
+      stop signs and diamond marks.
+    song_title: null
+    song_artist: null
+  - start: '35:00'
+    end: '61:00'
+    title: 'No-Move GeoGuessr: Rounds 1 to 4'
+    description: Mela plays GeoGuessr in no-move mode, analyzing electric poles, region
+      plates, terrain, and weather, visiting places like Gotemba in Shizuoka, Ube
+      in Yamaguchi, Itakura in Gunma, and Otaru in Hokkaido.
+    song_title: null
+    song_artist: null
+  - start: '61:00'
+    end: '63:30'
+    title: Electric Power Company Plate Breakdown
+    description: Mela breaks down the differences between TEPCO, Chubu Electric, Tohoku
+      Electric, and Hokkaido Electric utility poles and their top plates.
+    song_title: null
+    song_artist: null
+  - start: '63:30'
+    end: '19:00'
+    title: 'No-Move GeoGuessr: Round 5 Onward & Rapid Play'
+    description: Mela plays rapid-fire no-move rounds in Osaka, Tokushima, Iwate/Akita,
+      Okinawa, and Miyagi, interacting with chat and refining her regional deduction
+      skills.
+    song_title: null
+    song_artist: null
+  - start: '19:00'
+    end: '31:00'
+    title: Stream Wrap-Up and Schedule Announcements
+    description: Mela reflects on her love for GeoGuessr, discusses future collaboration
+      plans with AZKi, announces the weekly schedule, and gives closing remarks.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Netsuchi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A 415-year-old fire salamander firefighter from the Edo period who
+      serves as the 'goryaku' (good fortune/protection) representative for the Hololive
+      unit 'Asobi★Mawaritai!'.
+    speech_patterns_or_ticks: Uses the old-fashioned pronoun 'washi' (わし), sentence
+      ending '-のじゃ' / '-のじゃー', and signature greetings like 'あらあら、めろめろ、あちち、めろー'.
+    visual_cues: Red and fire motif, salamander traits, starts streams wearing a mask
+      before removing it.
+  domain_glossary:
+  - term: ジオゲッサー
+    meaning: GeoGuessr, a geography browser game where players are dropped into Google
+      Street View locations and must guess where they are on a map.
+  - term: ノームーブ
+    meaning: No-Move mode in GeoGuessr where players cannot move, walk, or pan away
+      from their initial spawn point.
+  - term: 電柱ソムリエ
+    meaning: A nickname or slang for someone who identifies geographic locations based
+      on utility pole plates, wiring, and hardware.
+  - term: 市外局番
+    meaning: Japanese telephone area codes (e.g., 03 for Tokyo, 01 for Hokkaido) used
+      to narrow down regions in GeoGuessr.
+  - term: 低圧スペーサー
+    meaning: Low-voltage utility pole fittings commonly found on Hokkaido Electric
+      Power poles.
+  - term: 東電 / 中電 / 北電
+    meaning: Regional electric power companies (TEPCO, Chubu Electric, Hokkaido Electric)
+      whose pole plates and structural designs vary across Japan.
+  - term: どぱる
+    meaning: Mela's coined slang for getting extremely excited or thrilled when successfully
+      guessing a location.
+  - term: アソビ★まわり隊！
+    meaning: Hololive unit consisting of Netsuchi Mela, Momosuzu Kyoko, Suzune Tsuzuri,
+      and Soraka Sopia.
+  thoughts:
+  - |-
+    **Analyzing a Long GeoGuessr Video: Initial Thoughts**
+
+    Okay, here's what I'm thinking. I've got `video_1.webm` to look at, which is a significant chunk of time – over two hours. That's a dedicated session! The user context tells me it's from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel, and the video title is something about a "Telephone Pole Sommelier" doing GeoGuessr, specifically "Don't-Move-Anymore GeoGuessr" – that's potentially interesting. A static GeoGuessr round could provide a fascinating set of challenges.
+
+    Before I dive too deep, I need to know the context of "Netsuchi Mela". I'm remembering that ReGLOSS / Hololive / Hololive Indonesia / Hololive English / Dev_Is are mentioned, so I should clarify. Is "熱千めら" a specific person or a group? Should I search for “熱千めら” to see, or should I start with the ASR for this video? Let's be efficient here. I think I'll use `load_video` with `include_asr=True` to get an initial overview. The ASR will give me a first pass at the content. It will also help me identify "Netsuchi Mela" and save time. Let's start there.
+  - |-
+    **My Analysis of the Video Content**
+
+    Okay, fantastic! I've got the ASR data and a general understanding of the video's subject matter. Now, let's break down the requirements and approach this systematically.
+
+    First, I need to generate an `overall_summary` – a concise overview, maybe one or two paragraphs max. I'll need to encapsulate the core purpose, the overall tone of the video, and how the narrative progresses.
+
+    Next is the `chapters` section. I'll divide the video into natural segments chronologically, accurately marking the timestamps in `MM:SS` or `HH:MM:SS` format. For each chapter, I'll need a clear title, a brief description of the content, and then the metadata for `song_title` and `song_artist`, which will be `null` since this appears to be a gameplay or chat stream, not a performance.
+
+    The `entities` section is next, and I need to be precise here. I know the central figure is Netsuchi Mela (熱千めら), and I have some initial information about her persona, like the fire salamander motif, her role in disaster prevention or fire protection, and some of her characteristic speech patterns. I should include all these details. I have to confirm her affiliation by searching, to ensure I'm using the correct term: Hololive, Hololive production, or perhaps Dev_Is/ReGLOSS? I'll need to search to confirm this detail. I'll also note her speech patterns/ticks such as `-のじゃ`, `-のじゃー`, `-おじゃばんわ`, `-どぱる`, `-ドパリスナー`, and `-ドパワッパ`. And finally, I should list any of her visual cues such as salamander elements and the red/fire theme.
+
+    Finally, I'll address the `domain_glossary`. I understand this video likely involves GeoGuessr, so I will need to identify and define relevant terms such as "Nomove mode," "pole plates" (likely referring to NTT plates and utility pole plates), "area codes" (市外局番), "diamond marks" (ダイヤマーク), and any other GeoGuessr-specific vocabulary that comes up.
+
+    Before I dive into any of this, I'll do a quick search for "Netsuchi Mela" (`熱千めら`) to verify her official lore, confirm agency affiliation, and pinpoint her debut date if possible. This upfront research is critical for accuracy.
+  - |-
+    {
+      "summary": {
+        "header": "**A GeoGuessr Deep Dive with Netsuchi Mela**",
+        "content": "Right, here's what I've got from the stream. Netsuchi Mela, the Hololive fire salamander, is back at it, this time focusing on GeoGuessr. It's a 'no-move' playthrough, which means we're really digging into the details. She's using her 'Telephone Pole Sommelier' skills, as she calls it. Apparently, identifying locations based on utility pole plates (TEPCO, Chubu Electric, Hokkaido Electric – all crucial details), area codes, asphalt markings, and the architecture is her specialty, and, frankly, fascinating. We're looking at things like those low-voltage spacers on Hokkaido poles and the whole game of distinguishing them. She's got this whole schtick with old-fashioned language and expressions like 'washi' and 'doparu' when she gets excited about a good find. The stream breaks down nicely: intro and introductions, her explanation of how she discovered her unusual ability, the fundamentals of GeoGuessr and the Japanese prefectures, then the actual gameplay with rounds in places like Gotemba, Ube, Itakura, and Otaru. We get a real deep dive into the electric company pole distinctions. It concludes with rapid-fire rounds and some announcements. It's clear she's focusing on her 'Asobi★Mawaritai!' unit activities, as well. All very structured and well-presented.",
+        "key_elements": {
+          "focus": "No-Move GeoGuessr",
+          "strategy": "Utility pole and regional cues identification",
+          "personality": "Quirky commentary, slang, and old-fashioned language",
+          "expertise": "Japanese regional geography",
+          "references": [
+            "TEPCO, Chubu Electric, Hokkaido Electric",
+            "Area codes (e.g., 03, 01)",
+            "Asphalt markings like 'tomare'",
+            "Low-voltage spacers"
+          ]
+        }
+model_name: null
+service_tier: null
+agentic_video: false
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.280'
+    end: '00:04.250'
+    original: 広く、広い視野で空が見えるなぁってのが気になります。
+    english: I notice that you can see the sky with such a wide, open view.
+  - start: '00:04.250'
+    end: '00:06.850'
+    original: まあまあ、高い位置だからというのはあるな。そして坂。
+    english: Well, that's partly because we're up high. And there's a slope.
+  - start: '00:07.300'
+    end: '00:13.200'
+    original: 坂があるということは、まあこの辺が山になっているか、もしくは海の近くかということが分かるのじゃ。
+    english: Having a slope tells me that this area is either mountainous or near
+      the sea.
+  - start: '00:13.900'
+    end: '00:15.200'
+    original: そうした時に、
+    english: With that in mind...
+  - start: '00:15.800'
+    end: '00:21.550'
+    original: ま、この辺が、じゃあ高くなってる場所だとして、下の方に絶対市街地があるなと思うのじゃ。
+    english: assuming this spot here is on higher ground, I'm sure there's a downtown
+      area down below.
+  - start: '00:21.850'
+    end: '00:24.850'
+    original: 市街地があるなぁ…
+    english: There is a downtown area...
+  - start: '00:25.950'
+    end: '00:30.650'
+    original: ま、ちょっと分かりづらいがこの辺。ここかな？こっち側かな？
+    english: Well, it's a bit hard to tell, somewhere around here. Here maybe? Or
+      over this way?
+  - start: '00:30.650'
+    end: '00:38.550'
+    original: この辺、地図だと分かりづらいんだよな。この、このマップだと、意外と平坦に見えるんだよなこの辺。
+    english: It's hard to tell on the map around here. On this map, this area actually
+      looks surprisingly flat.
+  - start: '00:39.250'
+    end: '00:48.550'
+    original: で、なんかまあ、南側に海っぽい感じがし…あ、確かに。南側に海っぽい香りを感じ取れていればこの辺に置けたかもな。
+    english: And, well, it felt like the sea was to the south... oh, indeed. If I
+      had picked up on the scent of the sea to the south, I might have placed my pin
+      around here.
+  - start: '00:48.550'
+    end: '00:50.550'
+    original: この辺だもんね、海。
+    english: The ocean is right here, after all.
+  - start: '00:50.550'
+    end: '00:55.150'
+    original: うん、ちょっと海の匂いを感じ取るのが能力がちょっと今回低かったなと。
+    english: Yeah, my ability to sense the smell of the sea was a little lacking this
+      time.
+  - start: '00:55.450'
+    end: '01:00.750'
+    original: ま、でもそもそも小樽市かも分かってない状態で、小樽市まで寄せられたのはかなり偉いかも。
+    english: Still, considering I didn't even know it was Otaru City at first, getting
+      it close to Otaru is pretty impressive.
+  - start: '01:01.050'
+    end: '01:05.750'
+    original: 「41番のような数字の数は各県共通か？」いえ、共通じゃないのじゃ。
+    english: '"Is the number count like ''41'' the same in every prefecture?" No,
+      it''s not the same.'
+  - start: '01:06.150'
+    end: '01:12.350'
+    original: えっと、番号で場所が特定できるのは、わりと北海道の強み的なところがあり…
+    english: Well, being able to pinpoint locations by those numbers is kind of a
+      unique strength of Hokkaido...
+  - start: '01:12.350'
+    end: '01:19.150'
+    original: うん。ここで4、この41で分かるのは、てかこの、プレートが、これ北電って書いてるじゃろ。
+    english: Yeah. What you can tell from this 41... or rather, this plate says 'Hokuden'
+      on it, right?
+  - start: '01:19.350'
+    end: '01:22.450'
+    original: 北海道電力固有のプレートじゃから、
+    english: Since it's a plate unique to Hokkaido Electric Power...
+  - start: '01:22.450'
+    end: '01:29.550'
+    original: 北海道電力固有だから、他の県、他の電力会社には、ない、形。
+    english: because it's specific to Hokkaido Electric Power, it's a shape you won't
+      find in other prefectures or with other power companies.
+  - start: '01:30.050'
+    end: '01:39.750'
+    original: 他にプレートで大体の位置が絞れるのは、あれかな、北陸電力とか。番号で絞れたりするとこもあるけど。
+    english: Other regions where you can narrow down the general area by the plate
+      would be, let's see, Hokuriku Electric Power, maybe. There are places where
+      you can narrow it down by numbers.
+  - start: '01:39.950'
+    end: '01:46.850'
+    original: その番号で絞れない…え、絞れるのかな？ちょっとこれはわしがあんま詳しくないからあれだけど。
+    english: Wait, can you narrow it down by those numbers or not? I'm not super knowledgeable
+      about that part, so I can't say for sure.
+  - start: '01:46.850'
+    end: '01:51.650'
+    original: でも個人的に番号で一番絞りやすいのは北海道だと思ってる。
+    english: But personally, I think Hokkaido is the easiest to narrow down using
+      the numbers.
+  - start: '01:51.650'
+    end: '01:54.350'
+    original: じゃからわし北海道電力大好き。
+    english: That's why I love Hokkaido Electric Power.
+  - start: '01:55.050'
+    end: '01:56.850'
+    original: うん。うん。
+    english: Yeah. Yeah.
+  - start: '01:56.850'
+    end: '01:59.550'
+    original: 「NTTと電力会社で電柱は違う？」
+    english: '"Are utility poles different between NTT and the power companies?"'
+  - start: '01:59.550'
+    end: '02:05.950'
+    original: えっと、電柱は違くないんじゃけど、うんと、ここ？この電柱を見てほしいのじゃ。
+    english: Um, the poles themselves aren't different, but... let's see, here? Look
+      at this utility pole.
+  - start: '02:05.950'
+    end: '02:09.650'
+    original: この電柱には、え、NTTプレートしかついてない。
+    english: This pole only has an NTT plate on it.
+  - start: '02:09.650'
+    end: '02:14.750'
+    original: 近づいてみてみるか。あー遠ざかっちゃった。ちょっといい感じの電柱探すか。
+    english: Let's try getting closer. Ah, I moved further away. Let's look for a
+      good pole.
+  - start: '02:15.150'
+    end: '02:21.750'
+    original: え、この電柱にはNTTプレートしかついてないのじゃ。ちょっとぼやけてるんだけど画質が。
+    english: Yeah, this pole only has an NTT plate attached. The image quality is
+      a bit blurry though.
+  - start: '02:21.950'
+    end: '02:28.450'
+    original: さっきのさ、41番とかさ書いてあったさ、数字が羅列されていたさ北海道電力のプレートじゃないじゃろ？
+    english: It's not that Hokkaido Electric Power plate from earlier with '41' and
+      rows of numbers on it, right?
+  - start: '02:29.350'
+    end: '02:35.950'
+    original: これは、えっと全電力会社で共通で…えっとね、うん、これもNTTだな。
+    english: This one is common across all power companies... let's see, yeah, this
+      is also NTT.
+  - start: '02:36.250'
+    end: '02:39.350'
+    original: 画像出すか。えーっと…
+    english: Let me pull up a drawing. Let's see...
+  - start: '02:41.350'
+    end: '02:47.750'
+    original: 電柱を見た時に、電柱ってこうやってあるじゃろ。
+    english: When you look at a utility pole, there's a pole like this, right?
+  - start: '02:47.750'
+    end: '02:55.750'
+    original: 大体、よいしょ。こうやって、2個のプレートがつ入ってるの。
+    english: Usually... there we go. Like this, there are two plates attached.
+  - start: '02:55.750'
+    end: '03:00.850'
+    original: これはマックスね。すべてついてる時。うん。
+    english: That's the max, when everything is attached. Yeah.
+  - start: '03:01.350'
+    end: '03:09.850'
+    original: ちゃんとついてたら、大体上に電力会社の電力プレートがついてて、これだ、大体ね。必ずではない。
+    english: When they're both there, usually the power company's electric plate is
+      on top—usually, not always.
+  - start: '03:10.350'
+    end: '03:13.750'
+    original: で、下にNTTのプレートがつ入ってるのじゃ。
+    english: And below it, there's an NTT plate attached.
+  - start: '03:13.750'
+    end: '03:17.350'
+    original: で、今回今画面に映ってるのはNTTのものだけなのじゃ。
+    english: And what's on screen right now is just the NTT one.
+  - start: '03:17.650'
+    end: '03:24.350'
+    original: んで、ちょっと2枚ついてるとこ探したいんじゃけど、あ、これはついてるね。うん、これは2個ついてるのじゃ。
+    english: So, I want to find one with two plates... oh, this one has them. Yeah,
+      this one has two.
+  - start: '03:24.350'
+    end: '03:30.350'
+    original: 上についてるのが北海道電力のプレートで、下についてるのがNTTのプレート。そう。
+    english: The one on top is the Hokkaido Electric Power plate, and the one on the
+      bottom is the NTT plate. Right.
+  - start: '03:30.350'
+    end: '03:35.250'
+    original: で、片方しかついてない時はあんま判断できなくて、難しい。うん。
+    english: When only one is attached, you can't really tell as much, so it's tough.
+      Yeah.
+  - start: '03:35.250'
+    end: '03:41.350'
+    original: あ、で、沖縄は3つついてる。うん、電力会社によってそのついてる数とかも違うのじゃ。
+    english: Oh, and in Okinawa, there are three attached. Yeah, the number of plates
+      also varies depending on the power company.
+  - start: '03:41.350'
+    end: '03:47.850'
+    original: 沖縄はねぇ、なんかこんな感じでねぇ、なんかいっぱい付いてるよね。うん、沖縄。沖縄はすごいよ。
+    english: In Okinawa, it's like this, with a whole bunch of them attached. Yeah,
+      Okinawa. Okinawa is crazy.
+  - start: '03:48.550'
+    end: '03:54.350'
+    original: 沖縄。沖縄いっぱい付いてる。めっちゃ分かりやすいじゃから。めっちゃ分かりやすい。
+    english: Okinawa. Okinawa has tons of them. It makes it super easy to spot. Super
+      easy.
+  - start: '03:55.250'
+    end: '03:58.750'
+    original: うん。ま、そう沖縄は正直家見れば一発じゃからね。
+    english: Yeah. Well, honestly, in Okinawa you can tell right away just by looking
+      at the houses anyway.
+  - start: '03:59.250'
+    end: '04:10.550'
+    original: そう、で、そのNTTプレートとか、この電力会社のプレートとかの向きが電力会社によって違くて、それがわりと電柱の覚え要素なんだけど。
+    english: Right, and the orientation of the NTT plates and the power company plates
+      differs depending on the power company, which is actually a big thing to memorize
+      for utility poles.
+  - start: '04:10.550'
+    end: '04:20.350'
+    original: 例えば、えっと…なんだ？えーと、東北？東北電力の場合は、
+    english: For example, let's see... what was it? Um, Tohoku? In the case of Tohoku
+      Electric Power...
+  - start: '04:20.350'
+    end: '04:29.750'
+    original: え、電力会社のプレートが横、で、NTTのプレートが縦、だったらなんか東北かなぁとか思ったり…
+    english: if the power company plate is horizontal and the NTT plate is vertical,
+      then I'll think it might be Tohoku...
+  - start: '04:30.150'
+    end: '04:39.250'
+    original: 北陸だったら、なんか北陸両方横だよね。両方横だったりする気がする。
+    english: If it's Hokuriku, both are horizontal, aren't they? I feel like both
+      are horizontal in Hokuriku.
+  - start: '04:39.850'
+    end: '04:46.350'
+    original: あ、でもなんか、県によったりして…県によったりして、
+    english: Oh, but depending on the prefecture... depending on the prefecture,
+  - start: '04:46.350'
+    end: '04:55.550'
+    original: 例えばさっきさ、一番最初の、あの、結局静岡だったわしが山梨に置いたマップあったじゃろ？あそこで、あの…
+    english: for example, in the very first map earlier, the one that ended up being
+      Shizuoka where I guessed Yamanashi? On that one, I...
+  - start: '04:56.050'
+    end: '05:03.650'
+    original: 群馬では…ん？どこではないって言ったっけ？どこではないなって言ったっけわし？なんか、どこかではないなみたいなのを言った気がするんだけど…
+    english: not Gunma... huh? Where did I say it wasn't? Which place did I say it
+      wasn't? I feel like I said something about ruling out a certain place...
+  thoughts:
+  - |-
+    **Audio Transcription and GeoGuessr Analysis**
+
+    Okay, here's the breakdown. My task is to synchronize subtitles to this audio, so let's get started. No music detected, so `detected_musical_performances` should be `[]`. From 00:00.000 to 05:03.815, I'm analyzing the audio and video.
+
+    First impressions: at 00:00.280, there's a wide, open view of the sky – that's something to keep in mind. The high vantage point and the presence of a slope at 00:04.250 suggest we might be on a mountain or near the coast. The slope indicates a change in elevation. If this area is higher ground, there's bound to be a town or city below. At 00:21.850, I'm trying to pinpoint the town but it's not clear on the map. The map feels a bit flat around here, which is making it hard to find.
+
+    At 00:39.250, I'm getting a sense of the sea to the south. If I could smell the sea better, I might have had a better idea! At 00:48.550, it's definitely near the sea. Well, at 00:50.550, my sense of smell failed me a little this time. But at 00:55.450, considering I didn't even know it was in Otaru, I think I did pretty well.
+
+    I know at 01:01.050, the question is if "41" is universal? No, it's not! Having numbers to pinpoint a location is definitely a strength for Hokkaido. At 01:12.350, that 41 is a clue, and the plate says 北電 (Hokuden) – Hokkaido Electric Power's specific plate. At 01:19.350, it's unique to them. Other prefectures, other power companies, won't have the same shape. At 01:30.050, other plates, like Hokuriku Electric Power, can help narrow down the area by the numbers. But I'm not that familiar with the numbers, so I'm not sure. However, I think Hokkaido is the easiest to pinpoint with their numbers. I do love Hokkaido Electric Power, at 01:51.650!
+
+    Now, the question is about NTT and power poles at 01:56.850. The poles are generally the same. But here, let's look at this pole at 01:59.550. It only has an NTT plate on it. I want to get closer, but I'm moving away. Let's find a good one. At 02:15.150, this pole has only an NTT plate, but the picture is blurry. At 02:21.950, you won't see those Hokkaido Electric Power plates with numbers.
+
+    At 02:41.350, when you look at a pole, there are usually two plates. At 02:55.750, that's the maximum. The utility company's plate is usually on top and NTT's below. The Hokkaido Electric Power plate is on top, and NTT's is below. When only one is present, it's harder to say. At 03:35.250, Okinawa is different; they have three. It is much easier to tell in Okinawa, you can just see a house, and you know.
+
+    At 03:59.250, the orientation of these plates varies by company. That's a key detail to remember. If the electric company plate is horizontal and the NTT plate is vertical, that might be Tohoku at 04:20.350. At 04:30.150, Hokuriku might have both plates horizontal. It really depends on the prefecture. At 04:46.350, take that first map, the one I placed in Yamanashi. Was it in Gunma? I said somewhere it was not? I can't remember!
+
+    {
+      "subs": [
+        {
+          "s": "00:00.280",
+          "e": "00:04.250",
+          "og": "広く、広い視野で空が見えるなぁってのが気になります。",
+          "en": "I'm
+  detected_musical_performances: []
+subtitles_prompt_version: 19

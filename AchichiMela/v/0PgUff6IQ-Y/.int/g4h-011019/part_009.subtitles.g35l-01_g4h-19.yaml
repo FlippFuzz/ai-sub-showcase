@@ -1,0 +1,485 @@
+name: part_009
+total_attempts: 1
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '電柱ソムリエの一歩も動かないGeoGuessr【ホロライブ/熱千めら】'.
+segment_index: null
+video_duration_ms: 300175
+segment_offset_ms: 2701952
+global_summary:
+  overall_summary: In this livestream from Hololive's 'Asobi★Mawaritai!' unit member
+    Netsuchi Mela (熱千めら), she plays GeoGuessr in 'no-move' mode while sharing her
+    extensive knowledge and strategies for identifying Japanese locations using utility
+    pole plates, regional electric companies (such as TEPCO, Chubu Electric, and Hokkaido
+    Electric), area codes, asphalt markings, housing styles, and regional topography.
+    Throughout the stream, Mela combines quirky commentary and interactive banter
+    with her chat ('dopari-listeners') with humorous insights into why humans don't
+    normally memorize telephone area codes or utility plate numbers.
+  chapters:
+  - start: 00:00
+    end: 03:30
+    title: Opening Banter and Stream Setup
+    description: Mela starts the stream wearing a mask, greets her chat, and talks
+      about her vtuber debut and recent streaming activities.
+    song_title: null
+    song_artist: null
+  - start: 03:30
+    end: 07:40
+    title: Discovering Her GeoGuessr Talent
+    description: Mela discusses how she didn't realize until her debut stream that
+      identifying Japanese regions by telephone poles and utility plates was considered
+      a rare special skill.
+    song_title: null
+    song_artist: null
+  - start: 07:40
+    end: '35:00'
+    title: GeoGuessr Beginner Lecture
+    description: Mela explains the fundamentals of GeoGuessr, including 47 prefectures,
+      area codes, utility poles, manholes, house roofs, and asphalt markings like
+      stop signs and diamond marks.
+    song_title: null
+    song_artist: null
+  - start: '35:00'
+    end: '61:00'
+    title: 'No-Move GeoGuessr: Rounds 1 to 4'
+    description: Mela plays GeoGuessr in no-move mode, analyzing electric poles, region
+      plates, terrain, and weather, visiting places like Gotemba in Shizuoka, Ube
+      in Yamaguchi, Itakura in Gunma, and Otaru in Hokkaido.
+    song_title: null
+    song_artist: null
+  - start: '61:00'
+    end: '63:30'
+    title: Electric Power Company Plate Breakdown
+    description: Mela breaks down the differences between TEPCO, Chubu Electric, Tohoku
+      Electric, and Hokkaido Electric utility poles and their top plates.
+    song_title: null
+    song_artist: null
+  - start: '63:30'
+    end: '19:00'
+    title: 'No-Move GeoGuessr: Round 5 Onward & Rapid Play'
+    description: Mela plays rapid-fire no-move rounds in Osaka, Tokushima, Iwate/Akita,
+      Okinawa, and Miyagi, interacting with chat and refining her regional deduction
+      skills.
+    song_title: null
+    song_artist: null
+  - start: '19:00'
+    end: '31:00'
+    title: Stream Wrap-Up and Schedule Announcements
+    description: Mela reflects on her love for GeoGuessr, discusses future collaboration
+      plans with AZKi, announces the weekly schedule, and gives closing remarks.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Netsuchi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A 415-year-old fire salamander firefighter from the Edo period who
+      serves as the 'goryaku' (good fortune/protection) representative for the Hololive
+      unit 'Asobi★Mawaritai!'.
+    speech_patterns_or_ticks: Uses the old-fashioned pronoun 'washi' (わし), sentence
+      ending '-のじゃ' / '-のじゃー', and signature greetings like 'あらあら、めろめろ、あちち、めろー'.
+    visual_cues: Red and fire motif, salamander traits, starts streams wearing a mask
+      before removing it.
+  domain_glossary:
+  - term: ジオゲッサー
+    meaning: GeoGuessr, a geography browser game where players are dropped into Google
+      Street View locations and must guess where they are on a map.
+  - term: ノームーブ
+    meaning: No-Move mode in GeoGuessr where players cannot move, walk, or pan away
+      from their initial spawn point.
+  - term: 電柱ソムリエ
+    meaning: A nickname or slang for someone who identifies geographic locations based
+      on utility pole plates, wiring, and hardware.
+  - term: 市外局番
+    meaning: Japanese telephone area codes (e.g., 03 for Tokyo, 01 for Hokkaido) used
+      to narrow down regions in GeoGuessr.
+  - term: 低圧スペーサー
+    meaning: Low-voltage utility pole fittings commonly found on Hokkaido Electric
+      Power poles.
+  - term: 東電 / 中電 / 北電
+    meaning: Regional electric power companies (TEPCO, Chubu Electric, Hokkaido Electric)
+      whose pole plates and structural designs vary across Japan.
+  - term: どぱる
+    meaning: Mela's coined slang for getting extremely excited or thrilled when successfully
+      guessing a location.
+  - term: アソビ★まわり隊！
+    meaning: Hololive unit consisting of Netsuchi Mela, Momosuzu Kyoko, Suzune Tsuzuri,
+      and Soraka Sopia.
+  thoughts:
+  - |-
+    **Analyzing a Long GeoGuessr Video: Initial Thoughts**
+
+    Okay, here's what I'm thinking. I've got `video_1.webm` to look at, which is a significant chunk of time – over two hours. That's a dedicated session! The user context tells me it's from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel, and the video title is something about a "Telephone Pole Sommelier" doing GeoGuessr, specifically "Don't-Move-Anymore GeoGuessr" – that's potentially interesting. A static GeoGuessr round could provide a fascinating set of challenges.
+
+    Before I dive too deep, I need to know the context of "Netsuchi Mela". I'm remembering that ReGLOSS / Hololive / Hololive Indonesia / Hololive English / Dev_Is are mentioned, so I should clarify. Is "熱千めら" a specific person or a group? Should I search for “熱千めら” to see, or should I start with the ASR for this video? Let's be efficient here. I think I'll use `load_video` with `include_asr=True` to get an initial overview. The ASR will give me a first pass at the content. It will also help me identify "Netsuchi Mela" and save time. Let's start there.
+  - |-
+    **My Analysis of the Video Content**
+
+    Okay, fantastic! I've got the ASR data and a general understanding of the video's subject matter. Now, let's break down the requirements and approach this systematically.
+
+    First, I need to generate an `overall_summary` – a concise overview, maybe one or two paragraphs max. I'll need to encapsulate the core purpose, the overall tone of the video, and how the narrative progresses.
+
+    Next is the `chapters` section. I'll divide the video into natural segments chronologically, accurately marking the timestamps in `MM:SS` or `HH:MM:SS` format. For each chapter, I'll need a clear title, a brief description of the content, and then the metadata for `song_title` and `song_artist`, which will be `null` since this appears to be a gameplay or chat stream, not a performance.
+
+    The `entities` section is next, and I need to be precise here. I know the central figure is Netsuchi Mela (熱千めら), and I have some initial information about her persona, like the fire salamander motif, her role in disaster prevention or fire protection, and some of her characteristic speech patterns. I should include all these details. I have to confirm her affiliation by searching, to ensure I'm using the correct term: Hololive, Hololive production, or perhaps Dev_Is/ReGLOSS? I'll need to search to confirm this detail. I'll also note her speech patterns/ticks such as `-のじゃ`, `-のじゃー`, `-おじゃばんわ`, `-どぱる`, `-ドパリスナー`, and `-ドパワッパ`. And finally, I should list any of her visual cues such as salamander elements and the red/fire theme.
+
+    Finally, I'll address the `domain_glossary`. I understand this video likely involves GeoGuessr, so I will need to identify and define relevant terms such as "Nomove mode," "pole plates" (likely referring to NTT plates and utility pole plates), "area codes" (市外局番), "diamond marks" (ダイヤマーク), and any other GeoGuessr-specific vocabulary that comes up.
+
+    Before I dive into any of this, I'll do a quick search for "Netsuchi Mela" (`熱千めら`) to verify her official lore, confirm agency affiliation, and pinpoint her debut date if possible. This upfront research is critical for accuracy.
+  - |-
+    {
+      "summary": {
+        "header": "**A GeoGuessr Deep Dive with Netsuchi Mela**",
+        "content": "Right, here's what I've got from the stream. Netsuchi Mela, the Hololive fire salamander, is back at it, this time focusing on GeoGuessr. It's a 'no-move' playthrough, which means we're really digging into the details. She's using her 'Telephone Pole Sommelier' skills, as she calls it. Apparently, identifying locations based on utility pole plates (TEPCO, Chubu Electric, Hokkaido Electric – all crucial details), area codes, asphalt markings, and the architecture is her specialty, and, frankly, fascinating. We're looking at things like those low-voltage spacers on Hokkaido poles and the whole game of distinguishing them. She's got this whole schtick with old-fashioned language and expressions like 'washi' and 'doparu' when she gets excited about a good find. The stream breaks down nicely: intro and introductions, her explanation of how she discovered her unusual ability, the fundamentals of GeoGuessr and the Japanese prefectures, then the actual gameplay with rounds in places like Gotemba, Ube, Itakura, and Otaru. We get a real deep dive into the electric company pole distinctions. It concludes with rapid-fire rounds and some announcements. It's clear she's focusing on her 'Asobi★Mawaritai!' unit activities, as well. All very structured and well-presented.",
+        "key_elements": {
+          "focus": "No-Move GeoGuessr",
+          "strategy": "Utility pole and regional cues identification",
+          "personality": "Quirky commentary, slang, and old-fashioned language",
+          "expertise": "Japanese regional geography",
+          "references": [
+            "TEPCO, Chubu Electric, Hokkaido Electric",
+            "Area codes (e.g., 03, 01)",
+            "Asphalt markings like 'tomare'",
+            "Low-voltage spacers"
+          ]
+        }
+model_name: null
+service_tier: null
+agentic_video: false
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.120'
+    end: '00:05.330'
+    original: でもなんか山梨のこの辺だったらさ、この辺の山脈は見、見えたい。
+    english: But if it were around this part of Yamanashi, I'd expect to see the mountain
+      range around here.
+  - start: '00:05.500'
+    end: '00:10.370'
+    original: 見えたいんじゃよな。で、その辺が見えないから、どうかなーって思うんじゃけど。
+    english: We should be able to see it. Since we can't see that area, I'm a bit
+      unsure about it, though...
+  - start: '00:11.610'
+    end: '00:14.700'
+    original: で、た、なんか意外と建物が多いな。
+    english: And also, there are surprisingly a lot of buildings.
+  - start: '00:15.320'
+    end: '00:23.950'
+    original: なんか山の方ってやっぱりどうしても人口密度が減ってしまって、こういう居住スペースかな、居住するための家がね、少なく見えるんだけど、
+    english: Normally in the mountains, the population density inevitably drops, so
+      residential spaces—like houses for living—tend to look sparse, but...
+  - start: '00:24.160'
+    end: '00:26.780'
+    original: 多いんだよな、こういう場所にしては。
+    english: there are quite a lot for a place like this.
+  - start: '00:28.340'
+    end: '00:29.500'
+    original: 多い。
+    english: There's a lot.
+  - start: '00:30.220'
+    end: '00:31.500'
+    original: 多いから…
+    english: Since there's a lot...
+  - start: '00:32.980'
+    end: '00:34.280'
+    original: 多くて、
+    english: There's a lot, and...
+  - start: '00:35.220'
+    end: '00:38.580'
+    original: NEにこれでしょう？なんかー、
+    english: This is to the northeast, right? Maybe...
+  - start: '00:39.960'
+    end: '00:43.240'
+    original: なんかこの辺とかダメ？やりすぎか？
+    english: How about somewhere around here? Is that going too far?
+  - start: '00:44.080'
+    end: '00:45.730'
+    original: ちょ、一旦置いてみるのじゃ。
+    english: Let's just drop the pin for now!
+  - start: '00:46.510'
+    end: '00:49.870'
+    original: ちょ、一周回って山梨来た。
+    english: We went full circle and ended up back in Yamanashi.
+  - start: '00:49.940'
+    end: '00:52.730'
+    original: 一周回って山梨来たので、置いてみますのじゃ！のじゃー！
+    english: Since we came full circle to Yamanashi, let's place it here! Here goes!
+  - start: '00:54.370'
+    end: '00:57.640'
+    original: めっちゃ南や！しかもこれ静岡か？
+    english: It's way south! Wait, is this Shizuoka?!
+  - start: '00:58.000'
+    end: '00:59.560'
+    original: 静岡っぽいな！
+    english: Looks like Shizuoka!
+  - start: '00:59.980'
+    end: '01:02.180'
+    original: 静岡でしたのじゃー！
+    english: It was Shizuoka!
+  - start: '01:02.300'
+    end: '01:06.840'
+    original: なんか北関東の香りがしたんだけど、全然北じゃないっていう。見ていきましょう。
+    english: It kinda had a North Kanto vibe, yet it wasn't north at all. Let's take
+      a look.
+  - start: '01:08.530'
+    end: '01:13.940'
+    original: はい、えっと、静岡県の、これ何て読むんだろう？おだんば？
+    english: Okay, um, in Shizuoka Prefecture... how do you read this? Odanba?
+  - start: '01:14.120'
+    end: '01:15.460'
+    original: ごだんば？
+    english: Godanba?
+  - start: '01:15.650'
+    end: '01:23.000'
+    original: ごでんば？ちょっとあのさ、あの市の名前読み間違えるとさ、住んでる人にさ、が悲しい、申し訳ないからさ、ちょっと…
+    english: Godenba? You know, if I misread a city's name, it makes the people living
+      there sad and I feel bad, so...
+  - start: '01:23.160'
+    end: '01:24.800'
+    original: ごでんば、ごでんばね？ごてんばね！
+    english: Godenba, Godenba right? Oh, Gotemba!
+  - start: '01:25.600'
+    end: '01:26.900'
+    original: ごてんば、ごてんば。
+    english: Gotemba, Gotemba.
+  - start: '01:27.000'
+    end: '01:30.180'
+    original: 御殿場！静岡県の御殿場でしたのじゃ！
+    english: Gotemba! It was Gotemba, Shizuoka Prefecture!
+  - start: '01:30.400'
+    end: '01:33.040'
+    original: 静岡っぽくない！
+    english: It doesn't look like Shizuoka!
+  - start: '01:34.060'
+    end: '01:37.680'
+    original: ちょこれで静岡は、ちょっと今のわしの実力じゃ無理かも。
+    english: Getting Shizuoka from this might be a bit beyond my current skill level.
+  - start: '01:38.300'
+    end: '01:41.000'
+    original: 富士山があるんだね！
+    english: Mount Fuji is right there!
+  - start: '01:41.580'
+    end: '01:43.540'
+    original: えっと、N…
+    english: Let's see, north...
+  - start: '01:44.780'
+    end: '01:46.300'
+    original: 見えるかな？
+    english: Can we see it?
+  - start: '01:47.180'
+    end: '01:53.480'
+    original: 北でしょう？あ、こっちに、多分見えないけどこっちの方角に富士山があるっぽい。
+    english: That's north, right? Oh, over here—we probably can't see it, but it seems
+      Mount Fuji is in this direction.
+  - start: '01:53.980'
+    end: '01:58.020'
+    original: あるっぽく…それが見えてれば割と一発だったかも。
+    english: It seems to be there... If that had been visible, I might've gotten it
+      in one shot.
+  - start: '01:58.240'
+    end: '02:02.660'
+    original: 富士山が見えてたらその富士山の場所から逆算して分かったかもじゃけど、
+    english: If Mount Fuji were visible, I could've worked backwards from its position
+      to figure it out, though...
+  - start: '02:02.880'
+    end: '02:08.600'
+    original: ま、見えないでここならまだまだ、まだまだ、まあまあマシぐらいか。
+    english: Well, without being able to see it, getting this close isn't half bad,
+      I guess.
+  - start: '02:10.300'
+    end: '02:16.900'
+    original: そう、であの電力会社で東京電力って言ったんだけど、静岡もね、この辺までは東京電力なんだよね。
+    english: Right, and earlier I mentioned the power company was TEPCO—parts of Shizuoka
+      up to around here are actually covered by TEPCO too.
+  - start: '02:17.240'
+    end: '02:25.800'
+    original: 静岡の、なんかこの辺より西は、あの中部電力なんじゃけど、この辺は確か東京電力の範囲だったはず。
+    english: West of around here in Shizuoka is Chubu Electric Power, but this area
+      should be within TEPCO's service area.
+  - start: '02:27.080'
+    end: '02:30.860'
+    original: ちょっと動いてみるか。動いたら見えるかな？動いて見えるものってあるからね。
+    english: Let's try moving a bit. Can we see it if we move? Sometimes things appear
+      once you move.
+  - start: '02:31.260'
+    end: '02:33.540'
+    original: あっ！お主ら、富士山見えたよ！
+    english: Ah! Everyone, I can see Mount Fuji!
+  - start: '02:33.860'
+    end: '02:36.200'
+    original: 1歩歩いたら富士山見えたのじゃ！
+    english: Just one step forward and Mount Fuji came into view!
+  - start: '02:36.320'
+    end: '02:40.760'
+    original: これがムーブだとねー、ムーブだったらね1歩歩いて富士山見えるんだけど。
+    english: If this were Move mode, you'd just take one step and see Mount Fuji,
+      you know.
+  - start: '02:41.220'
+    end: '02:46.600'
+    original: ちょっと雲がかかってて、あんまり綺麗には見えないんじゃけど。ちょっと見える位置まで移動するか。
+    english: It's a bit cloudy so you can't see it very clearly, though. Let's move
+      to a spot where we can see it better.
+  - start: '02:47.560'
+    end: '02:51.840'
+    original: やっぱ山があって綺麗には見づらいかな。でもこれ富士山だと思うな。
+    english: The hills are blocking it a bit so it's hard to see clearly. Still, I
+      think that's Mount Fuji.
+  - start: '02:52.280'
+    end: '02:53.960'
+    original: よいしょ、歩くか。
+    english: Alright, let's walk a bit.
+  - start: '02:54.340'
+    end: '02:57.900'
+    original: ちょ、今日ムーブしないことを想定して酔い止め飲んできてないから…
+    english: I didn't take motion sickness medicine today since I wasn't planning
+      on moving around...
+  - start: '02:58.620'
+    end: '03:04.580'
+    original: うん、ちょっと雲がかかって…でも雲がかかっていても分かるよね、この存在感！
+    english: Yeah, it's a bit covered by clouds... but even with the clouds, you can
+      feel its presence, right?!
+  - start: '03:04.760'
+    end: '03:06.680'
+    original: 富士山ですのじゃー！
+    english: It's Mount Fuji!
+  - start: '03:06.880'
+    end: '03:17.460'
+    original: これが見えていれば、富士山の方がこっちだからっつって、そのここからね、ここか、こっから逆算してこの辺に置けたかもしれないんじゃけど。
+    english: If I had seen this, I could've said, 'Mount Fuji is over that way,' and
+      worked backwards from here to place it somewhere around here.
+  - start: '03:18.220'
+    end: '03:24.940'
+    original: うん。ま、わしが少なくとも今回スポーンした位置的には富士山は見えませんでしたよと。
+    english: Yeah. Well, at least from the exact spot where I spawned this time, Mount
+      Fuji wasn't visible.
+  - start: '03:25.320'
+    end: '03:32.160'
+    original: 見えなかったけど、ま、雰囲気的に高度高いだろうなとか、うん、結局山梨に置いたけど…
+    english: I couldn't see it, though from the vibe I figured the elevation was pretty
+      high—I ended up guessing Yamanashi, but...
+  - start: '03:32.360'
+    end: '03:37.360'
+    original: 高度高いなとか、ま、大体なんか関東らへんだろうなとか、あと何じゃろ。
+    english: I got that the elevation was high, and that it was roughly around Kanto...
+      what else?
+  - start: '03:39.240'
+    end: '03:43.460'
+    original: あと何だろう、あと何があってたかな。あとまあ、ちょっと雪降りそうだなとか。
+    english: Let's see, what else did I get right? Oh, and that it looked like somewhere
+      it snows a bit.
+  - start: '03:43.760'
+    end: '03:52.760'
+    original: そういう感覚は合ってたから、まあ完璧には当てられなかったけど、ま、なかなか善戦した方なんじゃないでしょうか、みたいな。
+    english: Those instincts were spot-on, so even though I didn't nail it completely,
+      I'd say it was a pretty good effort overall.
+  - start: '03:54.520'
+    end: '03:57.680'
+    original: みたいな感じのゲームですのじゃ。
+    english: So that's the kind of game this is!
+  - start: '03:58.240'
+    end: '04:01.360'
+    original: それでは次の問題いきますのじゃー！
+    english: Now, let's head into the next round!
+  - start: '04:03.220'
+    end: '04:04.040'
+    original: はい。
+    english: Okay.
+  - start: '04:06.760'
+    end: '04:08.620'
+    original: 中国電力なのじゃ！
+    english: It's Chugoku Electric Power!
+  - start: '04:08.760'
+    end: '04:15.320'
+    original: お主ら見て、これが…この電柱は中国地方の電柱なのじゃ。
+    english: Look, everyone, this... this utility pole is a Chugoku region pole!
+  - start: '04:15.520'
+    end: '04:22.100'
+    original: 中国地方はこの辺ね。この辺の電柱ですのじゃ。
+    english: The Chugoku region is right around here. It's a pole from this area.
+  - start: '04:24.220'
+    end: '04:26.760'
+    original: 見るか。やまた？あんまり読めないね。
+    english: Let's check. 'Yamata'? Hard to read.
+  - start: '04:32.140'
+    end: '04:33.540'
+    original: あんまり読めないな。
+    english: Can't really make it out.
+  - start: '04:36.860'
+    end: '04:43.800'
+    original: あ、書いてある！書いてあるよ、お主ら！ちょ、文字が、文字が…何て書いてある？
+    english: Oh, there's text! Something's written there, everyone! Wait, the letters...
+      what does it say?
+  - start: '04:44.360'
+    end: '04:49.580'
+    original: なんとか、なんとか…
+    english: Something, something...
+  - start: '04:49.940'
+    end: '04:56.860'
+    original: これ心の目で読むしかないんだけど、なんちゃらかんちゃら、なんちゃら公園っていうのがあって、なんとか市…
+    english: I have to read this with my mind's eye, but there's a 'something-something
+      Park' and a 'something City'...
+  - start: '04:58.800'
+    end: '05:00.175'
+    original: なんか宮みたい…
+    english: Looks like 'miya' or something...
+  thoughts:
+  - |-
+    {
+      "summary": "**Audio Analysis and Location Deduction**\n\nOkay, let's break this down. The audio starts with a reflection on a location, possibly Yamanashi, and the speaker's desire to see the surrounding mountains. However, the initial impression is of denser building development than expected, leading to some uncertainty about the location. The speaker then navigates through a series of guesses and deductions.\n\nThe speaker reflects on the population density of the area, then states 'NE, this right here?'. The speaker briefly considers that 'NE' might be too much, but discards it. The speaker suggests that the location is in Yamanashi. It's revealed that the speaker is actually in Shizuoka Prefecture, specifically Gotemba. The speaker mentions their inability to deduce that fact based on current expertise. It's noted that Mount Fuji is present. The speaker mentions that if they could see it, the location would be easier to identify.\n\nThe speaker then notes that the location is within the Tokyo Electric Power Company's service area. The speaker realizes that moving around may reveal more details, such as Mount Fuji. The speaker spots Mount Fuji and shares their excitement. The speaker mentions the game they are playing, and the possibility of getting the location more accurately with the location of Mount Fuji. The speaker admits that they could not see Mount Fuji from their initial spawn point. The speaker also considers other details about the location, such as the high altitude and the possibility of snow. The speaker assesses that although the location wasn't perfectly guessed, the guesses were close.\n\nThe final part of the recording introduces a new location, specifically in the Chugoku region. The speaker identifies a utility pole indicating the Chugoku Electric Power Company. The speaker expresses difficulty reading the writing on the structure, but spots a mention of a park and a city, potentially including the kanji for 'Miya'.",
+      "detected_musical_performances": [],
+      "subs": [
+        {
+          "start": "00:00.120",
+          "end": "00:05.330",
+          "text": "でもなんか山梨のこの辺だったらさ、この辺の山脈は見、見えたい。"
+        },
+        {
+          "start": "00:05.500",
+          "end": "00:10.370",
+          "text": "見えたいんじゃよな。で、その辺が見えないから、どうかなーって思うんじゃけど。"
+        },
+        {
+          "start": "00:11.610",
+          "end": "00:14.700",
+          "text": "で、た、なんか意外と建物が多いな。"
+        },
+        {
+          "start": "00:15.320",
+          "end": "00:23.950",
+          "text": "なんか山の方ってやっぱりどうしても人口密度が減ってしまって、こういう居住スペースかな、居住するための家がね、少なく見えるんだけど、"
+        },
+        {
+          "start": "00:24.160",
+          "end": "00:26.780",
+          "text": "多いんだよな、こういう場所にしては。"
+        },
+        {
+          "start": "00:28.340",
+          "end": "00:29.500",
+          "text": "多い。"
+        },
+        {
+          "start": "00:30.220",
+          "end": "00:31.500",
+          "text": "多いから…"
+        },
+        {
+          "start": "00:32.980",
+          "end": "00:34.280",
+          "text": "多くて、"
+        },
+        {
+          "start": "00:35.220",
+          "end": "00:38.580",
+          "text": "NEにこれでしょう？なんかー、"
+        },
+        {
+          "start": "00:39.960",
+          "end": "00:43.240",
+          "text": "なんかこの辺とかダメ？やりすぎか？"
+        },
+        {
+          "start": "00:44.080",
+          "end": "00:45.730",
+          "text": "ちょ
+  detected_musical_performances: []
+subtitles_prompt_version: 19

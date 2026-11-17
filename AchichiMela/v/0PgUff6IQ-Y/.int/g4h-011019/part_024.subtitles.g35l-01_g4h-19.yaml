@@ -1,0 +1,464 @@
+name: part_024
+total_attempts: 1
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '電柱ソムリエの一歩も動かないGeoGuessr【ホロライブ/熱千めら】'.
+segment_index: null
+video_duration_ms: 302348
+segment_offset_ms: 7202306
+global_summary:
+  overall_summary: In this livestream from Hololive's 'Asobi★Mawaritai!' unit member
+    Netsuchi Mela (熱千めら), she plays GeoGuessr in 'no-move' mode while sharing her
+    extensive knowledge and strategies for identifying Japanese locations using utility
+    pole plates, regional electric companies (such as TEPCO, Chubu Electric, and Hokkaido
+    Electric), area codes, asphalt markings, housing styles, and regional topography.
+    Throughout the stream, Mela combines quirky commentary and interactive banter
+    with her chat ('dopari-listeners') with humorous insights into why humans don't
+    normally memorize telephone area codes or utility plate numbers.
+  chapters:
+  - start: 00:00
+    end: 03:30
+    title: Opening Banter and Stream Setup
+    description: Mela starts the stream wearing a mask, greets her chat, and talks
+      about her vtuber debut and recent streaming activities.
+    song_title: null
+    song_artist: null
+  - start: 03:30
+    end: 07:40
+    title: Discovering Her GeoGuessr Talent
+    description: Mela discusses how she didn't realize until her debut stream that
+      identifying Japanese regions by telephone poles and utility plates was considered
+      a rare special skill.
+    song_title: null
+    song_artist: null
+  - start: 07:40
+    end: '35:00'
+    title: GeoGuessr Beginner Lecture
+    description: Mela explains the fundamentals of GeoGuessr, including 47 prefectures,
+      area codes, utility poles, manholes, house roofs, and asphalt markings like
+      stop signs and diamond marks.
+    song_title: null
+    song_artist: null
+  - start: '35:00'
+    end: '61:00'
+    title: 'No-Move GeoGuessr: Rounds 1 to 4'
+    description: Mela plays GeoGuessr in no-move mode, analyzing electric poles, region
+      plates, terrain, and weather, visiting places like Gotemba in Shizuoka, Ube
+      in Yamaguchi, Itakura in Gunma, and Otaru in Hokkaido.
+    song_title: null
+    song_artist: null
+  - start: '61:00'
+    end: '63:30'
+    title: Electric Power Company Plate Breakdown
+    description: Mela breaks down the differences between TEPCO, Chubu Electric, Tohoku
+      Electric, and Hokkaido Electric utility poles and their top plates.
+    song_title: null
+    song_artist: null
+  - start: '63:30'
+    end: '19:00'
+    title: 'No-Move GeoGuessr: Round 5 Onward & Rapid Play'
+    description: Mela plays rapid-fire no-move rounds in Osaka, Tokushima, Iwate/Akita,
+      Okinawa, and Miyagi, interacting with chat and refining her regional deduction
+      skills.
+    song_title: null
+    song_artist: null
+  - start: '19:00'
+    end: '31:00'
+    title: Stream Wrap-Up and Schedule Announcements
+    description: Mela reflects on her love for GeoGuessr, discusses future collaboration
+      plans with AZKi, announces the weekly schedule, and gives closing remarks.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Netsuchi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A 415-year-old fire salamander firefighter from the Edo period who
+      serves as the 'goryaku' (good fortune/protection) representative for the Hololive
+      unit 'Asobi★Mawaritai!'.
+    speech_patterns_or_ticks: Uses the old-fashioned pronoun 'washi' (わし), sentence
+      ending '-のじゃ' / '-のじゃー', and signature greetings like 'あらあら、めろめろ、あちち、めろー'.
+    visual_cues: Red and fire motif, salamander traits, starts streams wearing a mask
+      before removing it.
+  domain_glossary:
+  - term: ジオゲッサー
+    meaning: GeoGuessr, a geography browser game where players are dropped into Google
+      Street View locations and must guess where they are on a map.
+  - term: ノームーブ
+    meaning: No-Move mode in GeoGuessr where players cannot move, walk, or pan away
+      from their initial spawn point.
+  - term: 電柱ソムリエ
+    meaning: A nickname or slang for someone who identifies geographic locations based
+      on utility pole plates, wiring, and hardware.
+  - term: 市外局番
+    meaning: Japanese telephone area codes (e.g., 03 for Tokyo, 01 for Hokkaido) used
+      to narrow down regions in GeoGuessr.
+  - term: 低圧スペーサー
+    meaning: Low-voltage utility pole fittings commonly found on Hokkaido Electric
+      Power poles.
+  - term: 東電 / 中電 / 北電
+    meaning: Regional electric power companies (TEPCO, Chubu Electric, Hokkaido Electric)
+      whose pole plates and structural designs vary across Japan.
+  - term: どぱる
+    meaning: Mela's coined slang for getting extremely excited or thrilled when successfully
+      guessing a location.
+  - term: アソビ★まわり隊！
+    meaning: Hololive unit consisting of Netsuchi Mela, Momosuzu Kyoko, Suzune Tsuzuri,
+      and Soraka Sopia.
+  thoughts:
+  - |-
+    **Analyzing a Long GeoGuessr Video: Initial Thoughts**
+
+    Okay, here's what I'm thinking. I've got `video_1.webm` to look at, which is a significant chunk of time – over two hours. That's a dedicated session! The user context tells me it's from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel, and the video title is something about a "Telephone Pole Sommelier" doing GeoGuessr, specifically "Don't-Move-Anymore GeoGuessr" – that's potentially interesting. A static GeoGuessr round could provide a fascinating set of challenges.
+
+    Before I dive too deep, I need to know the context of "Netsuchi Mela". I'm remembering that ReGLOSS / Hololive / Hololive Indonesia / Hololive English / Dev_Is are mentioned, so I should clarify. Is "熱千めら" a specific person or a group? Should I search for “熱千めら” to see, or should I start with the ASR for this video? Let's be efficient here. I think I'll use `load_video` with `include_asr=True` to get an initial overview. The ASR will give me a first pass at the content. It will also help me identify "Netsuchi Mela" and save time. Let's start there.
+  - |-
+    **My Analysis of the Video Content**
+
+    Okay, fantastic! I've got the ASR data and a general understanding of the video's subject matter. Now, let's break down the requirements and approach this systematically.
+
+    First, I need to generate an `overall_summary` – a concise overview, maybe one or two paragraphs max. I'll need to encapsulate the core purpose, the overall tone of the video, and how the narrative progresses.
+
+    Next is the `chapters` section. I'll divide the video into natural segments chronologically, accurately marking the timestamps in `MM:SS` or `HH:MM:SS` format. For each chapter, I'll need a clear title, a brief description of the content, and then the metadata for `song_title` and `song_artist`, which will be `null` since this appears to be a gameplay or chat stream, not a performance.
+
+    The `entities` section is next, and I need to be precise here. I know the central figure is Netsuchi Mela (熱千めら), and I have some initial information about her persona, like the fire salamander motif, her role in disaster prevention or fire protection, and some of her characteristic speech patterns. I should include all these details. I have to confirm her affiliation by searching, to ensure I'm using the correct term: Hololive, Hololive production, or perhaps Dev_Is/ReGLOSS? I'll need to search to confirm this detail. I'll also note her speech patterns/ticks such as `-のじゃ`, `-のじゃー`, `-おじゃばんわ`, `-どぱる`, `-ドパリスナー`, and `-ドパワッパ`. And finally, I should list any of her visual cues such as salamander elements and the red/fire theme.
+
+    Finally, I'll address the `domain_glossary`. I understand this video likely involves GeoGuessr, so I will need to identify and define relevant terms such as "Nomove mode," "pole plates" (likely referring to NTT plates and utility pole plates), "area codes" (市外局番), "diamond marks" (ダイヤマーク), and any other GeoGuessr-specific vocabulary that comes up.
+
+    Before I dive into any of this, I'll do a quick search for "Netsuchi Mela" (`熱千めら`) to verify her official lore, confirm agency affiliation, and pinpoint her debut date if possible. This upfront research is critical for accuracy.
+  - |-
+    {
+      "summary": {
+        "header": "**A GeoGuessr Deep Dive with Netsuchi Mela**",
+        "content": "Right, here's what I've got from the stream. Netsuchi Mela, the Hololive fire salamander, is back at it, this time focusing on GeoGuessr. It's a 'no-move' playthrough, which means we're really digging into the details. She's using her 'Telephone Pole Sommelier' skills, as she calls it. Apparently, identifying locations based on utility pole plates (TEPCO, Chubu Electric, Hokkaido Electric – all crucial details), area codes, asphalt markings, and the architecture is her specialty, and, frankly, fascinating. We're looking at things like those low-voltage spacers on Hokkaido poles and the whole game of distinguishing them. She's got this whole schtick with old-fashioned language and expressions like 'washi' and 'doparu' when she gets excited about a good find. The stream breaks down nicely: intro and introductions, her explanation of how she discovered her unusual ability, the fundamentals of GeoGuessr and the Japanese prefectures, then the actual gameplay with rounds in places like Gotemba, Ube, Itakura, and Otaru. We get a real deep dive into the electric company pole distinctions. It concludes with rapid-fire rounds and some announcements. It's clear she's focusing on her 'Asobi★Mawaritai!' unit activities, as well. All very structured and well-presented.",
+        "key_elements": {
+          "focus": "No-Move GeoGuessr",
+          "strategy": "Utility pole and regional cues identification",
+          "personality": "Quirky commentary, slang, and old-fashioned language",
+          "expertise": "Japanese regional geography",
+          "references": [
+            "TEPCO, Chubu Electric, Hokkaido Electric",
+            "Area codes (e.g., 03, 01)",
+            "Asphalt markings like 'tomare'",
+            "Low-voltage spacers"
+          ]
+        }
+model_name: null
+service_tier: null
+agentic_video: false
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.280'
+    end: '00:03.220'
+    original: 目指したらたくさんかかっちゃうかもじゃけど、
+    english: If you aim for perfection, it might take a lot of time, but...
+  - start: '00:03.220'
+    end: '00:09.400'
+    original: 今みたいにノームーブでその見れる範囲を絞ってやってみるとかだったら、結構ね、サクッとできちゃう。
+    english: '...if you play No-Move like I just did and narrow down what you can
+      look at, you can actually get through it pretty quickly.'
+  - start: '00:09.900'
+    end: '00:18.600'
+    original: わし普段1人で遊ぶときは、ノームーブで1分とか、でもうパッパッパッパッパッパッパってやってるから
+    english: Usually when I play by myself, I set it to No-Move with a 1-minute timer
+      and just bang them out one after another, so...
+  - start: '00:19.040'
+    end: '00:21.520'
+    original: 手軽にできてとても楽しい。
+    english: '...it''s super easy to jump into and really fun.'
+  - start: '00:21.520'
+    end: '00:24.360'
+    original: そう、勉強した分ね、結果が出るすごい早いよ。
+    english: Yeah, the results from studying show up super fast too.
+  - start: '00:24.420'
+    end: '00:31.260'
+    original: だって電柱なんて覚えたらさ、覚えたものそのまま出たら1問解けるわけじゃん。地方まで絞れるわけじゃん。
+    english: I mean, once you memorize utility poles, if one you know pops up, you
+      can solve the round right away and narrow down the region.
+  - start: '00:31.260'
+    end: '00:33.540'
+    original: すごい楽しいのじゃ。
+    english: It's super fun!
+  - start: '00:33.660'
+    end: '00:34.360'
+    original: うん。
+    english: Yeah.
+  - start: '00:34.860'
+    end: '00:36.260'
+    original: スマホでもあるからね。
+    english: It's on smartphones too, after all.
+  - start: '00:36.260'
+    end: '00:41.580'
+    original: ま、スマホちょっとやりづらいけど、パソコンででっかい画面であの、見た方がやりやすくはあるんじゃが。
+    english: Well, it's a little hard to play on a phone, and it's definitely easier
+      looking at a big screen on a PC...
+  - start: '00:41.800'
+    end: '00:47.180'
+    original: あと結構電波が悪いと、なかなか読み込まないのは難しいところではあるんじゃけど。
+    english: '...and if your connection is bad, it takes forever to load, which can
+      be tricky, though.'
+  - start: '00:47.520'
+    end: '00:49.500'
+    original: 結構手軽にできるから。
+    english: It's pretty easy to play casually.
+  - start: '00:49.940'
+    end: '00:59.220'
+    original: 友達とね、布団の中でやるとき、その寝ながらあの、友達と電話繋げながらとかやるときは全然スマホとかでもできるけど
+    english: When you're playing with friends while lying in bed, like on a phone
+      call together, playing on a smartphone works totally fine, but...
+  - start: '00:59.220'
+    end: '01:02.680'
+    original: ま、ちゃんとやりたいってときはパソコンからやるといいかも。
+    english: '...when you want to play properly, it''s probably better to do it on
+      a PC.'
+  - start: '01:03.000'
+    end: '01:05.320'
+    original: うん。めっちゃ楽しいのじゃ。
+    english: Yeah. It's ridiculously fun.
+  - start: '01:06.100'
+    end: '01:06.920'
+    original: うん。
+    english: Mm-hmm.
+  - start: '01:07.300'
+    end: '01:17.240'
+    original: ま、有料プランに入ると、あの、自由に無制限にできて、無料だとちょっと制限付きでするみたいな感じになるっぽい。
+    english: Well, if you get a paid plan, you can play freely with no limits, whereas
+      on the free version it seems like you play with some restrictions.
+  - start: '01:17.700'
+    end: '01:19.120'
+    original: なるっぽい。
+    english: Seems that way.
+  - start: '01:19.860'
+    end: '01:25.920'
+    original: もしくは有料会員の友達がいたら有料会員の部屋に入れてもらったら無料で遊べるのじゃ。
+    english: Or, if you have a friend with a paid membership, you can play for free
+      if they let you join their lobby.
+  - start: '01:26.360'
+    end: '01:26.960'
+    original: うん。
+    english: Yeah.
+  - start: '01:27.200'
+    end: '01:29.880'
+    original: パソコンのスペック、あ、スペックはいらないと思う。
+    english: PC specs? Oh, I don't think you need high specs at all.
+  - start: '01:30.280'
+    end: '01:32.300'
+    original: 電波かな、どっちかというと。
+    english: It's more about your internet connection, if anything.
+  - start: '01:32.420'
+    end: '01:36.960'
+    original: Wi-Fi？Wi-Fiが弱すぎるとちょっときついかもって思うのじゃ。
+    english: Wi-Fi? If your Wi-Fi is too weak, I think it might be a bit rough.
+  - start: '01:37.540'
+    end: '01:38.220'
+    original: うん。
+    english: Yeah.
+  - start: '01:39.200'
+    end: '01:39.780'
+    original: うん。
+    english: Mm-hmm.
+  - start: '01:40.700'
+    end: '01:41.800'
+    original: おすすめ。
+    english: I recommend it.
+  - start: '01:42.260'
+    end: '01:45.660'
+    original: え、でね、わしGeoGuessrめっちゃ好きなんだけど、
+    english: And, well, I really love GeoGuessr, you know, but...
+  - start: '01:45.660'
+    end: '01:54.300'
+    original: GeoGuessrをわしと同じぐらいのレベルで一緒にやってくれる友達って、やっぱさ、お主らもさ「電柱？何それ知らん」って感じやん？
+    english: When it comes to friends who'd play GeoGuessr with me at around the same
+      level, even you guys are like, "Utility poles? What's that, I have no clue,"
+      right?
+  - start: '01:54.440'
+    end: '01:57.900'
+    original: じゃろ？「47都道府県は言えるけど」ぐらいじゃろ？
+    english: Right? Like, "I can name all 47 prefectures, at least," or something?
+  - start: '01:58.140'
+    end: '02:06.420'
+    original: え、じゃからね、GeoGuessrをね、たくさん、それこそ配信とかで一緒にGeoGuessrやろうみたいな友達がいなかったの。
+    english: So, yeah, I never really had friends who'd play a lot of GeoGuessr with
+      me, like doing GeoGuessr collabs on stream together.
+  - start: '02:06.960'
+    end: '02:07.640'
+    original: そう。
+    english: Yeah.
+  - start: '02:07.820'
+    end: '02:11.860'
+    original: え、だからね、ホロライブ入れてね、わし本当に嬉しいのじゃ。
+    english: So getting to join Hololive makes me truly happy!
+  - start: '02:12.060'
+    end: '02:16.240'
+    original: AZKi先輩めっちゃGeoGuessrするでしょ？
+    english: AZKi-senpai plays GeoGuessr a ton, right?
+  - start: '02:16.400'
+    end: '02:23.020'
+    original: だからね、ホロライブ入る前からわしずっとAZKi先輩とやりたいと思ってたの、わし。ずっと。
+    english: So even before I joined Hololive, I've always wanted to play with AZKi-senpai.
+      For so long.
+  - start: '02:23.700'
+    end: '02:25.000'
+    original: うん。なんでかって？
+    english: Yeah. Why, you ask?
+  - start: '02:25.100'
+    end: '02:36.220'
+    original: あの、同じレベルで、同じレベルの熱量でGeoGuessrをやってくれる配信者の女の子に出会ったことがないから。
+    english: Because I've never met a female streamer who plays GeoGuessr at the same
+      level and with the same level of passion.
+  - start: '02:36.320'
+    end: '02:38.420'
+    original: 今まで出会ったことがなかったのじゃ。
+    english: I had never met anyone like that until now.
+  - start: '02:38.420'
+    end: '02:42.380'
+    original: しかし、ホロライブにはAZKi先輩がいますのじゃ。
+    english: However, Hololive has AZKi-senpai!
+  - start: '02:42.840'
+    end: '02:43.640'
+    original: うん。
+    english: Yeah.
+  - start: '02:44.940'
+    end: '02:49.060'
+    original: わしGeoGuessr大好きなんだよね。ゲームの中で一番好き。
+    english: I seriously love GeoGuessr. It's my favorite game out of all games.
+  - start: '02:49.060'
+    end: '02:51.960'
+    original: そう、だからね、本当にね、嬉しいのじゃ。
+    english: Yeah, so that's why I'm really, truly happy.
+  - start: '02:51.960'
+    end: '03:03.240'
+    original: しかもAZKi先輩プレイスタイルがさ、最初に言った通り全然違うからさ、そういうのも含めてさ、色々教えてもらえそうだしさ、話したいこといっぱいあるしさ、すごい楽しみなのじゃ。
+    english: Plus, like I said at the beginning, AZKi-senpai's playstyle is completely
+      different from mine, so I feel like she can teach me a lot of things, and I
+      have so much I want to talk to her about—I'm super excited!
+  - start: '03:03.320'
+    end: '03:08.580'
+    original: ということで、この流れで今週のスケジュールを発表しちゃおっかな。
+    english: And with that, how about I go ahead and announce this week's schedule
+      right now!
+  - start: '03:08.600'
+    end: '03:11.660'
+    original: なんと、あ、順を追っていくか。
+    english: Believe it or not—oh, let's go in order.
+  - start: '03:11.660'
+    end: '03:13.380'
+    original: え、明日はお休み。
+    english: Um, tomorrow is a day off.
+  - start: '03:13.480'
+    end: '03:22.460'
+    original: 明後日、え、水曜日は朝のじゃEnglish！そして、え、19時からはボカロ縛り歌枠！ボーカロイドの曲を歌いますのじゃ！そしてそして！
+    english: The day after tomorrow, on Wednesday, we have morning Noja English! And
+      then, from 7:00 PM, a Vocaloid-only karaoke stream! I'll be singing Vocaloid
+      songs! And then, and then!
+  - start: '03:22.460'
+    end: '03:26.180'
+    original: はい、ここからが大事ですのじゃ。29日木曜日。
+    english: Yes, this is the important part! Thursday the 29th.
+  - start: '03:27.460'
+    end: '03:33.540'
+    original: なんと、AZKi先輩とコラボをさせていただきますのじゃ。
+    english: Believe it or not, I'll be having a collab with AZKi-senpai!
+  - start: '03:33.540'
+    end: '03:35.560'
+    original: 初めてのコラボ！
+    english: Our very first collab!
+  - start: '03:35.560'
+    end: '03:44.620'
+    original: ちなみに、あの、やっぱ配信で初めて話したいから、あのコラボの連絡とか以外はあの、会話は全然してないのじゃ、まだ。
+    english: By the way, since I really wanted our first real chat to be on stream,
+      we haven't actually talked at all yet outside of messaging to set up the collab.
+  - start: '03:44.620'
+    end: '03:51.400'
+    original: そう、まだ会話とかをしたことがないから、すごいね今から、ね、あの、コラボの日がね楽しみですのじゃ。
+    english: Yeah, since we've never had a conversation yet, I'm super excited for
+      the day of the collab to come.
+  - start: '03:51.500'
+    end: '03:52.280'
+    original: うん。
+    english: Yeah.
+  - start: '03:52.660'
+    end: '04:01.900'
+    original: 「GeoGuessrどういうとこが好きなんですか」とか、「なんかいつから地理好きなんですか」とか、そういうなんか気になることいっぱいある、きっとお互いいっぱいあると思うから
+    english: Like, "What do you like about GeoGuessr?" or "Since when have you liked
+      geography?"—I have so many things I'm curious about, and I'm sure we both have
+      tons of questions for each other, so...
+  - start: '04:02.060'
+    end: '04:09.780'
+    original: うん、いっぱいあると思うから、そういう話をね、していきたいのじゃ。
+    english: '...yeah, I''m sure there''s a lot, so I want to talk all about that
+      stuff with her.'
+  - start: '04:11.160'
+    end: '04:18.300'
+    original: あとなんか「AZKi先輩とコラボするのにGeoGuessrやらないの」みたいな言ってた人いたんだけど
+    english: Also, there were some people saying things like, "You're collabing with
+      AZKi-senpai and you're NOT playing GeoGuessr?!"
+  - start: '04:18.600'
+    end: '04:20.400'
+    original: ドパわっぱだね。
+    english: You're such dopamine brats.
+  - start: '04:20.400'
+    end: '04:22.640'
+    original: お主らドパわっぱすぎます。
+    english: You guys are way too dopamine-brained.
+  - start: '04:23.800'
+    end: '04:28.560'
+    original: AZKi先輩も言ってました。「大トロは残しておくものだ」と。
+    english: 'AZKi-senpai said it too: "You''re supposed to save the fatty tuna for
+      later."'
+  - start: '04:28.760'
+    end: '04:34.720'
+    original: そんな、そんな出会って初日でGeoGuessrなんてもったいないのじゃ！
+    english: Playing GeoGuessr on the very first day we meet would be such a waste!
+  - start: '04:34.720'
+    end: '04:37.360'
+    original: ようやく出会えたね。
+    english: We've finally met each other.
+  - start: '04:37.360'
+    end: '04:49.500'
+    original: ガチで、全然さ、わしとさ、GeoGuessrしてくれるさ、わしとGeoGuessrで遊んでくれるさ、VTuberの子なんていなかった！
+    english: Seriously, there was never any VTuber girl out there who would play GeoGuessr
+      with me!
+  - start: '04:49.500'
+    end: '04:53.460'
+    original: 今まで400年生きてきていなかったのじゃ！
+    english: In all my 400 years of living, there wasn't a single one!
+  - start: '04:53.880'
+    end: '04:56.860'
+    original: 初めてようやく出会えた
+    english: For the first time, I've finally met someone...
+  - start: '04:57.140'
+    end: '04:59.660'
+    original: うん。AZKi先輩。
+    english: Yeah. AZKi-senpai.
+  - start: '04:59.660'
+    end: '05:00.280'
+    original: うん。
+    english: Yeah.
+  - start: '05:00.500'
+    end: '05:02.348'
+    original: いや、遊び…
+    english: Man, playing...
+  thoughts:
+  - |-
+    **A GeoGuessr Enthusiast's Thoughts**
+
+    Alright, let's dive into this audio and map out what's on my mind, millisecond by millisecond. First things first, it seems there's no music, just background noise, and talking. Good, good, we can proceed.
+
+    Right, so as I was saying, it is a bit of a risk to start, but I am doing well, and if I just play and narrow the field of view... it's fast, really fast. It can be done quickly. I usually play this way. I play alone, doing "no move" mode for like a minute. I just tap tap tap tap tap, and get it done. It's so easy and so much fun. It is very fun. You get results fast from studying! If I remember the utility poles, then, if I see one, and remember, I can answer the question! You can narrow down the region. It's a blast, really.
+
+    I can play on my phone too, but it's a little tricky, a bigger screen on the computer is best. That's better. Sometimes, if the internet isn't great, it takes forever to load. It can be tricky. But it's still pretty easy to play! I can play with my friends in bed, or when I'm on a call with my friends. It is fine on the phone. But if I really want to focus and have a good experience, then I use my computer. It's really fun!
+
+    If you pay for a plan, you can play without limits. If you're free, there is some kind of limitation. Or, if you have a friend who pays, you can play in their room for free, which is nice. Computers don't have to be super powerful... internet is more important. If your Wi-Fi is weak, it might be tough. I recommend it!
+
+    I love GeoGuessr so much! But I can't find people at my level to play with me! My friends are like... "Utility poles? What are those?" They probably know their prefectures, maybe? See what I mean? So, I have been wanting to find people to play with me for a long time. I wanted to stream with them and find a friend. I did not have any. So! I am so happy to be in Hololive! AZKi-senpai does a lot of GeoGuessr!
+
+    I have wanted to play with AZKi-senpai since before I even joined Hololive. I love GeoGuessr, and I have not met a streamer who has my same level of passion for it. Not even one. But, in Hololive, AZKi-senpai is here. So! I really, really like GeoGuessr, it is my favorite game. So I'm so happy. And AZKi-senpai's playstyle is different! I think I can learn a lot from her! There's so much I want to talk about! I can't wait!
+
+    By the way, let's look at the schedule for this week: Monday the 26th, there will be GeoGuessr at 8PM, Tuesday will be a break, Wednesday is "Noja English" at 7 AM, and then a Vocaloid singing stream at 7 PM. And the most important thing! Thursday the 29th, I'm going to do my first collab with AZKi-senpai! It's our first collab! I have barely talked to her, like, we have just talked about the collab but not anything else. So, I am really looking forward to it. There's so much I want to ask her, like "What do you like about GeoGuessr?" and "When did you get into geography?" I am sure we have a lot to talk about.
+
+    I know some people have said, "Are you *not* going to play GeoGuessr for the collab?" You're just thrill-hungry brats. You guys are way too dopamine-brained. As AZKi-senpai says, "You save the otoro for later." Like, we've only just met, and you want to jump right into GeoGuessr? It is too soon! We finally found each other! I haven't met a VTuber who plays GeoGuessr with me. I've lived for 400 years and I haven't met anyone. So I finally met one!
+
+    Man, playing... I have so much I want to...
+  detected_musical_performances: []
+subtitles_prompt_version: 19

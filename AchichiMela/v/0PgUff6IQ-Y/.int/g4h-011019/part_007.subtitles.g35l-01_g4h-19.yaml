@@ -1,0 +1,409 @@
+name: part_007
+total_attempts: 1
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '電柱ソムリエの一歩も動かないGeoGuessr【ホロライブ/熱千めら】'.
+segment_index: null
+video_duration_ms: 301848
+segment_offset_ms: 2102589
+global_summary:
+  overall_summary: In this livestream from Hololive's 'Asobi★Mawaritai!' unit member
+    Netsuchi Mela (熱千めら), she plays GeoGuessr in 'no-move' mode while sharing her
+    extensive knowledge and strategies for identifying Japanese locations using utility
+    pole plates, regional electric companies (such as TEPCO, Chubu Electric, and Hokkaido
+    Electric), area codes, asphalt markings, housing styles, and regional topography.
+    Throughout the stream, Mela combines quirky commentary and interactive banter
+    with her chat ('dopari-listeners') with humorous insights into why humans don't
+    normally memorize telephone area codes or utility plate numbers.
+  chapters:
+  - start: 00:00
+    end: 03:30
+    title: Opening Banter and Stream Setup
+    description: Mela starts the stream wearing a mask, greets her chat, and talks
+      about her vtuber debut and recent streaming activities.
+    song_title: null
+    song_artist: null
+  - start: 03:30
+    end: 07:40
+    title: Discovering Her GeoGuessr Talent
+    description: Mela discusses how she didn't realize until her debut stream that
+      identifying Japanese regions by telephone poles and utility plates was considered
+      a rare special skill.
+    song_title: null
+    song_artist: null
+  - start: 07:40
+    end: '35:00'
+    title: GeoGuessr Beginner Lecture
+    description: Mela explains the fundamentals of GeoGuessr, including 47 prefectures,
+      area codes, utility poles, manholes, house roofs, and asphalt markings like
+      stop signs and diamond marks.
+    song_title: null
+    song_artist: null
+  - start: '35:00'
+    end: '61:00'
+    title: 'No-Move GeoGuessr: Rounds 1 to 4'
+    description: Mela plays GeoGuessr in no-move mode, analyzing electric poles, region
+      plates, terrain, and weather, visiting places like Gotemba in Shizuoka, Ube
+      in Yamaguchi, Itakura in Gunma, and Otaru in Hokkaido.
+    song_title: null
+    song_artist: null
+  - start: '61:00'
+    end: '63:30'
+    title: Electric Power Company Plate Breakdown
+    description: Mela breaks down the differences between TEPCO, Chubu Electric, Tohoku
+      Electric, and Hokkaido Electric utility poles and their top plates.
+    song_title: null
+    song_artist: null
+  - start: '63:30'
+    end: '19:00'
+    title: 'No-Move GeoGuessr: Round 5 Onward & Rapid Play'
+    description: Mela plays rapid-fire no-move rounds in Osaka, Tokushima, Iwate/Akita,
+      Okinawa, and Miyagi, interacting with chat and refining her regional deduction
+      skills.
+    song_title: null
+    song_artist: null
+  - start: '19:00'
+    end: '31:00'
+    title: Stream Wrap-Up and Schedule Announcements
+    description: Mela reflects on her love for GeoGuessr, discusses future collaboration
+      plans with AZKi, announces the weekly schedule, and gives closing remarks.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Netsuchi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A 415-year-old fire salamander firefighter from the Edo period who
+      serves as the 'goryaku' (good fortune/protection) representative for the Hololive
+      unit 'Asobi★Mawaritai!'.
+    speech_patterns_or_ticks: Uses the old-fashioned pronoun 'washi' (わし), sentence
+      ending '-のじゃ' / '-のじゃー', and signature greetings like 'あらあら、めろめろ、あちち、めろー'.
+    visual_cues: Red and fire motif, salamander traits, starts streams wearing a mask
+      before removing it.
+  domain_glossary:
+  - term: ジオゲッサー
+    meaning: GeoGuessr, a geography browser game where players are dropped into Google
+      Street View locations and must guess where they are on a map.
+  - term: ノームーブ
+    meaning: No-Move mode in GeoGuessr where players cannot move, walk, or pan away
+      from their initial spawn point.
+  - term: 電柱ソムリエ
+    meaning: A nickname or slang for someone who identifies geographic locations based
+      on utility pole plates, wiring, and hardware.
+  - term: 市外局番
+    meaning: Japanese telephone area codes (e.g., 03 for Tokyo, 01 for Hokkaido) used
+      to narrow down regions in GeoGuessr.
+  - term: 低圧スペーサー
+    meaning: Low-voltage utility pole fittings commonly found on Hokkaido Electric
+      Power poles.
+  - term: 東電 / 中電 / 北電
+    meaning: Regional electric power companies (TEPCO, Chubu Electric, Hokkaido Electric)
+      whose pole plates and structural designs vary across Japan.
+  - term: どぱる
+    meaning: Mela's coined slang for getting extremely excited or thrilled when successfully
+      guessing a location.
+  - term: アソビ★まわり隊！
+    meaning: Hololive unit consisting of Netsuchi Mela, Momosuzu Kyoko, Suzune Tsuzuri,
+      and Soraka Sopia.
+  thoughts:
+  - |-
+    **Analyzing a Long GeoGuessr Video: Initial Thoughts**
+
+    Okay, here's what I'm thinking. I've got `video_1.webm` to look at, which is a significant chunk of time – over two hours. That's a dedicated session! The user context tells me it's from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel, and the video title is something about a "Telephone Pole Sommelier" doing GeoGuessr, specifically "Don't-Move-Anymore GeoGuessr" – that's potentially interesting. A static GeoGuessr round could provide a fascinating set of challenges.
+
+    Before I dive too deep, I need to know the context of "Netsuchi Mela". I'm remembering that ReGLOSS / Hololive / Hololive Indonesia / Hololive English / Dev_Is are mentioned, so I should clarify. Is "熱千めら" a specific person or a group? Should I search for “熱千めら” to see, or should I start with the ASR for this video? Let's be efficient here. I think I'll use `load_video` with `include_asr=True` to get an initial overview. The ASR will give me a first pass at the content. It will also help me identify "Netsuchi Mela" and save time. Let's start there.
+  - |-
+    **My Analysis of the Video Content**
+
+    Okay, fantastic! I've got the ASR data and a general understanding of the video's subject matter. Now, let's break down the requirements and approach this systematically.
+
+    First, I need to generate an `overall_summary` – a concise overview, maybe one or two paragraphs max. I'll need to encapsulate the core purpose, the overall tone of the video, and how the narrative progresses.
+
+    Next is the `chapters` section. I'll divide the video into natural segments chronologically, accurately marking the timestamps in `MM:SS` or `HH:MM:SS` format. For each chapter, I'll need a clear title, a brief description of the content, and then the metadata for `song_title` and `song_artist`, which will be `null` since this appears to be a gameplay or chat stream, not a performance.
+
+    The `entities` section is next, and I need to be precise here. I know the central figure is Netsuchi Mela (熱千めら), and I have some initial information about her persona, like the fire salamander motif, her role in disaster prevention or fire protection, and some of her characteristic speech patterns. I should include all these details. I have to confirm her affiliation by searching, to ensure I'm using the correct term: Hololive, Hololive production, or perhaps Dev_Is/ReGLOSS? I'll need to search to confirm this detail. I'll also note her speech patterns/ticks such as `-のじゃ`, `-のじゃー`, `-おじゃばんわ`, `-どぱる`, `-ドパリスナー`, and `-ドパワッパ`. And finally, I should list any of her visual cues such as salamander elements and the red/fire theme.
+
+    Finally, I'll address the `domain_glossary`. I understand this video likely involves GeoGuessr, so I will need to identify and define relevant terms such as "Nomove mode," "pole plates" (likely referring to NTT plates and utility pole plates), "area codes" (市外局番), "diamond marks" (ダイヤマーク), and any other GeoGuessr-specific vocabulary that comes up.
+
+    Before I dive into any of this, I'll do a quick search for "Netsuchi Mela" (`熱千めら`) to verify her official lore, confirm agency affiliation, and pinpoint her debut date if possible. This upfront research is critical for accuracy.
+  - |-
+    {
+      "summary": {
+        "header": "**A GeoGuessr Deep Dive with Netsuchi Mela**",
+        "content": "Right, here's what I've got from the stream. Netsuchi Mela, the Hololive fire salamander, is back at it, this time focusing on GeoGuessr. It's a 'no-move' playthrough, which means we're really digging into the details. She's using her 'Telephone Pole Sommelier' skills, as she calls it. Apparently, identifying locations based on utility pole plates (TEPCO, Chubu Electric, Hokkaido Electric – all crucial details), area codes, asphalt markings, and the architecture is her specialty, and, frankly, fascinating. We're looking at things like those low-voltage spacers on Hokkaido poles and the whole game of distinguishing them. She's got this whole schtick with old-fashioned language and expressions like 'washi' and 'doparu' when she gets excited about a good find. The stream breaks down nicely: intro and introductions, her explanation of how she discovered her unusual ability, the fundamentals of GeoGuessr and the Japanese prefectures, then the actual gameplay with rounds in places like Gotemba, Ube, Itakura, and Otaru. We get a real deep dive into the electric company pole distinctions. It concludes with rapid-fire rounds and some announcements. It's clear she's focusing on her 'Asobi★Mawaritai!' unit activities, as well. All very structured and well-presented.",
+        "key_elements": {
+          "focus": "No-Move GeoGuessr",
+          "strategy": "Utility pole and regional cues identification",
+          "personality": "Quirky commentary, slang, and old-fashioned language",
+          "expertise": "Japanese regional geography",
+          "references": [
+            "TEPCO, Chubu Electric, Hokkaido Electric",
+            "Area codes (e.g., 03, 01)",
+            "Asphalt markings like 'tomare'",
+            "Low-voltage spacers"
+          ]
+        }
+model_name: null
+service_tier: null
+agentic_video: false
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.000'
+    end: '00:01.350'
+    original: からしゃべってたのじゃ。
+    english: '...so I was just talking about it, you know.'
+  - start: '00:01.350'
+    end: '00:04.220'
+    original: 結構コメント欄のお主らが補足してくれたりする。
+    english: Pretty often, you folks in the comments fill in the details for me.
+  - start: '00:04.220'
+    end: '00:08.530'
+    original: なんか有識者がいたりするから、それを頼りに話させていただきました。
+    english: Since there are knowledgeable people here, I relied on them while talking.
+  - start: '00:08.730'
+    end: '00:11.670'
+    original: のじゃの流派は何流か？ドパ流。
+    english: What school of GeoGuessr do I follow? The Dopa-style.
+  - start: '00:12.160'
+    end: '00:16.920'
+    original: ただなんかガチ勢を目指してるとかでもなく、ただ楽しくてやってる。
+    english: Well, I'm not really aiming to be a hardcore player or anything, I just
+      play because it's fun.
+  - start: '00:16.920'
+    end: '00:22.250'
+    original: ただ楽しくて、なんとなくで雰囲気でやってる感じですのじゃ。
+    english: Just having fun, going by vibes and intuition, that's how I do it.
+  - start: '00:22.420'
+    end: '00:26.150'
+    original: うん、ごめんねドパわっぱ。早くゲーム画面映せって思ったよね。
+    english: Yeah, sorry, Dopa-wappa. You were thinking, 'Show the game screen already!'
+      right?
+  - start: '00:26.150'
+    end: '00:29.550'
+    original: 早くゲーム画面見たくてたまらなかったよね、お主ら。
+    english: You all couldn't wait to see the game screen, could you?
+  - start: '00:29.750'
+    end: '00:34.330'
+    original: じらしちゃいましたのじゃ。大事な時は焦らせないのに。
+    english: I kept you in suspense! Even though you shouldn't keep people waiting
+      when it matters.
+  - start: '00:34.330'
+    end: '00:39.000'
+    original: じゃあ、おへや移動しますのじゃー！のじゃー！
+    english: Alright then, moving to the game room! Noja~!
+  - start: '00:39.870'
+    end: '00:44.040'
+    original: よいしょ。わしどこにいるのがいいんだろう、ジオゲッサー。
+    english: Hup. Where should I position myself for GeoGuessr?
+  - start: '00:44.040'
+    end: '00:47.340'
+    original: よいしょ、あ、よいしょ。よいしょ。
+    english: Hup, ah, hup. Hup.
+  - start: '00:49.940'
+    end: '00:52.760'
+    original: ちょっと始めてみて調整するか。
+    english: Maybe I'll start a round and adjust from there.
+  - start: '00:54.780'
+    end: '00:59.650'
+    original: 見えてるじゃろうかー！見えてるじゃろうかー！
+    english: Can you see it? Can you see it?
+  - start: '01:00.050'
+    end: '01:02.670'
+    original: ど真ん中？ど真ん中のがいいの？
+    english: Right in the center? Is right in the center better?
+  - start: '01:04.410'
+    end: '01:06.100'
+    original: 真ん中とかいいの？
+    english: Somewhere in the middle?
+  - start: '01:06.840'
+    end: '01:09.780'
+    original: ちょっと始めてから調整しますのじゃ。
+    english: I'll adjust it after we start a little bit.
+  - start: '01:10.370'
+    end: '01:16.920'
+    original: えっと今回遊んでいくモードは、えーノームーブ、その場から1歩も動かないモードですのじゃ。
+    english: Um, the mode we'll be playing today is No-Move, where you don't take
+      a single step from your starting spot.
+  - start: '01:17.160'
+    end: '01:21.740'
+    original: 動かないモードだから、あの5Kゲスができない可能性大あり。
+    english: Since it's a no-move mode, there's a big chance I won't be able to get
+      a 5K guess.
+  - start: '01:22.020'
+    end: '01:31.700'
+    original: あんまりその5Kを取りに行こうというより、まあなんかだいたいこの辺やろで合ってたらドパれますみたいな感じの楽しみ方をさせていただきますのじゃ。
+    english: Rather than trying too hard to go for a 5K, I'll be enjoying it more
+      like, 'It's probably around here,' and getting a dopamine rush if I'm close.
+  - start: '01:31.870'
+    end: '01:39.670'
+    original: で、時間制限はありにしてもいいんだけど、あのこういうとこ見てるよみたいなの説明しながらしたいので、一旦なしでいかせていただきますのじゃ。
+    english: And I could set a time limit, but since I want to explain what kind of
+      clues I'm looking at, I'll go without one for now.
+  - start: '01:40.070'
+    end: '01:44.410'
+    original: うん、大まかに当てる。ズームとパンはあり。あ、そうそれも説明しよう。
+    english: Yeah, guessing roughly. Zoom and pan are allowed. Oh right, let me explain
+      that too.
+  - start: '01:44.410'
+    end: '01:50.850'
+    original: いろんなモードがあるの。ムーブモードとノームーブモード、とノームーブノーパンノーズームというものがありますのじゃ。
+    english: There are various modes. Move mode, No-Move mode, and something called
+      No-Move, No-Pan, No-Zoom.
+  - start: '01:51.070'
+    end: '01:58.310'
+    original: え、この一番右のモードは何かというと、本当にもう、もう、これやってる人何なんじゃろな。
+    english: Uh, what this rightmost mode is... honestly, I mean, what's up with the
+      people who play this?
+  - start: '01:58.680'
+    end: '02:06.100'
+    original: ガチでわけわかんない。ガチでこれ当てられる人わけわかんないんだけど、あのその場から1歩も動かずに、そう1歩も動かないのがノームーブね。
+    english: Seriously makes no sense. I genuinely don't understand people who can
+      guess this, but without moving a single step—yeah, not moving a step is No-Move.
+  - start: '02:06.270'
+    end: '02:13.140'
+    original: 一歩も動かないかつ、え、パンを振らない。パンっていうのは首を振らないの。だからもう視界も固定。
+    english: Not moving a step AND, uh, not panning. Panning means turning your head.
+      So your view is completely fixed.
+  - start: '02:13.210'
+    end: '02:17.270'
+    original: 右左向けません。右左向けない、そしてノーズーム。
+    english: You can't look left or right. Can't look left or right, and then No-Zoom.
+  - start: '02:17.440'
+    end: '02:29.880'
+    original: ズームができません。拡大ができないのじゃ。要は写真を1枚渡されて、だ電柱の柄とか見ようとしても、あのズームできないから、薄目でなんとなく見るしかないみたいな、もう本当に化け物用の…
+    english: You can't zoom. You can't magnify anything. Basically, you're handed
+      a single photo, and even if you try to check a utility pole's markings, you
+      can't zoom in, so you just have to squint and guess vaguely—it's truly for monsters...
+  - start: '02:31.590'
+    end: '02:35.810'
+    original: ありえない難易度設定のモードですのじゃ。やばいモードなのじゃ。
+    english: '...a mode with an absurd difficulty setting. It''s an insane mode.'
+  - start: '02:36.020'
+    end: '02:45.280'
+    original: もうここまでできる人はもうほぼ全マップ暗記してるやろみたいな、もうド暗記してる方向けのマップなんじゃないかとわしは思っております。
+    english: I feel like anyone who can do this must have practically memorized the
+      entire map—it's a mode for people who've straight-up memorized everything.
+  - start: '02:45.550'
+    end: '02:47.620'
+    original: うん、特定厨ですのじゃ。
+    english: Yeah, they're ultimate sleuths.
+  - start: '02:49.100'
+    end: '02:58.500'
+    original: え、そう写真1枚からここどこって言われるのでもお主ら拡大とかするじゃろ？なんか、あの映り込んでないかな、それこそ瞳に反射してないかなとかさ。そういう反射とかから探すじゃろ？
+    english: Right, even when you're asked 'Where is this?' from a single photo, you
+      all zoom in, don't you? Like checking if something's reflected in someone's
+      eyes or whatever. You look for reflections like that, right?
+  - start: '02:58.500'
+    end: '03:01.670'
+    original: それもできないの。なんでかって拡大できないから。
+    english: You can't even do that. Why? Because you can't zoom in.
+  - start: '03:02.070'
+    end: '03:06.100'
+    original: そう、別班なのじゃ。ノームーブノーパンノーズームは別班しかできないと思ってる。
+    english: Right, it's Beppan-level. I think only Beppan agents can do No-Move,
+      No-Pan, No-Zoom.
+  - start: '03:06.250'
+    end: '03:14.700'
+    original: 恐ろしいのじゃ。みたいなモードがあり、えー今回はノームーブで遊んでいこうと思いますのじゃー！いくのじゃー！よいしょ！
+    english: It's terrifying. So there's a mode like that, and today we're going to
+      play No-Move! Let's go! Hup!
+  - start: '03:14.950'
+    end: '03:20.470'
+    original: ノームーブだから、あのド外しいっぱいする可能性も大いにあって。
+    english: Since it's No-Move, there's a huge chance I'll miss wildly a bunch of
+      times.
+  - start: '03:20.730'
+    end: '03:22.420'
+    original: ちょっと待ってね。
+    english: Hold on a second.
+  - start: '03:23.090'
+    end: '03:26.150'
+    original: 音とかは、わしの方に音が鳴ってんのか。
+    english: What about the audio... oh, the sound is playing on my side.
+  - start: '03:27.090'
+    end: '03:29.930'
+    original: あれ、こうか。よいしょ。
+    english: Huh? Like this? There we go.
+  - start: '03:30.670'
+    end: '03:35.970'
+    original: 音どうかの？普通のしか流れてない？普通のBGMしか流れてない？
+    english: How's the audio? Is only the normal stuff playing? Only the regular BGM?
+  - start: '03:36.220'
+    end: '03:38.580'
+    original: 大丈夫そう？大丈夫そうかな？
+    english: Seems okay? Is it okay?
+  - start: '03:39.200'
+    end: '03:45.900'
+    original: はい、じゃあ見ていきますのじゃー！どういうところを見ているのか、えー発表しながらやっていきますのじゃー！
+    english: Okay, let's take a look! I'll explain what kind of things I'm looking
+      at as I go!
+  - start: '03:46.150'
+    end: '03:51.900'
+    original: えーまず、ここを見るのじゃ。電柱のプレートを見ております。
+    english: Uh, first, I look right here. I'm looking at the utility pole's plates.
+  - start: '03:52.450'
+    end: '04:03.650'
+    original: で、両方とも縦のプレートがあるから、あのー、東北と北陸はまず除外できるのじゃ。
+    english: And since both plates are vertical, um... we can rule out Tohoku and
+      Hokuriku right away.
+  - start: '04:03.650'
+    end: '04:08.500'
+    original: 消去法でどんどん消していきますのじゃ。北陸と東北はまず除外。
+    english: We narrow it down by process of elimination. Hokuriku and Tohoku are
+      out first.
+  - start: '04:08.900'
+    end: '04:15.050'
+    original: で、なんかちょっと東京電力っぽいなーってなんとなく思っていて。
+    english: And I'm vaguely getting a Tokyo Electric Power Company vibe from it.
+  - start: '04:15.270'
+    end: '04:20.030'
+    original: で、こっち側を見ると、あ、東京電力かもー！って思えてくるのじゃ。
+    english: And looking over this way, it makes me think, 'Oh, this might be TEPCO!'
+  - start: '04:20.130'
+    end: '04:27.430'
+    original: うん。東京電力かもー！このパーツが東京電力特有のもの。
+    english: Yeah. Might be TEPCO! This part is unique to Tokyo Electric Power.
+  - start: '04:27.430'
+    end: '04:32.110'
+    original: もしくは九州とかの場合もたまにある、わしが見間違えていて。
+    english: Or sometimes it ends up being Kyushu or somewhere when I misread it.
+  - start: '04:32.210'
+    end: '04:39.500'
+    original: で、東京電力かもと思った時にこう周りを見渡す。え、ちょっと青っぽくも見える。
+    english: When I think it might be TEPCO, I look around like this. Huh, it looks
+      a bit bluish too.
+  - start: '04:39.500'
+    end: '04:41.150'
+    original: 東京電力かも。
+    english: Might be TEPCO.
+  - start: '04:41.580'
+    end: '04:46.870'
+    original: はい、東京電力かもと思った時に、えーっと、立ち入り禁止。
+    english: Alright, when I think it might be TEPCO, um... 'Keep Out'.
+  - start: '04:47.170'
+    end: '04:58.650'
+    original: こういう青っぽいさ、ワイヤー？なんかあるじゃろ？この線がさ、なんか青っぽいのって結構九州とか東京、関西とかにしかなかったりするからこの時点で
+    english: You see these bluish wires or whatever? These cables—bluish ones like
+      that are pretty much only in Kyushu, Tokyo, Kansai, and places like that, so
+      at this point...
+  - start: '04:58.650'
+    end: '05:01.848'
+    original: なんか、この時点でちゅ…
+    english: '...like, at this point, Chu...'
+  thoughts:
+  - |-
+    **My GeoGuessr Musings: A No-Move Adventure**
+
+    Okay, so I was just chatting, you know? And you folks in the comments section, you're always so helpful, filling in the blanks for me. There are some real experts in the chat, so I rely on their knowledge as I talk. They ask me about my "style" – the "Dopa-style," I guess you could call it. But I'm not aiming to be some hardcore GeoGuessr player. I just enjoy it, plain and simple! I'm just having fun, working with vibes and intuition, ya know?
+
+    Sorry, I kept you all waiting to see the game screen! You were probably dying to get started, right? I like to build a little suspense, even though I know it is better to get straight into it. Alright, let's head to the game room! Hup, where should I position myself? Maybe I'll start and adjust as needed.
+
+    Can you all see it? Is the center a good spot? Maybe I'll adjust after we start. Alright, today's mode is "No-Move" – you can't take a single step from your starting point. No-Move means I won't get any 5K guesses! I'm not really going for a 5K anyway; more like, "it's probably around here," and getting a little dopamine rush if I'm close.
+
+    I could use a time limit, but I want to explain what I'm looking at, so I'm skipping that for now. I'm going for a rough guess; zoom and pan are allowed, but let me explain that. There are various modes: Move mode, No-Move mode, and then No-Move, No-Pan, No-Zoom. And this last one… Honestly, what are these people *doing*? I don't get it. They're able to guess in this one? It makes no sense. With the No-Move, you don't take a single step. No-Pan, you don't turn your head. Your view is fixed. No looking left or right, and then No-Zoom... you can't magnify anything. You're just given a photo, and you can't even zoom in to see the details. It's truly for monsters… an insane level of difficulty! I'm guessing anyone who can do that has memorized the entire map, which means they must be true sleuths!
+
+    People usually zoom in to check for reflections in your eyes, to see the glint of the camera. But you can't do that. It is a Beppan level. No-Move, No-Pan, No-Zoom can only be done by Beppan agents! It's terrifying. But today, we are going to play No-Move! I might miss wildly but that is the joy of the game. Let's start! Hup!
+
+    Now I'm checking the audio. Okay, seems normal, just the BGM is playing. Let's start looking! I'll tell you guys what I'm looking at. First, I check the utility pole's plates. Both plates are vertical, so we can rule out Tohoku and Hokuriku right away. It is just process of elimination, really. Then, it gives me a Tokyo Electric Power Company vibe. Looking at it, it really does seem like TEPCO! This part is specific to TEPCO, though sometimes I misread them and it is Kyushu or somewhere else. When I think it's TEPCO, I look around. And it does look a bit bluish. Might be TEPCO. Then I see "Keep Out". Those bluish wires? The thickness of these cables are like in Kyushu, Tokyo, Kansai, and places like that, so at this point... Like, at this point, Chu...
+  detected_musical_performances: []
+subtitles_prompt_version: 19
