@@ -1,0 +1,576 @@
+name: part_006
+total_attempts: 1
+user_context: This is a YouTube video from Miko Ch. さくらみこ channel. The video title
+  is '【チラ見せ枠】さくらみこ1st Live "flower fantasista!"【#咲き誇るみこち】'.
+segment_index: null
+video_duration_ms: 293950
+segment_offset_ms: 1807020
+global_summary:
+  overall_summary: This video is the free sneak peek broadcast (チラ見せ枠) for Sakura
+    Miko's 1st Solo Live 'flower fantasista!', held at Ariake Arena on October 26,
+    2024. The video opens with a static waiting screen displaying merchandise announcements
+    and fan congratulatory messages (accompanied by an unrelated background audio
+    track), followed by audience footage and a countdown. It then streams selected
+    live performances including 'アワーツリー', 'にゃっはろーわーるど!!!', and 'DAI DAI DAI ファンタジスタ',
+    interspersed with stadium MC greetings and emotional interactions with her fans
+    (35P), concluding with an end-of-preview slide.
+  chapters:
+  - start: 00:00
+    end: '25:30'
+    title: Waiting Screen & Merchandise Preview
+    description: Static stream holding screen featuring official 1st Live merchandise
+      announcements and fan message boards, with background audio.
+    song_title: null
+    song_artist: null
+  - start: '25:30'
+    end: '31:49'
+    title: Arena Footage & Live Countdown
+    description: Shots of the packed Ariake Arena audience waving pink lightsticks
+      during the countdown preceding the start of the live concert.
+    song_title: null
+    song_artist: null
+  - start: '31:49'
+    end: '35:10'
+    title: 'Opening Performance: アワーツリー'
+    description: Opening segment featuring an animated lore sequence followed by Sakura
+      Miko's live performance of 'アワーツリー'.
+    song_title: アワーツリー
+    song_artist: さくらみこ
+  - start: '35:10'
+    end: '39:00'
+    title: 'Song Performance: にゃっはろーわーるど!!!'
+    description: High-energy performance of her signature greeting-themed song 'にゃっはろーわーるど!!!'
+      with vibrant stage visuals.
+    song_title: にゃっはろーわーるど!!!
+    song_artist: さくらみこ
+  - start: '39:00'
+    end: '42:55'
+    title: Stadium MC & Greetings
+    description: Sakura Miko addresses the audience at Ariake Arena, expressing overwhelming
+      gratitude and emotional excitement for her long-awaited 1st solo live.
+    song_title: null
+    song_artist: null
+  - start: '42:55'
+    end: '47:20'
+    title: 'Song Performance: DAI DAI DAI ファンタジスタ'
+    description: Performance of 'DAI DAI DAI ファンタジスタ' featuring upbeat choreography
+      and enthusiastic crowd participation.
+    song_title: DAI DAI DAI ファンタジスタ
+    song_artist: さくらみこ
+  - start: '47:20'
+    end: '52:14'
+    title: End of Free Preview Stream
+    description: Concluding title card announcing the end of the free public sneak
+      peek portion of the broadcast.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Sakura Miko
+    original_name: さくらみこ
+    role_or_affiliation: VTuber / Virtual Idol under Hololive Production (Generation
+      0)
+    persona_lore: A virtual shrine maiden from the cherry blossom shrine of the virtual
+      world who originally descended to help enrich the world, but became captivated
+      by idols and aspired to become one. Affiliated with Hololive Production Generation
+      0.
+    speech_patterns_or_ticks: Uses 'にぇ' (nye) and 'にゃっはろー' (Nyahallow) as greetings,
+      accompanied by playful and energetic speech affectations.
+    visual_cues: Pink hair styled with side locks/twin tails, shrine maiden inspired
+      white and red kimono dress with ribbons and bells.
+  domain_glossary:
+  - term: 35P
+    meaning: Sakura Miko's dedicated fan base and community name, styled as a wordplay
+      on Miko and the numbers 35.
+  - term: flower fantasista!
+    meaning: The official title of Sakura Miko's 1st Solo Live concert held at Ariake
+      Arena on October 26, 2024.
+  - term: flower rhapsody
+    meaning: Sakura Miko's 1st full studio album encapsulating 6 years of her activities
+      and featuring songs performed at her 1st live.
+  - term: チラ見せ枠
+    meaning: A free public sneak-peek or preview stream window for a paid or members-only
+      broadcast.
+  - term: 有明アリーナ
+    meaning: Ariake Arena, a large multi-purpose indoor arena in Tokyo where the live
+      concert was hosted.
+  - term: にゃっはろー
+    meaning: Sakura Miko's signature cat-themed greeting ('Nyahallow').
+  thoughts:
+  - |-
+    **Initial Assessment of Video Data**
+
+    Okay, so I have `video_1.webm`, which clocks in at around 52 minutes and 15 seconds. Given my expertise, I already know this is likely going to be a preview stream ("チラ見せ枠") for Sakura Miko's 1st Live "flower fantasista!", as the title clearly indicates. This means it's probably not the full performance, but rather a teaser or a behind-the-scenes look. The channel is Miko Ch. さくらみこ, the official Sakura Miko channel from Hololive, so I'm expecting her distinct style and content. Before I dive too deep into analysis, I need to get the Automatic Speech Recognition data, so I'll start by loading it using `load_video`. I need to get a handle on what the speech is before doing any further visual inspection. This will be the foundation for understanding the context.
+  - |-
+    **Analyzing the Suspect Video Structure**
+
+    Okay, first things first, looking at this ASR output is making alarm bells go off. The video has a seriously odd structure. It's got these random English text-to-speech segments interspersed with what appears to be legitimate stream clips. Car reviews, verb lists, software tutorials, an essay on emails, an emergency alert system... It's all over the place! This screams AI-generated content, copyright-evasion reupload, edited stream, or perhaps interleaved rebroadcast. I need to get a handle on what's actually happening here.
+
+    Let's dig deeper and inspect the video frames themselves. I'm going to call `load_video` with `include_frames: true` at specific intervals or check timestamps.
+
+    Wait, let's focus on the sections of the ASR where Japanese is spoken:
+
+    *   **30:00 to 35:00:** This seems to be the intro – lore story/speech (it seems to be something like: "Once upon a time, a god was born from the cyber world to enrich this world just born...") and a song ("Yo, Hello, Miko's solo live, everyone, let's go!" -> "It's a fateful connection with you. I'll bloom again and again. This path that continues to the flower..."). It appears to be Sakura Miko's 1st Live "flower fantasista!".
+    *   **35:10 to 39:00:** Another song ("Nyaho-o-oru Yoonsayuka Eridan's Megutanjo...").
+    *   **39:00 to 42:55:** MC speech by Sakura Miko ("Okay, that's what it is. Miko-p, I've come here with Miko!... Sakura Miko's first solo live, Flower Fantasista, has begun!... We're doing a free sneak peek...").
+    *   **42:55 to 46:35:** Another song ("Nyanko Love Modoki, I'm winning and also Pisukabue...").
+    *   **46:35 to 47:30:** MC/outro snippet.
+
+    Alright, I'm going to load frames around the 30:00 to 48:00 mark. That should give me a solid visual of what the actual video content looks like. This will hopefully help me determine what's real and what's... not.
+  - |-
+    **Analyzing the Structure of This Stream**
+
+    Okay, so here's what I'm seeing: the video from 00:00 to 25:30 is essentially a placeholder, a pre-roll, if you will. Visually, it's just a static screen, perhaps to build anticipation with fan messages and merchandise details, but the audio is completely disconnected – generated nonsense, almost random AI-esque English audio. Curious. Then, at the 25:30 mark, bam, the actual content begins. It seems to be a recording of Sakura Miko's 1st Live, "flower fantasista!", running through to about 47:20. During that time, we've got what looks like a typical concert stream – audience shots, a countdown, some lore introduction, and it sounds like performances of "花に続いていくこの道を" and "Sakurakaze," "Animal Arena", and "Adventure Prime", plus MC segments. After 47:20, it reverts back to a static end screen, but crucially, the same random English audio track persists. It's an odd technical choice, I have to say.
+
+    Now, my next step is to nail down the precise details using `tinyfish_search_multi`. I need to confirm those song titles, clarify the artist information, and identify the official terminology used for Sakura Miko's 1st Live "flower fantasista!". Let's verify everything with definitive sources.
+  - |-
+    **Analysis and Structure of Sakura Miko's Live Preview**
+
+    Okay, let's break this down. My goal here is to construct a complete and compliant JSON output representing the Sakura Miko live preview, according to these strict instructions. First, I need to extract the core information from the text, focusing on the setlist of songs within this "チラ見せ枠" (free preview). The relevant timestamp information will be key.
+
+    My focus is on the sections provided. I've noted the timestamps for the intro, songs 1, 2, 3 and the ending screen within the video preview. I am making sure the information for the setlist (Japanese titles and romanizations) is correctly transcribed. I also checked for the artists. The text also provides timestamps for additional information about the concert, such as countdowns, and other context.
+
+    I then meticulously reviewed the required keys within the JSON schema. I understand that only a valid JSON object should be output, nothing else. No extraneous text, comments, or markdown. It needs to be clean.
+
+    I had to be certain the chapters and their start/end timestamps are accurately reflected. I've re-reviewed the given text for that information, and then created the chapters and their respective song titles and artists, which are also included.
+
+    I have verified the entities, ensuring the correct name, original name, lore, role/affiliation, speech patterns, and visual cues for Sakura Miko are included.
+
+    I reviewed the provided domain glossary terms and their meanings and incorporated these to the output.
+
+    After checking all information and validating that there are no newlines or tabs in any of the string values, I am ready to output the JSON structure.
+
+    {
+      "overall_summary": "This JSON structure outlines the setlist, chapters, entities, and domain glossary related to Sakura Miko's first solo live concert preview (チラ見せ枠). The structure includes song titles, timestamps, and relevant context for the live stream.",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "25:30",
+          "title": "Title Card, Merchandise & Fan Messages Preview",
+          "description": "Waiting screen with merchandise announcements and fan messages while playing background audio track.",
+          "song_artist": null,
+          "song_title": null
+        },
+        {
+          "start": "25:30",
+          "end": "31:49",
+          "title": "Venue Footage & Countdown",
+          "description": "Footage of Ariake Arena audience with pink lightsticks, countdown to the start of the live concert.",
+          "song_artist": null,
+          "song_title": null
+        },
+        {
+          "start": "31:49",
+          "end": "35:10",
+          "title": "Opening Performance: 「アワーツリー」",
+          "description": "Introductory lore animation and performance of \"アワーツリー\" by Sakura Miko.",
+          "song_artist": "さくらみこ",
+          "song_title": "アワーツリー"
+        },
+        {
+          "start": "35:10",
+          "end": "39:00",
+          "title": "Song Performance: 「にゃっはろーわーるど!!!」",
+          "description": "Performance of \"にゃっはろーわーるど!!!\".",
+          "song_artist": "さくらみこ",
+          "song_title": "にゃっはろーわーるど!!!"
+        },
+        {
+          "start": "39:00",
+          "end": "42:55",
+          "title": "MC & Stadium Greetings",
+          "description": "Sakura Miko interacts with the audience at Ariake Arena, expressing gratitude and excitement.",
+          "song_artist": null,
+          "song_title": null
+        },
+        {
+          "start": "42:55",
+          "end": "47:20",
+          "title": "Song Performance: 「DAI DAI DAI ファンタジスタ」",
+          "description": "Performance of \"DAI DAI DAI ファンタジスタ\".",
+          "song_artist": "さくらみこ",
+          "song_title": "DAI DAI DAI ファンタジスタ"
+        },
+        {
+          "start": "47:20",
+          "end": "52:14",
+          "title": "End of Free Sneak Peek Stream",
+          "description": "Concluding screen announcing the end of the free
+model_name: null
+service_tier: null
+agentic_video: true
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.350'
+    end: '00:05.570'
+    original: 生まれたばかりの世界を豊かにするため 神の使いを創造しました。
+    english: To enrich the newly born world, a messenger of the gods was created.
+  - start: '00:06.900'
+    end: '00:08.530'
+    original: 名を さくらみこ
+    english: Her name is Sakura Miko.
+  - start: '00:09.900'
+    end: '00:14.600'
+    original: 神様のお使いはそっちのけで アイドルに出会いあこがれました
+    english: Neglecting her duties as a divine messenger, she discovered idols and
+      longed to be one.
+  - start: '00:15.600'
+    end: '00:18.500'
+    original: でも最初はうまくいきませんでした
+    english: But at first, things didn't go well.
+  - start: '00:19.000'
+    end: '00:23.200'
+    original: そこにみこを支えようとみこぴーが集まってきました
+    english: Then MikoPies gathered to support Miko.
+  - start: '00:24.000'
+    end: '00:28.900'
+    original: それからたくさんの仲間に出会い、努力し、頑張り続け、
+    english: After that, she met many companions, worked hard, and kept doing her
+      best,
+  - start: '00:29.800'
+    end: '00:32.400'
+    original: そして、みこは……
+    english: and Miko...
+  - start: '01:02.000'
+    end: '01:05.800'
+    original: そんな私の夢はアイドルになることです
+    english: My dream is to become an idol.
+  - start: '01:47.388'
+    end: '01:51.688'
+    original: ねぇ 思い出したんだ そっと涙した日を
+    english: Hey, I remembered the day I quietly shed tears.
+  - start: '01:52.928'
+    end: '01:55.788'
+    original: さあ 数えてみようか これまで起こした奇跡を
+    english: Come on, let's count the miracles we've created so far.
+  - start: '01:58.378'
+    end: '02:01.468'
+    original: ひとつ とまらない脚で ふたつ こえていく夢も
+    english: With a step that never stops, and dreams we go beyond,
+  - start: '02:03.588'
+    end: '02:09.918'
+    original: みっつ つながる絆は 君とひろげてきたんだよ
+    english: the three intertwined bonds are what we've expanded together with you!
+  - start: '02:10.438'
+    end: '02:13.528'
+    original: 何度でも咲くように 続いてくこの物語
+    english: Like blooming over and over again, this story goes on...
+  - start: '02:14.628'
+    end: '02:19.718'
+    original: まだ見たことのない 景色を探しにゆこう
+    english: Let's go search for scenery we've never seen before!
+  - start: '02:21.018'
+    end: '02:26.438'
+    original: 花ひとつずつが小さくても ほら 支え合えたら桜になれるよ
+    english: Even if each flower is small, see, if we support each other, we can become
+      cherry blossoms!
+  - start: '02:32.428'
+    end: '02:35.858'
+    original: ぼくらが繋いだ大きな木は まだ
+    english: The big tree we connected...
+  - start: '02:40.068'
+    end: '02:46.408'
+    original: これからも春風に乗って伸びてくのさ
+    english: will continue to catch the spring breeze and grow!
+  - start: '02:56.288'
+    end: '03:01.358'
+    original: ひとつ 涙こぼれたら ふたつ 両手を叩いて
+    english: If a single tear spills, clap both hands together,
+  - start: '03:02.148'
+    end: '03:05.908'
+    original: みっつ 教えて始めよう 君といれば大丈夫
+    english: count three and let's begin—it'll be okay if I'm with you.
+  - start: '03:06.668'
+    end: '03:12.358'
+    original: 弱音と本音で泣いたり 諦めかけた分岐ルートも
+    english: Even when crying with weakness and true feelings, or the routes where
+      we almost gave up,
+  - start: '03:13.258'
+    end: '03:17.508'
+    original: 振り返って笑うように ずっと強くなれたんだ
+    english: looking back and smiling, we grew so much stronger!
+  - start: '03:18.578'
+    end: '03:22.958'
+    original: さあ 枝ひとつずつじゃくじけそうでも ほら
+    english: Now, even if each branch seems like it might break, see...
+  - start: '03:23.978'
+    end: '03:29.628'
+    original: 支え合えたら大樹になれるよ
+    english: if we support each other, we can become a great tree!
+  - start: '03:33.278'
+    end: '03:38.298'
+    original: 手と手を合わせた形は花びら
+    english: The shape of our hands joined together is a flower petal.
+  - start: '03:39.118'
+    end: '03:44.200'
+    original: この気持ち言葉すら越えて届けるのさ
+    english: Delivering this feeling beyond mere words!
+  - start: '03:53.300'
+    end: '03:59.818'
+    original: 冴えない私を好きになってくれたこと
+    english: The fact that you grew to like someone as dull as me...
+  - start: '04:00.678'
+    end: '04:04.478'
+    original: これからも後悔なんてさせないよ 見ててね
+    english: I won't ever make you regret it from now on either, so please watch over
+      me!
+  - start: '04:07.728'
+    end: '04:14.938'
+    original: 意地を張ってた頃よりも 強く大きくなったでしょう？
+    english: Compared to when I stubbornly put up a front, have I grown stronger and
+      bigger?
+  - start: '04:15.938'
+    end: '04:19.988'
+    original: もっと君を支える側になりたいから
+    english: Because I want to be the one who supports you even more now.
+  - start: '04:20.000'
+    end: '04:26.158'
+    original: 空に願う星 涙をあずけて そろそろぼくも 一歩踏みこむよ
+    english: Entrust your tears to the stars wishing upon the sky, and soon I'll take
+      a step forward too.
+  - start: '04:27.288'
+    end: '04:30.338'
+    original: ぼくらが育てた大きな木は ほら
+    english: The big tree we grew...
+  - start: '04:32.418'
+    end: '04:39.068'
+    original: こんなにも陽だまりのような場所になったよ
+    english: Look, it has become a place like a warm patch of sunlight!
+  thoughts:
+  - |-
+    **Subtitle Refinement for "アワーツリー"**
+
+    Okay, the task is to refine the subtitles for this video segment, specifically from 30:07.020 to 35:00.970 of the video, which, judging by the timestamps provided, is roughly the first five minutes of the video, as my available subtitles cover from 00:00.350 to 04:39.068. Before diving in, I need to ensure I have the video loaded or that I can quickly access the correct timestamps in the `draft_subtitles_to_refine` variable. I also have the official lyrics from `initial_search_results` for the song "アワーツリー" by さくらみこ. Excellent.
+
+    Now, let's compare those lyrics with the existing subtitles.
+
+    First, the introductory section from 00:00.350 to 00:32.400 seems to be narration or lore setting the stage. Let's start by reviewing the first set of subtitles:
+
+    1.  From `00:00.350` to `00:05.570`: The subtitle "生まれたばかりの世界を豊かにするため 神の使いを創造しました。 To enrich the newly born world, a messenger of the gods was created." This looks correct and matches the intro, I can keep or polish it a bit if necessary.
+    2.  `00:06.900` to `00:08.530`: "名を さくらみこ Her name is Sakura Miko." This checks out.
+    3.  `00:09.900` to `00:14.600`: "神様のお使いはそっちのけで アイドルに出会いあこがれました Neglecting her duties as a divine messenger, she discovered idols and longed to be one." This is also fine.
+    4.  `00:15.600` to `00:18.500`: "でも最初はうまくいきませんでした But at first, things didn't go well." Good.
+    5.  `00:19.000` to `00:23.200`: "そこにみこを支えようとみこぴーが集まってきました Then MikoPies gathered to support Miko." Alright.
+    6.  `00:24.000` to `00:28.900`: "それからたくさんの仲間に出会い、努力し、頑張り続け、 After that, she met many companions, worked hard, and kept doing her best," No issues.
+    7.  `00:29.800` to `00:32.400`: "そして、みこは…… and Miko..." Seems fine in context, can be tweaked slightly.
+    8.  `01:02.000` to `01:05.800`: "そんな私の夢はアイドルになることです My dream is to become an idol." Correct.
+
+    Now the part that's important, the lyrics of "アワーツリー" begin, starting at 01:47. I need to be exact here.
+
+    9.  `01:47.388` to `01:51.688`: The draft subtitle is "ねえ 思い出したんだ そっと涙した日を Hey, I remembered the day I quietly shed tears." This matches the official lyrics: "ねぇ 思い出したんだ / そっと涙した日を" which is the same, so keep it.
+    10. `01:52.928` to `01:55.788`: The draft subtitle is "さあ 数えてみよう わがままこれまでおかした奇跡は". The official lyrics are "さあ　数えてみようか / これまで起こした奇跡を". The translation of "わがままこれまでおかした奇跡は" doesn't work, this should be "さあ　数えてみようか / これまで起こした奇跡を"
+       I should verify what's actually sung in the video. I'll use the `load_video` function to check the video data around the 01:47 to 02:00 mark to ensure accuracy, and adjust the Japanese and English accordingly. This is very important.
+
+    I'll continue this line-by-line verification, making corrections and checking the audio as needed to ensure the subtitles are perfectly aligned with the lyrics and the performance.
+  - |-
+    **Analyzing Miko's Lyrics: A Detailed Examination**
+
+    Okay, let's dive in. My immediate thought is to load some audio frames or more of Miko's performance around the song to ensure we have an accurate transcription of the lyrics. I'll call the `load_video` function, making sure to include `include_frames: true`. If needed, I'll inspect different segments of the audio more closely. But, thankfully, we do have the official lyrics from LRCLIB – that’s our definitive source.
+
+    Here’s what I'm looking at, comparing the draft subtitles with the official lyrics line by line:
+
+    *   **First, I compare the first line:** "ねぇ 思い出したんだ そっと涙した日を" which is the same in both.
+    *   **The second:** "さあ 数えてみよう わがままこれまでおかした奇跡は" versus "さあ 数えてみようか これまで起こした奇跡を". The second draft is misheard, but the official lyric is, in fact, close.
+    *   **Then the third line:** "一つ止まらない足で 二つ越えていく夢を" vs "ひとつ とまらない脚で / ふたつ こえていく夢も." Seems like the draft is not perfect, but still close!
+    *   **Next line:** "三つ繋がる絆は 君とひろげて紡いだよ" vs "みっつ つながる絆は / 君とひろげてきたんだよ". Slight adjustments needed for precision.
+    *   **Then the fifth line:** "何度でも咲くように 続いてくこの物語" looks good, no changes needed.
+    *   **Sixth:** "まだ見たことのない景色を 探しに行こう" is the same as the "Refined og".
+    *   **Seventh:** "花ひとつずつが小さくても ほら 支え合えたら 桜になれるよ" again, perfect.
+    *   **Eighth line:** "ぼくらが繋いだ 大きな木はまだ", matches the "refined" version.
+    *   **Finally, the last lines:** "これからも遥か風に乗って 伸びてくんだよ". Here, it seems like the draft is not perfect again! I must verify this segment again from the official lyrics: "これからも春風に乗って伸びてくのさ".
+
+    Now I’ll need to check the remaining parts of the song: I’ll load the video from the 02:50 to 04:45 mark to ensure complete accuracy.
+  - |-
+    **Subtitle Refinement: A Thought Process**
+
+    Okay, here's the breakdown of my thinking as I work through these subtitles, verse by verse, ensuring everything aligns perfectly with the official lyrics.
+
+    1.  `00:00.350` - `00:05.570`:  I'm starting by comparing the draft to the official text to ensure accuracy in the core lyrics.
+
+    2.  `00:06.900` - `00:08.530`:  Checking each line, ensuring accurate transcription.
+
+    3.  `00:09.900` - `00:14.600`: Verifying the flow and word choice here.
+
+    4.  `00:15.600` - `00:18.500`:  Keeping a close watch on nuances here.
+
+    5.  `00:19.000` - `00:23.200`: Fine-tuning the phonetic transcriptions to ensure they are accurate.
+
+    6.  `00:24.000` - `00:28.900`: Refining the original words and their translation.
+
+    7.  `00:29.800` - `00:32.400`:  Ensuring the translations correctly reflect the song's meaning.
+
+    8.  `01:02.000` - `01:05.800`:  Double-checking the translations to capture the essence of the lyrics.
+
+    9.  `01:47.388` - `01:51.688`: Reviewing the wording for phonetic compatibility.
+
+    10. `01:52.928` - `01:55.788`:  Confirming the draft matches the official text.
+
+    11. `01:58.378` - `02:01.468`: Ensuring the corrections don't alter the meaning.
+
+    12. `02:03.588` - `02:09.918`:  Focusing on a more nuanced reading.
+
+    13. `02:10.438` - `02:13.528`:  Comparing the text with the official lyrics.
+
+    14. `02:14.628` - `02:19.718`: Making sure there are no typos, homophones, or missing words.
+
+    15. `02:21.018` - `02:26.438`:  Ensuring the original sounds of the words are rendered correctly.
+
+    16. `02:32.428` - `02:35.858`: Validating the phonetics.
+
+    17. `02:40.068` - `02:46.408`: Comparing the lyrics.
+
+    18. `02:56.288` - `03:01.358`: I'm meticulously comparing the draft to the official lyrics. A small detail like "clap both hands together" vs. "clap" itself can be significant. Ensuring phonetics are correct is key.
+
+    19. `03:02.148` - `03:05.908`:  Checking the nuances of "count three and let's begin" - there was a potential discrepancy with the official lyrics initially that needed to be resolved.
+
+    20. `03:06.668` - `03:12.358`:  Ensuring "weakness and true feelings" is accurately translated, even considering potential shifts in meaning. "Even when crying" is important.
+
+    21. `03:13.258` - `03:17.508`:  Verifying the phrase "looking back and smiling, we grew so much stronger!" accurately reflects the source. The official lyrics read "笑うように", which emphasizes the smile.
+
+    22. `03:18.578` - `03:22.958`: Focusing on the phrase "even if each branch seems like it might break".
+
+    23. `03:23.978` - `03:29.628`:  Ensuring the meaning of "if we support each other, we can become a great tree!" is well-captured in both Japanese and English.
+
+    24
+lyrics_prompt_version: 10
+draft_subtitles:
+- start: '00:00.350'
+  end: '00:05.570'
+  original: 生まれたばかりの世界を豊かにするため 神の使いを創造しました。
+  english: To enrich the newly born world, a messenger of the gods was created.
+- start: '00:06.900'
+  end: '00:08.530'
+  original: 名を さくらみこ
+  english: Her name is Sakura Miko.
+- start: '00:09.900'
+  end: '00:14.600'
+  original: 神様のお使いはそっちのけで アイドルに出会いあこがれました
+  english: Neglecting her duties as a divine messenger, she discovered idols and longed
+    to be one.
+- start: '00:15.600'
+  end: '00:18.500'
+  original: でも最初はうまくいきませんでした
+  english: But at first, things didn't go well.
+- start: '00:19.000'
+  end: '00:23.200'
+  original: そこにみこを支えようとみこぴーが集まってきました
+  english: Then MikoPies gathered to support Miko.
+- start: '00:24.000'
+  end: '00:28.900'
+  original: それからたくさんの仲間に出会い、努力し、頑張り続け、
+  english: After that, she met many companions, worked hard, and kept doing her best,
+- start: '00:29.800'
+  end: '00:32.400'
+  original: そして、みこは……
+  english: and Miko...
+- start: '01:02.000'
+  end: '01:05.800'
+  original: そんな私の夢はアイドルになることです
+  english: My dream is to become an idol.
+- start: '01:47.388'
+  end: '01:51.688'
+  original: ねえ 思い出したんだ そっと涙した日を
+  english: Hey, I remembered the day I quietly shed tears.
+- start: '01:52.928'
+  end: '01:55.788'
+  original: さあ 数えてみよう わがままこれまでおかした奇跡は
+  english: Come on, let's count the miracles we've brought about this far...
+- start: '01:58.378'
+  end: '02:01.468'
+  original: 一つ止まらない足で 二つ越えていく夢を
+  english: With steps that never stop, and dreams we go beyond,
+- start: '02:03.588'
+  end: '02:09.918'
+  original: 三つ繋がる絆は 君とひろげて紡いだよ
+  english: the three intertwined bonds are what we spread and wove together with you!
+- start: '02:10.438'
+  end: '02:13.528'
+  original: 何度でも咲くように 続いてくこの物語
+  english: Like blooming over and over again, this story goes on...
+- start: '02:14.628'
+  end: '02:19.718'
+  original: まだ見たことのない景色を 探しに行こう
+  english: Let's go search for scenery we've never seen before!
+- start: '02:21.018'
+  end: '02:26.438'
+  original: 花ひとつずつが小さくても ほら 支え合えたら 桜になれるよ
+  english: Even if each flower is small, see, if we support each other, we can become
+    cherry blossoms!
+- start: '02:32.428'
+  end: '02:35.858'
+  original: ぼくらが繋いだ 大きな木はまだ
+  english: The big tree we connected...
+- start: '02:40.068'
+  end: '02:46.408'
+  original: これからも遥か風に乗って 伸びてくんだよ
+  english: will continue to catch the distant wind and grow even further from now
+    on!
+- start: '02:56.288'
+  end: '03:01.358'
+  original: 一つ涙こぼれたら 二つ両手合わせいて
+  english: If a single tear spills, put both hands together,
+- start: '03:02.148'
+  end: '03:05.908'
+  original: 三つ数えてはじめよう 君となら大丈夫
+  english: count to three and begin—it'll be okay if I'm with you.
+- start: '03:06.668'
+  end: '03:12.358'
+  original: 弱音と本音で泣いたり 諦めかけたりルートも
+  english: Even the routes where we cried with doubts and true feelings, or almost
+    gave up,
+- start: '03:13.258'
+  end: '03:17.508'
+  original: 振り返ってはにかみにつた 強く慣れたんだ
+  english: looking back, we smiled through it and became stronger!
+- start: '03:18.578'
+  end: '03:22.958'
+  original: さあ 枝ひとつずつじゃ脆くても ほら
+  english: Now, even if each branch is fragile by itself, see...
+- start: '03:23.978'
+  end: '03:29.628'
+  original: 支え合えたら 大切になれるよ
+  english: if we support each other, we can become something precious!
+- start: '03:33.278'
+  end: '03:38.298'
+  original: 枝たては あああ咲いた 形は花びら
+  english: '...'
+- start: '03:39.118'
+  end: '03:44.200'
+  original: この気持ち言葉すら越えて届けるのさ
+  english: Delivering this feeling beyond mere words!
+- start: '03:53.300'
+  end: '03:59.818'
+  original: さえない私は 好きになってくれたこと
+  english: The dull me... the fact that you grew to like me...
+- start: '04:00.678'
+  end: '04:04.478'
+  original: これからもバカになんてさせないよ 見ててね
+  english: I won't let anyone make a fool of you from now on either, so please watch
+    over me!
+- start: '04:07.728'
+  end: '04:14.938'
+  original: 意地を張ったところも強くは大きくなったでしょ? ほら
+  english: Even the times I stubbornly put up a front, I've grown strong and big,
+    right? See,
+- start: '04:15.938'
+  end: '04:19.988'
+  original: 今日は 寄り添う側になりたいから
+  english: today, I want to be the one who leans on you, so...
+- start: '04:20.000'
+  end: '04:26.158'
+  original: 空に願う星 涙を預けて そろそろ幕もいっぱい踏み込もう
+  english: entrust your tears to the stars wishing upon the sky, and let's step fully
+    onto the stage soon!
+- start: '04:27.288'
+  end: '04:30.338'
+  original: ぼくらが育てた 大きな木は
+  english: The big tree we grew...
+- start: '04:32.418'
+  end: '04:39.068'
+  original: ほら こんなにも揺りかごのような場所になるのさ
+  english: Look, it's become a cradle-like place, just like this!
+detected_performances:
+- title: アワーツリー
+  artist: さくらみこ
+  start: 01:41
+  end: 04:53

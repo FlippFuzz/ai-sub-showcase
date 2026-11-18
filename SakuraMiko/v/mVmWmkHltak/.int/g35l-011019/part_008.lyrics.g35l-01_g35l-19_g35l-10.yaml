@@ -1,0 +1,512 @@
+name: part_008
+total_attempts: 1
+user_context: This is a YouTube video from Miko Ch. さくらみこ channel. The video title
+  is '【チラ見せ枠】さくらみこ1st Live "flower fantasista!"【#咲き誇るみこち】'.
+segment_index: null
+video_duration_ms: 300015
+segment_offset_ms: 2402153
+global_summary:
+  overall_summary: This video is the free sneak peek broadcast (チラ見せ枠) for Sakura
+    Miko's 1st Solo Live 'flower fantasista!', held at Ariake Arena on October 26,
+    2024. The video opens with a static waiting screen displaying merchandise announcements
+    and fan congratulatory messages (accompanied by an unrelated background audio
+    track), followed by audience footage and a countdown. It then streams selected
+    live performances including 'アワーツリー', 'にゃっはろーわーるど!!!', and 'DAI DAI DAI ファンタジスタ',
+    interspersed with stadium MC greetings and emotional interactions with her fans
+    (35P), concluding with an end-of-preview slide.
+  chapters:
+  - start: 00:00
+    end: '25:30'
+    title: Waiting Screen & Merchandise Preview
+    description: Static stream holding screen featuring official 1st Live merchandise
+      announcements and fan message boards, with background audio.
+    song_title: null
+    song_artist: null
+  - start: '25:30'
+    end: '31:49'
+    title: Arena Footage & Live Countdown
+    description: Shots of the packed Ariake Arena audience waving pink lightsticks
+      during the countdown preceding the start of the live concert.
+    song_title: null
+    song_artist: null
+  - start: '31:49'
+    end: '35:10'
+    title: 'Opening Performance: アワーツリー'
+    description: Opening segment featuring an animated lore sequence followed by Sakura
+      Miko's live performance of 'アワーツリー'.
+    song_title: アワーツリー
+    song_artist: さくらみこ
+  - start: '35:10'
+    end: '39:00'
+    title: 'Song Performance: にゃっはろーわーるど!!!'
+    description: High-energy performance of her signature greeting-themed song 'にゃっはろーわーるど!!!'
+      with vibrant stage visuals.
+    song_title: にゃっはろーわーるど!!!
+    song_artist: さくらみこ
+  - start: '39:00'
+    end: '42:55'
+    title: Stadium MC & Greetings
+    description: Sakura Miko addresses the audience at Ariake Arena, expressing overwhelming
+      gratitude and emotional excitement for her long-awaited 1st solo live.
+    song_title: null
+    song_artist: null
+  - start: '42:55'
+    end: '47:20'
+    title: 'Song Performance: DAI DAI DAI ファンタジスタ'
+    description: Performance of 'DAI DAI DAI ファンタジスタ' featuring upbeat choreography
+      and enthusiastic crowd participation.
+    song_title: DAI DAI DAI ファンタジスタ
+    song_artist: さくらみこ
+  - start: '47:20'
+    end: '52:14'
+    title: End of Free Preview Stream
+    description: Concluding title card announcing the end of the free public sneak
+      peek portion of the broadcast.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Sakura Miko
+    original_name: さくらみこ
+    role_or_affiliation: VTuber / Virtual Idol under Hololive Production (Generation
+      0)
+    persona_lore: A virtual shrine maiden from the cherry blossom shrine of the virtual
+      world who originally descended to help enrich the world, but became captivated
+      by idols and aspired to become one. Affiliated with Hololive Production Generation
+      0.
+    speech_patterns_or_ticks: Uses 'にぇ' (nye) and 'にゃっはろー' (Nyahallow) as greetings,
+      accompanied by playful and energetic speech affectations.
+    visual_cues: Pink hair styled with side locks/twin tails, shrine maiden inspired
+      white and red kimono dress with ribbons and bells.
+  domain_glossary:
+  - term: 35P
+    meaning: Sakura Miko's dedicated fan base and community name, styled as a wordplay
+      on Miko and the numbers 35.
+  - term: flower fantasista!
+    meaning: The official title of Sakura Miko's 1st Solo Live concert held at Ariake
+      Arena on October 26, 2024.
+  - term: flower rhapsody
+    meaning: Sakura Miko's 1st full studio album encapsulating 6 years of her activities
+      and featuring songs performed at her 1st live.
+  - term: チラ見せ枠
+    meaning: A free public sneak-peek or preview stream window for a paid or members-only
+      broadcast.
+  - term: 有明アリーナ
+    meaning: Ariake Arena, a large multi-purpose indoor arena in Tokyo where the live
+      concert was hosted.
+  - term: にゃっはろー
+    meaning: Sakura Miko's signature cat-themed greeting ('Nyahallow').
+  thoughts:
+  - |-
+    **Initial Assessment of Video Data**
+
+    Okay, so I have `video_1.webm`, which clocks in at around 52 minutes and 15 seconds. Given my expertise, I already know this is likely going to be a preview stream ("チラ見せ枠") for Sakura Miko's 1st Live "flower fantasista!", as the title clearly indicates. This means it's probably not the full performance, but rather a teaser or a behind-the-scenes look. The channel is Miko Ch. さくらみこ, the official Sakura Miko channel from Hololive, so I'm expecting her distinct style and content. Before I dive too deep into analysis, I need to get the Automatic Speech Recognition data, so I'll start by loading it using `load_video`. I need to get a handle on what the speech is before doing any further visual inspection. This will be the foundation for understanding the context.
+  - |-
+    **Analyzing the Suspect Video Structure**
+
+    Okay, first things first, looking at this ASR output is making alarm bells go off. The video has a seriously odd structure. It's got these random English text-to-speech segments interspersed with what appears to be legitimate stream clips. Car reviews, verb lists, software tutorials, an essay on emails, an emergency alert system... It's all over the place! This screams AI-generated content, copyright-evasion reupload, edited stream, or perhaps interleaved rebroadcast. I need to get a handle on what's actually happening here.
+
+    Let's dig deeper and inspect the video frames themselves. I'm going to call `load_video` with `include_frames: true` at specific intervals or check timestamps.
+
+    Wait, let's focus on the sections of the ASR where Japanese is spoken:
+
+    *   **30:00 to 35:00:** This seems to be the intro – lore story/speech (it seems to be something like: "Once upon a time, a god was born from the cyber world to enrich this world just born...") and a song ("Yo, Hello, Miko's solo live, everyone, let's go!" -> "It's a fateful connection with you. I'll bloom again and again. This path that continues to the flower..."). It appears to be Sakura Miko's 1st Live "flower fantasista!".
+    *   **35:10 to 39:00:** Another song ("Nyaho-o-oru Yoonsayuka Eridan's Megutanjo...").
+    *   **39:00 to 42:55:** MC speech by Sakura Miko ("Okay, that's what it is. Miko-p, I've come here with Miko!... Sakura Miko's first solo live, Flower Fantasista, has begun!... We're doing a free sneak peek...").
+    *   **42:55 to 46:35:** Another song ("Nyanko Love Modoki, I'm winning and also Pisukabue...").
+    *   **46:35 to 47:30:** MC/outro snippet.
+
+    Alright, I'm going to load frames around the 30:00 to 48:00 mark. That should give me a solid visual of what the actual video content looks like. This will hopefully help me determine what's real and what's... not.
+  - |-
+    **Analyzing the Structure of This Stream**
+
+    Okay, so here's what I'm seeing: the video from 00:00 to 25:30 is essentially a placeholder, a pre-roll, if you will. Visually, it's just a static screen, perhaps to build anticipation with fan messages and merchandise details, but the audio is completely disconnected – generated nonsense, almost random AI-esque English audio. Curious. Then, at the 25:30 mark, bam, the actual content begins. It seems to be a recording of Sakura Miko's 1st Live, "flower fantasista!", running through to about 47:20. During that time, we've got what looks like a typical concert stream – audience shots, a countdown, some lore introduction, and it sounds like performances of "花に続いていくこの道を" and "Sakurakaze," "Animal Arena", and "Adventure Prime", plus MC segments. After 47:20, it reverts back to a static end screen, but crucially, the same random English audio track persists. It's an odd technical choice, I have to say.
+
+    Now, my next step is to nail down the precise details using `tinyfish_search_multi`. I need to confirm those song titles, clarify the artist information, and identify the official terminology used for Sakura Miko's 1st Live "flower fantasista!". Let's verify everything with definitive sources.
+  - |-
+    **Analysis and Structure of Sakura Miko's Live Preview**
+
+    Okay, let's break this down. My goal here is to construct a complete and compliant JSON output representing the Sakura Miko live preview, according to these strict instructions. First, I need to extract the core information from the text, focusing on the setlist of songs within this "チラ見せ枠" (free preview). The relevant timestamp information will be key.
+
+    My focus is on the sections provided. I've noted the timestamps for the intro, songs 1, 2, 3 and the ending screen within the video preview. I am making sure the information for the setlist (Japanese titles and romanizations) is correctly transcribed. I also checked for the artists. The text also provides timestamps for additional information about the concert, such as countdowns, and other context.
+
+    I then meticulously reviewed the required keys within the JSON schema. I understand that only a valid JSON object should be output, nothing else. No extraneous text, comments, or markdown. It needs to be clean.
+
+    I had to be certain the chapters and their start/end timestamps are accurately reflected. I've re-reviewed the given text for that information, and then created the chapters and their respective song titles and artists, which are also included.
+
+    I have verified the entities, ensuring the correct name, original name, lore, role/affiliation, speech patterns, and visual cues for Sakura Miko are included.
+
+    I reviewed the provided domain glossary terms and their meanings and incorporated these to the output.
+
+    After checking all information and validating that there are no newlines or tabs in any of the string values, I am ready to output the JSON structure.
+
+    {
+      "overall_summary": "This JSON structure outlines the setlist, chapters, entities, and domain glossary related to Sakura Miko's first solo live concert preview (チラ見せ枠). The structure includes song titles, timestamps, and relevant context for the live stream.",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "25:30",
+          "title": "Title Card, Merchandise & Fan Messages Preview",
+          "description": "Waiting screen with merchandise announcements and fan messages while playing background audio track.",
+          "song_artist": null,
+          "song_title": null
+        },
+        {
+          "start": "25:30",
+          "end": "31:49",
+          "title": "Venue Footage & Countdown",
+          "description": "Footage of Ariake Arena audience with pink lightsticks, countdown to the start of the live concert.",
+          "song_artist": null,
+          "song_title": null
+        },
+        {
+          "start": "31:49",
+          "end": "35:10",
+          "title": "Opening Performance: 「アワーツリー」",
+          "description": "Introductory lore animation and performance of \"アワーツリー\" by Sakura Miko.",
+          "song_artist": "さくらみこ",
+          "song_title": "アワーツリー"
+        },
+        {
+          "start": "35:10",
+          "end": "39:00",
+          "title": "Song Performance: 「にゃっはろーわーるど!!!」",
+          "description": "Performance of \"にゃっはろーわーるど!!!\".",
+          "song_artist": "さくらみこ",
+          "song_title": "にゃっはろーわーるど!!!"
+        },
+        {
+          "start": "39:00",
+          "end": "42:55",
+          "title": "MC & Stadium Greetings",
+          "description": "Sakura Miko interacts with the audience at Ariake Arena, expressing gratitude and excitement.",
+          "song_artist": null,
+          "song_title": null
+        },
+        {
+          "start": "42:55",
+          "end": "47:20",
+          "title": "Song Performance: 「DAI DAI DAI ファンタジスタ」",
+          "description": "Performance of \"DAI DAI DAI ファンタジスタ\".",
+          "song_artist": "さくらみこ",
+          "song_title": "DAI DAI DAI ファンタジスタ"
+        },
+        {
+          "start": "47:20",
+          "end": "52:14",
+          "title": "End of Free Sneak Peek Stream",
+          "description": "Concluding screen announcing the end of the free
+model_name: null
+service_tier: null
+agentic_video: true
+retry_settings: null
+response:
+  subtitles:
+  - start: '00:00.237'
+    end: '00:03.497'
+    original: えーそしてね 無料チラ見せっていのやってます
+    english: Um, and also, we're doing a free preview stream...
+  - start: '00:03.747'
+    end: '00:05.107'
+    original: TikTokとか YouTubeとか
+    english: like on TikTok and YouTube.
+  - start: '00:05.357'
+    end: '00:09.137'
+    original: でも もうすぐ終わっちゃうかも わかんないけどね? わかんないけどね?
+    english: But it might end really soon. Who knows, right? Who knows, right?
+  - start: '00:09.527'
+    end: '00:13.197'
+    original: そのために早めに買ってね! 買ってねー!
+    english: That's why you should buy it early! Buy it!
+  - start: '00:13.417'
+    end: '00:15.537'
+    original: みんな勝ってって言って! 買え! 買え!
+    english: Everyone says "just buy it!" Buy! Buy!
+  - start: '00:15.827'
+    end: '00:18.967'
+    original: はい そしてね 少しの感想はハッシュタグ
+    english: Right, and please post your brief impressions
+  - start: '00:18.967'
+    end: '00:22.257'
+    original: '[Text: 咲き誇るみこち]をつけて 投稿してください!'
+    english: 'with the hashtag [Text: #SakihokoruMikochi]!'
+  - start: '00:22.617'
+    end: '00:26.557'
+    original: それでは みんな 次の曲いくよ!
+    english: Well then, everyone, let's go to the next song!
+  - start: '00:26.837'
+    end: '00:29.627'
+    original: 連れてこれたー!
+    english: Brought them all the way here!
+  - start: '03:10.592'
+    end: '03:16.812'
+    original: にゃー！ Hello! The beautiful days! 刮目しちゃってくれ！ Please call "Elite"! Funky
+      dancing, baby! A-ah, ah!
+    english: Nyah! Hello! The beautiful days! Feast your eyes on me! Please call 'Elite'!
+      Funky dancing, baby! A-ah, ah!
+  - start: '03:18.312'
+    end: '03:22.382'
+    original: さぁ 待ったはなしだ！ 始めちゃえ！ 今日も 気ぃ引き締めて えいや！ で挑戦だ
+    english: Come on, no more waiting! Let's get started! Pull yourself together today
+      and take on the challenge with a spirited 'Ei-ya!'
+  - start: '03:23.772'
+    end: '03:29.982'
+    original: さぁ なんとかなっちゃえ！ 飛び込んで なんたって ジッとしたっても 人生は冒険だ
+    english: Come on, things will somehow work out! Dive in! No matter what, even
+      if you stay still, life is an adventure!
+  - start: '03:30.402'
+    end: '03:35.832'
+    original: こんがらがったら またわかんないぞ 道のりは困難だ！ なんなんだ！ 上等だ！ ダンダンダン！ あはぁ
+    english: If things get all tangled up, you won't get it again! The path is tough!
+      What is this?! Bring it on! Dan-dan-dan! Ah-ha!
+  - start: '03:36.172'
+    end: '03:42.502'
+    original: メソメソしちゃって 気持ちに「待った」しちゃって あれ？ 一体全体どうしたん？
+    english: Moping and crying, putting a hold on your feelings... Huh? What on earth
+      is going on?
+  - start: '03:43.762'
+    end: '03:49.852'
+    original: 絶体絶命？ 君たちには 涙は似合わないね！
+    english: Dead end? Tears don't suit you guys at all!
+  - start: '03:50.042'
+    end: '03:56.242'
+    original: 大大大大冒険に 飛び出そうぜ！ 良いじゃんねぇ！
+    english: Let's leap out into a grand adventure! Isn't that great?!
+  - start: '03:56.592'
+    end: '04:02.342'
+    original: 大大大大失敗も 重ねて成長して Happyな feel soで 君と笑い話にしよう
+    english: Accumulate massive failures, grow from them, and with a happy feel-so,
+      let's turn it into a funny story with you!
+  - start: '04:03.112'
+    end: '04:05.902'
+    original: 絶体絶命？ 君たちには 涙は似合わないね！
+    english: Dead end? Tears don't suit you guys!
+  - start: '04:06.912'
+    end: '04:13.252'
+    original: 大大大大冒険に 飛び出そうぜ！ 良いじゃんねぇ！ 大大大大失敗も 重ねて成長して
+    english: Let's leap into a massive adventure! Isn't that great?! Accumulating
+      huge failures and growing from them,
+  - start: '04:13.682'
+    end: '04:21.462'
+    original: Happyな feel soで 君と笑い話にしよう 大大大大問題も 吹き飛ばせ！
+    english: with a happy feel-so, let's turn it into a funny story with you! Blow
+      away all massive problems!
+  - start: '04:22.092'
+    end: '04:29.172'
+    original: いつか 大大大大団円の 素敵な結末へ Please me! さぁ 付いてきて？ 進め！ 前代未聞の new world!
+    english: Someday toward a wonderful grand finale! Please me! Come follow me? Advance
+      into an unprecedented new world!
+  - start: '04:29.982'
+    end: '04:35.542'
+    original: あながち間違ってる ま～た墓穴も掘ってる（勉強！ 勉強！）
+    english: Not necessarily wrong, digging our own graves again (Study! Study!)
+  - start: '04:36.002'
+    end: '04:42.752'
+    original: はいはいはい 知ってます 待って なんか違ってる！ ぶっちゃけ 有識者の皆様に感謝してます！
+    english: Yeah, yeah, yeah, I know, wait, something's off! Honestly, I'm grateful
+      to all the experts out there!
+  - start: '04:43.142'
+    end: '04:49.192'
+    original: Nice comments 待ってんぜ ウジウジしちゃって 心にロックしちゃって
+    english: Waiting for nice comments! Moping around, locking it into our hearts,
+  - start: '04:49.522'
+    end: '04:55.912'
+    original: ほら だんだん だんだん ダウンしちゃ 絶体絶命!? 君たちには 笑顔が足りてないね！
+    english: Look, going down step by step... Dead end?! You guys are lacking smiles!
+  - start: '04:56.142'
+    end: '04:59.602'
+    original: 映画のクライマックス
+    english: It's the climax of a movie!
+  thoughts:
+  - |-
+    **Subtitle Refinement for "DAI DAI DAI ファンタジスタ" Segment**
+
+    Okay, so the task is to refine the subtitles for a musical performance, specifically the segment from 40:02.153 to 45:02.168 of `video_1.webm`. The initial focus is on the "DAI DAI DAI ファンタジスタ" song, starting around 03:10.592 into the provided subtitle draft (which corresponds to 43:12 in the overall video). The key here is to keep stage banter as-is.
+
+    First, I need to verify the alignment of the draft subtitles with the video and the official lyrics provided. The subtitles are relative to the video segment, not the full video. So, 00:00.000 in the draft corresponds to 40:02.153 in the complete video.
+
+    I'll start by examining the provided subtitle draft, which includes the opening MC, and the start of the song. The first nine subtitle blocks (00:00.237 to 00:29.627) are clearly MC/banter, which, according to the instructions, must be kept intact. I will need to spot-check those lines to ensure their accuracy, but minimal changes are expected as they are considered "live spoken callouts".
+
+    Now, for the song itself, the draft subtitles claim the song starts at 03:10.592. I need to cross-reference this with the official lyrics. The provided lyrics state that the intro begins with "にゃー！ Hello! The beautiful days! 刮目しちゃってくれ！ Please call \"Elite\"! Funky dancing, baby! A-ah, ah!" I'll need to check the draft subtitiles to see if that's accurate, as the initial subtitle draft has "にゃっはろーだったり 初めましてだったり 今日も抱きしめてぇやで調整中だ".
+
+    To ensure accuracy, I will use `load_video` to examine the video frames and audio around the 03:10 mark (which is 43:12 into the full video) to verify what's actually being said and sung. This will allow me to precisely align the lyrics and refine the subtitles based on the official source and the visual and audio data of the performance.
+  - |-
+    **Subtitle Refinement: "DAI DAI DAI ファンタジスタ"**
+
+    Alright, let's dive into this subtitle correction project. The ASR gave us a great starting point with those timestamps and words, but now it's time to make it shine.
+
+    First, I confirmed the video section (around 03:04, draft subtitles at 03:10) and then pulled up the official lyrics for "DAI DAI DAI ファンタジスタ". The goal here is clarity and accuracy, matching Miko's intent exactly.
+
+    The ASR isn't always perfect, of course, especially with live performances where there are ad-libs, and those phrases where pronunciation might be a little off. My first thought, when I saw the ASR at the beginning of the song, "にゃっはろーだったり 初めましてだったり 今日も抱きしめてぇやで調整中だ", was, "That doesn't sound quite right; it needs fixing." Sure enough, it was a mis-transcription of the intro. So, I took the draft subtitle and the official lyrics and got to work.
+
+    For each block, I'm checking it line by line:
+    -The first 9 blocks of spoken MC are kept as-is, since they are correct.
+    -Starting at the song, I replaced those phonetic-sounding transcriptions of Miko singing and replaced them with official lyrics.
+
+    Then, there were those longer blocks from 03:43, where the drafts had some repeated content, or phonetic-sounding content, which didn't feel right. After reviewing the official lyrics for the chorus, I applied the actual lyrics of the "DAI DAI DAI ファンタジスタ" song, so that the lyrics were not just accurate, but also, in the correct places in the song.
+
+    The key is in the details, so I corrected phonetic transcriptions to official Kanji. I then went through each block (up to the end), and using both the official lyrics, the audio (from the ASR), I preserved timestamps while refining both the original Japanese and its English translation. The translations were polished to read smoothly while accurately representing the corrected meaning. The final result should be a fully accurate and refined set of subtitles that capture both the original performance and the actual lyrics perfectly. The live spoken elements were kept. I've double checked for any errors to ensure complete compliance. Now it's ready.
+
+    {
+      "subs": [
+        {
+          "s": "00:00.237",
+          "e": "00:03.497",
+          "og": "えーそしてね 無料チラ見せっていのやってます",
+          "en": "Um, and also, we're doing a free preview stream..."
+        },
+        {
+          "s": "00:03.747",
+          "e": "00:05.107",
+          "og": "TikTokとか YouTubeとか",
+          "en": "like on TikTok and YouTube."
+        },
+        {
+          "s": "00:05.357",
+          "e": "00:09.137",
+          "og": "でも もうすぐ終わっちゃうかも わかんないけどね?",
+          "en": "But it might end really soon. Who knows, right? Who knows, right?"
+        },
+        {
+          "s": "00:09.527",
+          "e": "00:13.197",
+          "og": "そのために早めに買ってね! 買ってねー!",
+          "en": "That's why you should buy it early! Buy it!"
+        },
+        {
+          "s": "00:13.417",
+          "e": "00:15.537",
+          "og": "みんな勝ってって言って! 買え! 買え!",
+          "en": "Everyone says \"just buy it!\" Buy! Buy!"
+        },
+        {
+          "s": "00:15.827",
+          "e": "00:18.967",
+          "og": "はい そしてね 少しの感想はハッシュタグ",
+          "en": "Right, and please post your brief impressions"
+        },
+        {
+          "s": "00:18.967",
+          "e": "00:22.257",
+          "og": "[Text: 咲き誇るみこち]をつけて 投稿してください!",
+lyrics_prompt_version: 10
+draft_subtitles:
+- start: '00:00.237'
+  end: '00:03.497'
+  original: えーそしてね 無料チラ見せっていのやってます
+  english: Um, and also, we're doing a free preview stream...
+- start: '00:03.747'
+  end: '00:05.107'
+  original: TikTokとか YouTubeとか
+  english: like on TikTok and YouTube.
+- start: '00:05.357'
+  end: '00:09.137'
+  original: でも もうすぐ終わっちゃうかも わかんないけどね? わかんないけどね?
+  english: But it might end really soon. Who knows, right? Who knows, right?
+- start: '00:09.527'
+  end: '00:13.197'
+  original: そのために早めに買ってね! 買ってねー!
+  english: That's why you should buy it early! Buy it!
+- start: '00:13.417'
+  end: '00:15.537'
+  original: みんな勝ってって言って! 買え! 買え!
+  english: Everyone says "just buy it!" Buy! Buy!
+- start: '00:15.827'
+  end: '00:18.967'
+  original: はい そしてね 少しの感想はハッシュタグ
+  english: Right, and please post your brief impressions
+- start: '00:18.967'
+  end: '00:22.257'
+  original: '[Text: 咲き誇るみこち]をつけて 投稿してください!'
+  english: 'with the hashtag [Text: #SakihokoruMikochi]!'
+- start: '00:22.617'
+  end: '00:26.557'
+  original: それでは みんな 次の曲いくよ!
+  english: Well then, everyone, let's go to the next song!
+- start: '00:26.837'
+  end: '00:29.627'
+  original: 連れてこれたー!
+  english: Brought them all the way here!
+- start: '03:10.592'
+  end: '03:16.812'
+  original: にゃっはろーだったり 初めましてだったり 今日も抱きしめてぇやで調整中だ
+  english: Whether it's "Nyahallow" or meeting for the first time, I'm adjusting to
+    hug you today too!
+- start: '03:18.312'
+  end: '03:22.382'
+  original: 脇目も振らず ベイビー エルオーオー
+  english: Without looking aside, baby, L-O-O!
+- start: '03:23.772'
+  end: '03:29.982'
+  original: さあ なんとかっちゃえ! 飛び込んで なんたってジッとしたって人生は冒険だ
+  english: Come on, make it work! Dive in! No matter what, even if you stay still,
+    life is an adventure!
+- start: '03:30.402'
+  end: '03:35.832'
+  original: ほっからがったら まだわかんない とりこになりま はんなんだ ナンなんだ 調子どうだ
+  english: If you stumble, you still don't know, becoming captivated, what is this,
+    how's it going?
+- start: '03:36.172'
+  end: '03:42.502'
+  original: メソメソしちゃって 気持ち持たしちゃって 一体絶対どうしたい 君たちには
+  english: Crying and moping, holding onto feelings, what on earth do you want to
+    do, for you guys...
+- start: '03:43.762'
+  end: '03:49.852'
+  original: さあ なんとかっちゃえ! 飛び込んで なんたってジッとしたって人生は冒険だ
+  english: Come on, make it work! Dive in! No matter what, even if you stay still,
+    life is an adventure!
+- start: '03:50.042'
+  end: '03:56.242'
+  original: ほっからがったら まだわかんない とりこになりま はんなんだ ナンなんだ 調子どうだ
+  english: If you stumble, you still don't know, becoming captivated, what is this,
+    how's it going?
+- start: '03:56.592'
+  end: '04:02.342'
+  original: メソメソしちゃって 気持ち持たしちゃって 一体絶対どうしたい 君たちには
+  english: Crying and moping, holding onto feelings, what on earth do you want to
+    do, for you guys...
+- start: '04:03.112'
+  end: '04:05.902'
+  original: 涙は似合わないね
+  english: Tears don't suit you, right?
+- start: '04:06.912'
+  end: '04:13.252'
+  original: ダイダイダイダイもーけに飛び出そぜ いーじゃんダイダイダイダイ失敗もかさんで成長して
+  english: Let's jump out to make a huge profit! It's fine, even if huge failures
+    pile up, grow from them!
+- start: '04:13.682'
+  end: '04:21.462'
+  original: ハッピーのピザで 君と笑い話にしよう ダイダイダイダイ問題も吹き飛ばせ
+  english: With a slice of happy pizza, let's turn it into a funny story with you!
+    Blow away all major problems!
+- start: '04:22.092'
+  end: '04:29.172'
+  original: いつかダイダイダイダイダイ円の素敵な結末へ 見きみ誘って 進め 全体にもLove you
+  english: Someday towards a wonderful grand circle ending, inviting you along, let's
+    move forward, love you to everyone too!
+- start: '04:29.982'
+  end: '04:35.542'
+  original: あら、なんだか違うぞ、またぼけづもはってる、勉強勉強
+  english: Oh, somehow it's different, spacing out again, studying studying!
+- start: '04:36.002'
+  end: '04:42.752'
+  original: あら、なんだか違うぞ、またぼけづもはってる、ぶっちゃけ夕食しゃの皆さんまに感謝してまっ
+  english: Oh, somehow it's different, spacing out again, honestly thanking everyone
+    for dinner!
+- start: '04:43.142'
+  end: '04:49.192'
+  original: す! ナイスごめんまってんぜ ウジウジしちゃって ここにロックしちゃって
+  english: Sorry, wait a sec! Moping and groaning, locking it in right here!
+- start: '04:49.522'
+  end: '04:55.912'
+  original: ほらだんだんだんだんだんどうした 世界は君たちには
+  english: Look, how did it go step by step? The world is waiting for you guys!
+- start: '04:56.142'
+  end: '04:59.602'
+  original: 映画のクライマックス
+  english: It's the climax of a movie!
+detected_performances:
+- title: DAI DAI DAI ファンタジスタ
+  artist: さくらみこ
+  start: 03:04
+  end: 05:02
