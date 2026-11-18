@@ -2,6 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
+| 2026&#8209;11&#8209;18 | <a href="https://youtu.be/QclGfuKx8XI"><img src="https://i.ytimg.com/vi/QclGfuKx8XI/mqdefault.jpg" width="100" /></a> | [【のじゃEnglish】ENGLISH STUDY noja!【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=QclGfuKx8XI) | [gemini-3.5-flash-lite<br>011019](./v/QclGfuKx8XI) |
 | 2026&#8209;11&#8209;15 | <a href="https://youtu.be/YL-6y3sZnbs"><img src="https://i.ytimg.com/vi/YL-6y3sZnbs/mqdefault.jpg" width="100" /></a> | [ホロライブの音ゲー「ホロドリ」楽曲オタクが初見プレイなのじゃ！！！【アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=YL-6y3sZnbs) | [gemini-4-hydrogen<br>011019](./v/YL-6y3sZnbs) |
 | 2026&#8209;11&#8209;14 | <a href="https://youtu.be/oRV2KMNdaIE"><img src="https://i.ytimg.com/vi/oRV2KMNdaIE/mqdefault.jpg" width="100" /></a> | [ホロライブ新ユニットの「一致するまで終われまテン!!」【ホロライブ/アソビ★まわり隊！/熱千めら/百灯キョーコ/鈴鳴つづり/宙科そぴあ】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=oRV2KMNdaIE) | [gemini-4-hydrogen<br>011019](./v/oRV2KMNdaIE) |
 | 2026&#8209;11&#8209;13 | <a href="https://youtu.be/xebosvJFBR0"><img src="https://i.ytimg.com/vi/xebosvJFBR0/mqdefault.jpg" width="100" /></a> | [【義務きゃー】幽霊調査ホラゲ「Phasmophobia」【ホロライブ/百灯キョーコ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=xebosvJFBR0) | [gemini-4-hydrogen<br>011019](./v/xebosvJFBR0) |
