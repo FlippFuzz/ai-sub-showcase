@@ -1,0 +1,917 @@
+name: part_008_t3qgd__IKEY
+video_duration_ms: 301208
+model_name: gemini-3.5-flash-lite
+service_tier: null
+agentic_video: true
+user_context: This is a YouTube video from Miko Ch. さくらみこ channel. The video title
+  is '【チラ見せ枠】さくらみこ 2nd Live “Blooming Parade!!”【#咲き乱れみこち】'.
+segment_index: 8
+total_attempts: 1
+fallback_tier: 0
+tier_attempts: 0
+target_fps: null
+exhausted: false
+segment_offset_ms: 2400891
+global_summary:
+  overall_summary: This YouTube video is a free preview broadcast of hololive VTuber
+    Sakura Miko's 2nd solo concert, titled 'Sakura Miko 2nd Live “Blooming Parade!!”',
+    held at K-Arena Yokohama. The video begins with a pre-show waiting screen and
+    fan art showcase, followed by venue safety announcements. It then features an
+    energetic live concert segment with a full live band and marching band, where
+    Miko performs upbeat tracks and tours the arena on a parade float (torokko). The
+    broadcast concludes with an MC welcome speech and a call to action for viewers
+    to purchase tickets for the full paid stream.
+  chapters:
+  - start: 00:00
+    end: '24:45'
+    title: Pre-Show Waiting Screen & Fan Art Showcase
+    description: Waiting screen featuring countdown timer, background music, fan art
+      illustrations, and congratulatory messages from fans.
+    song_title: null
+    song_artist: null
+  - start: '24:45'
+    end: '27:00'
+    title: Venue Announcements & Guidelines
+    description: Pre-recorded venue announcements regarding concert rules, etiquette,
+      prohibited items, and event hashtags at K-Arena Yokohama.
+    song_title: null
+    song_artist: null
+  - start: '27:00'
+    end: '33:00'
+    title: Arena Countdown & Opening Sequence
+    description: Audience cheering in the packed K-Arena Yokohama with glowing penlights,
+      followed by a countdown and concert opening animation.
+    song_title: null
+    song_artist: null
+  - start: '33:00'
+    end: '41:00'
+    title: Live Performance Part 1
+    description: Live concert performance with band accompaniment, featuring upbeat
+      vocal tracks and energetic choreography.
+    song_title: きゅんきゅんみこきゅんきゅん♡
+    song_artist: さくらみこ
+  - start: '41:00'
+    end: '49:30'
+    title: Live Performance Part 2 & Parade Float Tour
+    description: Performances featuring marching band elements and Sakura Miko riding
+      on a parade float (torokko) to interact with fans across the arena.
+    song_title: あてんしょんぷりーず！
+    song_artist: さくらみこ
+  - start: '49:30'
+    end: '55:00'
+    title: MC Welcome Speech & Band Introduction
+    description: Sakura Miko welcomes venue and stream attendees, expresses gratitude,
+      introduces the live band and brass band, and announces the end of the free preview.
+    song_title: null
+    song_artist: null
+  - start: '55:00'
+    end: '1:00:10'
+    title: Preview Ending & Ticket Call to Action
+    description: Transition screen indicating the end of the free YouTube and TikTok
+      preview stream and directing viewers to purchase streaming tickets for the full
+      concert.
+    song_title: DAI DAI DAI ファンタジスタ
+    song_artist: さくらみこ
+  entities:
+  - name: Sakura Miko
+    original_name: さくらみこ
+    role_or_affiliation: hololive (Hololive Production) - Solo VTuber
+    persona_lore: An elite shrine maiden VTuber from hololive who descended from the
+      virtual shrine to entertain humanity. Known for her gaming streams, emotional
+      expressions, and dedicated fanbase.
+    speech_patterns_or_ticks: Uses the sentence ending suffix 'nié' (にぇ) and high-energy
+      expressions.
+    visual_cues: Pink twin-tails hair, sakura hair ornaments, and shrine maiden-inspired
+      idol dresses.
+  domain_glossary:
+  - term: 35P
+    meaning: The official fandom name and community term for Sakura Miko's supporters
+      and viewers.
+  - term: '#咲き乱れみこち'
+    meaning: The official hashtag for Sakura Miko's 2nd album and 2nd solo concert
+      Blooming Parade!!
+  - term: トロッコ
+    meaning: A mobile stage platform or cart used in concerts to transport performers
+      closer to fans across different seating areas of the arena.
+  - term: ホロライブ
+    meaning: A female VTuber agency and YouTube channel network under COVER Corp.
+  - term: Kアリーナ横浜
+    meaning: K-Arena Yokohama, a large indoor music arena in Yokohama, Kanagawa, where
+      Sakura Miko's 2nd solo concert was held.
+  thoughts:
+  - |-
+    **Analyzing Sakura Miko's Live Stream**
+
+    Okay, so I need to get to work on `video_1.webm`, which clocks in at a hefty 3610 seconds. That's about an hour of content, so let's strategize. This is the "Miko Ch. さくらみこ" channel, and the title is '【チラ見せ枠】さくらみこ 2nd Live “Blooming Parade!!”【#咲き乱れみこち】'.
+
+    The primary approach here is going to be transcript-driven. I'll load up the ASR data first; it's the most efficient way to get a high-level understanding of the live stream's content and pacing. This should let me identify the key moments and focus my attention appropriately. Let's use `google:load_video` for this task. I'll be sure to set `include_asr=True` to get that transcript loaded right away. This ASR data will be critical for an initial pass, and I can always dive deeper into specific frames if the transcript suggests it's warranted.
+  - |-
+    **Analyzing the ASR and Video Structure: Sakura Miko's "Blooming Parade!!" Teaser**
+
+    Okay, here's what I'm seeing. This video is a "chira mise waku," a teaser stream, for Sakura Miko's 2nd Live, "Blooming Parade!!"  (`【チラ見せ枠】さくらみこ 2nd Live “Blooming Parade!!”【#咲き乱れみこち】`).  Immediately, the ASR is throwing up some red flags, though. There's a significant amount of extraneous, filler text mixed in with the actual concert audio – things like installation of an E3 dashboard, car test drives, and even mentions of marketing podcasts and anime. This could be due to a poor source, or some other form of noise in the transcription process, this is going to affect my ability to accurately analyze and parse what's going on.
+
+    My primary task is to pinpoint which sections accurately represent the concert content, so I'll begin by identifying the critical timings in the ASR.
+
+    I've identified these key segments that are relevant to the live performance:
+
+    *   **Around 10:00 - 11:00:** Miko's initial talk, announcements, and interaction with the audience. ("会いたくなっちゃった！ 推しのシーン見ながらカラオケ歌えるなんて...", "ワンテッドミコピ！さくらみこさんの加湿空気清浄機をボイスの引き換えが終わっていないミコピを探しています...")
+    *   **Around 25:00 - 27:00:** Venue announcements and greetings. ("こんばんは。さくらみこセカンドライブブルーミングパレード。ご来場いただきありがとうございます。...")
+    *   **Around 33:00 - 45:00:** This is the heart of the performance - songs and stagecraft ("笑ってなんだろう うまく言えない私へ 歌っていいんだよ...", "おまたせしました、ドラミング・コーナー、始まるよー。", songs like "きゅんきゅんみこち", etc.)
+    *   **Around 49:30 - 55:50:** An MC segment, including a preview of upcoming songs ("みんなー、にゃっはろー！... さくらみこセカンドライブ人間パレードへ！ようこそ！", ending the free preview around 54:30-55:00: "さあ、なんとここでこの豪華な無料パートは終わってしまいます！... 配信チケット買ってね！", then one more song snippet "次は大大大ファンタジスタ").
+
+    To get this properly categorized I will conduct some rapid searching and cross-reference, to be completely accurate on my entity knowledge, terminology, and chapters.
+  - Okay, let's dive into this. I need to get the definitive information on the "Blooming
+    Parade!!" setlist and all the associated details. There's only one really reliable
+    source for this sort of thing, so I'm heading straight to the hololive wiki. That's
+    the go-to place for verifying and cross-referencing this kind of specific concert
+    data. Hopefully, the information is up-to-date and complete. Let's see what they've
+    got.
+  - |-
+    Okay, here's my take on those thoughts, tailored for an expert audience:
+
+    **Focused Reconnaissance: Sakura Miko 2nd Live Setlist**
+
+    Alright, let's cut the fluff and get laser-focused. Instead of broad searches, I need the precise data. Specifically, I need the setlist for Sakura Miko's 2nd Live, "Blooming Parade," and I need it *right now*. I'm going to refine my search parameters immediately. No generic queries – I'm aiming for Japanese script. That's the key. I know the nuances are important, and romanization won't cut it for precise analysis. I need those kanji and kana to identify the songs accurately and to potentially cross-reference with other performance data, maybe even the original lyric sheets for translation accuracy. This is about precision, getting the core data point and getting it fast. Let's see what we can find.
+  - |-
+    **Analyzing the Concert Preview**
+
+    Okay, let's dissect this free preview. My primary goal is to identify the songs featured in this segment, specifically from roughly 33:00 to 49:30. That's the opening medley, I believe. Then there's an MC break from 49:30 to 55:00, and we have one final song preview at the end.
+
+    Right, time to cross-reference this with the official *Blooming Parade* setlist. I'll pull up the playlist on Spotify or YouTube Music - whatever's handy - and start matching. I know a few of the tracks off the top of my head... let's see, we've got "サキミダレアッパレード♪" (Sakimidare Apparade), "きゅんきゅんみこきゅんきゅん♡" (Kyun Kyun Miko Kyun Kyun), "あてんしょんぷりーズ！" (Attention Please!), "DAI DAI DAI ファンタジスタ" (Dai Dai Dai Fantasista), "ファッションビート" (Fashion Beat), "咲き誇れアイドル" (Sakihokore Idol) - and the list goes on.
+
+    To be sure I'm precise, I'll quickly execute a search to confirm the exact track titles and the complete playlist lineup for *Blooming Parade*. Let's make sure our data is correct.
+  - |-
+    **My Analysis of Sakura Miko's "Blooming Parade!!" Preview**
+
+    Okay, here's the breakdown. I've got the visual and audio data, and I'm ready to structure the output according to the JSON requirements. This is a preview broadcast, a "Chira Mise Waku," of Sakura Miko's 2nd solo concert, "Blooming Parade!!" at K-Arena Yokohama. The video offers a glimpse into the high-energy performance, which I'll summarize the key components of the concert within chapters, song names, and artists in both Japanese and English. I'll make sure to get all the data into the proper slots. The stream showcased a lively concert experience complete with a pre-show, announcements, high-energy live music from her popular hits, live band, marching band, parade float and fan interaction, all with an MC segment before leading the viewers to the full paid stream.
+
+    Here's how I'm organizing the core elements:
+
+    1.  **Chapters:**
+        *   00:00 - 24:45: Pre-Show Waiting Screen & Fan Art Showcase (Waiting screen with background music, countdown, fan art illustrations, and congratulatory messages from fans).
+        *   24:45 - 27:00: Venue Announcements & Pre-show Guidelines (Pre-recorded venue announcements regarding concert rules, etiquette, and hashtags like #咲き乱れみこち at K-Arena Yokohama).
+        *   27:00 - 33:00: Arena Countdown & Opening Intro (Audience cheering in the packed K-Arena Yokohama, waving glowing penlights, countdown animation, and concert opening).
+        *   33:00 - 41:00: Live Performance Part 1 - Opening Medley (Live concert performance with band accompaniment, featuring the song "きゅんきゅんみこきゅんきゅん♡", and other upbeat tracks).
+        *   41:00 - 49:30: Live Performance Part 2 - Parade & Float Tour (Performances with marching band members, mascot appearance, and Sakura Miko riding on a parade float / torokko around the arena interacting with fans).
+        *   49:30 - 55:00: MC Speech & Welcome Address (Sakura Miko welcomes viewers and venue attendees, introduces the band and brass band members, and announces the end of the free YouTube/TikTok preview stream).
+        *   55:00 - 36:10 (End): Preview Ending & Ticket Call to Action (Transition screen announcing the end of the free preview part and encouraging viewers to purchase streaming tickets for the full concert).
+
+    2.  **Songs & Artists per Chapter:**
+        *   Chapter 33:00 - 41:00: `song_title`: "きゅんきゅんみこきゅんきゅん♡", `song_artist`: "さくらみこ" (Sakura Miko).
+        *   Chapter 41:00 - 49:30: `song_title`: "あてんしょんぷりーず！", `song_artist`: "さくらみこ".
+        *   Chapter 55:00 - 36:10: `song_title`: "DAI DAI DAI ファンタジスタ", `song_artist`: "さくらみこ".
+
+    3.  **Entities:**
+        *   **Sakura Miko:** *Role/Affiliation:* hololive VTuber. *Persona:* Elite shrine maiden, known for gaming, emotional moments, and fanbase. *Speech:* "-nié" and upbeat intonation. *Visuals:* Pink twin-tails, sakura accessories, shrine maiden-inspired outfits.
+
+    4.  **Domain Glossary:**
+        *   35P (Sakura P): Sakura Miko's fanbase.
+        *   #咲き乱れみこち (Sakimidare Mikochi): Concert & album hashtag.
+        *   トロッコ (Torokko): Mobile stage platform/cart.
+        *   ホロライブ (hololive): VTuber agency.
+        *   Kアリーナ横浜 (K-Arena Yokohama): Concert venue.
+
+    Now, let me construct that JSON object meticulously, ensuring it's completely valid and follows all the formatting constraints. I'll make sure to get all the data into the proper slots.
+response:
+  subtitles:
+  - start: '00:00.000'
+    end: '00:03.900'
+    original: ゆらり照らすその先は？ そうやっぱ それがMy Way！
+    english: Where does it softly shine to? Yeah, that's still My Way!
+  - start: '00:03.950'
+    end: '00:06.200'
+    original: あきらめやしないよ
+    english: I'm never gonna give up!
+  - start: '00:07.100'
+    end: '00:10.300'
+    original: All right！ So bright！ さぁ一歩一歩行ってみよう
+    english: All right! So bright! Come on, let's take it step by step!
+  - start: '00:10.500'
+    end: '00:12.600'
+    original: ほら three, two, oneのサインで
+    english: Look, on the count of 3, 2, 1!
+  - start: '00:12.800'
+    end: '00:17.200'
+    original: この先花吹雪 走っていこうニューステージ！
+    english: Running towards the cherry blossom blizzard, heading to the new stage!
+  - start: '00:17.250'
+    end: '00:19.600'
+    original: ドキドキしちゃうな わっしょい！
+    english: My heart is pounding, Wasshoi!
+  - start: '00:19.650'
+    end: '00:22.400'
+    original: さぁ一緒に行こう？ れっつごーっ！
+    english: Come on, let's go together! Let's go!
+  - start: '00:22.450'
+    end: '00:23.800'
+    original: Let's go!
+    english: Let's go!
+  - start: '00:24.100'
+    end: '00:27.500'
+    original: はい！はい！はい！はい！はい！はい！
+    english: Hey! Hey! Hey! Hey! Hey! Hey!
+  - start: '00:27.800'
+    end: '00:30.200'
+    original: もっともっと声出してー！
+    english: Give me more and more of your voices!
+  - start: '00:30.700'
+    end: '00:33.300'
+    original: はい！はい！はい！はい！
+    english: Hey! Hey! Hey! Hey!
+  - start: '00:33.400'
+    end: '00:36.200'
+    original: みこの名前呼ぶにゃー！
+    english: Call out Miko's name, nya!
+  - start: '00:36.800'
+    end: '00:39.800'
+    original: みこち！みこち！らぶらぶみこち！
+    english: Mikochi! Mikochi! Love-love Mikochi!
+  - start: '00:39.900'
+    end: '00:42.400'
+    original: みこち！みこち！きゅんきゅん！
+    english: Mikochi! Mikochi! Kyun-kyun!
+  - start: '00:42.500'
+    end: '00:44.500'
+    original: みこち！みこちー？
+    english: Mikochi! Mikochi?
+  - start: '00:44.900'
+    end: '00:46.300'
+    original: みこちー！
+    english: Mikochi!
+  - start: '00:46.400'
+    end: '00:50.600'
+    original: 飛んで 跳ねて 回って 続くからさ ファンファーレ
+    english: Jump, bounce, spin around, the fanfare keeps on going!
+  - start: '00:50.700'
+    end: '00:54.500'
+    original: もっと どこまでもっと ぎゅんぎゅんしてこう きゅんきゅんきゅんきゅん きゃー！
+    english: More, everywhere more, let's zoom ahead! Kyun-kyun-kyun-kyun kyaa!
+  - start: '00:54.900'
+    end: '00:56.400'
+    original: みんな大好きにゃ！
+    english: I love you all, nya!
+  - start: '00:56.450'
+    end: '01:00.100'
+    original: 距離なんて超えちゃえ 咲き乱れたいの
+    english: Let's cross any distance, I want to bloom wildly!
+  - start: '01:00.150'
+    end: '01:05.300'
+    original: しゃいにーしゃいにーしゃいにー ふわふわに 未来に軌跡 描くように
+    english: Shiny, shiny, shiny, fluffy and soft, like drawing a trail into the future...
+  - start: '01:05.400'
+    end: '01:08.900'
+    original: きっとそれが My Way 信じてるんだよ
+    english: I'm sure that's My Way, I truly believe in it!
+  - start: '01:09.500'
+    end: '01:13.000'
+    original: なら Go fight! さあ もっともっと恋をして
+    english: So go fight! Come on, fall more and more in love!
+  - start: '01:13.100'
+    end: '01:15.700'
+    original: ばかりじゃいけないね
+    english: We can't just leave it at that, right?
+  - start: '01:15.800'
+    end: '01:20.000'
+    original: 全力で輝いて 連れて行くよ ニューフェイズ
+    english: Shining with all my might, I'll take you to a new phase!
+  - start: '01:20.100'
+    end: '01:22.400'
+    original: 咲き誇れば
+    english: When we bloom in full glory...
+  - start: '01:22.450'
+    end: '01:25.700'
+    original: モーション さあ一緒に行こう
+    english: Motion! Come on, let's go together!
+  - start: '01:25.900'
+    end: '01:28.500'
+    original: みんな笑顔になーれ！
+    english: Everyone, smile!
+  - start: '01:38.800'
+    end: '01:41.500'
+    original: せーのにっ じゃっじゃじゃーん！
+    english: Ready, set, ta-da!
+  - start: '01:48.000'
+    end: '01:51.100'
+    original: いくよ？きゅんきゅんみこきゅん？
+    english: Here we go? Kyun-kyun Miko-kyun?
+  - start: '01:51.600'
+    end: '01:53.900'
+    original: （きゅんきゅんみこきゅん！）
+    english: (Kyun-kyun Miko-kyun!)
+  - start: '01:54.100'
+    end: '01:57.200'
+    original: きゅんきゅんみこきゅん？ きゅんきゅんみこきゅん！
+    english: Kyun-kyun Miko-kyun? Kyun-kyun Miko-kyun!
+  - start: '01:57.300'
+    end: '02:00.100'
+    original: きゅんきゅんみこきゅんきゅん！ キミにみこきゅん？
+    english: Kyun-kyun Miko-kyun-kyun! Miko-kyun to you?
+  - start: '02:00.200'
+    end: '02:03.200'
+    original: セカンドライブの衣装だよー！
+    english: This is my 2nd Live outfit!
+  - start: '02:03.400'
+    end: '02:06.100'
+    original: みこちゃん かわいー？
+    english: Isn't Miko-chan cute?!
+  - start: '02:09.700'
+    end: '02:14.700'
+    original: ねね！ あのねこれガチ みんなトモダチ 夢見るカタチ でっかいぞって！ まじ？
+    english: Hey! Listen, this is for real, everyone's friends, the shape of our dreams,
+      huge, really?!
+  - start: '02:14.800'
+    end: '02:20.300'
+    original: それはすなわち 成長中って話 いろんなワタシ 超見て欲し！
+    english: Which means it's a story of growth, I want you to really see all the
+      different sides of me!
+  - start: '02:20.400'
+    end: '02:22.400'
+    original: エリートあいさつ！
+    english: Elite greeting!
+  - start: '02:22.600'
+    end: '02:25.100'
+    original: エリートスマイル！
+    english: Elite smile!
+  - start: '02:25.300'
+    end: '02:27.800'
+    original: エリートダンス！
+    english: Elite dance!
+  - start: '02:27.900'
+    end: '02:31.200'
+    original: みーみーみこみこっ！
+    english: Mi-mi-Miko-miko!
+  - start: '02:31.500'
+    end: '02:36.600'
+    original: まあね時にはにぇ 落ち込んじゃうこともあるよ
+    english: Sometimes, nya, you might even feel down...
+  - start: '02:36.700'
+    end: '02:39.900'
+    original: そんな時は はなまるあげるにぇ！
+    english: At times like that, I'll give you a gold star, nya!
+  - start: '02:40.200'
+    end: '02:41.800'
+    original: みこぴー！
+    english: 35P!
+  - start: '02:41.900'
+    end: '02:44.400'
+    original: みこちゃん かわいー？
+    english: Isn't Miko-chan cute?!
+  - start: '02:44.500'
+    end: '02:49.800'
+    original: はにゃ？って ふにゃって ほにゃっと混ぜたら キュンしちゃうから35チューン
+    english: Mix 'hanya' with 'funya' and soft squishiness, and you'll fall for the
+      35 Tune!
+  - start: '02:49.900'
+    end: '02:55.100'
+    original: ぱやって ぷにぃって ぽよったら さいきょー！ うにゃうにゃしよう？一緒にせーの
+    english: Pop and squish and bounce, you're the strongest! Let's get all fuzzy
+      together, ready, set...
+  - start: '02:55.150'
+    end: '02:57.900'
+    original: ドキドキめろめろきゅん！
+    english: Pounding, melting, kyun!
+  - start: '02:58.000'
+    end: '03:00.600'
+    original: ぴょこぴょこめろめろきゅん？
+    english: Bouncing, melting, kyun?
+  - start: '03:00.700'
+    end: '03:03.300'
+    original: キラキラめろめろきゅん！
+    english: Sparkling, melting, kyun!
+  - start: '03:03.400'
+    end: '03:07.800'
+    original: きゅんきゅんみこきゅんきゅん！ キミにきゅんをあげるよ
+    english: Kyun-kyun Miko-kyun-kyun! I'll give my kyun to you today!
+  - start: '03:11.600'
+    end: '03:14.700'
+    original: ハイ！ハイ！ハイ！ハイ！
+    english: Hey! Hey! Hey! Hey!
+  - start: '03:16.200'
+    end: '03:21.700'
+    original: ねね！ あのねこれガチ ほっぺはモチモチ ミライのみこち すっごいぞって！まじー！？
+    english: Hey! Listen, this is for real, my cheeks are mochi-mochi, Miko-chi of
+      the future is amazing, really?!
+  - start: '03:21.800'
+    end: '03:27.200'
+    original: それはすなわち 邁進中って話 それは必見だし 超見て欲し！
+    english: Which means I'm forging ahead right now, it's a must-see, so I want you
+      to watch!
+  - start: '03:27.300'
+    end: '03:29.500'
+    original: エリート拍手！
+    english: Elite applause!
+  - start: '03:29.800'
+    end: '03:32.300'
+    original: エリートジャンプ！
+    english: Elite jump!
+  - start: '03:32.900'
+    end: '03:35.200'
+    original: エリートおねんね！
+    english: Elite nap-time!
+  - start: '03:35.400'
+    end: '03:37.900'
+    original: エリートわがまま！
+    english: Elite selfishness!
+  - start: '03:38.100'
+    end: '03:43.400'
+    original: だっていつだって ありのままを伝えたいの
+    english: Because I always want to convey my true self!
+  - start: '03:43.500'
+    end: '03:49.000'
+    original: 「おまえらさぁ みこを舐めてんじゃねー！ ふざけんじゃねぇぞーっ！」
+    english: '"Hey, you guys are underestimating Miko! Don''t mess with me!"'
+  - start: '03:49.050'
+    end: '03:51.400'
+    original: って言えって言われましたーっ！
+    english: '...is what they told me to say!'
+  - start: '03:51.450'
+    end: '03:56.800'
+    original: はにゃ？って ふにゃって ほにゃっと混ぜたら キュンしちゃうから35チューン
+    english: Mix 'hanya' with 'funya' and soft squishiness, and you'll fall for the
+      35 Tune!
+  - start: '03:56.850'
+    end: '04:01.900'
+    original: ぱやって ぷにぃって ぽよったら てんさーい！ うにゃうにゃしてもいいじゃない！せーの
+    english: Pop and squish and bounce, you're a genius! Isn't it fine to get all
+      fuzzy? Ready, set...
+  - start: '04:01.950'
+    end: '04:04.700'
+    original: ぴかぴかめろめろきゅん！
+    english: Gleaming, melting, kyun!
+  - start: '04:04.750'
+    end: '04:07.300'
+    original: ふわふわめろめろきゅん？
+    english: Fluffy, melting, kyun?
+  - start: '04:07.350'
+    end: '04:10.000'
+    original: みんなみんなめろめろきゅん！
+    english: Everyone, everyone, melting, kyun!
+  - start: '04:10.050'
+    end: '04:12.000'
+    original: きゅんきゅんみこきゅんきゅん！
+    english: Kyun-kyun Miko-kyun-kyun!
+  - start: '04:12.100'
+    end: '04:16.200'
+    original: この今が宝物
+    english: This moment right now is my treasure
+  - start: '04:16.600'
+    end: '04:20.100'
+    original: いつも愛をありがとう
+    english: Thank you for always giving me your love
+  - start: '04:20.400'
+    end: '04:24.800'
+    original: ここからはね みこのターン！ ついてきてね！
+    english: From here on out, it's Miko's turn! Keep up with me!
+  - start: '04:25.100'
+    end: '04:29.500'
+    original: ハイ！ハイ！ハイ！ハイ！ハイ！ハイ！
+    english: Hey! Hey! Hey! Hey! Hey! Hey!
+  - start: '04:32.300'
+    end: '04:34.200'
+    original: うー！ いぇーい！
+    english: Ooh, yeah!
+  - start: '04:34.300'
+    end: '04:39.200'
+    original: いつまでも いつまでも ずっとずっと笑顔でいようね
+    english: Forever and ever, let's always keep smiling together!
+  - start: '04:39.300'
+    end: '04:42.000'
+    original: みこ頑張るよ！頑張れるよ！
+    english: Miko will do her best! I can keep going!
+  - start: '04:42.050'
+    end: '04:45.200'
+    original: もっともっときゅんきゅんになってにぇ！
+    english: Fall even deeper in love with me, nya!
+  - start: '04:45.300'
+    end: '04:49.500'
+    original: ラストにもう一回張り切ってー！ みこちゃんはー？エリートです！
+    english: One last time, give it everything you've got! Who's Miko-chan? I'm elite!
+  - start: '04:49.800'
+    end: '04:55.100'
+    original: はにゃ？って ふにゃって ほにゃっと混ぜたら キュンしちゃうから35チューン
+    english: Mix 'hanya' with 'funya' and soft squishiness, and you'll fall for the
+      35 Tune!
+  - start: '04:55.150'
+    end: '05:00.800'
+    original: ぱやって ぷにぃって ぽよったら さいきょー！ うにゃうにゃしよう？一緒にせーの
+    english: Pop and squish and bounce, you're the strongest! Let's get all fuzzy
+      together, ready, set...
+  thoughts:
+  - |-
+    **Refining Subtitles: A Time-Sensitive Task**
+
+    Okay, so I need to make sure these subtitles are perfect for a video segment. The timecode I'm working with is a specific window, 40:00.891 to 45:02.099. But hold on, before I dive into the nitty-gritty of the subtitles themselves, let's establish some context. I need to be absolutely certain I understand the audio content during this stretch. Is it just speaking, or is there music? If music is involved, is it the appropriate music, and in the relevant locations?
+
+    My immediate priority is gaining complete clarity. I need to consult the source material. Rather than making assumptions, I'm going to load the video transcript or key frames for this segment. This will allow me to confirm the audio context for this specific segment, including song identifications. I also need to verify that I'm referencing the appropriate segment. Let me verify the `segment_time_window`: 40:00.891 to 45:02.099.
+
+    To achieve this, I'll use the `load_video` function to access the video's ASR or frame data. This direct approach will give me a solid foundation before I start editing. I need to be certain that I'm working with the actual audio data of the video.
+  - |-
+    Here's my thought process, as if I were working through this:
+
+    **Analyzing Time Discrepancies**
+
+    Okay, so I'm looking at these timestamps, and the first thing that jumps out is the obvious constraint: `start_time` *has* to be less than `end_time`. That's fundamental. Now, I see the video duration is about 301 seconds – roughly five minutes, which is as expected. However, the segment window is giving me a time range: 40:00.891 to 45:02.099. That's significantly longer than the video's actual duration. There's clearly a mismatch here. I need to figure out what's going on. The issue is that the segment window is 5 minutes long but the video is also 5 minutes long! What is happening with that?
+
+    My next thought is, let's test `load_video` to make sure it handles the situation correctly. I need to make sure that the function handles the entire duration of the video, so I'll try calling it with a `start_time` of 0 and an `end_time` of 301200. This should confirm my suspicions and verify how the function deals with the whole video's length. I'll need to figure out what is happening with the segment window timestamps.
+  - |-
+    **Analyzing Subtitles and Identifying Music**
+
+    Okay, let's dive in. I'm going to carefully examine these draft subtitles, comparing them to the initial search results for "きゅんきゅんみこきゅんきゅん♡." Right, hang on... the initial results, oh yeah, they contain the full lyrics! I need to keep those in mind, and that seems to be the main song in question!
+
+    Now, let's circle back. I see we have some draft subtitles provided in `<draft_subtitles_to_refine>`. Okay, first, let's zero in on the first song in these subtitles, from the start at 00:00.000 to 01:41.500. We need to identify that. I'm thinking the lyrics might give me a good clue. I need to figure out what that song is. I'll search for the lyrics "照れるその時は そうやっぱそれが My Way" and "桜の樹 花吹雪 走ってるよ 最前線."
+
+    To get this done efficiently, let's use `default_api:tinyfish_search_multi` to locate the song title and get the official lyrics. That should give me everything I need to proceed confidently.
+  - |-
+    Here's my summary, as the expert:
+
+    **Finding the Lyrics to a J-Pop Track**
+
+    Okay, time to track down the lyrics for `サキミダレアッパレード♪` by Sakura Miko, composed by Kinoshita. I'll need to use the `default_api:tinyfish_search_multi` function to do this, searching for the exact title of the song. Seems straightforward enough. Let's see what that search turns up. This should be a quick and easy lookup using the proper API to quickly yield the lyrics.
+  - |-
+    Here's my thought process, distilled:
+
+    **Finding and Verifying Lyrics for Accurate Subtitling**
+
+    Okay, time to make sure those subtitles for the first song are spot-on. I need to get the definitive lyrics for `サキミダレアッパレード♪`. Let's leverage `default_api:tinyfish_search_multi` to pull up those lyrics. This should be the most efficient way to access a reliable source for the text I need. This is a critical step; accuracy is paramount, especially when dealing with translation and transcription.
+  - |-
+    Okay, here's my interpretation of that thought process, tailored for an expert audience:
+
+    **Uncovering the Precise Lyrics for "サキミダレアッパレード♪"**
+
+    Alright, I need the *exact* lyrics for "サキミダレアッパレード♪". Sloppy transcriptions or unreliable sources won't cut it; I'm after accuracy and completeness. My first instinct, as always, is to go straight to Genius or Uta-Net. They're usually the most reliable databases for this kind of information, especially for Japanese lyrics. I need the canonical text, and these are my best bets.
+
+    Now, let me tap into my trusty "default_api:tinyfish_search_multi" tool. I'm assuming that's set up to hit the relevant APIs effectively. If I recall correctly, it allows me to efficiently query multiple services at once, prioritizing the best matches. It should ideally consolidate results and allow me to quickly identify the authoritative text. Let's see if this can streamline the process and deliver the lyrics without any unnecessary delays. This is all about precision and efficiency.
+  - |-
+    Okay, here's my interpretation of that thought process, tailored for an expert audience:
+
+    **Investigating ASR Results and Lyric Specificity**
+
+    Alright, so the Automatic Speech Recognition (ASR) output needs a deeper dive. I'm thinking the best course of action is to either thoroughly review the rest of the ASR data for potential clues, or, and this is probably the most efficient path, I should focus a targeted search for the lyrics of `サキミダレアッパレード♪`. Given the potential for variations in transcription accuracy, I'll leverage the `default_api:tinyfish_search_multi` functionality. I'll use it to query the web directly for the specific lyrics text `サキミダレアッパレード♪`. This method is preferable as it allows me to quickly compare potential results to establish context and establish accuracy by looking at multiple results.
+  - |-
+    **Subtitle Refinement Strategy**
+
+    Okay, let's dive into these draft subtitles the user has provided. My immediate priority is to understand the core constraints. It seems the timing is *absolutely* locked down. **Mandate 1** makes it crystal clear: the timestamps for each subtitle block are immutable. I can't touch the start ('s') or end ('e') times, and I need to keep the exact same number of blocks in the same order. My focus is purely on content refinement, not timing adjustments.
+
+    Now, **Mandate 2** is a crucial content safeguard. It’s all about phonetic accuracy and draft preservation. If the provided lyrics don't align with the actual audio, they're gone, *immediately*. I'm not to force-fit anything or alter dialogue to shoehorn in mismatched text. The user wants the original draft (`og` and `en`) untouched.
+
+    Right, so I see these subtitles cover two different songs: `サキミダレアッパレード♪` (from 00:00.000 to 01:28.500) and then, after some talking, `きゅんきゅんみこきゅんきゅん♡` (from 01:48.000 to the end). First, let's focus on the initial song, `サキミダレアッパレード♪`. I need to verify its lyrics. I'll head to Uta-Net or Genius to search for the *exact* lyrics for the lines of  `サキミダレアッパレード♪` and start my work from there.
+  - |-
+    **Analyzing and Refining Subtitles: A Deep Dive**
+
+    Okay, so I'm diving back into these subtitles for "サキミダレアッパレード♪" and need to get them perfectly aligned with the official lyrics. I've already done some initial searches, and now I need to verify each line, block by block, comparing them against the official source, Uta-Net or Genius.
+
+    First, I'm checking the first draft line. It's supposed to capture the essence of "ゆらり照らすその先は？ そうやっぱ それがMy Way！", but the draft had "照れるその時は そうやっぱそれが My Way".  That's off.  Let's correct that: the Japanese should be "ゆらり照らすその先は？ そうやっぱ それが My Way！" and the English now needs to be rephrased. The English should say "Where does it softly shine to? Yeah, that's still My Way!".
+
+    Next, I'm looking at "あきらめやしないよ".  The draft's translation "I'm never gonna give up!" is good, but the official lyric has the bracketed adlib.  I need to keep the lines clean, so I'm sticking with "あきらめやしないよ".
+
+    Now, I'm checking the block at 00:07.100 - 00:10.300. The draft had "なら Go fight! さあ一歩一歩 行ってみよう" but the official lyrics are "All right！(All right！) So bright！(So bright！) さぁ一歩一歩...".  I should re-verify this section using an API search to get the exact phrasing. This is where I can ensure accuracy. Time to perform the search.
+  - |-
+    **Ensuring Utmost Lyric Accuracy**
+
+    Okay, first things first, to guarantee absolute precision, I need to track down the official lyrics for both `サキミダレアッパレード♪` and `きゅんきゅんみこきゅんきゅん♡`. Gotta be thorough. Wait a minute, hold that thought... I recall we already have the complete lyrics for `きゅんきゅんみこきゅんきゅん♡` in `<initial_search_results>`. Excellent, one down! Now, let's focus on `サキミダレアッパレード♪`. To get the most reliable source, I'll leverage Uta-Net. Let's run a search for `"サキミダレアッパレード♪" full lyrics` using `default_api:tinyfish_search_multi`. That should give us a solid foundation to work from.
+  - |-
+    Okay, here's my interpretation of that thought process, tailored for an expert audience, and written in the first person:
+
+    **Finding the Lyrics**
+
+    Alright, time to get this done. I need to nail down the exact lyrics for `サキミダレアッパレード♪`. Since I'm aiming for the most accurate transcription possible, I'll go straight to a reliable source. My instinct is to hit up Uta-Net; it's generally comprehensive for Japanese lyrics and they usually have accurate transcriptions, but I'll also use google using `default_api:tinyfish_search_multi` to broaden my search and see what else is out there. No need to waste time with anything less reliable at this stage. I'll focus on getting the best match and then cross-reference if needed. Let's get these lyrics!
+  - |-
+    **Subtitle Refinement: A Meticulous Process**
+
+    Alright, let's dive into this subtitle task. First, I need to make sure the user's draft subtitles align perfectly with the vocals. This is Mandate 2, and it's paramount. If the lyrics don't match, they're out. I have the lyrics for `サキミダレアッパレード♪` in hand. Time to refine.
+
+    I start by comparing each draft line with the official lyrics, meticulously updating them. For instance, `ゆらり照らすその先は？` needs to be in there. The English translations also need a polish, ensuring they flow and capture the song's essence. Some lines are spot-on, so I'll preserve them. Others require slight tweaks to match the tempo or vocal phrasing. Any live banter or audience interaction I keep as is.
+
+    Then, it's on to the second song, `きゅんきゅんみこきゅんきゅん♡`. I cross-reference the lyrics for this song, line by line, against the draft, ensuring a seamless match between the spoken words and the written text. I have to make sure the translations capture the essence of what is being said. I'll preserve stage banter for authenticity.
+
+    I'm paying close attention to every detail, from timestamp accuracy to ensuring all 78 subtitle blocks are present and accounted for. This is about precision, faithfulness to the original audio, and providing a top-quality final product. Every step is about getting to a perfect subtitle file.
+lyrics_prompt_version: 10
+draft_subtitles:
+- start: '00:00.000'
+  end: '00:03.900'
+  original: 照れるその時は そうやっぱそれが My Way
+  english: Even when I'm feeling shy, yeah, that's still My Way
+- start: '00:03.950'
+  end: '00:06.200'
+  original: あきらめやしないよ
+  english: I'm never gonna give up!
+- start: '00:07.100'
+  end: '00:10.300'
+  original: なら Go fight! さあ一歩一歩 行ってみよう
+  english: So go fight! Come on, let's take it step by step!
+- start: '00:10.500'
+  end: '00:12.600'
+  original: ほら 3 2 1 のサインで
+  english: Look, on the count of 3, 2, 1!
+- start: '00:12.800'
+  end: '00:17.200'
+  original: 桜の樹 花吹雪 走ってるよ 最前線
+  english: Cherry blossom trees, a blizzard of petals, running at the front line
+- start: '00:17.250'
+  end: '00:19.600'
+  original: ドキドキしちゃうな
+  english: My heart is pounding...
+- start: '00:19.650'
+  end: '00:22.400'
+  original: モーション さあ一緒に行こう
+  english: Motion! Come on, let's go together!
+- start: '00:22.450'
+  end: '00:23.800'
+  original: Let's go!
+  english: Let's go!
+- start: '00:24.100'
+  end: '00:27.500'
+  original: はい！はい！はい！はい！はい！はい！
+  english: Hey! Hey! Hey! Hey! Hey! Hey!
+- start: '00:27.800'
+  end: '00:30.200'
+  original: もっともっと声出してー！
+  english: Give me more and more of your voices!
+- start: '00:30.700'
+  end: '00:33.300'
+  original: はい！はい！はい！はい！
+  english: Hey! Hey! Hey! Hey!
+- start: '00:33.400'
+  end: '00:36.200'
+  original: みこの名前呼ぶにゃー！
+  english: Call out Miko's name, nya!
+- start: '00:36.800'
+  end: '00:39.800'
+  original: みこち！みこち！らぶらぶみこち！
+  english: Mikochi! Mikochi! Love-love Mikochi!
+- start: '00:39.900'
+  end: '00:42.400'
+  original: みこち！みこち！ぴょんぴょん！
+  english: Mikochi! Mikochi! Pyon-pyon!
+- start: '00:42.500'
+  end: '00:44.500'
+  original: みこち！みこちー？
+  english: Mikochi! Mikochi?
+- start: '00:44.900'
+  end: '00:46.300'
+  original: みこちー！
+  english: Mikochi!
+- start: '00:46.400'
+  end: '00:50.600'
+  original: 飛んで 跳ねて 回って 続くからさ ファンファーレ
+  english: Jump, bounce, spin around, the fanfare keeps on going!
+- start: '00:50.700'
+  end: '00:54.500'
+  original: もっと どこまでもっと ぎゅんぎゅんしてこう きゅんきゅんきゅんきゅん きゃー！
+  english: More, everywhere more, let's zoom ahead! Kyun-kyun-kyun-kyun kyaa!
+- start: '00:54.900'
+  end: '00:56.400'
+  original: みんな大好きにゃ！
+  english: I love you all, nya!
+- start: '00:56.450'
+  end: '01:00.100'
+  original: 距離なんて超えちゃえ 咲き乱れたいの
+  english: Let's cross any distance, I want to bloom wildly!
+- start: '01:00.150'
+  end: '01:05.300'
+  original: しゃいにーしゃいにーしゃいにー ふわふわに 未来に軌跡 描くように
+  english: Shiny, shiny, shiny, fluffy and soft, like drawing a trail into the future...
+- start: '01:05.400'
+  end: '01:08.900'
+  original: きっとそれが My Way 信じてるんだよ
+  english: I'm sure that's My Way, I truly believe in it!
+- start: '01:09.500'
+  end: '01:13.000'
+  original: なら Go fight! さあ もっともっと恋をして
+  english: So go fight! Come on, fall more and more in love!
+- start: '01:13.100'
+  end: '01:15.700'
+  original: ばかりじゃいけないね
+  english: We can't just leave it at that, right?
+- start: '01:15.800'
+  end: '01:20.000'
+  original: 全力で輝いて 連れて行くよ ニューフェイズ
+  english: Shining with all my might, I'll take you to a new phase!
+- start: '01:20.100'
+  end: '01:22.400'
+  original: 咲き誇れば
+  english: When we bloom in full glory...
+- start: '01:22.450'
+  end: '01:25.700'
+  original: モーション さあ一緒に行こう
+  english: Motion! Come on, let's go together!
+- start: '01:25.900'
+  end: '01:28.500'
+  original: みんな笑顔になーれ！
+  english: Everyone, smile!
+- start: '01:38.800'
+  end: '01:41.500'
+  original: せーのにっ じゃっじゃじゃーん！
+  english: Ready, set, ta-da!
+- start: '01:48.000'
+  end: '01:51.100'
+  original: いくよ！きゅんきゅんみこきゅん！
+  english: Here we go! Kyun-kyun Miko-kyun!
+- start: '01:51.600'
+  end: '01:53.900'
+  original: きゅんきゅんみこきゅん！
+  english: Kyun-kyun Miko-kyun!
+- start: '01:54.100'
+  end: '01:57.200'
+  original: きゅんきゅんみこきゅん きゅんきゅんみこきゅん
+  english: Kyun-kyun Miko-kyun, kyun-kyun Miko-kyun
+- start: '01:57.300'
+  end: '02:00.100'
+  original: きゅんきゅんきゅん きみにみこきゅん！
+  english: Kyun-kyun-kyun, Miko-kyun to you!
+- start: '02:00.200'
+  end: '02:03.200'
+  original: セカンドライブの衣装だよー！
+  english: This is my 2nd Live outfit!
+- start: '02:03.400'
+  end: '02:06.100'
+  original: みこちゃん かわいー？
+  english: Isn't Miko-chan cute?!
+- start: '02:09.700'
+  end: '02:14.700'
+  original: ねぇね あのね これガチ みんなともだち 夢見るかたち 絶対ご自慢気
+  english: Hey, listen, this is for real, everyone's friends, the shape of our dreams,
+    definitely something to brag about!
+- start: '02:14.800'
+  end: '02:20.300'
+  original: それはすなわち せきららって話 いろんなわたし じゃあ見てほしい！
+  english: Which means it's a totally honest story, I want you to see all the different
+    sides of me!
+- start: '02:20.400'
+  end: '02:22.400'
+  original: えりーと あいどるじゃん！
+  english: I'm an elite idol, right?!
+- start: '02:22.600'
+  end: '02:25.100'
+  original: えりーと すまいる！
+  english: Elite smile!
+- start: '02:25.300'
+  end: '02:27.800'
+  original: えりーと たーん！
+  english: Elite turn!
+- start: '02:27.900'
+  end: '02:31.200'
+  original: みーみーみーみー みこち あいしてるー！
+  english: Mi-mi-mi-mi-Mikochi, I love you!
+- start: '02:31.500'
+  end: '02:36.600'
+  original: まれに 君はね 落ち込んじゃうことも あるよ いっさんな時は
+  english: Once in a while, you might feel down too, and at times like that...
+- start: '02:36.700'
+  end: '02:39.900'
+  original: はなまる あげるね
+  english: I'll give you a gold star!
+- start: '02:40.200'
+  end: '02:41.800'
+  original: みこぴー！
+  english: 35P!
+- start: '02:41.900'
+  end: '02:44.400'
+  original: みこちゃん かわいー？
+  english: Isn't Miko-chan cute?!
+- start: '02:44.500'
+  end: '02:49.800'
+  original: ほにゃって ほにゃって ほにゃって 笑ってたら きゅんしちゃうかも みこきゅん
+  english: When you smile all soft and squishy, you might fall hard for Miko-kyun!
+- start: '02:49.900'
+  end: '02:55.100'
+  original: ほにゃって こっち見て ほにゃって 大天才 みんなのしあわせ 一緒に
+  english: Softly look over here, softly, a super genius! Let's share everyone's happiness
+    together!
+- start: '02:55.150'
+  end: '02:57.900'
+  original: せーのっ きゅんきゅんにあふれる 今日も
+  english: Ready, set! Today's overflowing with kyun-kyun too!
+- start: '02:58.000'
+  end: '03:00.600'
+  original: にこにこになれちゃう きゅんきゅん
+  english: It makes you smile, kyun-kyun!
+- start: '03:00.700'
+  end: '03:03.300'
+  original: どきどきがとまらない きゅんきゅん
+  english: My heart won't stop pounding, kyun-kyun!
+- start: '03:03.400'
+  end: '03:07.800'
+  original: きゅんきゅんみこきゅんきゅん 君に今日はあげるよ
+  english: Kyun-kyun Miko-kyun-kyun, I'll give it to you today!
+- start: '03:11.600'
+  end: '03:14.700'
+  original: はい！はい！はい！はい！
+  english: Hey! Hey! Hey! Hey!
+- start: '03:16.200'
+  end: '03:21.700'
+  original: ねぇね あのね これガチ ほっぺはもちもち 未来の見方 ちょっぴりごきげんき
+  english: Hey, listen, this is for real, my cheeks are squishy, looking to the future,
+    feeling a little extra cheerful!
+- start: '03:21.800'
+  end: '03:27.200'
+  original: これはすなわち 毎日って話 それは必見だし じゃあ見てほしい！
+  english: Which means it's an everyday story, it's a must-see, so I want you to watch!
+- start: '03:27.300'
+  end: '03:29.500'
+  original: えりーと あくしょん！
+  english: Elite action!
+- start: '03:29.800'
+  end: '03:32.300'
+  original: えりーと ぴょーん！
+  english: Elite jump!
+- start: '03:32.900'
+  end: '03:35.200'
+  original: えりーと おねんね！
+  english: Elite sleepy-time!
+- start: '03:35.400'
+  end: '03:37.900'
+  original: えりーと わがまま！
+  english: Elite selfishness!
+- start: '03:38.100'
+  end: '03:43.400'
+  original: だって いつだって ありのままを 伝えたいの
+  english: Because I always want to show you my true self!
+- start: '03:43.500'
+  end: '03:49.000'
+  original: 「おまえらさ みこのことなめてんじゃねえ！ ふざけんじゃねーぞー！」
+  english: '"Hey, you guys are underestimating Miko, aren''t you?! Don''t mess with
+    me!"'
+- start: '03:49.050'
+  end: '03:51.400'
+  original: って 言えって言われました
+  english: '...is what they told me to say!'
+- start: '03:51.450'
+  end: '03:56.800'
+  original: ほにゃって ほにゃって ほにゃって 笑ってたら きゅんしちゃうかも みこきゅん
+  english: When you smile all soft and squishy, you might fall hard for Miko-kyun!
+- start: '03:56.850'
+  end: '04:01.900'
+  original: ほにゃって こっち見て ほにゃって 大天才 みんなしてもいいんじゃない？
+  english: Softly look over here, softly, a super genius! Isn't it fine for everyone
+    to join in?
+- start: '04:01.950'
+  end: '04:04.700'
+  original: せーのっ きゅんきゅんにあふれる 今日も
+  english: Ready, set! Today's overflowing with kyun-kyun too!
+- start: '04:04.750'
+  end: '04:07.300'
+  original: ふわふわになれちゃう きゅんきゅん
+  english: It makes you feel all fluffy, kyun-kyun!
+- start: '04:07.350'
+  end: '04:10.000'
+  original: にこにこがとまらない きゅんきゅん
+  english: The smiles won't stop, kyun-kyun!
+- start: '04:10.050'
+  end: '04:12.000'
+  original: きゅんきゅんみこきゅんきゅん
+  english: Kyun-kyun Miko-kyun-kyun
+- start: '04:12.100'
+  end: '04:16.200'
+  original: この今が宝物
+  english: This moment right now is my treasure
+- start: '04:16.600'
+  end: '04:20.100'
+  original: いつも愛をありがとう
+  english: Thank you for always giving me your love
+- start: '04:20.400'
+  end: '04:24.800'
+  original: ここからはね みこのターン ついてきてね！
+  english: From here on out, it's Miko's turn, keep up with me!
+- start: '04:25.100'
+  end: '04:29.500'
+  original: はい！はい！はい！はい！はい！はい！
+  english: Hey! Hey! Hey! Hey! Hey! Hey!
+- start: '04:32.300'
+  end: '04:34.200'
+  original: うー いぇい！
+  english: Ooh, yeah!
+- start: '04:34.300'
+  end: '04:39.200'
+  original: いつまでも いつまでも ずっとずっと 歌うよ ねぇ
+  english: Forever and ever, always and always, I'll keep singing, okay?
+- start: '04:39.300'
+  end: '04:42.000'
+  original: みこ がんばるよ 頑張れるよ
+  english: Miko will do her best, I can keep going!
+- start: '04:42.050'
+  end: '04:45.200'
+  original: もっともっと きゅんきゅんになってね
+  english: Fall even deeper in love with me, okay?
+- start: '04:45.300'
+  end: '04:49.500'
+  original: ラストにもう一回 張り切って！ みこちゃんはー？
+  english: One last time, give it everything you've got! Who's Miko-chan?!
+- start: '04:49.800'
+  end: '04:55.100'
+  original: ほにゃって ほにゃって ほにゃって 笑ってたら きゅんしちゃうかも みこきゅん
+  english: When you smile all soft and squishy, you might fall hard for Miko-kyun!
+- start: '04:55.150'
+  end: '05:00.800'
+  original: ほにゃって こっち見て ほにゃって 大天才 みんなのしあわせ せーのっ
+  english: Softly look over here, softly, a super genius! Everyone's happiness, ready,
+    set...
+detected_performances:
+- title: null
+  artist: さくらみこ
+  start: 00:00
+  end: 01:44
+- title: きゅんきゅんみこきゅんきゅん♡
+  artist: さくらみこ
+  start: 01:48
+  end: 05:01
