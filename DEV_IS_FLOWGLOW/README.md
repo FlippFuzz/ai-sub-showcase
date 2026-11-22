@@ -2,5 +2,5 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;11&#8209;10 | <a href="https://youtu.be/48hUYLrV8bE"><img src="https://i.ytimg.com/vi/48hUYLrV8bE/mqdefault.jpg" width="100" /></a> | [【📢 重大発表 🔥】 BOUNCE BACK！【#FG2周年】](https://flippfuzz.github.io/ai-sub-player/?uploader=DEV_IS_FLOWGLOW&v=48hUYLrV8bE) | [g35l&#8209;g4h&#8209;g35l<br>011910](./v/48hUYLrV8bE) |
+| 2026&#8209;11&#8209;09 | <a href="https://youtu.be/48hUYLrV8bE"><img src="https://i.ytimg.com/vi/48hUYLrV8bE/mqdefault.jpg" width="100" /></a> | [【📢 重大発表 🔥】 BOUNCE BACK！【#FG2周年】](https://flippfuzz.github.io/ai-sub-player/?uploader=DEV_IS_FLOWGLOW&v=48hUYLrV8bE) | [g35l&#8209;g4h&#8209;g35l<br>011910](./v/48hUYLrV8bE) |
 | 2025&#8209;12&#8209;08 | <a href="https://youtu.be/zUI_V1Fea2U"><img src="https://i.ytimg.com/vi/zUI_V1Fea2U/mqdefault.jpg" width="100" /></a> | [【#FG3Dライブ】MAKE IT, BREAK IT](https://flippfuzz.github.io/ai-sub-player/?uploader=DEV_IS_FLOWGLOW&v=zUI_V1Fea2U) | [g36f&#8209;g35l<br>001809](./v/zUI_V1Fea2U) |
