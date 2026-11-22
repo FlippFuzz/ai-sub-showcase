@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2026&#8209;11&#8209;21 | <a href="https://youtu.be/inmap2iySzA"><img src="https://i.ytimg.com/vi/inmap2iySzA/mqdefault.jpg" width="100" /></a> | [はじめてのMinecraftで冒険！アソビ★まわり隊！拠点作る【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=inmap2iySzA) | [g35l&#8209;g35l&#8209;g35l<br>011910](./v/inmap2iySzA) |
+| 2026&#8209;11&#8209;21 | <a href="https://youtu.be/inmap2iySzA"><img src="https://i.ytimg.com/vi/inmap2iySzA/mqdefault.jpg" width="100" /></a> | [はじめてのMinecraftで冒険！アソビ★まわり隊！拠点作る【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=inmap2iySzA) | [g35l&#8209;g4h&#8209;g35l<br>011910](./v/inmap2iySzA) |
 | 2026&#8209;11&#8209;19 | <a href="https://youtu.be/_NIc65kdfsI"><img src="https://i.ytimg.com/vi/_NIc65kdfsI/mqdefault.jpg" width="100" /></a> | [楽曲オタクの歌枠なのじゃ！【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=_NIc65kdfsI) | [g35l&#8209;g4h&#8209;g35l<br>011910](./v/_NIc65kdfsI) |
 | 2026&#8209;11&#8209;18 | <a href="https://youtu.be/Hh0IwJFFq1c"><img src="https://i.ytimg.com/vi/Hh0IwJFFq1c/mqdefault.jpg" width="100" /></a> | [【飲酒オフコラボ】初飲酒🍺キョーコに見守ってもらうのじゃ【ホロライブ/百灯キョーコ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=Hh0IwJFFq1c) | [g35l&#8209;g4h&#8209;g35l<br>011910](./v/Hh0IwJFFq1c) |
 | 2026&#8209;11&#8209;18 | <a href="https://youtu.be/QclGfuKx8XI"><img src="https://i.ytimg.com/vi/QclGfuKx8XI/mqdefault.jpg" width="100" /></a> | [【のじゃEnglish】お勉強のご褒美にクッキー食べたのじゃ🍪【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=QclGfuKx8XI) | [g35l&#8209;g4h&#8209;g35l<br>011910](./v/QclGfuKx8XI) |
