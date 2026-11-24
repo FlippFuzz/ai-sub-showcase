@@ -1,0 +1,512 @@
+name: part_005
+video_duration_ms: 299888
+media_tag: IEgmaNWRo8s
+model_name: gemini-3.6-flash
+service_tier: null
+agentic_video: false
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】'.
+segment_index: 5
+fallback_tier: 0
+tier_attempts: 0
+target_fps: null
+exhausted: false
+segment_offset_ms: 1505140
+global_summary:
+  overall_summary: In this livestream, Hololive VTuber Achichi Mela of the subunit
+    'Asobi Mawaritai!' plays the horror observation game 'Japan Stigmatized Property
+    (JSP)'. Initially terrified and even accidentally ending her stream during a jump
+    scare in the first stage, she gradually gets used to the mechanics, successfully
+    detects anomalies across multiple stages with zero misses, and concludes with
+    a warm community wrap-up and schedule announcement.
+  chapters:
+  - start: 00:00
+    end: 01:47
+    title: Stream Opening
+    description: Waiting screen and introductory standby before the stream officially
+      begins.
+    song_title: null
+    song_artist: null
+  - start: 01:47
+    end: '12:30'
+    title: Greeting & Game Introduction
+    description: Achichi Mela greets viewers, expresses her nervousness and fear of
+      real-world haunted locations, and reads the game's official warning and terms
+      of service.
+    song_title: null
+    song_artist: null
+  - start: '12:30'
+    end: '44:30'
+    title: 'Stage 1: Akita Prefecture House'
+    description: Mela tackles the first stigmatized property in Akita Prefecture.
+      After experiencing a terrifying jump scare that causes her to accidentally close
+      her stream, she returns, gets her bearings, and successfully clears the shift
+      with zero missed anomalies.
+    song_title: null
+    song_artist: null
+  - start: '44:30'
+    end: '62:20'
+    title: 'Stage 2: Nara Prefecture Shrine'
+    description: Moving on to a shrine in Nara Prefecture, Mela monitors the outdoor
+      and indoor shrine grounds, pointing out subtle environmental changes and weather
+      anomalies.
+    song_title: null
+    song_artist: null
+  - start: '62:20'
+    end: '79:30'
+    title: 'Stage 3: Ryokan / Bathhouse'
+    description: Mela monitors a retro bathhouse and inn (ryokan) changeroom, dealing
+      with eerie audio cues, shifting objects, and sudden reflections in mirrors.
+    song_title: null
+    song_artist: null
+  - start: '79:30'
+    end: '103:00'
+    title: 'Stage 4 / Final Stage: Stigmatized Property'
+    description: In the final complex stage filled with dolls, creepy rooms, and hidden
+      entities, Mela maintains her concentration, identifies anomalies, and completes
+      her shift successfully.
+    song_title: null
+    song_artist: null
+  - start: '103:00'
+    end: '109:02'
+    title: Stream Wrap-up & Schedule Announcement
+    description: Mela celebrates her successful playthrough, reflects on the horror
+      experience, and announces upcoming streams including a 2-month anniversary member-only
+      chat.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Achichi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / Asobi Mawaritai!
+    persona_lore: A cheerful firefighting salamander (fire lizard) who has lived since
+      the Edo period. She serves as the 'blessing' (ご利益) representative for the unit
+      Asobi Mawaritai! and works hard to repay human kindness through防火 (fire prevention).
+    speech_patterns_or_ticks: 'Uses the first-person pronoun ''washi'' (わし) and ends
+      sentences with ''noja'' (のじゃ). Catchphrase: ''Hi no youjin ja~! Washi ga kikeshi
+      no salamander ja!''.'
+    visual_cues: Fire-themed outfit, salamander tail and horns, vibrant green and
+      red accents, wearing a tengu mask during parts of the stream.
+  domain_glossary:
+  - term: JSP
+    meaning: Japan Stigmatized Property (日本事故物件監視協会 - Nihon Jikobukken Kanshi Kyoukai),
+      a horror observation simulation game where players monitor security cameras
+      in real stigmatized properties from midnight to 5 AM to report anomalies.
+  - term: 異変 (Ihen)
+    meaning: Anomalies, supernatural occurrences, or logical inconsistencies in the
+      monitored properties that players must spot and report.
+  - term: アソビ★まわり隊！ (Asobi Mawaritai!)
+    meaning: A gaming-focused VTuber unit in Hololive consisting of Hakka Kyoko, Achichi
+      Mela, Suzunari Tsuzuri, and Soraka Sopia.
+  - term: ご利益 (Gorieki)
+    meaning: Divine favor, blessing, or spiritual benefits; Mela's official role within
+      her unit.
+  thoughts:
+  - |-
+    **Analyzing Video Evidence**
+
+    Okay, so we've got `video_1.webm`, clocking in at a substantial 6543.1 seconds – that's roughly an hour and forty-nine minutes of footage. My initial instinct is to dive right in, but I need to be strategic. The user has provided valuable context: this is from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel, and the video title, '【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】', suggests a Japanese streamer – likely Mela herself – playing a horror game. It mentions "ホロライブ/アソビ★まわり隊!", which suggests she is collaborating with Hololive and "アソビ★まわり隊!".
+
+    Before I get bogged down in the full video, I need a high-level overview. Let's not waste any time. Instead of just jumping in and scrubbing through the file, I'm going to load the video with Automatic Speech Recognition (ASR) enabled. This is crucial. I need to understand the game, identify participants, and identify any critical chapters or segments. The ASR will give me a searchable transcript, which will be invaluable for quickly identifying key moments and topics. So, I will call `load_video` with `include_asr=True` to get started. This will be more efficient in the long run.
+  - |-
+    **Initial Assessment of the Streaming Content**
+
+    Okay, so I've got a video here – almost two hours long, specifically 1 hour 49 minutes, which translates to a good 6543 seconds of content. The streamer is 熱千めら (Netsuchi Mela) from Hololive and part of アソビ★まわり隊！ (Asobi Mawaritai!). I need to figure out what game she's playing because that’s critical to understanding the stream's focus. My initial thought is it's JSP, but I need to confirm the acronym; is it “Jikobukken Shanshi Program”, "事故物件監視プログラム / 事故物件監視人", or something else? I need to know what game she is actually playing, so lets check the web. Now, let’s do a quick Google search for both 熱千めら (Netsuchi Mela) and this *JSP* horror game to make sure I’ve got all the correct names and background information. That's the best way to get a firm understanding of the subject matter and contextualize it.
+  - |-
+    {
+      "overall_summary": "Right, so, I observed a VStream by Achichi Mela playing the horror game 'Japan Stigmatized Property'. She, being the 'blessing' (ご利益) representative and a firefighting salamander from the Edo period, initially struggled with jump scares, even accidentally ending her stream out of fear! Yet, she fearlessly returned and successfully completed all stages without a single missed anomaly. It's truly amazing the level of detail and immersion in this game. At the end, she wrapped up the stream by talking about upcoming member streams and her schedule, including her 2-month anniversary member-only stream!",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "01:47",
+          "title": "Stream Opening",
+          "description": "Waiting screen before the stream officially begins."
+        },
+        {
+          "start": "01:47",
+          "end": "12:30",
+          "title": "Greeting & Game Introduction",
+          "description": "Achichi Mela introduces the horror game 'Japan Stigmatized Property' and reads the game disclaimer."
+        },
+        {
+          "start": "12:30",
+          "end": "44:30",
+          "title": "Stage 1: Akita Prefecture House",
+          "description": "Mela plays the Akita Prefecture house stage, experiencing jump scares and temporarily ending the stream, before returning and successfully clearing it with zero mistakes."
+        },
+        {
+          "start": "44:30",
+          "end": "62:20",
+          "title": "Stage 2: Nara Prefecture T Shrine",
+          "description": "Mela investigates an outdoor shrine, identifying subtle anomalies and reporting them successfully."
+        },
+        {
+          "start": "62:20",
+          "end": "79:30",
+          "title": "Stage 3: Ryokan / Bathhouse",
+          "description": "Mela monitors the bathhouse stage, dealing with audio cues and sudden appearances of creepy objects."
+        },
+        {
+          "start": "79:30",
+          "end": "103:00",
+          "title": "Stage 4 / Final Stage: Stigmatized Property",
+          "description": "Mela deals with the final stage containing doll and clown rooms, completing it with zero misses."
+        },
+        {
+          "start": "103:00",
+          "end": "109:02",
+          "title": "Closing & Schedule Announcement",
+          "description": "Stream wrap-up and mentioning the 2-month anniversary member-only stream."
+        }
+      ],
+      "entities": [
+        {
+          "name": "Achichi Mela",
+          "original_name": "熱千めら",
+          "role_or_affiliation": "Hololive / Asobi Mawaritai!",
+          "persona_lore": "A cheerful firefighting salamander (fire lizard) living since the Edo period, serving as the 'blessing' (ご利益) representative for the unit Asobi Mawaritai!",
+          "speech_patterns_or_ticks": "Uses first-person 'washi' (わし) and sentence ending 'noja' (のじゃ); catchphrase 'Hi no youjin ja~! Washi ga kikeshi no salamander ja!'.",
+          "visual_cues": "Fire-themed outfit, salamander tail/horns, cheerful green/red color scheme, wearing a tengu mask initially during the stream."
+        }
+      ],
+      "domain_glossary": [
+        {
+          "term": "JSP",
+          "meaning": "Japan Stigmatized Property (日本事故物件監視協会 - Nihon Jikobukken Kanshi Kyoukai), a horror observation simulation game where players monitor security cameras in real stigmatized properties from midnight to 5 AM."
+        },
+        {
+          "term": "異変 (Ihen)",
+          "meaning": "Anomalies, supernatural occurrences, or logical inconsistencies occurring within the monitored properties that the player must detect and report."
+        },
+        {
+          "term": "アソビ★まわり隊！ (Asobi Mawaritai!)",
+          "meaning": "A gaming-focused VTuber unit in Hololive consisting of Hakka Kyoko, Achichi Mela, Suzunari Tsuzuri, and Soraka Sopia."
+        }
+      ]
+subtitles_prompt_version: 19
+response:
+  subtitles:
+  - start: '00:00.750'
+    end: '00:02.300'
+    original: あ、出た出たっぽい。
+    english: Ah, looks like it appeared.
+  - start: '00:02.500'
+    end: '00:04.200'
+    original: おい、のじゃ。
+    english: Hey, noja.
+  - start: '00:11.400'
+    end: '00:14.600'
+    original: えー？そう？な- ない！
+    english: Eh? Really? N-No! There isn't!
+  - start: '00:15.000'
+    end: '00:18.900'
+    original: ないです！ないです！
+    english: There isn't! There isn't!
+  - start: '00:19.800'
+    end: '00:21.200'
+    original: のじゃ。
+    english: Noja.
+  - start: '00:22.000'
+    end: '00:23.000'
+    original: い？
+    english: Huh?
+  - start: '00:25.800'
+    end: '00:30.100'
+    original: でもなんかピキピキピキ聞こえるんだな。ピキピキ。
+    english: But I hear some cracking noises. Cracking.
+  - start: '00:30.100'
+    end: '00:31.400'
+    original: ピキピキ聞こえるんだよな。
+    english: I hear cracking noises.
+  - start: '00:31.000'
+    end: '00:33.200'
+    original: '[Text: 従業員の皆さまへ]'
+    english: '[Text: To all employees]'
+  - start: '00:31.500'
+    end: '00:32.200'
+    original: はい！
+    english: Yes!
+  - start: '00:32.300'
+    end: '00:38.700'
+    original: え、わ- わかってる！ね、わし頑張って探してる！え、わし頑張ってる！わし頑張ってる！わし頑張ってる！わし...
+    english: Eh, I-I know! Hey, I'm trying hard to search! Eh, I'm trying hard! I'm
+      trying hard! I'm trying hard! I...
+  - start: '00:33.200'
+    end: '00:36.000'
+    original: '[Text: 現在あなたの担当物件で複数の異常現象が検出されています]'
+    english: '[Text: Multiple anomalies have been detected in the property under your
+      charge]'
+  - start: '00:36.000'
+    end: '00:38.000'
+    original: '[Text: 直ちに特定し、速やかに報告してください]'
+    english: '[Text: Please identify them immediately and report promptly]'
+  - start: '00:40.000'
+    end: '00:43.000'
+    original: わし... わし頑張って探してます。
+    english: I... I'm trying hard to search.
+  - start: '00:43.600'
+    end: '00:46.800'
+    original: ちょ、ゆっくり、ゆっくりね。ゆっくりね。
+    english: Wait, slowly, slowly. Slowly, okay?
+  - start: '00:47.000'
+    end: '00:50.000'
+    original: 机の上にこんなのあったっけ？
+    english: Was there something like this on the table?
+  - start: '00:50.200'
+    end: '00:53.600'
+    original: あっ、あったっぽい？あったっぽい。
+    english: Ah, looks like it was there? It was there.
+  - start: '00:54.000'
+    end: '00:59.800'
+    original: まずい！まずい！短期記憶の出来なさ...
+    english: This is bad! This is bad! My poor short-term memory...
+  - start: '01:03.600'
+    end: '01:09.500'
+    original: なに？！やばい！やばい！何これ？！何これ？！なんの手があるー！
+    english: What?! Oh no! Oh no! What is this?! What is this?! There are hands in
+      there!
+  - start: '01:16.000'
+    end: '01:17.400'
+    original: のじゃ。
+    english: Noja.
+  - start: '01:19.000'
+    end: '01:24.800'
+    original: でもこ- この部屋はなんかいつも通り。いつも通り。変わらない。
+    english: But th- this room seems like usual. Like usual. Unchanged.
+  - start: '01:24.800'
+    end: '01:27.500'
+    original: 何度もリフレインする...
+    english: Refraining over and over...
+  - start: '01:25.000'
+    end: '01:27.500'
+    original: '[Text: 従業員の皆さまへ]'
+    english: '[Text: To all employees]'
+  - start: '01:26.100'
+    end: '01:34.900'
+    original: え、わかったわかった、わかってる。わし、わしだって頑張って探してる。待って！わかった！頑張って探すから！許して、お願い！
+    english: Eh, I get it, I get it, I know. I-I'm trying my best to search too. Wait!
+      I got it! I'll try my best to search! Forgive me, please!
+  - start: '01:27.500'
+    end: '01:30.500'
+    original: '[Text: 現在あなたの担当物件で複数の異常現象が検出されています]'
+    english: '[Text: Multiple anomalies have been detected in the property under your
+      charge]'
+  - start: '01:30.500'
+    end: '01:33.500'
+    original: '[Text: 直ちに特定し、速やかに報告してください]'
+    english: '[Text: Please identify them immediately and report promptly]'
+  - start: '01:35.000'
+    end: '01:37.500'
+    original: お願い許して！お願い許して！
+    english: Please forgive me! Please forgive me!
+  - start: '01:38.200'
+    end: '01:42.000'
+    original: な、なんでパイプ椅子なん？なんでパイプ... ちょ、おかしくない？
+    english: Wh- Why is there a folding chair? Why a fold... Wait, isn't that weird?
+  - start: '01:42.200'
+    end: '01:47.400'
+    original: こんなのあったっけ？パイプ椅子なのあやしくない？異常検出されてないって...
+    english: Was this here? Isn't a folding chair suspicious? It says no anomaly detected...
+  - start: '01:48.500'
+    end: '01:53.000'
+    original: 異常だろ！この流れでパイプ椅子なことないだろ！
+    english: That's definitely an anomaly! There's no way a folding chair belongs
+      here in this setup!
+  - start: '01:58.000'
+    end: '01:59.200'
+    original: のじゃ。
+    english: Noja.
+  - start: '02:00.800'
+    end: '02:08.500'
+    original: こ- こんなんだったっけ？なんかもう、やばい。ねえ、これ絶対異常見つけられなかったらまずいやつじゃん。
+    english: W-Was it like this? Man, this is bad. Hey, if I can't find anomalies,
+      it's gonna end badly.
+  - start: '02:08.600'
+    end: '02:13.000'
+    original: ねえ、異常見つけられなかったらわし死ぬやつじゃ... こ- こんなんあったっけ？
+    english: Hey, if I don't spot the anomaly, I'm gonna die... W-Was this here?
+  - start: '02:13.100'
+    end: '02:15.800'
+    original: え、何何何何？
+    english: Eh, what what what what?
+  - start: '02:14.000'
+    end: '02:24.000'
+    original: |-
+      [Text: 業務中断通知書
+      秋田県 A邸 通常業務 00:00-03:51 0時間×2,970円 = 0円
+      あなたは7個の異常を報告しました
+      あなたは4個の異常を見逃しました
+      CAM2 居間1 で物体の消失
+      CAM1 外便所で物体の追加
+      CAM6 客間で物体の追加
+      CAM2 居間1 でドアの開閉]
+    english: |-
+      [Text: Notice of Work Interruption
+      Akita Pref. Property A Regular Shift 00:00-03:51 0 hours x 2,970 yen = 0 yen
+      You reported 7 anomalies
+      You missed 4 anomalies
+      CAM2 Living Room 1 Disappearance of object
+      CAM1 Outside Latrine Addition of object
+      CAM6 Guest Room Addition of object
+      CAM2 Living Room 1 Door opened/closed]
+  - start: '02:18.000'
+    end: '02:21.500'
+    original: え、わし、わし0円。
+    english: Eh, I-I got 0 yen.
+  - start: '02:22.500'
+    end: '02:28.000'
+    original: 4個の異常を見逃しました。居間1での物体の消失。そんな...
+    english: Missed 4 anomalies. Object disappearance in Living Room 1. No way...
+  - start: '02:28.000'
+    end: '02:36.500'
+    original: 外便所、あれ便所だったんだ。での物体の追加。客間での物体の追加。居間1でドアの開閉。
+    english: Outside latrine—ah, so that was a latrine—object addition. Guest room
+      object addition. Living Room 1 door opened/closed.
+  - start: '02:39.200'
+    end: '02:40.800'
+    original: 消えてた？
+    english: It disappeared?
+  - start: '02:41.000'
+    end: '02:44.500'
+    original: ちょ、もう一回やろう、もう一回やろう、もう一回やろう！ちょ...
+    english: Wait, let's do it again, let's do it again, let's do it again! Wait...
+  - start: '02:44.500'
+    end: '02:47.800'
+    original: さすがに2回目は怖くないわ。いけるわ。覚えた覚えた。ちょ、忘れた！
+    english: As expected, the second time isn't scary. I can do this. I memorized
+      it, I memorized it. Wait, I forgot!
+  - start: '02:46.000'
+    end: '02:48.500'
+    original: '[Text: 従業員の皆さまへ]'
+    english: '[Text: To all employees]'
+  - start: '02:50.000'
+    end: '02:57.800'
+    original: もう、ちょ、もう一回やろう、もう一回やろう。ちょ、厳しって！わし、わし初心者バイト！わしタイミーなの！わし...
+    english: Gosh, wait, let's do it again, let's do it again. Wait, this is harsh!
+      I-I'm a beginner part-timer! I'm a Timee worker! I...
+  - start: '02:57.900'
+    end: '03:00.000'
+    original: わし初めてなのに。初めてだから、そう...
+    english: Even though it's my first time. Because it's my first time, right...
+  - start: '03:01.500'
+    end: '03:04.000'
+    original: 冷蔵庫元々開いてたんだね。ちょ、覚えよう。ちゃんと覚えよう、主ら。
+    english: The fridge was open from the beginning. Wait, let's memorize it. Let
+      me memorize it properly, everyone.
+  - start: '03:04.500'
+    end: '03:09.500'
+    original: 冷蔵庫元々開いている... うんうんうん。ちゃ- ちゃんと覚えよう、何回もね。
+    english: The fridge is open from the start... Mm mm mm. Let's- Let me memorize
+      it properly, over and over.
+  - start: '03:11.000'
+    end: '03:15.000'
+    original: 物体の消失何？これ？時計が消えてたか？何が消えてたんじゃ？
+    english: What was the object disappearance? This? Did the clock disappear? What
+      disappeared?
+  - start: '03:15.500'
+    end: '03:19.000'
+    original: これとこれと... 時計消えてたか？うんうんうん。
+    english: This and this and... did the clock disappear? Mm mm mm.
+  - start: '03:20.500'
+    end: '03:28.000'
+    original: で、これは何？うんうんうん。扇風機、なんか赤ちゃんベビーカーみたいなやつ。
+    english: And what is this? Mm mm mm. A electric fan, something like a baby stroller...
+  - start: '03:28.500'
+    end: '03:32.000'
+    original: そして... あの、この線は元々ある。
+    english: And... um, these lines were here from the start.
+  - start: '03:32.100'
+    end: '03:37.000'
+    original: 絶対この顔動き出す系かと思ったらね、動かないんじゃけど。これ纏いみたいなね、纏いみたいなのある。
+    english: I thought for sure these faces would start moving, but they don't. There's
+      a matoi flag thing like this.
+  - start: '03:38.000'
+    end: '03:40.000'
+    original: 椅子、椅子、椅子... うんうんうん。
+    english: Chair, chair, chair... Mm mm mm.
+  - start: '03:44.500'
+    end: '03:46.500'
+    original: あ、カメラ番号？
+    english: Ah, camera number?
+  - start: '03:47.000'
+    end: '03:49.000'
+    original: カメラ番号。
+    english: Camera number.
+  - start: '03:50.000'
+    end: '03:53.000'
+    original: カメラ番号... うん。
+    english: Camera number... Yeah.
+  - start: '03:54.000'
+    end: '03:56.800'
+    original: え、最初からパイプ椅子だった？こいつ。
+    english: Eh, was this a folding chair from the beginning?
+  - start: '03:57.000'
+    end: '04:03.500'
+    original: この後ろは何？うんうんうん。椅子3つ... うんうんうん。
+    english: What's behind this? Mm mm mm. Three chairs... Mm mm mm.
+  - start: '04:05.000'
+    end: '04:07.800'
+    original: キャム、キャム3。キャム、キャム3。
+    english: Cam, Cam 3. Cam, Cam 3.
+  - start: '04:08.000'
+    end: '04:14.500'
+    original: キャム... こんないっぱい、こんないっぱい椅子あったっけ？ここ。こんないっぱい椅子あったっけ？
+    english: Cam... Were there so many, so many chairs here? Were there so many chairs
+      here?
+  - start: '04:14.600'
+    end: '04:16.000'
+    original: キャム3。
+    english: Cam 3.
+  - start: '04:16.000'
+    end: '04:18.000'
+    original: '[Text: 従業員の皆さまへ]'
+    english: '[Text: To all employees]'
+  - start: '04:16.000'
+    end: '04:24.000'
+    original: こんないっぱいお皿とか色々あったっけ？ちょ、ちゃんと覚えよう。ちゃんと覚え... いや、頑張ってるんだけどな。
+    english: Were there so many plates and stuff? Wait, let's memorize properly. Properly
+      memoriz... Well, I am trying hard though.
+  - start: '04:18.000'
+    end: '04:21.000'
+    original: '[Text: これより異常現象の報告が多い時間となります]'
+    english: '[Text: From now on, there will be a higher frequency of reported anomalies]'
+  - start: '04:21.000'
+    end: '04:23.500'
+    original: '[Text: 何か変化を確認した場合は報告してください]'
+    english: '[Text: Please report any changes you notice]'
+  - start: '04:26.000'
+    end: '04:29.000'
+    original: 覚えようとする気はあるんだけどな。
+    english: I do have the intention to memorize it though.
+  - start: '04:30.500'
+    end: '04:32.800'
+    original: あ、椅子があるのが正常で消えてたんだ。
+    english: Ah, having a chair is normal, so it had disappeared.
+  - start: '04:33.000'
+    end: '04:38.000'
+    original: うん、2回目ならいけるわ。ごめんわし分かった。わしさすがあにもういけるわ。
+    english: Yeah, second time's the charm. Sorry, I figured it out. As expected,
+      I can do it now.
+  - start: '04:38.500'
+    end: '04:42.500'
+    original: 2回... あ、ほらね！このぽわぽわね！
+    english: Second time... Ah, see! This flickering distortion!
+  - start: '04:44.000'
+    end: '04:47.800'
+    original: ふぅー！ちょっと水飲もう。ちょっと落ち着こう、一旦。
+    english: Phew! Let me drink some water. Let's calm down a bit first.
+  - start: '04:49.000'
+    end: '04:58.000'
+    original: うん、わし... わしいけるわ。わしいけるわ。あの、もう一度見たものはね、覚えましたもん。
+    english: Yeah, I... I can do this. I can do this. Um, things I've seen once, I've
+      memorized them.
+  - start: '04:58.000'
+    end: '05:00.000'
+    original: 短期記憶は...
+    english: Short-term memory is...
+  thoughts:
+  - |-
+    {
+      "summary": "**My primary focus is on meticulously transcribing and translating this video segment, specifically from 25:05.140 to 30:05.028 (local 00:00.000 to 05:00.000), using 'washi' and 'noja'. I'm paying close attention to the timecodes to ensure perfect alignment with the audio waveform.  I'm making sure that the speaker Achichi Mela's words are accurately transcribed and translated. I'm noting Ah, the appearance of something. Hey, noja! as the first few words. It seems like eh? there's no there isn't. But, and there isn't. I hear some cracking noises. Wait, I'm trying hard to search! I'm trying to find whatever I need, and searching. Hey, I'm trying hard! I know! There's a folding chair. Then, I remember I was trying to search. Wait, slowly, slowly. slowly.  Now, I'm trying to remember if there was something on the table. Ah, it was there. This is bad! My short-term memory... I need to remember! I'm wondering what is that? Then, I realized Oh no! What is this?! I'm trying to figure out what's in there! This room is like always, unchanged. I'm going to find this, I know I am. And I'm going to look hard. But I remember that I'm supposed to find anomalies. I should not miss anything.  Wait, I get it. I know I have to search hard! Forgive me! I'm not sure why there's a folding chair? I remember there shouldn't be a folding chair. Shouldn't there not be a folding chair? This is weird.  I think there is an anomaly here! There is no way there should be a folding chair. I have to find the anomalies, and I can't die! The objects must be there in the location. Was it like this? Man, this is bad! Hey, if I can't find anomalies, I'm gonna die! I hope there is no problem, and I am not forgetting anything. I remember I got zero, the screen say. I have missed some anomaly, and that's not good. An object has disappeared! Not good! Why did I miss those? Okay, now I have to check again. Wait! I can do this! I will remember. Yes! I will memorize. Hey! I have to do this! I am a beginner part-timer! This is tough! Please, first time! I will do it. Let me memorize it properly, everyone. I think it's supposed to be there. I will remember it! I'll memorize it again and again. What disappeared? A clock! Ok! A fan, that is like a baby stroller! These lines must be here from the start. Definitely, the face will move. I'm going to find any moving object. Chair, chair, chair, ok, there are chairs! Ok! Camera number. Camera, camera, there are many chairs.  I'm trying to memorize. I will memorize, I am trying hard, I am trying to memorize, I will do it. There are chairs, and this is normal. Having a chair here, is normal, and it disappears. I can do the second time! See, there is an anomaly. Let me rest and drink water. I am going to remember and do this well! My short term memory...**"
+    }
+  detected_musical_performances: []

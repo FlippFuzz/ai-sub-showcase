@@ -1,0 +1,386 @@
+name: part_000
+video_duration_ms: 300008
+media_tag: IEgmaNWRo8s
+model_name: gemini-3.6-flash
+service_tier: null
+agentic_video: false
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】'.
+segment_index: 0
+fallback_tier: 0
+tier_attempts: 0
+target_fps: null
+exhausted: false
+segment_offset_ms: 0
+global_summary:
+  overall_summary: In this livestream, Hololive VTuber Achichi Mela of the subunit
+    'Asobi Mawaritai!' plays the horror observation game 'Japan Stigmatized Property
+    (JSP)'. Initially terrified and even accidentally ending her stream during a jump
+    scare in the first stage, she gradually gets used to the mechanics, successfully
+    detects anomalies across multiple stages with zero misses, and concludes with
+    a warm community wrap-up and schedule announcement.
+  chapters:
+  - start: 00:00
+    end: 01:47
+    title: Stream Opening
+    description: Waiting screen and introductory standby before the stream officially
+      begins.
+    song_title: null
+    song_artist: null
+  - start: 01:47
+    end: '12:30'
+    title: Greeting & Game Introduction
+    description: Achichi Mela greets viewers, expresses her nervousness and fear of
+      real-world haunted locations, and reads the game's official warning and terms
+      of service.
+    song_title: null
+    song_artist: null
+  - start: '12:30'
+    end: '44:30'
+    title: 'Stage 1: Akita Prefecture House'
+    description: Mela tackles the first stigmatized property in Akita Prefecture.
+      After experiencing a terrifying jump scare that causes her to accidentally close
+      her stream, she returns, gets her bearings, and successfully clears the shift
+      with zero missed anomalies.
+    song_title: null
+    song_artist: null
+  - start: '44:30'
+    end: '62:20'
+    title: 'Stage 2: Nara Prefecture Shrine'
+    description: Moving on to a shrine in Nara Prefecture, Mela monitors the outdoor
+      and indoor shrine grounds, pointing out subtle environmental changes and weather
+      anomalies.
+    song_title: null
+    song_artist: null
+  - start: '62:20'
+    end: '79:30'
+    title: 'Stage 3: Ryokan / Bathhouse'
+    description: Mela monitors a retro bathhouse and inn (ryokan) changeroom, dealing
+      with eerie audio cues, shifting objects, and sudden reflections in mirrors.
+    song_title: null
+    song_artist: null
+  - start: '79:30'
+    end: '103:00'
+    title: 'Stage 4 / Final Stage: Stigmatized Property'
+    description: In the final complex stage filled with dolls, creepy rooms, and hidden
+      entities, Mela maintains her concentration, identifies anomalies, and completes
+      her shift successfully.
+    song_title: null
+    song_artist: null
+  - start: '103:00'
+    end: '109:02'
+    title: Stream Wrap-up & Schedule Announcement
+    description: Mela celebrates her successful playthrough, reflects on the horror
+      experience, and announces upcoming streams including a 2-month anniversary member-only
+      chat.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Achichi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / Asobi Mawaritai!
+    persona_lore: A cheerful firefighting salamander (fire lizard) who has lived since
+      the Edo period. She serves as the 'blessing' (ご利益) representative for the unit
+      Asobi Mawaritai! and works hard to repay human kindness through防火 (fire prevention).
+    speech_patterns_or_ticks: 'Uses the first-person pronoun ''washi'' (わし) and ends
+      sentences with ''noja'' (のじゃ). Catchphrase: ''Hi no youjin ja~! Washi ga kikeshi
+      no salamander ja!''.'
+    visual_cues: Fire-themed outfit, salamander tail and horns, vibrant green and
+      red accents, wearing a tengu mask during parts of the stream.
+  domain_glossary:
+  - term: JSP
+    meaning: Japan Stigmatized Property (日本事故物件監視協会 - Nihon Jikobukken Kanshi Kyoukai),
+      a horror observation simulation game where players monitor security cameras
+      in real stigmatized properties from midnight to 5 AM to report anomalies.
+  - term: 異変 (Ihen)
+    meaning: Anomalies, supernatural occurrences, or logical inconsistencies in the
+      monitored properties that players must spot and report.
+  - term: アソビ★まわり隊！ (Asobi Mawaritai!)
+    meaning: A gaming-focused VTuber unit in Hololive consisting of Hakka Kyoko, Achichi
+      Mela, Suzunari Tsuzuri, and Soraka Sopia.
+  - term: ご利益 (Gorieki)
+    meaning: Divine favor, blessing, or spiritual benefits; Mela's official role within
+      her unit.
+  thoughts:
+  - |-
+    **Analyzing Video Evidence**
+
+    Okay, so we've got `video_1.webm`, clocking in at a substantial 6543.1 seconds – that's roughly an hour and forty-nine minutes of footage. My initial instinct is to dive right in, but I need to be strategic. The user has provided valuable context: this is from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel, and the video title, '【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】', suggests a Japanese streamer – likely Mela herself – playing a horror game. It mentions "ホロライブ/アソビ★まわり隊!", which suggests she is collaborating with Hololive and "アソビ★まわり隊!".
+
+    Before I get bogged down in the full video, I need a high-level overview. Let's not waste any time. Instead of just jumping in and scrubbing through the file, I'm going to load the video with Automatic Speech Recognition (ASR) enabled. This is crucial. I need to understand the game, identify participants, and identify any critical chapters or segments. The ASR will give me a searchable transcript, which will be invaluable for quickly identifying key moments and topics. So, I will call `load_video` with `include_asr=True` to get started. This will be more efficient in the long run.
+  - |-
+    **Initial Assessment of the Streaming Content**
+
+    Okay, so I've got a video here – almost two hours long, specifically 1 hour 49 minutes, which translates to a good 6543 seconds of content. The streamer is 熱千めら (Netsuchi Mela) from Hololive and part of アソビ★まわり隊！ (Asobi Mawaritai!). I need to figure out what game she's playing because that’s critical to understanding the stream's focus. My initial thought is it's JSP, but I need to confirm the acronym; is it “Jikobukken Shanshi Program”, "事故物件監視プログラム / 事故物件監視人", or something else? I need to know what game she is actually playing, so lets check the web. Now, let’s do a quick Google search for both 熱千めら (Netsuchi Mela) and this *JSP* horror game to make sure I’ve got all the correct names and background information. That's the best way to get a firm understanding of the subject matter and contextualize it.
+  - |-
+    {
+      "overall_summary": "Right, so, I observed a VStream by Achichi Mela playing the horror game 'Japan Stigmatized Property'. She, being the 'blessing' (ご利益) representative and a firefighting salamander from the Edo period, initially struggled with jump scares, even accidentally ending her stream out of fear! Yet, she fearlessly returned and successfully completed all stages without a single missed anomaly. It's truly amazing the level of detail and immersion in this game. At the end, she wrapped up the stream by talking about upcoming member streams and her schedule, including her 2-month anniversary member-only stream!",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "01:47",
+          "title": "Stream Opening",
+          "description": "Waiting screen before the stream officially begins."
+        },
+        {
+          "start": "01:47",
+          "end": "12:30",
+          "title": "Greeting & Game Introduction",
+          "description": "Achichi Mela introduces the horror game 'Japan Stigmatized Property' and reads the game disclaimer."
+        },
+        {
+          "start": "12:30",
+          "end": "44:30",
+          "title": "Stage 1: Akita Prefecture House",
+          "description": "Mela plays the Akita Prefecture house stage, experiencing jump scares and temporarily ending the stream, before returning and successfully clearing it with zero mistakes."
+        },
+        {
+          "start": "44:30",
+          "end": "62:20",
+          "title": "Stage 2: Nara Prefecture T Shrine",
+          "description": "Mela investigates an outdoor shrine, identifying subtle anomalies and reporting them successfully."
+        },
+        {
+          "start": "62:20",
+          "end": "79:30",
+          "title": "Stage 3: Ryokan / Bathhouse",
+          "description": "Mela monitors the bathhouse stage, dealing with audio cues and sudden appearances of creepy objects."
+        },
+        {
+          "start": "79:30",
+          "end": "103:00",
+          "title": "Stage 4 / Final Stage: Stigmatized Property",
+          "description": "Mela deals with the final stage containing doll and clown rooms, completing it with zero misses."
+        },
+        {
+          "start": "103:00",
+          "end": "109:02",
+          "title": "Closing & Schedule Announcement",
+          "description": "Stream wrap-up and mentioning the 2-month anniversary member-only stream."
+        }
+      ],
+      "entities": [
+        {
+          "name": "Achichi Mela",
+          "original_name": "熱千めら",
+          "role_or_affiliation": "Hololive / Asobi Mawaritai!",
+          "persona_lore": "A cheerful firefighting salamander (fire lizard) living since the Edo period, serving as the 'blessing' (ご利益) representative for the unit Asobi Mawaritai!",
+          "speech_patterns_or_ticks": "Uses first-person 'washi' (わし) and sentence ending 'noja' (のじゃ); catchphrase 'Hi no youjin ja~! Washi ga kikeshi no salamander ja!'.",
+          "visual_cues": "Fire-themed outfit, salamander tail/horns, cheerful green/red color scheme, wearing a tengu mask initially during the stream."
+        }
+      ],
+      "domain_glossary": [
+        {
+          "term": "JSP",
+          "meaning": "Japan Stigmatized Property (日本事故物件監視協会 - Nihon Jikobukken Kanshi Kyoukai), a horror observation simulation game where players monitor security cameras in real stigmatized properties from midnight to 5 AM."
+        },
+        {
+          "term": "異変 (Ihen)",
+          "meaning": "Anomalies, supernatural occurrences, or logical inconsistencies occurring within the monitored properties that the player must detect and report."
+        },
+        {
+          "term": "アソビ★まわり隊！ (Asobi Mawaritai!)",
+          "meaning": "A gaming-focused VTuber unit in Hololive consisting of Hakka Kyoko, Achichi Mela, Suzunari Tsuzuri, and Soraka Sopia."
+        }
+      ]
+subtitles_prompt_version: 19
+response:
+  subtitles:
+  - start: '01:47.300'
+    end: '01:49.200'
+    original: のーじゃー
+    english: Noja~
+  - start: '01:51.600'
+    end: '01:56.500'
+    original: あらあら、メラメラ、あちち、メラ〜
+    english: My, my, burning bright! Achichi Mela~
+  - start: '01:57.600'
+    end: '02:02.000'
+    original: ホロライブ、アソビ★まわり隊！ご利益担当の消火士サラマンダー
+    english: Hololive's Asobi Mawaritai! Firefighter Salamander in charge of divine
+      blessings,
+  - start: '02:02.100'
+    end: '02:08.500'
+    original: あちち、メラなのじゃー、のじゃー
+    english: it's Achichi Mela, noja~! Noja~!
+  - start: '02:10.500'
+    end: '02:13.000'
+    original: ホラゲーなのじゃー
+    english: It's a horror game stream, noja~!
+  - start: '02:16.100'
+    end: '02:20.500'
+    original: いや、ちょっと今日あの...あの...
+    english: Well, to be honest today, um... um...
+  - start: '02:21.000'
+    end: '02:26.500'
+    original: 今までのホラーゲーム配信じゃと割とわし
+    english: In previous horror game streams, I felt like...
+  - start: '02:26.800'
+    end: '02:30.000'
+    original: いけるなみたいな
+    english: '...I could handle them easily...'
+  - start: '02:30.100'
+    end: '02:34.000'
+    original: いけるなみたいな思ってたところがあって
+    english: '...I kind of felt like I''ve got this under control.'
+  - start: '02:34.500'
+    end: '02:38.000'
+    original: 今までのね、いろんなホラーゲームをやってきたじゃろ？
+    english: I've played various horror games up until now, right?
+  - start: '02:38.200'
+    end: '02:40.900'
+    original: 色々やってきたんだけど
+    english: I've played all kinds of them, but...
+  - start: '02:41.800'
+    end: '02:45.000'
+    original: それはなんか慣れてきたの、慣れてきたのじゃ
+    english: That's because I got used to them... I got used to them, noja.
+  - start: '02:45.500'
+    end: '02:49.800'
+    original: でもなんか、あの人間によってビビらされてるわし
+    english: But now, I'm being spooked by humans...
+  - start: '02:51.500'
+    end: '02:54.800'
+    original: わし、今までの比ではない
+    english: '...and it''s nothing compared to before!'
+  - start: '02:55.800'
+    end: '02:57.200'
+    original: 今日ガチ？
+    english: Is today for real?
+  - start: '02:58.500'
+    end: '03:00.800'
+    original: え、なんか、正直に申し上げますか？
+    english: Huh, should I speak honestly?
+  - start: '03:01.000'
+    end: '03:03.500'
+    original: 正直に申し上げますと
+    english: To tell you the truth...
+  - start: '03:04.000'
+    end: '03:06.500'
+    original: あの、ビビっておりますのじゃ
+    english: '...I am actually terrified, noja.'
+  - start: '03:07.500'
+    end: '03:09.500'
+    original: 正直な話
+    english: Frankly speaking...
+  - start: '03:09.800'
+    end: '03:10.500'
+    original: はい
+    english: Yes...
+  - start: '03:11.000'
+    end: '03:13.200'
+    original: あの、今までわ
+    english: '...up until now...'
+  - start: '03:13.500'
+    end: '03:17.800'
+    original: いけるなと思ってたんじゃけど、今回なんか
+    english: '...I thought I was fine, but this time...'
+  - start: '03:18.800'
+    end: '03:20.500'
+    original: ガチっぽいとの噂
+    english: '...word has it that this one is truly terrifying.'
+  - start: '03:21.000'
+    end: '03:24.000'
+    original: でもわしちょっと、あのやったことないから
+    english: But since I've never played this before...
+  - start: '03:24.500'
+    end: '03:29.800'
+    original: 初めてじゃから、その、お主らが怖がらせてるだけなのか
+    english: '...and it''s my first time, I wonder if you guys are just trying to
+      scare me...'
+  - start: '03:30.100'
+    end: '03:34.000'
+    original: そう、なんか過度に怖がらせられてるだけなのか
+    english: '...or if I''m just being overly hyped up with fear.'
+  - start: '03:34.800'
+    end: '03:36.500'
+    original: わかんないんじゃけど
+    english: I really can't tell, but...
+  - start: '03:36.700'
+    end: '03:41.500'
+    original: いやなんかね、なんかね、なんかコメントでさ、「泣いちゃうかも」みたいに言われててさ
+    english: You see, in the comments people were saying stuff like, 'She might end
+      up crying'...
+  - start: '03:42.000'
+    end: '03:44.200'
+    original: 「泣いちゃうかも」と言われて
+    english: '...saying I might cry...'
+  - start: '03:44.800'
+    end: '03:48.500'
+    original: わし泣いちゃう？もしかして、わし泣いちゃうか？
+    english: Am I going to cry? Could it be that I'll actually cry?
+  - start: '03:49.200'
+    end: '03:51.000'
+    original: 怖いんだけど
+    english: I'm scared...
+  - start: '03:51.200'
+    end: '03:53.000'
+    original: 泣かないでね、本当か？
+    english: '''Don''t cry,'' you say... Is that true?'
+  - start: '03:53.500'
+    end: '03:57.500'
+    original: え、そうなんか、リアルに存在する
+    english: Wait, is this really based on real...
+  - start: '03:58.000'
+    end: '04:03.000'
+    original: なんか、今回のゲームが事故物件を、なんじゃ？
+    english: '...like, this game is about stigmatized properties... what was it?'
+  - start: '04:03.500'
+    end: '04:08.500'
+    original: ま、見て、バイト？事故物件を監視して異変を見つけるバイトみたいな
+    english: Like a part-time job monitoring stigmatized properties to find anomalies?
+  - start: '04:08.800'
+    end: '04:14.800'
+    original: バイトみたいなことをわしたちがやるらしいんじゃけど
+    english: Supposedly we're doing a part-time job like that...
+  - start: '04:15.000'
+    end: '04:21.000'
+    original: それがなんと結構現存する実在する場所？ホラスポット的な
+    english: '...and these are actual existing places? Like real horror spots?'
+  - start: '04:21.200'
+    end: '04:26.500'
+    original: わしなんかそういうの無理なんですよね、心霊現象みたいな怖い奴
+    english: I really can't handle real paranormal phenomena and creepy stuff like
+      that...
+  - start: '04:28.000'
+    end: '04:31.500'
+    original: だってリアル事故物件でしょ？ほんとに怖いのじゃん、なんか
+    english: I mean, real stigmatized properties? That sounds genuinely terrifying!
+  - start: '04:31.800'
+    end: '04:37.800'
+    original: そういのじゃなかったじゃん今まで、今までなんかゲームとしてのゲームとしてのホラーだったじゃろ？
+    english: Up until now it wasn't like that, right? Before, it was just fictional
+      horror game stuff!
+  - start: '04:40.500'
+    end: '04:44.000'
+    original: だから、ちょっと...ちょっとビビってます
+    english: So, I'm... a bit terrified.
+  - start: '04:44.200'
+    end: '04:48.800'
+    original: あのー、なんと言えばいいかというと、今までこういうゲームをしたことがないため、やっぱあの初見の驚きってあるじゃろ？
+    english: How should I put it... since I've never played this type of game before,
+      there's always that shock of a blind playthrough, right?
+  - start: '04:50.800'
+    end: '04:54.500'
+    original: そう、未知への恐怖ってあるじゃろ？お主らもない？
+    english: Yeah, the fear of the unknown! Don't you all feel that too?
+  - start: '04:55.000'
+    end: '04:59.000'
+    original: なんか、先が知れないというか、わからないことが不安でない？
+    english: Like, not knowing what's ahead... doesn't the uncertainty make you anxious?
+  thoughts:
+  - |-
+    **My Thoughts on This Stream's Opening**
+
+    Okay, so I'm getting ready to dive into this... this "JSP" game, starting from the stream's first moments. I see the prompt sets the scene: it's Achichi Mela speaking to you all, noja! I’ve been wearing my Tengu mask and greeting with my usual “Noja~! Ara ara, Mela Mela, Achichi, Mela~! Hololive's Asobi Mawaritai! Firefighter Salamander in charge of divine blessings, it's Achichi Mela, noja~! Noja~!” style, noja. I'm kicking things off, but... to be honest, I'm already feeling a bit off, noja. I tell you it’s a horror game stream, noja~!.
+
+    In the past, with these horror game streams, I've always felt like I could handle them, you see? I got to a point where I thought, "Yeah, I've got this." I've played all sorts of horror games so far, but I’ve played various horror games up until now, noja! I have done many, but I’ve got used to them, noja! I got used to them. It’s like I was getting used to all the spooks.
+
+    But now... now, I'm hearing these rumors, that the game is going to be truly terrifying and I'm being spooked by you humans...! It’s something different this time. Is it for real? I am actually terrified, noja. I mean, I have always thought I could manage, but this time... word has it that this one is truly terrifying. As a Salamander, that is new to me! I am worried, since I’ve never played something like this before. It's my first time playing such things!
+
+    I can't tell, you know, but people in the comments are saying, "She might cry!"... Wait, am I going to cry? Is this the real deal? I'm scared, but I'll try not to, right? Is this thing for real? I mean, are we going to deal with real stigmatized properties? Like a part-time job that monitors stigmatized properties to find anomalies. We’re doing a part-time job like that.
+
+    And... these are real places, right? Actual horror spots! I really can't handle real paranormal phenomena and creepy stuff like that... That sounds genuinely terrifying! Up until now it wasn't like that, noja! It was just fictional horror game stuff!
+
+    I'm a little terrified, noja. It's just that I’ve never played a game like this. There’s always that shock of a blind playthrough, right? The fear of the unknown! Don't you all feel that too? That anxiety of not knowing what's ahead... yeah, that's what I'm feeling, you know?
+  detected_musical_performances: []

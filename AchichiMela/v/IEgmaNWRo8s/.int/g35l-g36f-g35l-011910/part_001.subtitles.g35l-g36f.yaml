@@ -1,0 +1,443 @@
+name: part_001
+video_duration_ms: 300008
+media_tag: IEgmaNWRo8s
+model_name: gemini-3.6-flash
+service_tier: null
+agentic_video: false
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】'.
+segment_index: 1
+fallback_tier: 0
+tier_attempts: 0
+target_fps: null
+exhausted: false
+segment_offset_ms: 300008
+global_summary:
+  overall_summary: In this livestream, Hololive VTuber Achichi Mela of the subunit
+    'Asobi Mawaritai!' plays the horror observation game 'Japan Stigmatized Property
+    (JSP)'. Initially terrified and even accidentally ending her stream during a jump
+    scare in the first stage, she gradually gets used to the mechanics, successfully
+    detects anomalies across multiple stages with zero misses, and concludes with
+    a warm community wrap-up and schedule announcement.
+  chapters:
+  - start: 00:00
+    end: 01:47
+    title: Stream Opening
+    description: Waiting screen and introductory standby before the stream officially
+      begins.
+    song_title: null
+    song_artist: null
+  - start: 01:47
+    end: '12:30'
+    title: Greeting & Game Introduction
+    description: Achichi Mela greets viewers, expresses her nervousness and fear of
+      real-world haunted locations, and reads the game's official warning and terms
+      of service.
+    song_title: null
+    song_artist: null
+  - start: '12:30'
+    end: '44:30'
+    title: 'Stage 1: Akita Prefecture House'
+    description: Mela tackles the first stigmatized property in Akita Prefecture.
+      After experiencing a terrifying jump scare that causes her to accidentally close
+      her stream, she returns, gets her bearings, and successfully clears the shift
+      with zero missed anomalies.
+    song_title: null
+    song_artist: null
+  - start: '44:30'
+    end: '62:20'
+    title: 'Stage 2: Nara Prefecture Shrine'
+    description: Moving on to a shrine in Nara Prefecture, Mela monitors the outdoor
+      and indoor shrine grounds, pointing out subtle environmental changes and weather
+      anomalies.
+    song_title: null
+    song_artist: null
+  - start: '62:20'
+    end: '79:30'
+    title: 'Stage 3: Ryokan / Bathhouse'
+    description: Mela monitors a retro bathhouse and inn (ryokan) changeroom, dealing
+      with eerie audio cues, shifting objects, and sudden reflections in mirrors.
+    song_title: null
+    song_artist: null
+  - start: '79:30'
+    end: '103:00'
+    title: 'Stage 4 / Final Stage: Stigmatized Property'
+    description: In the final complex stage filled with dolls, creepy rooms, and hidden
+      entities, Mela maintains her concentration, identifies anomalies, and completes
+      her shift successfully.
+    song_title: null
+    song_artist: null
+  - start: '103:00'
+    end: '109:02'
+    title: Stream Wrap-up & Schedule Announcement
+    description: Mela celebrates her successful playthrough, reflects on the horror
+      experience, and announces upcoming streams including a 2-month anniversary member-only
+      chat.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Achichi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / Asobi Mawaritai!
+    persona_lore: A cheerful firefighting salamander (fire lizard) who has lived since
+      the Edo period. She serves as the 'blessing' (ご利益) representative for the unit
+      Asobi Mawaritai! and works hard to repay human kindness through防火 (fire prevention).
+    speech_patterns_or_ticks: 'Uses the first-person pronoun ''washi'' (わし) and ends
+      sentences with ''noja'' (のじゃ). Catchphrase: ''Hi no youjin ja~! Washi ga kikeshi
+      no salamander ja!''.'
+    visual_cues: Fire-themed outfit, salamander tail and horns, vibrant green and
+      red accents, wearing a tengu mask during parts of the stream.
+  domain_glossary:
+  - term: JSP
+    meaning: Japan Stigmatized Property (日本事故物件監視協会 - Nihon Jikobukken Kanshi Kyoukai),
+      a horror observation simulation game where players monitor security cameras
+      in real stigmatized properties from midnight to 5 AM to report anomalies.
+  - term: 異変 (Ihen)
+    meaning: Anomalies, supernatural occurrences, or logical inconsistencies in the
+      monitored properties that players must spot and report.
+  - term: アソビ★まわり隊！ (Asobi Mawaritai!)
+    meaning: A gaming-focused VTuber unit in Hololive consisting of Hakka Kyoko, Achichi
+      Mela, Suzunari Tsuzuri, and Soraka Sopia.
+  - term: ご利益 (Gorieki)
+    meaning: Divine favor, blessing, or spiritual benefits; Mela's official role within
+      her unit.
+  thoughts:
+  - |-
+    **Analyzing Video Evidence**
+
+    Okay, so we've got `video_1.webm`, clocking in at a substantial 6543.1 seconds – that's roughly an hour and forty-nine minutes of footage. My initial instinct is to dive right in, but I need to be strategic. The user has provided valuable context: this is from the "Mela Ch. 熱千めら‐ アソビ★まわり隊!" channel, and the video title, '【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】', suggests a Japanese streamer – likely Mela herself – playing a horror game. It mentions "ホロライブ/アソビ★まわり隊!", which suggests she is collaborating with Hololive and "アソビ★まわり隊!".
+
+    Before I get bogged down in the full video, I need a high-level overview. Let's not waste any time. Instead of just jumping in and scrubbing through the file, I'm going to load the video with Automatic Speech Recognition (ASR) enabled. This is crucial. I need to understand the game, identify participants, and identify any critical chapters or segments. The ASR will give me a searchable transcript, which will be invaluable for quickly identifying key moments and topics. So, I will call `load_video` with `include_asr=True` to get started. This will be more efficient in the long run.
+  - |-
+    **Initial Assessment of the Streaming Content**
+
+    Okay, so I've got a video here – almost two hours long, specifically 1 hour 49 minutes, which translates to a good 6543 seconds of content. The streamer is 熱千めら (Netsuchi Mela) from Hololive and part of アソビ★まわり隊！ (Asobi Mawaritai!). I need to figure out what game she's playing because that’s critical to understanding the stream's focus. My initial thought is it's JSP, but I need to confirm the acronym; is it “Jikobukken Shanshi Program”, "事故物件監視プログラム / 事故物件監視人", or something else? I need to know what game she is actually playing, so lets check the web. Now, let’s do a quick Google search for both 熱千めら (Netsuchi Mela) and this *JSP* horror game to make sure I’ve got all the correct names and background information. That's the best way to get a firm understanding of the subject matter and contextualize it.
+  - |-
+    {
+      "overall_summary": "Right, so, I observed a VStream by Achichi Mela playing the horror game 'Japan Stigmatized Property'. She, being the 'blessing' (ご利益) representative and a firefighting salamander from the Edo period, initially struggled with jump scares, even accidentally ending her stream out of fear! Yet, she fearlessly returned and successfully completed all stages without a single missed anomaly. It's truly amazing the level of detail and immersion in this game. At the end, she wrapped up the stream by talking about upcoming member streams and her schedule, including her 2-month anniversary member-only stream!",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "01:47",
+          "title": "Stream Opening",
+          "description": "Waiting screen before the stream officially begins."
+        },
+        {
+          "start": "01:47",
+          "end": "12:30",
+          "title": "Greeting & Game Introduction",
+          "description": "Achichi Mela introduces the horror game 'Japan Stigmatized Property' and reads the game disclaimer."
+        },
+        {
+          "start": "12:30",
+          "end": "44:30",
+          "title": "Stage 1: Akita Prefecture House",
+          "description": "Mela plays the Akita Prefecture house stage, experiencing jump scares and temporarily ending the stream, before returning and successfully clearing it with zero mistakes."
+        },
+        {
+          "start": "44:30",
+          "end": "62:20",
+          "title": "Stage 2: Nara Prefecture T Shrine",
+          "description": "Mela investigates an outdoor shrine, identifying subtle anomalies and reporting them successfully."
+        },
+        {
+          "start": "62:20",
+          "end": "79:30",
+          "title": "Stage 3: Ryokan / Bathhouse",
+          "description": "Mela monitors the bathhouse stage, dealing with audio cues and sudden appearances of creepy objects."
+        },
+        {
+          "start": "79:30",
+          "end": "103:00",
+          "title": "Stage 4 / Final Stage: Stigmatized Property",
+          "description": "Mela deals with the final stage containing doll and clown rooms, completing it with zero misses."
+        },
+        {
+          "start": "103:00",
+          "end": "109:02",
+          "title": "Closing & Schedule Announcement",
+          "description": "Stream wrap-up and mentioning the 2-month anniversary member-only stream."
+        }
+      ],
+      "entities": [
+        {
+          "name": "Achichi Mela",
+          "original_name": "熱千めら",
+          "role_or_affiliation": "Hololive / Asobi Mawaritai!",
+          "persona_lore": "A cheerful firefighting salamander (fire lizard) living since the Edo period, serving as the 'blessing' (ご利益) representative for the unit Asobi Mawaritai!",
+          "speech_patterns_or_ticks": "Uses first-person 'washi' (わし) and sentence ending 'noja' (のじゃ); catchphrase 'Hi no youjin ja~! Washi ga kikeshi no salamander ja!'.",
+          "visual_cues": "Fire-themed outfit, salamander tail/horns, cheerful green/red color scheme, wearing a tengu mask initially during the stream."
+        }
+      ],
+      "domain_glossary": [
+        {
+          "term": "JSP",
+          "meaning": "Japan Stigmatized Property (日本事故物件監視協会 - Nihon Jikobukken Kanshi Kyoukai), a horror observation simulation game where players monitor security cameras in real stigmatized properties from midnight to 5 AM."
+        },
+        {
+          "term": "異変 (Ihen)",
+          "meaning": "Anomalies, supernatural occurrences, or logical inconsistencies occurring within the monitored properties that the player must detect and report."
+        },
+        {
+          "term": "アソビ★まわり隊！ (Asobi Mawaritai!)",
+          "meaning": "A gaming-focused VTuber unit in Hololive consisting of Hakka Kyoko, Achichi Mela, Suzunari Tsuzuri, and Soraka Sopia."
+        }
+      ]
+subtitles_prompt_version: 19
+response:
+  subtitles:
+  - start: '00:00.400'
+    end: '00:02.140'
+    original: 今わしそれなのじゃ
+    english: That's how I feel right now.
+  - start: '00:02.400'
+    end: '00:09.120'
+    original: ちょっと…「大丈夫かな」って思ってて…
+    english: I was kind of... wondering, "Will I be okay?"...
+  - start: '00:09.500'
+    end: '00:12.780'
+    original: 漏らした先輩もおらっしゃるの！？
+    english: There are even seniors who peed themselves?!
+  - start: '00:12.980'
+    end: '00:15.020'
+    original: 知らなかった！ わしそれ知らなかった！
+    english: I didn't know that! I had no idea about that!
+  - start: '00:15.300'
+    end: '00:17.480'
+    original: でも、ちゃんとお手洗いも行ってから来ましたのじゃ。
+    english: But I properly went to the restroom before starting.
+  - start: '00:18.660'
+    end: '00:23.700'
+    original: え、でも、意外と…もしかしてね？ もしかして意外とぜんぜん余裕パターンもあるから。
+    english: But wait, maybe... just maybe, you know? Maybe there's a chance I'll
+      actually breeze right through it easily.
+  - start: '00:23.900'
+    end: '00:31.060'
+    original: そう、わしは結構、おぬしらがビビらせてくるから…「めらちゃん大丈夫かも」とか言って、ビビらせてくるから…
+    english: Yeah, I was getting scared mostly because you guys were hyping it up...
+      Saying things like "Are you gonna be okay, Mela-chan?" and scaring me...
+  - start: '00:31.300'
+    end: '00:33.400'
+    original: ちょっと不安になってるけど…
+    english: So I'm feeling a bit anxious, but...
+  - start: '00:33.740'
+    end: '00:35.840'
+    original: 意外といける可能性…うん。
+    english: There's a chance I might actually do just fine... Yeah.
+  - start: '00:36.960'
+    end: '00:46.060'
+    original: そう、なんか、おぬしらが過度に、あの、熱千めらを驚かせたろう、3連休最後やし、飛び切りの愉悦してやろう、みたいな。
+    english: Yeah, like, maybe you guys are trying to extra scare Achichi Mela, since
+      it's the last day of the 3-day weekend, wanting to enjoy some prime schadenfreude
+      at my expense.
+  - start: '00:46.620'
+    end: '00:47.880'
+    original: ガチで泣いちゃうかも？
+    english: What if I actually end up crying?
+  - start: '00:48.340'
+    end: '00:55.700'
+    original: 正直、配信画面見れないぐらい怖い…あ、じゃ、今まで先輩方の配信とか見てたおぬしらがガチで怖がるレベルってこと？ まずい！
+    english: Honestly, I'm so scared I might not even be able to look at the stream
+      screen... Wait, so you guys who watched the seniors' streams are saying it's
+      scary at a genuine level? This is bad!
+  - start: '00:56.540'
+    end: '01:06.500'
+    original: あ、じゃあ、ガチで怖いおぬしらは、あの、小さくして…あの、画面を小さくしてさ、YouTubeのさ、バックグラウンドモードみたいな、Twitterとか見ながら見てよ。
+    english: Ah, then those of you who are genuinely scared, shrink the screen...
+      Make the player small, or put it in YouTube background mode, and watch while
+      browsing Twitter or something.
+  - start: '01:08.060'
+    end: '01:09.180'
+    original: 自分も怖い。
+    english: I'm scared myself too.
+  - start: '01:10.580'
+    end: '01:15.340'
+    original: やばいやん！ 終わったやん、わし！ わし今日終わったかも…え、あの、泣いたらごめん！
+    english: This is bad! I'm totally done for! I might be finished today... Um, sorry
+      if I end up crying!
+  - start: '01:16.540'
+    end: '01:20.300'
+    original: ホラゲで泣いたらごめん！ 情けないけど…情けないけどごみんなのじゃ！
+    english: Sorry if I cry at a horror game! It's embarrassing... It's embarrassing,
+      but I'm sorry in advance!
+  - start: '01:21.000'
+    end: '01:22.060'
+    original: えー、いけるかな？
+    english: Uh, I wonder if I can do this?
+  - start: '01:22.560'
+    end: '01:30.000'
+    original: でも、ちょっとあの…この…行くか？ 行かないか？ みたいな、このジリジリした時間が一番苦手なので、あの、始めちゃおうかなと。
+    english: But, well... This dragging, anxious moment of "Should I start? Should
+      I not?" is what I hate the most, so I think I'll just go ahead and start.
+  - start: '01:30.560'
+    end: '01:34.900'
+    original: 早速始めちゃおうかなと思うんじゃけど…ちょっと今日はお面つけたままのほうがいい？ ちょっと、こ、怖いかも…
+    english: I think I'll get started right away, but... Should I keep this mask on
+      today? I might be a little scared...
+  - start: '01:35.800'
+    end: '01:48.000'
+    original: あの、もし今日やってみて、あ、JSP余裕じゃわ！ と思ったら、あの、2回目？ JSPのシリーズがね、実は2とか3とかあるらしくて、まとめ買いしてるのよ。まとめ買いしたのじゃ。
+    english: Um, if I try it today and think, "Oh, JSP is a piece of cake!", then
+      for the second time... Apparently there's a JSP series with 2 and 3, and I bought
+      the bundle. I bought the bundle!
+  - start: '01:48.160'
+    end: '01:52.480'
+    original: うん、だから、2やるときは外すけど、ちょっと今日は…ちょっとごめん。怖い。
+    english: Yeah, so I'll take it off when I play 2, but today... I'm sorry. I'm
+      scared.
+  - start: '01:53.300'
+    end: '01:57.060'
+    original: 正直…正直怖いかも。いけるか分からんけど。
+    english: Honestly... Honestly, I might be terrified. I don't know if I can handle
+      it.
+  - start: '01:58.260'
+    end: '02:08.100'
+    original: なので、このままで…あの…熱千めらを優しく見守るよって人とかは、高評価で応援してくれると嬉しいのじゃ！
+    english: So I'll keep it on... Anyone who wants to kindly watch over Achichi Mela,
+      I'd be happy if you support me with a like!
+  - start: '02:08.500'
+    end: '02:13.600'
+    original: ということで、あの、早速始めさせて、いただきますのじゃー！
+    english: With that said, let us go ahead and get started~!
+  - start: '02:18.400'
+    end: '02:19.400'
+    original: よいしょ。
+    english: Here we go.
+  - start: '02:20.940'
+    end: '02:21.800'
+    original: はい。
+    english: Alright.
+  - start: '02:23.700'
+    end: '02:30.800'
+    original: 画面を開くと、まず「利用規約及び同意書」というのが出てきまし…
+    english: Upon opening the screen, first the "Terms of Use and Consent Form" appears...
+  - start: '02:31.080'
+    end: '02:34.120'
+    original: おぬしら、音大きすぎない？
+    english: Everyone, isn't the sound a bit too loud?
+  - start: '02:35.000'
+    end: '02:38.800'
+    original: 音量大丈夫？ でかすぎないかな？
+    english: Is the volume okay? Isn't it too loud?
+  - start: '02:41.900'
+    end: '02:47.800'
+    original: なんかもうこの音だけで割とわし怖…怖いというか…もう嫌…嫌だなというか…
+    english: Just listening to this audio alone is making me pretty scared... Well,
+      scared, or rather... I really don't like this feeling...
+  - start: '02:48.600'
+    end: '02:59.000'
+    original: 正直に…正直に申し上げますと、この、あの…心臓がドクドクする音がすごい苦手で…うん、なんか、この不安を煽ってくる、この…
+    english: To be... to be honest with you, I really dislike this sound of a pounding
+      heartbeat... Yeah, like, it just feeds into my anxiety, this...
+  - start: '02:59.400'
+    end: '03:04.200'
+    original: ピィー…みたいな音とかがすごく怖いんだけど…やっていくのじゃ。えー、読んでいきます。
+    english: This high-pitched whine sound is really scary, but... I'll do this. Let's
+      read it.
+  - start: '03:04.600'
+    end: '03:10.540'
+    original: え、同意書がありますね。ホラーゲームの利用に関する重大な法的文書。はいはい。
+    english: Um, there is a consent form. A serious legal document regarding the use
+      of the horror game. Okay, okay.
+  - start: '03:11.000'
+    end: '03:22.000'
+    original: しっかり読んでください。「激しい恐怖表現を含むホラーゲームです。極度の緊張や驚きを感じる可能性があり、精神的及び身体的に強い影響を受ける場合があります。」やばい！
+    english: 'Please read carefully: "This is a horror game that includes intense
+      frightening depictions. You may experience extreme tension or surprise, which
+      could strongly affect you mentally and physically." Oh no!'
+  - start: '03:22.400'
+    end: '03:24.000'
+    original: 明日は筋肉痛なのじゃ！
+    english: I'm gonna have muscle soreness tomorrow!
+  - start: '03:24.500'
+    end: '03:36.000'
+    original: まずい！ えー、「心臓に持病がある方」ないのじゃ。「精神的なストレスを受けやすい方」ちょっとこれは…これはちょっとあるかも。あの、ホラゲちょっとビビ…ちょいビビりかも。ちょいビビりかも。「b」は大丈夫。
+    english: Oh dear! "Persons with pre-existing heart conditions"—I don't have that.
+      "Persons who easily suffer mental stress"—Wait, this one... I might actually
+      fit this. I'm a bit easily scared in horror games. Just a little. Section B
+      is fine.
+  - start: '03:37.760'
+    end: '03:45.300'
+    original: 「ゲーム内容により強い恐怖や不安を感じた場合はすぐにプレイを中止し、必要に応じて医療専門家にご相談ください。」そんなやばいんか！？
+    english: '"If you feel strong fear or anxiety due to the game content, immediately
+      cease playing and consult a medical professional as needed." Is it really that
+      intense?!'
+  - start: '03:47.340'
+    end: '03:53.300'
+    original: ゲーム制作者から「怖かったらやめてね」って言われるぐらい？
+    english: It's so intense that even the game developer tells you "Please stop if
+      you're scared"?
+  - start: '03:54.800'
+    end: '03:59.000'
+    original: 「18歳以上の方を対象としています。」本当にやばいんじゃない！？
+    english: '"Intended for players aged 18 and older." Isn''t this actually dangerous?!'
+  - start: '04:00.600'
+    end: '04:03.400'
+    original: はい。「責任の制限。責任を負いません。」
+    english: Right. "Limitation of Liability. We bear no liability."
+  - start: '04:04.200'
+    end: '04:14.600'
+    original: 「『同意します』にチェックすることにより、貴殿は…読み理解しました。拘束される範囲、法的能力を有する範囲。18歳以上」400歳なのじゃ！
+    english: '"By checking ''I Agree'', you... have read and understood. Scope of
+      binding agreement, scope of legal capacity. Aged 18 or older." I''m 400 years
+      old!'
+  - start: '04:15.100'
+    end: '04:19.400'
+    original: それでは、同意させていただいて…えー…
+    english: Well then, let me agree to this... Uh...
+  - start: '04:19.800'
+    end: '04:29.000'
+    original: 精神的にきつくなる？ まずい！ 今週は精神的にきつくなる1週間なのじゃ！ あの、他にも精神的にきついと噂のゲームを入れているのじゃ。
+    english: Mentally tough? Uh oh! This week is shaping up to be a mentally taxing
+      week! I've actually loaded up other games that are rumored to be mentally tough
+      too.
+  - start: '04:30.800'
+    end: '04:41.100'
+    original: えー、警告。「今からプレイしていただくゲームは、現存している企業で実際に行われている『事故物件監視業務』をもとに制作されています。」え、これ本当にあるの？
+    english: 'Uh, Warning: "The game you are about to play is created based on actual
+      ''Stigmatized Property Monitoring Services'' conducted by real-existing companies."
+      Wait, does this actually exist?'
+  - start: '04:41.300'
+    end: '04:58.000'
+    original: 本当に…本当にそんなとこがあるの？ まぁ確かに空き家とか危ないもんな。空き家とかを見つめる人間がいるんじゃないの？ 監視カメラとかで見ているのかな？
+      空き家にあるのかな？ へぇー！
+    english: Does such a place really... really exist? Well, abandoned houses can
+      be dangerous. Maybe there are people who keep an eye on vacant houses? Do they
+      watch via security cameras? Are there cameras in vacant houses? Huh!
+  - start: '04:58.300'
+    end: '05:00.008'
+    original: わしの知らん世界…え、じゃあ、すごい怖い…
+    english: A world I didn't know about... Wait, so it's super scary...
+  thoughts:
+  - |-
+    **My Analysis of Achichi Mela's Segment**
+
+    Okay, so I need to generate synchronized subtitles for this video segment. Let's get right into it, I need to focus on this audio and video data between 05:00.008 and 10:00.016. The timecodes must be local to this video, so it's really the segment from 00:00.000 to 05:00.008 that I will be dealing with.
+
+    First, I need to meticulously transcribe Achichi Mela's speech, and precisely track all the associated timestamps.
+
+    *   **00:00.400 - 00:02.140**: I feel like *that* right now. (Right now it's scary)
+    *   **00:02.400 - 00:09.120**: I'm feeling a little anxious, wondering if I'll be okay...
+    *   **00:09.500 - 00:12.780**: There are even seniors who peed themselves?! I did not know that.
+    *   **00:12.980 - 00:15.020**: I didn't know that!
+    *   **00:15.300 - 00:17.480**: But I went to the restroom.
+    *   **00:18.660 - 00:23.700**: Maybe it will be easy!
+    *   **00:23.900 - 00:31.060**: Yeah, I am a bit anxious because you all are making me scared!
+    *   **00:31.300 - 00:33.400**: So, I'm feeling anxious, but...
+    *   **00:33.740 - 00:35.840**: I think I'll be fine. Yeah.
+    *   **00:36.960 - 00:46.060**: Are you guys trying to scare me?
+    *   **00:46.620 - 00:47.880**: What if I start crying?
+    *   **00:48.340 - 00:55.700**: I might not even be able to look at the screen! Is it seriously scary?
+    *   **00:56.540 - 01:06.500**: Those of you who are scared, shrink the screen! Put it on background mode and watch Twitter!
+    *   **01:08.060 - 01:09.180**: I'm scared too.
+    *   **01:10.580 - 01:15.340**: Oh this is bad, this is it! I might be finished today! Sorry if I end up crying!
+    *   **01:16.540 - 01:20.300**: Sorry if I cry at the horror game! It's embarrassing!
+    *   **01:21.000 - 01:22.060**: Uh, can I do this?
+    *   **01:22.560 - 01:30.000**: Should I start?
+    *   **01:30.560 - 01:34.900**: Should I wear my mask? I'm scared.
+    *   **01:35.800 - 01:48.000**: If I think JSP is easy, I'll play the series, and I bought the bundle.
+    *   **01:48.160 - 01:52.480**: I will take the mask off when I play 2, but for now, I am scared.
+    *   **01:53.300 - 01:57.060**: I'm scared. I don't know if I can do this.
+    *   **01:58.260 - 02:08.100**: If you want to watch me, give me a like!
+    *   **02:08.500 - 02:13.600**:
+  detected_musical_performances: []
