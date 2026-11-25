@@ -2,6 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
+| 2026&#8209;11&#8209;25 | <a href="https://youtu.be/WTqj7ex4An8"><img src="https://i.ytimg.com/vi/WTqj7ex4An8/mqdefault.jpg" width="100" /></a> | [【のじゃEnglish】tripとtravelって違うのじゃ？！【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=WTqj7ex4An8) | [g35l&#8209;g35l&#8209;g35l<br>011910](./v/WTqj7ex4An8) |
 | 2026&#8209;11&#8209;23 | <a href="https://youtu.be/IEgmaNWRo8s"><img src="https://i.ytimg.com/vi/IEgmaNWRo8s/mqdefault.jpg" width="100" /></a> | [【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=IEgmaNWRo8s) | [g35l&#8209;g36f&#8209;g35l<br>011910](./v/IEgmaNWRo8s) |
 | 2026&#8209;11&#8209;21 | <a href="https://youtu.be/inmap2iySzA"><img src="https://i.ytimg.com/vi/inmap2iySzA/mqdefault.jpg" width="100" /></a> | [はじめてのMinecraftで冒険！アソビ★まわり隊！拠点作る【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=inmap2iySzA) | [g35l&#8209;g4h&#8209;g35l<br>011910](./v/inmap2iySzA) |
 | 2026&#8209;11&#8209;19 | <a href="https://youtu.be/_NIc65kdfsI"><img src="https://i.ytimg.com/vi/_NIc65kdfsI/mqdefault.jpg" width="100" /></a> | [楽曲オタクの歌枠なのじゃ！【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=_NIc65kdfsI) | [g35l&#8209;g4h&#8209;g35l<br>011910](./v/_NIc65kdfsI) |
