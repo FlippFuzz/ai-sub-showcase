@@ -1,0 +1,521 @@
+name: part_006
+video_duration_ms: 300141
+media_tag: IEgmaNWRo8s
+model_name: gemini-3.8-flash
+service_tier: null
+agentic_video: false
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】'.
+segment_index: 6
+fallback_tier: 0
+tier_attempts: 0
+target_fps: null
+exhausted: false
+segment_offset_ms: 1805028
+global_summary:
+  overall_summary: In this livestream, Hololive VTuber Achichi Mela from the unit
+    'Asobi Mawaritai!' plays the indie surveillance horror game 'Japan Stigmatized
+    Property' (JSP). Initially nervous and intimidated by the realistic setting of
+    stigmatized properties and jumpscares, Mela takes on the role of a midnight CCTV
+    monitor across four challenging stages—ranging from an Akita house to a Nara shrine,
+    a ryokan, and a cursed final stage. Through a mix of panic, memory challenges,
+    and humorous reactions, she successfully completes the anomaly-detection shifts
+    while interacting with her viewers.
+  chapters:
+  - start: 00:00
+    end: 01:47
+    title: Opening Screen & Vibe Check
+    description: Stream opening screen with background music and waiting chat.
+    song_title: null
+    song_artist: null
+  - start: 01:47
+    end: 07:20
+    title: Stream Intro & Game Anticipation
+    description: Achichi Mela introduces the game 'JSP' (Japan Stigmatized Property),
+      expressing her nervousness and fear of playing a realistic horror game for the
+      first time.
+    song_title: null
+    song_artist: null
+  - start: 07:20
+    end: '44:30'
+    title: Stage 1 - Akita Prefecture Stigmatized House
+    description: Mela begins her first night shift monitoring an Akita Prefecture
+      house, navigating anomaly detection, dealing with jump scares, and accidentally
+      ending her stream out of panic before recovering.
+    song_title: null
+    song_artist: null
+  - start: '44:30'
+    end: '62:15'
+    title: Stage 2 - Nara Prefecture Shrine
+    description: Mela moves on to monitor the T Shrine in Nara Prefecture, dealing
+      with outdoor camera feeds, weather anomalies, and mysterious intruders.
+    song_title: null
+    song_artist: null
+  - start: '62:15'
+    end: '79:30'
+    title: Stage 3 - Ryokan Bathhouse & Inn
+    description: Mela undertakes the third shift at a traditional Japanese inn and
+      bathhouse, keeping track of complex room layouts and furniture shifts.
+    song_title: null
+    song_artist: null
+  - start: '79:30'
+    end: '102:40'
+    title: Stage 4 - Final Stage & Cursed Room
+    description: Mela tackles the final and most difficult stage featuring cursed
+      objects, masks, and eerie rooms, ultimately achieving a zero-miss victory.
+    song_title: null
+    song_artist: null
+  - start: '102:40'
+    end: '109:00'
+    title: Stream Ending & Schedule Announcements
+    description: Mela celebrates her successful clear, reflects on the psychological
+      horror of the game, and discusses upcoming membership streams and her 2-month
+      debut anniversary.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Achichi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A cheerful, hardworking salamander firefighter who serves as the
+      'blessings' (ご利益) representative of the Hololive unit Asobi Mawaritai! She loves
+      fire safety and brings warmth and energy to her fans.
+    speech_patterns_or_ticks: Uses archaic speech endings such as -のじゃ (-noja) and
+      -じゃろ (-jaro).
+    visual_cues: Red and orange fiery theme, salamander motifs, firefighter-inspired
+      design.
+  domain_glossary:
+  - term: JSP (日本事故物件監視協会)
+    meaning: Japan Stigmatized Property, an indie surveillance horror simulation game
+      where players monitor CCTV feeds of real-life stigmatized properties from midnight
+      to 5 AM to report anomalies.
+  - term: 事故物件
+    meaning: A stigmatized property where a tragic death, accident, or incident occurred,
+      serving as the settings for the monitoring shifts in JSP.
+  - term: 異変
+    meaning: Anomalies or unnatural changes in room items, furniture, or environment
+      that players must detect and report through the CCTV system.
+  - term: アソビ★まわり隊！
+    meaning: A Hololive VTuber unit consisting of four members, with Achichi Mela
+      representing the 'blessings' (ご利益) role.
+  - term: 火の用心じゃ〜！
+    meaning: Achichi Mela's signature catchphrase meaning 'Beware of fire!', reflecting
+      her firefighter salamander background.
+  thoughts:
+  - |-
+    Here's my analysis of the task, thinking through it as if I were about to execute the steps:
+
+    **Initial Assessment of Video Analysis Task**
+
+    Alright, the task is clear. We've got a video, `video_1.webm`, clocking in at a pretty substantial duration – around an hour and forty-nine minutes. The immediate goal is to understand the content. My first move in this kind of analysis is almost always to grab a transcript. It gives a fantastic overview of the spoken content and allows me to quickly get a grasp of what's happening.
+
+    Therefore, my initial action is to load the video and the associated ASR (Automatic Speech Recognition) transcript. I'll utilize the `load_video` function, ensuring I specify `include_asr=True` so that the transcription data is also pulled. This will be the foundational starting point for the analysis.
+  - |-
+    **Analyzing the Information from ASR and Context**
+
+    Okay, let's break this down systematically. I need to synthesize the information from the Automated Speech Recognition (ASR) data with the provided context. I see the context clearly identifies the YouTube channel as "Mela Ch. 熱千めら‐ アソビ★まわり隊!" and the video title is "【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】". The title indicates a horror game ("ホラゲ") is the topic.
+
+    Now, it also specifies "hololive / asobi mawaritai / Netchi Mela," but since the user context provides explicit details about the source, I need to confirm the entity details for Netchi Mela and her affiliation with the アソビ★まわり隊 group and potentially hololive. I need to quickly verify Netchi Mela's affiliations and lore before drawing any conclusions. The key here is accuracy, so let's use `tinyfish_search_multi` to get reliable information.
+  - |-
+    **JSON Structure Creation for Achichi Mela's JSP Stream**
+
+    Okay, this is excellent! We've got all the pieces we need to generate that JSON. Let's break this down into digestible chunks for the format. I'm focusing on Achichi Mela's stream playing 『日本事故物件監視協会』 (JSP). My objective is to structure this data for future analysis and potentially, database population.
+
+    First, the overall summary needs to capture the video's essence: It's Achichi Mela, a Hololive VTuber from the unit "Asobi Mawaritai!," playing a horror anomaly detection game, JSP. The tone will be her usual energetic and slightly nervous disposition, given the horror genre. The narrative will progress through different stigmatized properties, each presenting unique challenges and jump scares. We'll outline her progression through the game, from the initial introduction and nervousness to her reactions throughout the different locations.
+
+    Next, we'll organize it into chapters with clear start and end timestamps, titles based on the content, and brief descriptions of what happens in each section. Songs are not relevant here, so they will be null.
+
+    We then identify the key entity: Achichi Mela, noting her role, affiliation (Hololive/Asobi Mawaritai!), and persona details (firefighter salamander, "blessings" representative, etc.). We'll include speech patterns for context – that archaic speech is important!
+
+    Finally, we define a domain glossary. This is crucial for understanding the game's mechanics and the context of the stream. We'll include terms like JSP, 事故物件 (stigmatized property), 異変 (anomaly), and Асоби★まわり隊！, as well as her catchphrase "火の用心じゃ〜！"
+
+    Alright, let's craft that JSON.
+
+    {
+      "overall_summary": "Achichi Mela, a Hololive VTuber from the unit 'Asobi Mawaritai!', plays 'Japan Stigmatized Property' (JSP), a horror anomaly-detection surveillance game. The stream follows her progress through several 'stigmatized properties' (事故物件), with her reactions to jump scares and gameplay challenges.  The tone is energetic and slightly nervous, reflecting the horror genre.",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "01:47",
+          "title": "Opening Screen & Vibe Check",
+          "description": "Introductory screen and establishing the stream's vibe.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "01:47",
+          "end": "07:20",
+          "title": "Stream Intro & Game Anticipation",
+          "description": "Achichi Mela's opening greeting, introduction to JSP, and expressing nervousness about playing a 'real' horror game.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "07:20",
+          "end": "44:30",
+          "title": "Stage 1 - Akita Prefecture Stigmatized House",
+          "description": "Surveillance gameplay in a stigmatized house in Akita Prefecture, anomaly detection, and jump scares.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "44:30",
+          "end": "62:15",
+          "title": "Stage 2 - Nara Prefecture Shrine",
+          "description": "Surveillance gameplay in a shrine in Nara Prefecture.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "62:15",
+          "end": "79:30",
+          "title": "Stage 3 - Ryokan Bathhouse / Inn",
+          "description": "Surveillance gameplay in a Ryokan.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "79:30",
+          "end": "102:40",
+          "title": "Stage 4 - Final Stage / Cursed Room",
+          "description": "Final stage gameplay involving a 'Cursed Room'.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "102:40",
+          "end": "109:00",
+          "title": "Stream Ending & Schedule
+subtitles_prompt_version: 19
+response:
+  subtitles:
+  - start: '00:00.180'
+    end: '00:02.160'
+    original: ま、確かにわし自信ないけど...
+    english: Well, I'm certainly not confident, but...
+  - start: '00:03.200'
+    end: '00:04.200'
+    original: えーっと...
+    english: Let's see...
+  - start: '00:05.150'
+    end: '00:07.100'
+    original: え、もしかしてこれ角度違うだけ？
+    english: Wait, could this just be a different angle?
+  - start: '00:08.500'
+    end: '00:11.200'
+    original: 角度違うだけで同じ部屋？そんなことない？
+    english: Is it the same room, just from a different angle? Or not?
+  - start: '00:12.700'
+    end: '00:13.800'
+    original: そんなことない？
+    english: Or is it not?
+  - start: '00:15.500'
+    end: '00:17.800'
+    original: え、角度違うだけで同じ部屋じゃね？
+    english: Wait, isn't it the same room, just from a different angle?
+  - start: '00:18.900'
+    end: '00:19.700'
+    original: ん？
+    english: Huh?
+  - start: '00:24.600'
+    end: '00:27.400'
+    original: だって、リモコン... 皿...
+    english: Look, the remote... the plate...
+  - start: '00:29.000'
+    end: '00:30.800'
+    original: リモコン、皿...
+    english: Remote, plate...
+  - start: '00:32.400'
+    end: '00:35.000'
+    original: じゃったら、なんで開いてる... ないの？
+    english: In that case, why isn't it open... or wait, why is it?
+  - start: '00:36.700'
+    end: '00:39.200'
+    original: はいはいはいはいはいはい。
+    english: Right, right, right, right...
+  - start: '00:41.700'
+    end: '00:43.700'
+    original: はいはいはい、井戸ね。
+    english: Right, right, the well.
+  - start: '00:44.700'
+    end: '00:48.300'
+    original: あ、開いて、開いてたんだよね？元々開いてたんじゃよね？
+    english: Ah, it's open—it was open, right? It was already open originally, wasn't
+      it?
+  - start: '00:58.600'
+    end: '00:59.800'
+    original: 1時じゃ。
+    english: It's 1:00 AM.
+  - start: '01:02.400'
+    end: '01:03.100'
+    original: ん？
+    english: Hm?
+  - start: '01:03.700'
+    end: '01:05.200'
+    original: あ、これが異変？
+    english: Ah, is this an anomaly?
+  - start: '01:06.500'
+    end: '01:08.700'
+    original: これが異変？そういうこと？
+    english: This is an anomaly? Is that what it means?
+  - start: '01:09.400'
+    end: '01:11.400'
+    original: ほらだ！これ異変なんだ！
+    english: Look! This was an anomaly!
+  - start: '01:12.100'
+    end: '01:15.800'
+    original: なんか、そういう変な、変な家だなって思った。
+    english: I just thought, "What a weird, weird house this is."
+  - start: '01:16.000'
+    end: '01:21.000'
+    original: なんで、なんでこっち視点だと閉まってて、こっち視点だと開いてるんだろうと...
+    english: Like, why is it closed from this angle, but open from this other angle?...
+  - start: '01:21.600'
+    end: '01:25.000'
+    original: いや、これ異変なんだ。これ異変でいいんだ。
+    english: Man, that really was an anomaly. That counts as an anomaly!
+  - start: '01:25.700'
+    end: '01:28.900'
+    original: え、なんか、わし... 何？何？何？
+    english: Wait, what is... What? What? What is that?
+  - start: '01:29.000'
+    end: '01:30.400'
+    original: トイレの音する。
+    english: I hear the toilet flushing.
+  - start: '01:30.900'
+    end: '01:32.700'
+    original: トイレ使ったんじゃない？おぬし。
+    english: Didn't you just use the toilet?!
+  - start: '01:33.300'
+    end: '01:36.400'
+    original: そういうことか。あ、わかってきた！わ、わかってきた！
+    english: I see! Ah, I'm getting the hang of this! I-I'm getting it!
+  - start: '01:36.800'
+    end: '01:38.400'
+    original: あ、異変って違和感って意味？
+    english: Wait, anomaly just means a feeling of inconsistency?
+  - start: '01:38.700'
+    end: '01:41.800'
+    original: 異変って、辻褄が合わないって意味？
+    english: Does anomaly mean things that don't add up?
+  - start: '01:42.200'
+    end: '01:47.300'
+    original: 辻褄が... 辻褄が合わなければ異変とみなしていいの？
+    english: If things... If things don't add up, can I just consider it an anomaly?
+  - start: '01:47.500'
+    end: '01:49.800'
+    original: うわ、わしそれ気づかなかったー！
+    english: Whoa, I didn't realize that!
+  - start: '01:50.100'
+    end: '01:52.200'
+    original: わしそれ気づかなかったのじゃ。
+    english: I had no idea.
+  - start: '01:53.300'
+    end: '01:57.000'
+    original: なんか、そういうもんなのかな？って思って...
+    english: I just assumed that's how it was...
+  - start: '01:57.400'
+    end: '02:01.300'
+    original: か、角度... なんかマジックアート... なん、何て言うんだっけ？トリックアート的な？
+    english: The angle... like magic art... Wh-what do you call it? Like trick art?
+  - start: '02:01.400'
+    end: '02:05.100'
+    original: トリックアート的な感じかのうと思って。
+    english: I thought it was something like trick art.
+  - start: '02:06.500'
+    end: '02:08.900'
+    original: 間違い探し？ふんふんふんふんふん。
+    english: Spot the difference? Uh-huh, uh-huh, uh-huh.
+  - start: '02:09.100'
+    end: '02:11.200'
+    original: わかってきたじゃ、わし！
+    english: I've got the hang of this now!
+  - start: '02:11.400'
+    end: '02:12.600'
+    original: 人間！
+    english: Humans!
+  - start: '02:12.900'
+    end: '02:14.600'
+    original: ふんふんふん、ふんふん。
+    english: Mm-hmm, mm-hmm.
+  - start: '02:16.000'
+    end: '02:17.300'
+    original: 忘れた。
+    english: I forgot.
+  - start: '02:18.000'
+    end: '02:19.800'
+    original: えーっと、開いてる。ふんふん。
+    english: Let's see, it's open. Uh-huh.
+  - start: '02:20.300'
+    end: '02:23.700'
+    original: ふんふんふん。ふんふんふん。
+    english: Mm-hmm, mm-hmm. Mm-hmm.
+  - start: '02:24.000'
+    end: '02:25.800'
+    original: でも、ないね。
+    english: Nothing here, though.
+  - start: '02:26.100'
+    end: '02:29.900'
+    original: わし、異変ちょっと見つけれすぎなんじゃない？
+    english: Wait, aren't I finding way too many anomalies?
+  - start: '02:30.800'
+    end: '02:37.000'
+    original: わし、ちょっと順調に異変を見つけすぎて、もうないんじゃない？
+    english: Maybe things are going so smoothly and I found so many anomalies that
+      there are none left?
+  - start: '02:38.000'
+    end: '02:46.500'
+    original: もう... もう手遅れ... 手遅れではない。手始め。手始めかも。かなり。
+    english: It's already... already too late—no, not too late. Just the beginning.
+      Maybe it's just the beginning. Pretty much.
+  - start: '02:47.300'
+    end: '02:51.300'
+    original: だってもう、聞こえるのはただ虫の鳴き声のみ。
+    english: After all, the only thing I can hear now is the chirping of insects.
+  - start: '02:52.400'
+    end: '02:56.200'
+    original: もう、わしを... わしをビビらせるものなど、
+    english: There's no longer... there's no longer anything that can scare me,
+  - start: '02:56.400'
+    end: '02:57.600'
+    original: 何もない。
+    english: Nothing at all.
+  - start: '03:01.000'
+    end: '03:03.900'
+    original: ふんふんふんふん。何もないかも。
+    english: Mm-hmm, mm-hmm. Maybe there's nothing.
+  - start: '03:05.100'
+    end: '03:09.900'
+    original: だって、ふんふんふん。いつも通りかも。いつも通りかも。
+    english: I mean, mm-hmm. Everything might just be normal. It might just be completely
+      normal.
+  - start: '03:13.300'
+    end: '03:15.800'
+    original: ピンポン？玄関？
+    english: Doorbell? The front door?
+  - start: '03:17.500'
+    end: '03:20.700'
+    original: ピンポーンって言ってるよ。ピンポンって何？
+    english: The doorbell is ringing! What's with the doorbell?
+  - start: '03:20.800'
+    end: '03:25.000'
+    original: ピンポンの異変はどこに来るの？ピンポンの異変どこに来るの？
+    english: Where does the doorbell anomaly show up? Where does the doorbell anomaly
+      go?!
+  - start: '03:26.000'
+    end: '03:27.500'
+    original: うわーっ！
+    english: Whoaaa!
+  - start: '03:28.400'
+    end: '03:30.000'
+    original: さっきも見たいやつ！
+    english: The one I saw earlier!
+  - start: '03:30.300'
+    end: '03:32.400'
+    original: こいつが... こいつがピンポンの異変？
+    english: Is this... is this the doorbell anomaly?!
+  - start: '03:32.800'
+    end: '03:34.000'
+    original: うわぁ！
+    english: Whoaaa!
+  - start: '03:34.100'
+    end: '03:38.200'
+    original: こいつも？！え、ちょちょちょちょ、にょき、にょき、にょき、にょきって...
+    english: This one too?! Wait, hold on, it sprouted up, up, up, up...
+  - start: '03:38.300'
+    end: '03:39.800'
+    original: にょっ、にょっ、にょ...
+    english: Sprout, sprout, spr...
+  - start: '03:41.800'
+    end: '03:44.200'
+    original: お。ぴん、ピンポンは？
+    english: Oh. Where's the doorbell?
+  - start: '03:45.000'
+    end: '03:48.500'
+    original: ピンポン、ぴん、ぴん、ピンポンは？
+    english: Doorbell... wh-where is the doorbell?
+  - start: '03:49.000'
+    end: '03:53.300'
+    original: ピンポンいない。え、帰っちゃったんじゃない？わしが出るの遅すぎたせいで。
+    english: The doorbell person isn't here. Wait, did they go home because I took
+      too long to answer?
+  - start: '03:55.300'
+    end: '03:56.800'
+    original: ないよ。
+    english: Nothing.
+  - start: '03:58.500'
+    end: '04:03.000'
+    original: あ、2時の合図！え、え、かなり見つけてるかも！わし、すごいかも！わし、
+    english: Ah, the 2:00 AM chime! Wait, I might be finding a ton of them! I might
+      be amazing! I...
+  - start: '04:03.100'
+    end: '04:06.000'
+    original: 分かってきたかも。やっぱ1回目は練習だよね。
+    english: might be getting the hang of this! The first run really is just practice,
+      isn't it?
+  - start: '04:08.500'
+    end: '04:14.600'
+    original: 1回目を、は、慣れるまでの練習とした時に...
+    english: If we treat the first run as practice until I get used to it...
+  - start: '04:17.300'
+    end: '04:20.700'
+    original: 順調かも。わし、いけるかも。
+    english: This might be going smoothly. I might actually be able to do this!
+  - start: '04:22.300'
+    end: '04:25.000'
+    original: お、恩の字じゃ〜。
+    english: Oh, couldn't ask for better~.
+  - start: '04:25.500'
+    end: '04:28.500'
+    original: ちょっと水飲むか。じゅ、順調だし。
+    english: Let's drink some water. Things are going smoothly anyway.
+  - start: '04:30.800'
+    end: '04:32.400'
+    original: ああー。
+    english: Phew.
+  - start: '04:33.200'
+    end: '04:36.500'
+    original: やっぱバイト中に飲む水って美味いぜ。
+    english: Man, water you drink during a part-time shift really hits the spot.
+  - start: '04:37.300'
+    end: '04:41.200'
+    original: うわー、お前かい！お前かい、ピンポンさん！
+    english: Whoa, it's YOU?! It was you, Mr. Doorbell?!
+  - start: '04:42.000'
+    end: '04:46.000'
+    original: あ、ぴ、ピンポンさん来た。ぴ、ピンポンさん来た。
+    english: Ah, Mr. Doorbell came. Mr. Doorbell came.
+  - start: '04:46.300'
+    end: '04:52.000'
+    original: でも、ちょっと、の、慣れてきたわ。いけ、いけ、いけるかも。わしやれるかも。
+    english: Still, I'm getting kind of used to it. I m-might be able to do this!
+      I can totally do this!
+  - start: '04:52.200'
+    end: '04:57.200'
+    original: ね、絶対にこれ開いてるのおかしいのに、開いてるのがデフォなの可笑しいよね、おぬしら。
+    english: Hey, it's definitely weird that this is open, but isn't it weird that
+      being open is the default, you guys?
+  - start: '04:58.200'
+    end: '04:59.600'
+    original: ふんふんふん。
+    english: Mm-hmm, mm-hmm.
+  thoughts:
+  - |-
+    **My Thoughts on the Strange House**
+
+    Okay, here’s how I’m thinking about this video segment. It's that time again, analyzing this clip and getting those subtitles synced. First, I need to really listen to the audio carefully. I'm focusing on that section from 30:05.028 to 35:05.169. All the timestamps have to be relative to the segment, starting at zero.
+
+    Right, let's start from the beginning. First I heard "Well, I'm not confident, but..." and then, "Wait, could this be just a different angle?" Aha, and she says, "Is it the same room, just from a different angle? Or not? " Then a couple repetitions of the same question! The camera angles were playing a trick. And, "Look, the remote... the plate..." She's noticing... "Isn't it the same room? Then, why isn't it open... why isn't it? Well, I suppose the camera angles are just part of it. The well. Ok ok. "Ah, it's open... It was open, right? It was already open originally, wasn't it?" This is a tricky house!
+
+    Then, the clock chimes "ボーン... ボーン..." (Booooon... booooon...) She says "1時じゃ。" (It's 1:00 AM.). Oh wait, I see... I was trying to figure out what the game was doing. I can hear the clock chime! I can understand now. And now, she's thinking "Ah, is this an anomaly?" Yep, it sure is! It's one of those weird things. "Look! This was an anomaly!" See, I am getting it!
+
+    Okay, let's see. Now it's the strange house... "Like, why is it closed from this angle, but open from this other angle?" And, then she says, "Man, that really was an anomaly. That counts as an anomaly!" And "Wait, what is... What? What? What is that?" Oh no! The toilet... "I hear the toilet flushing." Oh! "Didn't you just use the toilet?!" Now it's all making sense. "I see! Ah, I'm getting the hang of this!" "Wait, anomaly just means a feeling of inconsistency? Does anomaly mean things that don't add up? If things... If things don't add up, can I just consider it an anomaly?"
+
+    She didn't get this. "I had no idea." It's just a feeling of inconsistency! Now, she's trying to process this and, "I just assumed that's how it was." Ah, then the "angle... some kind of magic art..." and how they change on camera. It is indeed an illusion! "Spot the difference? Uh-huh, uh-huh, uh-huh. I'm getting the hang of this!" Then, she declares herself, "Human!" Haha. The truth comes out! I get that now. Ok ok.
+
+    "I forgot." Maybe not. "Let's see, it's open." Hmm. "Mm-hmm, mm-hmm. Nothing here, though." Wait a minute... Are these getting too easy? “Maybe things are going so smoothly and I found so many anomalies that there are none left?” It's the end, isn't it? Nooo! "It's already... already too late—no, not too late. Just the beginning." Ah well... "After all, the only thing I can hear now is the chirping of insects. There's nothing... nothing left that can scare me anymore." She's not scared...
+
+    Oh what! "The doorbell is ringing! What's with the doorbell? Where does the doorbell anomaly show up? Where does the doorbell anomaly go?!" Oh my gosh "Whoaaa!"... "It's the one I saw earlier! Is this... is this the doorbell anomaly?!" It's coming after her, isn't it! "This one too?! Wait, hold on, it sprouted up, up, up..." Then it's gone! Oh no, where's the doorbell?! "The doorbell isn't here! Wait, did they go home because I took too long to answer?" Haha. All gone! Ah, the chime... the game is on, isn't it? "Ah, the 2:00 AM chime! Wait, I might be finding a ton of them! I might be amazing! I'm getting the hang of this!"
+
+    It's all part of the game. "If we treat the first run as practice until I get used to it..." That's right! "This might be going smoothly. I might actually
+  detected_musical_performances: []

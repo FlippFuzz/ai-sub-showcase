@@ -1,0 +1,658 @@
+name: part_013
+video_duration_ms: 303308
+media_tag: IEgmaNWRo8s
+model_name: gemini-3.8-flash
+service_tier: null
+agentic_video: false
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】'.
+segment_index: 13
+fallback_tier: 0
+tier_attempts: 0
+target_fps: null
+exhausted: false
+segment_offset_ms: 3901950
+global_summary:
+  overall_summary: In this livestream, Hololive VTuber Achichi Mela from the unit
+    'Asobi Mawaritai!' plays the indie surveillance horror game 'Japan Stigmatized
+    Property' (JSP). Initially nervous and intimidated by the realistic setting of
+    stigmatized properties and jumpscares, Mela takes on the role of a midnight CCTV
+    monitor across four challenging stages—ranging from an Akita house to a Nara shrine,
+    a ryokan, and a cursed final stage. Through a mix of panic, memory challenges,
+    and humorous reactions, she successfully completes the anomaly-detection shifts
+    while interacting with her viewers.
+  chapters:
+  - start: 00:00
+    end: 01:47
+    title: Opening Screen & Vibe Check
+    description: Stream opening screen with background music and waiting chat.
+    song_title: null
+    song_artist: null
+  - start: 01:47
+    end: 07:20
+    title: Stream Intro & Game Anticipation
+    description: Achichi Mela introduces the game 'JSP' (Japan Stigmatized Property),
+      expressing her nervousness and fear of playing a realistic horror game for the
+      first time.
+    song_title: null
+    song_artist: null
+  - start: 07:20
+    end: '44:30'
+    title: Stage 1 - Akita Prefecture Stigmatized House
+    description: Mela begins her first night shift monitoring an Akita Prefecture
+      house, navigating anomaly detection, dealing with jump scares, and accidentally
+      ending her stream out of panic before recovering.
+    song_title: null
+    song_artist: null
+  - start: '44:30'
+    end: '62:15'
+    title: Stage 2 - Nara Prefecture Shrine
+    description: Mela moves on to monitor the T Shrine in Nara Prefecture, dealing
+      with outdoor camera feeds, weather anomalies, and mysterious intruders.
+    song_title: null
+    song_artist: null
+  - start: '62:15'
+    end: '79:30'
+    title: Stage 3 - Ryokan Bathhouse & Inn
+    description: Mela undertakes the third shift at a traditional Japanese inn and
+      bathhouse, keeping track of complex room layouts and furniture shifts.
+    song_title: null
+    song_artist: null
+  - start: '79:30'
+    end: '102:40'
+    title: Stage 4 - Final Stage & Cursed Room
+    description: Mela tackles the final and most difficult stage featuring cursed
+      objects, masks, and eerie rooms, ultimately achieving a zero-miss victory.
+    song_title: null
+    song_artist: null
+  - start: '102:40'
+    end: '109:00'
+    title: Stream Ending & Schedule Announcements
+    description: Mela celebrates her successful clear, reflects on the psychological
+      horror of the game, and discusses upcoming membership streams and her 2-month
+      debut anniversary.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Achichi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A cheerful, hardworking salamander firefighter who serves as the
+      'blessings' (ご利益) representative of the Hololive unit Asobi Mawaritai! She loves
+      fire safety and brings warmth and energy to her fans.
+    speech_patterns_or_ticks: Uses archaic speech endings such as -のじゃ (-noja) and
+      -じゃろ (-jaro).
+    visual_cues: Red and orange fiery theme, salamander motifs, firefighter-inspired
+      design.
+  domain_glossary:
+  - term: JSP (日本事故物件監視協会)
+    meaning: Japan Stigmatized Property, an indie surveillance horror simulation game
+      where players monitor CCTV feeds of real-life stigmatized properties from midnight
+      to 5 AM to report anomalies.
+  - term: 事故物件
+    meaning: A stigmatized property where a tragic death, accident, or incident occurred,
+      serving as the settings for the monitoring shifts in JSP.
+  - term: 異変
+    meaning: Anomalies or unnatural changes in room items, furniture, or environment
+      that players must detect and report through the CCTV system.
+  - term: アソビ★まわり隊！
+    meaning: A Hololive VTuber unit consisting of four members, with Achichi Mela
+      representing the 'blessings' (ご利益) role.
+  - term: 火の用心じゃ〜！
+    meaning: Achichi Mela's signature catchphrase meaning 'Beware of fire!', reflecting
+      her firefighter salamander background.
+  thoughts:
+  - |-
+    Here's my analysis of the task, thinking through it as if I were about to execute the steps:
+
+    **Initial Assessment of Video Analysis Task**
+
+    Alright, the task is clear. We've got a video, `video_1.webm`, clocking in at a pretty substantial duration – around an hour and forty-nine minutes. The immediate goal is to understand the content. My first move in this kind of analysis is almost always to grab a transcript. It gives a fantastic overview of the spoken content and allows me to quickly get a grasp of what's happening.
+
+    Therefore, my initial action is to load the video and the associated ASR (Automatic Speech Recognition) transcript. I'll utilize the `load_video` function, ensuring I specify `include_asr=True` so that the transcription data is also pulled. This will be the foundational starting point for the analysis.
+  - |-
+    **Analyzing the Information from ASR and Context**
+
+    Okay, let's break this down systematically. I need to synthesize the information from the Automated Speech Recognition (ASR) data with the provided context. I see the context clearly identifies the YouTube channel as "Mela Ch. 熱千めら‐ アソビ★まわり隊!" and the video title is "【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】". The title indicates a horror game ("ホラゲ") is the topic.
+
+    Now, it also specifies "hololive / asobi mawaritai / Netchi Mela," but since the user context provides explicit details about the source, I need to confirm the entity details for Netchi Mela and her affiliation with the アソビ★まわり隊 group and potentially hololive. I need to quickly verify Netchi Mela's affiliations and lore before drawing any conclusions. The key here is accuracy, so let's use `tinyfish_search_multi` to get reliable information.
+  - |-
+    **JSON Structure Creation for Achichi Mela's JSP Stream**
+
+    Okay, this is excellent! We've got all the pieces we need to generate that JSON. Let's break this down into digestible chunks for the format. I'm focusing on Achichi Mela's stream playing 『日本事故物件監視協会』 (JSP). My objective is to structure this data for future analysis and potentially, database population.
+
+    First, the overall summary needs to capture the video's essence: It's Achichi Mela, a Hololive VTuber from the unit "Asobi Mawaritai!," playing a horror anomaly detection game, JSP. The tone will be her usual energetic and slightly nervous disposition, given the horror genre. The narrative will progress through different stigmatized properties, each presenting unique challenges and jump scares. We'll outline her progression through the game, from the initial introduction and nervousness to her reactions throughout the different locations.
+
+    Next, we'll organize it into chapters with clear start and end timestamps, titles based on the content, and brief descriptions of what happens in each section. Songs are not relevant here, so they will be null.
+
+    We then identify the key entity: Achichi Mela, noting her role, affiliation (Hololive/Asobi Mawaritai!), and persona details (firefighter salamander, "blessings" representative, etc.). We'll include speech patterns for context – that archaic speech is important!
+
+    Finally, we define a domain glossary. This is crucial for understanding the game's mechanics and the context of the stream. We'll include terms like JSP, 事故物件 (stigmatized property), 異変 (anomaly), and Асоби★まわり隊！, as well as her catchphrase "火の用心じゃ〜！"
+
+    Alright, let's craft that JSON.
+
+    {
+      "overall_summary": "Achichi Mela, a Hololive VTuber from the unit 'Asobi Mawaritai!', plays 'Japan Stigmatized Property' (JSP), a horror anomaly-detection surveillance game. The stream follows her progress through several 'stigmatized properties' (事故物件), with her reactions to jump scares and gameplay challenges.  The tone is energetic and slightly nervous, reflecting the horror genre.",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "01:47",
+          "title": "Opening Screen & Vibe Check",
+          "description": "Introductory screen and establishing the stream's vibe.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "01:47",
+          "end": "07:20",
+          "title": "Stream Intro & Game Anticipation",
+          "description": "Achichi Mela's opening greeting, introduction to JSP, and expressing nervousness about playing a 'real' horror game.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "07:20",
+          "end": "44:30",
+          "title": "Stage 1 - Akita Prefecture Stigmatized House",
+          "description": "Surveillance gameplay in a stigmatized house in Akita Prefecture, anomaly detection, and jump scares.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "44:30",
+          "end": "62:15",
+          "title": "Stage 2 - Nara Prefecture Shrine",
+          "description": "Surveillance gameplay in a shrine in Nara Prefecture.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "62:15",
+          "end": "79:30",
+          "title": "Stage 3 - Ryokan Bathhouse / Inn",
+          "description": "Surveillance gameplay in a Ryokan.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "79:30",
+          "end": "102:40",
+          "title": "Stage 4 - Final Stage / Cursed Room",
+          "description": "Final stage gameplay involving a 'Cursed Room'.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "102:40",
+          "end": "109:00",
+          "title": "Stream Ending & Schedule
+subtitles_prompt_version: 19
+response:
+  subtitles:
+  - start: '00:00.080'
+    end: '00:00.900'
+    original: 見て
+    english: Look.
+  - start: '00:01.050'
+    end: '00:04.100'
+    original: ちょっと覚えるものがね 多すぎるからね
+    english: There are just too many things to remember...
+  - start: '00:04.200'
+    end: '00:05.500'
+    original: むずいね
+    english: '...so it''s tough.'
+  - start: '00:05.800'
+    end: '00:07.750'
+    original: カラオケあるよ カラオケ機器
+    english: There's karaoke! Karaoke equipment.
+  - start: '00:08.500'
+    end: '00:09.900'
+    original: うん ないね
+    english: Yeah, nothing.
+  - start: '00:10.950'
+    end: '00:12.700'
+    original: 1 2 ん？
+    english: One, two... Hm?
+  - start: '00:13.250'
+    end: '00:15.350'
+    original: 椅子こんな場所にあったっけ？
+    english: Was the chair in a spot like this?
+  - start: '00:15.350'
+    end: '00:17.300'
+    original: わし覚えてないんじゃけど
+    english: I don't really remember, though.
+  - start: '00:17.400'
+    end: '00:18.500'
+    original: 違った
+    english: It was wrong.
+  - start: '00:18.550'
+    end: '00:20.500'
+    original: 合ってたっぽい 1 2 3 4
+    english: Looks like it was right. One, two, three, four.
+  - start: '00:20.500'
+    end: '00:22.500'
+    original: こんな変な場所じゃったっけ？
+    english: Was it in such a weird spot?
+  - start: '00:22.550'
+    end: '00:23.900'
+    original: この これは何？
+    english: This... what's this?
+  - start: '00:23.950'
+    end: '00:25.400'
+    original: これ この棒
+    english: This, this stick.
+  - start: '00:25.400'
+    end: '00:27.400'
+    original: これも異常じゃない？ あ 異常だ！
+    english: Isn't this an anomaly too? Ah, it is!
+  - start: '00:27.400'
+    end: '00:28.400'
+    original: 合ってた
+    english: Got it right!
+  - start: '00:28.700'
+    end: '00:30.600'
+    original: あ だよね だよね！
+    english: Ah, see? Right?!
+  - start: '00:30.650'
+    end: '00:33.150'
+    original: 椅子4つだったもんね わし覚えてたよ！
+    english: There were four chairs! I did remember!
+  - start: '00:33.150'
+    end: '00:35.300'
+    original: わし覚えてた わし覚えた わし覚えた
+    english: I remembered! I memorized it, I memorized it!
+  - start: '00:36.400'
+    end: '00:37.550'
+    original: はい 神
+    english: Yep, I'm a god.
+  - start: '00:37.600'
+    end: '00:39.400'
+    original: え わし 着実に
+    english: Eh, I feel like steadily...
+  - start: '00:39.400'
+    end: '00:43.000'
+    original: なんか見るべきところをちゃんと見れている感じある
+    english: '...I''m checking the right spots properly.'
+  - start: '00:44.200'
+    end: '00:47.100'
+    original: これ何？ こんなテーブルあったっけ？ 覚えてない
+    english: What's this? Was there a table like this? I don't remember.
+  - start: '00:47.100'
+    end: '00:48.300'
+    original: 押してみる
+    english: Let's try reporting it.
+  - start: '00:48.650'
+    end: '00:49.950'
+    original: 違ったっぽい
+    english: Looks like it was wrong.
+  - start: '00:50.300'
+    end: '00:52.550'
+    original: 1時間経過のじゃ！
+    english: One hour has passed!
+  - start: '00:54.300'
+    end: '00:57.450'
+    original: うーん こんな棒あったっけ？ 覚えてないのじゃ
+    english: Hmm... was there a pole like this? I don't remember.
+  - start: '00:57.450'
+    end: '00:59.000'
+    original: 分かんないのじゃ
+    english: I have no idea.
+  - start: '01:00.650'
+    end: '01:01.300'
+    original: お風呂
+    english: The bath.
+  - start: '01:01.300'
+    end: '01:04.700'
+    original: お風呂こんなんだった気がするけどな
+    english: I feel like the bath was like this, though.
+  - start: '01:04.700'
+    end: '01:06.100'
+    original: 水も張ってないし
+    english: There's no water in it either.
+  - start: '01:06.100'
+    end: '01:07.400'
+    original: ふんふんふん
+    english: Mm-hmm.
+  - start: '01:08.000'
+    end: '01:10.500'
+    original: これも変わりない気がするけど
+    english: I feel like nothing's changed here either, though.
+  - start: '01:10.950'
+    end: '01:13.150'
+    original: うんうんうんうんうん
+    english: Yeah, yeah, yeah, yeah.
+  - start: '01:13.700'
+    end: '01:17.200'
+    original: ここもこれぐらい空いてたんだ 見づらかったもんな 文字
+    english: This was open about this much too. The writing was hard to read.
+  - start: '01:17.200'
+    end: '01:18.200'
+    original: ふんふん
+    english: Mm-hmm.
+  - start: '01:18.900'
+    end: '01:21.450'
+    original: いや ここなんだよな 覚えるとしたら
+    english: No, it's this room, if I'm gonna memorize it.
+  - start: '01:21.450'
+    end: '01:23.900'
+    original: こいつ何なの？ これ何なの？
+    english: What is this thing? What is this?
+  - start: '01:23.900'
+    end: '01:26.100'
+    original: ちょっと押してみるか 分かんないから
+    english: Should I try reporting it? Since I don't know.
+  - start: '01:27.600'
+    end: '01:29.000'
+    original: これ何なんだろう？ この
+    english: What could this be? This...
+  - start: '01:29.000'
+    end: '01:32.400'
+    original: ちょっと見づらいんじゃけど これ人に見えるんじゃけど わし わしからすると
+    english: It's a bit hard to see, but this looks like a person to me... from my
+      perspective.
+  - start: '01:32.700'
+    end: '01:34.100'
+    original: これ何なんだろう？
+    english: What could this be?
+  - start: '01:34.200'
+    end: '01:36.400'
+    original: え？ なんか割れてます
+    english: Huh? Something's breaking.
+  - start: '01:36.900'
+    end: '01:39.900'
+    original: いやてかなんか黒 黒いです 髪の毛です！
+    english: Wait, it's like, bla- black! It's hair!
+  - start: '01:40.000'
+    end: '01:41.200'
+    original: まずいのじゃ
+    english: This is bad!
+  - start: '01:41.250'
+    end: '01:43.200'
+    original: なんか割れてる気がする
+    english: I feel like something broke.
+  - start: '01:45.000'
+    end: '01:46.300'
+    original: 洗い場か？
+    english: The washing area?
+  - start: '01:46.300'
+    end: '01:48.300'
+    original: 割れてるってことは洗い場か？
+    english: If something broke, does that mean the washing area?
+  - start: '01:48.300'
+    end: '01:49.100'
+    original: いや
+    english: No...
+  - start: '01:49.400'
+    end: '01:52.800'
+    original: これ 音だけ鳴って何も割れてないパターンさっきあったんだよな
+    english: Earlier there was that pattern where it just made a sound but nothing
+      actually broke.
+  - start: '01:53.000'
+    end: '01:54.600'
+    original: 何も割れてないな
+    english: Nothing is broken.
+  - start: '01:56.200'
+    end: '01:57.800'
+    original: 何も割れてないな
+    english: Nothing is broken.
+  - start: '01:59.600'
+    end: '02:00.750'
+    original: なんじゃ？
+    english: What is it?
+  - start: '02:01.700'
+    end: '02:04.000'
+    original: あーーーっ！
+    english: Aaaah!
+  - start: '02:04.000'
+    end: '02:07.400'
+    original: いやだ！ いやだ！ 助けて！ お願い！ 消えて！ 消えて！
+    english: No! No! Help me! Please! Disappear! Disappear!
+  - start: '02:07.400'
+    end: '02:10.500'
+    original: やめて！ やめて！ やめて！ やめて！ びっくり、やめてーーー！
+    english: Stop it! Stop it! Stop it! Stop it! You scared me, stop iiiit!
+  - start: '02:15.400'
+    end: '02:17.200'
+    original: それズルなのじゃ
+    english: That's cheating!
+  - start: '02:17.200'
+    end: '02:18.900'
+    original: それズルいと思う わし
+    english: I think that's totally unfair.
+  - start: '02:18.900'
+    end: '02:22.000'
+    original: わしそういうのはね あんま良くないと思うんだよね
+    english: I don't think doing stuff like that is very nice, honestly.
+  - start: '02:22.000'
+    end: '02:22.900'
+    original: 正直ね
+    english: Honestly.
+  - start: '02:23.000'
+    end: '02:24.000'
+    original: うん
+    english: Yeah.
+  - start: '02:24.900'
+    end: '02:26.500'
+    original: わしそういうのは
+    english: I really...
+  - start: '02:27.100'
+    end: '02:28.950'
+    original: あ 違った 鏡の角度じゃった
+    english: Ah, wrong. It was just the angle of the mirror.
+  - start: '02:29.700'
+    end: '02:32.300'
+    original: わし そういうのあんま良くないと思うんだよね
+    english: I really don't think doing that is very nice.
+  - start: '02:32.300'
+    end: '02:35.200'
+    original: びっくりする びっくりするからね
+    english: It startles me. Because it scares me.
+  - start: '02:35.250'
+    end: '02:37.350'
+    original: 椅子こんなとこにあったっけ？ 何も覚えてない
+    english: Was there a stool here? I don't remember anything.
+  - start: '02:37.350'
+    end: '02:39.750'
+    original: 椅子 椅子あったような気がするけど 分かんないのじゃ
+    english: A stool... I feel like there was one, but I don't know.
+  - start: '02:39.750'
+    end: '02:41.800'
+    original: 分かんない あったっぽい
+    english: I don't know. Looks like it was there.
+  - start: '02:41.800'
+    end: '02:43.600'
+    original: 助けてよーー
+    english: Help meee...
+  - start: '02:44.200'
+    end: '02:45.900'
+    original: 何も無い
+    english: Nothing here.
+  - start: '02:45.900'
+    end: '02:47.300'
+    original: 何も
+    english: Nothing...
+  - start: '02:47.300'
+    end: '02:48.300'
+    original: 無くて
+    english: '...is there...'
+  - start: '02:48.300'
+    end: '02:50.500'
+    original: 何も無いのじゃ
+    english: '...Nothing at all.'
+  - start: '02:51.500'
+    end: '02:53.600'
+    original: え 手袋なんてあったっけ？
+    english: Eh, were there gloves here?
+  - start: '02:53.600'
+    end: '02:55.700'
+    original: 覚えてないよーー
+    english: I don't remember!
+  - start: '02:55.950'
+    end: '02:57.600'
+    original: 覚えてないのじゃ
+    english: I don't remember.
+  - start: '02:57.600'
+    end: '03:00.300'
+    original: やばい 誤報告が多すぎるのじゃ！
+    english: Oh no! Way too many false reports!
+  - start: '03:00.600'
+    end: '03:02.450'
+    original: ちょ なんかとりあえず押しとけ 良くないな
+    english: Wait, "just reporting whatever" is bad.
+  - start: '03:02.450'
+    end: '03:06.000'
+    original: ちゃ ちゃんと ちゃんと意志を持ってね 1 2 3 4
+    english: I have to do it with clear intent. One, two, three, four.
+  - start: '03:06.000'
+    end: '03:07.700'
+    original: こんなんだった気がするんだよな
+    english: I feel like it was like this...
+  - start: '03:08.500'
+    end: '03:11.800'
+    original: うーーん
+    english: Huuuh...
+  - start: '03:11.800'
+    end: '03:15.500'
+    original: でもなんかパリンって割れたの 何が割れたか分からなかったのじゃ わし
+    english: Still, when that shattered earlier, I couldn't tell what broke.
+  - start: '03:15.500'
+    end: '03:16.950'
+    original: うおっ お前！
+    english: Whoa! You!
+  - start: '03:17.000'
+    end: '03:18.200'
+    original: 見ている！
+    english: You're watching!
+  - start: '03:18.200'
+    end: '03:19.400'
+    original: わしを！
+    english: Watching me!
+  - start: '03:19.400'
+    end: '03:20.500'
+    original: わしをね
+    english: Watching me, huh.
+  - start: '03:22.500'
+    end: '03:24.000'
+    original: え？ え？
+    english: Eh? Eh?
+  - start: '03:24.000'
+    end: '03:28.000'
+    original: ま 待ってる？ 待っててほしいの？ いいよ 待っててあげる 待っててあげる いいよ
+    english: A-Are you waiting? You want me to wait? Okay, I'll wait for you. I'll
+      wait. Sure.
+  - start: '03:28.000'
+    end: '03:30.300'
+    original: は？ 待っててあげたのに来ないの？
+    english: Huh? I waited for you and you didn't even come?
+  - start: '03:31.000'
+    end: '03:33.200'
+    original: むかつく むかつくのじゃ
+    english: How irritating! So annoying!
+  - start: '03:33.200'
+    end: '03:35.300'
+    original: わし待っててあげたのに
+    english: Even though I waited for you!
+  - start: '03:35.300'
+    end: '03:38.200'
+    original: わし待っててあげたのに お主が お主が
+    english: Even though I waited for you! You... you...
+  - start: '03:38.200'
+    end: '03:42.500'
+    original: てかなんかさ この椅子2つこんな場所にあったっけ？ こんな位置じゃったっけ？
+    english: Wait, were these two stools in a place like this? Were they in this position?
+  - start: '03:43.000'
+    end: '03:47.300'
+    original: なんか 2つあるのは覚えてるんだけど 位置がちゃんと覚えられてない
+    english: I remember there being two, but I haven't memorized the exact positions.
+  - start: '03:48.200'
+    end: '03:49.500'
+    original: うーん
+    english: Hmm...
+  - start: '03:51.000'
+    end: '03:52.500'
+    original: 何も無い
+    english: Nothing.
+  - start: '03:53.000'
+    end: '03:56.500'
+    original: さっきの足音 何だったの？
+    english: What were those footsteps earlier?
+  - start: '03:57.000'
+    end: '03:59.800'
+    original: さっきの足音 何だったのじゃ？
+    english: What were those footsteps earlier?
+  - start: '04:00.500'
+    end: '04:06.000'
+    original: 畳がいっぱいあって なんかこの吊り下げてあって
+    english: There are lots of tatami mats, and this is hanging down...
+  - start: '04:06.000'
+    end: '04:07.700'
+    original: うーーん
+    english: Mmm...
+  - start: '04:08.500'
+    end: '04:12.000'
+    original: 何も無い のじゃ
+    english: There's nothing here.
+  - start: '04:16.000'
+    end: '04:17.600'
+    original: 何も無い
+    english: Nothing.
+  - start: '04:18.000'
+    end: '04:20.000'
+    original: 本当に何も無いじゃん！
+    english: There really is nothing!
+  - start: '04:20.000'
+    end: '04:22.000'
+    original: さっきまであんなんだったじゃん！
+    english: It was so chaotic just a minute ago!
+  - start: '04:23.200'
+    end: '04:28.000'
+    original: ああ この机もこうだったし このドアもこんなんだった気がするし
+    english: Yeah, this desk was like this, and I feel like this door was like this
+      too...
+  - start: '04:28.500'
+    end: '04:33.000'
+    original: うー なんか わしが早く見つけすぎちゃうせいか？
+    english: Ugh... is it because I find them too quickly?
+  - start: '04:33.000'
+    end: '04:39.000'
+    original: わしが早く見つけすぎちゃうせいで 異変が全部消えちゃっている可能性あり
+    english: Could it be that because I find them too fast, all the anomalies are
+      disappearing?
+  - start: '04:41.200'
+    end: '04:42.500'
+    original: うん
+    english: Yeah.
+  - start: '04:43.700'
+    end: '04:47.300'
+    original: えーーーにょーーーじゃーーー
+    english: Eeeehhh...
+  - start: '04:48.300'
+    end: '04:51.500'
+    original: うわーーーっ！ やめて！ やめて！ やめて！ 頭皮！ 頭皮！ 頭皮ちっか！
+    english: Whoaaa! Stop it! Stop it! Stop it! Scalp! Scalp! That scalp is so close!
+  - start: '04:55.700'
+    end: '04:58.200'
+    original: ふーーっ ふーーっ
+    english: '*heavy exhaling*'
+  - start: '04:58.500'
+    end: '05:00.000'
+    original: のーいず
+    english: Noise.
+  - start: '05:00.500'
+    end: '05:02.500'
+    original: のじゃ
+    english: '...Jeez.'
+  thoughts:
+  - |-
+    **My Analysis of the Video Segment**
+
+    Okay, here's what's running through my mind as I process this video segment of Achichi Mela playing "JSP." Right from the start, I'm thinking, "Too much to memorize!" I mean, who *wouldn't* feel overwhelmed playing this game? There's karaoke equipment…oh, wait, never mind, nothing. Now, I have to try to remember where things are, like "Was the chair in *this* spot?" My memory's not perfect, but I seem to recall that the chair count was four. Gotta pay attention! "Yes, god tier!", that's it, "I'm checking the right spots properly." But what's *this* table doing here? I don’t remember seeing that before. "Looks like it was wrong." It has to be reported!
+
+    An hour has passed… Okay, focus, what about this pole? Nope, don’t recall it. No idea what's going on. Then there's the bath area, "I feel like it was like this, though. No water, either." Then I'm thinking, "If I'm gonna memorize this room, this is where I need to focus." But this… *thing* … what is it? "Should I try reporting it? I don't know." And what's with that shadow or figure? "It's a bit hard to see, but it looks like a person. From my perspective."
+
+    Oh, wait, "Something's breaking!" "Hair!" It's bad! I feel like something broke. But if it broke, is it the washing area? No... I remember a pattern earlier where it just made a sound but nothing broke. "Nothing is broken... What is it?" Aaah! "Stop it! Stop it! You scared me, stop it!" Okay, that's unfair! That's cheating! "I don't think doing stuff like that is very nice. Honestly."
+
+    The stool, was there a stool here? "I feel like there was one. I don't know." "Help me!" There's nothing here. Nothing at all! "Were there gloves here? I don't remember!" "Too many false reports!" Gotta focus, gotta have "clear intention." Was it like this? Hmmm. But when the breaking sound happens... I didn't know what actually broke.
+
+    Wait, someone's watching? Whoa, you! You're staring! At me, huh? I'm waiting for someone, but nobody is coming. "How irritating! So annoying!" Now I think, were these stools in this spot? What was that footstep I heard earlier? I've got a lot of tatami mats… nothing, nothing. "There really is nothing!" It was so hectic a moment ago! This desk, the door... "Is it because I find them too quickly? All the anomalies are disappearing?" "Yeah..." "Eeeehhh..." Scalp, that scalp is so close! Whew, noise. Jeez.
+  detected_musical_performances: []

@@ -1,0 +1,541 @@
+name: part_002
+video_duration_ms: 300008
+media_tag: IEgmaNWRo8s
+model_name: gemini-3.8-flash
+service_tier: null
+agentic_video: false
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】'.
+segment_index: 2
+fallback_tier: 0
+tier_attempts: 0
+target_fps: null
+exhausted: false
+segment_offset_ms: 600016
+global_summary:
+  overall_summary: In this livestream, Hololive VTuber Achichi Mela from the unit
+    'Asobi Mawaritai!' plays the indie surveillance horror game 'Japan Stigmatized
+    Property' (JSP). Initially nervous and intimidated by the realistic setting of
+    stigmatized properties and jumpscares, Mela takes on the role of a midnight CCTV
+    monitor across four challenging stages—ranging from an Akita house to a Nara shrine,
+    a ryokan, and a cursed final stage. Through a mix of panic, memory challenges,
+    and humorous reactions, she successfully completes the anomaly-detection shifts
+    while interacting with her viewers.
+  chapters:
+  - start: 00:00
+    end: 01:47
+    title: Opening Screen & Vibe Check
+    description: Stream opening screen with background music and waiting chat.
+    song_title: null
+    song_artist: null
+  - start: 01:47
+    end: 07:20
+    title: Stream Intro & Game Anticipation
+    description: Achichi Mela introduces the game 'JSP' (Japan Stigmatized Property),
+      expressing her nervousness and fear of playing a realistic horror game for the
+      first time.
+    song_title: null
+    song_artist: null
+  - start: 07:20
+    end: '44:30'
+    title: Stage 1 - Akita Prefecture Stigmatized House
+    description: Mela begins her first night shift monitoring an Akita Prefecture
+      house, navigating anomaly detection, dealing with jump scares, and accidentally
+      ending her stream out of panic before recovering.
+    song_title: null
+    song_artist: null
+  - start: '44:30'
+    end: '62:15'
+    title: Stage 2 - Nara Prefecture Shrine
+    description: Mela moves on to monitor the T Shrine in Nara Prefecture, dealing
+      with outdoor camera feeds, weather anomalies, and mysterious intruders.
+    song_title: null
+    song_artist: null
+  - start: '62:15'
+    end: '79:30'
+    title: Stage 3 - Ryokan Bathhouse & Inn
+    description: Mela undertakes the third shift at a traditional Japanese inn and
+      bathhouse, keeping track of complex room layouts and furniture shifts.
+    song_title: null
+    song_artist: null
+  - start: '79:30'
+    end: '102:40'
+    title: Stage 4 - Final Stage & Cursed Room
+    description: Mela tackles the final and most difficult stage featuring cursed
+      objects, masks, and eerie rooms, ultimately achieving a zero-miss victory.
+    song_title: null
+    song_artist: null
+  - start: '102:40'
+    end: '109:00'
+    title: Stream Ending & Schedule Announcements
+    description: Mela celebrates her successful clear, reflects on the psychological
+      horror of the game, and discusses upcoming membership streams and her 2-month
+      debut anniversary.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Achichi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A cheerful, hardworking salamander firefighter who serves as the
+      'blessings' (ご利益) representative of the Hololive unit Asobi Mawaritai! She loves
+      fire safety and brings warmth and energy to her fans.
+    speech_patterns_or_ticks: Uses archaic speech endings such as -のじゃ (-noja) and
+      -じゃろ (-jaro).
+    visual_cues: Red and orange fiery theme, salamander motifs, firefighter-inspired
+      design.
+  domain_glossary:
+  - term: JSP (日本事故物件監視協会)
+    meaning: Japan Stigmatized Property, an indie surveillance horror simulation game
+      where players monitor CCTV feeds of real-life stigmatized properties from midnight
+      to 5 AM to report anomalies.
+  - term: 事故物件
+    meaning: A stigmatized property where a tragic death, accident, or incident occurred,
+      serving as the settings for the monitoring shifts in JSP.
+  - term: 異変
+    meaning: Anomalies or unnatural changes in room items, furniture, or environment
+      that players must detect and report through the CCTV system.
+  - term: アソビ★まわり隊！
+    meaning: A Hololive VTuber unit consisting of four members, with Achichi Mela
+      representing the 'blessings' (ご利益) role.
+  - term: 火の用心じゃ〜！
+    meaning: Achichi Mela's signature catchphrase meaning 'Beware of fire!', reflecting
+      her firefighter salamander background.
+  thoughts:
+  - |-
+    Here's my analysis of the task, thinking through it as if I were about to execute the steps:
+
+    **Initial Assessment of Video Analysis Task**
+
+    Alright, the task is clear. We've got a video, `video_1.webm`, clocking in at a pretty substantial duration – around an hour and forty-nine minutes. The immediate goal is to understand the content. My first move in this kind of analysis is almost always to grab a transcript. It gives a fantastic overview of the spoken content and allows me to quickly get a grasp of what's happening.
+
+    Therefore, my initial action is to load the video and the associated ASR (Automatic Speech Recognition) transcript. I'll utilize the `load_video` function, ensuring I specify `include_asr=True` so that the transcription data is also pulled. This will be the foundational starting point for the analysis.
+  - |-
+    **Analyzing the Information from ASR and Context**
+
+    Okay, let's break this down systematically. I need to synthesize the information from the Automated Speech Recognition (ASR) data with the provided context. I see the context clearly identifies the YouTube channel as "Mela Ch. 熱千めら‐ アソビ★まわり隊!" and the video title is "【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】". The title indicates a horror game ("ホラゲ") is the topic.
+
+    Now, it also specifies "hololive / asobi mawaritai / Netchi Mela," but since the user context provides explicit details about the source, I need to confirm the entity details for Netchi Mela and her affiliation with the アソビ★まわり隊 group and potentially hololive. I need to quickly verify Netchi Mela's affiliations and lore before drawing any conclusions. The key here is accuracy, so let's use `tinyfish_search_multi` to get reliable information.
+  - |-
+    **JSON Structure Creation for Achichi Mela's JSP Stream**
+
+    Okay, this is excellent! We've got all the pieces we need to generate that JSON. Let's break this down into digestible chunks for the format. I'm focusing on Achichi Mela's stream playing 『日本事故物件監視協会』 (JSP). My objective is to structure this data for future analysis and potentially, database population.
+
+    First, the overall summary needs to capture the video's essence: It's Achichi Mela, a Hololive VTuber from the unit "Asobi Mawaritai!," playing a horror anomaly detection game, JSP. The tone will be her usual energetic and slightly nervous disposition, given the horror genre. The narrative will progress through different stigmatized properties, each presenting unique challenges and jump scares. We'll outline her progression through the game, from the initial introduction and nervousness to her reactions throughout the different locations.
+
+    Next, we'll organize it into chapters with clear start and end timestamps, titles based on the content, and brief descriptions of what happens in each section. Songs are not relevant here, so they will be null.
+
+    We then identify the key entity: Achichi Mela, noting her role, affiliation (Hololive/Asobi Mawaritai!), and persona details (firefighter salamander, "blessings" representative, etc.). We'll include speech patterns for context – that archaic speech is important!
+
+    Finally, we define a domain glossary. This is crucial for understanding the game's mechanics and the context of the stream. We'll include terms like JSP, 事故物件 (stigmatized property), 異変 (anomaly), and Асоби★まわり隊！, as well as her catchphrase "火の用心じゃ〜！"
+
+    Alright, let's craft that JSON.
+
+    {
+      "overall_summary": "Achichi Mela, a Hololive VTuber from the unit 'Asobi Mawaritai!', plays 'Japan Stigmatized Property' (JSP), a horror anomaly-detection surveillance game. The stream follows her progress through several 'stigmatized properties' (事故物件), with her reactions to jump scares and gameplay challenges.  The tone is energetic and slightly nervous, reflecting the horror genre.",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "01:47",
+          "title": "Opening Screen & Vibe Check",
+          "description": "Introductory screen and establishing the stream's vibe.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "01:47",
+          "end": "07:20",
+          "title": "Stream Intro & Game Anticipation",
+          "description": "Achichi Mela's opening greeting, introduction to JSP, and expressing nervousness about playing a 'real' horror game.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "07:20",
+          "end": "44:30",
+          "title": "Stage 1 - Akita Prefecture Stigmatized House",
+          "description": "Surveillance gameplay in a stigmatized house in Akita Prefecture, anomaly detection, and jump scares.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "44:30",
+          "end": "62:15",
+          "title": "Stage 2 - Nara Prefecture Shrine",
+          "description": "Surveillance gameplay in a shrine in Nara Prefecture.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "62:15",
+          "end": "79:30",
+          "title": "Stage 3 - Ryokan Bathhouse / Inn",
+          "description": "Surveillance gameplay in a Ryokan.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "79:30",
+          "end": "102:40",
+          "title": "Stage 4 - Final Stage / Cursed Room",
+          "description": "Final stage gameplay involving a 'Cursed Room'.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "102:40",
+          "end": "109:00",
+          "title": "Stream Ending & Schedule
+subtitles_prompt_version: 19
+response:
+  subtitles:
+  - start: '00:00.000'
+    end: '00:03.400'
+    original: 霊の強い人たちなんじゃない？そこに勤めてる人たち。
+    english: '...Aren''t the people working there spiritually strong?'
+  - start: '00:04.100'
+    end: '00:06.840'
+    original: えっ、膝出てきてびっくりした。膝怖い。
+    english: Wait, those knees suddenly appeared and startled me! Knees are scary!
+  - start: '00:07.450'
+    end: '00:10.500'
+    original: 膝... なんか急に現れると怖えじゃろ！
+    english: Knees... If they pop up out of nowhere, it's scary, isn't it?!
+  - start: '00:11.000'
+    end: '00:14.600'
+    original: えー、「登場する物件は実際のものを使用」。いや、これがちょっと怖いよね。
+    english: Uh, "The properties featured in this game are actual real locations."
+      See, that's kinda scary, isn't it?
+  - start: '00:15.200'
+    end: '00:17.300'
+    original: だって実際の事故物件って...
+    english: I mean, real stigmatized properties...
+  - start: '00:18.000'
+    end: '00:20.300'
+    original: うわ、なんかちょっと、こ、怖くなってきた。
+    english: Whoa, this is kinda starting to fre-freak me out.
+  - start: '00:20.350'
+    end: '00:23.700'
+    original: 「霊障や事象も実際に報告されたものを使用」。やばい！
+    english: '"Psychic phenomena and incidents are also based on actual reports."
+      Oh no!'
+  - start: '00:24.000'
+    end: '00:26.500'
+    original: え、これ、これガチのやつですか？
+    english: Wait, is this—is this for real?
+  - start: '00:27.700'
+    end: '00:35.900'
+    original: まあまあまあ、一旦ね。えー、「元となっている業務において参加者の失踪、交通事故、えー、自宅での実害が多数報告されています」。
+    english: Well, okay, for now... Uh, "In the actual operations upon which this
+      is based, numerous cases of missing participants, traffic accidents, and actual
+      harm at home have been reported."
+  - start: '00:36.150'
+    end: '00:37.400'
+    original: やばい！
+    english: This is bad!
+  - start: '00:37.500'
+    end: '00:41.200'
+    original: わし... わし大丈夫かな？
+    english: Am I... am I going to be okay?
+  - start: '00:41.700'
+    end: '00:46.800'
+    original: ほ、本当に、ちょっとなんか、こういうのやめてほしいわ。こういう怖がらせ方をされるとさ、わしもびっくりしちゃうのじゃ。
+    english: R-Really, I kinda wish they wouldn't do this. When they try to scare
+      me like this, it really spooks me!
+  - start: '00:48.300'
+    end: '00:49.500'
+    original: はい。
+    english: Okay.
+  - start: '00:50.400'
+    end: '00:53.600'
+    original: 清く、正しく、真剣に業務を行いましょう。
+    english: '"Let us carry out our duties purely, properly, and earnestly."'
+  - start: '00:53.700'
+    end: '00:56.800'
+    original: 今月の報告実績順位。あ、監視いっぱいできた人が1位なのかな？
+    english: This month's reporting performance rankings. Ah, maybe the person who
+      did the most monitoring is first?
+  - start: '00:57.100'
+    end: '00:59.800'
+    original: 殉職者？！
+    english: Casualties?!
+  - start: '01:00.600'
+    end: '01:03.500'
+    original: やばい！殉職者おる！
+    english: Oh crap! There are casualties on the job!
+  - start: '01:04.400'
+    end: '01:08.500'
+    original: そ、そんなやばいの？やっぱ精神的な負荷が...
+    english: I-Is it really that bad? I guess the psychological stress...
+  - start: '01:09.000'
+    end: '01:15.500'
+    original: はい、監視、発見、報告。はい。監視、はい。あ、監視、発見、報告がな、うわあああっ！
+    english: Okay, monitor, detect, report. Right. Monitor, right. Ah, monitor, detect,
+      report... Whoaaa!
+  - start: '01:16.800'
+    end: '01:20.900'
+    original: はい、はい。ちょっとちょっと、もうこれで、もう、もう、もういいです！もういいのじゃ！
+    english: Yes, yes! Wait, wait, that's already—already, already enough! That's
+      enough!
+  - start: '01:21.000'
+    end: '01:25.500'
+    original: このプルプル、プルプルするのやめて！プルプルするのやめて！ちょ、ちょ、近い、近い！
+    english: Stop that wobbling, stop wobbling like that! Stop wobbling! W-Wait, too
+      close, too close!
+  - start: '01:25.700'
+    end: '01:28.800'
+    original: 見ないで！見ないで！赤いの一番やめて！
+    english: Don't look! Don't look! Please, not the red one!
+  - start: '01:28.900'
+    end: '01:31.000'
+    original: 来ないで！来ないで！
+    english: Don't come! Don't come near me!
+  - start: '01:31.300'
+    end: '01:33.800'
+    original: うぅ... この音嫌だ！この音嫌だ！
+    english: Ugh... I hate this sound! I hate this sound!
+  - start: '01:34.900'
+    end: '01:36.200'
+    original: はい。
+    english: Okay.
+  - start: '01:36.800'
+    end: '01:39.500'
+    original: 電柱はない感じですか？
+    english: Does it look like there are no utility poles?
+  - start: '01:40.000'
+    end: '01:44.200'
+    original: 秋田県A邸。まずはここからやれということか。
+    english: Akita Prefecture, Residence A. So you want me to start with this one.
+  - start: '01:44.500'
+    end: '01:48.300'
+    original: でも音でっかくない？ちょっと下げようよ、お主ら。ちょっと怖いよね、お主らも。
+    english: Wait, isn't the sound super loud? Let's turn it down a bit, everyone.
+      It's kinda scary for you guys too, right?
+  - start: '01:48.700'
+    end: '01:52.900'
+    original: ちょ、音、音大きいよね？ちょ、ちょっと下げよ、ちょっと下げよ。ちょっと、ちょっとびっくりしちゃうもんね。ちょ、ちょ...
+    english: Wait, the sound is loud, right? Let's turn it down just a bit, just a
+      bit. Because it might startle us, you know? Wait...
+  - start: '01:53.000'
+    end: '01:57.200'
+    original: ちょ、大きいよね、音？ちょ、ちょっと大きいよね？ちょっと小さくしようね。
+    english: Wait, it is loud, isn't it? Just a little bit too loud, right? Let's
+      make it a little quieter.
+  - start: '01:57.400'
+    end: '01:58.700'
+    original: ちょ、怖えよね、お主ら？
+    english: It's scary, isn't it, guys?
+  - start: '01:59.000'
+    end: '02:02.400'
+    original: ちょ、ちょっと怖いよね？わしもだよ。
+    english: A bit scary, right? Me too.
+  - start: '02:03.000'
+    end: '02:08.200'
+    original: これ、これくらい。これくらいね。ちょ、うん。
+    english: About... about this much. About this much, yeah. Well, yeah.
+  - start: '02:08.800'
+    end: '02:12.400'
+    original: ちょ、ちょ、あんま大きすぎるとさ、大きすぎると怖えよね、お主ら？
+    english: Wait, if it's too loud, if it's too loud it's scary, right, everyone?
+  - start: '02:13.500'
+    end: '02:17.300'
+    original: うん、ちょ、下げ、下げとくね、お主らのために。
+    english: Yeah, I'll turn it down, turn it down for your sake.
+  - start: '02:17.500'
+    end: '02:18.500'
+    original: ちょ、低すぎる？
+    english: Wait, is it too low?
+  - start: '02:18.800'
+    end: '02:20.900'
+    original: 怖くない？お主ら怖くないの？！
+    english: You aren't scared? You guys aren't scared at all?!
+  - start: '02:22.000'
+    end: '02:24.400'
+    original: ちょ、もう、もうちょい上げるか。
+    english: Wait, should I turn it up just a bit more?
+  - start: '02:25.500'
+    end: '02:27.800'
+    original: これ、これぐらいにしとくね。
+    english: I'll leave it at about this much, okay?
+  - start: '02:30.500'
+    end: '02:32.400'
+    original: ふぅー。それでは...
+    english: Phew. Well then...
+  - start: '02:32.800'
+    end: '02:35.000'
+    original: え、でもちょっと、なんか...
+    english: Wait, but honestly, kinda...
+  - start: '02:35.500'
+    end: '02:44.200'
+    original: いや... なんか、お化け屋敷に入る前に、あの、「え、行けるか？行けるか？」みたいに言ってるみたいで、わしダサいな。今のわし、すごいダサい。
+    english: No... acting like someone before entering a haunted house going, "Uh,
+      can I do this? Can I really do this?" makes me look so uncool. I'm being super
+      uncool right now.
+  - start: '02:44.500'
+    end: '02:46.800'
+    original: い、い、行くのじゃあああ！
+    english: I'm—I'm going in, dammit!
+  - start: '02:47.000'
+    end: '02:50.800'
+    original: はい。えー、業務報告方法。プレイ方法ですね。
+    english: Okay. Uh, Operation Reporting Method. The gameplay instructions, then.
+  - start: '02:51.000'
+    end: '02:54.800'
+    original: えー、監視カメラのモニターを見て、異常がないか監視する。はい。
+    english: Uh, "Watch the surveillance camera monitors and check for any anomalies."
+      Okay.
+  - start: '02:55.800'
+    end: '02:58.800'
+    original: え、なんか変な音鳴った。大丈夫？怖い...
+    english: Wait, there was a weird sound. Is everything okay? That's scary...
+  - start: '03:00.000'
+    end: '03:02.500'
+    original: ゲームじゃない変な音鳴った。
+    english: There was a weird sound that wasn't from the game.
+  - start: '03:02.500'
+    end: '03:10.000'
+    original: えー、「異常が4つ発生してるのに見逃してたり、異常のない箇所を5回連続で誤って報告する」お手つきとかかな？「をすると失敗」っぽい。
+    english: Uh, "Overlooking anomalies when 4 are active, or mistakenly reporting
+      normal spots 5 times in a row"—like false alarms, I guess?—"will result in failure,"
+      it seems.
+  - start: '03:10.000'
+    end: '03:13.000'
+    original: 「0時から5時まで監視をし続ける」。ふん。
+    english: '"Continue monitoring from 0:00 to 5:00." Hm.'
+  - start: '03:14.000'
+    end: '03:19.400'
+    original: なるほど、なるほど。長時間放置すると失敗する可能性がある異常があるらしい。
+    english: I see, I see. Apparently, there are anomalies that can trigger a failure
+      if left unattended for too long.
+  - start: '03:19.400'
+    end: '03:21.800'
+    original: はい、はい、はい、はい、はい。
+    english: Right, right, right, right, right.
+  - start: '03:22.000'
+    end: '03:27.800'
+    original: えーと、「カメラ切り替えは A、D。暗視カメラが W」。
+    english: 'Let''s see, "Camera switching: A, D. Night vision camera: W."'
+  - start: '03:28.000'
+    end: '03:30.000'
+    original: 長押しで報告ができる。
+    english: Hold to report.
+  - start: '03:30.500'
+    end: '03:32.800'
+    original: はい。それでは...
+    english: Alright. Here goes...
+  - start: '03:33.400'
+    end: '03:36.500'
+    original: えっ？じゅ、従業員の皆さまへ。
+    english: Wait. "To all employees."
+  - start: '03:36.500'
+    end: '03:39.900'
+    original: はい。「あなたの監視担当物件で過去に異常現象が目撃されています」。
+    english: Yes. "Anomalous phenomena have previously been witnessed at your assigned
+      property."
+  - start: '03:39.900'
+    end: '03:43.000'
+    original: 「細心の注意を払ってカメラ映像を監視してください」。はい、細心の注意払って。
+    english: '"Please monitor the camera footage with utmost caution." Yes, with utmost
+      caution.'
+  - start: '03:43.000'
+    end: '03:46.800'
+    original: はい。「何か変化を確認した場合は直ちに報告してください」。はい！
+    english: Right. "If you confirm any changes, report them immediately." Yes, sir!
+  - start: '03:49.000'
+    end: '03:52.200'
+    original: これ、なんか、タンク...
+    english: This is, like, a tank...
+  - start: '03:52.500'
+    end: '03:55.300'
+    original: えっと、これで暗視。はい、はい。
+    english: Um, and this is night vision. Okay, okay.
+  - start: '03:55.500'
+    end: '03:58.800'
+    original: 多分、この時間は覚える時間だよね？
+    english: Probably, this period is meant for memorizing, right?
+  - start: '03:59.000'
+    end: '04:02.000'
+    original: 最初覚え... られるんだよね、わし？
+    english: I'll be able to memor... memorize it at first, right?
+  - start: '04:02.000'
+    end: '04:06.500'
+    original: えーっと... でも覚えるの苦手なんだよな。これ何？冷蔵庫か？これ井戸か？
+    english: Umm... But I'm really bad at memorizing things. What's this? A refrigerator?
+      Is this a well?
+  - start: '04:06.500'
+    end: '04:09.900'
+    original: 井戸あるのちょっと怖いのう。えー、なんか、う、やめてほしいな、そういうの。
+    english: Having a well here is kinda creepy. Man, I really wish they wouldn't
+      have stuff like that.
+  - start: '04:10.200'
+    end: '04:14.900'
+    original: なんか、お布団とかあるのやめてほしい。事故物件じゃろ？もう住んでないんじゃろ、人間？
+    english: Like, I wish they wouldn't leave futons out. It's a stigmatized property,
+      right? Humans aren't living here anymore, are they?
+  - start: '04:15.200'
+    end: '04:19.400'
+    original: 人間が住んでないのにお布団があるの、ちょっと怖いのじゃ。
+    english: Finding a futon when no human lives here is kinda creepy.
+  - start: '04:19.500'
+    end: '04:24.400'
+    original: これは何？なんか垂れてきてる。ここに何かある。電気とかある。
+    english: What's this? Something is dripping down. There's something here. There's
+      a light and stuff.
+  - start: '04:24.500'
+    end: '04:25.500'
+    original: ふんふん。
+    english: Mm-hm.
+  - start: '04:25.800'
+    end: '04:29.800'
+    original: うわあ！何が下がってるの、これ？！
+    english: Whoa! What is hanging down here?!
+  - start: '04:30.300'
+    end: '04:36.500'
+    original: ちょっと、かわいい、あっちメラのカーソルでやらせてよ。それでちょっと紛らわせてよ。
+    english: C'mon, let me use my cute Achichi Mela cursor! Let me distract myself
+      with that!
+  - start: '04:36.800'
+    end: '04:42.300'
+    original: えーっと、なんかゴミが散らかっておりますね。これ扇風機かのう？
+    english: Umm, looks like trash is scattered around. Is that an electric fan?
+  - start: '04:42.500'
+    end: '04:43.900'
+    original: はい、はい、はい。
+    english: Right, right, right.
+  - start: '04:44.200'
+    end: '04:49.800'
+    original: ああ、人がいっぱいて怖い！どうせこん中から人が出てくるんだ！どうせこん中から人が出てきて...
+    english: Aah, there are so many people in the portraits, it's scary! Someone's
+      bound to emerge from one of these! Someone's bound to come out of these and...
+  - start: '04:49.800'
+    end: '04:54.800'
+    original: この部屋やばいな。この部屋やばい。この部屋やばいのじゃ。わしの長年の生きてきた勘が言っている。この部屋...
+    english: This room is bad news. This room is bad. This room is really bad. My
+      years of survival instincts are telling me so. This room...
+  - start: '04:55.000'
+    end: '05:00.000'
+    original: え、ねえ、この部屋もやばい！ねえ、和室ってやばい！和室ってやばい！和室ってやばいの！わし知っ...
+    english: Wait, hey, this room is bad too! Hey, Japanese-style rooms are terrifying!
+      Japanese rooms are terrifying! Japanese rooms are terrifying, I know it—
+  thoughts:
+  - |-
+    **My Subtitle Project: A Deep Dive into Achichi Mela's Fright-Fest**
+
+    Okay, so the task is clear: I need to whip up some subtitles for this video segment, covering the portion from 10:00.016 to 15:00.024 of the full stream. The local timecodes need to start at 00:00.000 and run to roughly 05:00.008. I'm aiming for accuracy, so it's best if the timestamps are exact to the audio. I need to nail this, since the user *is* an expert in their field.
+
+    First, I need to understand what I am getting into. The speaker is Achichi Mela (熱千めら), and she's speaking in that archaic Japanese style with the -じゃ, -のじゃ, お主ら, わし, etc., endings. She's playing the character of Achichi Mela, a VTuber, in a game about JSP – Japan Stigmatized Property, or 日本事故物件監視協会. Okay, noted.
+
+    I'll start transcribing, translating, and timecoding each line, and then clean it up for the subtitles. Let's see what we've got in the target clip:
+
+    *   **00:00 - 00:03.500:** *"灵の強い人達なんじゃない？そこに勤めてる人達。"* – "Aren't the people working there spiritually strong?" It starts subtly. Seems like she's going in cautiously...
+    *   **00:04.200 - 00:06.900:** *"えっ、膝出てきてびっくりした。膝怖い。"* – "Wait, those knees suddenly appeared and startled me! Knees are scary!" Oh, a visual jump scare, and she's not happy.
+    *   **00:07.500 - 00:10.500:** *"膝... なんか急に現れると怖えじゃろ！"* – "Knees... If they pop up out of nowhere, it's scary, isn't it?!" Okay, seems she has a knee-related phobia now.
+    *   **00:10.700 - 00:14.800:** *"えー、「登場する物件は実際のものを使用」。いや、これがちょっと怖いよね。"* – "Uh, 'The properties featured in this game are actual real locations.' See, that's kinda scary, isn't it?" Well, it *is* a stigmatized property game...
+    *   **00:15.300 - 00:17.300:** *"だって実際の事故物件って..."* – "I mean, real stigmatized properties..." She sounds like she is a bit freaked out now, it's almost a given.
+    *   **00:18.200 - 00:20.400:** *"うわ、なんかちょっと、こ、怖くなってきた。"* – "Whoa, this is kinda starting to freak me out." Yep, the fear is real.
+    *   **00:20.400 - 00:23.700:** *"「霊障や事象も実際に報告されたものを使用」。やばい！"* – "'Psychic phenomena and incidents are also based on actual reports.' Oh no!" Oh boy, it's getting serious now.
+    *   **00:24.000 - 00:26.500:** *"え、これ、これガチのやつですか？"* – "Wait, is this—is this for real?" Gotta question the veracity.
+    *   **00:28.000 - 00:36.500:** *"まあまあまあ、一旦ね。えー、「元となっている業務において参加者の失踪、交通事故、えー、自宅での実害が多数報告されています」。"* – "Well, okay, for now... Uh, 'In the actual operations upon which this is based, numerous cases of missing participants, traffic accidents, and actual harm at home have been reported.'" *That's* not reassuring.
+    *   **00:36.500 - 00:37.800:** *"やばい！"* – "This is bad!" Yep, I concur.
+    *   **00:37.800 - 00:41.200:** *"わし... わし大丈夫かな？"* – "Am I... am I going to be okay?" I'd
+  detected_musical_performances: []

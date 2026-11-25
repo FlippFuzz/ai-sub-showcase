@@ -1,0 +1,646 @@
+name: part_008
+video_duration_ms: 302441
+media_tag: IEgmaNWRo8s
+model_name: gemini-3.8-flash
+service_tier: null
+agentic_video: false
+user_context: This is a YouTube video from Mela Ch. 熱千めら‐ アソビ★まわり隊! channel. The video
+  title is '【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】'.
+segment_index: 8
+fallback_tier: 0
+tier_attempts: 0
+target_fps: null
+exhausted: false
+segment_offset_ms: 2402757
+global_summary:
+  overall_summary: In this livestream, Hololive VTuber Achichi Mela from the unit
+    'Asobi Mawaritai!' plays the indie surveillance horror game 'Japan Stigmatized
+    Property' (JSP). Initially nervous and intimidated by the realistic setting of
+    stigmatized properties and jumpscares, Mela takes on the role of a midnight CCTV
+    monitor across four challenging stages—ranging from an Akita house to a Nara shrine,
+    a ryokan, and a cursed final stage. Through a mix of panic, memory challenges,
+    and humorous reactions, she successfully completes the anomaly-detection shifts
+    while interacting with her viewers.
+  chapters:
+  - start: 00:00
+    end: 01:47
+    title: Opening Screen & Vibe Check
+    description: Stream opening screen with background music and waiting chat.
+    song_title: null
+    song_artist: null
+  - start: 01:47
+    end: 07:20
+    title: Stream Intro & Game Anticipation
+    description: Achichi Mela introduces the game 'JSP' (Japan Stigmatized Property),
+      expressing her nervousness and fear of playing a realistic horror game for the
+      first time.
+    song_title: null
+    song_artist: null
+  - start: 07:20
+    end: '44:30'
+    title: Stage 1 - Akita Prefecture Stigmatized House
+    description: Mela begins her first night shift monitoring an Akita Prefecture
+      house, navigating anomaly detection, dealing with jump scares, and accidentally
+      ending her stream out of panic before recovering.
+    song_title: null
+    song_artist: null
+  - start: '44:30'
+    end: '62:15'
+    title: Stage 2 - Nara Prefecture Shrine
+    description: Mela moves on to monitor the T Shrine in Nara Prefecture, dealing
+      with outdoor camera feeds, weather anomalies, and mysterious intruders.
+    song_title: null
+    song_artist: null
+  - start: '62:15'
+    end: '79:30'
+    title: Stage 3 - Ryokan Bathhouse & Inn
+    description: Mela undertakes the third shift at a traditional Japanese inn and
+      bathhouse, keeping track of complex room layouts and furniture shifts.
+    song_title: null
+    song_artist: null
+  - start: '79:30'
+    end: '102:40'
+    title: Stage 4 - Final Stage & Cursed Room
+    description: Mela tackles the final and most difficult stage featuring cursed
+      objects, masks, and eerie rooms, ultimately achieving a zero-miss victory.
+    song_title: null
+    song_artist: null
+  - start: '102:40'
+    end: '109:00'
+    title: Stream Ending & Schedule Announcements
+    description: Mela celebrates her successful clear, reflects on the psychological
+      horror of the game, and discusses upcoming membership streams and her 2-month
+      debut anniversary.
+    song_title: null
+    song_artist: null
+  entities:
+  - name: Achichi Mela
+    original_name: 熱千めら
+    role_or_affiliation: Hololive / アソビ★まわり隊！
+    persona_lore: A cheerful, hardworking salamander firefighter who serves as the
+      'blessings' (ご利益) representative of the Hololive unit Asobi Mawaritai! She loves
+      fire safety and brings warmth and energy to her fans.
+    speech_patterns_or_ticks: Uses archaic speech endings such as -のじゃ (-noja) and
+      -じゃろ (-jaro).
+    visual_cues: Red and orange fiery theme, salamander motifs, firefighter-inspired
+      design.
+  domain_glossary:
+  - term: JSP (日本事故物件監視協会)
+    meaning: Japan Stigmatized Property, an indie surveillance horror simulation game
+      where players monitor CCTV feeds of real-life stigmatized properties from midnight
+      to 5 AM to report anomalies.
+  - term: 事故物件
+    meaning: A stigmatized property where a tragic death, accident, or incident occurred,
+      serving as the settings for the monitoring shifts in JSP.
+  - term: 異変
+    meaning: Anomalies or unnatural changes in room items, furniture, or environment
+      that players must detect and report through the CCTV system.
+  - term: アソビ★まわり隊！
+    meaning: A Hololive VTuber unit consisting of four members, with Achichi Mela
+      representing the 'blessings' (ご利益) role.
+  - term: 火の用心じゃ〜！
+    meaning: Achichi Mela's signature catchphrase meaning 'Beware of fire!', reflecting
+      her firefighter salamander background.
+  thoughts:
+  - |-
+    Here's my analysis of the task, thinking through it as if I were about to execute the steps:
+
+    **Initial Assessment of Video Analysis Task**
+
+    Alright, the task is clear. We've got a video, `video_1.webm`, clocking in at a pretty substantial duration – around an hour and forty-nine minutes. The immediate goal is to understand the content. My first move in this kind of analysis is almost always to grab a transcript. It gives a fantastic overview of the spoken content and allows me to quickly get a grasp of what's happening.
+
+    Therefore, my initial action is to load the video and the associated ASR (Automatic Speech Recognition) transcript. I'll utilize the `load_video` function, ensuring I specify `include_asr=True` so that the transcription data is also pulled. This will be the foundational starting point for the analysis.
+  - |-
+    **Analyzing the Information from ASR and Context**
+
+    Okay, let's break this down systematically. I need to synthesize the information from the Automated Speech Recognition (ASR) data with the provided context. I see the context clearly identifies the YouTube channel as "Mela Ch. 熱千めら‐ アソビ★まわり隊!" and the video title is "【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】". The title indicates a horror game ("ホラゲ") is the topic.
+
+    Now, it also specifies "hololive / asobi mawaritai / Netchi Mela," but since the user context provides explicit details about the source, I need to confirm the entity details for Netchi Mela and her affiliation with the アソビ★まわり隊 group and potentially hololive. I need to quickly verify Netchi Mela's affiliations and lore before drawing any conclusions. The key here is accuracy, so let's use `tinyfish_search_multi` to get reliable information.
+  - |-
+    **JSON Structure Creation for Achichi Mela's JSP Stream**
+
+    Okay, this is excellent! We've got all the pieces we need to generate that JSON. Let's break this down into digestible chunks for the format. I'm focusing on Achichi Mela's stream playing 『日本事故物件監視協会』 (JSP). My objective is to structure this data for future analysis and potentially, database population.
+
+    First, the overall summary needs to capture the video's essence: It's Achichi Mela, a Hololive VTuber from the unit "Asobi Mawaritai!," playing a horror anomaly detection game, JSP. The tone will be her usual energetic and slightly nervous disposition, given the horror genre. The narrative will progress through different stigmatized properties, each presenting unique challenges and jump scares. We'll outline her progression through the game, from the initial introduction and nervousness to her reactions throughout the different locations.
+
+    Next, we'll organize it into chapters with clear start and end timestamps, titles based on the content, and brief descriptions of what happens in each section. Songs are not relevant here, so they will be null.
+
+    We then identify the key entity: Achichi Mela, noting her role, affiliation (Hololive/Asobi Mawaritai!), and persona details (firefighter salamander, "blessings" representative, etc.). We'll include speech patterns for context – that archaic speech is important!
+
+    Finally, we define a domain glossary. This is crucial for understanding the game's mechanics and the context of the stream. We'll include terms like JSP, 事故物件 (stigmatized property), 異変 (anomaly), and Асоби★まわり隊！, as well as her catchphrase "火の用心じゃ〜！"
+
+    Alright, let's craft that JSON.
+
+    {
+      "overall_summary": "Achichi Mela, a Hololive VTuber from the unit 'Asobi Mawaritai!', plays 'Japan Stigmatized Property' (JSP), a horror anomaly-detection surveillance game. The stream follows her progress through several 'stigmatized properties' (事故物件), with her reactions to jump scares and gameplay challenges.  The tone is energetic and slightly nervous, reflecting the horror genre.",
+      "chapters": [
+        {
+          "start": "00:00",
+          "end": "01:47",
+          "title": "Opening Screen & Vibe Check",
+          "description": "Introductory screen and establishing the stream's vibe.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "01:47",
+          "end": "07:20",
+          "title": "Stream Intro & Game Anticipation",
+          "description": "Achichi Mela's opening greeting, introduction to JSP, and expressing nervousness about playing a 'real' horror game.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "07:20",
+          "end": "44:30",
+          "title": "Stage 1 - Akita Prefecture Stigmatized House",
+          "description": "Surveillance gameplay in a stigmatized house in Akita Prefecture, anomaly detection, and jump scares.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "44:30",
+          "end": "62:15",
+          "title": "Stage 2 - Nara Prefecture Shrine",
+          "description": "Surveillance gameplay in a shrine in Nara Prefecture.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "62:15",
+          "end": "79:30",
+          "title": "Stage 3 - Ryokan Bathhouse / Inn",
+          "description": "Surveillance gameplay in a Ryokan.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "79:30",
+          "end": "102:40",
+          "title": "Stage 4 - Final Stage / Cursed Room",
+          "description": "Final stage gameplay involving a 'Cursed Room'.",
+          "song_title": null,
+          "song_artist": null
+        },
+        {
+          "start": "102:40",
+          "end": "109:00",
+          "title": "Stream Ending & Schedule
+subtitles_prompt_version: 19
+response:
+  subtitles:
+  - start: '00:00.600'
+    end: '00:02.400'
+    original: ど、パーカーも
+    english: E-Even the hoodie...
+  - start: '00:03.200'
+    end: '00:04.700'
+    original: なんか気づけちゃった。
+    english: I actually noticed it.
+  - start: '00:04.900'
+    end: '00:06.500'
+    original: すごいかも、わし。
+    english: I might be amazing.
+  - start: '00:07.450'
+    end: '00:08.700'
+    original: しかし…
+    english: However...
+  - start: '00:09.300'
+    end: '00:10.500'
+    original: しかし…
+    english: However...
+  - start: '00:11.800'
+    end: '00:12.700'
+    original: はい。
+    english: Right.
+  - start: '00:13.500'
+    end: '00:14.600'
+    original: はい、はい。
+    english: Right, right.
+  - start: '00:14.800'
+    end: '00:17.900'
+    original: え、順調なんじゃない？5時まででしょ？勝ったわ。
+    english: Wait, aren't things going well? It's until 5:00, right? I've won.
+  - start: '00:18.400'
+    end: '00:20.100'
+    original: え、5時まででしょ？
+    english: Wait, it's until 5:00, right?
+  - start: '00:20.800'
+    end: '00:23.700'
+    original: え、わし、まだ1回も催促されてないよ、Tina。
+    english: Wait, I haven't been rushed a single time yet, Tina.
+  - start: '00:24.600'
+    end: '00:26.700'
+    original: わしがすごいから？
+    english: Is it because I'm that good?
+  - start: '00:27.000'
+    end: '00:28.800'
+    original: わしがすごいからじゃない？
+    english: Isn't it because I'm just amazing?
+  - start: '00:29.000'
+    end: '00:32.400'
+    original: わしが上手だからじゃない？催促されてないの。
+    english: Isn't it because I'm skilled? That they haven't rushed me?
+  - start: '00:32.800'
+    end: '00:35.300'
+    original: まあ「こいつになら任せてもいいか」って…
+    english: Like, "Guess we can leave it to her"...
+  - start: '00:35.400'
+    end: '00:37.700'
+    original: 判断されたってことじゃない？
+    english: '...isn''t that what they decided?'
+  - start: '00:38.250'
+    end: '00:39.100'
+    original: え？
+    english: Huh?
+  - start: '00:39.400'
+    end: '00:42.300'
+    original: え？何？なんか、さっ、さっ…
+    english: Huh? What? Like, s-shh...
+  - start: '00:42.500'
+    end: '00:43.900'
+    original: すりすり音がする。
+    english: I hear a shuffling sound.
+  - start: '00:44.000'
+    end: '00:45.800'
+    original: え、な、こんな削れてたっけ？
+    english: Wait, was it torn away like this?
+  - start: '00:46.000'
+    end: '00:47.700'
+    original: こんな削れてたっけ？
+    english: Was it scraped off like this?
+  - start: '00:48.100'
+    end: '00:49.800'
+    original: え、なんか削れてなかったっぽい。
+    english: Wait, it looks like it wasn't torn before.
+  - start: '00:50.000'
+    end: '00:52.000'
+    original: え、わしすごいかも。え、わしすごいかも。
+    english: Wait, I might be incredible. Wait, I might be amazing.
+  - start: '00:52.200'
+    end: '00:53.900'
+    original: え、わしかなり覚えてるかも。
+    english: Wait, I might remember this pretty well.
+  - start: '00:54.000'
+    end: '00:55.600'
+    original: え、すごいんじゃない？
+    english: Wait, aren't I amazing?
+  - start: '00:56.400'
+    end: '00:58.500'
+    original: 記憶力の神？
+    english: Goddess of memory?
+  - start: '00:58.800'
+    end: '01:03.000'
+    original: え、わし短期記憶は無理だけど中期記憶なら行けるかも。
+    english: Wait, short-term memory might be impossible for me, but maybe medium-term
+      memory works.
+  - start: '01:03.800'
+    end: '01:06.100'
+    original: 中期記憶の神かも。
+    english: I might be the goddess of medium-term memory.
+  - start: '01:06.800'
+    end: '01:07.700'
+    original: うん。
+    english: Yeah.
+  - start: '01:08.000'
+    end: '01:09.100'
+    original: うん、うん、うん。
+    english: Mm-hmm, yeah.
+  - start: '01:09.700'
+    end: '01:12.100'
+    original: でも正社員は嫌なのじゃ、怖いから。
+    english: But I don't want to be a full-timer, it's scary.
+  - start: '01:12.200'
+    end: '01:14.100'
+    original: ね、こんなにいっぱい物あったっけ？
+    english: Hey, were there this many items here?
+  - start: '01:14.200'
+    end: '01:15.900'
+    original: こんなにいっぱい落ちてたっけ？
+    english: Were there this many things dropped here?
+  - start: '01:16.800'
+    end: '01:18.200'
+    original: 落ちてたっぽい…
+    english: Looks like they were lying there...
+  - start: '01:18.700'
+    end: '01:21.200'
+    original: こんなにいっぱい落ちてなかった気がするんだけど。
+    english: I feel like there weren't that many lying around, though.
+  - start: '01:22.200'
+    end: '01:24.300'
+    original: のひゃあああ…
+    english: '*groan*...'
+  - start: '01:25.300'
+    end: '01:28.700'
+    original: え、やばい。あと30分…
+    english: Wait, shoot. 30 minutes left...
+  - start: '01:28.800'
+    end: '01:31.500'
+    original: 30分Twitter見て終わらせるのじゃ。
+    english: I'll just browse Twitter for 30 minutes to wrap this up.
+  - start: '01:31.900'
+    end: '01:34.400'
+    original: 30分Twitter見て過ごしたらバイト終わる。
+    english: If I spend 30 minutes looking at Twitter, my shift ends.
+  - start: '01:39.200'
+    end: '01:41.800'
+    original: ふん、ふん、ふん。ふん、ふん、ふん。
+    english: Mm-hmm, mm-hmm. Uh-huh, uh-huh.
+  - start: '01:42.000'
+    end: '01:44.700'
+    original: こんなピカピカ光っていたっけという気持ちはしつつ…
+    english: While wondering if it was flickering this much before...
+  - start: '01:45.100'
+    end: '01:47.500'
+    original: でも大体その通りなんじゃよな。
+    english: '...it''s pretty much just like that.'
+  - start: '01:47.600'
+    end: '01:51.400'
+    original: わし分かる。わし知ってる。うん。
+    english: I can tell. I know it. Yeah.
+  - start: '01:51.800'
+    end: '01:52.800'
+    original: うん。
+    english: Yeah.
+  - start: '01:54.400'
+    end: '01:58.000'
+    original: なんか、きこ、きこ聞こえるんだよな、この辺。
+    english: I keep hearing creaking around here.
+  - start: '01:58.100'
+    end: '02:04.200'
+    original: この辺、外がさ、きこきこ聞こえるから…
+    english: Around here... outside, because of that creaking sound...
+  - start: '02:04.400'
+    end: '02:05.500'
+    original: やだ。
+    english: I hate it.
+  - start: '02:06.500'
+    end: '02:08.900'
+    original: や、やだ。怖いな。
+    english: I-I hate it. It's so scary.
+  - start: '02:10.600'
+    end: '02:12.500'
+    original: え？こんなんだったっけ？
+    english: Huh? Was it like this?
+  - start: '02:12.900'
+    end: '02:14.500'
+    original: 違った気がする。
+    english: I feel like it was different.
+  - start: '02:14.800'
+    end: '02:16.600'
+    original: 逆じゃった気がする。
+    english: I feel like it was reversed.
+  - start: '02:17.800'
+    end: '02:19.200'
+    original: あ、合ってた。
+    english: Ah, I was right.
+  - start: '02:19.600'
+    end: '02:22.100'
+    original: え、わし…うおおおおおお！
+    english: Wait, I... Whoaaaaa!
+  - start: '02:22.200'
+    end: '02:23.700'
+    original: うねうねしてる！
+    english: It's squirming!
+  - start: '02:23.800'
+    end: '02:25.000'
+    original: うねうねしてる。
+    english: It's writhing around.
+  - start: '02:25.200'
+    end: '02:26.800'
+    original: ふ、ふ、ふ、ふ。
+    english: Heh, heh, heh, heh.
+  - start: '02:27.000'
+    end: '02:28.700'
+    original: ふ、ふ、ふ、ふ。
+    english: Heh, heh, heh, heh.
+  - start: '02:29.100'
+    end: '02:30.800'
+    original: え、でもわし上達かも。
+    english: Wait, I might actually be improving.
+  - start: '02:31.000'
+    end: '02:32.200'
+    original: すごいかも。
+    english: I might be amazing.
+  - start: '02:33.500'
+    end: '02:36.300'
+    original: え？え？うわ、もう、あっ、もう…
+    english: Huh? What? Whoa, already... ah, jeez...
+  - start: '02:36.400'
+    end: '02:38.800'
+    original: い、い、い、いいってそんな！
+    english: E-E-Enough already!
+  - start: '02:39.000'
+    end: '02:41.300'
+    original: 怖い音でビビらせなくても…
+    english: You don't need to scare me with creepy sounds...
+  - start: '02:41.600'
+    end: '02:43.500'
+    original: 怖い音出さなくても…
+    english: Even without making scary sounds...
+  - start: '02:44.000'
+    end: '02:46.200'
+    original: ビビれるんじゃから。
+    english: '...I''ll get scared anyway!'
+  - start: '02:47.600'
+    end: '02:49.900'
+    original: え、ない。え、いないじゃん。
+    english: Huh, nothing. Wait, no one's there.
+  - start: '02:50.100'
+    end: '02:53.100'
+    original: いないのに音、音出すのやめてね。
+    english: Stop making noises when there's nobody there.
+  - start: '02:53.500'
+    end: '02:54.400'
+    original: え、いない。
+    english: Huh, nothing.
+  - start: '02:54.600'
+    end: '02:57.000'
+    original: え、さっきのパリン何だったの？
+    english: Wait, what was that shatter just now?
+  - start: '02:57.600'
+    end: '03:00.400'
+    original: 何が割れた？何も割れてないよね？
+    english: What broke? Nothing broke, right?
+  - start: '03:00.700'
+    end: '03:02.500'
+    original: 何の音なのじゃ？
+    english: What kind of sound was that?
+  - start: '03:02.700'
+    end: '03:05.900'
+    original: え？ど、わあああああああ！
+    english: Huh? Wh- Waaaaah!
+  - start: '03:06.000'
+    end: '03:08.600'
+    original: はいはいはい！でもさっきこれを見た！見ました！
+    english: Yes yes yes! But I saw this earlier! I saw it!
+  - start: '03:08.900'
+    end: '03:09.800'
+    original: ふう…
+    english: '*sigh*...'
+  - start: '03:10.400'
+    end: '03:12.400'
+    original: ふぃーっ…
+    english: '*phew*...'
+  - start: '03:12.900'
+    end: '03:15.100'
+    original: う、う、うーん…
+    english: Uh, uh, hmm...
+  - start: '03:15.300'
+    end: '03:17.100'
+    original: ふん、ふん、ふん、ふん。
+    english: Mm-hmm, mm-hmm.
+  - start: '03:17.200'
+    end: '03:19.200'
+    original: なんかあのパリンって音の…
+    english: Whatever that shattering sound was...
+  - start: '03:19.300'
+    end: '03:20.300'
+    original: 何が…
+    english: What was...
+  - start: '03:20.400'
+    end: '03:21.800'
+    original: え、え、えーい！
+    english: Wh- Wh- Yay!
+  - start: '03:21.900'
+    end: '03:23.800'
+    original: ああ、そ、そう、そうですか！
+    english: Ah, r-right, is that so?!
+  - start: '03:23.900'
+    end: '03:26.700'
+    original: え、すごいすごい！ね、見て見て見て見て見て！
+    english: Wait, amazing, amazing! Hey, look, look look look look!
+  - start: '03:26.800'
+    end: '03:30.000'
+    original: 見て、お主ら！0個の異常を見逃しただって！
+    english: Look, everyone! It says 0 anomalies missed!
+  - start: '03:30.100'
+    end: '03:32.200'
+    original: え、全部見つけたんじゃない？！
+    english: Wait, didn't I find all of them?!
+  - start: '03:32.300'
+    end: '03:34.100'
+    original: え、わしすごいかも！やばい！
+    english: Wait, I might be incredible! Insane!
+  - start: '03:34.200'
+    end: '03:37.200'
+    original: ね、お主らやばい！お主ら、やばいかも、わし！
+    english: Hey everyone, this is insane! Everyone, I might be crazy good!
+  - start: '03:37.400'
+    end: '03:38.600'
+    original: 見て！
+    english: Look!
+  - start: '03:38.700'
+    end: '03:41.000'
+    original: ぜん…全…全成功！
+    english: C-Com... completely successful!
+  - start: '03:41.200'
+    end: '03:44.000'
+    original: 全部かも！やばくない？！
+    english: Maybe every single one! Isn't that insane?!
+  - start: '03:44.200'
+    end: '03:47.100'
+    original: わしっ…わしすごくない？！
+    english: I'm... aren't I incredible?!
+  - start: '03:47.200'
+    end: '03:48.800'
+    original: え、わしすごい！
+    english: Wait, I'm amazing!
+  - start: '03:49.100'
+    end: '03:53.100'
+    original: 5時間で14850円ももらえた！
+    english: I got 14,850 yen for 5 hours!
+  - start: '03:54.400'
+    end: '03:59.600'
+    original: かなり…でも、この、この、この、この精神的負荷を…
+    english: That's quite... but considering this psychological burden...
+  - start: '03:59.700'
+    end: '04:01.100'
+    original: とともに…
+    english: '...along with that...'
+  - start: '04:02.600'
+    end: '04:03.700'
+    original: なんか…
+    english: Like...
+  - start: '04:04.500'
+    end: '04:06.900'
+    original: だって殉職者がさ…
+    english: I mean, line-of-duty deaths...
+  - start: '04:07.000'
+    end: '04:09.800'
+    original: 殉職者がこんないる…
+    english: '...there are so many casualties...'
+  - start: '04:09.900'
+    end: '04:11.900'
+    original: バイト先で？
+    english: '...at a part-time job?'
+  - start: '04:12.500'
+    end: '04:15.300'
+    original: 時給2970円は…
+    english: 2,970 yen an hour...
+  - start: '04:15.400'
+    end: '04:18.700'
+    original: ちょ、命を軽く見すぎなのじゃ。
+    english: They're undervaluing life way too much.
+  - start: '04:19.200'
+    end: '04:22.300'
+    original: 命を…命を軽く見すぎなのじゃ。
+    english: Life... they treat life way too lightly.
+  - start: '04:22.600'
+    end: '04:28.100'
+    original: ちょっと…いや、高いけど確かにバイト代としてはめちゃくちゃ高いけど、命の値段としてはちょっと安いのじゃ。
+    english: A bit... well, it's definitely super high for part-time pay, but as the
+      price of a life, it's a bit cheap.
+  - start: '04:29.100'
+    end: '04:33.000'
+    original: じゃあ…次行くか。
+    english: Well then... let's move to the next one.
+  - start: '04:34.300'
+    end: '04:37.200'
+    original: 奈良県、神社行くか。
+    english: Nara Prefecture, let's head to the shrine.
+  - start: '04:37.400'
+    end: '04:40.200'
+    original: 奈良県の神社行くか。
+    english: Let's go to the shrine in Nara Prefecture.
+  - start: '04:43.000'
+    end: '04:48.800'
+    original: 正直、秋田県のあのAのお家んとこは、一番怖い異変の時にわしが…
+    english: Honestly, back at House A in Akita Prefecture, during the scariest anomaly...
+  - start: '04:49.000'
+    end: '04:55.500'
+    original: 怖すぎて、画面のどこを押したか分かんなくなっちゃって、配信終了ボタン押しちゃったのじゃ。
+    english: '...I was so terrified that I lost track of where on screen I clicked,
+      and accidentally hit the end stream button.'
+  - start: '04:58.300'
+    end: '05:01.100'
+    original: 配信終了ボタン押しちゃったから…
+    english: Because I hit the end stream button...
+  - start: '05:01.400'
+    end: '05:02.441'
+    original: ちょっとあの…
+    english: '...so, um...'
+  thoughts:
+  - |-
+    **A Deep Dive into Achichi Mela's Thoughts (00:00.600 - 05:02.441)**
+
+    Okay, here's the deal. I, Achichi Mela, am currently engrossed in playing "Japan Stigmatized Property," and I need the subtitles synced up properly, you see? My thoughts, as they are, are as follows:
+
+    Initially, I am somewhat amazed by my own perceptiveness. "Do, paakā mo... / Wait, I actually noticed that. I might be amazing," I think. A bit of self-doubt creeps in, but I quickly brush it aside. "Right, right. Huh, isn't it going smoothly? It lasts until 5:00, right? I've won," I declare, even though it's still early. I even express slight surprise when I realize I haven't been 'rushed' yet. "Is it because I'm that good? Isn't it because I'm just that good? Isn't it because I'm skilled? That they haven't rushed me?" I wonder. It's almost as if they're thinking "Guess we can leave it to her," I muse.
+
+    Then, there's a shuffling sound. "Wait, was it torn away like this before? It looks like it wasn't torn before. Wait, I might be incredible. Wait, I might be awesome," I suddenly realize, and start thinking I'm doing quite well. "Wait, I might remember this pretty well. Wait, aren't I amazing?" I start to consider myself a "goddess of memory" or maybe the "goddess of medium-term memory." Yes! I think that's right!
+
+    I shift slightly, and a thought interrupts me. I don't want to be a full-timer, it is scary! I note the number of items around. "Hey, were there this many items here? Looks like they were lying there." I become unsettled. "30 minutes left..." and I decide to "browse Twitter for 30 minutes to wrap this up." but I quickly realize "if I spend 30 minutes looking at Twitter, my shift ends."
+
+    I notice a slight change and wonder "While wondering if it was flickering this much before... it's pretty much just like that,". "I can tell. I know it. Yeah." I am feeling quite attuned. Then, I notice creaking. "I keep hearing creaking around here. Around here... outside, because of that creaking sound... I hate it," I think. I start to find it terrifying. "I-I hate it. It's so scary. Huh? Was it like this? I feel like it was different."
+
+    And then, "Ah, I was right. Wait, I... Whoaaaaa! It's squirming!" I exclaim. "It's writhing around. Heh, heh, heh, heh," I laugh nervously. But then, I notice, "Wait, I might be improving! I might be amazing. Enough already!
+
+    I'm getting scared even without the creepy sounds. "Huh, nothing. Wait, no one's there. Stop making noises when there's nobody there. Huh, nothing. Wait, what was that shatter just now? What broke? Nothing broke, right? What kind of sound was that?" I then have a minor freakout. "Waaaaah!" But it passes. "But I saw this earlier! I saw it!"
+
+    And a moment later, I think "Whatever that shattering sound was..." and I feel it is somehow "Yay!" I get a bit excited. "Wait, amazing, amazing! Look, everyone! It says 0 anomalies missed! Wait, didn't I find all of them?! Wait, I might be incredible! Insane!"
+
+    "Hey everyone, this is insane! Everyone, I might be crazy good! Look!" I say with excitement. "C-Com... completely successful! Maybe every single one! Isn't that insane?! I'm... aren't I incredible?!" I exclaim. "I'm amazing! I got 14,850 yen for 5 hours! That's quite... but considering this psychological burden... along with that..." I ponder. I do recall "I mean, line-of-duty deaths... there are so many casualties... at a part-time job?" This feels a bit heavy... "They're undervaluing life way too much. Life... they treat life way too lightly."
+
+    I conclude by feeling "Though as part-time pay it's definitely super high, as the price of a life it's a bit cheap!" And think, "Well then... let's move to the next
+  detected_musical_performances: []
