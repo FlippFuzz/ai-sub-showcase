@@ -2,6 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
+| 2026&#8209;11&#8209;26 | <a href="https://youtu.be/qrwosOBgFno"><img src="https://i.ytimg.com/vi/qrwosOBgFno/mqdefault.jpg" width="100" /></a> | [ついに頂上へ！ENGLISH PEAK STREAMのじゃ！【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=qrwosOBgFno) | [g35l&#8209;g35l&#8209;g35l<br>011910](./v/qrwosOBgFno) |
 | 2026&#8209;11&#8209;25 | <a href="https://youtu.be/EpSJ6NbxYzE"><img src="https://i.ytimg.com/vi/EpSJ6NbxYzE/mqdefault.jpg" width="100" /></a> | [【気のせいすぎるRPG】ホラー要素がある気がすると聞いて…【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=EpSJ6NbxYzE) | [g35l&#8209;g35l&#8209;g35l<br>011910](./v/EpSJ6NbxYzE) |
 | 2026&#8209;11&#8209;25 | <a href="https://youtu.be/WTqj7ex4An8"><img src="https://i.ytimg.com/vi/WTqj7ex4An8/mqdefault.jpg" width="100" /></a> | [【のじゃEnglish】tripとtravelって違うのじゃ？！【ホロライブ/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=WTqj7ex4An8) | [g35l&#8209;g35l&#8209;g35l<br>011910](./v/WTqj7ex4An8) |
 | 2026&#8209;11&#8209;23 | <a href="https://youtu.be/IEgmaNWRo8s"><img src="https://i.ytimg.com/vi/IEgmaNWRo8s/mqdefault.jpg" width="100" /></a> | [【JSP】そろそろ‘‘ガチ‘‘ホラゲに挑戦するのじゃ（閲覧注意）【ホロライブ/アソビ★まわり隊！/熱千めら】](https://flippfuzz.github.io/ai-sub-player/?uploader=AchichiMela&v=IEgmaNWRo8s) | [g35l&#8209;g38f&#8209;g35l<br>011910](./v/IEgmaNWRo8s) |
