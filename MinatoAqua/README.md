@@ -2,7 +2,7 @@
 
 | Date (JST) | Thumbnail | Title | Best Model |
 | :---: | :---: | :--- | :---: |
-| 2024&#8209;10&#8209;31 | <a href="https://youtu.be/fDtUy1PTor0"><img src="https://i.ytimg.com/vi/fDtUy1PTor0/mqdefault.jpg" width="100" /></a> | [【#湊あくあ卒業ライブ】あくあ色に染まれ！／MinatoAqua Graduation LIVE](https://flippfuzz.github.io/ai-sub-player/?uploader=MinatoAqua&v=fDtUy1PTor0) | [g35l&#8209;g35l<br>001809](./v/fDtUy1PTor0) |
+| 2024&#8209;08&#8209;28 | <a href="https://youtu.be/fDtUy1PTor0"><img src="https://i.ytimg.com/vi/fDtUy1PTor0/mqdefault.jpg" width="100" /></a> | [【#湊あくあ卒業ライブ】あくあ色に染まれ！／MinatoAqua Graduation LIVE](https://flippfuzz.github.io/ai-sub-player/?uploader=MinatoAqua&v=fDtUy1PTor0) | [g35l&#8209;g35l&#8209;g35l<br>011910](./v/fDtUy1PTor0) |
 | 2023&#8209;10&#8209;31 | <a href="https://youtu.be/c9VW0E2Unl4"><img src="https://i.ytimg.com/vi/c9VW0E2Unl4/mqdefault.jpg" width="100" /></a> | [【#⁠湊あくあ5周年LIVE】Dreamy day 【湊あくあ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=MinatoAqua&v=c9VW0E2Unl4) | [g35l&#8209;g35l<br>001809](./v/c9VW0E2Unl4) |
 | 2022&#8209;10&#8209;31 | <a href="https://youtu.be/O4Ip7gZQOts"><img src="https://i.ytimg.com/vi/O4Ip7gZQOts/mqdefault.jpg" width="100" /></a> | [【3DLIVE】あくあ色ふぇすてぃばる。【#湊あくあ4周年記念】](https://flippfuzz.github.io/ai-sub-player/?uploader=MinatoAqua&v=O4Ip7gZQOts) | [g35l&#8209;g35l<br>001809](./v/O4Ip7gZQOts) |
 | 2022&#8209;10&#8209;31 | <a href="https://youtu.be/0kGVDYAKcGc"><img src="https://i.ytimg.com/vi/0kGVDYAKcGc/mqdefault.jpg" width="100" /></a> | [【#湊あくあ重大発表】3DLIVE！！重大発表！！【湊あくあ/ホロライブ】](https://flippfuzz.github.io/ai-sub-player/?uploader=MinatoAqua&v=0kGVDYAKcGc) | [g35l&#8209;g35l<br>001809](./v/0kGVDYAKcGc) |
